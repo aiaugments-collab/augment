@@ -1,64 +1,26 @@
 import { DropdownSection } from "./Dropdown";
+import { PRODUCT_CATEGORIES, getProductsByCategory } from "@/lib/productRegistry";
 
+// Generate products dropdown data from the product registry
 export const productsDropdownData: DropdownSection[] = [
+  // AI Agent Products
   {
-    title: "Augment AI Agent",
-    items: [
-      { label: "ACI Overview", href: "#aci-overview" },
-      { label: "AI and Machine Learning", href: "#ai-ml" },
-      { label: "Analytics", href: "#analytics" },
-      { label: "Billing and Cost Management", href: "#billing" },
-      { label: "Compute", href: "#compute" },
-      { label: "Database Services", href: "#database" },
-      { label: "Developer Services", href: "#developer" },
-      { label: "Distributed Cloud and Multicloud", href: "#distributed" },
-      { label: "Governance and Administration", href: "#governance" },
-      { label: "Identity and Security", href: "#identity" },
-      { label: "Integration", href: "#integration" },
-      { label: "Migration and Disaster Recovery Services", href: "#migration" },
-      { label: "Networking and Connectivity", href: "#networking" },
-      { label: "Observability and Management", href: "#observability" },
-      { label: "Storage", href: "#storage" },
-    ]
+    title: PRODUCT_CATEGORIES['ai-agent'].name,
+    items: getProductsByCategory('ai-agent').map(product => ({
+      label: product.name,
+      href: product.href,
+      status: product.status === 'coming-soon' ? 'Coming Soon' : product.status === 'beta' ? 'Beta' : undefined
+    }))
   },
+  
+  // Cloud Applications
   {
-    title: "Augment Cloud Applications",
-    items: [
-      { label: "Applications Overview", href: "#applications-overview" },
-      { label: "Enterprise Resource Planning (ERP)", href: "#erp" },
-      { label: "– Financial Management", href: "#financial" },
-      { label: "– Procurement", href: "#procurement" },
-      { label: "– Project Management", href: "#project" },
-      { label: "– Risk Management and Compliance", href: "#risk" },
-      { label: "– Enterprise Performance Management", href: "#performance" },
-      { label: "Supply Chain & Manufacturing (SCM)", href: "#scm" },
-      { label: "– Supply Chain Planning", href: "#supply-planning" },
-      { label: "– Inventory Management", href: "#inventory" },
-      { label: "– Manufacturing", href: "#manufacturing" },
-      { label: "– Maintenance", href: "#maintenance" },
-      { label: "– Product Lifecycle Management", href: "#lifecycle" },
-      { label: "– More SCM applications", href: "#more-scm" },
-    ]
-  },
-  {
-    title: "Human Capital Management (HCM)",
-    items: [
-      { label: "– Human Resources", href: "#hr" },
-      { label: "– Talent Management", href: "#talent" },
-      { label: "– Workforce Management", href: "#workforce" },
-      { label: "– Payroll", href: "#payroll" },
-      { label: "Fusion Data Intelligence Platform", href: "#fusion" },
-      { label: "NetSuite", href: "#netsuite" },
-    ]
-  },
-  {
-    title: "Customer Experience (CX)",
-    items: [
-      { label: "– Marketing", href: "#marketing" },
-      { label: "– Sales", href: "#sales" },
-      { label: "– Service", href: "#service" },
-      { label: "Augment Marketplace", href: "#marketplace" },
-    ]
+    title: PRODUCT_CATEGORIES['cloud-applications'].name,
+    items: getProductsByCategory('cloud-applications').map(product => ({
+      label: product.name,
+      href: product.href,
+      status: product.status === 'coming-soon' ? 'Coming Soon' : product.status === 'beta' ? 'Beta' : undefined
+    }))
   }
 ];
 

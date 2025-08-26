@@ -1,0 +1,375 @@
+"use client";
+
+import { useState } from "react";
+import Link from "next/link";
+import { 
+  PRODUCTS, 
+  PRODUCT_CATEGORIES, 
+  getFeaturedProducts, 
+  searchProducts,
+  type Product 
+} from "@/lib/productRegistry";
+
+export default function ProductsPage() {
+  const [selectedCategory, setSelectedCategory] = useState<string>('all');
+  const [searchQuery, setSearchQuery] = useState('');
+  const [selectedStatus, setSelectedStatus] = useState<string>('all');
+
+  // Filter products based on selections
+  const getFilteredProducts = (): Product[] => {
+    let filtered = PRODUCTS;
+
+    // Apply search filter
+    if (searchQuery.trim()) {
+      filtered = searchProducts(searchQuery);
+    }
+
+    // Apply category filter
+    if (selectedCategory !== 'all') {
+      if (selectedCategory === 'featured') {
+        filtered = filtered.filter(p => p.featured);
+      } else {
+        filtered = filtered.filter(p => p.category === selectedCategory);
+      }
+    }
+
+    // Apply status filter
+    if (selectedStatus !== 'all') {
+      filtered = filtered.filter(p => p.status === selectedStatus);
+    }
+
+    return filtered;
+  };
+
+  const filteredProducts = getFilteredProducts();
+  const featuredProducts = getFeaturedProducts();
+
+  return (
+    <div className="min-h-screen bg-gray-50">
+      {/* SEO */}
+      <h1 className="sr-only">Augment Products | AI-Powered Business Solutions</h1>
+      
+      {/* Hero Section */}
+      <section 
+        className="relative py-20 bg-[#312a2a] text-white overflow-hidden"
+        style={{
+          backgroundImage: "url('data:image/svg+xml,%3Csvg width=\"40\" height=\"40\" viewBox=\"0 0 40 40\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cg fill=\"none\" fill-rule=\"evenodd\"%3E%3Cg fill=\"%23ffffff\" fill-opacity=\"0.05\"%3E%3Ccircle cx=\"20\" cy=\"20\" r=\"1\"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')"
+        }}
+      >
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="text-center max-w-4xl mx-auto">
+            <h2 
+              className="text-4xl lg:text-5xl font-bold mb-6 leading-tight"
+              style={{ fontFamily: 'var(--oracleserif)' }}
+            >
+              Augment Products
+            </h2>
+            <div className="w-20 h-1 bg-[#C74634] mx-auto mb-8"></div>
+            <p 
+              className="text-xl lg:text-2xl text-gray-200 mb-12 leading-relaxed"
+              style={{ fontFamily: 'var(--oraclesans)' }}
+            >
+              Discover our comprehensive suite of AI-powered business solutions designed to transform how you work, grow, and succeed.
+            </p>
+            
+            {/* Search Bar */}
+            <div className="max-w-2xl mx-auto">
+              <div className="relative">
+                <input
+                  type="text"
+                  placeholder="Search products..."
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  className="w-full px-6 py-4 text-lg rounded-lg bg-white/10 backdrop-blur-sm border border-white/20 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-[#f0cc71] focus:border-transparent"
+                  style={{ fontFamily: 'var(--oraclesans)' }}
+                />
+                <svg 
+                  className="absolute right-4 top-1/2 transform -translate-y-1/2 w-6 h-6 text-gray-300"
+                  fill="none" 
+                  stroke="currentColor" 
+                  viewBox="0 0 24 24"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <main className="max-w-7xl mx-auto px-6 lg:px-8 py-12">
+        
+        {/* Featured Products Section */}
+        {!searchQuery && selectedCategory === 'all' && (
+          <section className="mb-16">
+            <div className="flex items-center justify-between mb-8">
+              <h3 
+                className="text-2xl lg:text-3xl font-bold text-[#161513]"
+                style={{ fontFamily: 'var(--oracleserif)' }}
+              >
+                Featured Products
+              </h3>
+              <div className="w-16 h-0.5 bg-[#C74634]"></div>
+            </div>
+            
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {featuredProducts.map((product) => (
+                <Link
+                  key={product.id}
+                  href={product.href}
+                  className="group bg-white rounded-lg shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden"
+                >
+                  <div className="aspect-[4/3] overflow-hidden bg-gray-100">
+                    <img 
+                      src={product.image} 
+                      alt={product.name}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                  <div className="p-6">
+                    <div className="flex items-center justify-between mb-2">
+                      <span className="text-2xl">{product.icon}</span>
+                      {product.status !== 'live' && (
+                        <span className="px-2 py-1 text-xs bg-blue-100 text-blue-800 rounded-full capitalize">
+                          {product.status === 'coming-soon' ? 'Coming Soon' : product.status}
+                        </span>
+                      )}
+                    </div>
+                    <h4 
+                      className="text-lg font-bold text-[#161513] mb-2 group-hover:text-[#4A90E2] transition-colors"
+                      style={{ fontFamily: 'var(--oraclesans)' }}
+                    >
+                      {product.name}
+                    </h4>
+                    <p 
+                      className="text-gray-600 text-sm leading-relaxed mb-4"
+                      style={{ fontFamily: 'var(--oraclesans)' }}
+                    >
+                      {product.shortDescription || product.description}
+                    </p>
+                    <div className="flex flex-wrap gap-1">
+                      {product.tags?.slice(0, 3).map((tag, idx) => (
+                        <span key={idx} className="px-2 py-1 text-xs bg-gray-100 text-gray-600 rounded">
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </section>
+        )}
+
+        {/* Filters */}
+        <section className="mb-8">
+          <div className="flex flex-col lg:flex-row gap-4 lg:items-center lg:justify-between">
+            
+            {/* Category Filter */}
+            <div className="flex flex-wrap gap-2">
+              <button
+                onClick={() => setSelectedCategory('all')}
+                className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
+                  selectedCategory === 'all' 
+                    ? 'bg-[#4A90E2] text-white' 
+                    : 'bg-white text-gray-700 hover:bg-gray-50 border border-gray-200'
+                }`}
+                style={{ fontFamily: 'var(--oraclesans)' }}
+              >
+                All Products
+              </button>
+              <button
+                onClick={() => setSelectedCategory('featured')}
+                className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
+                  selectedCategory === 'featured' 
+                    ? 'bg-[#4A90E2] text-white' 
+                    : 'bg-white text-gray-700 hover:bg-gray-50 border border-gray-200'
+                }`}
+                style={{ fontFamily: 'var(--oraclesans)' }}
+              >
+                Featured
+              </button>
+              {Object.entries(PRODUCT_CATEGORIES).map(([key, category]) => (
+                <button
+                  key={key}
+                  onClick={() => setSelectedCategory(key)}
+                  className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
+                    selectedCategory === key 
+                      ? 'bg-[#4A90E2] text-white' 
+                      : 'bg-white text-gray-700 hover:bg-gray-50 border border-gray-200'
+                  }`}
+                  style={{ fontFamily: 'var(--oraclesans)' }}
+                >
+                  <span className="mr-1">{category.icon}</span>
+                  {category.name}
+                </button>
+              ))}
+            </div>
+
+            {/* Status Filter */}
+            <div className="flex gap-2">
+              <select
+                value={selectedStatus}
+                onChange={(e) => setSelectedStatus(e.target.value)}
+                className="px-3 py-2 rounded-lg border border-gray-200 bg-white text-gray-700 text-sm"
+                style={{ fontFamily: 'var(--oraclesans)' }}
+              >
+                <option value="all">All Status</option>
+                <option value="live">Live</option>
+                <option value="beta">Beta</option>
+                <option value="coming-soon">Coming Soon</option>
+              </select>
+            </div>
+
+          </div>
+        </section>
+
+        {/* Results Summary */}
+        <div className="mb-6">
+          <p 
+            className="text-gray-600 text-sm"
+            style={{ fontFamily: 'var(--oraclesans)' }}
+          >
+            Showing <span className="font-semibold">{filteredProducts.length}</span> products
+            {searchQuery && ` for "${searchQuery}"`}
+            {selectedCategory !== 'all' && ` in ${selectedCategory === 'featured' ? 'Featured' : PRODUCT_CATEGORIES[selectedCategory as keyof typeof PRODUCT_CATEGORIES]?.name}`}
+          </p>
+        </div>
+
+        {/* Products Grid */}
+        <section>
+          {filteredProducts.length > 0 ? (
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+              {filteredProducts.map((product) => (
+                <Link
+                  key={product.id}
+                  href={product.href}
+                  className="group bg-white rounded-lg shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden"
+                >
+                  <div className="aspect-[4/3] overflow-hidden bg-gray-100 relative">
+                    <img 
+                      src={product.image} 
+                      alt={product.name}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                    {product.featured && (
+                      <div className="absolute top-3 left-3">
+                        <span className="px-2 py-1 text-xs bg-[#f0cc71] text-[#161513] rounded-full font-semibold">
+                          Featured
+                        </span>
+                      </div>
+                    )}
+                  </div>
+                  <div className="p-4">
+                    <div className="flex items-center justify-between mb-2">
+                      <span className="text-xl">{product.icon}</span>
+                      {product.status !== 'live' && (
+                        <span 
+                          className={`px-2 py-1 text-xs rounded-full capitalize font-medium ${
+                            product.status === 'coming-soon' 
+                              ? 'bg-orange-100 text-orange-800' 
+                              : 'bg-blue-100 text-blue-800'
+                          }`}
+                        >
+                          {product.status === 'coming-soon' ? 'Coming Soon' : product.status}
+                        </span>
+                      )}
+                    </div>
+                    <h4 
+                      className="text-base font-bold text-[#161513] mb-2 group-hover:text-[#4A90E2] transition-colors leading-tight"
+                      style={{ fontFamily: 'var(--oraclesans)' }}
+                    >
+                      {product.shortName || product.name}
+                    </h4>
+                    <p 
+                      className="text-gray-600 text-xs leading-relaxed mb-3 line-clamp-2"
+                      style={{ fontFamily: 'var(--oraclesans)' }}
+                    >
+                      {product.shortDescription || product.description}
+                    </p>
+                    <div className="flex flex-wrap gap-1">
+                      {product.tags?.slice(0, 2).map((tag, idx) => (
+                        <span key={idx} className="px-2 py-0.5 text-xs bg-gray-100 text-gray-600 rounded">
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          ) : (
+            <div className="text-center py-12">
+              <div className="w-20 h-20 mx-auto mb-6 bg-gray-100 rounded-full flex items-center justify-center">
+                <svg className="w-8 h-8 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+              </div>
+              <h3 
+                className="text-xl font-semibold text-gray-900 mb-2"
+                style={{ fontFamily: 'var(--oracleserif)' }}
+              >
+                No products found
+              </h3>
+              <p 
+                className="text-gray-600 mb-6"
+                style={{ fontFamily: 'var(--oraclesans)' }}
+              >
+                {searchQuery 
+                  ? `No products match "${searchQuery}". Try adjusting your search.`
+                  : 'No products match your current filters. Try adjusting your filters.'
+                }
+              </p>
+              <button
+                onClick={() => {
+                  setSearchQuery('');
+                  setSelectedCategory('all');
+                  setSelectedStatus('all');
+                }}
+                className="px-6 py-3 bg-[#4A90E2] text-white rounded-lg hover:bg-[#357ABD] transition-colors font-medium"
+                style={{ fontFamily: 'var(--oraclesans)' }}
+              >
+                Clear All Filters
+              </button>
+            </div>
+          )}
+        </section>
+
+        {/* Call-to-Action */}
+        <section className="mt-16 text-center">
+          <div className="bg-[#f8f8f8] rounded-lg p-8 lg:p-12">
+            <h3 
+              className="text-2xl lg:text-3xl font-bold text-[#161513] mb-4"
+              style={{ fontFamily: 'var(--oracleserif)' }}
+            >
+              Can&apos;t find what you&apos;re looking for?
+            </h3>
+            <p 
+              className="text-gray-600 text-lg mb-8 max-w-2xl mx-auto"
+              style={{ fontFamily: 'var(--oraclesans)' }}
+            >
+              Our team can help you find the perfect solution for your business needs or create a custom solution tailored just for you.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link
+                href="/contact"
+                className="inline-flex items-center px-6 py-3 bg-[#161513] text-white font-semibold rounded hover:bg-[#2a2a2a] transition-colors"
+                style={{ fontFamily: 'var(--oraclesans)' }}
+              >
+                Contact Sales
+              </Link>
+              <Link
+                href="/demo"
+                className="inline-flex items-center px-6 py-3 border border-[#161513] text-[#161513] font-semibold rounded hover:bg-[#161513] hover:text-white transition-colors"
+                style={{ fontFamily: 'var(--oraclesans)' }}
+              >
+                Schedule Demo
+              </Link>
+            </div>
+          </div>
+        </section>
+
+      </main>
+    </div>
+  );
+}
