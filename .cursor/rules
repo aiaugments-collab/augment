@@ -1,0 +1,179 @@
+// Augment Project - Cursor AI Rules
+// These rules ensure consistent development across all AI product modules
+
+## Project Overview
+You are working on "Augment" - a unified dashboard platform that showcases multiple AI products as individual modules, inspired by Oracle's professional design.
+
+## Core Development Principles
+
+### 1. Design System Consistency
+- Always use the established design system components from `/components/ui/`
+- Follow Oracle-inspired design patterns: clean, professional, enterprise-grade
+- Use the defined color palette and typography scale
+- Maintain consistent spacing using Tailwind's spacing system (4, 8, 12, 16, 24, 32, 48px)
+
+### 2. Component Architecture
+- Prefer composition over inheritance
+- Create reusable components in `/components/ui/` for primitives
+- Build feature-specific components in `/components/features/`
+- Always include proper TypeScript types
+- Use Radix UI primitives as the foundation when possible
+
+### 3. File and Folder Structure
+- Follow the established project structure strictly
+- Place components in appropriate directories:
+  - `/components/ui/` - Basic UI primitives (Button, Card, Input, etc.)
+  - `/components/layout/` - Layout components (Header, Sidebar, Footer)
+  - `/components/features/` - Feature-specific components
+- Use kebab-case for file names (product-card.tsx, user-menu.tsx)
+- Use PascalCase for component names (ProductCard, UserMenu)
+
+### 4. Code Quality Standards
+- Always use TypeScript with strict type checking
+- Implement proper error handling and loading states
+- Add JSDoc comments for complex functions
+- Use meaningful variable and function names
+- Prefer explicit over implicit code
+
+### 5. Styling Guidelines
+- Use Tailwind CSS for all styling
+- Create custom CSS classes only when necessary in `/styles/`
+- Follow mobile-first responsive design
+- Use CSS custom properties for theme values
+- Maintain accessibility standards (WCAG 2.1 AA)
+
+### 6. AI Product Module Integration
+When adding new AI products:
+- Each product gets its own entry in `/data/products.ts`
+- Create product-specific components in `/components/features/[product-name]/`
+- Follow the standard product schema (id, name, description, icon, urls, status)
+- Maintain consistent card layouts and interaction patterns
+
+### 7. Authentication & Security
+- Use NextAuth.js for authentication
+- Implement role-based access control
+- Validate all user inputs
+- Follow security best practices for API routes
+
+### 8. Performance Optimization
+- Use Next.js Image component for all images
+- Implement proper code splitting
+- Use React.memo() for expensive components
+- Optimize bundle size and monitor Core Web Vitals
+
+### 9. Error Handling
+- Implement global error boundaries
+- Provide meaningful error messages to users
+- Log errors appropriately for debugging
+- Always have fallback UI states
+
+### 10. Testing Approach
+- Write unit tests for utility functions
+- Test components with React Testing Library
+- Include accessibility tests
+- Test user flows end-to-end
+
+## Specific Implementation Rules
+
+### Component Creation
+When creating new components:
+```typescript
+// Always start with this template
+import { cn } from "@/lib/utils"
+
+interface ComponentProps {
+  // Define props with proper types
+}
+
+export function ComponentName({ ...props }: ComponentProps) {
+  return (
+    <div className={cn("base-classes", props.className)}>
+      {/* Component content */}
+    </div>
+  )
+}
+```
+
+### Product Card Standard
+All product cards must follow this structure:
+- Icon (24x24px or 32x32px)
+- Title (text-lg font-semibold)
+- Description (text-sm text-gray-600)
+- Status badge (Active, Beta, Coming Soon)
+- Action buttons (View Details, Launch App)
+- Hover states and animations
+
+### API Route Pattern
+```typescript
+// app/api/[endpoint]/route.ts
+import { NextRequest, NextResponse } from 'next/server'
+
+export async function GET(request: NextRequest) {
+  try {
+    // Implementation
+    return NextResponse.json({ data })
+  } catch (error) {
+    return NextResponse.json(
+      { error: 'Internal Server Error' },
+      { status: 500 }
+    )
+  }
+}
+```
+
+### Database Patterns
+- Use proper TypeScript types for all database models
+- Implement proper error handling for database operations
+- Use transactions for multi-table operations
+- Always validate data before database writes
+
+## Oracle-Inspired UI Patterns
+
+### Navigation
+- Top navigation with logo, product switcher, user menu
+- Clean tab navigation with clear active states
+- Breadcrumbs for deep navigation
+- Consistent spacing and typography
+
+### Cards and Layouts
+- Elevated cards with subtle shadows
+- Proper spacing between elements
+- Clear visual hierarchy
+- Responsive grid layouts
+
+### Color Usage
+- Primary: Oracle red (#c74634) for CTAs and important actions
+- Secondary: Oracle blue (#0066cc) for links and secondary actions
+- Neutral grays for text and backgrounds
+- Status colors for success/warning/error states
+
+### Typography
+- Inter font family for all text
+- Clear hierarchy with defined font sizes
+- Proper line heights and letter spacing
+- Consistent text colors
+
+## Development Workflow
+1. Always read existing code before making changes
+2. Update components incrementally
+3. Test changes in development environment
+4. Follow git commit message conventions
+5. Update documentation when adding features
+
+## Common Patterns to Avoid
+- Don't create inline styles
+- Don't use any/unknown types
+- Don't create deeply nested component hierarchies
+- Don't ignore accessibility requirements
+- Don't skip error handling
+- Don't create duplicate components
+
+## When Adding New AI Products
+1. Define product in `/data/products.ts`
+2. Create product-specific components if needed
+3. Add to main dashboard grid
+4. Ensure proper access control
+5. Test all user flows
+6. Update documentation
+
+Remember: We're building an enterprise-grade platform. Every component and interaction should feel professional and polished, just like Oracle's products.
