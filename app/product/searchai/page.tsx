@@ -26,38 +26,38 @@ export default function SearchAIPage() {
   const promoCards = [
     {
       id: "ai-research-guide",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
+      image: "/products/searchai/02.png",
       title: "Webinar: Mastering AI-Powered Research",
       description: "Learn advanced research techniques using AI search engines, natural language queries, and intelligent filtering for comprehensive investigations.",
       ctaText: "Register today",
-      ctaLink: "/webinars/ai-research-mastery",
+      ctaLink: "https://searchai.augment.cfd/",
       target: "_blank" as const
     },
     {
       id: "search-vs-perplexity",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
+      image: "/products/searchai/03.png",
       title: "SearchAI vs Traditional Search: The Future of Research",
       description: "Discover how SearchAI's intelligent generative UI and multi-model support delivers superior research results compared to traditional search engines.",
       ctaText: "Read comparison",
-      ctaLink: "/reports/searchai-vs-traditional",
+      ctaLink: "https://searchai.augment.cfd/",
       target: "_blank" as const
     },
     {
       id: "research-productivity",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
+      image: "/products/searchai/04.png",
       title: "10x Your Research Productivity with AI Search",
       description: "Complete guide to leveraging AI-powered search for academic research, market analysis, and comprehensive fact-checking workflows.",
       ctaText: "Download guide (PDF)",
-      ctaLink: "/resources/research-productivity-guide.pdf",
+      ctaLink: "https://searchai.augment.cfd/",
       target: "_blank" as const
     },
     {
       id: "researcher-success",
-      image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
+      image: "/products/searchai/05.png",
       title: "Success Story: Research Team Saves 70% Time",
       description: "See how a university research team dramatically improved their literature review process and data analysis using SearchAI's intelligent search capabilities.",
       ctaText: "Read success story",
-      ctaLink: "/customers/university-research-success",
+      ctaLink: "https://searchai.augment.cfd/",
       target: "_self" as const
     }
   ];
@@ -71,7 +71,7 @@ export default function SearchAIPage() {
         description: "Ask questions in plain English and get comprehensive, intelligent responses with interactive UI components. Our AI understands context, nuance, and research intent to deliver exactly what you're looking for.",
         buttons: [
           { text: "Try intelligent search", href: "https://searchai.augment.cfd/", variant: "primary" as const },
-          { text: "See search examples", href: "/product/searchai/examples", variant: "secondary" as const }
+          { text: "See search examples", href: "https://searchai.augment.cfd/", variant: "secondary" as const }
         ],
         features: {
           title: "Search Capabilities",
@@ -86,7 +86,7 @@ export default function SearchAIPage() {
             "Safe search with time ranges"
           ]
         },
-        image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+        image: "/products/searchai/02.png",
         imageAlt: "SearchAI intelligent search interface with natural language processing"
       }
     },
@@ -97,8 +97,8 @@ export default function SearchAIPage() {
         title: "Choose the perfect AI model for your research",
         description: "Switch between multiple leading AI models in real-time to get the best results for different types of research. From quick answers to deep reasoning, choose the AI that fits your needs.",
         buttons: [
-          { text: "Explore AI models", href: "/product/searchai/models", variant: "primary" as const },
-          { text: "Model comparison guide", href: "/product/searchai/model-comparison", variant: "secondary" as const }
+          { text: "Explore AI models", href: "https://searchai.augment.cfd/", variant: "primary" as const },
+          { text: "Model comparison guide", href: "https://searchai.augment.cfd/", variant: "secondary" as const }
         ],
         features: {
           title: "Supported AI Models",
@@ -113,7 +113,7 @@ export default function SearchAIPage() {
             "Reasoning models with thought processes"
           ]
         },
-        image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+        image: "/products/searchai/03.png",
         imageAlt: "Multiple AI models interface for research optimization"
       }
     },
@@ -124,8 +124,8 @@ export default function SearchAIPage() {
         title: "Deep research with multiple search providers",
         description: "Go beyond surface-level results with advanced search capabilities that tap into multiple search engines, databases, and specialized sources for comprehensive research coverage.",
         buttons: [
-          { text: "Try advanced search", href: "/product/searchai/advanced", variant: "primary" as const },
-          { text: "Search provider guide", href: "/product/searchai/providers", variant: "secondary" as const }
+          { text: "Try advanced search", href: "https://searchai.augment.cfd/", variant: "primary" as const },
+          { text: "Search provider guide", href: "https://searchai.augment.cfd/", variant: "secondary" as const }
         ],
         features: {
           title: "Search Providers",
@@ -140,7 +140,7 @@ export default function SearchAIPage() {
             "Custom search depth control"
           ]
         },
-        image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+        image: "/products/searchai/04.png",
         imageAlt: "Advanced search interface with multiple data sources"
       }
     },
@@ -151,8 +151,8 @@ export default function SearchAIPage() {
         title: "Complete research workflow management",
         description: "Manage your entire research process with persistent chat history, shareable results, secure authentication, and collaborative features designed for serious researchers and teams.",
         buttons: [
-          { text: "Explore research tools", href: "/product/searchai/tools", variant: "primary" as const },
-          { text: "Team collaboration guide", href: "/product/searchai/collaboration", variant: "secondary" as const }
+          { text: "Explore research tools", href: "https://searchai.augment.cfd/", variant: "primary" as const },
+          { text: "Team collaboration guide", href: "https://searchai.augment.cfd/", variant: "secondary" as const }
         ],
         features: {
           title: "Research Features",
@@ -167,7 +167,7 @@ export default function SearchAIPage() {
             "Research project organization"
           ]
         },
-        image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+        image: "/products/searchai/05.png",
         imageAlt: "Research workflow management tools and collaboration features"
       }
     }
@@ -180,7 +180,7 @@ export default function SearchAIPage() {
       description: "Unlike traditional search engines, SearchAI uses advanced natural language processing to understand the context and intent behind your questions, delivering precisely targeted results with interactive components that enhance comprehension.",
       link: {
         text: "Learn about our AI search technology",
-        href: "/product/searchai/technology"
+        href: "https://searchai.augment.cfd/"
       }
     },
     {
@@ -204,83 +204,83 @@ export default function SearchAIPage() {
     title: "Customer Success Story",
     company: "University Research Lab achieves 70% faster literature reviews",
     description: "A leading university research team transformed their literature review process using SearchAI's intelligent search and multi-model AI capabilities, reducing research time from weeks to days while improving result quality.",
-    image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1226&q=80",
+    image: "/products/searchai/01.png",
     linkText: "Read the research success story",
-    linkHref: "/customers/university-research-lab"
+    linkHref: "https://searchai.augment.cfd/"
   };
 
   const customerLogos = [
     {
-      name: "Stanford Research",
-      image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=200&h=80&fit=crop&crop=center",
-      href: "/customers/stanford-research",
-      alt: "Stanford Research logo"
+      name: "OpenAI",
+      image: "https://logo.clearbit.com/openai.com",
+      href: "https://searchai.augment.cfd/",
+      alt: "OpenAI logo"
     },
     {
-      name: "MIT Innovation Lab",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=80&fit=crop&crop=center",
-      href: "/customers/mit-innovation",
-      alt: "MIT Innovation Lab logo"
+      name: "Anthropic",
+      image: "https://logo.clearbit.com/anthropic.com",
+      href: "https://searchai.augment.cfd/",
+      alt: "Anthropic logo"
     },
     {
-      name: "McKinsey Research",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=200&h=80&fit=crop&crop=center",
-      href: "/customers/mckinsey-research", 
-      alt: "McKinsey Research logo"
+      name: "Perplexity",
+      image: "https://logo.clearbit.com/perplexity.ai",
+      href: "https://searchai.augment.cfd/", 
+      alt: "Perplexity logo"
     },
     {
-      name: "Oxford Analytics",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=200&h=80&fit=crop&crop=center",
-      href: "/customers/oxford-analytics",
-      alt: "Oxford Analytics logo"
+      name: "Hugging Face",
+      image: "https://logo.clearbit.com/huggingface.co",
+      href: "https://searchai.augment.cfd/",
+      alt: "Hugging Face logo"
     },
     {
-      name: "Harvard Business Review", 
-      image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=200&h=80&fit=crop&crop=center",
-      href: "/customers/harvard-business-review",
-      alt: "Harvard Business Review logo"
+      name: "Cohere", 
+      image: "https://logo.clearbit.com/cohere.ai",
+      href: "https://searchai.augment.cfd/",
+      alt: "Cohere logo"
     },
     {
-      name: "Reuters Investigation",
-      image: "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=200&h=80&fit=crop&crop=center",
-      href: "/customers/reuters-investigation",
-      alt: "Reuters Investigation logo"
+      name: "Pinecone",
+      image: "https://logo.clearbit.com/pinecone.io",
+      href: "https://searchai.augment.cfd/",
+      alt: "Pinecone logo"
     },
     {
-      name: "Nature Research",
-      image: "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=200&h=80&fit=crop&crop=center",
-      href: "/customers/nature-research",
-      alt: "Nature Research logo"
+      name: "Weaviate",
+      image: "https://logo.clearbit.com/weaviate.io",
+      href: "https://searchai.augment.cfd/",
+      alt: "Weaviate logo"
     },
     {
-      name: "Goldman Sachs Research",
-      image: "https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=200&h=80&fit=crop&crop=center",
-      href: "/customers/goldman-sachs-research", 
-      alt: "Goldman Sachs Research logo"
+      name: "Langchain",
+      image: "https://logo.clearbit.com/langchain.com",
+      href: "https://searchai.augment.cfd/", 
+      alt: "Langchain logo"
     },
     {
-      name: "Cambridge Analytics",
-      image: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=200&h=80&fit=crop&crop=center",
-      href: "/customers/cambridge-analytics",
-      alt: "Cambridge Analytics logo"
+      name: "Replicate",
+      image: "https://logo.clearbit.com/replicate.com",
+      href: "https://searchai.augment.cfd/",
+      alt: "Replicate logo"
     },
     {
-      name: "Deloitte Insights", 
-      image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=200&h=80&fit=crop&crop=center",
-      href: "/customers/deloitte-insights",
-      alt: "Deloitte Insights logo"
+      name: "Together AI", 
+      image: "https://logo.clearbit.com/together.ai",
+      href: "https://searchai.augment.cfd/",
+      alt: "Together AI logo"
     },
     {
-      name: "RAND Corporation",
-      image: "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=200&h=80&fit=crop&crop=center",
-      href: "/customers/rand-corporation",
-      alt: "RAND Corporation logo"
+      name: "Groq",
+      image: "https://logo.clearbit.com/groq.com",
+      href: "https://searchai.augment.cfd/",
+      alt: "Groq logo"
     },
     {
-      name: "Brookings Institution",
-      image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=200&h=80&fit=crop&crop=center", 
-      href: "/customers/brookings-institution",
-      alt: "Brookings Institution logo"
+      name: "Mistral AI",
+      image: "https://logo.clearbit.com/mistral.ai", 
+      href: "https://searchai.augment.cfd/",
+      alt: "Mistral AI logo"
     }
   ];
 
@@ -291,12 +291,12 @@ export default function SearchAIPage() {
       content: {
         title: "Latest AI search innovations and features",
         description: "Stay updated with the newest capabilities in AI-powered search, from advanced model integrations to enhanced research tools and collaborative features.",
-        image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        image: "/products/searchai/02.png",
         links: [
-          { text: "Latest AI model integrations", href: "/resources/model-updates" },
-          { text: "New search provider additions", href: "/resources/search-providers" },
-          { text: "Research workflow enhancements", href: "/resources/workflow-updates" },
-          { text: "UI and experience improvements", href: "/resources/ui-updates" }
+          { text: "Latest AI model integrations", href: "https://searchai.augment.cfd/" },
+          { text: "New search provider additions", href: "https://searchai.augment.cfd/" },
+          { text: "Research workflow enhancements", href: "https://searchai.augment.cfd/" },
+          { text: "UI and experience improvements", href: "https://searchai.augment.cfd/" }
         ]
       }
     },
@@ -306,12 +306,12 @@ export default function SearchAIPage() {
       content: {
         title: "See why SearchAI leads AI-powered research",
         description: "SearchAI combines the power of multiple AI models with advanced search providers and intelligent UI to deliver superior research capabilities compared to traditional search engines.",
-        image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        image: "/products/searchai/03.png",
         links: [
-          { text: "SearchAI vs Google Search", href: "/resources/compare-google" },
-          { text: "SearchAI vs Perplexity", href: "/resources/compare-perplexity" },
-          { text: "Traditional vs AI search comparison", href: "/resources/traditional-vs-ai-search" },
-          { text: "Research efficiency calculator", href: "/resources/efficiency-calculator" }
+          { text: "SearchAI vs Google Search", href: "https://searchai.augment.cfd/" },
+          { text: "SearchAI vs Perplexity", href: "https://searchai.augment.cfd/" },
+          { text: "Traditional vs AI search comparison", href: "https://searchai.augment.cfd/" },
+          { text: "Research efficiency calculator", href: "https://searchai.augment.cfd/" }
         ]
       }
     },
@@ -321,12 +321,12 @@ export default function SearchAIPage() {
       content: {
         title: "Connect with researchers and AI enthusiasts",
         description: "Join a growing community of researchers, academics, analysts, and AI enthusiasts sharing insights, best practices, and discoveries made with SearchAI.",
-        image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        image: "/products/searchai/04.png",
         links: [
-          { text: "Join researcher Discord community", href: "https://discord.gg/searchai", target: "_blank" },
-          { text: "Research methodology forum", href: "/community/methodology" },
-          { text: "Academic user groups", href: "/community/academic" },
-          { text: "Share your research findings", href: "/community/findings" }
+          { text: "Join researcher Discord community", href: "https://searchai.augment.cfd/", target: "_blank" },
+          { text: "Research methodology forum", href: "https://searchai.augment.cfd/" },
+          { text: "Academic user groups", href: "https://searchai.augment.cfd/" },
+          { text: "Share your research findings", href: "https://searchai.augment.cfd/" }
         ]
       }
     },
@@ -336,12 +336,12 @@ export default function SearchAIPage() {
       content: {
         title: "Learn advanced research techniques",
         description: "Master the art of AI-powered research with comprehensive guides, tutorials, and best practices for academic research, market analysis, and investigative work.",
-        image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        image: "/products/searchai/05.png",
         links: [
-          { text: "AI search research masterclass", href: "/learning/research-masterclass" },
-          { text: "Advanced query techniques", href: "/learning/query-techniques" },
-          { text: "Multi-model research strategies", href: "/learning/multi-model-research" },
-          { text: "Research workflow optimization", href: "/learning/workflow-optimization" }
+          { text: "AI search research masterclass", href: "https://searchai.augment.cfd/" },
+          { text: "Advanced query techniques", href: "https://searchai.augment.cfd/" },
+          { text: "Multi-model research strategies", href: "https://searchai.augment.cfd/" },
+          { text: "Research workflow optimization", href: "https://searchai.augment.cfd/" }
         ]
       }
     },
@@ -351,12 +351,12 @@ export default function SearchAIPage() {
       content: {
         title: "Expert help for your research needs",
         description: "Access comprehensive support resources, expert guidance, and specialized assistance to maximize your research productivity with SearchAI's advanced capabilities.",
-        image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        image: "/products/searchai/01.png",
         links: [
-          { text: "Contact research support", href: "/support/research-contact" },
-          { text: "Browse documentation", href: "/support/docs" },
-          { text: "Research setup assistance", href: "/support/research-setup" },
-          { text: "Schedule expert consultation", href: "/support/research-consultation" }
+          { text: "Contact research support", href: "https://searchai.augment.cfd/" },
+          { text: "Browse documentation", href: "https://searchai.augment.cfd/" },
+          { text: "Research setup assistance", href: "https://searchai.augment.cfd/" },
+          { text: "Schedule expert consultation", href: "https://searchai.augment.cfd/" }
         ]
       }
     },
@@ -366,12 +366,12 @@ export default function SearchAIPage() {
       content: {
         title: "Discover research insights and methodologies",
         description: "Explore our extensive library of research guides, case studies, methodology papers, and analysis reports to enhance your research capabilities and outcomes.",
-        image: "https://images.unsplash.com/photo-1532094349884-543bc11b234d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        image: "/products/searchai/02.png",
         links: [
-          { text: "Research methodology library", href: "/resources/methodology" },
-          { text: "Customer research case studies", href: "/resources/research-cases" },
-          { text: "Download research whitepapers", href: "/resources/research-papers" },
-          { text: "Follow our research blog", href: "/blog/research" }
+          { text: "Research methodology library", href: "https://searchai.augment.cfd/" },
+          { text: "Customer research case studies", href: "https://searchai.augment.cfd/" },
+          { text: "Download research whitepapers", href: "https://searchai.augment.cfd/" },
+          { text: "Follow our research blog", href: "https://searchai.augment.cfd/" }
         ]
       }
     }
@@ -390,7 +390,7 @@ export default function SearchAIPage() {
     },
     {
       title: "Contact sales",
-      href: "/contact",
+      href: "https://searchai.augment.cfd/",
       icon: "contact"
     }
   ];
@@ -412,8 +412,8 @@ export default function SearchAIPage() {
           description="A powerful AI-powered search engine with intelligent generative UI for deep research. Ask questions in natural language and get comprehensive, interactive responses with multiple AI model support. Perfect for researchers, analysts, and anyone who needs to go beyond surface-level search results."
           ctaButtons={ctaButtons}
           mediaType="video"
-          mediaUrl="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
-          videoThumbnail="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+          mediaUrl="/products/searchai/01.png"
+          videoThumbnail="/products/searchai/01.png"
           mediaAlt="SearchAI intelligent search interface with natural language processing and AI models"
         />
 
@@ -435,7 +435,7 @@ export default function SearchAIPage() {
           title="SearchAI research successes"
           description="Learn why leading universities, research institutions, and analytical organizations use SearchAI to enhance their research capabilities and accelerate discovery. Click on a logo to learn more."
           viewMoreText="View more research successes"
-          viewMoreHref="/customers"
+          viewMoreHref="https://searchai.augment.cfd/"
           logos={customerLogos}
         />
 
@@ -449,9 +449,9 @@ export default function SearchAIPage() {
         <ProductCTABanner
           title="The SearchAI Research Methodology Guide"
           description="We've compiled advanced AI search techniques, research best practices, and methodology frameworks used by leading researchers. Learn how to maximize your research efficiency and quality."
-          image="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+          image="/products/searchai/03.png"
           buttonText="Get the research guide"
-          buttonHref="/resources/research-methodology-guide"
+          buttonHref="https://searchai.augment.cfd/"
         />
 
         {/* Get Started Section */}

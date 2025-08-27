@@ -70,7 +70,7 @@ export function ProductCustomerLogos({
                   <img
                     src={logo.image}
                     alt={logo.alt}
-                    className="max-h-full max-w-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                    className="max-h-full max-w-full object-contain transition-all duration-300 hover:opacity-80"
                     style={{
                       height: '4.5rem',
                       width: 'auto',

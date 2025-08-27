@@ -28,7 +28,7 @@ export const PRODUCTS: Product[] = [
     featured: true,
     status: 'live',
     tags: ['HR', 'Automation', 'AI', 'Employee Management'],
-    image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
+    image: '/products/aihr/01.png',
     productUrl: 'https://aihr.augment.cfd/'
   },
   {
@@ -43,7 +43,7 @@ export const PRODUCTS: Product[] = [
     featured: true,
     status: 'live',
     tags: ['Workflow Automation', 'AI Agent', 'Integration', 'Productivity'],
-    image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
+    image: '/products/flow/01.png',
     productUrl: 'https://flow.augment.cfd/'
   },
   {
@@ -58,7 +58,7 @@ export const PRODUCTS: Product[] = [
     featured: true,
     status: 'live',
     tags: ['AI Search', 'Research', 'Natural Language', 'Deep Search'],
-    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
+    image: '/products/searchai/01.png',
     productUrl: 'https://searchai.augment.cfd/'
   }
 ];

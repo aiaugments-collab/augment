@@ -94,7 +94,7 @@ export function ProductBanner() {
                     <div>
                       <a 
                         data-lbl="panel1-home-apps-learn-more" 
-                        href="/applications/"
+                        href="/product/"
                         style={{
                           backgroundColor: "transparent",
                           color: "#fff",
@@ -198,7 +198,7 @@ export function ProductBanner() {
                     <div>
                       <a 
                         data-lbl="panel2-home-ai-learn-more" 
-                        href="/ai-agents/"
+                        href="/product/"
                         style={{
                           backgroundColor: "transparent",
                           color: "#fff",

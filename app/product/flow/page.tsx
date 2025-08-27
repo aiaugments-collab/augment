@@ -26,38 +26,38 @@ export default function AugmentFlowPage() {
   const promoCards = [
     {
       id: "workflow-automation",
-      image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
+      image: "/products/flow/02.png",
       title: "Webinar: Mastering AI-Powered Workflow Automation",
       description: "Learn how to transform your daily tasks with AI agents that work across 200+ applications, from Gmail to Slack to GitHub.",
       ctaText: "Register now",
-      ctaLink: "/webinars/workflow-automation",
+      ctaLink: "https://flow.augment.cfd/",
       target: "_blank" as const
     },
     {
       id: "background-agents",
-      image: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
+      image: "/products/flow/03.png",
       title: "Background Agents: The Future of Smart Scheduling",
       description: "Discover how background agents adapt, learn patterns, and evolve your workflows over time without manual intervention.",
       ctaText: "Learn more",
-      ctaLink: "/features/background-agents",
+      ctaLink: "https://flow.augment.cfd/",
       target: "_blank" as const
     },
     {
       id: "integration-guide",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
+      image: "/products/flow/04.png",
       title: "200+ App Integrations: Complete Setup Guide",
       description: "Step-by-step guide to connecting your favorite apps and creating seamless workflows with natural language commands.",
       ctaText: "Download guide (PDF)",
-      ctaLink: "/resources/integration-setup-guide.pdf",
+      ctaLink: "https://flow.augment.cfd/",
       target: "_blank" as const
     },
     {
       id: "success-stories",
-      image: "https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
+      image: "/products/flow/05.png",
       title: "Customer Success: 10x Productivity Boost",
       description: "See how companies are achieving dramatic productivity improvements with AI agents that work even when they're away.",
       ctaText: "Read success stories",
-      ctaLink: "/customers/success-stories",
+      ctaLink: "https://flow.augment.cfd/",
       target: "_self" as const
     }
   ];
@@ -70,7 +70,7 @@ export default function AugmentFlowPage() {
         title: "AI agents that turn words into actions",
         description: "Transform your daily tasks with intelligent automation that connects Gmail, Notion, GitHub, Slack, and 200+ other apps. Simply describe what you want to accomplish, and our AI agents handle the complex workflows across multiple platforms.",
         buttons: [
-          { text: "See automation examples", href: "/product/flow/automation", variant: "primary" as const },
+          { text: "See automation examples", href: "https://flow.augment.cfd/", variant: "primary" as const },
           { text: "Try workflow builder", href: "https://flow.augment.cfd/builder", variant: "secondary" as const }
         ],
         features: {
@@ -86,7 +86,7 @@ export default function AugmentFlowPage() {
             "Multi-step process automation"
           ]
         },
-        image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+        image: "/products/flow/02.png",
         imageAlt: "Augment Flow workflow automation dashboard"
       }
     },
@@ -97,8 +97,8 @@ export default function AugmentFlowPage() {
         title: "Smart scheduling for complex workflows",
         description: "Experience the difference between automation and anticipation. Our background agents don't just follow scripts - they adapt, learn patterns, and evolve your workflows over time, working continuously even when you're away.",
         buttons: [
-          { text: "Explore background agents", href: "/product/flow/background-agents", variant: "primary" as const },
-          { text: "See agent examples", href: "/product/flow/agents/examples", variant: "secondary" as const }
+          { text: "Explore background agents", href: "https://flow.augment.cfd/", variant: "primary" as const },
+          { text: "See agent examples", href: "https://flow.augment.cfd/agents", variant: "secondary" as const }
         ],
         features: {
           title: "Advanced Features",
@@ -113,7 +113,7 @@ export default function AugmentFlowPage() {
             "Self-improving algorithms"
           ]
         },
-        image: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+        image: "/products/flow/03.png",
         imageAlt: "Background agents working interface"
       }
     },
@@ -124,8 +124,8 @@ export default function AugmentFlowPage() {
         title: "200+ apps, one simple command",
         description: "Connect your entire digital workspace with seamless integrations across Gmail, Notion, GitHub, Slack, Twitter, Google Calendar, and hundreds more. Your words become actions across every platform you use daily.",
         buttons: [
-          { text: "Browse all integrations", href: "/product/flow/integrations", variant: "primary" as const },
-          { text: "Request new integration", href: "/product/flow/integrations/request", variant: "secondary" as const }
+          { text: "Browse all integrations", href: "https://flow.augment.cfd/", variant: "primary" as const },
+          { text: "Request new integration", href: "https://flow.augment.cfd/", variant: "secondary" as const }
         ],
         features: {
           title: "Popular Integrations",
@@ -140,7 +140,7 @@ export default function AugmentFlowPage() {
             "Zapier & Make.com"
           ]
         },
-        image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+        image: "/products/flow/04.png",
         imageAlt: "App integrations dashboard"
       }
     },
@@ -151,8 +151,8 @@ export default function AugmentFlowPage() {
         title: "Agentic AI for everyone",
         description: "Whether you're a marketer, developer, recruiter, or founder, Augment Flow adapts to your specific needs. Our agentic AI understands context, learns from your preferences, and executes complex multi-step workflows autonomously.",
         buttons: [
-          { text: "See role-specific examples", href: "/product/flow/roles", variant: "primary" as const },
-          { text: "Try personalized demo", href: "/product/flow/demo", variant: "secondary" as const }
+          { text: "See role-specific examples", href: "https://flow.augment.cfd/", variant: "primary" as const },
+          { text: "Try personalized demo", href: "https://flow.augment.cfd/", variant: "secondary" as const }
         ],
         features: {
           title: "Role-Based Solutions",
@@ -167,7 +167,7 @@ export default function AugmentFlowPage() {
             "Customer support optimization"
           ]
         },
-        image: "https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+        image: "/products/flow/05.png",
         imageAlt: "Agentic AI interface for different roles"
       }
     }
@@ -180,7 +180,7 @@ export default function AugmentFlowPage() {
       description: "Experience true automation with AI agents that continue working in the background, adapting to changing conditions and executing complex workflows across 200+ apps without your constant supervision.",
       link: {
         text: "Learn about background agent technology",
-        href: "/product/flow/background-agents"
+        href: "https://flow.augment.cfd/"
       }
     },
     {
@@ -204,83 +204,83 @@ export default function AugmentFlowPage() {
     title: "Customer Success Story",
     company: "TechStartup scales 10x with Augment Flow automation",
     description: "A fast-growing startup automated their entire marketing and sales pipeline using Augment Flow, reducing manual work by 80% and scaling from 10 to 100 customers without adding headcount.",
-    image: "https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1226&q=80",
+    image: "/products/flow/01.png",
     linkText: "Read the success story",
-    linkHref: "/customers/techstartup-success"
+    linkHref: "https://flow.augment.cfd/"
   };
 
   const customerLogos = [
     {
-      name: "Founders Inc",
-      image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=200&h=80&fit=crop&crop=center",
-      href: "/customers/founders-inc",
-      alt: "Founders Inc logo"
+      name: "GitHub",
+      image: "https://logo.clearbit.com/github.com",
+      href: "https://flow.augment.cfd/",
+      alt: "GitHub logo"
     },
     {
-      name: "Bengaluru Tech Hub",
-      image: "https://images.unsplash.com/photo-1541746972996-4e0b0f93e586?w=200&h=80&fit=crop&crop=center",
-      href: "/customers/bengaluru-tech",
-      alt: "Bengaluru Tech Hub logo"
+      name: "Notion",
+      image: "https://logo.clearbit.com/notion.so",
+      href: "https://flow.augment.cfd/",
+      alt: "Notion logo"
     },
     {
-      name: "Koramangala Labs",
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=200&h=80&fit=crop&crop=center",
-      href: "/customers/koramangala-labs", 
-      alt: "Koramangala Labs logo"
+      name: "Slack",
+      image: "https://logo.clearbit.com/slack.com",
+      href: "https://flow.augment.cfd/", 
+      alt: "Slack logo"
     },
     {
-      name: "AI Robotics Co",
-      image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=200&h=80&fit=crop&crop=center",
-      href: "/customers/ai-robotics",
-      alt: "AI Robotics Co logo"
+      name: "Discord",
+      image: "https://logo.clearbit.com/discord.com",
+      href: "https://flow.augment.cfd/",
+      alt: "Discord logo"
     },
     {
-      name: "3D Print Solutions", 
-      image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=200&h=80&fit=crop&crop=center",
-      href: "/customers/3d-print-solutions",
-      alt: "3D Print Solutions logo"
+      name: "Figma", 
+      image: "https://logo.clearbit.com/figma.com",
+      href: "https://flow.augment.cfd/",
+      alt: "Figma logo"
     },
     {
-      name: "GPU Computing Inc",
-      image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=200&h=80&fit=crop&crop=center",
-      href: "/customers/gpu-computing",
-      alt: "GPU Computing Inc logo"
+      name: "Linear",
+      image: "https://logo.clearbit.com/linear.app",
+      href: "https://flow.augment.cfd/",
+      alt: "Linear logo"
     },
     {
-      name: "SaaS Growth Co",
-      image: "https://images.unsplash.com/photo-1565793298595-6a879b1d9492?w=200&h=80&fit=crop&crop=center",
-      href: "/customers/saas-growth",
-      alt: "SaaS Growth Co logo"
+      name: "Vercel",
+      image: "https://logo.clearbit.com/vercel.com",
+      href: "https://flow.augment.cfd/",
+      alt: "Vercel logo"
     },
     {
-      name: "Influencer Marketing Pro",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=200&h=80&fit=crop&crop=center",
-      href: "/customers/influencer-marketing", 
-      alt: "Influencer Marketing Pro logo"
+      name: "Stripe",
+      image: "https://logo.clearbit.com/stripe.com",
+      href: "https://flow.augment.cfd/", 
+      alt: "Stripe logo"
     },
     {
-      name: "College Life AI",
-      image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=200&h=80&fit=crop&crop=center",
-      href: "/customers/college-life-ai",
-      alt: "College Life AI logo"
+      name: "Zapier",
+      image: "https://logo.clearbit.com/zapier.com",
+      href: "https://flow.augment.cfd/",
+      alt: "Zapier logo"
     },
     {
-      name: "AWS Automation", 
-      image: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=200&h=80&fit=crop&crop=center",
-      href: "/customers/aws-automation",
-      alt: "AWS Automation logo"
+      name: "Monday", 
+      image: "https://logo.clearbit.com/monday.com",
+      href: "https://flow.augment.cfd/",
+      alt: "Monday logo"
     },
     {
-      name: "Workflow Wizards",
-      image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=200&h=80&fit=crop&crop=center",
-      href: "/customers/workflow-wizards",
-      alt: "Workflow Wizards logo"
+      name: "Airtable",
+      image: "https://logo.clearbit.com/airtable.com",
+      href: "https://flow.augment.cfd/",
+      alt: "Airtable logo"
     },
     {
-      name: "Productivity Plus",
-      image: "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=200&h=80&fit=crop&crop=center", 
-      href: "/customers/productivity-plus",
-      alt: "Productivity Plus logo"
+      name: "Typeform",
+      image: "https://logo.clearbit.com/typeform.com", 
+      href: "https://flow.augment.cfd/",
+      alt: "Typeform logo"
     }
   ];
 
@@ -291,12 +291,12 @@ export default function AugmentFlowPage() {
       content: {
         title: "Stay updated with AI workflow innovations",
         description: "Discover the latest features, integrations, and capabilities in Augment Flow. From new app connections to enhanced AI agents, see how we're pushing the boundaries of workflow automation.",
-        image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        image: "/products/flow/02.png",
         links: [
-          { text: "Latest product updates and features", href: "/resources/updates" },
-          { text: "New app integrations this month", href: "/resources/integrations" },
-          { text: "Join our community Discord", href: "https://discord.gg/augmentflow" },
-          { text: "Follow us on X for real-time updates", href: "https://x.com/augmentflowai" }
+          { text: "Latest product updates and features", href: "https://flow.augment.cfd/" },
+          { text: "New app integrations this month", href: "https://flow.augment.cfd/" },
+          { text: "Join our community Discord", href: "https://flow.augment.cfd/" },
+          { text: "Follow us on X for real-time updates", href: "https://flow.augment.cfd/" }
         ]
       }
     },
@@ -306,12 +306,12 @@ export default function AugmentFlowPage() {
       content: {
         title: "See why Augment Flow leads workflow automation",
         description: "Augment Flow goes beyond traditional automation tools with true agentic AI that understands context, learns patterns, and works autonomously across 200+ applications.",
-        image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        image: "/products/flow/03.png",
         links: [
-          { text: "Compare with Zapier and Make.com", href: "/resources/compare-automation" },
-          { text: "Augment Flow vs traditional workflows", href: "/resources/traditional-vs-ai" },
-          { text: "ROI calculator for workflow automation", href: "/resources/roi-calculator" },
-          { text: "Migration guide from other platforms", href: "/resources/migration-guide" }
+          { text: "Compare with Zapier and Make.com", href: "https://flow.augment.cfd/" },
+          { text: "Augment Flow vs traditional workflows", href: "https://flow.augment.cfd/" },
+          { text: "ROI calculator for workflow automation", href: "https://flow.augment.cfd/" },
+          { text: "Migration guide from other platforms", href: "https://flow.augment.cfd/" }
         ]
       }
     },
@@ -321,12 +321,12 @@ export default function AugmentFlowPage() {
       content: {
         title: "Connect with workflow automation experts",
         description: "Join thousands of professionals, developers, and AI enthusiasts sharing workflows, best practices, and success stories in our vibrant community.",
-        image: "https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        image: "/products/flow/04.png",
         links: [
-          { text: "Join Discord community", href: "https://discord.gg/augmentflow", target: "_blank" },
-          { text: "Workflow sharing forum", href: "/community/workflows" },
-          { text: "Developer API community", href: "/community/developers" },
-          { text: "Share your automation success", href: "/community/success-stories" }
+          { text: "Join Discord community", href: "https://flow.augment.cfd/", target: "_blank" },
+          { text: "Workflow sharing forum", href: "https://flow.augment.cfd/" },
+          { text: "Developer API community", href: "https://flow.augment.cfd/" },
+          { text: "Share your automation success", href: "https://flow.augment.cfd/" }
         ]
       }
     },
@@ -336,12 +336,12 @@ export default function AugmentFlowPage() {
       content: {
         title: "Learn to build powerful AI workflows",
         description: "Master the art of AI-powered workflow automation with comprehensive tutorials, best practices, and hands-on examples for every skill level.",
-        image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        image: "/products/flow/05.png",
         links: [
-          { text: "Workflow automation masterclass", href: "/learning/masterclass" },
-          { text: "API integration tutorials", href: "/learning/api-tutorials" },
-          { text: "Best practices guide", href: "/learning/best-practices" },
-          { text: "Advanced agent configuration", href: "/learning/advanced-agents" }
+          { text: "Workflow automation masterclass", href: "https://flow.augment.cfd/" },
+          { text: "API integration tutorials", href: "https://flow.augment.cfd/" },
+          { text: "Best practices guide", href: "https://flow.augment.cfd/" },
+          { text: "Advanced agent configuration", href: "https://flow.augment.cfd/" }
         ]
       }
     },
@@ -351,12 +351,12 @@ export default function AugmentFlowPage() {
       content: {
         title: "Expert support for your workflows",
         description: "Access comprehensive documentation, expert guidance, and dedicated support to maximize your workflow automation success with Augment Flow.",
-        image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        image: "/products/flow/01.png",
         links: [
-          { text: "Contact technical support", href: "/support/contact" },
-          { text: "Browse documentation", href: "/support/docs" },
-          { text: "Workflow setup assistance", href: "/support/setup" },
-          { text: "Schedule expert consultation", href: "/support/consultation" }
+          { text: "Contact technical support", href: "https://flow.augment.cfd/" },
+          { text: "Browse documentation", href: "https://flow.augment.cfd/" },
+          { text: "Workflow setup assistance", href: "https://flow.augment.cfd/" },
+          { text: "Schedule expert consultation", href: "https://flow.augment.cfd/" }
         ]
       }
     },
@@ -366,12 +366,12 @@ export default function AugmentFlowPage() {
       content: {
         title: "Discover automation insights and resources",
         description: "Explore our extensive library of workflow templates, case studies, automation guides, and research to stay ahead in the world of AI-powered productivity.",
-        image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        image: "/products/flow/02.png",
         links: [
-          { text: "Workflow template library", href: "/resources/templates" },
-          { text: "Customer automation case studies", href: "/resources/case-studies" },
-          { text: "Download automation whitepapers", href: "/resources/whitepapers" },
-          { text: "Follow our automation blog", href: "/blog" }
+          { text: "Workflow template library", href: "https://flow.augment.cfd/" },
+          { text: "Customer automation case studies", href: "https://flow.augment.cfd/" },
+          { text: "Download automation whitepapers", href: "https://flow.augment.cfd/" },
+          { text: "Follow our automation blog", href: "https://flow.augment.cfd/" }
         ]
       }
     }
@@ -390,7 +390,7 @@ export default function AugmentFlowPage() {
     },
     {
       title: "Contact sales",
-      href: "/contact",
+      href: "https://flow.augment.cfd/",
       icon: "contact"
     }
   ];
@@ -412,8 +412,8 @@ export default function AugmentFlowPage() {
           description="AI Agent that works even when you're away. Your words become actions across every platform you use. 200+ apps working towards a future where technology acts, not just responds. Experience the difference between automation and anticipation with intelligent agents that adapt, learn, and evolve your workflows."
           ctaButtons={ctaButtons}
           mediaType="video"
-          mediaUrl="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
-          videoThumbnail="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+          mediaUrl="/products/flow/01.png"
+          videoThumbnail="/products/flow/01.png"
           mediaAlt="Augment Flow dashboard showing AI agents working across multiple applications"
         />
 
@@ -435,7 +435,7 @@ export default function AugmentFlowPage() {
           title="Augment Flow customer successes"
           description="Learn why companies across all industries use Augment Flow to automate workflows, boost productivity, and scale operations. Click on a logo to learn more."
           viewMoreText="View more customer successes"
-          viewMoreHref="/customers"
+          viewMoreHref="https://flow.augment.cfd/"
           logos={customerLogos}
         />
 
@@ -449,9 +449,9 @@ export default function AugmentFlowPage() {
         <ProductCTABanner
           title="The Augment Flow Automation Playbook"
           description="We've compiled the secrets to our AI-powered workflow automation strategy, implementation best practices, and transformation methodology. And we want to share them with you."
-          image="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+          image="/products/flow/03.png"
           buttonText="Get the playbook"
-          buttonHref="/playbook/automation"
+          buttonHref="https://flow.augment.cfd/"
         />
 
         {/* Get Started Section */}
