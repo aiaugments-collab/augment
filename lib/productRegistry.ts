@@ -45,6 +45,21 @@ export const PRODUCTS: Product[] = [
     tags: ['Workflow Automation', 'AI Agent', 'Integration', 'Productivity'],
     image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
     productUrl: 'https://flow.augment.cfd/'
+  },
+  {
+    id: 'searchai',
+    name: 'SearchAI',
+    shortName: 'SearchAI',
+    description: 'A powerful AI-powered search engine with intelligent generative UI for deep research. Get natural language responses with interactive components, multiple AI model support, and advanced search capabilities.',
+    shortDescription: 'AI-powered search engine for intelligent research',
+    category: 'ai-agent',
+    href: '/product/searchai',
+    icon: '🔍',
+    featured: true,
+    status: 'live',
+    tags: ['AI Search', 'Research', 'Natural Language', 'Deep Search'],
+    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
+    productUrl: 'https://searchai.augment.cfd/'
   }
 ];
 
