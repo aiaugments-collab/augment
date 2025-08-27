@@ -12,13 +12,13 @@ import { Breadcrumb } from "@/components/ui/Breadcrumb";
 export default function AIHRPage() {
   const ctaButtons = [
     {
-      text: "Take a product tour",
-      href: "/product/aihr/tour",
+      text: "Get Started",
+      href: "https://aihr.augment.cfd/",
       variant: "primary" as const
     },
     {
-      text: "Chat with AI",
-      href: "/product/aihr/demo",
+      text: "Chat with AI Agent",
+      href: "https://aihr.augment.cfd/",
       variant: "secondary" as const
     }
   ];
