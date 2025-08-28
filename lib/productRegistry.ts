@@ -6,7 +6,7 @@ export interface Product {
   shortDescription?: string;
   category: 'ai-agent' | 'cloud-applications';
   href: string;
-  icon?: string;
+  icon?: string; // Professional icon names: 'users', 'workflow', 'search', 'banknote', 'bot', 'building', 'chart', 'brain', 'shield'
   featured?: boolean;
   status: 'live' | 'coming-soon' | 'beta';
   tags?: string[];
@@ -24,7 +24,7 @@ export const PRODUCTS: Product[] = [
     shortDescription: 'AI-powered human resources automation platform',
     category: 'ai-agent',
     href: '/product/aihr',
-    icon: '👥',
+    icon: 'users',
     featured: true,
     status: 'live',
     tags: ['HR', 'Automation', 'AI', 'Employee Management'],
@@ -39,7 +39,7 @@ export const PRODUCTS: Product[] = [
     shortDescription: 'AI-powered workflow automation across 200+ apps',
     category: 'ai-agent',
     href: '/product/flow',
-    icon: '🔄',
+    icon: 'workflow',
     featured: true,
     status: 'live',
     tags: ['Workflow Automation', 'AI Agent', 'Integration', 'Productivity'],
@@ -54,12 +54,27 @@ export const PRODUCTS: Product[] = [
     shortDescription: 'AI-powered search engine for intelligent research',
     category: 'ai-agent',
     href: '/product/searchai',
-    icon: '🔍',
+    icon: 'search',
     featured: true,
     status: 'live',
     tags: ['AI Search', 'Research', 'Natural Language', 'Deep Search'],
     image: '/products/searchai/01.png',
     productUrl: 'https://searchai.augment.cfd/'
+  },
+  {
+    id: 'finance-ai',
+    name: 'FinanceAI',
+    shortName: 'FinAI',
+    description: 'Transform your financial life with AI-powered insights, automated receipt scanning, and intelligent budget management. Your personal finance assistant that never sleeps.',
+    shortDescription: 'AI-powered personal finance management platform',
+    category: 'ai-agent',
+    href: '/product/finance-ai',
+    icon: 'banknote',
+    featured: true,
+    status: 'live',
+    tags: ['Finance', 'Budgeting', 'Receipt Scanning', 'AI Insights'],
+    image: '/products/finance-ai/01.png',
+    productUrl: 'https://financeai.augment.cfd/'
   }
 ];
 
@@ -69,13 +84,13 @@ export const PRODUCT_CATEGORIES = {
     name: 'Augment AI Agent',
     description: 'Intelligent AI assistants agents',
     color: '#4A90E2',
-    icon: '🤖'
+    icon: 'bot'
   },
   'cloud-applications': {
     name: 'Augment Cloud Applications',
     description: 'Comprehensive business applications for enterprise operations',
     color: '#50C878',
-    icon: '🏢'
+    icon: 'building'
   }
 } as const;
 
