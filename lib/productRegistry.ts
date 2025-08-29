@@ -90,6 +90,21 @@ export const PRODUCTS: Product[] = [
     tags: ['Resume', 'ATS Optimization', 'Job Search', 'Career'],
     image: '/products/resume-ai/01.png',
     productUrl: 'https://resumeai.augment.cfd/'
+  },
+  {
+    id: 'health-ai',
+    name: 'Health AI',
+    shortName: 'Health AI',
+    description: 'AI-powered health intelligence platform that tracks symptoms, analyzes patterns, and provides personalized health insights on autopilot for hours.',
+    shortDescription: 'AI-powered health intelligence and tracking',
+    category: 'ai-agent',
+    href: '/product/health-ai',
+    icon: 'heart',
+    featured: true,
+    status: 'live',
+    tags: ['Health', 'AI Assistant', 'Tracking', 'Analytics', 'Medication'],
+    image: '/products/health-ai/01.png',
+    productUrl: 'https://healthai.augment.cfd/'
   }
 ];
 
