@@ -9,7 +9,7 @@ import {
   searchProducts,
   type Product 
 } from "@/lib/productRegistry";
-import { ProductIcon } from "@/components/ui/ProductIcon";
+
 
 export default function ProductsPage() {
   const [selectedCategory, setSelectedCategory] = useState<string>('all');

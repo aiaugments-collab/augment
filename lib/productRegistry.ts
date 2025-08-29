@@ -75,6 +75,21 @@ export const PRODUCTS: Product[] = [
     tags: ['Finance', 'Budgeting', 'Receipt Scanning', 'AI Insights'],
     image: '/products/finance-ai/01.png',
     productUrl: 'https://financeai.augment.cfd/'
+  },
+  {
+    id: 'resume-ai',
+    name: 'Resume AI',
+    shortName: 'Resume AI',
+    description: 'Transform any job description into a perfectly tailored, ATS-optimized resume in seconds. Our AI analyzes job requirements and crafts compelling content that gets you noticed.',
+    shortDescription: 'AI-powered resume builder with ATS optimization',
+    category: 'ai-agent',
+    href: '/product/resume-ai',
+    icon: 'users',
+    featured: true,
+    status: 'live',
+    tags: ['Resume', 'ATS Optimization', 'Job Search', 'Career'],
+    image: '/products/resume-ai/01.png',
+    productUrl: 'https://resumeai.augment.cfd/'
   }
 ];
 

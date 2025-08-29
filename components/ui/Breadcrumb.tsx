@@ -85,7 +85,7 @@ export function Breadcrumb({ customItems, className = "" }: BreadcrumbProps) {
   ];
 
   let currentPath = '';
-  pathSegments.forEach((segment, _index) => {
+  pathSegments.forEach((segment) => {
     currentPath += `/${segment}`;
     const label = ROUTE_LABELS[segment] || segment.charAt(0).toUpperCase() + segment.slice(1);
     
