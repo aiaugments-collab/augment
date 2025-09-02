@@ -107,7 +107,7 @@ export function Footer() {
                 <li style={{ marginBottom: "12px" }}>
                   <a 
                     data-lbl="resources-for:partners" 
-                    href="/partner/"
+                    href="/partners/"
                     style={{
                       color: "#FBF9F8",
                       textDecoration: "none",

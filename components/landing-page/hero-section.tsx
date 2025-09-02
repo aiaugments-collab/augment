@@ -75,7 +75,7 @@ export function HeroSection() {
 
   return (
     <section 
-      className="rh08 rh08v0"
+      className="rh08 rh08v0 px-4 md:px-0"
       style={{ 
         fontFamily: "var(--oraclesans)",
         fontSize: "1.6rem",
@@ -160,29 +160,26 @@ export function HeroSection() {
                 role="group"
               >
                 {/* Oracle's exact structure */}
-                <div 
-                  className="rh08w1 cpad"
-                  style={{
-                    width: "100%",
-                    margin: "auto",
-                    display: "grid",
-                    gridTemplateColumns: "repeat(12, 6.697%)",
-                    justifyContent: "space-between",
-                    gridTemplateRows: "16px repeat(1, [row-start] 1fr)",
-                    paddingTop: "18px",
-                    paddingBottom: "0"
-                  }}
-                >
+                                  <div 
+                    className="rh08w1 cpad flex flex-col md:grid md:grid-cols-12 md:justify-between gap-5 md:gap-0"
+                    style={{
+                      width: "100%",
+                      margin: "auto",
+                      gridTemplateRows: "16px repeat(1, [row-start] 1fr)",
+                      paddingTop: "18px",
+                      paddingBottom: "0"
+                    }}
+                  >
                   {/* Background Image */}
                   <div 
-                    className="rh08w2 rh02-img"
+                    className="rh08w2 rh02-img w-full md:col-start-2 md:col-span-7 order-1 md:order-1"
                     style={{
-                      gridColumn: "2/span 7",
                       backgroundImage: `url('${slide.backgroundImage}')`,
                       backgroundSize: "cover",
                       backgroundPosition: "center",
                       maxWidth: "775px",
-                      height: "372px",
+                      height: "300px",
+                      minHeight: "300px",
                       position: "relative",
                       zIndex: -1
                     }}
@@ -190,14 +187,12 @@ export function HeroSection() {
 
                   {/* White Card with Content */}
                   <div 
-                    className="rh08w2 rh02txt"
+                    className="rh08w2 rh02txt w-full md:col-start-6 md:col-span-6 order-2 md:order-2 md:ml-auto"
                     style={{
-                      gridColumn: "6/span 6",
-                      marginLeft: "auto",
                       background: "#fff",
-                      padding: "48px",
+                      padding: "32px",
                       maxWidth: "588px",
-                      minHeight: "372px",
+                      minHeight: "300px",
                       boxShadow: "0 4px 24px rgba(0,0,0,0.12)",
                       zIndex: 2,
                       position: "relative"
@@ -213,11 +208,11 @@ export function HeroSection() {
                         }}
                       >
                         <h2 
-                          className="rwaccent-4"
+                          className="rwaccent-4 text-xl md:text-2xl lg:text-3xl"
                           style={{
                             margin: 0,
-                            fontSize: "28px",
-                            lineHeight: "36.4px",
+                            fontSize: "24px",
+                            lineHeight: "30px",
                             fontFamily: "var(--oracleserif)",
                             fontWeight: "400",
                             color: "#161513",

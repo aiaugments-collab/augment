@@ -68,14 +68,14 @@ export function CustomerStories() {
 
       <h2 className="sr-only">Featured customers</h2>
       
-      <div 
-        className="rh09w1 cwidth"
-        style={{
-          maxWidth: "1344px",
-          margin: "0 auto",
-          padding: "0 48px"
-        }}
-      >
+              <div 
+          className="rh09w1 cwidth"
+          style={{
+            maxWidth: "1344px",
+            margin: "0 auto",
+            padding: "0 20px"
+          }}
+        >
         <div 
           className="rh09tiles col-framework col-justified col-gutters col3"
           style={{
@@ -84,13 +84,11 @@ export function CustomerStories() {
           }}
         >
           <ul 
-            className="col-w1"
+            className="col-w1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
             style={{
               listStyle: "none",
               margin: 0,
               padding: 0,
-              display: "grid",
-              gridTemplateColumns: "repeat(3, 1fr)",
               gap: "40px"
             }}
           >

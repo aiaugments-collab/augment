@@ -1,0 +1,1606 @@
+<!DOCTYPE html>
+<html lang="en-US" class="no-js">
+    <!-- start : Framework/Redwood2 -->
+    <!-- start : ocom/common/global/components/framework/head -->
+    <head>
+        <!-- start : ocom/common/global/components/head -->
+        <title>What is Zero Trust Security?</title>
+        <meta name="Title" content="What is Zero Trust Security?">
+        <meta name="Description" content="Traditional network perimeters are vulnerable, so organizations are turning to a zero trust security model that considers any device or user a potential threat.">
+        <meta name="Keywords" content="Zero trust, Zero trust security
+">
+        <meta name="resgen" content="No">
+        <meta name="siteid" content="us">
+        <meta name="countryid" content="US">
+        <meta name="robots" content="index, follow">
+        <meta name="country" content="United States">
+        <meta name="region" content="americas">
+        <meta name="Language" content="en">
+        <meta name="Updated Date" content="2024-10-07T17:56:24Z">
+        <meta name="page_type" content="SEO-BSA">
+        <script type="text/javascript">
+            var pageData = pageData || {};
+            //page info
+            pageData.pageInfo = pageData.pageInfo || {};
+            pageData.pageInfo.language = "en";
+            pageData.pageInfo.country = "United States";
+            pageData.pageInfo.region = "americas";
+            pageData.pageInfo.pageTitle = "What is Zero Trust Security?";
+            pageData.pageInfo.description = "Traditional network perimeters are vulnerable, so organizations are turning to a zero trust security model that considers any device or user a potential threat.";
+            pageData.pageInfo.keywords = "Zero trust, Zero trust security";
+            pageData.pageInfo.siteId = "us";
+            pageData.pageInfo.countryId = "US";
+            pageData.pageInfo.updatedDate = "2024-10-07T17:56:24Z";
+        </script>
+        <!-- start : ocom/common/global/components/seo-taxonomy-meta-data-->
+        <script type="text/javascript">
+            var pageData = pageData || {};
+            //taxonmy
+            pageData.taxonomy = pageData.taxonomy || {};
+            pageData.taxonomy.productServices = [];
+            pageData.taxonomy.industry = [];
+            pageData.taxonomy.region = [];
+            pageData.taxonomy.contentType = ["WM178751"];
+            pageData.taxonomy.buyersJourney = [];
+            pageData.taxonomy.revenue = [];
+            pageData.taxonomy.title = [];
+            pageData.taxonomy.audience = [];
+            pageData.taxonomy.persona = [];
+        </script>
+        <!-- end : ocom/common/global/components/seo-taxonomy-meta-data-->
+        <!-- start : ocom/common/global/components/social-media-meta-tags -->
+        <!-- F13v0 -->
+        <meta property="og:title" content="Beyond the Perimeter: The Zero Trust Imperative"/>
+        <meta property="og:description" content="Challenge traditional security strategies with zero trust. Learn how this innovative approach shifts the focus from protecting the network perimeter to securing data and applications, no matter where they reside."/>
+        <meta property="og:image" content="https://www.oracle.com/a/ocom/img/social-og-bsa-zero-trust-1200x628.jpg"/>
+        <!-- /F13v0 -->
+        <!-- F13v1 -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="Beyond the Perimeter: The Zero Trust Imperative">
+        <meta name="twitter:description" content="Challenge traditional security strategies with zero trust. Learn how this innovative approach shifts the focus from protecting the network perimeter to securing data and applications, no matter where they reside.">
+        <meta name="twitter:image" content="https://www.oracle.com/a/ocom/img/social-og-bsa-zero-trust-1200x1200.jpg">
+        <!-- /F13v1 -->
+        <!-- end : ocom/common/global/components/social-media-meta-tags -->
+        <!-- start : ocom/common/global/components/seo-hreflang-meta-tags -->
+        <link rel="canonical" href="https://www.oracle.com/security/what-is-zero-trust/"/>
+        <link rel="alternate" hreflang="en-US" href="https://www.oracle.com/security/what-is-zero-trust/"/>
+        <link rel="alternate" hreflang="pt-BR" href="https://www.oracle.com/br/security/what-is-zero-trust/"/>
+        <link rel="alternate" hreflang="zh-CN" href="https://www.oracle.com/cn/security/what-is-zero-trust/"/>
+        <link rel="alternate" hreflang="de-DE" href="https://www.oracle.com/de/security/what-is-zero-trust/"/>
+        <link rel="alternate" hreflang="fr-FR" href="https://www.oracle.com/fr/security/what-is-zero-trust/"/>
+        <link rel="alternate" hreflang="en-IN" href="https://www.oracle.com/in/security/what-is-zero-trust/"/>
+        <link rel="alternate" hreflang="ja-JP" href="https://www.oracle.com/jp/security/what-is-zero-trust/"/>
+        <link rel="alternate" hreflang="en-GB" href="https://www.oracle.com/uk/security/what-is-zero-trust/"/>
+        <link rel="alternate" hreflang="en-AE" href="https://www.oracle.com/ae/security/what-is-zero-trust/"/>
+        <link rel="alternate" hreflang="ar-AE" href="https://www.oracle.com/ae-ar/security/what-is-zero-trust/"/>
+        <link rel="alternate" hreflang="es-AR" href="https://www.oracle.com/ar/security/what-is-zero-trust/"/>
+        <link rel="alternate" hreflang="en-AU" href="https://www.oracle.com/au/security/what-is-zero-trust/"/>
+        <link rel="alternate" hreflang="en-CA" href="https://www.oracle.com/ca-en/security/what-is-zero-trust/"/>
+        <link rel="alternate" hreflang="fr-CA" href="https://www.oracle.com/ca-fr/security/what-is-zero-trust/"/>
+        <link rel="alternate" hreflang="de-CH" href="https://www.oracle.com/ch-de/security/what-is-zero-trust/"/>
+        <link rel="alternate" hreflang="fr-CH" href="https://www.oracle.com/ch-fr/security/what-is-zero-trust/"/>
+        <link rel="alternate" hreflang="es-CL" href="https://www.oracle.com/cl/security/what-is-zero-trust/"/>
+        <link rel="alternate" hreflang="es-CO" href="https://www.oracle.com/co/security/what-is-zero-trust/"/>
+        <link rel="alternate" hreflang="es-ES" href="https://www.oracle.com/es/security/what-is-zero-trust/"/>
+        <link rel="alternate" hreflang="en-HK" href="https://www.oracle.com/hk/security/what-is-zero-trust/"/>
+        <link rel="alternate" hreflang="it-IT" href="https://www.oracle.com/it/security/what-is-zero-trust/"/>
+        <link rel="alternate" hreflang="ko-KR" href="https://www.oracle.com/kr/security/what-is-zero-trust/"/>
+        <link rel="alternate" hreflang="es-MX" href="https://www.oracle.com/mx/security/what-is-zero-trust/"/>
+        <link rel="alternate" hreflang="nl-NL" href="https://www.oracle.com/nl/security/what-is-zero-trust/"/>
+        <link rel="alternate" hreflang="en-SA" href="https://www.oracle.com/sa/security/what-is-zero-trust/"/>
+        <link rel="alternate" hreflang="ar-SA" href="https://www.oracle.com/sa-ar/security/what-is-zero-trust/"/>
+        <link rel="alternate" hreflang="en-SG" href="https://www.oracle.com/sg/security/what-is-zero-trust/"/>
+        <link rel="alternate" hreflang="zh-TW" href="https://www.oracle.com/tw/security/what-is-zero-trust/"/>
+        <link rel="alternate" hreflang="cs-CZ" href="https://www.oracle.com/cz/security/what-is-zero-trust/"/>
+        <link rel="alternate" hreflang="en-ID" href="https://www.oracle.com/id/security/what-is-zero-trust/"/>
+        <link rel="alternate" hreflang="en-IE" href="https://www.oracle.com/ie/security/what-is-zero-trust/"/>
+        <link rel="alternate" hreflang="en-IL" href="https://www.oracle.com/il-en/security/what-is-zero-trust/"/>
+        <link rel="alternate" hreflang="en-MY" href="https://www.oracle.com/my/security/what-is-zero-trust/"/>
+        <link rel="alternate" hreflang="es-PE" href="https://www.oracle.com/pe/security/what-is-zero-trust/"/>
+        <link rel="alternate" hreflang="en-PH" href="https://www.oracle.com/ph/security/what-is-zero-trust/"/>
+        <link rel="alternate" hreflang="pl-PL" href="https://www.oracle.com/pl/security/what-is-zero-trust/"/>
+        <link rel="alternate" hreflang="pt-PT" href="https://www.oracle.com/pt/security/what-is-zero-trust/"/>
+        <link rel="alternate" hreflang="ro-RO" href="https://www.oracle.com/ro/security/what-is-zero-trust/"/>
+        <link rel="alternate" hreflang="sv-SE" href="https://www.oracle.com/se/security/what-is-zero-trust/"/>
+        <link rel="alternate" hreflang="tr-TR" href="https://www.oracle.com/tr/security/what-is-zero-trust/"/>
+        <link rel="alternate" hreflang="en-ZA" href="https://www.oracle.com/za/security/what-is-zero-trust/"/>
+        <link rel="alternate" hreflang="de-AT" href="https://www.oracle.com/at/security/what-is-zero-trust/"/>
+        <link rel="alternate" hreflang="en-BA" href="https://www.oracle.com/europe/security/what-is-zero-trust/"/>
+        <link rel="alternate" hreflang="en-BD" href="https://www.oracle.com/apac/security/what-is-zero-trust/"/>
+        <link rel="alternate" hreflang="en-BE" href="https://www.oracle.com/europe/security/what-is-zero-trust/"/>
+        <link rel="alternate" hreflang="bg-BG" href="https://www.oracle.com/europe/security/what-is-zero-trust/"/>
+        <link rel="alternate" hreflang="en-BH" href="https://www.oracle.com/middleeast/security/what-is-zero-trust/"/>
+        <link rel="alternate" hreflang="ar-BH" href="https://www.oracle.com/middleeast-ar/security/what-is-zero-trust/"/>
+        <link rel="alternate" hreflang="en-BZ" href="https://www.oracle.com/bz/security/what-is-zero-trust/"/>
+        <link rel="alternate" hreflang="es-CR" href="https://www.oracle.com/latam/security/what-is-zero-trust/"/>
+        <link rel="alternate" hreflang="en-CY" href="https://www.oracle.com/europe/security/what-is-zero-trust/"/>
+        <link rel="alternate" hreflang="da-DK" href="https://www.oracle.com/dk/security/what-is-zero-trust/"/>
+        <link rel="alternate" hreflang="fr-DZ" href="https://www.oracle.com/africa-fr/security/what-is-zero-trust/"/>
+        <link rel="alternate" hreflang="en-EE" href="https://www.oracle.com/europe/security/what-is-zero-trust/"/>
+        <link rel="alternate" hreflang="en-EG" href="https://www.oracle.com/eg/security/what-is-zero-trust/"/>
+        <link rel="alternate" hreflang="ar-EG" href="https://www.oracle.com/eg-ar/security/what-is-zero-trust/"/>
+        <link rel="alternate" hreflang="fi-FI" href="https://www.oracle.com/europe/security/what-is-zero-trust/"/>
+        <link rel="alternate" hreflang="en-GH" href="https://www.oracle.com/africa/security/what-is-zero-trust/"/>
+        <link rel="alternate" hreflang="el-GR" href="https://www.oracle.com/gr/security/what-is-zero-trust/"/>
+        <link rel="alternate" hreflang="hr-HR" href="https://www.oracle.com/europe/security/what-is-zero-trust/"/>
+        <link rel="alternate" hreflang="hu-HU" href="https://www.oracle.com/hu/security/what-is-zero-trust/"/>
+        <link rel="alternate" hreflang="en-JO" href="https://www.oracle.com/middleeast/security/what-is-zero-trust/"/>
+        <link rel="alternate" hreflang="ar-JO" href="https://www.oracle.com/middleeast-ar/security/what-is-zero-trust/"/>
+        <link rel="alternate" hreflang="en-KE" href="https://www.oracle.com/ke/security/what-is-zero-trust/"/>
+        <link rel="alternate" hreflang="en-KW" href="https://www.oracle.com/middleeast/security/what-is-zero-trust/"/>
+        <link rel="alternate" hreflang="ar-KW" href="https://www.oracle.com/middleeast-ar/security/what-is-zero-trust/"/>
+        <link rel="alternate" hreflang="en-LK" href="https://www.oracle.com/apac/security/what-is-zero-trust/"/>
+        <link rel="alternate" hreflang="en-LU" href="https://www.oracle.com/europe/security/what-is-zero-trust/"/>
+        <link rel="alternate" hreflang="lv-LV" href="https://www.oracle.com/europe/security/what-is-zero-trust/"/>
+        <link rel="alternate" hreflang="fr-MA" href="https://www.oracle.com/ma/security/what-is-zero-trust/"/>
+        <link rel="alternate" hreflang="en-NG" href="https://www.oracle.com/ng/security/what-is-zero-trust/"/>
+        <link rel="alternate" hreflang="no-NO" href="https://www.oracle.com/europe/security/what-is-zero-trust/"/>
+        <link rel="alternate" hreflang="en-NZ" href="https://www.oracle.com/nz/security/what-is-zero-trust/"/>
+        <link rel="alternate" hreflang="en-QA" href="https://www.oracle.com/qa/security/what-is-zero-trust/"/>
+        <link rel="alternate" hreflang="ar-QA" href="https://www.oracle.com/qa-ar/security/what-is-zero-trust/"/>
+        <link rel="alternate" hreflang="sr-RS" href="https://www.oracle.com/europe/security/what-is-zero-trust/"/>
+        <link rel="alternate" hreflang="sl-SI" href="https://www.oracle.com/europe/security/what-is-zero-trust/"/>
+        <link rel="alternate" hreflang="sk-SK" href="https://www.oracle.com/europe/security/what-is-zero-trust/"/>
+        <link rel="alternate" hreflang="fr-SN" href="https://www.oracle.com/africa-fr/security/what-is-zero-trust/"/>
+        <link rel="alternate" hreflang="en-TH" href="https://www.oracle.com/asean/security/what-is-zero-trust/"/>
+        <link rel="alternate" hreflang="uk-UA" href="https://www.oracle.com/ua/security/what-is-zero-trust/"/>
+        <link rel="alternate" hreflang="es-UY" href="https://www.oracle.com/latam/security/what-is-zero-trust/"/>
+        <link rel="alternate" hreflang="en-VN" href="https://www.oracle.com/vn/security/what-is-zero-trust/"/>
+        <meta name="altpages" content="br,cn,de,fr,in,jp,uk,ae,ae-ar,ar,au,ca-en,ca-fr,ch-de,ch-fr,cl,co,es,hk,it,kr,mx,nl,sa,sa-ar,sg,tw,cz,id,ie,il-en,my,pe,ph,pl,pt,ro,se,tr,za,at,ba,bd,be,bg,bh,bh-ar,bz,cr,cy,dk,dz,ee,eg,eg-ar,fi,gh,gr,hr,hu,jo,jo-ar,ke,kw,kw-ar,lk,lu,lv,ma,ng,no,nz,qa,qa-ar,rs,si,sk,sn,th,ua,uy,vn">
+        <script type="text/javascript">
+            var pageData = pageData || {};
+            //page info
+            pageData.pageInfo = pageData.pageInfo || {};
+            pageData.pageInfo.altPages = "br,cn,de,fr,in,jp,uk,ae,ae-ar,ar,au,ca-en,ca-fr,ch-de,ch-fr,cl,co,es,hk,it,kr,mx,nl,sa,sa-ar,sg,tw,cz,id,ie,il-en,my,pe,ph,pl,pt,ro,se,tr,za,at,ba,bd,be,bg,bh,bh-ar,bz,cr,cy,dk,dz,ee,eg,eg-ar,fi,gh,gr,hr,hu,jo,jo-ar,ke,kw,kw-ar,lk,lu,lv,ma,ng,no,nz,qa,qa-ar,rs,si,sk,sn,th,ua,uy,vn";
+        </script>
+        <!-- end : ocom/common/global/components/seo-hreflang-meta-tags -->
+        <!-- end : ocom/common/global/components/head -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <!-- start : ocom/common/global/components/framework/layoutAssetHeadInfo -->
+        <!-- Container/Display Start -->
+        <!-- BEGIN: oWidget_C/_Raw-Text/Display -->
+        <link rel="dns-prefetch" href="https://dc.oracleinfinity.io" crossOrigin="anonymous"/>
+        <link rel="dns-prefetch" href="https://oracle.112.2o7.net" crossOrigin="anonymous"/>
+        <link rel="dns-prefetch" href="https://s.go-mpulse.net" crossOrigin="anonymous"/>
+        <link rel="dns-prefetch" href="https://c.go-mpulse.net" crossOrigin="anonymous"/>
+        <link rel="preconnect" href="https://tms.oracle.com/" crossOrigin="anonymous"/>
+        <link rel="preconnect" href="https://tags.tiqcdn.com/" crossOrigin="anonymous"/>
+        <link rel="preconnect" href="https://consent.trustarc.com" crossOrigin="anonymous"/>
+        <link rel="preconnect" href="https://d.oracleinfinity.io" crossOrigin="anonymous"/>
+        <link rel="preload" href="https://www.oracle.com/asset/web/fonts/oraclesansvf.woff2" as="font" crossOrigin="anonymous" type="font/woff2"/>
+        <link rel="preload" href="https://www.oracle.com/asset/web/fonts/redwoodicons.woff2" as="font" crossorigin="anonymous" type="font/woff2">
+        <!-- END: oWidget_C/_Raw-Text/Display -->
+        <!-- Container/Display end -->
+        <!-- Container/Display Start -->
+        <!-- BEGIN: oWidget_C/_Raw-Text/Display -->
+        <!-- BEGIN CSS/JS -->
+        <style>
+            body {
+                margin: 0
+            }
+
+            .f20w1 > section {
+                opacity: 0;
+                filter: opacity(0%)
+            }
+
+            .f20w1 > div {
+                opacity: 0;
+                filter: opacity(0%)
+            }
+
+            .f20w1 > nav {
+                opacity: 0;
+                filter: opacity(0%)
+            }
+        </style>
+        <script>
+            !function() {
+                var d = document.documentElement;
+                d.className = d.className.replace(/no-js/, 'js');
+                if (document.location.href.indexOf('betamode=') > -1)
+                    document.write('<script src="/asset/web/js/ocom-betamode.js"><\/script>');
+            }();
+        </script>
+        <link data-wscss href="/asset/web/css/redwood-base.css" rel="preload" as="style" onload="this.rel='stylesheet';" onerror="this.rel='stylesheet'">
+        <link data-wscss href="/asset/web/css/redwood-styles.css" rel="preload" as="style" onload="this.rel='stylesheet';" onerror="this.rel='stylesheet'">
+        <noscript>
+            <link href="/asset/web/css/redwood-base.css" rel="stylesheet">
+            <link href="/asset/web/css/redwood-styles.css" rel="stylesheet">
+        </noscript>
+        <link data-wsjs data-reqjq href="/asset/web/js/redwood-base.js" rel="preload" as="script">
+        <link data-wsjs data-reqjq href="/asset/web/js/redwood-lib.js" rel="preload" as="script">
+        <script data-wsjs src="/asset/web/js/jquery-min.js" async onload="$('head link[data-reqjq][rel=preload]').each(function(){var a = document.createElement('script');a.async=false;a.src=$(this).attr('href');this.parentNode.insertBefore(a, this);});$(function(){$('script[data-reqjq][data-src]').each(function(){this.async=true;this.src=$(this).data('src');});});"></script>
+        <!-- END CSS/JS -->
+        <!-- END: oWidget_C/_Raw-Text/Display -->
+        <!-- Container/Display end -->
+        <!-- Container/Display Start -->
+        <!-- BEGIN: oWidget_C/_Raw-Text/Display -->
+        <!-- www-us HeadAdminContainer -->
+        <link rel="icon" href="https://www.oracle.com/asset/web/favicons/favicon-32.png" sizes="32x32">
+        <link rel="icon" href="https://www.oracle.com/asset/web/favicons/favicon-128.png" sizes="128x128">
+        <link rel="icon" href="https://www.oracle.com/asset/web/favicons/favicon-192.png" sizes="192x192">
+        <link rel="apple-touch-icon" href="https://www.oracle.com/asset/web/favicons/favicon-120.png" sizes="120x120">
+        <link rel="apple-touch-icon" href="https://www.oracle.com/asset/web/favicons/favicon-152.png" sizes="152x152">
+        <link rel="apple-touch-icon" href="https://www.oracle.com/asset/web/favicons/favicon-180.png" sizes="180x180">
+        <meta name="msapplication-TileColor" content="#fcfbfa"/>
+        <meta name="msapplication-square70x70logo" content="favicon-128.png"/>
+        <meta name="msapplication-square150x150logo" content="favicon-270.png"/>
+        <meta name="msapplication-TileImage" content="favicon-270.png"/>
+        <meta name="msapplication-config" content="none"/>
+        <meta name="referrer" content="no-referrer-when-downgrade"/>
+        <style>
+            #oReactiveChatContainer1 {
+                display: none;
+            }
+        </style>
+        <!--Tealium embed code Start -->
+        <script src="https://tms.oracle.com/main/prod/utag.sync.js"></script>
+        <!-- Loading script asynchronously -->
+        <script type="text/javascript">
+            (function(a, b, c, d) {
+                if (location.href.indexOf("tealium=dev") == -1) {
+                    a = 'https://tms.oracle.com/main/prod/utag.js';
+                } else {
+                    a = 'https://tms.oracle.com/main/dev/utag.js';
+                }
+                b = document;
+                c = 'script';
+                d = b.createElement(c);
+                d.src = a;
+                d.type = 'text/java' + c;
+                d.async = true;
+                a = b.getElementsByTagName(c)[0];
+                a.parentNode.insertBefore(d, a);
+            }
+            )();
+        </script>
+        <!--Tealium embed code End-->
+        <!-- END: oWidget_C/_Raw-Text/Display -->
+        <!-- Container/Display end -->
+        <!-- end : ocom/common/global/components/framework/layoutAssetHeadInfo -->
+        <script>
+            (window.BOOMR_mq = window.BOOMR_mq || []).push(["addVar", {
+                "rua.upush": "false",
+                "rua.cpush": "false",
+                "rua.upre": "false",
+                "rua.cpre": "false",
+                "rua.uprl": "false",
+                "rua.cprl": "false",
+                "rua.cprf": "false",
+                "rua.trans": "SJ-d70c5b81-5e8f-46e4-a945-08d17c481275",
+                "rua.cook": "true",
+                "rua.ims": "false",
+                "rua.ufprl": "false",
+                "rua.cfprl": "true",
+                "rua.isuxp": "false",
+                "rua.texp": "norulematch",
+                "rua.ceh": "false",
+                "rua.ueh": "false",
+                "rua.ieh.st": "0"
+            }]);
+        </script>
+        <script>
+            !function(e) {
+                var n = "https://s.go-mpulse.net/boomerang/";
+                if ("False" == "True")
+                    e.BOOMR_config = e.BOOMR_config || {},
+                    e.BOOMR_config.PageParams = e.BOOMR_config.PageParams || {},
+                    e.BOOMR_config.PageParams.pci = !0,
+                    n = "https://s2.go-mpulse.net/boomerang/";
+                if (window.BOOMR_API_key = "DXNLE-YBWWY-AR74T-WMD99-77VRA",
+                function() {
+                    function e() {
+                        if (!o) {
+                            var e = document.createElement("script");
+                            e.id = "boomr-scr-as",
+                            e.src = window.BOOMR.url,
+                            e.async = !0,
+                            i.parentNode.appendChild(e),
+                            o = !0
+                        }
+                    }
+                    function t(e) {
+                        o = !0;
+                        var n, t, a, r, d = document, O = window;
+                        if (window.BOOMR.snippetMethod = e ? "if" : "i",
+                        t = function(e, n) {
+                            var t = d.createElement("script");
+                            t.id = n || "boomr-if-as",
+                            t.src = window.BOOMR.url,
+                            BOOMR_lstart = (new Date).getTime(),
+                            e = e || d.body,
+                            e.appendChild(t)
+                        }
+                        ,
+                        !window.addEventListener && window.attachEvent && navigator.userAgent.match(/MSIE [67]\./))
+                            return window.BOOMR.snippetMethod = "s",
+                            void t(i.parentNode, "boomr-async");
+                        a = document.createElement("IFRAME"),
+                        a.src = "about:blank",
+                        a.title = "",
+                        a.role = "presentation",
+                        a.loading = "eager",
+                        r = (a.frameElement || a).style,
+                        r.width = 0,
+                        r.height = 0,
+                        r.border = 0,
+                        r.display = "none",
+                        i.parentNode.appendChild(a);
+                        try {
+                            O = a.contentWindow,
+                            d = O.document.open()
+                        } catch (_) {
+                            n = document.domain,
+                            a.src = "javascript:var d=document.open();d.domain='" + n + "';void(0);",
+                            O = a.contentWindow,
+                            d = O.document.open()
+                        }
+                        if (n)
+                            d._boomrl = function() {
+                                this.domain = n,
+                                t()
+                            }
+                            ,
+                            d.write("<bo" + "dy onload='document._boomrl();'>");
+                        else if (O._boomrl = function() {
+                            t()
+                        }
+                        ,
+                        O.addEventListener)
+                            O.addEventListener("load", O._boomrl, !1);
+                        else if (O.attachEvent)
+                            O.attachEvent("onload", O._boomrl);
+                        d.close()
+                    }
+                    function a(e) {
+                        window.BOOMR_onload = e && e.timeStamp || (new Date).getTime()
+                    }
+                    if (!window.BOOMR || !window.BOOMR.version && !window.BOOMR.snippetExecuted) {
+                        window.BOOMR = window.BOOMR || {},
+                        window.BOOMR.snippetStart = (new Date).getTime(),
+                        window.BOOMR.snippetExecuted = !0,
+                        window.BOOMR.snippetVersion = 12,
+                        window.BOOMR.url = n + "DXNLE-YBWWY-AR74T-WMD99-77VRA";
+                        var i = document.currentScript || document.getElementsByTagName("script")[0]
+                          , o = !1
+                          , r = document.createElement("link");
+                        if (r.relList && "function" == typeof r.relList.supports && r.relList.supports("preload") && "as"in r)
+                            window.BOOMR.snippetMethod = "p",
+                            r.href = window.BOOMR.url,
+                            r.rel = "preload",
+                            r.as = "script",
+                            r.addEventListener("load", e),
+                            r.addEventListener("error", function() {
+                                t(!0)
+                            }),
+                            setTimeout(function() {
+                                if (!o)
+                                    t(!0)
+                            }, 3e3),
+                            BOOMR_lstart = (new Date).getTime(),
+                            i.parentNode.appendChild(r);
+                        else
+                            t(!1);
+                        if (window.addEventListener)
+                            window.addEventListener("load", a, !1);
+                        else if (window.attachEvent)
+                            window.attachEvent("onload", a)
+                    }
+                }(),
+                "".length > 0)
+                    if (e && "performance"in e && e.performance && "function" == typeof e.performance.setResourceTimingBufferSize)
+                        e.performance.setResourceTimingBufferSize();
+                !function() {
+                    if (BOOMR = e.BOOMR || {},
+                    BOOMR.plugins = BOOMR.plugins || {},
+                    !BOOMR.plugins.AK) {
+                        var n = "true" == "true" ? 1 : 0
+                          , t = "cookiepresent"
+                          , a = "yxjt6vaccouxo2fv2ksq-f-010716886-clientnsv4-s.akamaihd.net"
+                          , i = "false" == "true" ? 2 : 1
+                          , o = {
+                            "ak.v": "39",
+                            "ak.cp": "82485",
+                            "ak.ai": parseInt("604074", 10),
+                            "ak.ol": "0",
+                            "ak.cr": 849,
+                            "ak.ipv": 4,
+                            "ak.proto": "h2",
+                            "ak.rid": "9ea027d",
+                            "ak.r": 45965,
+                            "ak.a2": n,
+                            "ak.m": "dscx",
+                            "ak.n": "essl",
+                            "ak.bpcip": "197.211.63.0",
+                            "ak.cport": 7294,
+                            "ak.gh": "2.19.160.12",
+                            "ak.quicv": "",
+                            "ak.tlsv": "tls1.3",
+                            "ak.0rtt": "",
+                            "ak.0rtt.ed": "",
+                            "ak.csrc": "-",
+                            "ak.acc": "",
+                            "ak.t": "1756746405",
+                            "ak.ak": "hOBiQwZUYzCg5VSAfCLimQ==3xARMYv+QKIvVeDNXd/W2p7orybuo1szYfAd89EyUL75yQBz4e7u6KqH9xGDJXji0Of7FZaaZJVBIPRH1omld8kaNleREuIfO/BXmxTsNDncdxOmDCwc00qBEa/xBHcoufIJPNHpoezRSZZcwnpFHhX8BeHCsAKF4qLGxvaiq65IjKRKDy+FAUiI1Aev2hhnmLkpkVeXod5HoeEqC/YY+qjfGrq6Rc7UuoOpkJMVgKyS+ILiuAvp4nQtxSRzYcAL3I1wbYIIWs4w0lTiHIjWFEFuhkMbGbFHC1laC/Yf74SuzanFwUI9JS/gBTAqwUo0PmHGn2uYT8EE3U5FM3QUqikL4QTwoFs1Iy+cArRDgm1jZRhwHqhhY9szWtXZmAT+ks1+fShxlN6C3uBhsCTQe1N2Yalc+j2Tc+wIZl+satc=",
+                            "ak.pv": "511",
+                            "ak.dpoabenc": "",
+                            "ak.tf": i
+                        };
+                        if ("" !== t)
+                            o["ak.ruds"] = t;
+                        var r = {
+                            i: !1,
+                            av: function(n) {
+                                var t = "http.initiator";
+                                if (n && (!n[t] || "spa_hard" === n[t]))
+                                    o["ak.feo"] = void 0 !== e.aFeoApplied ? 1 : 0,
+                                    BOOMR.addVar(o)
+                            },
+                            rv: function() {
+                                var e = ["ak.bpcip", "ak.cport", "ak.cr", "ak.csrc", "ak.gh", "ak.ipv", "ak.m", "ak.n", "ak.ol", "ak.proto", "ak.quicv", "ak.tlsv", "ak.0rtt", "ak.0rtt.ed", "ak.r", "ak.acc", "ak.t", "ak.tf"];
+                                BOOMR.removeVar(e)
+                            }
+                        };
+                        BOOMR.plugins.AK = {
+                            akVars: o,
+                            akDNSPreFetchDomain: a,
+                            init: function() {
+                                if (!r.i) {
+                                    var e = BOOMR.subscribe;
+                                    e("before_beacon", r.av, null, null),
+                                    e("onbeacon", r.rv, null, null),
+                                    r.i = !0
+                                }
+                                return this
+                            },
+                            is_complete: function() {
+                                return !0
+                            }
+                        }
+                    }
+                }()
+            }(window);
+        </script>
+    </head>
+    <!-- end : ocom/common/global/components/framework/head -->
+    <!-- start : ocom/common/global/components/redwood/layoutAssetStartBodyInfo -->
+    <body class="f20 f20v0 rwtheme-oci rc162-progress-bar">
+        <!-- Container/Display Start -->
+        <!-- BEGIN: oWidget_C/_Raw-Text/Display -->
+        <!-- www-us StartBodyAdminContainer -->
+        <!-- END: oWidget_C/_Raw-Text/Display -->
+        <!-- Container/Display end -->
+        <div class="f20w1">
+            <!-- Dispatcher:null -->
+            <!-- BEGIN: oWidget_C/_Raw-Text/Display -->
+            <!-- U30v0 -->
+            <style>
+                #u30 {
+                    opacity: 1 !important;
+                    filter: opacity(100%) !important;
+                    position: sticky;
+                    top: 0
+                }
+
+                .u30v0 {
+                    background: #3a3632;
+                    height: 50px;
+                    overflow: hidden;
+                    border-top: 5px solid #3a3632;
+                    border-bottom: 5px solid #3a3632
+                }
+
+                #u30nav,#u30tools {
+                    visibility: hidden
+                }
+
+                .u30brand {
+                    height: 50px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: flex-start;
+                    max-width: 1344px;
+                    padding: 0 48px;
+                    margin: 0 auto
+                }
+
+                .u30brandw1 {
+                    display: flex;
+                    flex-direction: row;
+                    color: #fff;
+                    text-decoration: none;
+                    align-items: center
+                }
+
+                #u30btxt {
+                    font-family: sans-serif;
+                    font-size: 14px;
+                    position: relative;
+                    margin-left: 12px;
+                    padding-left: 16px;
+                    white-space: nowrap;
+                    color: #fff;
+                    text-decoration: none
+                }
+
+                #u30btxt:before {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    width: 1px;
+                    opacity: 0.3;
+                    height: 44px;
+                    top: 50%;
+                    margin-top: -22px;
+                    background: #FBF9F8
+                }
+
+                #u30brandtxt {
+                    display: block
+                }
+
+                @media (max-width: 1024px) {
+                    .u30brand {
+                        padding:0 24px
+                    }
+                }
+
+                @media (max-width: 400px) {
+                    #u30btxt {
+                        display:none
+                    }
+                }
+
+                #u30skip2,#u30skip2content {
+                    transform: translateY(-100%);
+                    position: fixed
+                }
+
+                .rtl #u30 {
+                    direction: rtl
+                }
+
+                .rtl #u30btxt {
+                    margin-right: 12px;
+                    margin-left: 0;
+                    padding-right: 16px;
+                    ;padding-left: 0
+                }
+
+                .rtl #u30btxt:before {
+                    left: auto;
+                    right: 0
+                }
+            </style>
+            <section id="u30" class="u30 u30v0 pause searchv2" data-trackas="header">
+                <div id="u30skip2" aria-expanded="false" tabindex="-1">
+                    <ul>
+                        <li>
+                            <a id="u30acc" href="/corporate/accessibility/" data-lbl="accessibility-policy">Accessibility Policy</a>
+                        </li>
+                        <li>
+                            <a id="u30skip2c" href="#maincontent" data-lbl="skip-to-content">Skip to content</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="u30w1 cwidth" id="u30w1">
+                    <div id="u30brand" class="u30brand">
+                        <div class="u30brandw1">
+                            <a id="u30btitle" href="/" data-lbl="logo" aria-label="Home">
+                                <div id="u30logo">
+                                    <svg style="display:block" class="u30-oicn" xmlns="http://www.w3.org/2000/svg" width="32" height="21" viewBox="0 0 32 21">
+                                        <path fill="#C74634" d="M9.9,20.1c-5.5,0-9.9-4.4-9.9-9.9c0-5.5,4.4-9.9,9.9-9.9h11.6c5.5,0,9.9,4.4,9.9,9.9c0,5.5-4.4,9.9-9.9,9.9H9.9 M21.2,16.6c3.6,0,6.4-2.9,6.4-6.4c0-3.6-2.9-6.4-6.4-6.4h-11c-3.6,0-6.4,2.9-6.4,6.4s2.9,6.4,6.4,6.4H21.2"/>
+                                    </svg>
+                                </div>
+                            </a>
+                            <a id="u30btxt" href="/cloud/" aria-label="Oracle Cloud Infrastructure" data-lbl="Logotxt">
+                                <svg id="u30brandtxt" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38.14 18.12" width="39" height="19">
+                                    <path fill="#ffffff" d="M8.16,18.12a7.76,7.76,0,0,1-6.05-2.35A9.79,9.79,0,0,1,0,9.05,9.58,9.58,0,0,1,2.14,2.38,7.65,7.65,0,0,1,8.16,0a7.65,7.65,0,0,1,6,2.38,9.58,9.58,0,0,1,2.14,6.67,9.79,9.79,0,0,1-2.11,6.72A7.71,7.71,0,0,1,8.16,18.12Zm0-3.19a3.69,3.69,0,0,0,3.24-1.51,7.48,7.48,0,0,0,1.08-4.37A7.37,7.37,0,0,0,11.4,4.7,3.69,3.69,0,0,0,8.16,3.19,3.75,3.75,0,0,0,4.9,4.7,7.45,7.45,0,0,0,3.84,9.05,7.56,7.56,0,0,0,4.9,13.42,3.75,3.75,0,0,0,8.16,14.93ZM32,14v3.12a11.25,11.25,0,0,1-2.19.72,10.85,10.85,0,0,1-2.71.31q-4.2,0-6.36-2.38T18.54,8.86A9.81,9.81,0,0,1,19.6,4.13a7.18,7.18,0,0,1,3-3A9.38,9.38,0,0,1,27.23,0a10.19,10.19,0,0,1,2.35.26,9,9,0,0,1,1.9.68V4.1a15.34,15.34,0,0,0-2.21-.67,8.49,8.49,0,0,0-1.78-.19A4.85,4.85,0,0,0,23.7,4.7a6,6,0,0,0-1.32,4.16,6.85,6.85,0,0,0,1.3,4.48,4.66,4.66,0,0,0,3.81,1.56,10.24,10.24,0,0,0,2-.21A22.73,22.73,0,0,0,32,14Zm2.44,3.81V.34h3.74V17.78Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="u30nav" class="u30nav" data-closetxt="Close Menu" data-trackas="menu">
+                        <nav id="u30navw1" aria-label="OCI website" data-trackas="header-oci">
+                            <!-- v3 -->
+                            <button data-navtarget="about" aria-controls="about" aria-expanded="false" class="u30navitem" data-lbl="about">About</button>
+                            <button data-navtarget="services" aria-controls="services" aria-expanded="false" class="u30navitem" data-lbl="services">Services</button>
+                            <button data-navtarget="solutions" aria-controls="solutions" aria-expanded="false" class="u30navitem" data-lbl="solutions">Solutions</button>
+                            <button data-navtarget="pricing" aria-controls="pricing" aria-expanded="false" class="u30navitem" data-lbl="pricing">Pricing</button>
+                            <button data-navtarget="partners" aria-controls="partners" aria-expanded="false" class="u30navitem" data-lbl="partners">Partners</button>
+                            <button data-navtarget="resources" aria-controls="resources" aria-expanded="false" class="u30navitem" data-lbl="resources">Resources</button>
+                            <!-- /v3 -->
+                        </nav>
+                    </div>
+                    <div id="u30tools" class="u30tools">
+                        <div id="u30search">
+                            <div id="u30searchw1">
+                                <div id="u30searchw2">
+                                    <form name="u30searchForm" id="u30searchForm" data-contentpaths="/content/Web/Shared/Auto-Suggest Panel Event" method="get" action="https://search.oracle.com/results">
+                                        <div class="u30s1">
+                                            <button id="u30closesearch" aria-label="Close Search" type="button">
+                                                <span>Close Search</span>
+                                                <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M8 13L2 7L8 1" stroke="#161513" stroke-width="2"/>
+                                                </svg>
+                                            </button>
+                                            <span class="u30input">
+                                                <div class="u30inputw1">
+                                                    <input id="u30input" name="q" value="" type="text" placeholder="Search" autocomplete="off" aria-autocomplete="both" aria-label="Search Oracle.com" role="combobox" aria-expanded="false" aria-haspopup="listbox" aria-controls="u30searchw3">
+                                                </div>
+                                                <input type="hidden" name="size" value="10">
+                                                <input type="hidden" name="page" value="1">
+                                                <input type="hidden" name="tab" value="all">
+                                                <span id="u30searchw3title" class="u30visually-hidden">Search Oracle.com</span>
+                                                <div id="u30searchw3" data-pagestitle="SUGGESTED LINKS" data-autosuggesttitle="SUGGESTED SEARCHES" data-allresultstxt="All results for" data-allsearchpath="https://search.oracle.com/results?q=u30searchterm&size=10&page=1&tab=all" role="listbox" aria-labelledby="u30searchw3title">
+                                                    <ul id="u30quicklinks" class="autocomplete-items" role="group" aria-labelledby="u30quicklinks-title">
+                                                        <li role="presentation" class="u30auto-title" id="u30quicklinks-title">QUICK LINKS</li>
+                                                        <li role="option">
+                                                            <a href="/cloud/" data-lbl="quick-links:oci">Oracle Cloud Infrastructure</a>
+                                                        </li>
+                                                        <li role=" option">
+                                                            <a href="/applications/" data-lbl="quick-links:applications">Oracle Fusion Cloud Applications</a>
+                                                        </li>
+                                                        <li role="option">
+                                                            <a href="/database/" data-lbl="quick-links:database">Oracle Database</a>
+                                                        </li>
+                                                        <li role="option">
+                                                            <a href="/java/technologies/downloads/" data-lbl="quick-links:download-java">Download Java</a>
+                                                        </li>
+                                                        <li role="option">
+                                                            <a href="/careers/" data-lbl="quick-links:careers">Careers at Oracle</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <span class="u30submit">
+                                                    <input class="u30searchbttn" type="submit" value="Submit Search">
+                                                </span>
+                                                <button id="u30clear" type="reset" aria-label="Clear Search">
+                                                    <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M7 7L13 13M7 13L13 7M19 10C19 14.9706 14.9706 19 10 19C5.02944 19 1 14.9706 1 10C1 5.02944 5.02944 1 10 1C14.9706 1 19 5.02944 19 10Z" stroke="#161513
+" stroke-width="2"/>
+                                                    </svg>
+                                                </button>
+                                            </span>
+                                        </div>
+                                    </form>
+                                    <div id="u30announce" data-alerttxt="suggestions found to navigate use up and down arrows" class="u30visually-hidden" aria-live="polite"></div>
+                                </div>
+                            </div>
+                            <button class="u30searchBtn" id="u30searchBtn" type="button" aria-label="Open Search Field" aria-expanded="false">
+                                <span>Search</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                    <path d="M15,15l6,6M17,10a7,7,0,1,1-7-7A7,7,0,0,1,17,10Z"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <!-- ACS -->
+                        <span id="ac-flag">
+                            <a class='flag-focus' href="/countries-list.html#countries" data-ajax="true" rel="lightbox" role="button">
+                                <span class="sr-only">Country</span>
+                                <img class="flag-image" src="" alt=""/>
+                                <svg class="default-globe" alt="Country" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <rect width="20" height="20" fill="url(#pattern0)"/>
+                                    <defs>
+                                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                            <use xlink:href="#image0_1_1830" transform="translate(-0.166667 -0.166667) scale(0.0138889)"/>
+                                        </pattern>
+                                        <image alt="" id="image0_1_1830" width="96" height="96" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAACXBIWXMAAAsTAAALEwEAmpwYAAAIm0lEQVR4nO2dbYxdRRnHf9stu2i3gq/QotCtAawIolQUK6UVKL4BDVrjG4KJXzTSSMBgYiSkLQmagCG+JvpNo5WAEEKrUYioEUWkLk01Fm3XLwItZdvadpeme/fvh7lXb8s8c86duffMdvf8kpNN5jzPPHPmf865c+Zt+yRRk485uQsw26kFyEwtQGZqATJTC5CZWoDM1AJkphYgM7UAmakFyEwtQGbm5i5AAf3A+c3jLOBsYDEwD3hl8y/AIWBv8+8O4GlgO/AUMAI0qityZ/RNw86404APA5cClwAnJea3D/gN8AhwH/BMYn5dZboIcCKu0j+Nq/j+HsVpAL8CfgTcCxzuUZzS5BZgHvBZ4Eu4O79KdgPfBe4C/lNx7P+RS4C5wA3AV4BX5yhAG3uADcC3gcmqg+cQYCnuzltadeACtgKfB35fZdAqm6EDwN3An0ir/H9HniviPOB3uFfSQEI+HVGVAItxd9ZaoC8yj0lgPa4panF20yb2VdIH3IgTYlFkHp0hqdfHSkl7lcZ+Sava8rRonb+i6ZPCmKTl6nH99Po34Brgx8Bggd2LuKaojwO474G/tKVZhW5/ut4OPArMj4jZbvNx4IECu2h6+Qr6DHAP4crfB9wEPGecnwI+wdGVX5YtwKeaefh4Dri5WQaLE3HfC9dHxC9FrwS4Bvg+4Q+qh4AlwBD2+/a2pl0sDwLrjHOLcN8hS4DNgTz6gR8AqxPKYdOD99oKSROBd+uUpDskzZE0JOl5w26bpBOMGBY+27mSRgz7FyTNl9Qn6RZJjUDehyVdZsSIPrpd+YsV/sEdl3Rlm/2XDbuGpGWBOBaW/TLZlXtLm91VCt88Y5IWBeJkFWBA0hOBwh+UdGmb/aCkXYbtxoJYFiGfjYbPrmZZWnaXSzoUiPFH2U9mVgHuDhR6XC9t0q0xbBuSzimIZRHyOUf2U/CRY2xXKPwk3FkQq3IBlsm9231MSfqkx+fnhv1DJeJZFPltNvw2eWzXBK6pIemiEvEqESD0IydJ6zw+CyVNGvYfLBHTosjvSsNvUtIbPPbrA7G2yl17Uv1140PsRlz/yWxkLfDNlAxSBZgHjAKvTcnkOGYPMAwcjM0g9UPsc8zeygd4DW5AKZqUJ2AQ2AksTCnADOBZXG/vizHOKU/AGurKB1hAQjdFigDXJvjONKLrIlaAhbjZCz4uwXULW8dOw++iAr/2w6Ks/7sN/x0FfisMv1XAqYFymcQKsAZ/T+c/cKNJFi/H3/M5BWyLLEsM2/CPKQwDLwv4/Rb4pyd9Lm5aTcfECvBeI30j9mAJwJuMmDtJaMpFcAD/kzgHV0YLAT81zllvhCAxAvQDy41zoX51gDcb6U9FlCOVrUa6VcYW1jWuJGJCWYwAbwNO9qTvA54o8D3LSP97RDlSsWJaZWzxOLDfk34y8NZOCxEjgBXkzxRPgl1gpOeYr2nFLPoxbQBPGufO67QQMQJYd4hVqHasr+ZdEeVIxRqHPqWEr3WtoSkzXmIEsH6kni7ha13csxHlSMUS4HUlfK1rrUSARUb6aAlf6wnYHVGOVFIE2GGkD3daiJi+oH8BZ3TqNEsYxfULlSbmCbAmOtVE1E2MAEMRPrOFSgSo6SIxAlTZZXC8caBThxgBOg4yi+h4qVOMAL7PcHAddEXdwFbz7cwSvt3sju5rxvRR1CXdh90ZWYkAVnu/TBvYau+X+frsNla3SJmv8jca6dZYh0mMANuN9KJOLLAFiBrMSMQSvcxHofXFW6Y34Ci6KUCZdV/W3ZVDAGs8u8wTYF1rx726MQJYffdLKe4Pty7Oeh30Ekv0IgH6cV3yPqwxBpMYAUZw+zIcy0nAOwp8rUd0SUQ5UrEGXopeI+/Ev33CGBEDSzECNHBjoz4+UOD7VyO944GMLnCukf63Aj/rGh/FXg5lEvsl/IiR/jHCzcTt+As5TLVdHPPxt9qmCL/H+3DX6OPhmILECnAf/tGvM4GLA37juN5UXzmsO7IXnIv/RhkFJgJ+y/E3QSeB+2MKkjI18RfAFbHOM4xNwIdiHFM6436Y4DvTiK6LenJuOtkm5x5m9i7MaOdrRFY+1As0UtmNa02Nx2aQOiBzCLg9MY/jmXUkVD50Z0TsW7ivY4v1vLQ79zTsSVxXeey71R19teHXAE732G8IxNoCfC9wvhypq/yax4Wy1+B2ukx1c4l4FkV+VkzfMtWPKrxM9V0l4lWyTLV13BWomAm5xc/t9lUv1H6Lyi/UXqnwQu2vF8TKIsCApMcDhT4ktw1Ay366blWwSm5lv8VjmqZbFSC3kcVYoPATchtitOyr2qzjPSq3Wcdqhe/8PZJOD8TJLgByS/hDm11UvV3NQDMvH51sVzMu6WIjxrQSoHUnWVsRtNgkaYGkWwM2txr5W/hsbyvIf4HsH+cWkzr6yZ32AiDpehWLsFfSTZJGjfMN48ItjrW7WvZdPSrpZkn7Csp4RNJ1nry7cvR6077VwE8otzmeZXMQt/JyS1tamU37LsANkljjDGU27ZvA9f8/WGAXTa+nJj6A67L2DWG2E6qIIVxFvq+DuO8Hfk14kKeo8l/ALT/tWeUDlewbiqQz5HaaSuGIpA2S5gVshiTd3rRN4TF1ubVjHVXuHX0CcAfwRdKevGewu8BD58owBdyJ21T8SEI+pcmxefcFwHeAC6sOXMAIbvPuP1QZNMf09CdxWwWsBZ7PEP9YdgNfwM1rqrTyIf8/cBgErgO+Cry+4ti7gG/gdrxK6lJOIbcALQZxu+1ei2t59OpfmEwCv8SN4d5P/S9MvJzK0f/E51WJ+Y3hmrEPAz8jz5pkk+koQDtzcLPmzuf//8ZqGHgFbmuAVjv/IG6rhP24IdLWv7Eawc3X7HjGWlVMdwFmPPUivczUAmSmFiAztQCZqQXITC1AZmoBMlMLkJlagMzUAmSmFiAz/wUn9S8SexswyQAAAABJRU5ErkJggg=="/>
+                                    </defs>
+                                </svg>
+                            </a>
+                        </span>
+                        <!-- /ACS -->
+                        <a href="/oci-menu-v3/" id="u30ham" role="button" aria-expanded="false" aria-haspopup="true" aria-controls="u30navw1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" preserveAspectRatio="none">
+                                <title>Menu</title>
+                                <path d="M16,4 L2,4" class="p1"></path>
+                                <path d="M2,12 L22,12" class="p2"></path>
+                                <path d="M2,20 L16,20" class="p3"></path>
+                                <path d="M0,12 L24,12" class="p4"></path>
+                                <path d="M0,12 L24,12" class="p5"></path>
+                            </svg>
+                            <span>Menu</span>
+                        </a>
+                        <a href="/corporate/contact/" class="u30contactBtn" data-lbl="contact-sales" title="Contact Sales" aria-label="Contact Sales">
+                            <span>Contact Sales</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                <path d="M15.9,3V14h-9L4.81,17H3.09V3ZM8.12,14v3.94l9,.07,2.11,2.92H21V7L15.9,7"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.oracle.com/cloud/sign-in.html" class="u30cloud" data-lbl="sign-in-account">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                <path d="M17,19.51A3,3,0,0,0,14,17H10a3,3,0,0,0-3,2.51m9.92,0a9,9,0,1,0-9.92,0m9.92,0a9,9,0,0,1-9.92,0M15,10a3,3,0,1,1-3-3A3,3,0,0,1,15,10Z"/>
+                            </svg>
+                            <span class="acttxt">Sign in to Oracle Cloud</span>
+                        </a>
+                    </div>
+                </div>
+                <script>
+                    var u30min = [722, 352, 0, 0];
+                    var u30brsz = new ResizeObserver(u30 => {
+                        document.getElementById('u30').classList.remove('u30mobile', 'u30tablet', 'u30notitle');
+                        let u30b = document.getElementById('u30brand').offsetWidth
+                          , u30t = document.getElementById('u30tools').offsetWidth;
+                        u30v = document.getElementById('u30navw1');
+                        u30w = document.getElementById('u30w1').offsetWidth - 48;
+                        if ((u30b + u30t) > u30min[0]) {
+                            u30min[2] = ((u30b + u30t) > 974) ? u30b + u30t + 96 : u30b + u30t + 48;
+                        } else {
+                            u30min[2] = u30min[0];
+                        }
+                        u30min[3] = ((u30b + 112) > u30min[1]) ? u30min[3] = u30b + 112 : u30min[3] = u30min[1];
+                        u30v.classList.add('u30navchk');
+                        u30min[2] = (u30v.lastElementChild.getBoundingClientRect().right > u30min[2]) ? Math.ceil(u30v.lastElementChild.getBoundingClientRect().right) : u30min[2];
+                        u30v.classList.remove('u30navchk');
+                        if (u30w <= u30min[3]) {
+                            document.getElementById('u30').classList.add('u30notitle');
+                        }
+                        if (u30w <= u30min[2]) {
+                            document.getElementById('u30').classList.add('u30mobile');
+                        }
+                    }
+                    );
+                    var u30wrsz = new ResizeObserver(u30 => {
+                        let u30n = document.getElementById('u30navw1').getBoundingClientRect().height
+                          , u30h = u30[0].contentRect.height;
+                        let u30c = document.getElementById('u30').classList
+                          , u30w = document.getElementById('u30w1').offsetWidth - 48
+                          , u30m = 'u30mobile'
+                          , u30t = 'u30tablet';
+                        if (u30w <= u30min[3]) {
+                            u30c.add('u30notitle');
+                        } else {
+                            u30c.remove('u30notitle');
+                        }
+                        if (u30c.contains('navexpand') && u30c.contains(u30m) && u30w > u30min[2]) {
+                            if (!document.querySelector('button.u30navitem.active')) {
+                                document.getElementById('u30ham').click();
+                            }
+                            u30c.remove(u30m);
+                            if (document.getElementById('u30').getBoundingClientRect().height > 80) {
+                                u30c.add(u30t);
+                            } else {
+                                u30c.remove(u30t);
+                            }
+                        } else if (u30w <= u30min[2]) {
+                            u30c.add(u30m);
+                            u30c.remove(u30t);
+                        } else if (u30n < 30 && u30h > 80) {
+                            u30c.add(u30t);
+                            u30c.remove(u30m);
+                        } else if (u30n > 30) {
+                            u30c.add(u30m);
+                            u30c.remove(u30t);
+                        } else if (u30n < 30 && u30h <= 80) {
+                            u30c.remove(u30m);
+                            if (document.getElementById('u30').getBoundingClientRect().height > 80) {
+                                u30c.add(u30t);
+                            } else {
+                                u30c.remove(u30t);
+                            }
+                        }
+                    }
+                    );
+                    u30brsz.observe(document.getElementById('u30btitle'));
+                    u30wrsz.observe(document.getElementById('u30'));
+                </script>
+            </section>
+            <!-- /U30v0 -->
+            <!-- END: oWidget_C/_Raw-Text/Display -->
+            <!-- end : ocom/common/global/components/redwood/layoutAssetStartBodyInfo -->
+            <!-- widgetType = _Raw-Text -->
+            <!-- ptbWidget = false -->
+            <!-- ptbWidget = false -->
+            <!-- displayBreadcrumb = Yes -->
+            <!-- start : ocom/common/global/components/u03v6-breadcrumb -->
+            <!-- U03v6 -->
+            <nav class="u03 u03v6" data-trackas="breadcrumb" data-ocomid="u03">
+                <div class="cwidth">
+                    <div class="u03w1">
+                        <ul>
+                            <li class="u03first">
+                                <a href="/security/">Security</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <script type="text/javascript">
+                    var pageData = pageData || {};
+                    //page info
+                    pageData.pageInfo = pageData.pageInfo || {};
+                    pageData.pageInfo.breadCrumbs = "Security";
+                </script>
+                <script type="application/ld+json">
+                    {
+                        "@context": "https://schema.org",
+                        "@type": "BreadcrumbList",
+                        "itemListElement": [
+                            {
+                                "@type": "ListItem",
+                                "position": 1,
+                                "name": "Security",
+                                "item": "https://www.oracle.com/security/"
+                            }
+                        ]
+                    }</script>
+            </nav>
+            <!-- /U03v6 -->
+            <!-- end : ocom/common/global/components/u03v6-breadcrumb -->
+            <!-- Dispatcher:null -->
+            <!-- BEGIN: oWidget_C/_Raw-Text/Display -->
+            <!-- RC25v0 -->
+            <section class="rc25 rc25v0" data-trackas="rc25" data-a11y="true">
+                <div class="rc25w1 cwidth">
+                    <h1 class="osans">What Is Zero Trust Security?</h1>
+                    <p>Lorna Garey | Senior Writer | October 7, 2024</p>
+                </div>
+            </section>
+            <!-- /RC25v0 -->
+            <!-- RC24v0 -->
+            <section class="rc24 rc24v0" data-a11y="true">
+                <div class="rc24w1 cwidth">
+                    <figure>
+                        <img data-src="/a/ocom/img/rc24-bsa-zero-trust.jpg" alt="">
+                    </figure>
+                </div>
+            </section>
+            <!-- /RC24v0 -->
+            <!-- END: oWidget_C/_Raw-Text/Display -->
+            <!-- start : ocom/common/global/components/compass/related-widgets -->
+            <!-- Dispatcher:null -->
+            <!-- BEGIN: oWidget_C/_Raw-Text/Display -->
+            <script type="application/ld+json">
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Article",
+                    "mainEntityOfPage": {
+                        "@type": "WebPage",
+                        "@id": "https://www.oracle.com/security/what-is-zero-trust/"
+                    },
+                    "headline": "What Is Zero Trust Security?",
+                    "image": "https://www.oracle.com/a/ocom/img/rc24-bsa-zero-trust.jpg",
+                    "author": [
+                        {
+                            "@type": "Person",
+                            "name": "Lorna Garey",
+                            "url": "https://www.linkedin.com/in/lorna-marie-garey"
+                        }
+                    ],
+                    "publisher": {
+                        "@type": "Organization",
+                        "name": "Oracle",
+                        "logo": {
+                            "@type": "ImageObject",
+                            "url": "https://www.oracle.com/a/ocom/img/customerlogo-oracle-clr.svg"
+                        }
+                    },
+                    "datePublished": "2024-10-03"
+                }</script>
+            <script type="application/ld+json">
+                {
+                    "@context": "https://schema.org",
+                    "@type": "FAQPage",
+                    "mainEntity": [
+                        {
+                            "@type": "Question",
+                            "name": "What is zero trust security?",
+                            "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "A zero trust security model uses frequent user authentication and authorization to protect assets while continuously monitoring for signs of breaches. Segmentation is used to limit the data and assets that an entity can access without reauthenticating. Because zero trust presumes the network has been penetrated by a threat agent, security measures are implemented in depth, rather than simply at the perimeter—the “castle and moat” model."
+                            }
+                        },
+                        {
+                            "@type": "Question",
+                            "name": "Why is a zero trust model important?",
+                            "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "A zero trust model is important because the traditional approach of giving free rein to users and devices within an implicit trust zone or when connected via a VPN is simply not working. These outdated perimeter defense models are failing to secure our data because organizational boundaries are no longer limited to on-premises systems. Remote workers and mobile devices are external to the network perimeter, and adoption of cloud technologies further expands the security boundary. Meanwhile, cyberattacks continue to become more complex and impactful. A successful ransomware attack can cripple an organization, resulting in the loss of critical functionality and exposing sensitive information. No organization is immune—attackers have successfully ransomed large companies, municipalities, and even hospitals."
+                            }
+                        },
+                        {
+                            "@type": "Question",
+                            "name": "How does zero trust work?",
+                            "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "Zero trust works by simply never implicitly trusting a request for data, applications, or resources and assuming the requester could be a bad actor. When you look at security through that lens, the result is new levels of granularity in tools and policies. Developing a zero trust security architecture starts with identifying sensitive data and critical applications as well as authorized users and data flows. There is a control plane, consisting of a policy controller, and automation and orchestration are critical. There’s no way IT teams alone can achieve the needed level of vigilance. That takes an integrated approach as well as AI/ML."
+                            }
+                        },
+                        {
+                            "@type": "Question",
+                            "name": "What are the five pillars of zero trust?",
+                            "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "The five pillars of zero trust, based on the Cybersecurity and Infrastructure Security Agency’s recently published Zero Trust Maturity Model Version 2, are identity, devices, networks, applications and workloads, and data. These five pillars work together to create a comprehensive security strategy predicated on continuously verifying all users, devices, applications, and access requests. This layered approach is meant to make it much harder for attackers to gain a foothold."
+                            }
+                        },
+                        {
+                            "@type": "Question",
+                            "name": "What are the four goals of zero trust?",
+                            "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "The four main goals of zero trust security are to limit the attack surface; enhance an organization’s security posture via strong authentication, least privilege access control, and continuous monitoring; safely provide employees and partners with the tools they need, including cloud services, from any device; and improve compliance."
+                            }
+                        }
+                    ]
+                }</script>
+            <!-- END: oWidget_C/_Raw-Text/Display -->
+            <!-- Dispatcher:null -->
+            <!-- BEGIN: oWidget_C/F22-Multi-Column-Page-Framework/V0-Display -->
+            <!-- F22v0 -->
+            <div class="f22 f22v0 cpad" data-trackas="f22" data-ocomid="f22">
+                <div class="f22w1 cwidth">
+                    <div class="f22w2 f22sidebar">
+                        <!-- Left Column Widget - 1 -->
+                        <!-- Dispatcher:null -->
+                        <!-- BEGIN: oWidget_C/_Raw-Text/Display -->
+                        <!-- RC78v0 -->
+                        <section class="rc78 rc78v0" data-trackas="rc78" data-ocomid="rc78" data-a11y="true">
+                            <div class="rc78w1">
+                                <div class="rc78w2">
+                                    <p>
+                                        <strong>In This Article</strong>
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            <a href="#what-is-zero-trust-security">What Is Zero Trust Security?</a>
+                                        </li>
+                                        <li>
+                                            <a href="#zero-trust-security-explained">Zero Trust Security Explained</a>
+                                        </li>
+                                        <li>
+                                            <a href="#why-is-a-zero-trust">Why Is a Zero Trust Model Important?</a>
+                                        </li>
+                                        <li>
+                                            <a href="#federal-government">Federal Government Zero Trust Security Frameworks</a>
+                                        </li>
+                                        <li>
+                                            <a href="#how-does-zero-trust-work">How Does Zero Trust Work?</a>
+                                        </li>
+                                        <li>
+                                            <a href="#core-principles">Core Principles of Zero Trust</a>
+                                        </li>
+                                        <li>
+                                            <a href="#benefits-zero-trust">Benefits of Zero Trust</a>
+                                        </li>
+                                        <li>
+                                            <a href="#zero-trust-case">Zero Trust Use Cases</a>
+                                        </li>
+                                        <li>
+                                            <a href="#7-stages-zero-trust">7 Stages of Zero Trust Implementation</a>
+                                        </li>
+                                        <li>
+                                            <a href="#11-zero-trust-best">11 Zero Trust Best Practices</a>
+                                        </li>
+                                        <li>
+                                            <a href="#strategies-smooth-cultural">Strategies for a Smooth Cultural Transition</a>
+                                        </li>
+                                        <li>
+                                            <a href="#history-zero-trust">History of Zero Trust Security</a>
+                                        </li>
+                                        <li>
+                                            <a href="#adopt-zero-trust">Adopt Zero Trust with Oracle Cloud Infrastructure</a>
+                                        </li>
+                                        <li>
+                                            <a href="#zero-trust-faqs">Zero Trust Security FAQs</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- /RC78v0 -->
+                        <!-- END: oWidget_C/_Raw-Text/Display -->
+                    </div>
+                    <div class="f22w2">
+                        <!-- Right Column Widget - 1 -->
+                        <!-- Dispatcher:null -->
+                        <!-- BEGIN: oWidget_C/_Raw-Text/Display -->
+                        <!-- RC24v0 -->
+                        <section class="rc24 rc24v0 cpad" data-a11y="true">
+                            <div class="rc24w1 cwidth">
+                                <p>Security professionals who’ve been in the game a while have seen a lot. The aughts were all about strong passwords, firewalls and antivirus, and keeping software patched. Then requirements such as the Health Insurance Portability and Accountability Act (HIPAA) and Payment Card Industry Data Security Standard (PCI DSS) shifted focus to data-specific protection measures, including identity-based access controls and encryption. Cloud and mobile devices brought more new tools, processes, and training.</p>
+                                <p>Of course, attackers evolved their strategies, too. In response, proactive organizations are increasingly using zero trust principles to strengthen their security postures and protect assets from unauthorized access and manipulation—they’re hewing to a “never trust, always verify” stance that uses granular segmentation to limit the attack surface and makes the assumption that the enemy is already inside the gate.</p>
+                                <p>Now it’s about reducing the scope of harm.</p>
+                            </div>
+                        </section>
+                        <!-- /RC24v0 -->
+                        <!-- RC24v0 -->
+                        <section class="rc24 rc24v0 cpad" data-a11y="true" id="what-is-zero-trust-security">
+                            <div class="rc24w1 cwidth">
+                                <h2 class="rw-ptitle">What Is Zero Trust Security?</h2>
+                                <p>A zero trust security model uses frequent user authentication and authorization to protect assets while continuously monitoring for signs of breaches. Segmentation is used to limit the data and assets that an entity can access without reauthenticating. Because zero trust presumes the network has been penetrated by a threat agent, security measures are implemented in depth, rather than simply at the perimeter—the “castle and moat” model.</p>
+                                <p>Zero trust security, also known as a zero trust architecture or perimeterless security, assumes no one and no device or application is universally trusted, whether inside or outside the network. Continuous verification is required. That access is granted based on the context of the request, the level of trust, and the sensitivity of the asset. A zero trust architecture is especially effective for organizations that use cloud applications and have lots of remote workers and locations.</p>
+                                <figure>
+                                    <img alt="A zero trust architecture" data-src="/a/ocom/img/how-zero-trust-works.svg">
+                                    <span class="sr-only">A zero trust architecture uses a security model that verifies every user, service, and device before granting access to a limited segment of the network, for a limited time.</span>
+                                </figure>
+                                <br>
+                                <p>
+                                    <strong>Key Takeaways</strong>
+                                </p>
+                                <ul class="obullets">
+                                    <li>Zero trust security moves cyber defenses from static, network-based perimeters to a focus on users, assets, and resources.</li>
+                                    <li>Most organizations today are subject to data privacy regulations that emphasize granular access controls, a tenet of zero trust.</li>
+                                    <li>Zero trust means just that: Frequent and strong verification is required for every user, device, and application.</li>
+                                    <li>Microsegmentation—dividing the network into contained zones and controlling movement between them—is key to success with zero trust security.</li>
+                                </ul>
+                            </div>
+                        </section>
+                        <!-- /RC24v0 -->
+                        <!-- RC24v0 -->
+                        <section class="rc24 rc24v0 cpad" data-a11y="true" id="zero-trust-security-explained">
+                            <div class="rc24w1 cwidth">
+                                <h2 class="rw-ptitle">Zero Trust Security Explained</h2>
+                                <p>NIST, the National Institute of Standards and Technology, defines zero trust as an evolving set of cybersecurity paradigms that move defenses from static, network-based perimeters to a focus on users, assets, and resources. Zero trust assumes there is no implicit trust granted to assets or user accounts based solely on the physical or network location—local area networks versus the internet—or on whether an asset is enterprise or personally owned.</p>
+                                <p>Zero trust security removes implicit trust and instead depends on strong identity and access management (IAM) controls that let organizations allow only authorized people, devices, and applications to access their systems and data. A zero trust security approach has some key tenets:</p>
+                                <ul class="obullets">
+                                    <li>The expectation is that threat actors are already operating in the network, so IT should presume breaches.</li>
+                                    <li>A zero trust environment denies access by default; all technical and human resources are queried to provide authorization/authentication at the transaction level.</li>
+                                    <li>The level of asset protection is based on value. Resources may be accessed only after authentication and with the required authorization. Further, continuous verification of permissions should take place, and unneeded access should be revoked.</li>
+                                    <li>The network is segmented, and there is no asset or space that does not need security.</li>
+                                    <li>Advanced analysis, often using AI, is used to spot anomalous behavior and act immediately to lock out intruders.</li>
+                                </ul>
+                                <p>Zero trust also takes a defense in depth approach. Defense in depth, sometimes called layered security, involves implementing various security controls at different points within a system to safeguard an organization’s network, systems, and data. It’s analogous to a castle with multiple defensive measures, where getting past the moat doesn’t get you the crown jewels. There are also gates, strong locked doors, and archers in turrets.</p>
+                                <p>Defense in depth controls can be physical, technical, or administrative. Physical security measures include fences, access control systems, and security guards to protect data centers. Technical controls include firewalls, intrusion detection/prevention systems (IDS/IPS), data encryption, and anti-malware software to provide technical barriers. Administrative measures, such as policies, procedures, security awareness training, and access controls aim to address the human element of security.</p>
+                            </div>
+                        </section>
+                        <!-- /RC24v0 -->
+                        <!-- RC24v0 -->
+                        <section class="rc24 rc24v0 cpad" data-a11y="true" id="why-is-a-zero-trust">
+                            <div class="rc24w1 cwidth">
+                                <h2 class="rw-ptitle">Why Is a Zero Trust Model Important?</h2>
+                                <p>A zero trust model is important because the traditional approach of giving free rein to users and devices within an implicit trust zone or when connected via a VPN is simply not working. These outdated perimeter defense models are failing to secure our data because organizational boundaries are no longer limited to on-premises systems. Remote workers and mobile devices are external to the network perimeter, and adoption of cloud technologies further expands the security boundary. Meanwhile, cyberattacks continue to become more complex and impactful. A successful ransomware attack can cripple an organization, resulting in the loss of critical functionality and exposing sensitive information. No organization is immune—attackers have successfully ransomed large companies, municipalities, and even hospitals.</p>
+                                <p>It’s crucial to adopt a more aggressive approach to securing our systems and data.</p>
+                                <p>
+                                    As the use of cloud services rapidly expands, it also creates new targets for cybercriminals. A popular exploit is to steal or guess the credentials of a privileged administrator or application, then move freely throughout the network. A <a href="/a/ocom/docs/industries/government/gov-zero-trust-cloud-adoption-bb.pdf" target="_blank" data-lbl="pdf-zero-trust-implementation">zero trust implementation (PDF)</a>
+                                    makes it possible to granularly regulate access to systems, networks, and data. That’s why an increasing number of organizations are moving to a zero trust security model to reduce the risk of data breach, detect cybersecurity incidents, and prevent damage from cyberattacks.
+                                </p>
+                            </div>
+                        </section>
+                        <!-- /RC24v0 -->
+                        <!-- RC24v0 -->
+                        <section class="rc24 rc24v0 cpad" data-a11y="true" id="federal-government">
+                            <div class="rc24w1 cwidth">
+                                <h2 class="rw-ptitle">Federal Government Zero Trust Security Frameworks</h2>
+                                <p>The topic of zero trust is a major focus for the United States Department of Defense (DoD), and the US government overall. In May 2021, the White House issued Executive Order 14028, which directs federal agencies to protect and secure their computer systems by adopting security best practices and advancing toward a zero trust architecture, which officials see as a major tool toward accomplishing this security strategy.</p>
+                                <p>
+                                    There are several models and frameworks available to help teams develop a zero trust architecture. NIST has devised a model based on six tenets, published in <a href="https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf" target="_blank" data-lbl="pdf-special-publication">Special Publication 800-207 (PDF)</a>
+                                    . The Cybersecurity and Infrastructure Security Agency (CISA) recently published Version 2.0 of its <a href="https://www.cisa.gov/sites/default/files/2023-04/zero_trust_maturity_model_v2_508.pdf" target="_blank" data-lbl="pdf-zero-trust-maturity-model">Zero Trust Maturity Model (PDF)</a>
+                                    , which comprises five pillars.
+                                </p>
+                                <p>
+                                    Finally, the Defense Information Systems Agency (DISA) <a href="https://dodcio.defense.gov/Portals/0/Documents/Library/(U)ZT_RA_v2.0(U)_Sep22.pdf" target="_blank" data-lbl="pdf-published-reference-architect">published a reference architecture (PDF)</a>
+                                    aligning enterprise technology with seven pillars.
+                                </p>
+                                <p>All these agencies aim to help organizations adopt a zero trust strategy. These models and their associated architectures bring structure and help to define the budget and effort needed for success.</p>
+                            </div>
+                        </section>
+                        <!-- /RC24v0 -->
+                        <!-- RC24v0 -->
+                        <section class="rc24 rc24v0 cpad" data-a11y="true" id="how-does-zero-trust-work">
+                            <div class="rc24w1 cwidth">
+                                <h2 class="rw-ptitle">How Does Zero Trust Work?</h2>
+                                <p>Zero trust works by simply never implicitly trusting a request for data, applications, or resources and assuming the requester could be a bad actor. When you look at security through that lens, the result is new levels of granularity in tools and policies. Developing a zero trust security architecture starts with identifying sensitive data and critical applications as well as authorized users and data flows. There is a control plane, consisting of a policy controller, and automation and orchestration are critical. There’s no way IT teams alone can achieve the needed level of vigilance. That takes an integrated approach as well as AI/ML.</p>
+                                <p>A zero trust architecture follows six tenets as laid out by NIST.</p>
+                                <ul class="obullets">
+                                    <li>All data sources and computing services are considered resources that require security considerations. Nothing is to be left unsecured.</li>
+                                    <li>All communication must be secure regardless of network location; network location does not imply trust.</li>
+                                    <li>Access to individual enterprise resources is granted on a per-connection basis; trust in the requester is evaluated before the access is granted.</li>
+                                    <li>Access to resources is determined by policy, including the observable state of user identity and the requesting system. Evaluation may include other behavioral attributes.</li>
+                                    <li>The organization ensures all owned and associated systems are in the most secure state possible and will monitor systems to ensure that they remain that way.</li>
+                                    <li>User authentication is dynamic and strictly enforced before access is allowed; this is a constant cycle of access, scanning and assessing threats, adapting, and authenticating.</li>
+                                </ul>
+                                <figure>
+                                    <img alt="A zero trust architecture" data-src="/a/ocom/img/rc24inline-how-zero-trust-works.svg">
+                                    <span class="sr-only">A zero trust architecture uses a security model that verifies every user, service, and device before granting access to a limited segment of the network for a limited time.</span>
+                                    <figcaption>A zero trust architecture uses a security model that verifies every user, service, and device before granting access to a limited segment of the network for a limited time.</figcaption>
+                                </figure>
+                                <br>
+                            </div>
+                        </section>
+                        <!-- /RC24v0 -->
+                        <!-- RC24v0 -->
+                        <section class="rc24 rc24v0 cpad" data-a11y="true" id="core-principles">
+                            <div class="rc24w1 cwidth">
+                                <h2 class="rw-ptitle">Core Principles of Zero Trust</h2>
+                                <p>
+                                    The core principles of zero trust can be seen through the lens of the <a href="https://www.ncsc.gov.uk/collection/zero-trust-architecture/assess-user-behaviour-service-and-device-health" target="_blank" data-lbl="eight-zero-trust-principles">Eight Zero Trust Principles developed by the UK government’s National Cyber Security Centre (NCSC)</a>
+                                    . These tenets comprise a useful framework for organizations to consider as they embark on the journey to build a zero trust architecture.
+                                </p>
+                                <p>In addition, implementing zero trust security can involve a significant cultural adjustment for organizations.</p>
+                                <h3>1. Know your architecture, including users, devices, services, and data</h3>
+                                <p>Designing any security architecture requires a good understanding of existing assets. Most organizations periodically work to document and assess the users, devices, services, and data they need to protect. For a zero security implementation, undertaking an asset discovery activity will most likely not be a purely technical exercise, but instead involve tasks such as reviewing project documentation and procurement records and having conversations with colleagues. In many cases, departments and lines of business have implemented their own systems.</p>
+                                <h3>2. Know your user, service, and device identities</h3>
+                                <p>Identity can be associated with a human, an application, or a device. All need to be identified to determine whether someone or something should be given access to data or services. As discussed, the gradual movement to cloud has accelerated the erosion of the traditional network perimeter. With that, identity is being recognized as the new perimeter. Identity platforms provide the capabilities to manage user identities, attributes, and access privileges. Although your identity platform can serve as a main identity repository, many organizations will have multiple identity management systems in place. All of these systems need to be discovered and managed as an organization aims to build a zero trust architecture.</p>
+                                <h3>3. Assess user behavior and service and device health</h3>
+                                <p>The NCSC recommends continually monitoring “health signals” from users and devices. These signals are behavioral and system indicators that let a policy engine evaluate trustworthiness and cyber hygiene, so it can make access decisions with a degree of confidence. For example, you may want to know the geographic location from which a laptop is trying to log in. For a user on the US East Coast, a login attempt when it’s 3 a.m. in New York might raise a flag.</p>
+                                <h3>4. Use policies to authorize requests</h3>
+                                <p>One beauty of a zero trust architecture is that you define access policies, which are executed by your policy engine. Policy decisions should consider those health signals we mentioned, including historical and real-time connection information to offer confidence that the requester is genuine and the device is in good cyber health. The NCSC advises that a high-impact action, such as creating a new admin-level user or downloading a customer list, would have to meet stringent policy requirements versus a relatively low-impact action, such as checking the work schedule. When choosing technologies for your zero trust architecture, evaluate how vendors collect signals and factor them into their access control. They should include, at minimum, the user’s role and physical location, authentication factors, device health, time of day, value of the service to be accessed, and risk of the action requested.</p>
+                                <h3>5. Authenticate and authorize everywhere</h3>
+                                <p>If we assume the network is hostile and an attacker is in the system, we clearly need to have strong authentication methods and build applications to accept access decisions from a policy engine. You’ll see better cultural acceptance across the organization if that strong authentication doesn’t hinder the usability of a service. The NCSC suggests prompting for additional authentication factors only when requests have a higher impact, such as for sensitive data or privileged actions, including the creation of new users. Consider single sign-on, multifactor authentication, and passwordless authentication methods for a strong, consistent, and positive user experience across all of your services.</p>
+                                <h3>6. Focus your monitoring on users, devices, and services</h3>
+                                <p>Monitoring software should be installed on devices, and data generated by those systems should be exported via a secure transport mechanism, such as a VPN, to a central location for analysis.  If you allow personal or guest devices in your environment, you may decide not to trust these devices to the same degree as ones that you can fully monitor.</p>
+                                <h3>7. Don’t trust any network, including your own</h3>
+                                <p>Zero trust sees the network as hostile, says the NCSC, and advises to not trust any connection between the device and the service it’s accessing—including LANs. Communications to access data or services should use a secure transport, such as a Transport Layer Security (TLS) protocol that encrypts data. The NCSC also recommends monitoring for attacks like DNS spoofing and man-in-the-middle, rejecting unsolicited inbound connections, and using encryption and encapsulation.</p>
+                                <h3>8. Choose services that have been designed for zero trust</h3>
+                                <p>In a zero trust architecture, you can’t trust the network, so services need to be designed to protect themselves from potential sources of attack. Some legacy systems will need significant, expensive retrofitting and may still have issues with usability. The NCSC advises against “reinventing the wheel,” favoring products and services that have been designed and built for a zero trust architecture. Whenever possible, use standards-based technologies that allow interoperability, such as OpenID Connect, OAuth 2.0, or SAML, and ask cloud service providers about their support for zero trust.</p>
+                            </div>
+                        </section>
+                        <!-- /RC24v0 -->
+                        <!-- RC24v0 -->
+                        <section class="rc24 rc24v0 cpad" data-a11y="true" id="benefits-zero-trust">
+                            <div class="rc24w1 cwidth">
+                                <h2 class="rw-ptitle">Benefits of Zero Trust</h2>
+                                <p>A common network security posture is focused on stopping threats that come from outside the network perimeter but can leave data vulnerable to theft from inside the wall. Perimeter security depends on firewalls, VPNs, intrusion detection systems, and other technologies that cybercriminals may know how to breach. This means someone with the correct credentials could be admitted to any network’s sites, apps, or devices. With zero trust security, no one is trusted by default from inside or outside the network.</p>
+                                <p>Other key benefits include the following:</p>
+                                <ul class="obullets">
+                                    <li>
+                                        <strong>Reduced attack surface</strong>
+                                        . Since zero trust enforces the principle of least privilege, you actually have a smaller active attack surface. Yes, everyone and everything is suspect. However, users and devices are granted only the minimum level of access necessary to perform their tasks. This limits the potential damage from a breach. Imagine a boutique that gives customers access only to only one product at a time instead of letting them browse freely and then monitors them closely—that’s the essence of least privilege. Yes, every asset is an attack surface, but access is significantly restricted.
+                                    </li>
+                                    <li>
+                                        <strong>Minimized impact of attacks</strong>
+                                        . By strategically partitioning the network into microsegments and thereby cutting off lateral movement, a successful attack is limited to a small set of assets that were compromised. And since you’re now applying more stringent access requirements to higher-value data and systems, the expectation is that an attacker ends up with something of trivial value, not your customer list.
+                                    </li>
+                                    <li>
+                                        <strong>Lower time and cost of recovery</strong>
+                                        . A zero trust architecture should lead to fewer and more contained attacks that require less time and money to clean up. Limiting lateral movement keeps an attacker from parlaying lower-level access to further explore your network, and zero trust principles mesh well with data loss prevention (DLP) solutions to prevent sensitive data from being exfiltrated from the network. Zero trust also helps minimize the need for costly breach notification efforts.
+                                    </li>
+                                    <li>
+                                        <strong>Control access</strong>
+                                        . With zero trust, only authorized users and devices based on policy rather than physical location can even attempt access, reducing the number of potential entry points. This approach makes it easier to map controls and minimizes the potential damage if a bad actor gains access through compromised credentials or a vulnerable device.
+                                    </li>
+                                    <li>
+                                        <strong>Improve compliance</strong>
+                                        . Many compliance regulations, such as GDPR and HIPAA, emphasize the importance of robust access control mechanisms. Because zero trust enforces least privilege access, granting users only the minimum permissions needed for their tasks, the architecture aligns well with compliance requirements to restrict access to sensitive data.
+                                    </li>
+                                    <li>
+                                        <strong>Increase visibility and monitoring</strong>
+                                        . Zero trust eliminates the concept of inherently trusting an individual or device within the network perimeter. Everyone and everything requesting access, regardless of location, needs to be continuously verified. By logging these interactions, you maximize visibility and give monitoring systems the data needed to quickly notify IT of anomalies that could indicate a breach.
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                        <!-- /RC24v0 -->
+                        <!-- RC24v0 -->
+                        <section class="rc24 rc24v0 cpad" data-a11y="true" id="zero-trust-case">
+                            <div class="rc24w1 cwidth">
+                                <h2 class="rw-ptitle">Zero Trust Use Cases</h2>
+                                <p>The concept of zero trust security has gained significant traction in recent years, especially among organizations that are prime targets for cyberattacks, such as banks, investment firms, and other financial institutions that handle sensitive financial data, and healthcare organizations, which hold a wealth of patient data subject to privacy regulations. As mentioned, government agencies are also using zero trust to protect data and critical infrastructure. Organizations with modern IT environments—that is, those that rely heavily on cloud applications and services, have remote workforces, and/or maintain large and complex digital infrastructures—are also fan.</p>
+                                <p>On a granular level, there are some areas where zero trust comes into play.</p>
+                                <ul class="obullets">
+                                    <li>
+                                        <strong>Application access</strong>
+                                        . At one time, applications generally resided within a defined network perimeter, such as on a server in a local office. Employees gained access based on their location, such as on the company’s local Wi-Fi network. Today, people can work remotely and applications can live anywhere. To more easily manage access, IT may deploy a central control system, often called a trust broker, to authenticate the user requesting access to an application, check the device’s security, and grant access to only the specific resources the user needs following the principle of least privilege.
+                                    </li>
+                                    <li>
+                                        <strong>Cloud security</strong>
+                                        . Zero trust is an excellent strategy for any organization that uses cloud resources. Employees can get access no matter where they are via a strong authentication process, often using multifactor authentication. The system then considers factors such as user role, device, location, and the specific cloud resource to determine if access should be granted. This minimizes the potential damage if cloud credentials are compromised.
+                                    </li>
+                                    <li>
+                                        <strong>Data protection</strong>
+                                        . Data is vulnerable in a network-centric security model that uses only basic protections, such as username and password. Attackers have shown they can circumvent these measures. A zero trust framework with a focus on data-centric policies and protections will add, for example, additional layers of encryption for data in transit. IT can also set dynamic policies using attribute-based access control (ABAC). Where traditional access control often relies on predefined roles, such as administrator or editor, ABAC instead focuses on attributes, such as department, location, job title, security clearance, data type, document owner, access method, and the device’s physical location and type. This allows for very precise definitions of access permissions based on attributes the organization defines. It’s potentially very granular protection and often will require application code changes.
+                                    </li>
+                                    <li>
+                                        <strong>Endpoint security</strong>
+                                        . A zero trust platform helps protect assets by proactively communicating with the endpoint security software on a user’s device to assess its security posture. Is the operating system up to date? Is any malware detected? Is it personal or owned by the company? Based on the data collected, the zero trust platform grants or denies access. Both the user’s activity and the device’s health are continuously monitored by the zero trust platform for any suspicious behavior.
+                                    </li>
+                                    <li>
+                                        <strong>Identity and access management</strong>
+                                        . IAM is a <a href="/a/ocom/docs/accelerating-zero-trust-adoption-with-oracle-linux.pdf" data-lbl="pillar-cisa-model" target="_blank">pillar of CISA’s zero trust model (PDF)</a>
+                                        —it lays the foundation for the architecture by defining who can access what resources. IAM involves strong authentication methods, including multifactor authentication, as well as user provisioning and access control mechanisms, such as role-based access control (RBAC) and privileged access management to safeguard sensitive data.
+                                    </li>
+                                    <li>
+                                        <strong>Internet of Things (IoT) security</strong>
+                                        . Companies with IoT programs often find zero trust security invaluable to protect a large number of devices, frequently in far-flung locations and gathering sensitive data. Traditional perimeter-based security technologies simply aren’t effective for IoT devices, which may have limited user interfaces and rely on automated processes, making older authentication methods challenging. Because zero trust continually verifies all entities requesting access, it ensures that only authorized IoT devices can connect to the network. And the principle of least privilege means IoT devices get the minimum level of access needed to function. This reduces the potential damage in case of device compromise. And a zero trust approach can scale to accommodate large-scale IoT environments.
+                                    </li>
+                                    <li>
+                                        <strong>Network segmentation</strong>
+                                        . While traditional network security focused on securing the network perimeter, zero trust takes a more granular approach, segmenting the network into small zones and controlling traffic flow between them. Newer zero trust strategies use microsegmentation techniques that reduce zone size even further. This is done using firewalls rather than routers between segments. While security is improved, performance may suffer. How small segments become is a function of both security need and firewall performance.
+                                    </li>
+                                    <li>
+                                        <strong>Privileged access management (PAM)</strong>
+                                        . Zero trust and PAM are distinct security concepts that work together well. PAM systems focus specifically on securing privileged accounts—that is, user accounts with elevated permissions that grant access to critical systems and data. These accounts are prime targets for attackers. Think about a CFO with access to all financial and banking records, or a high-level system administrator. PAM depends on three pillars: multifactor authentication; just-in-time tools that grant privileged access only for the time it’s absolutely needed; and session monitoring and journaling to record exactly what privileged users are doing at any given moment, to hopefully pick up on suspicious behavior.
+                                    </li>
+                                    <li>
+                                        <strong>Remote access</strong>
+                                        . The rise of work from anywhere is an argument in favor of zero trust, since there is no longer a network perimeter, and VPNs bring their own set of issues. A zero trust strategy makes granting remote access safer because it constantly verifies users without their intervention through strong authentication methods, then grants remote users only the minimum level of access needed to perform their tasks. Organizations can write policies that define what that minimum access looks like. Zero trust is also context aware; that is, it considers factors including user identity, device security posture, location, and the specific resource being accessed when determining access permissions.
+                                    </li>
+                                    <li>
+                                        <strong>Third-party access</strong>
+                                        . Granting access to third parties in a zero trust environment requires a shift from the traditional approach to “never trust, always verify.” Besides the remote access principles outlined above, companies may wish to set up their IAM systems to manage third-party user identities and access. Develop a policy for creation, provisioning, and termination of accounts based on the individual partner. Consider a zero trust network access (ZTNA) system to provision secure tunnels to specific resources without granting access to the entire network. The just-in-time and session monitoring tools used for privileged internal users are also handy for partners.
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                        <!-- /RC24v0 -->
+                        <!-- RC24v0 -->
+                        <section class="rc24 rc24v0 cpad" data-a11y="true" id="7-stages-zero-trust">
+                            <div class="rc24w1 cwidth">
+                                <h2 class="rw-ptitle">7 Stages of Zero Trust Implementation</h2>
+                                <p>Achieving zero trust is a continuous journey, not a one-time project. You don’t have to reinvent the wheel, either—consider using one of the models from NIST, CISA, DISA, or NCSC as a technical roadmap. From a project level, plan to implement zero trust in a phased manner to minimize disruption and allow for employees, partners, and IT staff to adjust. Clearly communicate the rationale behind the effort to stakeholders, and address any concerns transparently. And carefully choose security products that can scale to accommodate growth and adapt to changing security realities.</p>
+                                <p>More steps for success:</p>
+                                <p>
+                                    <strong>1. Identify and prioritize your assets</strong>
+                                    . A zero trust security approach is about protecting sensitive and valuable data. To do that, you need to know what you have. This map will serve as the basis for your zero trust plan.
+                                </p>
+                                <p>
+                                    <strong>2.Identify your users and their requirements</strong>
+                                    . A zero trust model requires capturing user information, managing user identities, and organizing access privileges. Map out all people and systems accessing your assets, looking for unneeded privileges.
+                                </p>
+                                <p>
+                                    <strong>3. Map out your zero trust strategy</strong>
+                                    . Plan how you’ll architect to mitigate risk based on your assets and users. Factor in your budget, IT resources, and the complexity of your infrastructure when determining the timeline for each phase.
+                                </p>
+                                <p>
+                                    <strong>4. Take a data dive</strong>
+                                    . When systems identify anomalies in data access and detect attempts to access systems outside of policy, take a hard look at that data. Almost all activity is repetitive, so anomalies are frequently an early indicator of attempted data theft. Make that information work for your mitigation efforts.
+                                </p>
+                                <p>
+                                    <strong>5. Map your traffic flows</strong>
+                                    . Zero in on dependencies here. Does every person and system that’s able to access a database containing sensitive data need that information? 
+                                </p>
+                                <p>
+                                    <strong>6. Automate where possible</strong>
+                                    . Fill in gaps with process improvements and tools. Without automated monitoring of resources and activity, for example, organizations are unlikely to succeed with zero trust. Doing the job right demands modern security tools, including a robust IAM system to centrally manage user identities and access rights and multifactor authentication (MFA) to vet all access attempts. Encryption of data at rest and in motion is key to protecting sensitive data against unauthorized access.
+                                </p>
+                                <p>
+                                    <strong>7. Put metrics in place</strong>
+                                    . Define how you’ll measure the success of your zero trust implementation. Key performance indicators could include a reduction in access privileges, an increase in multifactor authentication use, and buy-in from executives and line-of-business leaders.
+                                </p>
+                            </div>
+                        </section>
+                        <!-- /RC24v0 -->
+                        <!-- RC24v0 -->
+                        <section class="rc24 rc24v0 cpad" data-a11y="true" id="11-zero-trust-best">
+                            <div class="rc24w1 cwidth">
+                                <h2 class="rw-ptitle">11 Zero Trust Best Practices</h2>
+                                <p>CISA in its zero trust model points out that most large enterprises—including the federal government—face common challenges. Legacy systems often rely on “implicit trust,” in which access and authorization are infrequently assessed based on fixed attributes. Changing that may require significant investments along with buy-in from a wide range of stakeholders, including executives, partners, and suppliers. Best practices include the following:</p>
+                                <p>
+                                    <strong>1. Verify and authenticate</strong>
+                                    . The basis of zero trust is requiring verified authentication of every user and device, every time they request access to systems, networks, and data. This process involves validating identities and associated access rights to a particular system. As an example, an employee might authenticate in the morning for a set time period using an authorization service, such as OAuth, which issues tokens that are valid for a limited period of time. When he needs to access a database, his entitlements for that system are confirmed by the token. Zero trust also advises advanced controls, such as behavior analytics, for devices. This as well as logs and journals help IT track activities, create reports, and enforce policies.
+                                </p>
+                                <p>
+                                    <strong>2. Use microsegmentation</strong>
+                                    . The more granularly you can limit lateral movement without degrading performance, the better. CISA recommends distributed ingress/egress microperimeters and extensive microsegmentation based on application architectures, with dynamic just-in-time and just-enough connectivity. This doesn’t mean firewalls everywhere. Microsegmentation techniques include virtual machines for each application, east/west traffic encryption, and creating software-defined networks within the physical network to effectively isolate and secure individual segments. Intelligent routing algorithms can help optimize traffic flows and reduce latency. Regular monitoring and fine-tuning of the segmentation strategy is also crucial to balance network performance and security.
+                                </p>
+                                <p>
+                                    <strong>3. Continuous monitoring.</strong>
+                                    Zero trust involves implementing systems that monitor and log user activity and system health. Base network monitoring on known indicators of compromise and understand that you’ll refine your processes over time to address gaps in visibility. A system that makes use of AI will learn what normal behavior looks like and then watch for and alert on anomalies.
+                                </p>
+                                <p>
+                                    <strong>4. Context-aware logging</strong>
+                                    . Log entries contain access attempts and contextual information, such as user identity, device details, and the specific resource accessed. This data allows for comprehensive analysis and helps identify potential security incidents or suspicious activity. Monitoring systems create a detailed audit log that can be helpful for demonstrating compliance with regulations that require data access tracking. Again, AI-enabled tools can improve detection.
+                                </p>
+                                <p>
+                                    <strong>5. Pervasive encryption</strong>
+                                    . Data is the most critical asset for most organizations, and protecting data at rest, in transit, and in use demands pervasive encryption and activity monitoring to detect unauthorized access attempts.
+                                </p>
+                                <p>
+                                    <strong>6. Least privilege access</strong>
+                                    . In the context of zero trust, least privilege access is a core—and pretty self-explanatory—principle. It requires granting users, applications, and devices only the bare minimum access necessary to perform their tasks. This isn’t to indicate a lack of trust in employees but rather to minimize the potential damage if a bad actor gains access through stolen credentials, a compromised device, or a vulnerability.
+                                </p>
+                                <p>
+                                    <strong>7. Focus on device trustworthiness</strong>
+                                    . A network based on zero trust principles doesn't inherently trust any device, regardless of whether it’s inside the perimeter, company owned, or previously granted access. This seeks to ensure that only authorized and compliant devices are granted access. In this case, compliance might involve meeting security posture requirements like having updated software, antivirus protection, and other monitoring software in place.
+                                </p>
+                                <p>
+                                    <strong>8. Secure access controls</strong>
+                                    . Zero trust extends to the cloud-based applications and workspaces in use by many organizations today. The architecture demands that these applications have a known and approved security posture and that access to them is controlled.
+                                </p>
+                                <p>
+                                    <strong>9. Zero trust network access</strong>
+                                    . ZTNA, also known as software-defined perimeter, is a security approach that controls access to internal applications and resources in a much more granular way than a traditional VPN, which grants access to an entire network once a user is verified. ZTNA evaluates security credentials every single time access to a resource is requested. The system considers context and may grant only partial access. If access is granted, it’s via a secure session between the requesting entity and the specific asset. Then, activity and device health are continuously monitored for anomalous behavior that might indicate a threat.
+                                </p>
+                                <p>
+                                    <strong>10. Endpoint security</strong>
+                                    . Got users who tend to lag behind on making software version or malware signature updates or resist installing security software in their personal devices? Zero trust will force their hands because an endpoint without the security profile defined by your policy will simply not be granted access. IT should manage endpoint security on company-owned devices, and compliance should be verified when new sessions are initiated.
+                                </p>
+                                <p>
+                                    <strong>11. User education and awareness</strong>
+                                    . It’s natural for employees to chafe at zero trust principles, at least at first. It may help to provide education sessions and give concrete examples of how the architecture could save the company money and reputational damage.
+                                </p>
+                            </div>
+                        </section>
+                        <!-- /RC24v0 -->
+                        <!-- RC24v0 -->
+                        <section class="rc24 rc24v0 cpad" data-a11y="true" id="strategies-smooth-cultural">
+                            <div class="rc24w1 cwidth">
+                                <h2 class="rw-ptitle">Strategies for a Smooth Cultural Transition</h2>
+                                <p>Traditional network security models often assume a certain level of trust once users are inside the network perimeter. Zero trust challenges this, and it can be a significant mindset shift for both IT staff and people accustomed to unfettered access within the network.</p>
+                                <p>In addition, zero trust emphasizes strong identity and access management practices—think stricter password policies, multifactor authentication, and a more centralized approach to managing user identities and access privileges. Again, people accustomed to less stringent access controls may find these changes inconvenient. Zero trust involves more scrutiny of user activity and device health, which may raise privacy concerns among some employees who feel their actions are being monitored too closely. Some employees will refuse to install mandated software on their personal devices. What’s your response? And, security, network operations, and application development pros are not immune from resentment.</p>
+                                <p>You get the gist. It’s a cultural shift, and success hinges on user buy-in. Strategies for a smooth transition include:</p>
+                                <p>
+                                    <strong>Clear communication</strong>
+                                    of the reasons behind adopting zero trust, emphasizing the benefits of improved security and compliance. Openly address privacy concerns employees might have and explain how zero trust actually protects their data.
+                                </p>
+                                <p>
+                                    <strong>A phased rollout</strong>
+                                    , allowing employees, partners, and IT staff the time to gradually adjust to the new security measures. Prioritize implementing zero trust in a way that minimizes disruption to workflows and maintains a positive user experience. Cloud-based technologies can help a lot here.
+                                </p>
+                                <p>
+                                    <strong>Comprehensive</strong>
+                                    training on zero trust principles, access control procedures, and best practices for using resources securely in the new environment.
+                                </p>
+                                <p>Acknowledging the cultural shift involved and thanking people for their efforts can go a long way toward successfully adopting zero trust and creating a more secure and resilient IT environment.</p>
+                            </div>
+                        </section>
+                        <!-- /RC24v0 -->
+                        <!-- RC24v0 -->
+                        <section class="rc24 rc24v0 cpad" data-a11y="true" id="history-zero-trust">
+                            <div class="rc24w1 cwidth">
+                                <h2 class="rw-ptitle">History of Zero Trust Security</h2>
+                                <p>In 2004, the concept of zero trust originated from a presentation at a Jericho Forum event given by Paul Simmonds. Simmonds coined the term “deperimeterization” and proposed a new model that fundamentally  accepts that most exploits will easily transit perimeter security. Further, he added that intrusion detection technologies have little to no benefit at the perimeter, it’s easier to protect data the closer we get to it, and a hardened perimeter strategy is unsustainable.</p>
+                                <p>In 2011, Google created BeyondCorp, which is the company’s attempt at implementing zero trust. Initially developed to enable remote work and eliminate the use of a VPN, BeyondCorp is not a single product, but rather a set of tools and best practices. Google Cloud offers various services that can be implemented to achieve a BeyondCorp security posture.</p>
+                                <p>Then, in August 2020, NIST published the Zero Trust Architecture document which contained an abstract definition of zero trust architecture, or ZTA, and provided deployment models and use cases where zero trust could improve information technology security posture. In May of 2021 the White House issued an Executive Order on Improving the Nation’s Cybersecurity that codified zero trust, and that September CISA’s Zero Trust Maturity Model Version 1.0 was published to complement the Office of Management and Budget’s Federal Zero Trust Strategy. CISA’s model provides US federal agencies with a roadmap and resources to build a zero trust environment and is available to companies, too.</p>
+                                <p>
+                                    In January 2022 the Office of Management and Budget issued memo M-22-09 to federal agencies with the subject line, “Moving the U.S. Government Toward Zero Trust Cybersecurity Principles.” By July the Department of Defense (DoD) Zero Trust Reference Architecture was published as prepared by DISA and the National Security Agency (NSA) Zero Trust Engineering Team. The architecture provided an end-state vision, strategy, and framework for strengthening cybersecurity and guiding the evolution of existing capabilities to focus on a data-centric strategy. The <a href="/a/ocom/docs/industries/government/gov-zero-trust-cloud-adoption-bb.pdf" target="_blank" data-lbl="disa-architecture">DISA architecture (PDF)</a>
+                                    is an excellent model for organizations moving to the cloud to follow.
+                                </p>
+                            </div>
+                        </section>
+                        <!-- /RC24v0 -->
+                        <!-- RC24v0 -->
+                        <section class="rc24 rc24v0 cpad" data-a11y="true" id="adopt-zero-trust">
+                            <div class="rc24w1 cwidth">
+                                <h2 class="rw-ptitle">Adopt Zero Trust with Oracle Cloud Infrastructure</h2>
+                                <p>
+                                    To help implement zero trust principles, <a href="/security/" data-lbl="oracle-security">Oracle’s security-first approach</a>
+                                    requires explicit policies to allow access to Oracle Cloud Infrastructure (OCI). This means each component is considered a resource within OCI, and access must be explicitly granted. All communications within OCI are encrypted, and access rights are checked against existing policies. Those policies can be structured to grant extremely fine-grained <a href="/security/cloud-security/access-governance/" data-lbl="access-control">access control</a>
+                                    for each resource, including implementing dynamic access.
+                                </p>
+                                <p>
+                                    OCI implements monitoring and auditing on cloud resources, allowing you to use existing object storage to conduct analysis, or you can employ your security information and event management (SIEM) tool of choice. <a href="/security/cloud-security/cloud-guard/instance-security/" data-lbl="instance-security">Oracle Cloud Guard Instance Security</a>
+                                    provides automated responses to triggered events, helping speed reaction time to potential threats.
+                                </p>
+                                <p>Organizations implement zero trust because they recognize that traditional security strategies aren’t keeping up with today’s threats. When all stakeholders are educated to understand that attackers may already be inside the network, they tend to accept more stringent controls that can reduce the risk of a successful attack, better protect sensitive information, and build trust with partners and customers.</p>
+                            </div>
+                        </section>
+                        <!-- /RC24v0 -->
+                        <!-- RC58v0 -->
+                        <section class="rc58 rc58v0 rw-theme-20bg cpad" data-trackas="rc58" data-ocomid="rc58" data-a11y="true">
+                            <div class="rc58w1 cwidth">
+                                <div class="rc58w2">
+                                    <div class="rc58img">
+                                        <a href="/artificial-intelligence/cios-mandate-lead-the-ai-charge-multi-mrm-lp-form/" data-cxdtrack=":ow:o:p:po:::RC_WWMK230209P00004:BSA_WhatIsZeroTrust" data-adbtrack=":ow:o:p:po:::RC_WWMK230209P00004:BSA_WhatIsZeroTrust" rel="lightbox" title="Access the free ebook and learn how you can help boost workforce efficiency, customer intimacy, product quality, and innovation" data-width="640" data-trackas="rc58-lightbox" role="button" data-lbl="access-cfo-ebook-img">
+                                            <img data-src="/a/ocom/img/rc58-cio-mandate-ebook.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="rc58content">
+                                        <p>Your AI center of excellence should play a pivotal role in overseeing and managing the rollout of AI agents. Don’t have one? Here’s how to get one up and running now.</p>
+                                        <div class="obttns">
+                                            <div>
+                                                <a href="/artificial-intelligence/cios-mandate-lead-the-ai-charge-multi-mrm-lp-form/" data-cxdtrack=":ow:o:p:po:::RC_WWMK230209P00004:BSA_WhatIsZeroTrust" data-adbtrack=":ow:o:p:po:::RC_WWMK230209P00004:BSA_WhatIsZeroTrust" rel="lightbox" title="Access the free ebook and learn how you can help boost workforce efficiency, customer intimacy, product quality, and innovation" data-width="640" data-trackas="rc58-lightbox" role="button" data-lbl="access-cfo-ebook">Access the ebook</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- /RC58v0 -->
+                        <!-- RC24v0 -->
+                        <section class="rc24 rc24v0 cpad" data-a11y="true" id="zero-trust-faqs">
+                            <div class="rc24w1 cwidth">
+                                <h2 class="rw-ptitle">Zero Trust Security FAQs</h2>
+                                <p>
+                                    <strong>What are the five pillars of zero trust?</strong>
+                                </p>
+                                <p>The five pillars of zero trust, based on the Cybersecurity and Infrastructure Security Agency’s recently published Zero Trust Maturity Model Version 2, are identity, devices, networks, applications and workloads, and data. These five pillars work together to create a comprehensive security strategy predicated on continuously verifying all users, devices, applications, and access requests. This layered approach is meant to make it much harder for attackers to gain a foothold.</p>
+                                <p>
+                                    <strong>What are the four goals of zero trust?</strong>
+                                </p>
+                                <p>The four main goals of zero trust security are to limit the attack surface; enhance an organization’s security posture via strong authentication, least privilege access control, and continuous monitoring; safely provide employees and partners with the tools they need, including cloud services, from any device; and improve compliance.</p>
+                            </div>
+                        </section>
+                        <!-- /RC24v0 -->
+                        <!-- END: oWidget_C/_Raw-Text/Display -->
+                    </div>
+                </div>
+            </div>
+            <!-- /F22v0 -->
+            <!-- END: oWidget_C/F22-Multi-Column-Page-Framework/V0-Display -->
+            <!-- Dispatcher:null -->
+            <!-- BEGIN: oWidget_C/_Raw-Text/Display -->
+            <div class="cb27disable"></div>
+            <!-- END: oWidget_C/_Raw-Text/Display -->
+            <!-- end : ocom/common/global/components/compass/related-widgets -->
+            <!-- start : ocom/common/global/components/framework/layoutAssetEndBodyInfo -->
+            <!-- Dispatcher:null -->
+            <!-- BEGIN: oWidget_C/_Raw-Text/Display -->
+            <!-- U10v6 -->
+            <footer id="u10" class="u10 u10v6" data-trackas="footer" type="redwood" data-ocomid="u10" data-a11y="true" data-lbl="oci-footer:">
+                <nav class="u10w1" aria-label="Footer">
+                    <div class="u10w2">
+                        <div class="u10w3">
+                            <div class="u10ttl" id="footer:resources-for">Resources for</div>
+                            <ul>
+                                <li>
+                                    <a data-lbl="resources-for:career" href="/careers/">Careers</a>
+                                </li>
+                                <li>
+                                    <a data-lbl="resources-for:developers" href="/developer/">Developers</a>
+                                </li>
+                                <li>
+                                    <a data-lbl="resources-for:investors" href="https://investor.oracle.com/home/default.aspx">Investors</a>
+                                </li>
+                                <li>
+                                    <a data-lbl="resources-for:partners" href="/partner/">Partners</a>
+                                </li>
+                                <li>
+                                    <a data-lbl="resources-for:startups" href="/cloud/oracle-for-startups/">Startups</a>
+                                </li>
+                                <li>
+                                    <a data-lbl="resources-for:students-educators" href="https://academy.oracle.com/en/oa-web-overview.html">Students and Educators</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="u10w2">
+                        <div class="u10w3">
+                            <div class="u10ttl" id="footer:why-oracle">Why Oracle</div>
+                            <ul>
+                                <li>
+                                    <a data-lbl="why-oracle:analyst-reports" href="/corporate/analyst-reports/">Analyst Reports</a>
+                                </li>
+                                <li>
+                                    <a data-lbl="why-oracle:cloud-economics" href="/cloud/economics/">Cloud Economics</a>
+                                </li>
+                                <li>
+                                    <a data-lbl="why-oracle:oracle-with-microsoft-azure" href="/cloud/azure/">with Microsoft Azure</a>
+                                </li>
+                                <li>
+                                    <a data-lbl="why-oracle:oracle-vs-aws" href="/cloud/oci-vs-aws/">vs. AWS</a>
+                                </li>
+                                <li>
+                                    <a data-lbl="why-oracle:oracle-vs-google-cloud" href="/cloud/oci-vs-google-cloud/">vs. Google Cloud</a>
+                                </li>
+                                <li>
+                                    <a data-lbl="why-oracle:oracle-vs-mongodb" href="/autonomous-database/autonomous-json-database/oracle-json-vs-mongodb-atlas/">vs. MongoDB</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="u10w2">
+                        <div class="u10w3">
+                            <div class="u10ttl" id="footer:learn">Learn</div>
+                            <ul>
+                                <li>
+                                    <a data-lbl="learn:ai" href="/artificial-intelligence/what-is-ai/">What is AI?</a>
+                                </li>
+                                <li>
+                                    <a data-lbl="learn:cloud-computing" href="/cloud/what-is-cloud-computing/">What is Cloud Computing?</a>
+                                </li>
+                                <li>
+                                    <a data-lbl="learn:cloud-storage" href="/cloud/storage/what-is-cloud-storage/">What is Cloud Storage?</a>
+                                </li>
+                                <li>
+                                    <a data-lbl="learn:hpc" href="/cloud/hpc/what-is-hpc/">What is HPC?</a>
+                                </li>
+                                <li>
+                                    <a data-lbl="learn:iaas" href="/cloud/what-is-iaas/">What is IaaS?</a>
+                                </li>
+                                <li>
+                                    <a data-lbl="learn:paas" href="/cloud/what-is-paas/">What is PaaS?</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="u10w2">
+                        <div class="u10w3">
+                            <div class="u10ttl" id="footer:whats-new">What &rsquo;s new</div>
+                            <ul>
+                                <li>
+                                    <a data-lbl="whatsnew:oracle-supports-ukraine" href="/corporate/conflict-in-ukraine/">Oracle Supports Ukraine</a>
+                                </li>
+                                <li>
+                                    <a data-lbl="whatsnew:cloud-free-tier" href="/cloud/free/" data-cxdtrack=":ow:o:h:nav:092121OCISiteFooter" data-adbtrack=":ow:o:h:nav:092121OCISiteFooter">Oracle Cloud Free Tier</a>
+                                </li>
+                                <li>
+                                    <a data-lbl="whatsnew:cloud-architecture-center" href="/cloud/architecture-center/">Cloud Architecture Center</a>
+                                </li>
+                                <li>
+                                    <a data-lbl="whatsnew:oracle-cloud-lift" href="/cloud/cloud-lift/">Cloud Lift</a>
+                                </li>
+                                <li>
+                                    <a data-lbl="whatsnew:oracle-cloud-rewards" href="/cloud/rewards/">Oracle Support Rewards</a>
+                                </li>
+                                <li>
+                                    <a data-lbl="whatsnew:oracle-and-red-bull-racing" href="/redbullracing/">Oracle Red Bull Racing</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="u10w2">
+                        <div class="u10w3">
+                            <div class="u10ttl" id="footer:contact-us">Contact us</div>
+                            <ul>
+                                <li>
+                                    <a data-lbl="contact-us:us-sales" href="tel:18006330738">US Sales: +1.800.633.0738</a>
+                                </li>
+                                <li>
+                                    <a data-lbl="contact-us:how-can-we-help" href="/corporate/contact/">How can we help?</a>
+                                </li>
+                                <li>
+                                    <a data-lbl="contact-us:subscribe-to-emails" href="https://go.oracle.com/subscriptions">Subscribe to emails</a>
+                                </li>
+                                <li>
+                                    <a data-lbl="contact-us:events" href="/cloud/events/">Events</a>
+                                </li>
+                                <li>
+                                    <a data-lbl="contact-us:news" href="/news/">News</a>
+                                </li>
+                                <li>
+                                    <a data-lbl="contact-us:oci-blog" href="https://blogs.oracle.com/cloud-infrastructure/">OCI Blog</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="u10w4">
+                        <hr/>
+                    </div>
+                </nav>
+                <div class="u10w11">
+                    <ul class="u10-cr">
+                        <li class="u10mtool" id="u10cmenu">
+                            <a class="u10ticon u10regn" href="/universal-menu/#u10countrymenu" data-lbl="country-region">Country/Region</a>
+                        </li>
+                    </ul>
+                    <nav class="u10w5 u10w10" aria-label="Site info">
+                        <ul class="u10-links">
+                            <li>
+                                <a data-lbl="copyright" href="/legal/copyright.html">&copy;2025 Oracle</a>
+                            </li>
+                            <li>
+                                <a data-lbl="privacy" href="/legal/privacy/">Privacy</a>
+                                <span>/</span>
+                                <a data-lbl="do-not-sell-my-info" href="/legal/privacy/privacy-choices.html">Do Not Sell My Info</a>
+                            </li>
+                            <li>
+                                <div id="teconsent"></div>
+                            </li>
+                            <li>
+                                <a data-lbl="ad-choices" href="/legal/privacy/advertising-privacy-policy.html#adchoices">Ad Choices</a>
+                            </li>
+                            <li>
+                                <a data-lbl="careers" href="/careers/">Careers</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <nav class="u10scl" aria-label="Social media links">
+                        <ul class="scl-icons">
+                            <li class="scl-facebook">
+                                <a data-lbl="scl-icon:facebook" href="https://www.facebook.com/Oracle/" rel="noreferrer" target="_blank" title="Oracle on Facebook">Facebook</a>
+                            </li>
+                            <li class="scl-twitter">
+                                <a data-lbl="scl-icon:twitter" href="https://twitter.com/oracle" rel="noreferrer" target="_blank" title="Follow Oracle on Twitter">Twitter</a>
+                            </li>
+                            <li class="scl-linkedin">
+                                <a data-lbl="scl-icon:linkedin" href="https://www.linkedin.com/company/oracle/" rel="noreferrer" target="_blank" title="Oracle on LinkedIn">LinkedIn</a>
+                            </li>
+                            <li class="scl-youtube">
+                                <a data-lbl="scl-icon:you-tube" href="https://www.youtube.com/oracle/" rel="noreferrer" target="_blank" title="Watch Oracle on YouTube">YouTube</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </footer>
+            <!-- /U10v6 -->
+            <!-- END: oWidget_C/_Raw-Text/Display -->
+        </div>
+        <!-- Container/Display Start -->
+        <!-- BEGIN: oWidget_C/_Raw-Text/Display -->
+        <!-- Start - End Body Admin Container -->
+        <!-- Start SiteCatalyst code -->
+        <script type="text/javascript" data-reqjq data-src="/asset/web/analytics/ora_ocom.js"></script>
+        <!-- End SiteCatalyst code -->
+        <!-- End - End Body Admin Container -->
+        <!-- END: oWidget_C/_Raw-Text/Display -->
+        <!-- Container/Display end -->
+        <!-- end : ocom/common/global/components/framework/layoutAssetEndBodyInfo -->
+        <script type="text/javascript" src="/AxaxMC/7XIR0/WWUUS/aQ/8wOO0tYEim/Z2ZTAQ/DxIK/HGczJDVm?v=84f93edc-ec8d-5e52-fe59-b6a2a09e0213" defer></script>
+    </body>
+    <!-- end : Framework/Redwood2 -->
+</html>

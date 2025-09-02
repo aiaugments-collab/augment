@@ -9,28 +9,29 @@ export function ProductBanner() {
       style={{
         position: "relative",
         width: "100%",
-        height: "400px"
+        height: "auto",
+        minHeight: "400px"
       }}
     >
-      <div 
-        id="rc20panels" 
-        className="rh02w1 rc20panels"
-        style={{
-          position: "relative",
-          overflow: "hidden",
-          width: "100%",
-          height: "100%",
-          display: "flex"
-        }}
-      >
+              <div 
+          id="rc20panels" 
+          className="rh02w1 rc20panels flex flex-col md:flex-row"
+          style={{
+            position: "relative",
+            overflow: "hidden",
+            width: "100%",
+            height: "auto",
+            minHeight: "100%"
+          }}
+        >
         {/* Cloud Applications Panel - Left */}
         <div 
           id="rc20p1" 
-          className="rh02panel rh02p1"
+          className="rh02panel rh02p1 w-full md:w-1/2"
           data-trackas="rc20:panel1"
           style={{
-            width: "50%",
-            height: "100%",
+            height: "auto",
+            minHeight: "300px",
             position: "relative",
             overflow: "hidden"
           }}
@@ -50,7 +51,7 @@ export function ProductBanner() {
               display: "flex",
               alignItems: "center",
               justifyContent: "flex-end",
-              padding: "0 48px"
+              padding: "0 24px"
             }}
           >
             <div className="rh02w5" style={{ textAlign: "right", maxWidth: "400px", marginLeft: "auto" }}>
@@ -130,11 +131,11 @@ export function ProductBanner() {
         {/* AI Agents Panel - Right */}
         <div 
           id="rc20p2" 
-          className="rh02panel rh02p2"
+          className="rh02panel rh02p2 w-full md:w-1/2"
           data-trackas="rc20:panel2"
           style={{
-            width: "50%",
-            height: "100%",
+            height: "auto",
+            minHeight: "300px",
             position: "relative",
             overflow: "hidden"
           }}
@@ -154,7 +155,7 @@ export function ProductBanner() {
               display: "flex",
               alignItems: "center",
               justifyContent: "flex-start",
-              padding: "0 48px"
+              padding: "0 24px"
             }}
           >
             <div className="rh02w5" style={{ textAlign: "left", maxWidth: "400px", marginRight: "auto" }}>

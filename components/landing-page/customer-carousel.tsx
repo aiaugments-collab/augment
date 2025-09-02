@@ -89,22 +89,19 @@ export function CustomerCarousel() {
         style={{
           maxWidth: "1344px",
           margin: "0 auto",
-          padding: "0 48px"
+          padding: "0 20px"
         }}
       >
         {/* Header */}
         <header 
-          className="rw-ctitle"
+          className="rw-ctitle flex flex-col md:flex-row md:justify-between md:items-baseline gap-4 md:gap-0"
           style={{
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "baseline",
             marginBottom: "64px"
           }}
         >
           <h2 
+            className="text-2xl md:text-3xl lg:text-4xl"
             style={{
-              fontSize: "44px",
               fontFamily: "Times, serif",
               fontWeight: "normal",
               color: "#161513",
@@ -140,13 +137,11 @@ export function CustomerCarousel() {
 
         {/* Logo Navigation */}
         <ul 
-          className="rc64nav"
+          className="rc64nav grid grid-cols-2 md:grid-cols-3 lg:flex lg:justify-between gap-4 lg:gap-0"
           style={{
-            display: "flex",
             listStyle: "none",
             margin: "0 0 0 0",
             padding: 0,
-            justifyContent: "space-between",
             alignItems: "center",
             maxWidth: "900px",
             marginLeft: "auto",
@@ -265,22 +260,22 @@ export function CustomerCarousel() {
               marginTop: "0"
             }}
           >
-            <div 
-              className="rc64w4 cwidth"
-              style={{
-                maxWidth: "1344px",
-                margin: "0 auto",
-                padding: "80px 48px 80px 48px",
-                minHeight: "400px",
-                display: "flex",
-                alignItems: "flex-end"
-              }}
-            >
+                          <div 
+                className="rc64w4 cwidth"
+                style={{
+                  maxWidth: "1344px",
+                  margin: "0 auto",
+                  padding: "40px 20px 40px 20px",
+                  minHeight: "400px",
+                  display: "flex",
+                  alignItems: "flex-end"
+                }}
+              >
               <div 
                 className="rc64w5 rw-neutral-00bg"
                 style={{
                   backgroundColor: "#fff",
-                  padding: "32px 40px",
+                  padding: "24px",
                   borderRadius: "0",
                   maxWidth: "600px",
                   boxShadow: "none",

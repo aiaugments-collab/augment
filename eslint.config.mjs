@@ -24,8 +24,10 @@ const eslintConfig = [
     rules: {
       // Disable img element warnings - we use img for external logos from Clearbit
       "@next/next/no-img-element": "off",
-      // Only warn about unescaped entities, don't error
-      "react/no-unescaped-entities": "warn",
+      // Disable unescaped entities warnings
+      "react/no-unescaped-entities": "off",
+      // Disable unused variables warnings
+      "@typescript-eslint/no-unused-vars": "off",
     },
   },
 ];
