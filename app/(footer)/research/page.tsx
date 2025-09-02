@@ -69,43 +69,43 @@ export default function ResearchPage() {
       id: 'healthcare',
       title: 'Healthcare & Life Sciences',
       description: 'AI-powered research tools for drug discovery, genomics, medical imaging, and clinical research automation.',
-      ctaText: 'Explore healthcare',
-      ctaLink: '/research/healthcare/'
+      buttonText: 'Explore healthcare',
+      href: '/research/healthcare/'
     },
     {
       id: 'climate',
       title: 'Climate & Environmental Science',
       description: 'Advanced modeling and simulation tools for climate research, environmental monitoring, and sustainability studies.',
-      ctaText: 'Learn about climate research',
-      ctaLink: '/research/climate/'
+      buttonText: 'Learn about climate research',
+      href: '/research/climate/'
     },
     {
       id: 'materials',
       title: 'Materials Science',
       description: 'Computational tools for materials discovery, molecular modeling, and advanced materials research.',
-      ctaText: 'Discover materials research',
-      ctaLink: '/research/materials/'
+      buttonText: 'Discover materials research',
+      href: '/research/materials/'
     },
     {
       id: 'social-sciences',
       title: 'Social Sciences',
       description: 'Data analytics and AI tools for social research, behavioral analysis, and policy research.',
-      ctaText: 'Explore social research',
-      ctaLink: '/research/social-sciences/'
+      buttonText: 'Explore social research',
+      href: '/research/social-sciences/'
     },
     {
       id: 'physics',
       title: 'Physics & Astronomy',
       description: 'High-performance computing for particle physics, astrophysics simulations, and theoretical research.',
-      ctaText: 'Learn about physics research',
-      ctaLink: '/research/physics/'
+      buttonText: 'Learn about physics research',
+      href: '/research/physics/'
     },
     {
       id: 'economics',
       title: 'Economics & Finance',
       description: 'Advanced analytics for economic modeling, financial research, and market analysis.',
-      ctaText: 'Explore economics research',
-      ctaLink: '/research/economics/'
+      buttonText: 'Explore economics research',
+      href: '/research/economics/'
     }
   ];
 
@@ -115,32 +115,32 @@ export default function ResearchPage() {
       id: 'ai-services',
       title: 'AI Research Services',
       description: 'Anomaly detection, forecasting, natural language processing, computer vision, and machine learning services.',
-      ctaText: 'View AI services',
-      ctaLink: '/research/services/ai/',
+      buttonText: 'View AI services',
+      href: '/research/services/ai/',
       icon: '🤖'
     },
     {
       id: 'compute-services',
       title: 'Computing Infrastructure',
       description: 'GPU-accelerated compute, HPC clusters, virtual machines, and containerized research environments.',
-      ctaText: 'Explore compute',
-      ctaLink: '/research/services/compute/',
+      buttonText: 'Explore compute',
+      href: '/research/services/compute/',
       icon: '💻'
     },
     {
       id: 'data-services',
       title: 'Data Management',
       description: 'Secure data storage, data lakes, real-world data access, and research data management solutions.',
-      ctaText: 'Learn about data',
-      ctaLink: '/research/services/data/',
+      buttonText: 'Learn about data',
+      href: '/research/services/data/',
       icon: '📊'
     },
     {
       id: 'collaboration-tools',
       title: 'Collaboration Platform',
       description: 'Research collaboration tools, project management, and knowledge sharing platforms for teams.',
-      ctaText: 'Try collaboration',
-      ctaLink: '/research/services/collaboration/',
+      buttonText: 'Try collaboration',
+      href: '/research/services/collaboration/',
       icon: '👥'
     }
   ];
