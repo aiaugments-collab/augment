@@ -316,7 +316,7 @@ export function Footer() {
                 <li style={{ marginBottom: "12px" }}>
                   <a 
                     data-lbl="learn:ai-agents" 
-                    href="/artificial-intelligence/ai-agents/"
+                    href="/learn/what-are-ai-agents/"
                     style={{
                       color: "#FBF9F8",
                       textDecoration: "none",
@@ -333,7 +333,7 @@ export function Footer() {
                 <li style={{ marginBottom: "12px" }}>
                   <a 
                     data-lbl="learn:intelligent-automation" 
-                    href="/automation/intelligent-automation/"
+                    href="/learn/what-is-intelligent-automation/"
                     style={{
                       color: "#FBF9F8",
                       textDecoration: "none",
@@ -350,7 +350,7 @@ export function Footer() {
                 <li style={{ marginBottom: "12px" }}>
                   <a 
                     data-lbl="learn:ai-finance" 
-                    href="/ai/financials/ai-finance/"
+                    href="/learn/how-ai-is-transforming-finance/"
                     style={{
                       color: "#FBF9F8",
                       textDecoration: "none",
@@ -367,7 +367,7 @@ export function Footer() {
                 <li style={{ marginBottom: "12px" }}>
                   <a 
                     data-lbl="learn:vector-db" 
-                    href="/database/vector-database/"
+                    href="/learn/what-is-a-vector-database/"
                     style={{
                       color: "#FBF9F8",
                       textDecoration: "none",
@@ -384,7 +384,7 @@ export function Footer() {
                 <li style={{ marginBottom: "12px" }}>
                   <a 
                     data-lbl="learn:multicloud" 
-                    href="/cloud/multicloud/what-is-multicloud/"
+                    href="/learn/what-is-multicloud/"
                     style={{
                       color: "#FBF9F8",
                       textDecoration: "none",
@@ -401,7 +401,7 @@ export function Footer() {
                 <li style={{ marginBottom: "12px" }}>
                   <a 
                     data-lbl="learn:machine-learning" 
-                    href="/ai/machine-learning/"
+                    href="/learn/what-is-machine-learning/"
                     style={{
                       color: "#FBF9F8",
                       textDecoration: "none",
