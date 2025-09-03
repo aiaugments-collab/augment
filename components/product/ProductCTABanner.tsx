@@ -1,4 +1,5 @@
 import React from 'react';
+import { SmartImage } from "@/components/ui/SmartImage";
 
 interface ProductCTABannerProps {
   title: string;
@@ -27,11 +28,14 @@ export function ProductCTABanner({
           {/* Left: Image */}
           <div className="order-2 lg:order-1">
             <a href={buttonHref}>
-              <img
+              <SmartImage
                 src={image}
                 alt={title}
+                width={200}
+                height={150}
                 className="w-full h-auto hover:opacity-90 transition-opacity duration-300"
                 style={{ maxWidth: '200px', margin: '0 auto', display: 'block' }}
+                mockupType="workflow"
               />
             </a>
           </div>

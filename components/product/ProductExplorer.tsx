@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { SmartImage } from "@/components/ui/SmartImage";
 
 interface ExplorerTab {
   id: string;
@@ -168,10 +169,13 @@ export function ProductExplorer({ title, tabs, className = "" }: ProductExplorer
                 {/* Right: Product Image */}
                 <div className="lg:col-span-1 flex items-center justify-center">
                   <div className="w-full">
-                    <img
+                    <SmartImage
                       src={currentTab.content.image}
                       alt={currentTab.content.imageAlt}
+                      width={400}
+                      height={300}
                       className="w-full h-auto rounded-lg shadow-lg"
+                      mockupType="interface"
                     />
                   </div>
                 </div>

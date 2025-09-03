@@ -1,5 +1,7 @@
 "use client";
 
+import { SmartImage } from "@/components/ui/SmartImage";
+
 interface PromoCard {
   id: string;
   image: string;
@@ -35,11 +37,13 @@ export function ProductPromo({ cards, className = "" }: ProductPromoProps) {
               <div className="flex flex-col h-full relative">
                 {/* Image - Oracle uses 204px width, scaled down to ~140px with fixed aspect ratio */}
                 <div className="mb-4">
-                  <img
+                  <SmartImage
                     src={card.image}
-                    alt=""
-                    className="w-36 h-24 rounded block object-cover"
-                    style={{ fontFamily: 'var(--oraclesans)' }}
+                    alt={card.title}
+                    width={144}
+                    height={96}
+                    className="w-36 h-24 rounded block"
+                    mockupType="default"
                   />
                 </div>
 

@@ -1,5 +1,7 @@
 "use client";
 
+import { SmartImage } from "@/components/ui/SmartImage";
+
 interface CTAButton {
   text: string;
   href: string;
@@ -81,10 +83,13 @@ export function ProductHero({
               {mediaType === 'video' ? (
                 <div className="relative group cursor-pointer">
                   <div className="relative rounded-lg overflow-hidden shadow-lg">
-                    <img 
+                    <SmartImage
                       src={videoThumbnail || mediaUrl}
                       alt={mediaAlt}
-                      className="w-full h-auto aspect-video object-cover"
+                      width={400}
+                      height={225}
+                      className="w-full h-auto aspect-video"
+                      mockupType="dashboard"
                     />
                     
                     {/* Play Button Overlay - more compact */}
@@ -108,10 +113,13 @@ export function ProductHero({
                 </div>
               ) : (
                 <div className="rounded-lg overflow-hidden shadow-lg">
-                  <img 
+                  <SmartImage
                     src={mediaUrl}
                     alt={mediaAlt}
-                    className="w-full h-auto object-cover"
+                    width={400}
+                    height={300}
+                    className="w-full h-auto"
+                    mockupType="dashboard"
                   />
                 </div>
               )}
