@@ -51,32 +51,28 @@ export const oracleProductsDropdownData: DropdownSection[] = [
 // Industries dropdown data
 export const oracleIndustriesDropdownData: DropdownSection[] = [
   {
-    title: "Augment Industry Solutions",
+    title: "Industry Solutions and Resources",
+    hasDivider: true,
+    items: [
+      { label: "Augment Industry Lab", href: "/industries/lab/" },
+      { label: "Customer success", href: "/industries/customer-success/" },
+      { label: "Join the community", href: "/industries/community/" },
+      { label: "Product documentation", href: "/industries/documentation/" }
+    ]
+  },
+  {
+    title: "Industries",
     hasDivider: false,
     items: [
-      { label: "All Industries", href: "/industries/" },
-      { label: "Automotive", href: "/industries/automotive/" },
-      { label: "Communications", href: "/industries/communications/" },
-      { label: "Construction and Engineering", href: "/industries/construction/" },
-      { label: "Consumer Packaged Goods", href: "/industries/cpg/" },
-      { label: "Defense and Intelligence", href: "/industries/defense/" },
-      { label: "Education", href: "/industries/education/" },
+      { label: "All industries", href: "/industries/" },
       { label: "Financial Services", href: "/industries/financial-services/" },
-      { label: "Government", href: "/industries/government/" },
       { label: "Healthcare", href: "/industries/healthcare/" },
       { label: "High Technology", href: "/industries/high-tech/" },
-      { label: "Hospitality", href: "/industries/hospitality/" },
-      { label: "Industrial Manufacturing", href: "/industries/manufacturing/" },
-      { label: "Life Sciences", href: "/industries/life-sciences/" },
-      { label: "Media and Entertainment", href: "/industries/media/" },
-      { label: "Oil and Gas", href: "/industries/oil-gas/" },
+      { label: "Education", href: "/industries/education/" },
       { label: "Professional Services", href: "/industries/professional/" },
-      { label: "Public Safety", href: "/industries/public-safety/" },
-      { label: "Restaurants", href: "/industries/restaurants/" },
       { label: "Retail", href: "/industries/retail/" },
-      { label: "Travel and Logistics", href: "/industries/travel/" },
-      { label: "Utilities", href: "/industries/utilities/" },
-      { label: "Wholesale Distribution", href: "/industries/wholesale/" }
+      { label: "Manufacturing", href: "/industries/manufacturing/" },
+      { label: "Government", href: "/industries/government/" }
     ]
   }
 ];

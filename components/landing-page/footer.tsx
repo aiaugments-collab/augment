@@ -755,7 +755,7 @@ export function Footer() {
             <li>
               <a 
                 data-lbl="careers" 
-                href="/corporate/careers/"
+                href="/careers/"
                 style={{
                   color: "#FBF9F8",
                   textDecoration: "none",
