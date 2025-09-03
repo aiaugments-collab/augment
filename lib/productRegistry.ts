@@ -105,6 +105,36 @@ export const PRODUCTS: Product[] = [
     tags: ['Health', 'AI Assistant', 'Tracking', 'Analytics', 'Medication'],
     image: '/products/health-ai/01.png',
     productUrl: 'https://healthai.augment.cfd/'
+  },
+  {
+    id: 'coding-agent',
+    name: 'Coding Agent',
+    shortName: 'Coding Agent',
+    description: 'AI-powered code editor that understands your codebase, provides intelligent suggestions, and automates development tasks. Experience seamless coding with advanced AI capabilities that boost productivity and code quality.',
+    shortDescription: 'AI-powered intelligent code editor and development assistant',
+    category: 'ai-agent',
+    href: '/product/coding-agent',
+    icon: 'brain',
+    featured: true,
+    status: 'coming-soon',
+    tags: ['Code Editor', 'AI Assistant', 'Development', 'Programming', 'Automation'],
+    image: '/products/coding-agent/01.png',
+    productUrl: '/book-demo'
+  },
+  {
+    id: 'buildai',
+    name: 'BuildAI',
+    shortName: 'BuildAI',
+    description: 'Transform your ideas into fully functional applications using natural language. Simply describe what you want to build, and our AI creates beautiful, responsive web applications with modern UI components, database integration, and deployment-ready code.',
+    shortDescription: 'Natural language to full-stack application builder',
+    category: 'ai-agent',
+    href: '/product/buildai',
+    icon: 'building',
+    featured: true,
+    status: 'coming-soon',
+    tags: ['App Builder', 'Natural Language', 'AI Assistant', 'Full-Stack', 'No-Code'],
+    image: '/products/buildai/01.png',
+    productUrl: '/book-demo'
   }
 ];
 
