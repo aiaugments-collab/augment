@@ -19,15 +19,10 @@ export const oracleProductsDropdownData: DropdownSection[] = [
     hasDivider: false,
     items: [
       { label: "Applications Overview", href: "/applications/" },
-      { label: "CRM Software", href: "/crm/" },
-      { label: "Booking App", href: "/booking/" },
-      { label: "Marketing Software App", href: "/marketing/" },
-      { label: "All-in-one Social Media Platform", href: "/social-media/" },
-      { label: "Customer Support Software", href: "/customer-support/" },
-      { label: "Accounting Software for Business", href: "/accounting/" },
-      { label: "All-purpose Scheduling App", href: "/scheduling/" },
-      { label: "Digital Signature App for Business", href: "/digital-signature/" },
-      { label: "HR Process Automation", href: "/hr-automation/" },
+      ...getProductsByCategory('cloud-applications').map(product => ({
+        label: product.name,
+        href: product.href
+      })),
       { label: "Augment Marketplace", href: "/marketplace/" }
     ]
   }
