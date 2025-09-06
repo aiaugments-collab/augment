@@ -17,6 +17,21 @@ export interface Product {
 export const PRODUCTS: Product[] = [
   // AI Agent Products
   {
+    id: 'hr',
+    name: 'Augment HR',
+    shortName: 'HR',
+    description: 'AI-First HRMS Platform that replaces traditional HR systems with intelligent automation. Cut administrative workload by 80% while delivering exceptional employee experiences with AI resume screening, document knowledge chat, AI-based leave management, and automated payroll processing.',
+    shortDescription: 'AI-First HRMS Platform with intelligent automation',
+    category: 'ai-agent',
+    href: '/product/hr',
+    icon: 'users',
+    featured: true,
+    status: 'live',
+    tags: ['AI', 'HR', 'HRMS', 'Automation', 'Employee Management', 'Payroll', 'Leave Management'],
+    image: '/products/hr/01.png',
+    productUrl: 'https://hr.augment.cfd/'
+  },
+  {
     id: 'aihr',
     name: 'AI HR Assistant',
     shortName: 'AI HR',
@@ -138,6 +153,21 @@ export const PRODUCTS: Product[] = [
   },
 
   // Cloud Applications
+  {
+    id: 'hr-cloud',
+    name: 'Augment HR Cloud',
+    shortName: 'HR Cloud',
+    description: 'AI-powered cloud HRMS platform that replaces traditional HR systems with intelligent automation. Features AI resume screening, automated payroll processing, smart leave management, and 24/7 AI-powered employee support accessible from anywhere.',
+    shortDescription: 'AI-powered cloud-based HR management system',
+    category: 'cloud-applications',
+    href: '/product/hr',
+    icon: 'users',
+    featured: true,
+    status: 'live',
+    tags: ['AI', 'Cloud HR', 'HRMS', 'Automation', 'Employee Management', 'Payroll', 'AI Assistant'],
+    image: '/products/hr/01.png',
+    productUrl: 'https://hr.augment.cfd/'
+  },
   {
     id: 'crm',
     name: 'CRM Software',
