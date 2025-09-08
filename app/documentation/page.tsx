@@ -16,12 +16,12 @@ export default function DocumentationPage() {
   const heroButtons = [
     {
       text: 'API Reference',
-      href: '/documentation/api/',
+      href: '/industries/documentation/api/',
       variant: 'primary' as const
     },
     {
       text: 'Quick Start Guide',
-      href: '/documentation/quick-start/',
+      href: '/industries/documentation/quick-start/',
       variant: 'secondary' as const
     }
   ];
@@ -32,7 +32,7 @@ export default function DocumentationPage() {
       title: 'API Reference & SDKs',
       description: 'Complete API documentation with interactive examples, SDKs for popular languages, and authentication guides.',
       ctaText: 'Explore API docs',
-      ctaLink: '/documentation/api/',
+      ctaLink: '/industries/documentation/api/',
       image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=300&fit=crop&crop=faces'
     },
     {
@@ -40,7 +40,7 @@ export default function DocumentationPage() {
       title: 'Quick Start Guides',
       description: 'Get up and running quickly with step-by-step guides for common use cases and implementation patterns.',
       ctaText: 'Start building',
-      ctaLink: '/documentation/quick-start/',
+      ctaLink: '/industries/documentation/quick-start/',
       image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=400&h=300&fit=crop&crop=faces'
     },
     {
@@ -48,7 +48,7 @@ export default function DocumentationPage() {
       title: 'Tutorials & Examples',
       description: 'Hands-on tutorials with real-world examples, code samples, and best practices for AI implementation.',
       ctaText: 'Browse tutorials',
-      ctaLink: '/documentation/tutorials/',
+      ctaLink: '/industries/documentation/tutorials/',
       image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&h=300&fit=crop&crop=faces'
     },
     {
@@ -56,7 +56,7 @@ export default function DocumentationPage() {
       title: 'Integration Guides',
       description: 'Detailed guides for integrating with popular platforms, frameworks, and enterprise systems.',
       ctaText: 'View integrations',
-      ctaLink: '/documentation/integrations/',
+      ctaLink: '/industries/documentation/integrations/',
       image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400&h=300&fit=crop&crop=faces'
     },
     {
@@ -64,7 +64,7 @@ export default function DocumentationPage() {
       title: 'Security & Compliance',
       description: 'Security best practices, compliance guidelines, and enterprise-grade security documentation.',
       ctaText: 'Learn about security',
-      ctaLink: '/documentation/security/',
+      ctaLink: '/industries/documentation/security/',
       image: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=400&h=300&fit=crop&crop=faces'
     },
     {
@@ -72,7 +72,7 @@ export default function DocumentationPage() {
       title: 'Troubleshooting & Support',
       description: 'Common issues, error codes, debugging guides, and troubleshooting resources.',
       ctaText: 'Get help',
-      ctaLink: '/documentation/troubleshooting/',
+      ctaLink: '/industries/documentation/support/',
       image: 'https://images.unsplash.com/photo-1516549655169-df83a0774514?w=400&h=300&fit=crop&crop=faces'
     }
   ];
@@ -83,42 +83,42 @@ export default function DocumentationPage() {
       title: 'SDKs & Libraries',
       description: 'Download official SDKs for Python, JavaScript, Java, .NET, Go, and other popular programming languages.',
       ctaText: 'Download SDKs',
-      ctaLink: '/documentation/sdks/'
+      ctaLink: '/industries/documentation/sdks/'
     },
     {
       id: 'code-samples',
       title: 'Code Samples',
       description: 'Ready-to-use code examples and sample applications for common AI implementation patterns.',
       ctaText: 'Browse samples',
-      ctaLink: '/documentation/samples/'
+      ctaLink: '/industries/documentation/samples/'
     },
     {
       id: 'postman',
       title: 'Postman Collection',
       description: 'Import our complete Postman collection to test API endpoints and explore functionality.',
       ctaText: 'Get collection',
-      ctaLink: '/documentation/postman/'
+      ctaLink: '/industries/documentation/samples/'
     },
     {
       id: 'webhooks',
       title: 'Webhooks & Events',
       description: 'Set up real-time notifications and event handling with our webhook system.',
       ctaText: 'Configure webhooks',
-      ctaLink: '/documentation/webhooks/'
+      ctaLink: '/industries/documentation/integrations/'
     },
     {
       id: 'rate-limits',
       title: 'Rate Limits & Quotas',
       description: 'Understanding API rate limits, quotas, and best practices for optimal performance.',
       ctaText: 'View limits',
-      ctaLink: '/documentation/rate-limits/'
+      ctaLink: '/industries/documentation/performance/'
     },
     {
       id: 'changelog',
       title: 'API Changelog',
       description: 'Stay updated with the latest API changes, new features, and version updates.',
       ctaText: 'View changelog',
-      ctaLink: '/documentation/changelog/'
+      ctaLink: '/industries/documentation/api/'
     }
   ];
 
@@ -147,7 +147,7 @@ export default function DocumentationPage() {
     {
       title: 'Professional Services',
       description: 'Work with our experts for custom implementations and strategic consulting.',
-      href: '/professional-services/',
+      href: '/industries/professional/',
       buttonText: 'Learn more',
       icon: '👥'
     }
@@ -272,7 +272,7 @@ export default function DocumentationPage() {
                 <p className="text-sm text-gray-700 mb-4" style={{ fontFamily: 'var(--oraclesans)' }}>
                   Learn how to authenticate with our APIs using API keys, OAuth, and JWT tokens.
                 </p>
-                <a href="/documentation/authentication/" className="text-[#C74634] hover:text-[#A63429] font-medium text-sm transition-colors duration-200" style={{ fontFamily: 'var(--oraclesans)' }}>
+                <a href="/industries/documentation/authentication/" className="text-[#C74634] hover:text-[#A63429] font-medium text-sm transition-colors duration-200" style={{ fontFamily: 'var(--oraclesans)' }}>
                   Read guide →
                 </a>
               </div>
@@ -283,7 +283,7 @@ export default function DocumentationPage() {
                 <p className="text-sm text-gray-700 mb-4" style={{ fontFamily: 'var(--oraclesans)' }}>
                   Complete tutorial for getting started with our Python SDK and building your first AI application.
                 </p>
-                <a href="/documentation/python-sdk/" className="text-[#C74634] hover:text-[#A63429] font-medium text-sm transition-colors duration-200" style={{ fontFamily: 'var(--oraclesans)' }}>
+                <a href="/industries/documentation/sdks/" className="text-[#C74634] hover:text-[#A63429] font-medium text-sm transition-colors duration-200" style={{ fontFamily: 'var(--oraclesans)' }}>
                   Start tutorial →
                 </a>
               </div>
@@ -294,7 +294,7 @@ export default function DocumentationPage() {
                 <p className="text-sm text-gray-700 mb-4" style={{ fontFamily: 'var(--oraclesans)' }}>
                   Learn how to handle errors gracefully and implement robust error handling patterns.
                 </p>
-                <a href="/documentation/error-handling/" className="text-[#C74634] hover:text-[#A63429] font-medium text-sm transition-colors duration-200" style={{ fontFamily: 'var(--oraclesans)' }}>
+                <a href="/industries/documentation/debugging/" className="text-[#C74634] hover:text-[#A63429] font-medium text-sm transition-colors duration-200" style={{ fontFamily: 'var(--oraclesans)' }}>
                   Learn best practices →
                 </a>
               </div>
@@ -322,14 +322,14 @@ export default function DocumentationPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="/documentation/quick-start/"
+                href="/industries/documentation/quick-start/"
                 className="inline-flex items-center px-6 py-3 bg-white text-[#C74634] font-semibold rounded-lg hover:bg-gray-100 transition-colors duration-200"
                 style={{ fontFamily: 'var(--oraclesans)' }}
               >
                 Quick Start Guide
               </a>
               <a
-                href="/documentation/api/"
+                href="/industries/documentation/api/"
                 className="inline-flex items-center px-6 py-3 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-[#C74634] transition-colors duration-200"
                 style={{ fontFamily: 'var(--oraclesans)' }}
               >
