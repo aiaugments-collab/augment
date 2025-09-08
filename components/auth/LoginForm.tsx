@@ -28,8 +28,8 @@ export const LoginForm: React.FC<LoginFormProps> = ({
       await signIn(email, password);
       onSuccess?.();
       router.push(redirectTo);
-    } catch (error: any) {
-      setError(error.message || 'Failed to sign in');
+    } catch (error: unknown) {
+      setError(error instanceof Error ? error.message : 'Failed to sign in');
     } finally {
       setLoading(false);
     }
@@ -43,8 +43,8 @@ export const LoginForm: React.FC<LoginFormProps> = ({
       await signInWithGoogle();
       onSuccess?.();
       router.push(redirectTo);
-    } catch (error: any) {
-      setError(error.message || 'Failed to sign in with Google');
+    } catch (error: unknown) {
+      setError(error instanceof Error ? error.message : 'Failed to sign in with Google');
     } finally {
       setLoading(false);
     }

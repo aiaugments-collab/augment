@@ -51,8 +51,8 @@ export const RegisterForm: React.FC<RegisterFormProps> = ({
       await signUp(formData.email, formData.password, formData.displayName);
       onSuccess?.();
       router.push(redirectTo);
-    } catch (error: any) {
-      setError(error.message || 'Failed to create account');
+    } catch (error: unknown) {
+      setError(error instanceof Error ? error.message : 'Failed to create account');
     } finally {
       setLoading(false);
     }
@@ -66,8 +66,8 @@ export const RegisterForm: React.FC<RegisterFormProps> = ({
       await signInWithGoogle();
       onSuccess?.();
       router.push(redirectTo);
-    } catch (error: any) {
-      setError(error.message || 'Failed to sign in with Google');
+    } catch (error: unknown) {
+      setError(error instanceof Error ? error.message : 'Failed to sign in with Google');
     } finally {
       setLoading(false);
     }

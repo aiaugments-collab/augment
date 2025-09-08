@@ -10,7 +10,7 @@ import {
   sendPasswordResetEmail,
   updateProfile
 } from 'firebase/auth';
-import { doc, setDoc, getDoc } from 'firebase/firestore';
+import { doc, setDoc, getDoc, Timestamp } from 'firebase/firestore';
 import { auth, db } from './firebase';
 
 // Auth functions
@@ -55,7 +55,7 @@ export const resetPassword = async (email: string): Promise<void> => {
 };
 
 // User document management
-export const createUserDocument = async (user: User, additionalData?: any) => {
+export const createUserDocument = async (user: User, additionalData?: Record<string, unknown>) => {
   if (!user) return;
   
   const userRef = doc(db, 'users', user.uid);
@@ -81,7 +81,15 @@ export const createUserDocument = async (user: User, additionalData?: any) => {
   return userRef;
 };
 
-export const getUserDocument = async (uid: string) => {
+interface UserData {
+  uid: string;
+  email: string | null;
+  displayName: string | null;
+  photoURL: string | null;
+  createdAt?: Timestamp;
+}
+
+export const getUserDocument = async (uid: string): Promise<UserData | null> => {
   if (!uid) return null;
   
   try {
@@ -89,7 +97,14 @@ export const getUserDocument = async (uid: string) => {
     const userSnap = await getDoc(userRef);
     
     if (userSnap.exists()) {
-      return { uid, ...userSnap.data() };
+      const data = userSnap.data();
+      return {
+        uid,
+        email: data.email || null,
+        displayName: data.displayName || null,
+        photoURL: data.photoURL || null,
+        createdAt: data.createdAt
+      };
     }
     
     return null;

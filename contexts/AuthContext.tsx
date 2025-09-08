@@ -4,13 +4,8 @@ import React, { createContext, useContext, useEffect, useState } from 'react';
 import { User } from 'firebase/auth';
 import { onAuthStateChange, getUserDocument } from '@/lib/auth';
 
-interface UserData {
-  uid: string;
-  email: string | null;
-  displayName: string | null;
-  photoURL: string | null;
-  createdAt?: any;
-}
+// Import UserData type from auth lib
+type UserData = Awaited<ReturnType<typeof getUserDocument>>;
 
 interface AuthContextType {
   currentUser: User | null;
