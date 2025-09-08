@@ -32,21 +32,6 @@ export const PRODUCTS: Product[] = [
     productUrl: 'https://hr.augment.cfd/'
   },
   {
-    id: 'aihr',
-    name: 'AI HR Assistant',
-    shortName: 'AI HR',
-    description: 'Transform your HR operations with intelligent automation that understands context, learns from interactions, and executes complex human resource tasks.',
-    shortDescription: 'AI-powered human resources automation platform',
-    category: 'ai-agent',
-    href: '/product/aihr',
-    icon: 'users',
-    featured: true,
-    status: 'live',
-    tags: ['HR', 'Automation', 'AI', 'Employee Management'],
-    image: '/products/aihr/01.png',
-    productUrl: 'https://aihr.augment.cfd/'
-  },
-  {
     id: 'flow',
     name: 'Augment Flow',
     shortName: 'Flow',

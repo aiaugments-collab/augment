@@ -17,7 +17,7 @@ const customerStories: CustomerStory[] = [
     description: "Analytics service helps technology company make faster, more reliable business decisions across operations in more than 100 countries.",
     ctaText: "Read Google's story",
     ctaLink: "/customers/google",
-    logoImage: "https://logo.clearbit.com/google.com",
+    logoImage: "/google.svg",
     logoAlt: "Google logo"
   },
   {

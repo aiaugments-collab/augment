@@ -98,17 +98,18 @@ export function middleware(request: NextRequest) {
     return NextResponse.next();
   }
   
+  // TEMPORARILY DISABLED: Smart redirect functionality
   // Try to find a matching route
-  const matchedRoute = findBestRoute(pathname);
+  // const matchedRoute = findBestRoute(pathname);
   
-  if (matchedRoute) {
-    // Redirect to the matched route with a 301 (permanent redirect)
-    const url = request.nextUrl.clone();
-    url.pathname = matchedRoute;
-    
-    // Preserve query parameters
-    return NextResponse.redirect(url, 301);
-  }
+  // if (matchedRoute) {
+  //   // Redirect to the matched route with a 301 (permanent redirect)
+  //   const url = request.nextUrl.clone();
+  //   url.pathname = matchedRoute;
+  //   
+  //   // Preserve query parameters
+  //   return NextResponse.redirect(url, 301);
+  // }
   
   // If no match found, let Next.js handle it (will show 404 page)
   return NextResponse.next();
