@@ -13,6 +13,7 @@ import {
   oracleCompanyDropdownData,
 } from "./oracleDropdownData";
 import { getProductsByCategory } from "@/lib/productRegistry";
+import { UserProfile } from "@/components/auth/UserProfile";
 
 type NavItem = {
   label: string;
@@ -168,30 +169,7 @@ export default function Header() {
             </button>
 
             {/* User Account Icon - Desktop with text, Mobile icon only */}
-            <Link
-              href="#accounts"
-              className="hidden md:inline-flex items-center rounded-sm bg-black px-4 py-2 text-sm font-medium text-white hover:bg-gray-900 transition-colors"
-            >
-              <svg className="w-4 h-4 mr-2" fill="none" stroke="white" strokeWidth="1.5" viewBox="0 0 24 24">
-                <path d="M12.1207 12.78C12.0507 12.77 11.9607 12.77 11.8807 12.78C10.1207 12.72 8.7207 11.28 8.7207 9.50998C8.7207 7.69998 10.1807 6.22998 12.0007 6.22998C13.8107 6.22998 15.2807 7.69998 15.2807 9.50998C15.2707 11.28 13.8807 12.72 12.1207 12.78Z" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M18.7398 19.3801C16.9598 21.0101 14.5998 22.0001 11.9998 22.0001C9.39977 22.0001 7.03977 21.0101 5.25977 19.3801C5.35977 18.4401 5.95977 17.5201 7.02977 16.8001C9.76977 14.9801 14.2498 14.9801 16.9698 16.8001C18.0398 17.5201 18.6398 18.4401 18.7398 19.3801Z" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" strokeLinecap="round" strokeLinejoin="round"/>
-              </svg>
-              View Accounts
-            </Link>
-
-            {/* User Account Icon - Mobile only */}
-            <Link
-              href="#accounts"
-              className="inline-flex md:hidden h-10 w-10 items-center justify-center rounded hover:bg-gray-700/50 transition-colors"
-              aria-label="View Accounts"
-            >
-              <svg className="w-5 h-5" fill="none" stroke="white" strokeWidth="1.5" viewBox="0 0 24 24">
-                <path d="M12.1207 12.78C12.0507 12.77 11.9607 12.77 11.8807 12.78C10.1207 12.72 8.7207 11.28 8.7207 9.50998C8.7207 7.69998 10.1807 6.22998 12.0007 6.22998C13.8107 6.22998 15.2807 7.69998 15.2807 9.50998C15.2707 11.28 13.8807 12.72 12.1207 12.78Z" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M18.7398 19.3801C16.9598 21.0101 14.5998 22.0001 11.9998 22.0001C9.39977 22.0001 7.03977 21.0101 5.25977 19.3801C5.35977 18.4401 5.95977 17.5201 7.02977 16.8001C9.76977 14.9801 14.2498 14.9801 16.9698 16.8001C18.0398 17.5201 18.6398 18.4401 18.7398 19.3801Z" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" strokeLinecap="round" strokeLinejoin="round"/>
-              </svg>
-            </Link>
+            <UserProfile />
 
             {/* Contact Sales - Desktop with text, Mobile icon only */}
             <Link
@@ -413,18 +391,7 @@ export default function Header() {
 
                 {/* Drawer Footer with CTAs */}
                 <div className="px-6 py-6 border-t border-gray-700/30 space-y-3">
-                  <Link 
-                    href="#accounts" 
-                    className="flex items-center justify-center w-full rounded bg-black px-4 py-3 text-sm font-medium text-white hover:bg-gray-900 transition-colors"
-                    onClick={() => setMenuOpen(false)}
-                  >
-                    <svg className="w-4 h-4 mr-2" fill="none" stroke="white" strokeWidth="1.5" viewBox="0 0 24 24">
-                      <path d="M12.1207 12.78C12.0507 12.77 11.9607 12.77 11.8807 12.78C10.1207 12.72 8.7207 11.28 8.7207 9.50998C8.7207 7.69998 10.1807 6.22998 12.0007 6.22998C13.8107 6.22998 15.2807 7.69998 15.2807 9.50998C15.2707 11.28 13.8807 12.72 12.1207 12.78Z" strokeLinecap="round" strokeLinejoin="round"/>
-                      <path d="M18.7398 19.3801C16.9598 21.0101 14.5998 22.0001 11.9998 22.0001C9.39977 22.0001 7.03977 21.0101 5.25977 19.3801C5.35977 18.4401 5.95977 17.5201 7.02977 16.8001C9.76977 14.9801 14.2498 14.9801 16.9698 16.8001C18.0398 17.5201 18.6398 18.4401 18.7398 19.3801Z" strokeLinecap="round" strokeLinejoin="round"/>
-                      <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" strokeLinecap="round" strokeLinejoin="round"/>
-                    </svg>
-                    View Accounts
-                  </Link>
+                  <UserProfile isMobile={true} onClose={() => setMenuOpen(false)} />
                   <Link 
                     href="/corporate/contact/sales" 
                     className="flex items-center justify-center w-full rounded border border-white px-4 py-3 text-sm font-semibold text-white hover:bg-gray-700/20 transition-colors"

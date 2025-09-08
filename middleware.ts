@@ -77,6 +77,17 @@ const existingRoutes = new Set([
   '/careers/diversity-inclusion',
   '/automation/automation-summit',
   '/developer/dev-tour',
+  // Authentication routes
+  '/auth/login',
+  '/auth/register',
+  '/dashboard',
+  '/profile',
+]);
+
+// Routes that require authentication
+const protectedRoutes = new Set([
+  '/dashboard',
+  '/profile',
 ]);
 
 export function middleware(request: NextRequest) {
@@ -90,6 +101,15 @@ export function middleware(request: NextRequest) {
     pathname.includes('.') ||
     pathname.startsWith('/favicon')
   ) {
+    return NextResponse.next();
+  }
+
+  // Handle authentication protection
+  // Note: In a real app, you'd check for auth tokens/cookies here
+  // For now, we'll let the client-side handle auth protection
+  if (protectedRoutes.has(pathname)) {
+    // In production, you might want to check for auth tokens here
+    // For now, we'll let the client-side ProtectedRoute component handle this
     return NextResponse.next();
   }
   
