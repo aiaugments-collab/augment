@@ -12,7 +12,7 @@ interface UserProfileProps {
 }
 
 export const UserProfile: React.FC<UserProfileProps> = ({ isMobile = false, onClose }) => {
-  const { currentUser, userData, loading } = useAuth();
+  const { currentUser, loading } = useAuth();
   const router = useRouter();
 
   const handleLogout = async () => {
@@ -111,10 +111,10 @@ export const UserProfile: React.FC<UserProfileProps> = ({ isMobile = false, onCl
             />
           ) : (
             <div className="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center text-white text-xs font-medium mr-2">
-              {(userData?.displayName || currentUser.email || 'U')[0].toUpperCase()}
+              {(currentUser.displayName || currentUser.email || 'U')[0].toUpperCase()}
             </div>
           )}
-          {userData?.displayName || currentUser.email}
+          {currentUser.displayName || currentUser.email}
         </div>
         <div className="space-y-1">
           <Link
@@ -155,10 +155,10 @@ export const UserProfile: React.FC<UserProfileProps> = ({ isMobile = false, onCl
             />
           ) : (
             <div className="w-4 h-4 bg-blue-500 rounded-full flex items-center justify-center text-white text-xs font-medium mr-2">
-              {(userData?.displayName || currentUser.email || 'U')[0].toUpperCase()}
+              {(currentUser.displayName || currentUser.email || 'U')[0].toUpperCase()}
             </div>
           )}
-          {userData?.displayName || currentUser.email}
+          {currentUser.displayName || currentUser.email}
         </button>
 
         {/* Dropdown Menu */}
@@ -198,7 +198,7 @@ export const UserProfile: React.FC<UserProfileProps> = ({ isMobile = false, onCl
             />
           ) : (
             <div className="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center text-white text-xs font-medium">
-              {(userData?.displayName || currentUser.email || 'U')[0].toUpperCase()}
+              {(currentUser.displayName || currentUser.email || 'U')[0].toUpperCase()}
             </div>
           )}
         </button>

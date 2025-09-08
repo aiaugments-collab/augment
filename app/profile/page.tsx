@@ -1,10 +1,11 @@
 'use client';
 
+import React from 'react';
 import { useAuth } from '@/contexts/AuthContext';
 import { ProtectedRoute } from '@/components/auth/ProtectedRoute';
 
 export default function ProfilePage() {
-  const { currentUser, userData } = useAuth();
+  const { currentUser } = useAuth();
 
   return (
     <ProtectedRoute>
@@ -34,13 +35,13 @@ export default function ProfilePage() {
                     />
                   ) : (
                     <div className="w-20 h-20 bg-blue-500 rounded-full flex items-center justify-center text-white text-2xl font-medium">
-                      {(userData?.displayName || currentUser?.email || 'U')[0].toUpperCase()}
+                      {(currentUser?.displayName || currentUser?.email || 'U')[0].toUpperCase()}
                     </div>
                   )}
                 </div>
                 <div>
                   <h3 className="text-lg font-medium text-gray-900">
-                    {userData?.displayName || 'No name set'}
+                    {currentUser?.displayName || 'No name set'}
                   </h3>
                   <p className="text-gray-600">{currentUser?.email}</p>
                   <button className="mt-2 text-sm text-blue-600 hover:text-blue-500">
@@ -57,7 +58,7 @@ export default function ProfilePage() {
                   </label>
                   <input
                     type="text"
-                    value={userData?.displayName || ''}
+                    value={currentUser?.displayName || ''}
                     className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
                     placeholder="Enter your display name"
                     readOnly
@@ -82,7 +83,7 @@ export default function ProfilePage() {
                   </label>
                   <input
                     type="text"
-                    value={userData?.createdAt ? new Date(userData.createdAt.seconds * 1000).toLocaleDateString() : 'Recently'}
+                    value={currentUser?.metadata?.creationTime ? new Date(currentUser.metadata.creationTime).toLocaleDateString() : 'Recently'}
                     className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm bg-gray-50"
                     readOnly
                   />

@@ -3,9 +3,11 @@
 import { useAuth } from '@/contexts/AuthContext';
 import { useRouter } from 'next/navigation';
 import { useEffect } from 'react';
+import { DashboardLayout } from '@/components/dashboard/DashboardLayout';
+import { getLiveProducts, getProductsByStatus } from '@/lib/productRegistry';
 
 export default function DashboardPage() {
-  const { currentUser, userData, loading, isAuthenticated } = useAuth();
+  const { currentUser, loading, isAuthenticated } = useAuth();
   const router = useRouter();
 
   useEffect(() => {
@@ -16,10 +18,16 @@ export default function DashboardPage() {
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+      <div 
+        className="min-h-screen bg-white flex items-center justify-center"
+        style={{ fontFamily: "var(--oraclesans, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif)" }}
+      >
         <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto"></div>
-          <p className="mt-4 text-gray-600">Loading...</p>
+          <div 
+            className="animate-spin rounded-full h-12 w-12 border-b-2 mx-auto"
+            style={{ borderColor: "#C74634" }}
+          ></div>
+          <p className="mt-4" style={{ color: "#161513" }}>Loading dashboard...</p>
         </div>
       </div>
     );
@@ -29,118 +37,233 @@ export default function DashboardPage() {
     return null; // Will redirect in useEffect
   }
 
+  const liveProducts = getLiveProducts();
+  const comingSoonProducts = getProductsByStatus('coming-soon');
+
   return (
-    <div className="min-h-screen bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <div className="mb-8">
-          <h1 className="text-3xl font-bold text-gray-900">
-            Welcome back, {userData?.displayName || currentUser?.email}!
+    <DashboardLayout>
+      <div className="space-y-4">
+        {/* Welcome Header - Oracle Style */}
+        <div 
+          className="rounded-sm p-6 text-white shadow-sm"
+          style={{ 
+            backgroundColor: "#C74634",
+            fontFamily: "var(--oraclesans, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif)"
+          }}
+        >
+          <h1 
+            className="text-3xl font-bold mb-4"
+            style={{ 
+              fontFamily: "var(--oracleserif, serif)",
+              color: "#fff"
+            }}
+          >
+            Welcome back, {currentUser?.displayName || currentUser?.email?.split('@')[0]}!
           </h1>
-          <p className="mt-2 text-gray-600">
-            Here's your personalized dashboard with all your AI products and tools.
+          {/* Oracle accent line */}
+          <div 
+            style={{
+              width: "60px",
+              height: "3px",
+              backgroundColor: "#fff",
+              margin: "16px 0 24px 0"
+            }}
+          />
+          <p style={{ color: "#fff", opacity: 0.9 }}>
+            Manage your AI products and explore new possibilities with Augment's comprehensive suite.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {/* Quick Stats */}
-          <div className="bg-white rounded-lg shadow p-6">
-            <h3 className="text-lg font-medium text-gray-900 mb-4">Account Overview</h3>
-            <div className="space-y-3">
-              <div className="flex justify-between">
-                <span className="text-gray-600">Email:</span>
-                <span className="text-gray-900">{currentUser?.email}</span>
+        {/* Quick Stats - Oracle Style */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div 
+            className="bg-white rounded-sm shadow-sm p-4"
+            style={{ 
+              border: "1px solid #e5e5e5",
+              fontFamily: "var(--oraclesans, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif)"
+            }}
+          >
+            <div className="flex items-center">
+              <div className="flex-shrink-0">
+                <div 
+                  className="w-8 h-8 rounded-sm flex items-center justify-center"
+                  style={{ backgroundColor: "#C74634" }}
+                >
+                  <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14-7v12a2 2 0 01-2 2H7a2 2 0 01-2-2V4a2 2 0 012-2h10a2 2 0 012 2zM9 11h6" />
+                  </svg>
+                </div>
               </div>
-              <div className="flex justify-between">
-                <span className="text-gray-600">Member since:</span>
-                <span className="text-gray-900">
-                  {userData?.createdAt ? new Date(userData.createdAt.seconds * 1000).toLocaleDateString() : 'Recently'}
-                </span>
-              </div>
-              <div className="flex justify-between">
-                <span className="text-gray-600">Status:</span>
-                <span className="text-green-600 font-medium">Active</span>
+              <div className="ml-4">
+                <p className="text-sm font-medium" style={{ color: "#665f5b" }}>Active Apps</p>
+                <p className="text-2xl font-semibold" style={{ color: "#161513" }}>{liveProducts.length}</p>
               </div>
             </div>
           </div>
 
-          {/* AI Products */}
-          <div className="bg-white rounded-lg shadow p-6">
-            <h3 className="text-lg font-medium text-gray-900 mb-4">AI Products</h3>
-            <div className="space-y-3">
-              <a href="/product/coding-agent" className="block p-3 border rounded-lg hover:bg-gray-50">
-                <div className="font-medium text-gray-900">Coding Agent</div>
-                <div className="text-sm text-gray-600">AI-powered coding assistant</div>
-              </a>
-              <a href="/product/searchai" className="block p-3 border rounded-lg hover:bg-gray-50">
-                <div className="font-medium text-gray-900">SearchAI</div>
-                <div className="text-sm text-gray-600">Intelligent search platform</div>
-              </a>
-              <a href="/product/hr-automation" className="block p-3 border rounded-lg hover:bg-gray-50">
-                <div className="font-medium text-gray-900">HR Automation</div>
-                <div className="text-sm text-gray-600">Streamline HR processes</div>
-              </a>
+          <div 
+            className="bg-white rounded-sm shadow-sm p-4"
+            style={{ 
+              border: "1px solid #e5e5e5",
+              fontFamily: "var(--oraclesans, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif)"
+            }}
+          >
+            <div className="flex items-center">
+              <div className="flex-shrink-0">
+                <div 
+                  className="w-8 h-8 rounded-sm flex items-center justify-center"
+                  style={{ backgroundColor: "#3a3631" }}
+                >
+                  <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                  </svg>
+                </div>
+              </div>
+              <div className="ml-4">
+                <p className="text-sm font-medium" style={{ color: "#665f5b" }}>Usage This Month</p>
+                <p className="text-2xl font-semibold" style={{ color: "#161513" }}>2.4k</p>
+              </div>
             </div>
           </div>
 
-          {/* Recent Activity */}
-          <div className="bg-white rounded-lg shadow p-6">
-            <h3 className="text-lg font-medium text-gray-900 mb-4">Recent Activity</h3>
-            <div className="space-y-3">
-              <div className="flex items-center space-x-3">
-                <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
-                <div className="text-sm text-gray-600">Signed in to dashboard</div>
+          <div 
+            className="bg-white rounded-sm shadow-sm p-4"
+            style={{ 
+              border: "1px solid #e5e5e5",
+              fontFamily: "var(--oraclesans, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif)"
+            }}
+          >
+            <div className="flex items-center">
+              <div className="flex-shrink-0">
+                <div 
+                  className="w-8 h-8 rounded-sm flex items-center justify-center"
+                  style={{ backgroundColor: "#665f5b" }}
+                >
+                  <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
               </div>
-              <div className="flex items-center space-x-3">
-                <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                <div className="text-sm text-gray-600">Account created successfully</div>
+              <div className="ml-4">
+                <p className="text-sm font-medium" style={{ color: "#665f5b" }}>Coming Soon</p>
+                <p className="text-2xl font-semibold" style={{ color: "#161513" }}>{comingSoonProducts.length}</p>
               </div>
+            </div>
+          </div>
+
+          <div 
+            className="bg-white rounded-sm shadow-sm p-4"
+            style={{ 
+              border: "1px solid #e5e5e5",
+              fontFamily: "var(--oraclesans, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif)"
+            }}
+          >
+            <div className="flex items-center">
+              <div className="flex-shrink-0">
+                <div 
+                  className="w-8 h-8 rounded-sm flex items-center justify-center"
+                  style={{ backgroundColor: "#C74634" }}
+                >
+                  <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                  </svg>
+                </div>
+              </div>
+              <div className="ml-4">
+                <p className="text-sm font-medium" style={{ color: "#665f5b" }}>Team Members</p>
+                <p className="text-2xl font-semibold" style={{ color: "#161513" }}>1</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Recent Apps */}
+        <div className="bg-white rounded-sm shadow-sm" style={{ border: "1px solid #e5e5e5" }}>
+          <div className="px-4 py-3 border-b border-gray-200">
+            <div className="flex items-center justify-between">
+              <h3 className="text-lg font-medium text-gray-900">Recently Used Apps</h3>
+              <a href="/dashboard/apps" className="text-sm text-blue-600 hover:text-blue-500">
+                View all apps →
+              </a>
+            </div>
+          </div>
+          <div className="p-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+              {liveProducts.slice(0, 6).map((product) => (
+                <div key={product.id} className="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                  <div className="flex items-center space-x-3">
+                    <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
+                      <span className="text-blue-600 font-semibold text-sm">
+                        {product.shortName?.[0] || product.name[0]}
+                      </span>
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <p className="text-sm font-medium text-gray-900 truncate">
+                        {product.shortName || product.name}
+                      </p>
+                      <p className="text-xs text-gray-500 truncate">
+                        {product.shortDescription}
+                      </p>
+                    </div>
+                  </div>
+                  <div className="mt-3 flex items-center justify-between">
+                    <span className="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800">
+                      {product.status}
+                    </span>
+                    <a
+                      href={product.productUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-xs text-blue-600 hover:text-blue-500"
+                    >
+                      Launch →
+                    </a>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>
 
         {/* Quick Actions */}
-        <div className="mt-8 bg-white rounded-lg shadow p-6">
-          <h3 className="text-lg font-medium text-gray-900 mb-4">Quick Actions</h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            <a
-              href="/product"
-              className="flex items-center justify-center p-4 border-2 border-dashed border-gray-300 rounded-lg hover:border-blue-500 hover:bg-blue-50 transition-colors"
-            >
-              <div className="text-center">
-                <div className="text-2xl mb-2">🚀</div>
-                <div className="text-sm font-medium text-gray-900">Explore Products</div>
-              </div>
-            </a>
-            <a
-              href="/profile"
-              className="flex items-center justify-center p-4 border-2 border-dashed border-gray-300 rounded-lg hover:border-blue-500 hover:bg-blue-50 transition-colors"
-            >
-              <div className="text-center">
-                <div className="text-2xl mb-2">⚙️</div>
-                <div className="text-sm font-medium text-gray-900">Settings</div>
-              </div>
-            </a>
-            <a
-              href="/support"
-              className="flex items-center justify-center p-4 border-2 border-dashed border-gray-300 rounded-lg hover:border-blue-500 hover:bg-blue-50 transition-colors"
-            >
-              <div className="text-center">
-                <div className="text-2xl mb-2">💬</div>
-                <div className="text-sm font-medium text-gray-900">Support</div>
-              </div>
-            </a>
-            <a
-              href="/documentation"
-              className="flex items-center justify-center p-4 border-2 border-dashed border-gray-300 rounded-lg hover:border-blue-500 hover:bg-blue-50 transition-colors"
-            >
-              <div className="text-center">
-                <div className="text-2xl mb-2">📚</div>
-                <div className="text-sm font-medium text-gray-900">Docs</div>
-              </div>
-            </a>
+        <div className="bg-white rounded-sm shadow-sm" style={{ border: "1px solid #e5e5e5" }}>
+          <div className="px-4 py-3 border-b border-gray-200">
+            <h3 className="text-lg font-medium text-gray-900">Quick Actions</h3>
+          </div>
+          <div className="p-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+              <a
+                href="/dashboard/apps"
+                className="flex items-center justify-center p-4 border-2 border-dashed border-gray-300 rounded-lg hover:border-blue-500 hover:bg-blue-50 transition-colors"
+              >
+                <div className="text-center">
+                  <div className="text-2xl mb-2">🚀</div>
+                  <div className="text-sm font-medium text-gray-900">Browse Apps</div>
+                </div>
+              </a>
+              <a
+                href="/dashboard/account/profile"
+                className="flex items-center justify-center p-4 border-2 border-dashed border-gray-300 rounded-lg hover:border-blue-500 hover:bg-blue-50 transition-colors"
+              >
+                <div className="text-center">
+                  <div className="text-2xl mb-2">⚙️</div>
+                  <div className="text-sm font-medium text-gray-900">Settings</div>
+                </div>
+              </a>
+              <a
+                href="/dashboard/support"
+                className="flex items-center justify-center p-4 border-2 border-dashed border-gray-300 rounded-lg hover:border-blue-500 hover:bg-blue-50 transition-colors"
+              >
+                <div className="text-center">
+                  <div className="text-2xl mb-2">💬</div>
+                  <div className="text-sm font-medium text-gray-900">Support</div>
+                </div>
+              </a>
+              
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </DashboardLayout>
   );
 }

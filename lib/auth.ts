@@ -10,8 +10,7 @@ import {
   sendPasswordResetEmail,
   updateProfile
 } from 'firebase/auth';
-import { doc, setDoc, getDoc, Timestamp } from 'firebase/firestore';
-import { auth, db } from './firebase';
+import { auth } from './firebase';
 
 // Auth functions
 export const signUp = async (email: string, password: string, displayName?: string): Promise<UserCredential> => {
@@ -20,11 +19,6 @@ export const signUp = async (email: string, password: string, displayName?: stri
   // Update profile with display name if provided
   if (displayName && userCredential.user) {
     await updateProfile(userCredential.user, { displayName });
-  }
-  
-  // Create user document in Firestore
-  if (userCredential.user) {
-    await createUserDocument(userCredential.user, { displayName });
   }
   
   return userCredential;
@@ -36,14 +30,7 @@ export const signIn = async (email: string, password: string): Promise<UserCrede
 
 export const signInWithGoogle = async (): Promise<UserCredential> => {
   const provider = new GoogleAuthProvider();
-  const userCredential = await signInWithPopup(auth, provider);
-  
-  // Create user document in Firestore if it doesn't exist
-  if (userCredential.user) {
-    await createUserDocument(userCredential.user);
-  }
-  
-  return userCredential;
+  return await signInWithPopup(auth, provider);
 };
 
 export const logOut = async (): Promise<void> => {
@@ -52,66 +39,6 @@ export const logOut = async (): Promise<void> => {
 
 export const resetPassword = async (email: string): Promise<void> => {
   return await sendPasswordResetEmail(auth, email);
-};
-
-// User document management
-export const createUserDocument = async (user: User, additionalData?: Record<string, unknown>) => {
-  if (!user) return;
-  
-  const userRef = doc(db, 'users', user.uid);
-  const userSnap = await getDoc(userRef);
-  
-  if (!userSnap.exists()) {
-    const { displayName, email, photoURL } = user;
-    const createdAt = new Date();
-    
-    try {
-      await setDoc(userRef, {
-        displayName,
-        email,
-        photoURL,
-        createdAt,
-        ...additionalData
-      });
-    } catch (error) {
-      console.error('Error creating user document:', error);
-    }
-  }
-  
-  return userRef;
-};
-
-interface UserData {
-  uid: string;
-  email: string | null;
-  displayName: string | null;
-  photoURL: string | null;
-  createdAt?: Timestamp;
-}
-
-export const getUserDocument = async (uid: string): Promise<UserData | null> => {
-  if (!uid) return null;
-  
-  try {
-    const userRef = doc(db, 'users', uid);
-    const userSnap = await getDoc(userRef);
-    
-    if (userSnap.exists()) {
-      const data = userSnap.data();
-      return {
-        uid,
-        email: data.email || null,
-        displayName: data.displayName || null,
-        photoURL: data.photoURL || null,
-        createdAt: data.createdAt
-      };
-    }
-    
-    return null;
-  } catch (error) {
-    console.error('Error fetching user document:', error);
-    return null;
-  }
 };
 
 // Auth state observer

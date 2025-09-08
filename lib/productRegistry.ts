@@ -32,6 +32,21 @@ export const PRODUCTS: Product[] = [
     productUrl: 'https://hr.augment.cfd/'
   },
   {
+    id: 'erp',
+    name: 'Augment ERP',
+    shortName: 'ERP',
+    description: 'Complete Enterprise Resource Planning solution. Manage your entire business operations including accounting, inventory, sales, purchasing, manufacturing, and project management in one integrated platform with powerful automation and real-time insights.',
+    shortDescription: 'Complete ERP solution for business operations',
+    category: 'cloud-applications',
+    href: '/product/erp',
+    icon: 'building',
+    featured: true,
+    status: 'live',
+    tags: ['ERP', 'ERPNext', 'Accounting', 'Inventory', 'Sales', 'Manufacturing', 'Business Management'],
+    image: '/products/erp/01.png',
+    productUrl: 'https://erp.augment.cfd/'
+  },
+  {
     id: 'flow',
     name: 'Augment Flow',
     shortName: 'Flow',

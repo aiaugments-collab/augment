@@ -2,21 +2,16 @@
 
 import React, { createContext, useContext, useEffect, useState } from 'react';
 import { User } from 'firebase/auth';
-import { onAuthStateChange, getUserDocument } from '@/lib/auth';
-
-// Import UserData type from auth lib
-type UserData = Awaited<ReturnType<typeof getUserDocument>>;
+import { onAuthStateChange } from '@/lib/auth';
 
 interface AuthContextType {
   currentUser: User | null;
-  userData: UserData | null;
   loading: boolean;
   isAuthenticated: boolean;
 }
 
 const AuthContext = createContext<AuthContextType>({
   currentUser: null,
-  userData: null,
   loading: true,
   isAuthenticated: false,
 });
@@ -35,21 +30,11 @@ interface AuthProviderProps {
 
 export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
   const [currentUser, setCurrentUser] = useState<User | null>(null);
-  const [userData, setUserData] = useState<UserData | null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const unsubscribe = onAuthStateChange(async (user) => {
+    const unsubscribe = onAuthStateChange((user) => {
       setCurrentUser(user);
-      
-      if (user) {
-        // Fetch additional user data from Firestore
-        const userDoc = await getUserDocument(user.uid);
-        setUserData(userDoc);
-      } else {
-        setUserData(null);
-      }
-      
       setLoading(false);
     });
 
@@ -58,7 +43,6 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
 
   const value: AuthContextType = {
     currentUser,
-    userData,
     loading,
     isAuthenticated: !!currentUser,
   };
