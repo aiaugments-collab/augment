@@ -195,7 +195,7 @@ export default function Header() {
 
             {/* Contact Sales - Desktop with text, Mobile icon only */}
             <Link
-              href="#contact-sales"
+              href="/corporate/contact/sales"
               className="hidden md:inline-flex items-center rounded-sm border border-white px-4 py-2 text-sm font-semibold text-white hover:bg-white hover:text-[#312a2a] transition-colors"
             >
               Contact Sales
@@ -203,7 +203,7 @@ export default function Header() {
 
             {/* Contact Sales Icon - Mobile only */}
             <Link
-              href="#contact-sales"
+              href="/corporate/contact/sales"
               className="inline-flex md:hidden h-10 w-10 items-center justify-center rounded hover:bg-gray-700/50 transition-colors"
               aria-label="Contact Sales"
             >
@@ -426,7 +426,7 @@ export default function Header() {
                     View Accounts
                   </Link>
                   <Link 
-                    href="#contact-sales" 
+                    href="/corporate/contact/sales" 
                     className="flex items-center justify-center w-full rounded border border-white px-4 py-3 text-sm font-semibold text-white hover:bg-gray-700/20 transition-colors"
                     onClick={() => setMenuOpen(false)}
                   >

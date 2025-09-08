@@ -22,7 +22,7 @@ export default function IndustriesPage() {
     },
     {
       text: 'Contact Sales',
-      href: '/corporate/contact/',
+      href: '/corporate/contact/sales/',
       variant: 'secondary' as const
     }
   ];

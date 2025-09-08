@@ -18,7 +18,7 @@ export default function CustomerSupportPage() {
     },
     {
       text: "Contact Sales",
-      href: "/corporate/contact",
+      href: "/corporate/contact/sales",
       variant: "secondary" as const
     }
   ];

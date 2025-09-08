@@ -1,0 +1,108 @@
+import { Metadata } from 'next';
+import Link from 'next/link';
+
+export const metadata: Metadata = {
+  title: 'Retail Case Study | 42% Sales Increase with AI Personalization | Augment',
+  description: 'Explore how personalized recommendations and dynamic pricing transformed customer experience and drove significant revenue growth for a major retailer.',
+  keywords: 'retail AI, personalization, dynamic pricing, customer experience, retail automation, e-commerce AI',
+};
+
+export default function RetailPersonalizationCaseStudyPage() {
+  return (
+    <main className="min-h-screen bg-white">
+      <h1 className="sr-only">Retail Case Study | 42% Sales Increase with AI Personalization</h1>
+      
+      <section className="bg-[#312a2a] text-white py-20">
+        <div className="max-w-4xl mx-auto px-6 lg:px-8">
+          <div className="text-center">
+            <div className="inline-flex items-center px-4 py-2 bg-purple-600 text-white rounded-full text-sm font-medium mb-6">
+              Retail Case Study
+            </div>
+            <h1 className="text-4xl lg:text-5xl font-normal text-white mb-6" style={{ fontFamily: 'var(--oracleserif)' }}>
+              Retailer Increases Sales by 42% with AI Personalization
+            </h1>
+            <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto" style={{ fontFamily: 'var(--oraclesans)' }}>
+              Explore how personalized recommendations and dynamic pricing transformed customer experience and drove significant revenue growth for a leading retail chain.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link href="/book-demo" className="inline-flex items-center px-6 py-3 bg-[#4A90E2] text-white font-semibold rounded-lg hover:bg-[#357ABD] transition-colors">
+                Schedule Demo
+              </Link>
+              <Link href="/corporate/contact/sales" className="inline-flex items-center px-6 py-3 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-[#312a2a] transition-colors">
+                Contact Sales
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-2xl lg:text-3xl font-normal text-[#161513] mb-4" style={{ fontFamily: 'var(--oracleserif)' }}>
+              Retail Transformation Results
+            </h2>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="text-center">
+              <div className="text-4xl font-bold text-purple-600 mb-2">42%</div>
+              <div className="text-gray-600">Sales Increase</div>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl font-bold text-purple-600 mb-2">68%</div>
+              <div className="text-gray-600">Customer Engagement</div>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl font-bold text-purple-600 mb-2">$12M</div>
+              <div className="text-gray-600">Additional Revenue</div>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl font-bold text-purple-600 mb-2">55%</div>
+              <div className="text-gray-600">Customer Retention</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 bg-white">
+        <div className="max-w-4xl mx-auto px-6 lg:px-8">
+          <h2 className="text-2xl lg:text-3xl font-normal text-[#161513] mb-6" style={{ fontFamily: 'var(--oracleserif)' }}>
+            The Retail Challenge
+          </h2>
+          <p className="text-lg text-gray-700 mb-6">
+            A major fashion retailer with 200+ stores was struggling with declining sales, low customer engagement, and intense competition from online retailers. Their one-size-fits-all approach was failing to meet modern customer expectations.
+          </p>
+          <div className="bg-gray-50 p-6 rounded-lg">
+            <h3 className="text-lg font-semibold text-[#161513] mb-4">Key Issues:</h3>
+            <ul className="space-y-2 text-gray-700">
+              <li>• Generic product recommendations with low conversion rates</li>
+              <li>• Static pricing unable to respond to market dynamics</li>
+              <li>• Poor inventory management leading to stockouts and overstock</li>
+              <li>• Limited customer insights and segmentation</li>
+              <li>• Disconnected online and in-store experiences</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 bg-purple-600 text-white">
+        <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
+          <h2 className="text-2xl lg:text-3xl font-normal text-white mb-4" style={{ fontFamily: 'var(--oracleserif)' }}>
+            Transform Your Retail Experience
+          </h2>
+          <p className="text-base text-purple-100 mb-8">
+            Discover how Augment AI can help your retail business create personalized experiences that drive sales and customer loyalty.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="/book-demo" className="inline-flex items-center px-6 py-3 bg-white text-purple-600 font-semibold rounded-lg hover:bg-gray-100 transition-colors">
+              Schedule Retail Demo
+            </Link>
+            <Link href="/corporate/contact/sales" className="inline-flex items-center px-6 py-3 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-purple-600 transition-colors">
+              Contact Retail Team
+            </Link>
+          </div>
+        </div>
+      </section>
+    </main>
+  );
+}
