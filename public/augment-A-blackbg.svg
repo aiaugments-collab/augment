@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <title>Custom A logo with black background</title>
+  <!-- Background -->
+  <rect width="400" height="400" fill="#000000"/>
+  <!-- Inverted V "A" -->
+  <g fill="none" stroke="#FFFFFF" stroke-width="40" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M100 320 L200 80 L300 320"/>
+  </g>
+</svg>

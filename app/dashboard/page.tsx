@@ -96,7 +96,7 @@ export default function DashboardPage() {
               </div>
               <div className="ml-4">
                 <p className="text-sm font-medium" style={{ color: "#665f5b" }}>Active Apps</p>
-                <p className="text-2xl font-semibold" style={{ color: "#161513" }}>{liveProducts.length}</p>
+                <p className="text-2xl font-semibold" style={{ color: "#161513" }}>{25}</p>
               </div>
             </div>
           </div>
@@ -126,31 +126,7 @@ export default function DashboardPage() {
             </div>
           </div>
 
-          <div 
-            className="bg-white rounded-sm shadow-sm p-4"
-            style={{ 
-              border: "1px solid #e5e5e5",
-              fontFamily: "var(--oraclesans, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif)"
-            }}
-          >
-            <div className="flex items-center">
-              <div className="flex-shrink-0">
-                <div 
-                  className="w-8 h-8 rounded-sm flex items-center justify-center"
-                  style={{ backgroundColor: "#665f5b" }}
-                >
-                  <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                </div>
-              </div>
-              <div className="ml-4">
-                <p className="text-sm font-medium" style={{ color: "#665f5b" }}>Coming Soon</p>
-                <p className="text-2xl font-semibold" style={{ color: "#161513" }}>{comingSoonProducts.length}</p>
-              </div>
-            </div>
-          </div>
-
+      
           <div 
             className="bg-white rounded-sm shadow-sm p-4"
             style={{ 

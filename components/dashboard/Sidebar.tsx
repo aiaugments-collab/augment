@@ -37,6 +37,17 @@ const sidebarItems: SidebarItem[] = [
     ),
   },
   {
+    id: 'erp-suite',
+    label: 'AugmentERP',
+    href: '/dashboard/erp',
+    icon: (
+      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2-2v16m14 0a2 2 0 002-2m-2 2a2 2 0 01-2-2m2 2H9m12 0v-4a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
+      </svg>
+    ),
+    badge: 'NEW',
+  },
+  {
     id: 'billing',
     label: 'Billing & Plans',
     href: '/dashboard/billing',
@@ -129,9 +140,8 @@ export const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
       >
         {/* Header */}
         <div className="flex items-center justify-between p-6" style={{ borderBottom: "1px solid #665f5b" }}>
-          <Link href="/dashboard" className="flex items-center space-x-2">
-            <img src="/augment-logo.svg" alt="Augment" className="h-8 w-auto" />
-            <span className="text-xl font-bold text-white" style={{ fontFamily: "var(--oracleserif, serif)" }}>Dashboard</span>
+          <Link href="/dashboard" className="flex items-center">
+            <img src="/augment-logo.svg" alt="Augment" className="" />
           </Link>
           <button
             onClick={onClose}
