@@ -18,7 +18,7 @@ export const oracleProductsDropdownData: DropdownSection[] = [
     title: "Augment Cloud Applications",
     hasDivider: false,
     items: [
-      { label: "Applications Overview", href: "/applications/" },
+      { label: "Applications Overview", href: "/product/" },
       ...getProductsByCategory('cloud-applications').map(product => ({
         label: product.name,
         href: product.href
