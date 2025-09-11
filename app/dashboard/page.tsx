@@ -4,11 +4,15 @@ import { useAuth } from '@/contexts/AuthContext';
 import { useRouter } from 'next/navigation';
 import { useEffect } from 'react';
 import { DashboardLayout } from '@/components/dashboard/DashboardLayout';
-import { getLiveProducts, getProductsByStatus } from '@/lib/productRegistry';
+import { getLiveProducts, getProductsByStatus, PRODUCTS } from '@/lib/productRegistry';
 
 export default function DashboardPage() {
   const { currentUser, loading, isAuthenticated } = useAuth();
   const router = useRouter();
+  
+  // Get dynamic counts
+  const liveProducts = getLiveProducts();
+  const activeAppsCount = PRODUCTS.length; // Total apps count including coming-soon
 
   useEffect(() => {
     if (!loading && !isAuthenticated) {
@@ -37,8 +41,29 @@ export default function DashboardPage() {
     return null; // Will redirect in useEffect
   }
 
-  const liveProducts = getLiveProducts();
   const comingSoonProducts = getProductsByStatus('coming-soon');
+
+  // Color palette for app avatars
+  const avatarColors = [
+    'bg-blue-100 text-blue-600',
+    'bg-green-100 text-green-600', 
+    'bg-purple-100 text-purple-600',
+    'bg-orange-100 text-orange-600',
+    'bg-pink-100 text-pink-600',
+    'bg-indigo-100 text-indigo-600',
+    'bg-red-100 text-red-600',
+    'bg-yellow-100 text-yellow-600',
+    'bg-teal-100 text-teal-600',
+    'bg-cyan-100 text-cyan-600',
+    'bg-emerald-100 text-emerald-600',
+    'bg-violet-100 text-violet-600',
+    'bg-fuchsia-100 text-fuchsia-600',
+    'bg-rose-100 text-rose-600',
+    'bg-amber-100 text-amber-600',
+    'bg-lime-100 text-lime-600',
+    'bg-sky-100 text-sky-600',
+    'bg-slate-100 text-slate-600'
+  ];
 
   return (
     <DashboardLayout>
@@ -96,7 +121,7 @@ export default function DashboardPage() {
               </div>
               <div className="ml-4">
                 <p className="text-sm font-medium" style={{ color: "#665f5b" }}>Active Apps</p>
-                <p className="text-2xl font-semibold" style={{ color: "#161513" }}>{25}</p>
+                <p className="text-2xl font-semibold" style={{ color: "#161513" }}>{activeAppsCount}</p>
               </div>
             </div>
           </div>
@@ -165,11 +190,11 @@ export default function DashboardPage() {
           </div>
           <div className="p-4">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-              {liveProducts.slice(0, 6).map((product) => (
-                <div key={product.id} className="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+              {liveProducts.slice(0, 6).map((product, index) => (
+                <div key={product.id} className="border border-gray-200 rounded-lg p-4 hover:shadow-lg hover:border-gray-300 transition-all duration-200">
                   <div className="flex items-center space-x-3">
-                    <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
-                      <span className="text-blue-600 font-semibold text-sm">
+                    <div className={`w-12 h-12 rounded-xl flex items-center justify-center ${avatarColors[index % avatarColors.length]} shadow-sm`}>
+                      <span className="font-bold text-base">
                         {product.shortName?.[0] || product.name[0]}
                       </span>
                     </div>
@@ -182,17 +207,23 @@ export default function DashboardPage() {
                       </p>
                     </div>
                   </div>
-                  <div className="mt-3 flex items-center justify-between">
-                    <span className="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800">
-                      {product.status}
+                  <div className="mt-4 flex items-center justify-between">
+                    <span className={`inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium ${
+                      product.status === 'live' 
+                        ? 'bg-green-100 text-green-800' 
+                        : product.status === 'beta'
+                        ? 'bg-yellow-100 text-yellow-800'
+                        : 'bg-gray-100 text-gray-800'
+                    }`}>
+                      {product.status === 'live' ? '✓ Live' : product.status === 'beta' ? '⚡ Beta' : '🚧 Coming Soon'}
                     </span>
                     <a
                       href={product.productUrl}
-                      target="_blank"
+                      target={product.productUrl?.startsWith('http') ? "_blank" : "_self"}
                       rel="noopener noreferrer"
-                      className="text-xs text-blue-600 hover:text-blue-500"
+                      className="inline-flex items-center text-xs font-medium text-blue-600 hover:text-blue-800 hover:underline transition-colors"
                     >
-                      Launch →
+                      {product.status === 'live' ? 'Launch' : 'View'} →
                     </a>
                   </div>
                 </div>

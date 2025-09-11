@@ -12,13 +12,13 @@ import { Breadcrumb } from "@/components/ui/Breadcrumb";
 export default function CRMPage() {
   const ctaButtons = [
     {
-      text: "Book a Demo",
-      href: "/book-demo",
+      text: "Access CRM Module",
+      href: "https://erp.augment.cfd/app/crm",
       variant: "primary" as const
     },
     {
-      text: "Contact Sales",
-      href: "/corporate/contact/sales",
+      text: "View ERP Dashboard",
+      href: "https://erp.augment.cfd/app/dashboard",
       variant: "secondary" as const
     }
   ];
@@ -261,10 +261,10 @@ export default function CRMPage() {
 
         <ProductCTABanner
           title="Ready to transform your customer relationships?"
-          description="Join thousands of businesses using our CRM to drive sales growth and improve customer satisfaction."
+          description="Join thousands of businesses using our ERP CRM module to drive sales growth and improve customer satisfaction."
           image="/products/crm/03.png"
-          buttonText="Book a Demo"
-          buttonHref="/book-demo"
+          buttonText="Access CRM Module"
+          buttonHref="https://erp.augment.cfd/app/crm"
         />
 
         <ProductGetStarted 

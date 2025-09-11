@@ -56,14 +56,54 @@ export default function AugmentERPPage() {
   ];
 
   const customerLogos = [
-    { name: "Microsoft", image: "/customers/microsoft.svg", href: "#", alt: "Microsoft" },
-    { name: "Google", image: "/customers/google.svg", href: "#", alt: "Google" },
-    { name: "Amazon", image: "/customers/amazon.svg", href: "#", alt: "Amazon" },
-    { name: "Uber", image: "/customers/uber.svg", href: "#", alt: "Uber" },
-    { name: "MGM Resorts", image: "/customers/mgm.svg", href: "#", alt: "MGM Resorts" },
-    { name: "Grant Thornton", image: "/customers/grant-thornton.svg", href: "#", alt: "Grant Thornton" },
-    { name: "Australian National University", image: "/customers/anu.svg", href: "#", alt: "Australian National University" },
-    { name: "Aon", image: "/customers/aon.svg", href: "#", alt: "Aon" }
+    {
+      name: "Microsoft",
+      image: "https://logo.clearbit.com/microsoft.com",
+      href: "https://erp.augment.cfd/",
+      alt: "Microsoft logo"
+    },
+    {
+      name: "Google",
+      image: "/google.svg",
+      href: "https://erp.augment.cfd/",
+      alt: "Google logo"
+    },
+    {
+      name: "Amazon",
+      image: "https://logo.clearbit.com/amazon.com",
+      href: "https://erp.augment.cfd/",
+      alt: "Amazon logo"
+    },
+    {
+      name: "Salesforce",
+      image: "https://logo.clearbit.com/salesforce.com",
+      href: "https://erp.augment.cfd/",
+      alt: "Salesforce logo"
+    },
+    {
+      name: "Oracle",
+      image: "https://logo.clearbit.com/oracle.com",
+      href: "https://erp.augment.cfd/",
+      alt: "Oracle logo"
+    },
+    {
+      name: "SAP",
+      image: "https://logo.clearbit.com/sap.com",
+      href: "https://erp.augment.cfd/",
+      alt: "SAP logo"
+    },
+    {
+      name: "Workday",
+      image: "https://logo.clearbit.com/workday.com",
+      href: "https://erp.augment.cfd/",
+      alt: "Workday logo"
+    },
+    {
+      name: "NetSuite",
+      image: "https://logo.clearbit.com/netsuite.com",
+      href: "https://erp.augment.cfd/",
+      alt: "NetSuite logo"
+    }
   ];
 
 

@@ -12,13 +12,13 @@ import { Breadcrumb } from "@/components/ui/Breadcrumb";
 export default function AccountingPage() {
   const ctaButtons = [
     {
-      text: "Book a Demo",
-      href: "/book-demo",
+      text: "Access Accounting Module",
+      href: "https://erp.augment.cfd/app/accounting",
       variant: "primary" as const
     },
     {
-      text: "Contact Sales",
-      href: "/corporate/contact/sales",
+      text: "View ERP Dashboard",
+      href: "https://erp.augment.cfd/app/dashboard",
       variant: "secondary" as const
     }
   ];
@@ -261,10 +261,10 @@ export default function AccountingPage() {
 
         <ProductCTABanner
           title="Ready to transform your business finances?"
-          description="Join thousands of businesses using our platform to streamline accounting, improve accuracy, and gain financial insights."
+          description="Join thousands of businesses using our ERP accounting module to streamline financial management and gain real-time insights."
           image="/products/accounting/03.png"
-          buttonText="Book a Demo"
-          buttonHref="/book-demo"
+          buttonText="Access Accounting Module"
+          buttonHref="https://erp.augment.cfd/app/accounting"
         />
 
         <ProductGetStarted 

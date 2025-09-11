@@ -1,6 +1,6 @@
 # Product Development Guide - Augment Platform
 
-This guide walks you through the complete process of adding a new AI product to the Augment platform.
+This guide walks you through the complete process of adding a new AI or cloud product to the Augment platform.
 
 ## 📋 Prerequisites
 
