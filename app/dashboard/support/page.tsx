@@ -126,12 +126,12 @@ export default function SupportPage() {
           {/* Quick Actions */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             <a 
-              href="/knowledge"
+              href="/dashboard/support/help"
               className="p-4 bg-white rounded-sm shadow-sm border border-gray-200 hover:shadow-md transition-shadow text-left block"
               style={{ fontFamily: "var(--oraclesans, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif)" }}
             >
               <div className="text-2xl mb-2">📚</div>
-              <h3 className="font-semibold text-sm" style={{ color: "#161513" }}>Knowledge Base</h3>
+              <h3 className="font-semibold text-sm" style={{ color: "#161513" }}>Help Center</h3>
               <p className="text-xs mt-1" style={{ color: "#665f5b" }}>Find answers to common questions</p>
             </a>
             <a 
@@ -198,29 +198,53 @@ export default function SupportPage() {
               {/* Help Center Tab */}
               {activeTab === 'help' && (
                 <div className="space-y-6">
-                  {helpCategories.map((category, index) => (
-                    <div key={index}>
-                      <h3 className="text-lg font-semibold mb-3" style={{ color: "#161513" }}>
-                        {category.category}
-                      </h3>
-                      <div className="space-y-2">
-                        {category.links.map((link, linkIndex) => (
-                          <a 
-                            key={linkIndex} 
-                            href={link.href}
-                            className="flex items-center justify-between p-3 border border-gray-200 rounded-sm hover:bg-gray-50 transition-colors block"
-                          >
-                            <h4 className="text-sm font-medium" style={{ color: "#161513" }}>
-                              {link.title}
-                            </h4>
-                            <svg className="w-4 h-4" style={{ color: "#665f5b" }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                            </svg>
-                          </a>
-                        ))}
+                  <div className="text-center py-8">
+                    <div className="text-6xl mb-4">📚</div>
+                    <h3 className="text-lg font-semibold mb-2" style={{ color: "#161513" }}>
+                      Help Center
+                    </h3>
+                    <p className="text-sm mb-6" style={{ color: "#665f5b" }}>
+                      Browse our comprehensive help documentation and guides
+                    </p>
+                    <a
+                      href="/dashboard/support/help"
+                      className="inline-flex items-center px-6 py-3 text-sm font-medium rounded-sm text-white transition-colors"
+                      style={{ backgroundColor: "#C74634" }}
+                      onMouseEnter={(e) => e.currentTarget.style.backgroundColor = "#b03e2d"}
+                      onMouseLeave={(e) => e.currentTarget.style.backgroundColor = "#C74634"}
+                    >
+                      Visit Help Center →
+                    </a>
+                  </div>
+                  
+                  <div className="border-t border-gray-200 pt-6">
+                    <h4 className="text-sm font-semibold mb-4" style={{ color: "#161513" }}>
+                      Quick Links
+                    </h4>
+                    {helpCategories.map((category, index) => (
+                      <div key={index} className="mb-4">
+                        <h5 className="text-sm font-medium mb-2" style={{ color: "#161513" }}>
+                          {category.category}
+                        </h5>
+                        <div className="space-y-1">
+                          {category.links.slice(0, 2).map((link, linkIndex) => (
+                            <a 
+                              key={linkIndex} 
+                              href={link.href}
+                              className="flex items-center justify-between p-2 text-xs border border-gray-200 rounded-sm hover:bg-gray-50 transition-colors"
+                            >
+                              <span style={{ color: "#161513" }}>
+                                {link.title}
+                              </span>
+                              <svg className="w-3 h-3" style={{ color: "#665f5b" }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                              </svg>
+                            </a>
+                          ))}
+                        </div>
                       </div>
-                    </div>
-                  ))}
+                    ))}
+                  </div>
                 </div>
               )}
 
