@@ -1,7 +1,7 @@
 import { DropdownSection } from "./OracleDropdown";
-import { getProductsByCategory } from "@/lib/productRegistry";
+import { getProductsByCategory, getHeaderCategoriesWithProducts, HEADER_CATEGORIES } from "@/lib/productRegistry";
 
-// Augment Products dropdown data matching your structure
+// Augment Products dropdown data with Oracle-style organization
 export const oracleProductsDropdownData: DropdownSection[] = [
   {
     title: "Augment AI Agent",
@@ -18,12 +18,40 @@ export const oracleProductsDropdownData: DropdownSection[] = [
     title: "Augment Cloud Applications",
     hasDivider: false,
     items: [
-      { label: "Applications Overview", href: "/product/" },
-      ...getProductsByCategory('cloud-applications').map(product => ({
-        label: product.name,
-        href: product.href
-      })),
-      { label: "Augment Marketplace", href: "/marketplace/" }
+      // Column 1: Overview + ERP
+      { label: "Applications Overview", href: "/product/", columnGroup: "col1" },
+      { label: "Enterprise Resource Planning (ERP)", href: "/product/erp", isBold: true, columnGroup: "col1" },
+      { label: "– Financial Management", href: "/product/accounting", isSubItem: true, columnGroup: "col1" },
+      { label: "– Procurement", href: "/product/purchasing", isSubItem: true, columnGroup: "col1" },
+      { label: "– Project Management", href: "/product/projects", isSubItem: true, columnGroup: "col1" },
+      { label: "– Risk Management and Compliance", href: "/product/risk-management", isSubItem: true, columnGroup: "col1" },
+      { label: "– Enterprise Performance Management", href: "/product/enterprise-performance", isSubItem: true, columnGroup: "col1" },
+      
+      // Column 2: SCM
+      { label: "Supply Chain & Manufacturing (SCM)", href: "#", isBold: true, columnGroup: "col2" },
+      { label: "– Supply Chain Planning", href: "/product/supply-chain-planning", isSubItem: true, columnGroup: "col2" },
+      { label: "– Inventory Management", href: "/product/inventory", isSubItem: true, columnGroup: "col2" },
+      { label: "– Manufacturing", href: "/product/manufacturing", isSubItem: true, columnGroup: "col2" },
+      { label: "– Maintenance", href: "/product/assets", isSubItem: true, columnGroup: "col2" },
+      { label: "– Product Lifecycle Management", href: "/product/plm", isSubItem: true, columnGroup: "col2" },
+      
+      // Column 3: HCM + Data Intelligence
+      { label: "Human Capital Management (HCM)", href: "#", isBold: true, columnGroup: "col3" },
+      { label: "– Human Resources", href: "/product/hr", isSubItem: true, columnGroup: "col3" },
+      { label: "– Talent Management", href: "/product/talent-management", isSubItem: true, columnGroup: "col3" },
+      { label: "– Workforce Management", href: "/product/workforce-management", isSubItem: true, columnGroup: "col3" },
+      { label: "– Payroll", href: "/product/payroll", isSubItem: true, columnGroup: "col3" },
+      
+      { label: "Fusion Data Intelligence Platform", href: "/product/augmentdb", isBold: true, columnGroup: "col3" },
+      { label: "Augment Suite", href: "/product/augmentdb", columnGroup: "col3" },
+      
+      // Column 4: CX + Marketplace
+      { label: "Customer Experience (CX)", href: "#", isBold: true, columnGroup: "col4" },
+      { label: "– Marketing", href: "/product/marketing", isSubItem: true, columnGroup: "col4" },
+      { label: "– Sales", href: "/product/sales", isSubItem: true, columnGroup: "col4" },
+      { label: "– Service", href: "/product/customer-support", isSubItem: true, columnGroup: "col4" },
+      
+      { label: "Augment Marketplace", href: "/marketplace", isBold: true, columnGroup: "col4" }
     ]
   }
 ];

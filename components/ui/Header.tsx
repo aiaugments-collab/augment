@@ -20,17 +20,45 @@ type NavItem = {
   href: string;
 };
 
-// Mobile navigation structure using the dropdown data
+// Mobile navigation structure using the new categorized data
 const MOBILE_NAV_STRUCTURE = {
   "Products": {
     "AI Agents": getProductsByCategory('ai-agent').map(product => ({
       label: product.shortName || product.name,
       href: product.href
     })),
-    "Cloud Applications": getProductsByCategory('cloud-applications').map(product => ({
-      label: product.shortName || product.name,
-      href: product.href
-    }))
+    "Enterprise Resource Planning (ERP)": [
+      { label: "Applications Overview", href: "/product/erp" },
+      { label: "Financial Management", href: "/product/accounting" },
+      { label: "Procurement", href: "/product/purchasing" },
+      { label: "Project Management", href: "/product/projects" },
+      { label: "Risk Management", href: "/product/risk-management" },
+      { label: "Performance Management", href: "/product/enterprise-performance" }
+    ],
+    "Supply Chain & Manufacturing (SCM)": [
+      { label: "Supply Chain Planning", href: "/product/supply-chain-planning" },
+      { label: "Inventory Management", href: "/product/inventory" },
+      { label: "Manufacturing", href: "/product/manufacturing" },
+      { label: "Maintenance", href: "/product/assets" },
+      { label: "Product Lifecycle Management", href: "/product/plm" }
+    ],
+    "Human Capital Management (HCM)": [
+      { label: "Human Resources", href: "/product/hr" },
+      { label: "Talent Management", href: "/product/talent-management" },
+      { label: "Workforce Management", href: "/product/workforce-management" },
+      { label: "Payroll", href: "/product/payroll" }
+    ],
+    "Customer Experience (CX)": [
+      { label: "Marketing", href: "/product/marketing" },
+      { label: "Sales", href: "/product/sales" },
+      { label: "Service", href: "/product/customer-support" }
+    ],
+    "Data Intelligence": [
+      { label: "Augment Suite", href: "/product/augmentdb" }
+    ],
+    "Marketplace": [
+      { label: "Augment Marketplace", href: "/marketplace" }
+    ]
   },
   "Industries": oracleIndustriesDropdownData[0].items,
   "Resources": oracleResourcesDropdownData[0].items,
@@ -267,71 +295,40 @@ export default function Header() {
                             
                             {expandedSections.has('Products') && (
                               <div className="ml-4 mt-2 space-y-1">
-                                {/* AI Agents Category */}
-                                <div>
-                                  <button
-                                    onClick={() => toggleSection('AI Agents')}
-                                    className="flex items-center justify-between w-full px-4 py-2 text-sm text-gray-300 hover:bg-gray-700/30 transition-colors rounded-md"
-                                  >
-                                    AI Agents
-                                    <svg 
-                                      className={`w-4 h-4 transition-transform ${expandedSections.has('AI Agents') ? 'rotate-180' : ''}`}
-                                      fill="none" 
-                                      stroke="currentColor" 
-                                      viewBox="0 0 24 24"
+                                {/* Render all product categories */}
+                                {Object.entries(MOBILE_NAV_STRUCTURE.Products).map(([categoryName, categoryItems]) => (
+                                  <div key={categoryName}>
+                                    <button
+                                      onClick={() => toggleSection(categoryName)}
+                                      className="flex items-center justify-between w-full px-4 py-2 text-sm text-gray-300 hover:bg-gray-700/30 transition-colors rounded-md"
                                     >
-                                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"/>
-                                    </svg>
-                                  </button>
-                                  
-                                  {expandedSections.has('AI Agents') && (
-                                    <div className="ml-4 mt-1 space-y-1">
-                                      {MOBILE_NAV_STRUCTURE.Products["AI Agents"].map((app) => (
-                                        <Link
-                                          key={app.label}
-                                          href={app.href}
-                                          className="block px-4 py-2 text-sm text-gray-400 hover:bg-gray-700/20 hover:text-white transition-colors rounded-md"
-                                          onClick={() => setMenuOpen(false)}
-                                        >
-                                          {app.label}
-                                        </Link>
-                                      ))}
-                                    </div>
-                                  )}
-                                </div>
-
-                                {/* Cloud Applications Category */}
-                                <div>
-                                  <button
-                                    onClick={() => toggleSection('Cloud Applications')}
-                                    className="flex items-center justify-between w-full px-4 py-2 text-sm text-gray-300 hover:bg-gray-700/30 transition-colors rounded-md"
-                                  >
-                                    Cloud Applications
-                                    <svg 
-                                      className={`w-4 h-4 transition-transform ${expandedSections.has('Cloud Applications') ? 'rotate-180' : ''}`}
-                                      fill="none" 
-                                      stroke="currentColor" 
-                                      viewBox="0 0 24 24"
-                                    >
-                                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"/>
-                                    </svg>
-                                  </button>
-                                  
-                                  {expandedSections.has('Cloud Applications') && (
-                                    <div className="ml-4 mt-1 space-y-1">
-                                      {MOBILE_NAV_STRUCTURE.Products["Cloud Applications"].map((app) => (
-                                        <Link
-                                          key={app.label}
-                                          href={app.href}
-                                          className="block px-4 py-2 text-sm text-gray-400 hover:bg-gray-700/20 hover:text-white transition-colors rounded-md"
-                                          onClick={() => setMenuOpen(false)}
-                                        >
-                                          {app.label}
-                                        </Link>
-                                      ))}
-                                    </div>
-                                  )}
-                                </div>
+                                      {categoryName}
+                                      <svg 
+                                        className={`w-4 h-4 transition-transform ${expandedSections.has(categoryName) ? 'rotate-180' : ''}`}
+                                        fill="none" 
+                                        stroke="currentColor" 
+                                        viewBox="0 0 24 24"
+                                      >
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"/>
+                                      </svg>
+                                    </button>
+                                    
+                                    {expandedSections.has(categoryName) && (
+                                      <div className="ml-4 mt-1 space-y-1">
+                                        {categoryItems.map((app) => (
+                                          <Link
+                                            key={app.label}
+                                            href={app.href}
+                                            className="block px-4 py-2 text-sm text-gray-400 hover:bg-gray-700/20 hover:text-white transition-colors rounded-md"
+                                            onClick={() => setMenuOpen(false)}
+                                          >
+                                            {app.label}
+                                          </Link>
+                                        ))}
+                                      </div>
+                                    )}
+                                  </div>
+                                ))}
                               </div>
                             )}
                           </li>

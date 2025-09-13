@@ -130,18 +130,106 @@ export function ProductResources({ title, tabs, className = "" }: ProductResourc
                   </div>
                 </div>
 
-                {/* Right: Image (if provided) */}
-                {currentTab.content.image && (
-                  <div className="lg:col-span-1 flex items-center justify-center">
-                    <div className="w-full">
-                      <img
-                        src={currentTab.content.image}
-                        alt={`${currentTab.content.title} illustration`}
-                        className="w-full h-auto rounded-lg shadow-sm"
-                      />
+                {/* Right: Desktop Mockup for Resources */}
+                <div className="lg:col-span-1 flex items-center justify-center">
+                  <div className="w-full max-w-sm">
+                    {/* Desktop Frame */}
+                    <div className="bg-gray-800 rounded-lg p-2 shadow-2xl">
+                      {/* Desktop Header */}
+                      <div className="bg-gray-700 rounded-t-md px-3 py-2 flex items-center space-x-2">
+                        <div className="flex space-x-1">
+                          <div className="w-3 h-3 bg-red-500 rounded-full"></div>
+                          <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                          <div className="w-3 h-3 bg-green-500 rounded-full"></div>
+                        </div>
+                        <div className="flex-1 text-center">
+                          <div className="bg-gray-600 rounded px-3 py-1 text-xs text-gray-300">
+                            docs.augment.cfd
+                          </div>
+                        </div>
+                      </div>
+                      
+                      {/* Documentation Interface */}
+                      <div className="bg-white rounded-b-md overflow-hidden">
+                        {/* Navigation Bar */}
+                        <div className="bg-blue-50 px-4 py-2 border-b border-blue-100">
+                          <div className="flex items-center space-x-2">
+                            <svg className="w-4 h-4 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                              <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            <span className="text-xs font-medium text-blue-800">Documentation</span>
+                          </div>
+                        </div>
+                        
+                        {/* Content Area */}
+                        <div className="p-4 h-64 overflow-hidden">
+                          {/* Page Header */}
+                          <div className="mb-4">
+                            <h3 className="text-sm font-bold text-gray-900 mb-1">Getting Started Guide</h3>
+                            <p className="text-xs text-gray-600">Learn how to implement and optimize your solution</p>
+                          </div>
+                          
+                          {/* Content Sections */}
+                          <div className="space-y-3">
+                            {/* Section 1 */}
+                            <div className="border-l-2 border-blue-200 pl-3">
+                              <h4 className="text-xs font-semibold text-gray-800 mb-1">📚 Quick Start</h4>
+                              <p className="text-xs text-gray-600 leading-relaxed">
+                                Set up your account and configure basic settings in under 5 minutes.
+                              </p>
+                            </div>
+                            
+                            {/* Section 2 */}
+                            <div className="border-l-2 border-green-200 pl-3">
+                              <h4 className="text-xs font-semibold text-gray-800 mb-1">🚀 Implementation</h4>
+                              <p className="text-xs text-gray-600 leading-relaxed">
+                                Step-by-step implementation guide with best practices and examples.
+                              </p>
+                            </div>
+                            
+                            {/* Section 3 */}
+                            <div className="border-l-2 border-purple-200 pl-3">
+                              <h4 className="text-xs font-semibold text-gray-800 mb-1">📊 Analytics & Reporting</h4>
+                              <p className="text-xs text-gray-600 leading-relaxed">
+                                Advanced analytics setup and custom reporting configuration.
+                              </p>
+                            </div>
+                            
+                            {/* Code Block */}
+                            <div className="bg-gray-900 rounded p-2 mt-3">
+                              <div className="flex items-center space-x-1 mb-2">
+                                <div className="w-2 h-2 bg-red-400 rounded-full"></div>
+                                <div className="w-2 h-2 bg-yellow-400 rounded-full"></div>
+                                <div className="w-2 h-2 bg-green-400 rounded-full"></div>
+                                <span className="text-xs text-gray-400 ml-2">config.js</span>
+                              </div>
+                              <div className="text-xs font-mono text-green-400">
+                                <div className="text-blue-300">const</div>
+                                <div className="text-white ml-2">config = {`{`}</div>
+                                <div className="text-gray-400 ml-4">apiKey: "your-key",</div>
+                                <div className="text-gray-400 ml-4">endpoint: "api.augment.cfd"</div>
+                                <div className="text-white ml-2">{`}`}</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        {/* Bottom Navigation */}
+                        <div className="bg-gray-50 px-4 py-2 border-t border-gray-100">
+                          <div className="flex justify-between items-center">
+                            <button className="text-xs text-blue-600 hover:text-blue-800">← Previous</button>
+                            <div className="flex space-x-1">
+                              <div className="w-1 h-1 bg-blue-600 rounded-full"></div>
+                              <div className="w-1 h-1 bg-gray-300 rounded-full"></div>
+                              <div className="w-1 h-1 bg-gray-300 rounded-full"></div>
+                            </div>
+                            <button className="text-xs text-blue-600 hover:text-blue-800">Next →</button>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                )}
+                </div>
 
               </div>
             )}

@@ -54,7 +54,7 @@ export default function FinanceAIPage() {
     {
       id: "financial-success-story",
       image: "/products/finance-ai/05.png",
-      title: "Success Story: 40% Savings Increase with FinanceAI",
+      title: "Success Story: 40% Savings Increase with AI Financial Intelligence",
       description: "See how users transformed their financial habits using AI-powered insights, achieving significant savings and better investment decisions.",
       ctaText: "Read success stories",
       ctaLink: "https://financeai.augment.cfd/",
@@ -202,8 +202,8 @@ export default function FinanceAIPage() {
 
   const customerReference = {
     title: "Customer Success Story",
-    company: "TechStartup saves $50K annually with FinanceAI automation",
-    description: "A fast-growing startup automated their expense management using FinanceAI's AI-powered receipt scanning and budget optimization, reducing administrative costs by 75% and improving financial visibility across all departments.",
+    company: "TechStartup saves $50K annually with AI Financial Intelligence automation",
+    description: "A fast-growing startup automated their expense management using AI Financial Intelligence's AI-powered receipt scanning and budget optimization, reducing administrative costs by 75% and improving financial visibility across all departments.",
     image: "/products/finance-ai/01.png",
     linkText: "Read the success story",
     linkHref: "https://financeai.augment.cfd/"
@@ -287,7 +287,7 @@ export default function FinanceAIPage() {
   const resourceTabs = [
     {
       id: "whats-new",
-      title: "What's new in FinanceAI",
+      title: "What's new in AI Financial Intelligence",
       content: {
         title: "Latest AI-powered finance features and updates",
         description: "Stay updated with the newest capabilities in AI-powered personal finance management, from enhanced receipt scanning to advanced budget optimization features.",
@@ -302,14 +302,14 @@ export default function FinanceAIPage() {
     },
     {
       id: "compare",
-      title: "Compare FinanceAI",
+      title: "Compare AI Financial Intelligence",
       content: {
-        title: "See why FinanceAI leads in AI-powered finance management",
-        description: "FinanceAI combines advanced AI receipt scanning, intelligent budget management, and personalized insights to deliver superior financial management compared to traditional apps.",
+        title: "See why AI Financial Intelligence leads in AI-powered finance management",
+        description: "AI Financial Intelligence combines advanced AI receipt scanning, intelligent budget management, and personalized insights to deliver superior financial management compared to traditional apps.",
         image: "/products/finance-ai/03.png",
         links: [
-          { text: "FinanceAI vs Mint comparison", href: "https://financeai.augment.cfd/" },
-          { text: "FinanceAI vs YNAB features", href: "https://financeai.augment.cfd/" },
+          { text: "AI Financial Intelligence vs Mint comparison", href: "https://financeai.augment.cfd/" },
+          { text: "AI Financial Intelligence vs YNAB features", href: "https://financeai.augment.cfd/" },
           { text: "Traditional vs AI finance apps", href: "https://financeai.augment.cfd/" },
           { text: "ROI calculator for automation", href: "https://financeai.augment.cfd/" }
         ]
@@ -350,7 +350,7 @@ export default function FinanceAIPage() {
       title: "Get finance support",
       content: {
         title: "Expert help for your financial management",
-        description: "Access comprehensive support resources, expert guidance, and financial coaching to maximize your success with FinanceAI's powerful features.",
+        description: "Access comprehensive support resources, expert guidance, and financial coaching to maximize your success with AI Financial Intelligence's powerful features.",
         image: "/products/finance-ai/01.png",
         links: [
           { text: "Contact financial support", href: "https://financeai.augment.cfd/" },
@@ -398,7 +398,7 @@ export default function FinanceAIPage() {
   return (
     <div className="min-h-screen">
       <main>
-        <h1 className="sr-only">FinanceAI | AI-Powered Personal Finance Management Platform</h1>
+        <h1 className="sr-only">AI Financial Intelligence | AI-Powered Personal Finance Management Platform</h1>
         
         {/* Breadcrumbs - automatically generated from /product/finance-ai route */}
         <div className="bg-white border-b border-gray-100">
@@ -408,32 +408,32 @@ export default function FinanceAIPage() {
         </div>
 
         <ProductHero
-          title="FinanceAI"
+          title="AI Financial Intelligence"
           description="Transform your financial life with AI-powered insights, automated receipt scanning, and intelligent budget management. Your personal finance assistant that never sleeps. Experience 99.2% accuracy in receipt processing and get personalized recommendations based on your spending patterns."
           ctaButtons={ctaButtons}
           mediaType="video"
           mediaUrl="/products/finance-ai/01.png"
           videoThumbnail="/products/finance-ai/01.png"
-          mediaAlt="FinanceAI dashboard showing AI-powered receipt scanning and budget management"
+          mediaAlt="AI Financial Intelligence dashboard showing AI-powered receipt scanning and budget management"
         />
 
         {/* Product Promotional Cards */}
         <ProductPromo cards={promoCards} />
 
         {/* Product Explorer - tabbed interface */}
-        <ProductExplorer title="FinanceAI" tabs={explorerTabs} />
+        <ProductExplorer title="AI Financial Intelligence" tabs={explorerTabs} />
 
         {/* Why Choose Section */}
         <ProductWhyChoose 
-          title="Why choose FinanceAI for your financial management?" 
+          title="Why choose AI Financial Intelligence for your financial management?" 
           items={whyChooseItems}
           customerReference={customerReference}
         />
 
         {/* Customer Success Logos */}
         <ProductCustomerLogos
-          title="FinanceAI customer successes"
-          description="Learn why leading fintech companies and millions of users trust FinanceAI to automate their financial management and achieve their money goals. Click on a logo to learn more."
+          title="AI Financial Intelligence customer successes"
+          description="Learn why leading fintech companies and millions of users trust AI Financial Intelligence to automate their financial management and achieve their money goals. Click on a logo to learn more."
           viewMoreText="View more customer successes"
           viewMoreHref="https://financeai.augment.cfd/"
           logos={customerLogos}
@@ -447,7 +447,7 @@ export default function FinanceAIPage() {
 
         {/* CTA Banner */}
         <ProductCTABanner
-          title="The FinanceAI Personal Finance Playbook"
+          title="The AI Financial Intelligence Personal Finance Playbook"
           description="We've compiled the secrets to our AI-powered financial management strategy, budgeting best practices, and wealth-building methodology. Learn how to achieve financial freedom with AI assistance."
           image="/products/finance-ai/03.png"
           buttonText="Get the finance guide"

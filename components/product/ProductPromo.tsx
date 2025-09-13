@@ -35,17 +35,7 @@ export function ProductPromo({ cards, className = "" }: ProductPromoProps) {
 
               {/* Card Content */}
               <div className="flex flex-col h-full relative">
-                {/* Image - Oracle uses 204px width, scaled down to ~140px with fixed aspect ratio */}
-                <div className="mb-4">
-                  <SmartImage
-                    src={card.image}
-                    alt={card.title}
-                    width={144}
-                    height={96}
-                    className="w-36 h-24 rounded block"
-                    mockupType="default"
-                  />
-                </div>
+         
 
                 {/* Title - Oracle uses strong with font-weight 700 */}
                 <div className="mb-3">

@@ -10,6 +10,7 @@ type DropdownSection = {
     href: string;
     isSubItem?: boolean;
     isBold?: boolean;
+    columnGroup?: string;
   }>;
   hasDivider?: boolean;
 };
@@ -84,39 +85,137 @@ export default function OracleDropdown({
                   className={`p-6 ${section.hasDivider ? 'border-b border-gray-700/50' : ''}`}
                 >
                   <h3 className="text-lg font-semibold mb-4 text-white">{section.title}</h3>
-                  <div className="grid grid-cols-4 gap-8">
-                  {/* Group items into columns of ~4 items each */}
-                  {Array.from({ length: 4 }, (_, colIndex) => {
-                    const itemsPerColumn = Math.ceil(section.items.length / 4);
-                    const startIndex = colIndex * itemsPerColumn;
-                    const endIndex = Math.min(startIndex + itemsPerColumn, section.items.length);
-                    const columnItems = section.items.slice(startIndex, endIndex);
-
-                    return (
-                      <div key={colIndex} className="space-y-2">
-                        {columnItems.map((item, itemIndex) => (
+                  
+                  {/* Check if section has columnGroup items (Cloud Applications) */}
+                  {section.items.some(item => item.columnGroup) ? (
+                    <div className="grid grid-cols-4 gap-8">
+                      {/* Column 1 */}
+                      <div className="space-y-2">
+                        {section.items.filter(item => !item.columnGroup || item.columnGroup === 'col1').map((item, itemIndex) => (
                           <div
                             key={itemIndex}
                             className="item-enter"
                             style={{ 
-                              animationDelay: `${itemIndex * 100 + 200 + (sectionIndex * 300)}ms` 
+                              animationDelay: `${itemIndex * 50 + 200}ms` 
                             }}
                           >
                             <Link
                               href={item.href}
                               onClick={handleClose}
-                              className={`block text-white hover:text-blue-400 cursor-pointer transition-colors duration-200 ${
-                                item.isBold ? 'font-medium' : ''
-                              } ${item.isSubItem ? 'ml-4' : ''}`}
+                              className={`block hover:text-blue-400 cursor-pointer transition-colors duration-200 text-white ${
+                                item.isSubItem ? 'ml-4' : ''
+                              }`}
                             >
                               {item.label}
                             </Link>
                           </div>
                         ))}
                       </div>
-                    );
-                  })}
-                  </div>
+
+                      {/* Column 2 */}
+                      <div className="space-y-2">
+                        {section.items.filter(item => item.columnGroup === 'col2').map((item, itemIndex) => (
+                          <div
+                            key={itemIndex}
+                            className="item-enter"
+                            style={{ 
+                              animationDelay: `${itemIndex * 50 + 300}ms` 
+                            }}
+                          >
+                            <Link
+                              href={item.href}
+                              onClick={handleClose}
+                              className={`block hover:text-blue-400 cursor-pointer transition-colors duration-200 text-white ${
+                                item.isSubItem ? 'ml-4' : ''
+                              }`}
+                            >
+                              {item.label}
+                            </Link>
+                          </div>
+                        ))}
+                      </div>
+
+                      {/* Column 3 */}
+                      <div className="space-y-2">
+                        {section.items.filter(item => item.columnGroup === 'col3').map((item, itemIndex) => (
+                          <div
+                            key={itemIndex}
+                            className="item-enter"
+                            style={{ 
+                              animationDelay: `${itemIndex * 50 + 400}ms` 
+                            }}
+                          >
+                            <Link
+                              href={item.href}
+                              onClick={handleClose}
+                              className={`block hover:text-blue-400 cursor-pointer transition-colors duration-200 text-white ${
+                                item.isSubItem ? 'ml-4' : ''
+                              }`}
+                            >
+                              {item.label}
+                            </Link>
+                          </div>
+                        ))}
+                      </div>
+
+                      {/* Column 4 */}
+                      <div className="space-y-2">
+                        {section.items.filter(item => item.columnGroup === 'col4').map((item, itemIndex) => (
+                          <div
+                            key={itemIndex}
+                            className="item-enter"
+                            style={{ 
+                              animationDelay: `${itemIndex * 50 + 500}ms` 
+                            }}
+                          >
+                            <Link
+                              href={item.href}
+                              onClick={handleClose}
+                              className={`block hover:text-blue-400 cursor-pointer transition-colors duration-200 text-white ${
+                                item.isSubItem ? 'ml-4' : ''
+                              }`}
+                            >
+                              {item.label}
+                            </Link>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  ) : (
+                    /* Regular grid layout for sections without columnGroup (AI Agents) */
+                    <div className="grid grid-cols-4 gap-8">
+                      {Array.from({ length: 4 }, (_, colIndex) => {
+                        const itemsPerColumn = Math.ceil(section.items.length / 4);
+                        const startIndex = colIndex * itemsPerColumn;
+                        const endIndex = Math.min(startIndex + itemsPerColumn, section.items.length);
+                        const columnItems = section.items.slice(startIndex, endIndex);
+
+                        return (
+                          <div key={colIndex} className="space-y-2">
+                            {columnItems.map((item, itemIndex) => (
+                              <div
+                                key={itemIndex}
+                                className="item-enter"
+                                style={{ 
+                                  animationDelay: `${itemIndex * 100 + 200 + (sectionIndex * 300)}ms` 
+                                }}
+                              >
+                                <Link
+                                  href={item.href}
+                                  onClick={handleClose}
+                                  className={`block text-white hover:text-blue-400 cursor-pointer transition-colors duration-200 ${
+                                    item.isBold ? 'font-medium' : ''
+                                  } ${item.isSubItem ? 'ml-4' : ''}`}
+                                >
+                                  {item.label}
+                                </Link>
+                              </div>
+                            ))}
+                          </div>
+                        );
+                      })}
+                    </div>
+                  )}
                 </div>
               ))}
             </div>

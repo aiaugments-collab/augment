@@ -408,7 +408,7 @@ export default function AugmentFlowPage() {
         </div>
 
         <ProductHero
-          title="Augment Flow"
+          title="Text-Controlled Automation Apps"
           description="AI Agent that works even when you're away. Your words become actions across every platform you use. 200+ apps working towards a future where technology acts, not just responds. Experience the difference between automation and anticipation with intelligent agents that adapt, learn, and evolve your workflows."
           ctaButtons={ctaButtons}
           mediaType="video"
@@ -421,11 +421,11 @@ export default function AugmentFlowPage() {
         <ProductPromo cards={promoCards} />
 
         {/* Product Explorer - tabbed interface */}
-        <ProductExplorer title="Augment Flow" tabs={explorerTabs} />
+        <ProductExplorer title="Text-Controlled Automation Apps" tabs={explorerTabs} />
 
         {/* Why Choose Section */}
         <ProductWhyChoose 
-          title="Why choose Augment Flow for your workflows?" 
+          title="Why choose Text-Controlled Automation Apps for your workflows?" 
           items={whyChooseItems}
           customerReference={customerReference}
         />

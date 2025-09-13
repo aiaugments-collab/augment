@@ -4,7 +4,7 @@ import Image from 'next/image'
 import {ProductCustomerLogos} from '@/components/product/ProductCustomerLogos'
 
 export const metadata: Metadata = {
-  title: 'Resume AI - Create AI-Powered Resumes That Get You Hired | Augment',
+  title: 'AI Resume & Career Assistant - Create AI-Powered Resumes That Get You Hired | Augment',
   description: 'Transform any job description into a perfectly tailored, ATS-optimized resume in seconds. Our AI analyzes job requirements and crafts compelling content that gets you noticed.',
 }
 
@@ -34,7 +34,7 @@ export default function ResumeAIPage() {
                   href={productUrl}
                   className="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 transition-colors"
                 >
-                  Create Resume with AI
+                  Create Resume with AI Resume & Career Assistant
                 </Link>
                 <Link
                   href={productUrl}
@@ -67,7 +67,7 @@ export default function ResumeAIPage() {
             <div className="relative">
               <Image
                 src="/products/resume-ai/01.png"
-                alt="Resume AI Dashboard Screenshot"
+                alt="AI Resume & Career Assistant Dashboard Screenshot"
                 width={600}
                 height={400}
                 className="rounded-lg shadow-2xl"
@@ -85,7 +85,7 @@ export default function ResumeAIPage() {
               Everything you need to create the perfect resume
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Powered by cutting-edge AI technology, Resume AI provides all the tools you need to create professional, ATS-optimized resumes that get results.
+              Powered by cutting-edge AI technology, AI Resume & Career Assistant provides all the tools you need to create professional, ATS-optimized resumes that get results.
             </p>
           </div>
           
@@ -269,7 +269,7 @@ export default function ResumeAIPage() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-              See Resume AI In Action
+              See AI Resume & Career Assistant In Action
             </h2>
             <p className="text-xl text-gray-600">
               Discover how easy it is to create professional resumes with AI
@@ -332,7 +332,7 @@ export default function ResumeAIPage() {
               Loved by job seekers worldwide
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
-              Join thousands of professionals who have transformed their careers with Resume AI
+              Join thousands of professionals who have transformed their careers with AI Resume & Career Assistant
             </p>
             
             {/* Stats */}
@@ -369,7 +369,7 @@ export default function ResumeAIPage() {
                 </div>
               </div>
               <p className="text-gray-600 mb-4">
-                &ldquo;Resume AI completely transformed my job search. The AI-generated content was so much better than what I could write myself. I got 3x more interviews and landed my dream job at Google!&rdquo;
+                &ldquo;AI Resume & Career Assistant completely transformed my job search. The AI-generated content was so much better than what I could write myself. I got 3x more interviews and landed my dream job at Google!&rdquo;
               </p>
               <div className="text-sm text-blue-600 font-medium">Landed dream job at Google</div>
             </div>
@@ -386,7 +386,7 @@ export default function ResumeAIPage() {
                 </div>
               </div>
               <p className="text-gray-600 mb-4">
-                &ldquo;I was struggling to tailor my resume for different positions. Resume AI made it effortless - just paste the job description and get a perfectly optimized resume. Saved me hours of work.&rdquo;
+                &ldquo;I was struggling to tailor my resume for different positions. AI Resume & Career Assistant made it effortless - just paste the job description and get a perfectly optimized resume. Saved me hours of work.&rdquo;
               </p>
               <div className="text-sm text-green-600 font-medium">Saved hours of work</div>
             </div>
@@ -421,7 +421,7 @@ export default function ResumeAIPage() {
             Ready to transform your career with AI?
           </h2>
           <p className="text-xl text-blue-100 mb-8">
-            Join thousands of professionals who have already landed their dream jobs using Resume AI. Start creating your perfect resume today.
+            Join thousands of professionals who have already landed their dream jobs using AI Resume & Career Assistant. Start creating your perfect resume today.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-2 items-center justify-center mb-6">

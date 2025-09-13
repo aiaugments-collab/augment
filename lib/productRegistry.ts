@@ -1,428 +1,13 @@
-export interface Product {
-  id: string;
-  name: string;
-  shortName?: string;
-  description: string;
-  shortDescription?: string;
-  category: 'ai-agent' | 'cloud-applications';
-  href: string;
-  icon?: string; // Professional icon names: 'users', 'workflow', 'search', 'banknote', 'bot', 'building', 'chart', 'brain', 'shield'
-  featured?: boolean;
-  status: 'live' | 'coming-soon' | 'beta';
-  tags?: string[];
-  image?: string;
-  productUrl?: string;
-}
+import { AI_AGENT_PRODUCTS, Product as AIAgentProduct } from './aiAgentsRegistry';
+import { CLOUD_APP_PRODUCTS, Product as CloudAppProduct } from './cloudAppsRegistry';
 
+// Re-export the Product interface from one of the registries (they're identical)
+export type Product = AIAgentProduct;
+
+// Combine all products from separate registries
 export const PRODUCTS: Product[] = [
-  // AI Agent Products
-  {
-    id: 'hr',
-    name: 'Augment HR',
-    shortName: 'HR',
-    description: 'AI-First HRMS Platform that replaces traditional HR systems with intelligent automation. Cut administrative workload by 80% while delivering exceptional employee experiences with AI resume screening, document knowledge chat, AI-based leave management, and automated payroll processing.',
-    shortDescription: 'AI-First HRMS Platform with intelligent automation',
-    category: 'ai-agent',
-    href: '/product/hr',
-    icon: 'users',
-    featured: true,
-    status: 'live',
-    tags: ['AI', 'HR', 'HRMS', 'Automation', 'Employee Management', 'Payroll', 'Leave Management'],
-    image: '/products/hr/01.png',
-    productUrl: 'https://hr.augment.cfd/'
-  },
-  {
-    id: 'erp',
-    name: 'Augment ERP',
-    shortName: 'ERP',
-    description: 'Complete Enterprise Resource Planning solution. Manage your entire business operations including accounting, inventory, sales, purchasing, manufacturing, and project management in one integrated platform with powerful automation and real-time insights.',
-    shortDescription: 'Complete ERP solution for business operations',
-    category: 'cloud-applications',
-    href: '/product/erp',
-    icon: 'building',
-    featured: true,
-    status: 'live',
-    tags: ['ERP', 'ERPNext', 'Accounting', 'Inventory', 'Sales', 'Manufacturing', 'Business Management'],
-    image: '/products/erp/01.png',
-    productUrl: 'https://erp.augment.cfd/'
-  },
-  {
-    id: 'flow',
-    name: 'Augment Flow',
-    shortName: 'Flow',
-    description: 'AI Agent that works even when you\'re away. Your words become actions across every platform you use. 200+ apps working towards a future where technology acts, not just responds.',
-    shortDescription: 'AI-powered workflow automation across 200+ apps',
-    category: 'ai-agent',
-    href: '/product/flow',
-    icon: 'workflow',
-    featured: true,
-    status: 'live',
-    tags: ['Workflow Automation', 'AI Agent', 'Integration', 'Productivity'],
-    image: '/products/flow/01.png',
-    productUrl: 'https://flow.augment.cfd/'
-  },
-  {
-    id: 'searchai',
-    name: 'SearchAI',
-    shortName: 'SearchAI',
-    description: 'A powerful AI-powered search engine with intelligent generative UI for deep research. Get natural language responses with interactive components, multiple AI model support, and advanced search capabilities.',
-    shortDescription: 'AI-powered search engine for intelligent research',
-    category: 'ai-agent',
-    href: '/product/searchai',
-    icon: 'search',
-    featured: true,
-    status: 'live',
-    tags: ['AI Search', 'Research', 'Natural Language', 'Deep Search'],
-    image: '/products/searchai/01.png',
-    productUrl: 'https://searchai.augment.cfd/'
-  },
-  {
-    id: 'finance-ai',
-    name: 'FinanceAI',
-    shortName: 'FinAI',
-    description: 'Transform your financial life with AI-powered insights, automated receipt scanning, and intelligent budget management. Your personal finance assistant that never sleeps.',
-    shortDescription: 'AI-powered personal finance management platform',
-    category: 'ai-agent',
-    href: '/product/finance-ai',
-    icon: 'banknote',
-    featured: true,
-    status: 'live',
-    tags: ['Finance', 'Budgeting', 'Receipt Scanning', 'AI Insights'],
-    image: '/products/finance-ai/01.png',
-    productUrl: 'https://financeai.augment.cfd/'
-  },
-  {
-    id: 'resume-ai',
-    name: 'Resume AI',
-    shortName: 'Resume AI',
-    description: 'Transform any job description into a perfectly tailored, ATS-optimized resume in seconds. Our AI analyzes job requirements and crafts compelling content that gets you noticed.',
-    shortDescription: 'AI-powered resume builder with ATS optimization',
-    category: 'ai-agent',
-    href: '/product/resume-ai',
-    icon: 'users',
-    featured: true,
-    status: 'live',
-    tags: ['Resume', 'ATS Optimization', 'Job Search', 'Career'],
-    image: '/products/resume-ai/01.png',
-    productUrl: 'https://resumeai.augment.cfd/'
-  },
-  {
-    id: 'health-ai',
-    name: 'Health AI',
-    shortName: 'Health AI',
-    description: 'AI-powered health intelligence platform that tracks symptoms, analyzes patterns, and provides personalized health insights on autopilot for hours.',
-    shortDescription: 'AI-powered health intelligence and tracking',
-    category: 'ai-agent',
-    href: '/product/health-ai',
-    icon: 'heart',
-    featured: true,
-    status: 'live',
-    tags: ['Health', 'AI Assistant', 'Tracking', 'Analytics', 'Medication'],
-    image: '/products/health-ai/01.png',
-    productUrl: 'https://healthai.augment.cfd/'
-  },
-  {
-    id: 'coding-agent',
-    name: 'Coding Agent',
-    shortName: 'Coding Agent',
-    description: 'AI-powered code editor that understands your codebase, provides intelligent suggestions, and automates development tasks. Experience seamless coding with advanced AI capabilities that boost productivity and code quality.',
-    shortDescription: 'AI-powered intelligent code editor and development assistant',
-    category: 'ai-agent',
-    href: '/product/coding-agent',
-    icon: 'brain',
-    featured: true,
-    status: 'coming-soon',
-    tags: ['Code Editor', 'AI Assistant', 'Development', 'Programming', 'Automation'],
-    image: '/products/coding-agent/01.png',
-    productUrl: '/book-demo'
-  },
-  {
-    id: 'buildai',
-    name: 'BuildAI',
-    shortName: 'BuildAI',
-    description: 'Transform your ideas into fully functional applications using natural language. Simply describe what you want to build, and our AI creates beautiful, responsive web applications with modern UI components, database integration, and deployment-ready code.',
-    shortDescription: 'Natural language to full-stack application builder',
-    category: 'ai-agent',
-    href: '/product/buildai',
-    icon: 'building',
-    featured: true,
-    status: 'coming-soon',
-    tags: ['App Builder', 'Natural Language', 'AI Assistant', 'Full-Stack', 'No-Code'],
-    image: '/products/buildai/01.png',
-    productUrl: '/book-demo'
-  },
-  {
-    id: 'augmentdb',
-    name: 'AugmentDB',
-    shortName: 'AugmentDB',
-    description: 'Universal database management tool that supports all major databases. Features advanced SQL editing, data visualization, ER diagrams, and comprehensive database administration capabilities. Perfect for developers, DBAs, and data analysts working with multiple database systems.',
-    shortDescription: 'Universal database management and administration tool',
-    category: 'cloud-applications',
-    href: '/product/augmentdb',
-    icon: 'chart',
-    featured: true,
-    status: 'live',
-    tags: ['Database', 'SQL', 'Data Management', 'Administration', 'Analytics', 'Multi-Database'],
-    image: '/products/augmentdb/01.png',
-    productUrl: '/documentation/augmentdb'
-  },
-
-  // Cloud Applications
-  {
-    id: 'hr-cloud',
-    name: 'Augment HR Cloud',
-    shortName: 'HR Cloud',
-    description: 'AI-powered cloud HRMS platform that replaces traditional HR systems with intelligent automation. Features AI resume screening, automated payroll processing, smart leave management, and 24/7 AI-powered employee support accessible from anywhere.',
-    shortDescription: 'AI-powered cloud-based HR management system',
-    category: 'cloud-applications',
-    href: '/product/hr',
-    icon: 'users',
-    featured: true,
-    status: 'live',
-    tags: ['AI', 'Cloud HR', 'HRMS', 'Automation', 'Employee Management', 'Payroll', 'AI Assistant'],
-    image: '/products/hr/01.png',
-    productUrl: 'https://hr.augment.cfd/'
-  },
-  {
-    id: 'crm',
-    name: 'CRM Software',
-    shortName: 'CRM',
-    description: 'Comprehensive customer relationship management platform to manage leads, contacts, sales pipeline, and customer interactions with advanced analytics and automation.',
-    shortDescription: 'Complete CRM solution for managing customer relationships',
-    category: 'cloud-applications',
-    href: '/product/crm',
-    icon: 'users',
-    featured: true,
-    status: 'live',
-    tags: ['CRM', 'Sales', 'Lead Management', 'Customer Relations'],
-    image: '/products/crm/01.png',
-    productUrl: 'https://erp.augment.cfd/app/crm'
-  },
-  // {
-  //   id: 'booking',
-  //   name: 'Booking App',
-  //   shortName: 'Booking',
-  //   description: 'Professional appointment and booking management system with calendar integration, automated reminders, payment processing, and customer management.',
-  //   shortDescription: 'Complete booking and appointment management solution',
-  //   category: 'cloud-applications',
-  //   href: '/product/booking',
-  //   icon: 'calendar',
-  //   featured: true,
-  //   status: 'coming-soon',
-  //   tags: ['Booking', 'Appointments', 'Calendar', 'Scheduling'],
-  //   image: '/products/booking/01.png',
-  //   productUrl: '/book-demo'
-  // },
-  {
-    id: 'marketing',
-    name: 'Marketing Software App',
-    shortName: 'Marketing',
-    description: 'All-in-one marketing automation platform with email campaigns, social media management, lead nurturing, analytics, and customer journey mapping.',
-    shortDescription: 'Complete marketing automation and campaign management',
-    category: 'cloud-applications',
-    href: '/product/marketing',
-    icon: 'chart',
-    featured: true,
-    status: 'coming-soon',
-    tags: ['Marketing', 'Automation', 'Email Campaigns', 'Analytics'],
-    image: '/products/marketing/01.png',
-    productUrl: '/book-demo'
-  },
-  {
-    id: 'social-media',
-    name: 'All-in-one Social Media Platform',
-    shortName: 'Social Media',
-    description: 'Comprehensive social media management platform for content creation, scheduling, engagement tracking, analytics, and multi-platform publishing.',
-    shortDescription: 'Complete social media management and analytics platform',
-    category: 'cloud-applications',
-    href: '/product/social-media',
-    icon: 'share',
-    featured: true,
-    status: 'coming-soon',
-    tags: ['Social Media', 'Content Management', 'Analytics', 'Publishing'],
-    image: '/products/social-media/01.png',
-    productUrl: '/book-demo'
-  },
-  {
-    id: 'customer-support',
-    name: 'Customer Support Software',
-    shortName: 'Support',
-    description: 'Advanced customer support platform with ticketing system, live chat, knowledge base, automation, and comprehensive analytics for superior customer service.',
-    shortDescription: 'Complete customer support and helpdesk solution',
-    category: 'cloud-applications',
-    href: '/product/customer-support',
-    icon: 'headphones',
-    featured: true,
-    status: 'coming-soon',
-    tags: ['Support', 'Helpdesk', 'Live Chat', 'Ticketing'],
-    image: '/products/customer-support/01.png',
-    productUrl: '/book-demo'
-  },
-  {
-    id: 'accounting',
-    name: 'Accounting Software for Business',
-    shortName: 'Accounting',
-    description: 'Professional accounting and financial management platform with invoicing, expense tracking, financial reporting, tax management, and business analytics.',
-    shortDescription: 'Complete business accounting and financial management',
-    category: 'cloud-applications',
-    href: '/product/accounting',
-    icon: 'banknote',
-    featured: true,
-    status: 'live',
-    tags: ['Accounting', 'Invoicing', 'Financial Management', 'Reporting'],
-    image: '/products/accounting/01.png',
-    productUrl: 'https://erp.augment.cfd/app/accounting'
-  },
-  {
-    id: 'scheduling',
-    name: 'All-purpose Scheduling App',
-    shortName: 'Scheduling',
-    description: 'Advanced scheduling platform like Cal.com with calendar integration, availability management, automated booking, team coordination, and meeting analytics.',
-    shortDescription: 'Complete scheduling and calendar management solution',
-    category: 'cloud-applications',
-    href: '/product/scheduling',
-    icon: 'clock',
-    featured: true,
-    status: 'coming-soon',
-    tags: ['Scheduling', 'Calendar', 'Meetings', 'Availability'],
-    image: '/products/scheduling/01.gif',
-    productUrl: '/book-demo'
-  },
-  // {
-  //   id: 'digital-signature',
-  //   name: 'Digital Signature App for Business',
-  //   shortName: 'eSign',
-  //   description: 'Secure digital signature platform with document management, electronic signing workflows, compliance tracking, and legal document authentication.',
-  //   shortDescription: 'Secure digital signature and document management',
-  //   category: 'cloud-applications',
-  //   href: '/product/digital-signature',
-  //   icon: 'shield',
-  //   featured: true,
-  //   status: 'coming-soon',
-  //   tags: ['Digital Signature', 'Document Management', 'Security', 'Compliance'],
-  //   image: '/products/digital-signature/01.png',
-  //   productUrl: '/book-demo'
-  // },
-  {
-    id: 'inventory',
-    name: 'Inventory Management System',
-    shortName: 'Inventory',
-    description: 'Real-time stock tracking, warehouse management, and automated reorder points. Complete inventory control with barcode support, multi-location tracking, and inventory valuation.',
-    shortDescription: 'Complete inventory and stock management solution',
-    category: 'cloud-applications',
-    href: '/product/inventory',
-    icon: 'package',
-    featured: true,
-    status: 'live',
-    tags: ['Inventory', 'Stock Management', 'Warehouse', 'Barcode', 'Asset Tracking'],
-    image: '/products/inventory/01.png',
-    productUrl: 'https://erp.augment.cfd/app/stock'
-  },
-  {
-    id: 'sales',
-    name: 'Sales Management Software',
-    shortName: 'Sales',
-    description: 'Complete sales pipeline from lead generation to order fulfillment. Manage quotations, sales orders, customer portal, and sales analytics with integrated commission tracking.',
-    shortDescription: 'Complete sales pipeline and order management',
-    category: 'cloud-applications',
-    href: '/product/sales',
-    icon: 'trending-up',
-    featured: true,
-    status: 'live',
-    tags: ['Sales', 'Pipeline', 'Orders', 'Quotations', 'Lead Management'],
-    image: '/products/sales/01.png',
-    productUrl: 'https://erp.augment.cfd/app/selling'
-  },
-  {
-    id: 'purchasing',
-    name: 'Purchasing Management System',
-    shortName: 'Purchasing',
-    description: 'Streamlined procurement process with supplier management, purchase analytics, RFQ process, and automated purchase workflows. Complete purchasing control and vendor management.',
-    shortDescription: 'Complete procurement and supplier management',
-    category: 'cloud-applications',
-    href: '/product/purchasing',
-    icon: 'shopping-cart',
-    featured: true,
-    status: 'live',
-    tags: ['Purchasing', 'Procurement', 'Suppliers', 'RFQ', 'Vendor Management'],
-    image: '/products/purchasing/01.png',
-    productUrl: 'https://erp.augment.cfd/app/buying'
-  },
-  {
-    id: 'manufacturing',
-    name: 'Manufacturing Management System',
-    shortName: 'Manufacturing',
-    description: 'End-to-end production planning, scheduling, and quality control. BOM management, work orders, production tracking, and quality assurance for efficient manufacturing operations.',
-    shortDescription: 'Complete production planning and manufacturing control',
-    category: 'cloud-applications',
-    href: '/product/manufacturing',
-    icon: 'settings',
-    featured: true,
-    status: 'live',
-    tags: ['Manufacturing', 'Production', 'BOM', 'Quality Control', 'Work Orders'],
-    image: '/products/manufacturing/01.png',
-    productUrl: 'https://erp.augment.cfd/app/manufacturing'
-  },
-  {
-    id: 'projects',
-    name: 'Project Management Software',
-    shortName: 'Projects',
-    description: 'Track projects, manage tasks, and monitor progress with integrated time tracking, resource allocation, project planning, and team collaboration tools.',
-    shortDescription: 'Complete project tracking and team collaboration',
-    category: 'cloud-applications',
-    href: '/product/projects',
-    icon: 'folder',
-    featured: true,
-    status: 'live',
-    tags: ['Projects', 'Task Management', 'Time Tracking', 'Collaboration', 'Planning'],
-    image: '/products/projects/01.png',
-    productUrl: 'https://erp.augment.cfd/app/projects'
-  },
-  {
-    id: 'assets',
-    name: 'Asset Management System',
-    shortName: 'Assets',
-    description: 'Comprehensive asset tracking, maintenance scheduling, depreciation management, and asset lifecycle monitoring. Complete control over company assets and equipment.',
-    shortDescription: 'Complete asset tracking and lifecycle management',
-    category: 'cloud-applications',
-    href: '/product/assets',
-    icon: 'hard-drive',
-    featured: true,
-    status: 'live',
-    tags: ['Assets', 'Tracking', 'Maintenance', 'Depreciation', 'Equipment'],
-    image: '/products/assets/01.png',
-    productUrl: 'https://erp.augment.cfd/app/assets'
-  },
-  {
-    id: 'payroll',
-    name: 'Payroll Management System',
-    shortName: 'Payroll',
-    description: 'Automated payroll processing, tax calculations, benefits administration, and compliance management. Complete payroll solution with employee self-service portal.',
-    shortDescription: 'Complete payroll processing and compliance management',
-    category: 'cloud-applications',
-    href: '/product/payroll',
-    icon: 'credit-card',
-    featured: true,
-    status: 'live',
-    tags: ['Payroll', 'Tax Calculation', 'Benefits', 'Compliance', 'Employee Portal'],
-    image: '/products/payroll/01.png',
-    productUrl: 'https://erp.augment.cfd/app/payroll'
-  },
-  {
-    id: 'hr-automation',
-    name: 'HR Process Automation',
-    shortName: 'HR Auto',
-    description: 'Comprehensive HR automation platform for employee management, payroll processing, performance tracking, recruitment, and workforce analytics.',
-    shortDescription: 'Complete HR automation and employee management',
-    category: 'cloud-applications',
-    href: '/product/hr-automation',
-    icon: 'users',
-    featured: true,
-    status: 'coming-soon',
-    tags: ['HR', 'Automation', 'Employee Management', 'Payroll'],
-    image: '/products/hr-automation/01.png',
-    productUrl: '/book-demo'
-  }
+  ...AI_AGENT_PRODUCTS,
+  ...CLOUD_APP_PRODUCTS
 ];
 
 // Category configurations
@@ -438,6 +23,46 @@ export const PRODUCT_CATEGORIES = {
     description: 'Comprehensive business applications for enterprise operations',
     color: '#50C878',
     icon: 'building'
+  }
+} as const;
+
+// Header category configurations for Oracle-style navigation
+export const HEADER_CATEGORIES = {
+  'erp': {
+    name: 'Enterprise Resource Planning (ERP)',
+    shortName: 'ERP',
+    description: 'Complete business management applications',
+    icon: 'building'
+  },
+  'hcm': {
+    name: 'Human Capital Management (HCM)',
+    shortName: 'HCM',
+    description: 'Workforce and talent management solutions',
+    icon: 'users'
+  },
+  'cx': {
+    name: 'Customer Experience (CX)',
+    shortName: 'CX',
+    description: 'Customer engagement and experience platforms',
+    icon: 'heart'
+  },
+  'scm': {
+    name: 'Supply Chain & Manufacturing (SCM)',
+    shortName: 'SCM',
+    description: 'Supply chain and manufacturing operations',
+    icon: 'truck'
+  },
+  'data-intelligence': {
+    name: 'Fusion Data Intelligence Platform',
+    shortName: 'Data Intelligence',
+    description: 'Business intelligence and analytics platform',
+    icon: 'chart'
+  },
+  'marketplace': {
+    name: 'Augment Marketplace',
+    shortName: 'Marketplace',
+    description: 'Third-party integrations and extensions',
+    icon: 'store'
   }
 } as const;
 
@@ -469,4 +94,31 @@ export function searchProducts(query: string): Product[] {
     product.description.toLowerCase().includes(lowercaseQuery) ||
     (product.tags && product.tags.some(tag => tag.toLowerCase().includes(lowercaseQuery)))
   );
+}
+
+// New helper functions for header organization
+export function getProductsByHeaderCategory(headerCategory: Product['headerCategory']): Product[] {
+  return PRODUCTS.filter(product => product.headerCategory === headerCategory);
+}
+
+export function getHeaderProducts(): Product[] {
+  return PRODUCTS.filter(product => product.showInHeader === true);
+}
+
+export function getHeaderProductsByCategory(headerCategory: Product['headerCategory']): Product[] {
+  return PRODUCTS
+    .filter(product => product.headerCategory === headerCategory && product.showInHeader === true)
+    .sort((a, b) => (a.headerOrder || 0) - (b.headerOrder || 0));
+}
+
+export function getHeaderCategoriesWithProducts(): Array<{
+  category: keyof typeof HEADER_CATEGORIES;
+  config: typeof HEADER_CATEGORIES[keyof typeof HEADER_CATEGORIES];
+  products: Product[];
+}> {
+  return Object.entries(HEADER_CATEGORIES).map(([key, config]) => ({
+    category: key as keyof typeof HEADER_CATEGORIES,
+    config,
+    products: getHeaderProductsByCategory(key as Product['headerCategory'])
+  })).filter(item => item.products.length > 0);
 }

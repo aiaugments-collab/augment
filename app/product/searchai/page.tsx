@@ -12,7 +12,7 @@ import { Breadcrumb } from "@/components/ui/Breadcrumb";
 export default function SearchAIPage() {
   const ctaButtons = [
     {
-      text: "Try SearchAI Now",
+      text: "Try AI-Powered Search Engine Now",
       href: "https://searchai.augment.cfd/",
       variant: "primary" as const
     },
@@ -36,8 +36,8 @@ export default function SearchAIPage() {
     {
       id: "search-vs-perplexity",
       image: "/products/searchai/03.png",
-      title: "SearchAI vs Traditional Search: The Future of Research",
-      description: "Discover how SearchAI's intelligent generative UI and multi-model support delivers superior research results compared to traditional search engines.",
+      title: "AI-Powered Search Engine vs Traditional Search: The Future of Research",
+      description: "Discover how AI-Powered Search Engine's intelligent generative UI and multi-model support delivers superior research results compared to traditional search engines.",
       ctaText: "Read comparison",
       ctaLink: "https://searchai.augment.cfd/",
       target: "_blank" as const
@@ -55,7 +55,7 @@ export default function SearchAIPage() {
       id: "researcher-success",
       image: "/products/searchai/05.png",
       title: "Success Story: Research Team Saves 70% Time",
-      description: "See how a university research team dramatically improved their literature review process and data analysis using SearchAI's intelligent search capabilities.",
+      description: "See how a university research team dramatically improved their literature review process and data analysis using AI-Powered Search Engine's intelligent search capabilities.",
       ctaText: "Read success story",
       ctaLink: "https://searchai.augment.cfd/",
       target: "_self" as const
@@ -87,7 +87,7 @@ export default function SearchAIPage() {
           ]
         },
         image: "/products/searchai/02.png",
-        imageAlt: "SearchAI intelligent search interface with natural language processing"
+        imageAlt: "AI-Powered Search Engine intelligent search interface with natural language processing"
       }
     },
     {
@@ -177,7 +177,7 @@ export default function SearchAIPage() {
     {
       number: "01",
       title: "Intelligent search that understands your research intent",
-      description: "Unlike traditional search engines, SearchAI uses advanced natural language processing to understand the context and intent behind your questions, delivering precisely targeted results with interactive components that enhance comprehension.",
+      description: "Unlike traditional search engines, AI-Powered Search Engine uses advanced natural language processing to understand the context and intent behind your questions, delivering precisely targeted results with interactive components that enhance comprehension.",
       link: {
         text: "Learn about our AI search technology",
         href: "https://searchai.augment.cfd/"
@@ -203,7 +203,7 @@ export default function SearchAIPage() {
   const customerReference = {
     title: "Customer Success Story",
     company: "University Research Lab achieves 70% faster literature reviews",
-    description: "A leading university research team transformed their literature review process using SearchAI's intelligent search and multi-model AI capabilities, reducing research time from weeks to days while improving result quality.",
+    description: "A leading university research team transformed their literature review process using AI-Powered Search Engine's intelligent search and multi-model AI capabilities, reducing research time from weeks to days while improving result quality.",
     image: "/products/searchai/01.png",
     linkText: "Read the research success story",
     linkHref: "https://searchai.augment.cfd/"
@@ -287,7 +287,7 @@ export default function SearchAIPage() {
   const resourceTabs = [
     {
       id: "whats-new",
-      title: "What's new in SearchAI",
+      title: "What's new in AI-Powered Search Engine",
       content: {
         title: "Latest AI search innovations and features",
         description: "Stay updated with the newest capabilities in AI-powered search, from advanced model integrations to enhanced research tools and collaborative features.",
@@ -302,14 +302,14 @@ export default function SearchAIPage() {
     },
     {
       id: "compare",
-      title: "Compare SearchAI",
+      title: "Compare AI-Powered Search Engine",
       content: {
-        title: "See why SearchAI leads AI-powered research",
-        description: "SearchAI combines the power of multiple AI models with advanced search providers and intelligent UI to deliver superior research capabilities compared to traditional search engines.",
+        title: "See why AI-Powered Search Engine leads AI-powered research",
+        description: "AI-Powered Search Engine combines the power of multiple AI models with advanced search providers and intelligent UI to deliver superior research capabilities compared to traditional search engines.",
         image: "/products/searchai/03.png",
         links: [
-          { text: "SearchAI vs Google Search", href: "https://searchai.augment.cfd/" },
-          { text: "SearchAI vs Perplexity", href: "https://searchai.augment.cfd/" },
+          { text: "AI-Powered Search Engine vs Google Search", href: "https://searchai.augment.cfd/" },
+          { text: "AI-Powered Search Engine vs Perplexity", href: "https://searchai.augment.cfd/" },
           { text: "Traditional vs AI search comparison", href: "https://searchai.augment.cfd/" },
           { text: "Research efficiency calculator", href: "https://searchai.augment.cfd/" }
         ]
@@ -320,7 +320,7 @@ export default function SearchAIPage() {
       title: "Join the research community",
       content: {
         title: "Connect with researchers and AI enthusiasts",
-        description: "Join a growing community of researchers, academics, analysts, and AI enthusiasts sharing insights, best practices, and discoveries made with SearchAI.",
+        description: "Join a growing community of researchers, academics, analysts, and AI enthusiasts sharing insights, best practices, and discoveries made with AI-Powered Search Engine.",
         image: "/products/searchai/04.png",
         links: [
           { text: "Join researcher Discord community", href: "https://searchai.augment.cfd/", target: "_blank" },
@@ -350,7 +350,7 @@ export default function SearchAIPage() {
       title: "Get research support",
       content: {
         title: "Expert help for your research needs",
-        description: "Access comprehensive support resources, expert guidance, and specialized assistance to maximize your research productivity with SearchAI's advanced capabilities.",
+        description: "Access comprehensive support resources, expert guidance, and specialized assistance to maximize your research productivity with AI-Powered Search Engine's advanced capabilities.",
         image: "/products/searchai/01.png",
         links: [
           { text: "Contact research support", href: "https://searchai.augment.cfd/" },
@@ -379,7 +379,7 @@ export default function SearchAIPage() {
 
   const getStartedActions = [
     {
-      title: "Try SearchAI",
+      title: "Try AI-Powered Search Engine",
       href: "https://searchai.augment.cfd/",
       icon: "demo"
     },
@@ -398,7 +398,7 @@ export default function SearchAIPage() {
   return (
     <div className="min-h-screen">
       <main>
-        <h1 className="sr-only">SearchAI | AI-Powered Search Engine for Deep Research</h1>
+        <h1 className="sr-only">AI-Powered Search Engine | AI-Powered Search Engine for Deep Research</h1>
         
         {/* Breadcrumbs - automatically generated from /product/searchai route */}
         <div className="bg-white border-b border-gray-100">
@@ -408,32 +408,32 @@ export default function SearchAIPage() {
         </div>
 
         <ProductHero
-          title="SearchAI"
+          title="AI-Powered Search Engine"
           description="A powerful AI-powered search engine with intelligent generative UI for deep research. Ask questions in natural language and get comprehensive, interactive responses with multiple AI model support. Perfect for researchers, analysts, and anyone who needs to go beyond surface-level search results."
           ctaButtons={ctaButtons}
           mediaType="video"
           mediaUrl="/products/searchai/01.png"
           videoThumbnail="/products/searchai/01.png"
-          mediaAlt="SearchAI intelligent search interface with natural language processing and AI models"
+          mediaAlt="AI-Powered Search Engine intelligent search interface with natural language processing and AI models"
         />
 
         {/* Product Promotional Cards */}
         <ProductPromo cards={promoCards} />
 
         {/* Product Explorer - tabbed interface */}
-        <ProductExplorer title="SearchAI" tabs={explorerTabs} />
+        <ProductExplorer title="AI-Powered Search Engine" tabs={explorerTabs} />
 
         {/* Why Choose Section */}
         <ProductWhyChoose 
-          title="Why choose SearchAI for your research needs?" 
+          title="Why choose AI-Powered Search Engine for your research needs?" 
           items={whyChooseItems}
           customerReference={customerReference}
         />
 
         {/* Customer Success Logos */}
         <ProductCustomerLogos
-          title="SearchAI research successes"
-          description="Learn why leading universities, research institutions, and analytical organizations use SearchAI to enhance their research capabilities and accelerate discovery. Click on a logo to learn more."
+          title="AI-Powered Search Engine research successes"
+          description="Learn why leading universities, research institutions, and analytical organizations use AI-Powered Search Engine to enhance their research capabilities and accelerate discovery. Click on a logo to learn more."
           viewMoreText="View more research successes"
           viewMoreHref="https://searchai.augment.cfd/"
           logos={customerLogos}
@@ -447,7 +447,7 @@ export default function SearchAIPage() {
 
         {/* CTA Banner */}
         <ProductCTABanner
-          title="The SearchAI Research Methodology Guide"
+          title="The AI-Powered Search Engine Research Methodology Guide"
           description="We've compiled advanced AI search techniques, research best practices, and methodology frameworks used by leading researchers. Learn how to maximize your research efficiency and quality."
           image="/products/searchai/03.png"
           buttonText="Get the research guide"

@@ -251,7 +251,7 @@ export default function AugmentHRPage() {
         />
 
         <ProductWhyChoose
-          title="Why choose Augment HR?"
+          title="Why choose AI HR Agent?"
           items={whyChooseItems}
         />
 

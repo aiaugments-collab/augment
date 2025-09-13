@@ -214,7 +214,7 @@ export default function HealthAIPage() {
       id: "guides",
       title: "Guides",
       content: {
-        title: "Health AI Implementation Guides",
+        title: "AI Health & Wellness Platform Implementation Guides",
         description: "Comprehensive guides to help you maximize your health management with AI-powered insights and tracking.",
         image: "/products/health-ai/02.png",
         links: [
@@ -224,7 +224,7 @@ export default function HealthAIPage() {
             target: "_blank"
           },
           {
-            text: "Getting Started with Health AI",
+            text: "Getting Started with AI Health & Wellness Platform",
             href: "https://healthai.augment.cfd/",
             target: "_blank"
           },
@@ -240,7 +240,7 @@ export default function HealthAIPage() {
       id: "webinars",
       title: "Webinars",
       content: {
-        title: "Health AI Webinars and Training",
+        title: "AI Health & Wellness Platform Webinars and Training",
         description: "Join our experts to discover how AI can transform your approach to health monitoring and wellness management.",
         image: "/products/health-ai/03.png",
         links: [
@@ -266,7 +266,7 @@ export default function HealthAIPage() {
       id: "case-studies",
       title: "Case Studies",
       content: {
-        title: "Health AI Success Stories",
+        title: "AI Health & Wellness Platform Success Stories",
         description: "See how our AI-powered health management system has helped users achieve better health outcomes.",
         image: "/products/health-ai/04.png",
         links: [
@@ -296,11 +296,11 @@ export default function HealthAIPage() {
       
             <ProductHero
         title="AI-Powered Health Intelligence"
-        description="Health AI is building agents that track symptoms, analyze patterns, and provide personalized health insights on autopilot for hours."
+        description="AI Health & Wellness Platform is building agents that track symptoms, analyze patterns, and provide personalized health insights on autopilot for hours."
         ctaButtons={ctaButtons}
         mediaType="image"
         mediaUrl="/products/health-ai/01.png"
-        mediaAlt="Health AI dashboard showing health tracking and AI insights"
+        mediaAlt="AI Health & Wellness Platform dashboard showing health tracking and AI insights"
       />
 
       <ProductPromo cards={promoCards} />
@@ -311,25 +311,25 @@ export default function HealthAIPage() {
       />
 
       <ProductWhyChoose
-        title="Why Choose Health AI?"
+        title="Why Choose AI Health & Wellness Platform?"
         items={whyChooseItems}
       />
 
       <ProductCustomerLogos
         title="Trusted by Healthcare Professionals"
-        description="Leading healthcare organizations trust Health AI"
+        description="Leading healthcare organizations trust AI Health & Wellness Platform"
         viewMoreText="View all customers"
         viewMoreHref="https://healthai.augment.cfd/"
         logos={customerLogos}
       />
 
       <ProductResources
-        title="Health AI Resources"
+        title="AI Health & Wellness Platform Resources"
         tabs={resourceTabs}
       />
 
       <ProductCTABanner
-        title="The Health AI Playbook series"
+        title="The AI Health & Wellness Platform Playbook series"
         description="We've compiled the secrets to our AI-powered health strategy, implementation best practices, and wellness transformation methodology. And we want to share them with you."
         image="/products/health-ai/05.png"
         buttonText="Get the details"
@@ -337,7 +337,7 @@ export default function HealthAIPage() {
       />
 
       <ProductGetStarted
-        title="Get started with Health AI"
+        title="Get started with AI Health & Wellness Platform"
         actions={[
           {
             title: "Start for Free",
