@@ -131,7 +131,7 @@ export function ProductResources({ title, tabs, className = "" }: ProductResourc
                 </div>
 
                 {/* Right: Desktop Mockup for Resources */}
-                <div className="lg:col-span-1 flex items-center justify-center">
+                  <div className="lg:col-span-1 flex items-center justify-center">
                   <div className="w-full max-w-sm">
                     {/* Desktop Frame */}
                     <div className="bg-gray-800 rounded-lg p-2 shadow-2xl">
