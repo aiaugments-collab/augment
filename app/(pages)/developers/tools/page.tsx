@@ -32,7 +32,7 @@ export default function DeveloperToolsPage() {
     {
       title: 'Testing & Debugging',
       description: 'Comprehensive testing and debugging utilities',
-      icon: '🔍',
+      icon: '',
       tools: [
         {
           name: 'AI Test Suite',
@@ -53,7 +53,7 @@ export default function DeveloperToolsPage() {
     {
       title: 'Development Environment',
       description: 'Enhanced development experience and productivity tools',
-      icon: '🛠️',
+      icon: '️',
       tools: [
         {
           name: 'VS Code Extension',
@@ -74,7 +74,7 @@ export default function DeveloperToolsPage() {
     {
       title: 'Monitoring & Analytics',
       description: 'Advanced monitoring and analytics tools',
-      icon: '📊',
+      icon: '',
       tools: [
         {
           name: 'Performance Monitor',
@@ -98,25 +98,25 @@ export default function DeveloperToolsPage() {
     {
       name: 'API Key Generator',
       description: 'Generate and manage API keys',
-      icon: '🔑',
+      icon: '',
       action: 'Generate Key'
     },
     {
       name: 'Request Builder',
       description: 'Build and test API requests',
-      icon: '🔧',
+      icon: '',
       action: 'Open Builder'
     },
     {
       name: 'Code Generator',
       description: 'Generate code snippets',
-      icon: '💻',
+      icon: '',
       action: 'Generate Code'
     },
     {
       name: 'Model Playground',
       description: 'Test models interactively',
-      icon: '🎮',
+      icon: '',
       action: 'Open Playground'
     }
   ];
@@ -125,25 +125,25 @@ export default function DeveloperToolsPage() {
     {
       name: 'GitHub Actions',
       description: 'CI/CD integration for automated testing and deployment',
-      logo: '🐙',
+      logo: '',
       features: ['Automated testing', 'Deployment workflows', 'Security scanning']
     },
     {
       name: 'Docker',
       description: 'Containerized development and deployment',
-      logo: '🐳',
+      logo: '',
       features: ['Pre-built images', 'Development containers', 'Production deployment']
     },
     {
       name: 'Kubernetes',
       description: 'Orchestration and scaling for production workloads',
-      logo: '☸️',
+      logo: '️',
       features: ['Auto-scaling', 'Load balancing', 'Health monitoring']
     },
     {
       name: 'Terraform',
       description: 'Infrastructure as code for cloud deployments',
-      logo: '🏗️',
+      logo: '️',
       features: ['Infrastructure templates', 'Multi-cloud support', 'State management']
     }
   ];

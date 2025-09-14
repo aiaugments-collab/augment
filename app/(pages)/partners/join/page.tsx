@@ -162,28 +162,28 @@ export default function BecomePartnerPage() {
       description: 'Complete our comprehensive partner application with company details and partnership objectives.',
       href: '#',
       buttonText: 'Start application',
-      icon: '📝'
+      icon: ''
     },
     {
       title: 'Initial Review',
       description: 'Our partnership team reviews your application and conducts initial qualification assessment.',
       href: '#',
       buttonText: 'Review process',
-      icon: '🔍'
+      icon: ''
     },
     {
       title: 'Partner Interview',
       description: 'Participate in detailed discussions about partnership goals, capabilities, and mutual fit.',
       href: '#',
       buttonText: 'Interview guide',
-      icon: '💬'
+      icon: ''
     },
     {
       title: 'Partnership Agreement',
       description: 'Finalize partnership terms, sign agreements, and begin onboarding and enablement process.',
       href: '#',
       buttonText: 'Agreement details',
-      icon: '🤝'
+      icon: ''
     }
   ];
 
@@ -311,7 +311,7 @@ export default function BecomePartnerPage() {
             
             {isSubmitted ? (
               <div className="bg-green-50 border border-green-200 rounded-lg p-8 text-center">
-                <div className="text-green-600 text-4xl mb-4">✓</div>
+                <div className="text-green-600 text-4xl mb-4"></div>
                 <h3 className="text-xl font-semibold text-green-800 mb-2" style={{ fontFamily: 'var(--oracleserif)' }}>
                   Application Submitted Successfully!
                 </h3>

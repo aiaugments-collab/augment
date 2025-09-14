@@ -7,12 +7,12 @@ export default function CodeSamplesPage() {
   const [selectedLanguage, setSelectedLanguage] = useState('javascript');
 
   const categories = [
-    { id: 'chat', name: 'Chat & Completions', icon: '💬', count: 12 },
-    { id: 'embeddings', name: 'Embeddings', icon: '🔢', count: 8 },
-    { id: 'fine-tuning', name: 'Fine-tuning', icon: '⚙️', count: 6 },
-    { id: 'streaming', name: 'Streaming', icon: '🌊', count: 5 },
-    { id: 'integrations', name: 'Integrations', icon: '🔗', count: 15 },
-    { id: 'use-cases', name: 'Use Cases', icon: '🎯', count: 20 }
+    { id: 'chat', name: 'Chat & Completions', icon: '', count: 12 },
+    { id: 'embeddings', name: 'Embeddings', icon: '', count: 8 },
+    { id: 'fine-tuning', name: 'Fine-tuning', icon: '️', count: 6 },
+    { id: 'streaming', name: 'Streaming', icon: '', count: 5 },
+    { id: 'integrations', name: 'Integrations', icon: '', count: 15 },
+    { id: 'use-cases', name: 'Use Cases', icon: '', count: 20 }
   ];
 
   const languages = ['javascript', 'python', 'go', 'java', 'php', 'ruby'];
@@ -235,7 +235,7 @@ embeddings = generate_embeddings([
 
               <div className="mt-8 p-4 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-lg border border-blue-200">
                 <h4 className="font-semibold text-[#161513] mb-2" style={{ fontFamily: 'var(--oracleserif)' }}>
-                  💡 Pro Tip
+                   Pro Tip
                 </h4>
                 <p className="text-sm text-gray-700" style={{ fontFamily: 'var(--oraclesans)' }}>
                   All code samples include error handling and best practices. Customize them for your specific use case.
@@ -346,7 +346,7 @@ embeddings = generate_embeddings([
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <a href="#" className="group bg-white p-6 rounded-lg shadow-sm border border-gray-200 hover:shadow-md hover:border-[#C74634] transition-all duration-200">
               <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 text-white rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                🤖
+                
               </div>
               <h3 className="text-lg font-semibold text-[#161513] mb-2" style={{ fontFamily: 'var(--oracleserif)' }}>
                 Chatbot Template
@@ -364,7 +364,7 @@ embeddings = generate_embeddings([
 
             <a href="#" className="group bg-white p-6 rounded-lg shadow-sm border border-gray-200 hover:shadow-md hover:border-[#C74634] transition-all duration-200">
               <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-cyan-500 text-white rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                🔍
+                
               </div>
               <h3 className="text-lg font-semibold text-[#161513] mb-2" style={{ fontFamily: 'var(--oracleserif)' }}>
                 Semantic Search
@@ -382,7 +382,7 @@ embeddings = generate_embeddings([
 
             <a href="#" className="group bg-white p-6 rounded-lg shadow-sm border border-gray-200 hover:shadow-md hover:border-[#C74634] transition-all duration-200">
               <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-500 text-white rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                📝
+                
               </div>
               <h3 className="text-lg font-semibold text-[#161513] mb-2" style={{ fontFamily: 'var(--oracleserif)' }}>
                 Content Generator

@@ -154,28 +154,28 @@ export default function SuccessStoriesPage() {
       description: 'Share your success to inspire other organizations and contribute to the AI community knowledge base.',
       href: '/customers/success-stories/inspire/',
       buttonText: 'Inspire others',
-      icon: '💡'
+      icon: ''
     },
     {
       title: 'Gain Recognition',
       description: 'Receive industry recognition for your innovative AI implementation and thought leadership.',
       href: '/customers/success-stories/recognition/',
       buttonText: 'Get recognized',
-      icon: '🏆'
+      icon: ''
     },
     {
       title: 'Build Credibility',
       description: 'Establish your organization as an AI leader and attract top talent, partners, and customers.',
       href: '/customers/success-stories/credibility/',
       buttonText: 'Build credibility',
-      icon: '🌟'
+      icon: ''
     },
     {
       title: 'Network & Connect',
       description: 'Connect with other AI leaders and join an exclusive community of successful implementers.',
       href: '/customers/success-stories/network/',
       buttonText: 'Join network',
-      icon: '🤝'
+      icon: ''
     }
   ];
 
@@ -369,7 +369,7 @@ export default function SuccessStoriesPage() {
             
             {isSubmitted ? (
               <div className="bg-green-50 border border-green-200 rounded-lg p-8 text-center">
-                <div className="text-green-600 text-4xl mb-4">✓</div>
+                <div className="text-green-600 text-4xl mb-4"></div>
                 <h3 className="text-xl font-semibold text-green-800 mb-2" style={{ fontFamily: 'var(--oracleserif)' }}>
                   Success Story Submitted!
                 </h3>

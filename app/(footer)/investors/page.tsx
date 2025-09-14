@@ -91,7 +91,7 @@ export default function InvestorsPage() {
       description: 'Access quarterly and annual financial reports, earnings statements, and financial presentations.',
       ctaText: 'View reports',
       ctaLink: '/investors/financials/',
-      icon: '📊'
+      icon: ''
     },
     {
       id: 'sec-filings',
@@ -99,7 +99,7 @@ export default function InvestorsPage() {
       description: 'Complete SEC filings including 10-K, 10-Q, 8-K, and proxy statements.',
       ctaText: 'Browse filings',
       ctaLink: '/investors/sec-filings/',
-      icon: '📋'
+      icon: ''
     },
     {
       id: 'events-presentations',
@@ -107,7 +107,7 @@ export default function InvestorsPage() {
       description: 'Investor events, earnings calls, conference presentations, and webcasts.',
       ctaText: 'View events',
       ctaLink: '/investors/events/',
-      icon: '🎥'
+      icon: ''
     },
     {
       id: 'stock-information',
@@ -115,7 +115,7 @@ export default function InvestorsPage() {
       description: 'Real-time stock quotes, historical data, analyst coverage, and dividend information.',
       ctaText: 'View stock data',
       ctaLink: '/investors/stock/',
-      icon: '📈'
+      icon: ''
     }
   ];
 
@@ -158,14 +158,14 @@ export default function InvestorsPage() {
       description: 'Subscribe to receive investor email alerts for earnings, news, and SEC filings.',
       href: '/investors/email-alerts/',
       buttonText: 'Subscribe now',
-      icon: '📧'
+      icon: ''
     },
     {
       title: 'Contact IR',
       description: 'Get in touch with our Investor Relations team for questions and information.',
       href: '/investors/contact/',
       buttonText: 'Contact us',
-      icon: '📞'
+      icon: ''
     }
   ];
 

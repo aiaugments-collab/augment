@@ -79,7 +79,7 @@ export default function AccessibilityPage() {
       description: 'Comprehensive guide to using Augment\'s platform with assistive technologies.',
       href: '/corporate/accessibility/user-guide/',
       buttonText: 'Download guide',
-      icon: '📖'
+      icon: ''
     },
     {
       title: 'Keyboard Shortcuts',
@@ -93,14 +93,14 @@ export default function AccessibilityPage() {
       description: 'Accessibility training materials for administrators and end users.',
       href: '/corporate/accessibility/training/',
       buttonText: 'Access training',
-      icon: '🎓'
+      icon: ''
     },
     {
       title: 'Report Accessibility Issue',
       description: 'Found an accessibility barrier? Report it and we\'ll work to resolve it quickly.',
       href: '/corporate/accessibility/report/',
       buttonText: 'Report issue',
-      icon: '🚨'
+      icon: ''
     }
   ];
 
@@ -166,7 +166,7 @@ export default function AccessibilityPage() {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               <div className="bg-white p-6 rounded-lg shadow-sm">
                 <div className="w-12 h-12 bg-[#C74634] rounded-full flex items-center justify-center mb-4">
-                  <span className="text-white text-xl">👁️</span>
+                  <span className="text-white text-xl">️</span>
                 </div>
                 <h3 className="text-lg font-semibold text-[#161513] mb-3" style={{ fontFamily: 'var(--oraclesans)' }}>
                   Screen Reader Support
@@ -188,7 +188,7 @@ export default function AccessibilityPage() {
               </div>
               <div className="bg-white p-6 rounded-lg shadow-sm">
                 <div className="w-12 h-12 bg-[#C74634] rounded-full flex items-center justify-center mb-4">
-                  <span className="text-white text-xl">🎨</span>
+                  <span className="text-white text-xl"></span>
                 </div>
                 <h3 className="text-lg font-semibold text-[#161513] mb-3" style={{ fontFamily: 'var(--oraclesans)' }}>
                   High Contrast Mode
@@ -199,7 +199,7 @@ export default function AccessibilityPage() {
               </div>
               <div className="bg-white p-6 rounded-lg shadow-sm">
                 <div className="w-12 h-12 bg-[#C74634] rounded-full flex items-center justify-center mb-4">
-                  <span className="text-white text-xl">🔍</span>
+                  <span className="text-white text-xl"></span>
                 </div>
                 <h3 className="text-lg font-semibold text-[#161513] mb-3" style={{ fontFamily: 'var(--oraclesans)' }}>
                   Zoom & Magnification
@@ -210,7 +210,7 @@ export default function AccessibilityPage() {
               </div>
               <div className="bg-white p-6 rounded-lg shadow-sm">
                 <div className="w-12 h-12 bg-[#C74634] rounded-full flex items-center justify-center mb-4">
-                  <span className="text-white text-xl">🎤</span>
+                  <span className="text-white text-xl"></span>
                 </div>
                 <h3 className="text-lg font-semibold text-[#161513] mb-3" style={{ fontFamily: 'var(--oraclesans)' }}>
                   Voice Recognition
@@ -221,7 +221,7 @@ export default function AccessibilityPage() {
               </div>
               <div className="bg-white p-6 rounded-lg shadow-sm">
                 <div className="w-12 h-12 bg-[#C74634] rounded-full flex items-center justify-center mb-4">
-                  <span className="text-white text-xl">📱</span>
+                  <span className="text-white text-xl"></span>
                 </div>
                 <h3 className="text-lg font-semibold text-[#161513] mb-3" style={{ fontFamily: 'var(--oraclesans)' }}>
                   Mobile Accessibility

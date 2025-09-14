@@ -128,28 +128,28 @@ export default function CommunityPage() {
       description: 'Get early access to research findings, industry reports, and cutting-edge AI developments before public release.',
       href: '/industries/community/insights/',
       buttonText: 'Access insights',
-      icon: '🔬'
+      icon: ''
     },
     {
       title: 'Professional Networking Opportunities',
       description: 'Connect with 10,000+ AI professionals, industry leaders, and innovators across all major industries.',
       href: '/industries/community/networking/',
       buttonText: 'Start networking',
-      icon: '🤝'
+      icon: ''
     },
     {
       title: 'Career Development Resources',
       description: 'Access job opportunities, skill development programs, and career advancement resources in the AI field.',
       href: '/industries/community/careers/',
       buttonText: 'Explore careers',
-      icon: '📈'
+      icon: ''
     },
     {
       title: 'Collaborative Innovation Projects',
       description: 'Participate in cross-industry innovation projects and contribute to breakthrough AI research and development.',
       href: '/industries/community/innovation/',
       buttonText: 'Join projects',
-      icon: '💡'
+      icon: ''
     }
   ];
 
@@ -343,7 +343,7 @@ export default function CommunityPage() {
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
               <div className="text-center">
                 <div className="w-16 h-16 bg-[#C74634] rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl text-white">🤝</span>
+                  <span className="text-2xl text-white"></span>
                 </div>
                 <h3 className="text-lg font-semibold text-[#161513] mb-2" style={{ fontFamily: 'var(--oraclesans)' }}>
                   Collaboration
@@ -354,7 +354,7 @@ export default function CommunityPage() {
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-[#C74634] rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl text-white">💡</span>
+                  <span className="text-2xl text-white"></span>
                 </div>
                 <h3 className="text-lg font-semibold text-[#161513] mb-2" style={{ fontFamily: 'var(--oraclesans)' }}>
                   Innovation
@@ -365,7 +365,7 @@ export default function CommunityPage() {
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-[#C74634] rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl text-white">⚖️</span>
+                  <span className="text-2xl text-white">️</span>
                 </div>
                 <h3 className="text-lg font-semibold text-[#161513] mb-2" style={{ fontFamily: 'var(--oraclesans)' }}>
                   Ethics
@@ -376,7 +376,7 @@ export default function CommunityPage() {
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-[#C74634] rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl text-white">🌍</span>
+                  <span className="text-2xl text-white"></span>
                 </div>
                 <h3 className="text-lg font-semibold text-[#161513] mb-2" style={{ fontFamily: 'var(--oraclesans)' }}>
                   Inclusivity

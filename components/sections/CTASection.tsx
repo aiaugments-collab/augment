@@ -4,8 +4,9 @@ interface CTAAction {
   title: string;
   description?: string;
   href: string;
-  icon?: string;
+  icon?: string | React.ReactElement;
   buttonText?: string;
+  target?: '_blank' | '_self';
 }
 
 interface CTASectionProps {
@@ -65,35 +66,27 @@ export const CTASection: React.FC<CTASectionProps> = ({
               className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300"
             >
               <div className="p-8">
-                <div className="flex items-start space-x-4">
-                  {action.icon && (
-                    <div className="flex-shrink-0">
-                      <div className="w-12 h-12 bg-yellow-400 rounded-lg flex items-center justify-center">
-                        <span className="text-xl text-gray-900">{action.icon}</span>
-                      </div>
-                    </div>
+                <div>
+                  <h3 className="text-base lg:text-lg font-bold text-[#161513] mb-2" style={{ fontFamily: 'var(--oraclesans)' }}>
+                    {action.title}
+                  </h3>
+                  {action.description && (
+                    <p className="text-sm lg:text-base text-gray-700 mb-6 leading-relaxed" style={{ fontFamily: 'var(--oraclesans)' }}>
+                      {action.description}
+                    </p>
                   )}
                   
-                  <div className="flex-1">
-                    <h3 className="text-base lg:text-lg font-bold text-[#161513] mb-2" style={{ fontFamily: 'var(--oraclesans)' }}>
-                      {action.title}
-                    </h3>
-                    {action.description && (
-                      <p className="text-sm lg:text-base text-gray-700 mb-6 leading-relaxed" style={{ fontFamily: 'var(--oraclesans)' }}>
-                        {action.description}
-                      </p>
-                    )}
-                    
-                    <a
-                      href={action.href}
-                      className="inline-flex items-center px-6 py-3 bg-gray-900 text-white font-semibold rounded-lg hover:bg-gray-800 transition-colors duration-200"
-                    >
-                      {action.buttonText || 'Learn More'}
-                      <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                      </svg>
-                    </a>
-                  </div>
+                  <a
+                    href={action.href}
+                    target={action.target}
+                    rel={action.target === '_blank' ? 'noopener noreferrer' : undefined}
+                    className="inline-flex items-center px-6 py-3 bg-gray-900 text-white font-semibold rounded-lg hover:bg-gray-800 transition-colors duration-200"
+                  >
+                    {action.buttonText || 'Learn More'}
+                    <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </a>
                 </div>
               </div>
             </div>

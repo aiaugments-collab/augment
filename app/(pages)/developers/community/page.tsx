@@ -18,7 +18,7 @@ export default function DeveloperCommunityPage() {
     {
       name: 'Discord Server',
       description: 'Real-time chat with developers, get help, and share projects',
-      icon: '💬',
+      icon: '',
       members: '15,000+',
       activity: 'Very Active',
       color: 'from-indigo-500 to-purple-600'
@@ -26,7 +26,7 @@ export default function DeveloperCommunityPage() {
     {
       name: 'GitHub Discussions',
       description: 'Technical discussions, feature requests, and open source contributions',
-      icon: '🐙',
+      icon: '',
       members: '8,000+',
       activity: 'Active',
       color: 'from-gray-700 to-gray-900'
@@ -34,7 +34,7 @@ export default function DeveloperCommunityPage() {
     {
       name: 'Developer Forums',
       description: 'In-depth technical discussions and knowledge sharing',
-      icon: '🗣️',
+      icon: '️',
       members: '12,000+',
       activity: 'Active',
       color: 'from-blue-500 to-cyan-600'
@@ -42,7 +42,7 @@ export default function DeveloperCommunityPage() {
     {
       name: 'Reddit Community',
       description: 'Casual discussions, showcases, and community news',
-      icon: '📱',
+      icon: '',
       members: '25,000+',
       activity: 'Very Active',
       color: 'from-orange-500 to-red-600'
@@ -319,7 +319,7 @@ export default function DeveloperCommunityPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
               <div className="w-16 h-16 bg-[#C74634] text-white rounded-lg flex items-center justify-center mx-auto mb-4 text-2xl">
-                🤝
+                
               </div>
               <h3 className="text-lg font-semibold text-white mb-2" style={{ fontFamily: 'var(--oracleserif)' }}>
                 Be Respectful
@@ -330,7 +330,7 @@ export default function DeveloperCommunityPage() {
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-[#C74634] text-white rounded-lg flex items-center justify-center mx-auto mb-4 text-2xl">
-                💡
+                
               </div>
               <h3 className="text-lg font-semibold text-white mb-2" style={{ fontFamily: 'var(--oracleserif)' }}>
                 Share Knowledge
@@ -341,7 +341,7 @@ export default function DeveloperCommunityPage() {
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-[#C74634] text-white rounded-lg flex items-center justify-center mx-auto mb-4 text-2xl">
-                🔍
+                
               </div>
               <h3 className="text-lg font-semibold text-white mb-2" style={{ fontFamily: 'var(--oracleserif)' }}>
                 Stay On Topic
@@ -352,7 +352,7 @@ export default function DeveloperCommunityPage() {
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-[#C74634] text-white rounded-lg flex items-center justify-center mx-auto mb-4 text-2xl">
-                🚀
+                
               </div>
               <h3 className="text-lg font-semibold text-white mb-2" style={{ fontFamily: 'var(--oracleserif)' }}>
                 Build Together

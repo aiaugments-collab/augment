@@ -141,28 +141,28 @@ export default function BlogsPage() {
       description: 'Stay updated with the latest AI trends, research breakthroughs, and industry news delivered to your inbox.',
       href: '#subscribe',
       buttonText: 'Subscribe now',
-      icon: '📧'
+      icon: ''
     },
     {
       title: 'AI Learning Resources',
       description: 'Access curated learning materials, courses, and resources to advance your AI knowledge and skills.',
       href: '/learn/',
       buttonText: 'Start learning',
-      icon: '📚'
+      icon: ''
     },
     {
       title: 'Expert Webinars',
       description: 'Join live webinars and discussions with AI experts, researchers, and industry practitioners.',
       href: '/events/webinars/',
       buttonText: 'View webinars',
-      icon: '🎥'
+      icon: ''
     },
     {
       title: 'Community Discussions',
       description: 'Engage with the AI community, share insights, and participate in discussions about AI topics.',
       href: '/forums/',
       buttonText: 'Join discussions',
-      icon: '💬'
+      icon: ''
     }
   ];
 
@@ -333,7 +333,7 @@ export default function BlogsPage() {
             
             {isSubscribed ? (
               <div className="bg-green-50 border border-green-200 rounded-lg p-8 text-center">
-                <div className="text-green-600 text-4xl mb-4">✓</div>
+                <div className="text-green-600 text-4xl mb-4"></div>
                 <h3 className="text-xl font-semibold text-green-800 mb-2" style={{ fontFamily: 'var(--oracleserif)' }}>
                   Successfully Subscribed!
                 </h3>

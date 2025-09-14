@@ -165,28 +165,28 @@ export default function AIEconomicsPage() {
       description: 'Calculate your potential return on investment with our interactive ROI calculator.',
       href: '/ai/economics/roi-calculator/',
       buttonText: 'Calculate ROI',
-      icon: '🧮'
+      icon: ''
     },
     {
       title: 'Cost-Benefit Analysis',
       description: 'Get a detailed cost-benefit analysis customized for your industry and use case.',
       href: '/ai/economics/cost-benefit-analysis/',
       buttonText: 'Get analysis',
-      icon: '📊'
+      icon: ''
     },
     {
       title: 'Economic Impact Report',
       description: 'Download our comprehensive report on the economic impact of AI automation.',
       href: '/ai/economics/impact-report/',
       buttonText: 'Download report',
-      icon: '📄'
+      icon: ''
     },
     {
       title: 'Business Case Builder',
       description: 'Build a compelling business case for AI automation with our guided tool.',
       href: '/ai/economics/business-case/',
       buttonText: 'Build case',
-      icon: '🏗️'
+      icon: '️'
     }
   ];
 

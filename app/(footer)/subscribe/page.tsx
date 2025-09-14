@@ -98,7 +98,7 @@ export default function SubscribePage() {
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
               <div className="text-center">
                 <div className="w-16 h-16 bg-[#C74634] rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl text-white">📧</span>
+                  <span className="text-2xl text-white"></span>
                 </div>
                 <h3 className="text-lg font-semibold text-[#161513] mb-2" style={{ fontFamily: 'var(--oraclesans)' }}>
                   Curated Content
@@ -109,7 +109,7 @@ export default function SubscribePage() {
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-[#C74634] rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl text-white">⚡</span>
+                  <span className="text-2xl text-white"></span>
                 </div>
                 <h3 className="text-lg font-semibold text-[#161513] mb-2" style={{ fontFamily: 'var(--oraclesans)' }}>
                   Early Access
@@ -120,7 +120,7 @@ export default function SubscribePage() {
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-[#C74634] rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl text-white">🎯</span>
+                  <span className="text-2xl text-white"></span>
                 </div>
                 <h3 className="text-lg font-semibold text-[#161513] mb-2" style={{ fontFamily: 'var(--oraclesans)' }}>
                   Personalized
@@ -131,7 +131,7 @@ export default function SubscribePage() {
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-[#C74634] rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl text-white">🚫</span>
+                  <span className="text-2xl text-white"></span>
                 </div>
                 <h3 className="text-lg font-semibold text-[#161513] mb-2" style={{ fontFamily: 'var(--oraclesans)' }}>
                   No Spam

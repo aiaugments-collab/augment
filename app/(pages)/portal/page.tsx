@@ -136,28 +136,28 @@ export default function SupportPortalPage() {
       description: 'All your support needs in one place with unified ticket management and communication history.',
       href: '/portal/support/',
       buttonText: 'Access support',
-      icon: '🎯'
+      icon: ''
     },
     {
       title: 'Self-Service Tools',
       description: 'Manage your account, billing, and services independently with comprehensive self-service options.',
       href: '/portal/self-service/',
       buttonText: 'Self-service tools',
-      icon: '⚙️'
+      icon: '️'
     },
     {
       title: 'Exclusive Resources',
       description: 'Access customer-only resources, advanced documentation, and premium training materials.',
       href: '/portal/exclusive/',
       buttonText: 'Exclusive content',
-      icon: '🔐'
+      icon: ''
     },
     {
       title: 'Personalized Experience',
       description: 'Customized dashboard, personalized recommendations, and tailored content based on your usage.',
       href: '/portal/personalization/',
       buttonText: 'Personalize portal',
-      icon: '👤'
+      icon: ''
     }
   ];
 
@@ -285,7 +285,7 @@ export default function SupportPortalPage() {
             
             {isLoggedIn ? (
               <div className="bg-green-50 border border-green-200 rounded-lg p-8 text-center">
-                <div className="text-green-600 text-4xl mb-4">✓</div>
+                <div className="text-green-600 text-4xl mb-4"></div>
                 <h3 className="text-xl font-semibold text-green-800 mb-2" style={{ fontFamily: 'var(--oracleserif)' }}>
                   Welcome to Your Portal!
                 </h3>
@@ -376,19 +376,19 @@ export default function SupportPortalPage() {
                   </p>
                   <ul className="space-y-3 mb-6">
                     <li className="flex items-center text-sm text-gray-700" style={{ fontFamily: 'var(--oraclesans)' }}>
-                      <span className="text-[#C74634] mr-2">✓</span>
+                      <span className="text-[#C74634] mr-2"></span>
                       24/7 support ticket management
                     </li>
                     <li className="flex items-center text-sm text-gray-700" style={{ fontFamily: 'var(--oraclesans)' }}>
-                      <span className="text-[#C74634] mr-2">✓</span>
+                      <span className="text-[#C74634] mr-2"></span>
                       Account and billing management
                     </li>
                     <li className="flex items-center text-sm text-gray-700" style={{ fontFamily: 'var(--oraclesans)' }}>
-                      <span className="text-[#C74634] mr-2">✓</span>
+                      <span className="text-[#C74634] mr-2"></span>
                       Exclusive resources and documentation
                     </li>
                     <li className="flex items-center text-sm text-gray-700" style={{ fontFamily: 'var(--oraclesans)' }}>
-                      <span className="text-[#C74634] mr-2">✓</span>
+                      <span className="text-[#C74634] mr-2"></span>
                       API management and analytics
                     </li>
                   </ul>

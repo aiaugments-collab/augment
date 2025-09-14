@@ -1,20 +1,20 @@
 'use client';
 
 import { useState } from 'react';
-import { Download, Database, Shield, Zap, Monitor, Code, Book, ExternalLink } from 'lucide-react';
+import { Download, Database, Shield, Zap, Monitor, Code, Book, ExternalLink, Clipboard, Rocket, Sparkles, Settings, Wrench, HelpCircle } from 'lucide-react';
 
 export default function AugmentDBDocsPage() {
   const [activeSection, setActiveSection] = useState('overview');
 
   const docSections = [
-    { id: 'overview', title: 'Overview', icon: '📋' },
-    { id: 'installation', title: 'Installation', icon: '⚡' },
-    { id: 'getting-started', title: 'Getting Started', icon: '🚀' },
-    { id: 'features', title: 'Features', icon: '✨' },
-    { id: 'supported-databases', title: 'Supported Databases', icon: '🗄️' },
-    { id: 'configuration', title: 'Configuration', icon: '⚙️' },
-    { id: 'troubleshooting', title: 'Troubleshooting', icon: '🔧' },
-    { id: 'faq', title: 'FAQ', icon: '❓' }
+    { id: 'overview', title: 'Overview', icon: <Clipboard className="w-5 h-5" /> },
+    { id: 'installation', title: 'Installation', icon: <Zap className="w-5 h-5" /> },
+    { id: 'getting-started', title: 'Getting Started', icon: <Rocket className="w-5 h-5" /> },
+    { id: 'features', title: 'Features', icon: <Sparkles className="w-5 h-5" /> },
+    { id: 'supported-databases', title: 'Supported Databases', icon: <Database className="w-5 h-5" /> },
+    { id: 'configuration', title: 'Configuration', icon: <Settings className="w-5 h-5" /> },
+    { id: 'troubleshooting', title: 'Troubleshooting', icon: <Wrench className="w-5 h-5" /> },
+    { id: 'faq', title: 'FAQ', icon: <HelpCircle className="w-5 h-5" /> }
   ];
 
   const installationMethods = [

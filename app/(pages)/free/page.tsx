@@ -24,37 +24,37 @@ export default function AIAgentFreeTierPage() {
       feature: 'API Calls',
       free: '10,000/month',
       paid: 'Unlimited',
-      icon: '🔄'
+      icon: ''
     },
     {
       feature: 'Models',
       free: 'GPT-3.5 Turbo',
       paid: 'All Models (GPT-4, Claude, etc.)',
-      icon: '🧠'
+      icon: ''
     },
     {
       feature: 'Rate Limits',
       free: '20 RPM',
       paid: '1000+ RPM',
-      icon: '⚡'
+      icon: ''
     },
     {
       feature: 'Support',
       free: 'Community Forums',
       paid: 'Priority Support',
-      icon: '🎧'
+      icon: ''
     },
     {
       feature: 'Analytics',
       free: 'Basic Usage Stats',
       paid: 'Advanced Analytics',
-      icon: '📊'
+      icon: ''
     },
     {
       feature: 'Fine-tuning',
       free: 'Not Available',
       paid: 'Available',
-      icon: '⚙️'
+      icon: '️'
     }
   ];
 
@@ -62,25 +62,25 @@ export default function AIAgentFreeTierPage() {
     {
       title: 'Prototype Development',
       description: 'Build and test AI prototypes without upfront costs',
-      icon: '🛠️',
+      icon: '️',
       examples: ['MVP chatbots', 'Proof of concepts', 'Demo applications']
     },
     {
       title: 'Learning & Education',
       description: 'Perfect for students and developers learning AI',
-      icon: '🎓',
+      icon: '',
       examples: ['Tutorials', 'Course projects', 'Skill development']
     },
     {
       title: 'Small Projects',
       description: 'Ideal for personal projects and small applications',
-      icon: '🏠',
+      icon: '',
       examples: ['Personal assistants', 'Hobby projects', 'Side projects']
     },
     {
       title: 'Testing & Evaluation',
       description: 'Evaluate our platform before committing to paid plans',
-      icon: '🔬',
+      icon: '',
       examples: ['API testing', 'Performance evaluation', 'Feature exploration']
     }
   ];
@@ -382,7 +382,7 @@ export default function AIAgentFreeTierPage() {
 
           {isSignedUp ? (
             <div className="bg-green-50 border border-green-200 rounded-lg p-8 text-center">
-              <div className="text-green-600 text-4xl mb-4">✓</div>
+              <div className="text-green-600 text-4xl mb-4"></div>
               <h3 className="text-xl font-semibold text-green-800 mb-2" style={{ fontFamily: 'var(--oracleserif)' }}>
                 Welcome to Augment AI!
               </h3>

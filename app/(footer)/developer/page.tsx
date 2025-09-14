@@ -116,7 +116,7 @@ export default function DeveloperPage() {
       description: 'Comprehensive guides, API references, and tutorials to get you started quickly.',
       buttonText: 'Browse docs',
       href: '/developer/docs/',
-      icon: '📚'  
+      icon: ''  
     },
     {
       id: 'sdks',
@@ -124,7 +124,7 @@ export default function DeveloperPage() {
       description: 'Download SDKs for Python, JavaScript, Java, and more. Command-line tools included.',
       buttonText: 'Download SDKs',
       href: '/developer/downloads/',
-      icon: '🛠️'
+      icon: '️'
     },
     {
       id: 'community',
@@ -132,7 +132,7 @@ export default function DeveloperPage() {
       description: 'Connect with other developers, share knowledge, and get help from our community.',
       buttonText: 'Join community',
       href: '/developer/community/',
-      icon: '👥'
+      icon: ''
     },
     {
       id: 'tutorials',
@@ -140,7 +140,7 @@ export default function DeveloperPage() {
       description: 'Hands-on tutorials and interactive labs to learn by doing with real-world examples.',
       buttonText: 'Start learning',
       href: '/developer/tutorials/',
-      icon: '🎓'
+      icon: ''
     }
   ];
 
@@ -197,14 +197,14 @@ export default function DeveloperPage() {
       description: 'Get started with our free developer tier and build your first AI automation.',
       href: '/developer/get-started/',
       buttonText: 'Get started free',
-      icon: '🚀'
+      icon: ''
     },
     {
       title: 'Join Developer Program',
       description: 'Access exclusive resources, early previews, and connect with our team.',
       href: '/developer/program/',
       buttonText: 'Join program',
-      icon: '⭐'
+      icon: ''
     }
   ];
 

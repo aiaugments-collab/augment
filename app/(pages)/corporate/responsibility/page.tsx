@@ -11,7 +11,7 @@ export default function CorporateResponsibilityPage() {
     {
       title: 'Responsible AI Development',
       description: 'Building AI systems that are safe, transparent, and beneficial for all humanity',
-      icon: '🛡️',
+      icon: '️',
       initiatives: [
         'AI Safety Research',
         'Bias Detection & Mitigation',
@@ -22,7 +22,7 @@ export default function CorporateResponsibilityPage() {
     {
       title: 'Environmental Sustainability',
       description: 'Minimizing our environmental impact through sustainable practices and green technology',
-      icon: '🌱',
+      icon: '',
       initiatives: [
         'Carbon Neutral Operations',
         'Renewable Energy Usage',
@@ -33,7 +33,7 @@ export default function CorporateResponsibilityPage() {
     {
       title: 'Social Impact & Education',
       description: 'Democratizing AI education and supporting underrepresented communities in technology',
-      icon: '📚',
+      icon: '',
       initiatives: [
         'AI Education Programs',
         'Diversity Scholarships',
@@ -44,7 +44,7 @@ export default function CorporateResponsibilityPage() {
     {
       title: 'Data Privacy & Security',
       description: 'Protecting user privacy and maintaining the highest standards of data security',
-      icon: '🔒',
+      icon: '',
       initiatives: [
         'Privacy by Design',
         'Data Minimization',
@@ -371,7 +371,7 @@ export default function CorporateResponsibilityPage() {
           <div className="grid md:grid-cols-3 gap-8">
             <a href="#" className="group bg-gray-50 p-6 rounded-lg border border-gray-200 hover:shadow-lg hover:border-[#C74634] transition-all duration-200">
               <div className="w-12 h-12 bg-green-100 text-green-600 rounded-lg flex items-center justify-center mb-4 group-hover:bg-[#C74634] group-hover:text-white transition-colors">
-                📊
+                
               </div>
               <h3 className="text-lg font-semibold text-[#161513] mb-2" style={{ fontFamily: 'var(--oracleserif)' }}>
                 2023 Impact Report
@@ -389,7 +389,7 @@ export default function CorporateResponsibilityPage() {
 
             <a href="#" className="group bg-gray-50 p-6 rounded-lg border border-gray-200 hover:shadow-lg hover:border-[#C74634] transition-all duration-200">
               <div className="w-12 h-12 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mb-4 group-hover:bg-[#C74634] group-hover:text-white transition-colors">
-                🛡️
+                ️
               </div>
               <h3 className="text-lg font-semibold text-[#161513] mb-2" style={{ fontFamily: 'var(--oracleserif)' }}>
                 AI Ethics Guidelines
@@ -407,7 +407,7 @@ export default function CorporateResponsibilityPage() {
 
             <a href="#" className="group bg-gray-50 p-6 rounded-lg border border-gray-200 hover:shadow-lg hover:border-[#C74634] transition-all duration-200">
               <div className="w-12 h-12 bg-purple-100 text-purple-600 rounded-lg flex items-center justify-center mb-4 group-hover:bg-[#C74634] group-hover:text-white transition-colors">
-                🌱
+                
               </div>
               <h3 className="text-lg font-semibold text-[#161513] mb-2" style={{ fontFamily: 'var(--oracleserif)' }}>
                 Sustainability Report

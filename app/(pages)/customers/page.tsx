@@ -128,28 +128,28 @@ export default function CustomersPage() {
       description: 'Join our exclusive advisory board to shape the future of Augment AI products and influence our roadmap.',
       href: '/customers/advisory/',
       buttonText: 'Join advisory board',
-      icon: '🎯'
+      icon: ''
     },
     {
       title: 'Success Stories Program',
       description: 'Share your success story and inspire other organizations while gaining recognition for your achievements.',
       href: '/customers/success-stories/submit/',
       buttonText: 'Share your story',
-      icon: '📖'
+      icon: ''
     },
     {
       title: 'Reference Program',
       description: 'Become a reference customer and help prospects understand the value of Augment AI solutions.',
       href: '/customers/reference-program/',
       buttonText: 'Become a reference',
-      icon: '🤝'
+      icon: ''
     },
     {
       title: 'User Community',
       description: 'Connect with other customers, share best practices, and learn from successful implementations.',
       href: '/community/',
       buttonText: 'Join community',
-      icon: '👥'
+      icon: ''
     }
   ];
 

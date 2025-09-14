@@ -128,28 +128,28 @@ export default function ImplementationPartnersPage() {
       description: 'Comprehensive technical certification programs to validate implementation expertise and capabilities.',
       href: '#',
       buttonText: 'Get certified',
-      icon: '🎯'
+      icon: ''
     },
     {
       title: 'Implementation Methodologies',
       description: 'Access to proven implementation methodologies, best practices, and project management frameworks.',
       href: '#',
       buttonText: 'Methodologies',
-      icon: '📋'
+      icon: ''
     },
     {
       title: 'Technical Support',
       description: 'Dedicated technical support, engineering resources, and escalation paths for complex implementations.',
       href: '#',
       buttonText: 'Technical support',
-      icon: '🔧'
+      icon: ''
     },
     {
       title: 'Revenue Opportunities',
       description: 'Multiple revenue streams including implementation fees, ongoing services, and performance-based incentives.',
       href: '#',
       buttonText: 'Revenue models',
-      icon: '💰'
+      icon: ''
     }
   ];
 
@@ -342,7 +342,7 @@ export default function ImplementationPartnersPage() {
             </div>
             <div className="grid md:grid-cols-2 gap-8">
               <div className="bg-gray-50 p-8 rounded-lg text-center">
-                <div className="text-[#C74634] text-4xl mb-4">🔧</div>
+                <div className="text-[#C74634] text-4xl mb-4"></div>
                 <h3 className="text-xl font-semibold text-[#161513] mb-4" style={{ fontFamily: 'var(--oracleserif)' }}>
                   Technical Resources
                 </h3>
@@ -358,7 +358,7 @@ export default function ImplementationPartnersPage() {
                 </a>
               </div>
               <div className="bg-gray-50 p-8 rounded-lg text-center">
-                <div className="text-[#C74634] text-4xl mb-4">🤝</div>
+                <div className="text-[#C74634] text-4xl mb-4"></div>
                 <h3 className="text-xl font-semibold text-[#161513] mb-4" style={{ fontFamily: 'var(--oracleserif)' }}>
                   Partnership Application
                 </h3>

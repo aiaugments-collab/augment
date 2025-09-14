@@ -165,28 +165,28 @@ export default function SocialImpactPage() {
       description: 'Join our employee volunteer programs and make a difference in your local community.',
       href: '/social-impact/volunteer/',
       buttonText: 'Get involved',
-      icon: '🤝'
+      icon: ''
     },
     {
       title: 'Partnership Applications',
       description: 'Partner with us on social impact initiatives and community programs.',
       href: '/social-impact/partnerships/',
       buttonText: 'Apply to partner',
-      icon: '🤝'
+      icon: ''
     },
     {
       title: 'Grant Applications',
       description: 'Apply for grants and funding for qualifying social impact projects.',
       href: '/social-impact/grants/',
       buttonText: 'Apply for grants',
-      icon: '💰'
+      icon: ''
     },
     {
       title: 'Impact Measurement',
       description: 'Learn how we measure and report on our social and environmental impact.',
       href: '/social-impact/measurement/',
       buttonText: 'View metrics',
-      icon: '📊'
+      icon: ''
     }
   ];
 
@@ -295,7 +295,7 @@ export default function SocialImpactPage() {
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               <div className="bg-gray-800 p-6 rounded-lg text-center">
-                <div className="text-4xl mb-4">🎓</div>
+                <div className="text-4xl mb-4"></div>
                 <h3 className="text-lg font-semibold text-white mb-2" style={{ fontFamily: 'var(--oraclesans)' }}>
                   Quality Education
                 </h3>
@@ -304,7 +304,7 @@ export default function SocialImpactPage() {
                 </p>
               </div>
               <div className="bg-gray-800 p-6 rounded-lg text-center">
-                <div className="text-4xl mb-4">⚡</div>
+                <div className="text-4xl mb-4"></div>
                 <h3 className="text-lg font-semibold text-white mb-2" style={{ fontFamily: 'var(--oraclesans)' }}>
                   Clean Energy
                 </h3>
@@ -313,7 +313,7 @@ export default function SocialImpactPage() {
                 </p>
               </div>
               <div className="bg-gray-800 p-6 rounded-lg text-center">
-                <div className="text-4xl mb-4">💼</div>
+                <div className="text-4xl mb-4"></div>
                 <h3 className="text-lg font-semibold text-white mb-2" style={{ fontFamily: 'var(--oraclesans)' }}>
                   Decent Work
                 </h3>
@@ -322,7 +322,7 @@ export default function SocialImpactPage() {
                 </p>
               </div>
               <div className="bg-gray-800 p-6 rounded-lg text-center">
-                <div className="text-4xl mb-4">🏭</div>
+                <div className="text-4xl mb-4"></div>
                 <h3 className="text-lg font-semibold text-white mb-2" style={{ fontFamily: 'var(--oraclesans)' }}>
                   Innovation
                 </h3>
@@ -331,7 +331,7 @@ export default function SocialImpactPage() {
                 </p>
               </div>
               <div className="bg-gray-800 p-6 rounded-lg text-center">
-                <div className="text-4xl mb-4">🌍</div>
+                <div className="text-4xl mb-4"></div>
                 <h3 className="text-lg font-semibold text-white mb-2" style={{ fontFamily: 'var(--oraclesans)' }}>
                   Climate Action
                 </h3>
@@ -340,7 +340,7 @@ export default function SocialImpactPage() {
                 </p>
               </div>
               <div className="bg-gray-800 p-6 rounded-lg text-center">
-                <div className="text-4xl mb-4">🤝</div>
+                <div className="text-4xl mb-4"></div>
                 <h3 className="text-lg font-semibold text-white mb-2" style={{ fontFamily: 'var(--oraclesans)' }}>
                   Partnerships
                 </h3>

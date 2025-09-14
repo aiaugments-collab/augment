@@ -133,7 +133,7 @@ export default function HealthcarePage() {
       description: 'Enhance diagnostic accuracy and treatment effectiveness with AI-powered clinical decision support and predictive analytics.',
       href: '/resources/healthcare-outcomes-study/',
       buttonText: 'View study',
-      icon: '❤️'
+      icon: '️'
     },
     {
       title: 'Reduce Administrative Time by 60%',
@@ -147,14 +147,14 @@ export default function HealthcarePage() {
       description: 'Support clinical decisions with AI-powered analysis, evidence-based recommendations, and real-time medical insights.',
       href: '/solutions/clinical-decision-support/',
       buttonText: 'Explore clinical AI',
-      icon: '🎯'
+      icon: ''
     },
     {
       title: 'Lower Operational Costs by 40%',
       description: 'Optimize resource allocation, reduce waste, and improve operational efficiency through intelligent automation and analytics.',
       href: '/resources/healthcare-roi-calculator/',
       buttonText: 'Calculate savings',
-      icon: '💰'
+      icon: ''
     }
   ];
 

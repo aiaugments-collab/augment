@@ -156,28 +156,28 @@ export default function CustomerAdvisoryPage() {
       description: 'Participate in exclusive quarterly sessions with Augment leadership to discuss strategy and roadmap.',
       href: '/customers/advisory/sessions/',
       buttonText: 'Executive sessions',
-      icon: '🎯'
+      icon: ''
     },
     {
       title: 'Annual Advisory Summit',
       description: 'Attend our annual summit with keynotes, workshops, and networking with fellow advisory board members.',
       href: '/customers/advisory/summit/',
       buttonText: 'Annual summit',
-      icon: '🏔️'
+      icon: '️'
     },
     {
       title: 'Direct CEO Access',
       description: 'Regular touchpoints with our CEO and executive team to share feedback and strategic insights.',
       href: '/customers/advisory/ceo-access/',
       buttonText: 'CEO access',
-      icon: '👤'
+      icon: ''
     },
     {
       title: 'Innovation Labs Preview',
       description: 'Exclusive previews of our innovation labs and research projects before public announcement.',
       href: '/customers/advisory/innovation-labs/',
       buttonText: 'Innovation preview',
-      icon: '🔬'
+      icon: ''
     }
   ];
 
@@ -227,7 +227,9 @@ export default function CustomerAdvisoryPage() {
             </div>
             <div className="grid md:grid-cols-3 gap-8">
               <div className="text-center">
-                <div className="text-[#C74634] text-4xl mb-4">🎯</div>
+                <div className="w-16 h-16 bg-[#C74634] rounded-lg flex items-center justify-center mx-auto mb-4">
+                  <div className="w-8 h-8 bg-white rounded-full"></div>
+                </div>
                 <h3 className="text-lg font-semibold text-[#161513] mb-3" style={{ fontFamily: 'var(--oracleserif)' }}>
                   Strategic Influence
                 </h3>
@@ -236,7 +238,9 @@ export default function CustomerAdvisoryPage() {
                 </p>
               </div>
               <div className="text-center">
-                <div className="text-[#C74634] text-4xl mb-4">🤝</div>
+                <div className="w-16 h-16 bg-[#C74634] rounded-lg flex items-center justify-center mx-auto mb-4">
+                  <div className="w-8 h-8 bg-white rounded-full"></div>
+                </div>
                 <h3 className="text-lg font-semibold text-[#161513] mb-3" style={{ fontFamily: 'var(--oracleserif)' }}>
                   Collaborative Partnership
                 </h3>
@@ -245,7 +249,9 @@ export default function CustomerAdvisoryPage() {
                 </p>
               </div>
               <div className="text-center">
-                <div className="text-[#C74634] text-4xl mb-4">🌟</div>
+                <div className="w-16 h-16 bg-[#C74634] rounded-lg flex items-center justify-center mx-auto mb-4">
+                  <div className="w-8 h-8 bg-white rounded-full"></div>
+                </div>
                 <h3 className="text-lg font-semibold text-[#161513] mb-3" style={{ fontFamily: 'var(--oracleserif)' }}>
                   Industry Leadership
                 </h3>
@@ -347,7 +353,9 @@ export default function CustomerAdvisoryPage() {
             
             {isSubmitted ? (
               <div className="bg-green-50 border border-green-200 rounded-lg p-8 text-center">
-                <div className="text-green-600 text-4xl mb-4">✓</div>
+                <div className="w-16 h-16 bg-green-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+                  <div className="w-8 h-8 bg-green-600 rounded-full"></div>
+                </div>
                 <h3 className="text-xl font-semibold text-green-800 mb-2" style={{ fontFamily: 'var(--oracleserif)' }}>
                   Application Submitted Successfully!
                 </h3>

@@ -144,28 +144,28 @@ export default function NewsPage() {
       description: 'Download logos, executive photos, company fact sheet, and brand guidelines.',
       href: '/news/media-kit/',
       buttonText: 'Download kit',
-      icon: '📦'
+      icon: ''
     },
     {
       title: 'Executive Bios',
       description: 'Leadership team biographies and high-resolution executive photos.',
       href: '/news/executive-bios/',
       buttonText: 'View bios',
-      icon: '👥'
+      icon: ''
     },
     {
       title: 'Media Contacts',
       description: 'Contact information for press inquiries and interview requests.',
       href: '/news/media-contacts/',
       buttonText: 'Contact media team',
-      icon: '📞'
+      icon: ''
     },
     {
       title: 'Newsletter Signup',
       description: 'Subscribe to receive the latest news and announcements from Augment.',
       href: '/news/subscribe/',
       buttonText: 'Subscribe now',
-      icon: '📧'
+      icon: ''
     }
   ];
 

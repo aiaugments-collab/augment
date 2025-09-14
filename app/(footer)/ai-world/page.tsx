@@ -165,28 +165,28 @@ export default function AIWorldPage() {
       description: 'Secure your spot at the premier AI automation conference. Early bird pricing available.',
       href: '/ai-world/register/',
       buttonText: 'Register now',
-      icon: '🎟️'
+      icon: '️'
     },
     {
       title: 'Become a Sponsor',
       description: 'Showcase your brand and connect with AI automation leaders through sponsorship opportunities.',
       href: '/ai-world/sponsorship/',
       buttonText: 'Sponsor info',
-      icon: '🤝'
+      icon: ''
     },
     {
       title: 'Call for Speakers',
       description: 'Share your expertise and insights with the AI automation community.',
       href: '/ai-world/call-for-speakers/',
       buttonText: 'Submit proposal',
-      icon: '🎤'
+      icon: ''
     },
     {
       title: 'Travel & Accommodations',
       description: 'Find information about venue, hotels, and travel arrangements for Las Vegas.',
       href: '/ai-world/travel/',
       buttonText: 'Plan your trip',
-      icon: '✈️'
+      icon: '️'
     }
   ];
 

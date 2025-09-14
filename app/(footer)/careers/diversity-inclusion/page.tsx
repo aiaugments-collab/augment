@@ -109,7 +109,7 @@ export default function DiversityInclusionPage() {
       description: 'Explore career opportunities and be part of building the future of AI.',
       href: 'https://careers.augment.com/jobs',
       buttonText: 'View open positions',
-      icon: '🚀',
+      icon: '',
       target: '_blank' as const
     },
     {
@@ -117,7 +117,7 @@ export default function DiversityInclusionPage() {
       description: 'Discover what makes Augment a great place to work for everyone.',
       href: '/careers/culture/',
       buttonText: 'Explore culture',
-      icon: '🌟'
+      icon: ''
     }
   ];
 

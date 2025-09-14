@@ -6,6 +6,7 @@ import {
   CTASection,
   Testimonials
 } from '../../../components/sections';
+import { Rocket } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Augment Education | Students and Educators',
@@ -118,7 +119,7 @@ export default function EducationPage() {
       description: 'Access hundreds of free courses covering AI, automation, and technology fundamentals.',
       buttonText: 'Browse courses',
       href: '/education/free-courses/',
-      icon: '📚'
+      icon: ''
     },
     {
       id: 'hands-on-labs',
@@ -126,7 +127,7 @@ export default function EducationPage() {
       description: 'Interactive labs and practical exercises to apply your knowledge in real-world scenarios.',
       buttonText: 'Try labs',
       href: '/education/labs/',
-      icon: '🧪'
+      icon: ''
     },
     {
       id: 'certification-prep',
@@ -134,7 +135,7 @@ export default function EducationPage() {
       description: 'Preparation materials and practice exams for industry certifications.',
       buttonText: 'Prepare now',
       href: '/education/certification-prep/',
-      icon: '🏆'
+      icon: ''
     },
     {
       id: 'community-forums',
@@ -142,7 +143,7 @@ export default function EducationPage() {
       description: 'Connect with peers, ask questions, and share knowledge in our learning community.',
       buttonText: 'Join community',
       href: '/education/community/',
-      icon: '👥'
+      icon: ''
     }
   ];
 
@@ -201,14 +202,14 @@ export default function EducationPage() {
       description: 'Begin your learning journey with free courses and hands-on labs.',
       href: '/education/get-started/',
       buttonText: 'Start learning',
-      icon: '🚀'
+      icon: <Rocket className="w-6 h-6" />
     },
     {
       title: 'Educator Partnership',
       description: 'Partner with us to bring cutting-edge AI education to your institution.',
       href: '/education/partnerships/',
       buttonText: 'Partner with us',
-      icon: '🤝'
+      icon: ''
     }
   ];
 

@@ -127,28 +127,28 @@ export default function CaseStudiesPage() {
       description: 'See detailed financial impact and return on investment metrics from real customer implementations.',
       href: '/customers/case-studies/roi/',
       buttonText: 'View ROI data',
-      icon: '📈'
+      icon: ''
     },
     {
       title: 'Implementation Insights',
       description: 'Learn about deployment strategies, challenges overcome, and best practices from successful projects.',
       href: '/customers/case-studies/implementation/',
       buttonText: 'Implementation guides',
-      icon: '🔧'
+      icon: ''
     },
     {
       title: 'Industry Benchmarks',
       description: 'Compare performance metrics and outcomes against industry standards and peer organizations.',
       href: '/customers/case-studies/benchmarks/',
       buttonText: 'View benchmarks',
-      icon: '📊'
+      icon: ''
     },
     {
       title: 'Technical Deep Dives',
       description: 'Explore technical architecture, integration approaches, and solution design from customer deployments.',
       href: '/customers/case-studies/technical/',
       buttonText: 'Technical details',
-      icon: '⚙️'
+      icon: '️'
     }
   ];
 
@@ -367,17 +367,17 @@ export default function CaseStudiesPage() {
             <div className="bg-gray-50 rounded-lg p-8">
               <div className="grid md:grid-cols-3 gap-6 mb-8">
                 <div className="text-center">
-                  <div className="text-[#C74634] text-3xl mb-2">📝</div>
+                  <div className="text-[#C74634] text-3xl mb-2"></div>
                   <h3 className="font-semibold text-[#161513] mb-2" style={{ fontFamily: 'var(--oracleserif)' }}>Submit Your Story</h3>
                   <p className="text-sm text-gray-700" style={{ fontFamily: 'var(--oraclesans)' }}>Share your implementation details and business results</p>
                 </div>
                 <div className="text-center">
-                  <div className="text-[#C74634] text-3xl mb-2">🤝</div>
+                  <div className="text-[#C74634] text-3xl mb-2"></div>
                   <h3 className="font-semibold text-[#161513] mb-2" style={{ fontFamily: 'var(--oracleserif)' }}>Collaborate with Us</h3>
                   <p className="text-sm text-gray-700" style={{ fontFamily: 'var(--oraclesans)' }}>Work with our team to create a compelling case study</p>
                 </div>
                 <div className="text-center">
-                  <div className="text-[#C74634] text-3xl mb-2">🌟</div>
+                  <div className="text-[#C74634] text-3xl mb-2"></div>
                   <h3 className="font-semibold text-[#161513] mb-2" style={{ fontFamily: 'var(--oracleserif)' }}>Get Recognition</h3>
                   <p className="text-sm text-gray-700" style={{ fontFamily: 'var(--oraclesans)' }}>Gain industry recognition for your innovative AI implementation</p>
                 </div>

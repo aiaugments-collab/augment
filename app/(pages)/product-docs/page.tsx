@@ -128,28 +128,28 @@ export default function ProductDocsPage() {
       description: 'Watch step-by-step video tutorials covering product features and common use cases.',
       href: '/product-docs/videos/',
       buttonText: 'Watch videos',
-      icon: '🎥'
+      icon: ''
     },
     {
       title: 'Live Training Sessions',
       description: 'Join live training sessions and webinars to learn about product features and best practices.',
       href: '/training/product-training/',
       buttonText: 'Join training',
-      icon: '🎓'
+      icon: ''
     },
     {
       title: 'Community Forums',
       description: 'Connect with other users, share tips, and get help from the community.',
       href: '/forums/',
       buttonText: 'Visit forums',
-      icon: '💬'
+      icon: ''
     },
     {
       title: 'Technical Support',
       description: 'Get direct help from our technical support team for product-specific questions.',
       href: '/support/',
       buttonText: 'Contact support',
-      icon: '🛠️'
+      icon: '️'
     }
   ];
 

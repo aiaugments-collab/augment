@@ -2,7 +2,7 @@
 
 This guide walks you through the complete process of adding a new AI or cloud product to the Augment platform.
 
-## 📋 Prerequisites
+##  Prerequisites
 
 Before adding a new product, ensure you have:
 - The product's live URL (e.g., `https://newproduct.augment.cfd/`)
@@ -10,7 +10,7 @@ Before adding a new product, ensure you have:
 - Product description and details
 - Company logos for customer testimonials
 
-## 🚀 Step-by-Step Process
+##  Step-by-Step Process
 
 ### 1. Prepare Product Assets
 
@@ -250,7 +250,7 @@ augment/
 └── lib/productRegistry.ts (updated)
 ```
 
-## 🎨 Design Guidelines
+##  Design Guidelines
 
 ### Visual Consistency
 - Use the Oracle-inspired design system
@@ -270,7 +270,7 @@ augment/
 - Ensure fast loading times
 - Test across different devices and browsers
 
-## 🔧 Advanced Customization
+##  Advanced Customization
 
 ### Custom Sections
 You can add custom sections to your product page by following the existing patterns:
@@ -290,7 +290,7 @@ Use Tailwind CSS classes and maintain consistency with:
 - Color scheme: Blues, grays, and Oracle red (`#C74634`)
 - Spacing: Consistent padding and margins
 
-## 📞 Support
+##  Support
 
 If you encounter issues or need help:
 1. Check existing product pages for reference
@@ -300,4 +300,4 @@ If you encounter issues or need help:
 
 ---
 
-**Happy coding! 🚀**
+**Happy coding! **

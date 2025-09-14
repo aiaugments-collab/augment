@@ -1,20 +1,21 @@
 'use client';
 import { Metadata } from 'next';
 import { useState } from 'react';
+import { Clipboard, MessageCircle, Wrench, BookOpen, Palette, AlertTriangle, Lightbulb, Megaphone } from 'lucide-react';
 
 export default function DeveloperForumsPage() {
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [searchQuery, setSearchQuery] = useState('');
 
   const forumCategories = [
-    { id: 'all', name: 'All Topics', count: 2847, icon: '📋' },
-    { id: 'general', name: 'General Discussion', count: 892, icon: '💬' },
-    { id: 'api', name: 'API & SDKs', count: 654, icon: '🔧' },
-    { id: 'tutorials', name: 'Tutorials & Guides', count: 423, icon: '📚' },
-    { id: 'showcase', name: 'Project Showcase', count: 312, icon: '🎨' },
-    { id: 'troubleshooting', name: 'Troubleshooting', count: 289, icon: '🚨' },
-    { id: 'feature-requests', name: 'Feature Requests', count: 167, icon: '💡' },
-    { id: 'announcements', name: 'Announcements', count: 110, icon: '📢' }
+    { id: 'all', name: 'All Topics', count: 2847, icon: <Clipboard className="w-5 h-5" /> },
+    { id: 'general', name: 'General Discussion', count: 892, icon: <MessageCircle className="w-5 h-5" /> },
+    { id: 'api', name: 'API & SDKs', count: 654, icon: <Wrench className="w-5 h-5" /> },
+    { id: 'tutorials', name: 'Tutorials & Guides', count: 423, icon: <BookOpen className="w-5 h-5" /> },
+    { id: 'showcase', name: 'Project Showcase', count: 312, icon: <Palette className="w-5 h-5" /> },
+    { id: 'troubleshooting', name: 'Troubleshooting', count: 289, icon: <AlertTriangle className="w-5 h-5" /> },
+    { id: 'feature-requests', name: 'Feature Requests', count: 167, icon: <Lightbulb className="w-5 h-5" /> },
+    { id: 'announcements', name: 'Announcements', count: 110, icon: <Megaphone className="w-5 h-5" /> }
   ];
 
   const forumPosts = [
@@ -254,12 +255,12 @@ export default function DeveloperForumsPage() {
                       <div className="flex items-center space-x-2 mb-2">
                         {post.isPinned && (
                           <span className="inline-flex items-center px-2 py-1 bg-yellow-100 text-yellow-800 text-xs font-medium rounded-full">
-                            📌 Pinned
+                             Pinned
                           </span>
                         )}
                         {post.hasAcceptedAnswer && (
                           <span className="inline-flex items-center px-2 py-1 bg-green-100 text-green-800 text-xs font-medium rounded-full">
-                            ✅ Solved
+                             Solved
                           </span>
                         )}
                         <span className="inline-flex items-center px-2 py-1 bg-gray-100 text-gray-800 text-xs font-medium rounded-full">
@@ -322,7 +323,7 @@ export default function DeveloperForumsPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
               <div className="w-16 h-16 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mx-auto mb-4 text-2xl">
-                🔍
+                
               </div>
               <h3 className="text-lg font-semibold text-[#161513] mb-2" style={{ fontFamily: 'var(--oracleserif)' }}>
                 Search First
@@ -333,7 +334,7 @@ export default function DeveloperForumsPage() {
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-green-100 text-green-600 rounded-lg flex items-center justify-center mx-auto mb-4 text-2xl">
-                📝
+                
               </div>
               <h3 className="text-lg font-semibold text-[#161513] mb-2" style={{ fontFamily: 'var(--oracleserif)' }}>
                 Be Specific
@@ -344,7 +345,7 @@ export default function DeveloperForumsPage() {
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-purple-100 text-purple-600 rounded-lg flex items-center justify-center mx-auto mb-4 text-2xl">
-                🏷️
+                ️
               </div>
               <h3 className="text-lg font-semibold text-[#161513] mb-2" style={{ fontFamily: 'var(--oracleserif)' }}>
                 Use Tags
@@ -355,7 +356,7 @@ export default function DeveloperForumsPage() {
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-orange-100 text-orange-600 rounded-lg flex items-center justify-center mx-auto mb-4 text-2xl">
-                🤝
+                
               </div>
               <h3 className="text-lg font-semibold text-[#161513] mb-2" style={{ fontFamily: 'var(--oracleserif)' }}>
                 Be Helpful

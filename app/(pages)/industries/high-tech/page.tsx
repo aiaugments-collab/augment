@@ -129,28 +129,28 @@ export default function HighTechPage() {
       description: 'Speed up R&D cycles, product development, and time-to-market with AI-powered innovation acceleration.',
       href: '/resources/innovation-acceleration-study/',
       buttonText: 'View study',
-      icon: '🚀'
+      icon: ''
     },
     {
       title: 'Reduce Development Costs by 40%',
       description: 'Lower development expenses through automated testing, intelligent code generation, and optimized resource allocation.',
       href: '/solutions/software-development-ai/',
       buttonText: 'Learn more',
-      icon: '💰'
+      icon: ''
     },
     {
       title: 'Improve Product Quality by 50%',
       description: 'Enhance product quality with AI-powered testing, predictive quality assurance, and automated defect detection.',
       href: '/solutions/product-development-ai/',
       buttonText: 'Explore quality AI',
-      icon: '✅'
+      icon: ''
     },
     {
       title: 'Increase Market Responsiveness by 70%',
       description: 'Respond faster to market changes with AI-driven market intelligence, customer insights, and trend prediction.',
       href: '/resources/high-tech-roi-calculator/',
       buttonText: 'Calculate impact',
-      icon: '📈'
+      icon: ''
     }
   ];
 
@@ -317,7 +317,7 @@ export default function HighTechPage() {
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
               <div className="text-center">
                 <div className="w-16 h-16 bg-[#C74634] rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl text-white">🔬</span>
+                  <div className="w-8 h-8 bg-white rounded-lg"></div>
                 </div>
                 <h3 className="text-lg font-semibold text-[#161513] mb-2" style={{ fontFamily: 'var(--oraclesans)' }}>
                   Research & Discovery
@@ -328,7 +328,7 @@ export default function HighTechPage() {
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-[#C74634] rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl text-white">⚙️</span>
+                  <div className="w-8 h-8 bg-white rounded-lg"></div>
                 </div>
                 <h3 className="text-lg font-semibold text-[#161513] mb-2" style={{ fontFamily: 'var(--oraclesans)' }}>
                   Development & Design
@@ -339,7 +339,7 @@ export default function HighTechPage() {
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-[#C74634] rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl text-white">🧪</span>
+                  <div className="w-8 h-8 bg-white rounded-lg"></div>
                 </div>
                 <h3 className="text-lg font-semibold text-[#161513] mb-2" style={{ fontFamily: 'var(--oraclesans)' }}>
                   Testing & Validation
@@ -350,7 +350,7 @@ export default function HighTechPage() {
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-[#C74634] rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl text-white">🚀</span>
+                  <div className="w-8 h-8 bg-white rounded-lg"></div>
                 </div>
                 <h3 className="text-lg font-semibold text-[#161513] mb-2" style={{ fontFamily: 'var(--oraclesans)' }}>
                   Launch & Scale

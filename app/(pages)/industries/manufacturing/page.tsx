@@ -129,28 +129,28 @@ export default function ManufacturingPage() {
       description: 'Prevent equipment failures with predictive maintenance and real-time monitoring of manufacturing assets.',
       href: '/resources/manufacturing-roi-calculator/',
       buttonText: 'Calculate savings',
-      icon: '⚡'
+      icon: ''
     },
     {
       title: 'Improve Quality by 95%',
       description: 'Achieve near-perfect quality with AI-powered inspection, defect detection, and process optimization.',
       href: '/solutions/quality-control-ai/',
       buttonText: 'Learn more',
-      icon: '✅'
+      icon: ''
     },
     {
       title: 'Increase Efficiency by 45%',
       description: 'Optimize production workflows, resource allocation, and scheduling with intelligent automation.',
       href: '/solutions/production-optimization/',
       buttonText: 'Explore efficiency',
-      icon: '📈'
+      icon: ''
     },
     {
       title: 'Lower Energy Costs by 30%',
       description: 'Reduce energy consumption and environmental impact through AI-driven optimization and monitoring.',
       href: '/solutions/energy-optimization/',
       buttonText: 'See energy savings',
-      icon: '🌱'
+      icon: ''
     }
   ];
 
@@ -317,7 +317,7 @@ export default function ManufacturingPage() {
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
               <div className="text-center">
                 <div className="w-16 h-16 bg-[#C74634] rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl text-white">🤖</span>
+                  <span className="text-2xl text-white"></span>
                 </div>
                 <h3 className="text-lg font-semibold text-[#161513] mb-2" style={{ fontFamily: 'var(--oraclesans)' }}>
                   IoT Integration
@@ -328,7 +328,7 @@ export default function ManufacturingPage() {
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-[#C74634] rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl text-white">📊</span>
+                  <span className="text-2xl text-white"></span>
                 </div>
                 <h3 className="text-lg font-semibold text-[#161513] mb-2" style={{ fontFamily: 'var(--oraclesans)' }}>
                   Digital Twin
@@ -339,7 +339,7 @@ export default function ManufacturingPage() {
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-[#C74634] rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl text-white">🔄</span>
+                  <span className="text-2xl text-white"></span>
                 </div>
                 <h3 className="text-lg font-semibold text-[#161513] mb-2" style={{ fontFamily: 'var(--oraclesans)' }}>
                   Adaptive Systems
@@ -350,7 +350,7 @@ export default function ManufacturingPage() {
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-[#C74634] rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl text-white">🔗</span>
+                  <span className="text-2xl text-white"></span>
                 </div>
                 <h3 className="text-lg font-semibold text-[#161513] mb-2" style={{ fontFamily: 'var(--oraclesans)' }}>
                   Supply Chain Integration

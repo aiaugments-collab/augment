@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { Shield, Lock, Eye, Users, AlertTriangle, CheckCircle } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Security Practices | Augment AI',
@@ -11,7 +12,7 @@ export default function SecurityPracticesPage() {
     {
       title: 'Data Protection',
       description: 'Comprehensive measures to protect customer and user data at rest and in transit',
-      icon: '🛡️',
+      icon: <Shield className="w-8 h-8" />,
       practices: [
         'End-to-end encryption',
         'Zero-trust architecture',
@@ -22,7 +23,7 @@ export default function SecurityPracticesPage() {
     {
       title: 'Infrastructure Security',
       description: 'Robust security controls across our cloud infrastructure and data centers',
-      icon: '🏗️',
+      icon: '️',
       practices: [
         'Multi-cloud security',
         'Network segmentation',
@@ -33,7 +34,7 @@ export default function SecurityPracticesPage() {
     {
       title: 'Access Control',
       description: 'Strict identity and access management to ensure only authorized access',
-      icon: '🔐',
+      icon: '',
       practices: [
         'Multi-factor authentication',
         'Role-based access control',
@@ -44,7 +45,7 @@ export default function SecurityPracticesPage() {
     {
       title: 'Compliance & Governance',
       description: 'Adherence to industry standards and regulatory requirements',
-      icon: '📋',
+      icon: '',
       practices: [
         'SOC 2 Type II certified',
         'GDPR compliant',
@@ -60,28 +61,28 @@ export default function SecurityPracticesPage() {
       description: 'System and Organization Controls for security, availability, and confidentiality',
       status: 'Certified',
       validUntil: '2024',
-      logo: '🏆'
+      logo: ''
     },
     {
       name: 'ISO 27001',
       description: 'International standard for information security management systems',
       status: 'Aligned',
       validUntil: '2024',
-      logo: '🌐'
+      logo: ''
     },
     {
       name: 'GDPR Compliance',
       description: 'General Data Protection Regulation compliance for EU data protection',
       status: 'Compliant',
       validUntil: 'Ongoing',
-      logo: '🇪🇺'
+      logo: ''
     },
     {
       name: 'CCPA Compliance',
       description: 'California Consumer Privacy Act compliance for data privacy rights',
       status: 'Compliant',
       validUntil: 'Ongoing',
-      logo: '🏛️'
+      logo: '️'
     }
   ];
 
@@ -439,7 +440,7 @@ export default function SecurityPracticesPage() {
             {reports.map((report, index) => (
               <a key={index} href="#" className="group bg-gray-50 p-6 rounded-lg border border-gray-200 hover:shadow-lg hover:border-[#C74634] transition-all duration-200">
                 <div className="w-12 h-12 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mb-4 group-hover:bg-[#C74634] group-hover:text-white transition-colors">
-                  📄
+                  
                 </div>
                 <h3 className="text-lg font-semibold text-[#161513] mb-2" style={{ fontFamily: 'var(--oracleserif)' }}>
                   {report.title}

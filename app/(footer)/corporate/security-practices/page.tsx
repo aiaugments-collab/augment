@@ -144,28 +144,28 @@ export default function SecurityPracticesPage() {
       description: 'Comprehensive security documentation, policies, and best practices for customers.',
       href: '/corporate/security-practices/documentation/',
       buttonText: 'View documentation',
-      icon: '📚'
+      icon: ''
     },
     {
       title: 'Security Assessments',
       description: 'Request security assessments, penetration test reports, and compliance documentation.',
       href: '/corporate/security-practices/assessments/',
       buttonText: 'Request assessment',
-      icon: '🔍'
+      icon: ''
     },
     {
       title: 'Security Training',
       description: 'Security awareness training and best practices for using Augment\'s platform securely.',
       href: '/corporate/security-practices/training/',
       buttonText: 'Access training',
-      icon: '🎓'
+      icon: ''
     },
     {
       title: 'Report Security Issues',
       description: 'Responsible disclosure program for reporting security vulnerabilities and issues.',
       href: '/corporate/security-practices/report-issue/',
       buttonText: 'Report issue',
-      icon: '🚨'
+      icon: ''
     }
   ];
 
@@ -318,23 +318,23 @@ export default function SecurityPracticesPage() {
                 <div className="space-y-4">
                   <div className="flex justify-between items-center">
                     <span className="text-gray-300" style={{ fontFamily: 'var(--oraclesans)' }}>Application Security</span>
-                    <span className="text-green-400 font-semibold">✓ Active</span>
+                    <span className="text-green-400 font-semibold"> Active</span>
                   </div>
                   <div className="flex justify-between items-center">
                     <span className="text-gray-300" style={{ fontFamily: 'var(--oraclesans)' }}>Network Security</span>
-                    <span className="text-green-400 font-semibold">✓ Active</span>
+                    <span className="text-green-400 font-semibold"> Active</span>
                   </div>
                   <div className="flex justify-between items-center">
                     <span className="text-gray-300" style={{ fontFamily: 'var(--oraclesans)' }}>Data Encryption</span>
-                    <span className="text-green-400 font-semibold">✓ Active</span>
+                    <span className="text-green-400 font-semibold"> Active</span>
                   </div>
                   <div className="flex justify-between items-center">
                     <span className="text-gray-300" style={{ fontFamily: 'var(--oraclesans)' }}>Identity Management</span>
-                    <span className="text-green-400 font-semibold">✓ Active</span>
+                    <span className="text-green-400 font-semibold"> Active</span>
                   </div>
                   <div className="flex justify-between items-center">
                     <span className="text-gray-300" style={{ fontFamily: 'var(--oraclesans)' }}>Physical Security</span>
-                    <span className="text-green-400 font-semibold">✓ Active</span>
+                    <span className="text-green-400 font-semibold"> Active</span>
                   </div>
                 </div>
                 <a

@@ -173,7 +173,7 @@ export function ProductResources({ title, tabs, className = "" }: ProductResourc
                           <div className="space-y-3">
                             {/* Section 1 */}
                             <div className="border-l-2 border-blue-200 pl-3">
-                              <h4 className="text-xs font-semibold text-gray-800 mb-1">📚 Quick Start</h4>
+                              <h4 className="text-xs font-semibold text-gray-800 mb-1"> Quick Start</h4>
                               <p className="text-xs text-gray-600 leading-relaxed">
                                 Set up your account and configure basic settings in under 5 minutes.
                               </p>
@@ -181,7 +181,7 @@ export function ProductResources({ title, tabs, className = "" }: ProductResourc
                             
                             {/* Section 2 */}
                             <div className="border-l-2 border-green-200 pl-3">
-                              <h4 className="text-xs font-semibold text-gray-800 mb-1">🚀 Implementation</h4>
+                              <h4 className="text-xs font-semibold text-gray-800 mb-1"> Implementation</h4>
                               <p className="text-xs text-gray-600 leading-relaxed">
                                 Step-by-step implementation guide with best practices and examples.
                               </p>
@@ -189,7 +189,7 @@ export function ProductResources({ title, tabs, className = "" }: ProductResourc
                             
                             {/* Section 3 */}
                             <div className="border-l-2 border-purple-200 pl-3">
-                              <h4 className="text-xs font-semibold text-gray-800 mb-1">📊 Analytics & Reporting</h4>
+                              <h4 className="text-xs font-semibold text-gray-800 mb-1"> Analytics & Reporting</h4>
                               <p className="text-xs text-gray-600 leading-relaxed">
                                 Advanced analytics setup and custom reporting configuration.
                               </p>

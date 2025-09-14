@@ -6,6 +6,7 @@ import {
   CTASection,
   Testimonials
 } from '../../../../components/sections';
+import { Smile } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Retail AI Solutions | Augment',
@@ -129,28 +130,28 @@ export default function RetailPage() {
       description: 'Boost revenue with personalized recommendations, dynamic pricing, and optimized customer experiences.',
       href: '/resources/retail-sales-study/',
       buttonText: 'View study',
-      icon: '📈'
+      icon: ''
     },
     {
       title: 'Reduce Inventory Costs by 25%',
       description: 'Optimize stock levels and reduce waste with AI-powered demand forecasting and inventory management.',
       href: '/solutions/inventory-optimization/',
       buttonText: 'Learn more',
-      icon: '📦'
+      icon: ''
     },
     {
       title: 'Improve Customer Satisfaction by 45%',
       description: 'Enhance customer experiences with personalized service, faster support, and tailored product recommendations.',
       href: '/solutions/retail-personalization/',
       buttonText: 'Explore personalization',
-      icon: '😊'
+      icon: <Smile className="w-6 h-6" />
     },
     {
       title: 'Lower Operational Costs by 30%',
       description: 'Reduce operational expenses through automated processes, optimized logistics, and intelligent resource allocation.',
       href: '/resources/retail-roi-calculator/',
       buttonText: 'Calculate savings',
-      icon: '💰'
+      icon: ''
     }
   ];
 
@@ -317,7 +318,7 @@ export default function RetailPage() {
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
               <div className="text-center">
                 <div className="w-16 h-16 bg-[#C74634] rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl text-white">🛒</span>
+                  <span className="text-2xl text-white"></span>
                 </div>
                 <h3 className="text-lg font-semibold text-[#161513] mb-2" style={{ fontFamily: 'var(--oraclesans)' }}>
                   E-commerce Integration
@@ -328,7 +329,7 @@ export default function RetailPage() {
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-[#C74634] rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl text-white">🏪</span>
+                  <span className="text-2xl text-white"></span>
                 </div>
                 <h3 className="text-lg font-semibold text-[#161513] mb-2" style={{ fontFamily: 'var(--oraclesans)' }}>
                   In-Store Analytics
@@ -339,7 +340,7 @@ export default function RetailPage() {
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-[#C74634] rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl text-white">📱</span>
+                  <span className="text-2xl text-white"></span>
                 </div>
                 <h3 className="text-lg font-semibold text-[#161513] mb-2" style={{ fontFamily: 'var(--oraclesans)' }}>
                   Mobile Commerce
@@ -350,7 +351,7 @@ export default function RetailPage() {
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-[#C74634] rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl text-white">📦</span>
+                  <span className="text-2xl text-white"></span>
                 </div>
                 <h3 className="text-lg font-semibold text-[#161513] mb-2" style={{ fontFamily: 'var(--oraclesans)' }}>
                   Fulfillment Optimization

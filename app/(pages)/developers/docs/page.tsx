@@ -1,22 +1,23 @@
 'use client';
 import { Metadata } from 'next';
 import { useState } from 'react';
+import { Rocket, Lock, MessageCircle, Hash, Settings, Waves, AlertTriangle, Clock, Link, Package } from 'lucide-react';
 
 export default function DeveloperDocsPage() {
   const [searchQuery, setSearchQuery] = useState('');
   const [activeSection, setActiveSection] = useState('getting-started');
 
   const docSections = [
-    { id: 'getting-started', title: 'Getting Started', icon: '🚀' },
-    { id: 'authentication', title: 'Authentication', icon: '🔐' },
-    { id: 'chat-api', title: 'Chat API', icon: '💬' },
-    { id: 'embeddings', title: 'Embeddings', icon: '🔢' },
-    { id: 'fine-tuning', title: 'Fine-tuning', icon: '⚙️' },
-    { id: 'streaming', title: 'Streaming', icon: '🌊' },
-    { id: 'error-handling', title: 'Error Handling', icon: '⚠️' },
-    { id: 'rate-limits', title: 'Rate Limits', icon: '⏱️' },
-    { id: 'webhooks', title: 'Webhooks', icon: '🔗' },
-    { id: 'sdks', title: 'SDKs & Libraries', icon: '📦' }
+    { id: 'getting-started', title: 'Getting Started', icon: <Rocket className="w-5 h-5" /> },
+    { id: 'authentication', title: 'Authentication', icon: <Lock className="w-5 h-5" /> },
+    { id: 'chat-api', title: 'Chat API', icon: <MessageCircle className="w-5 h-5" /> },
+    { id: 'embeddings', title: 'Embeddings', icon: <Hash className="w-5 h-5" /> },
+    { id: 'fine-tuning', title: 'Fine-tuning', icon: <Settings className="w-5 h-5" /> },
+    { id: 'streaming', title: 'Streaming', icon: <Waves className="w-5 h-5" /> },
+    { id: 'error-handling', title: 'Error Handling', icon: <AlertTriangle className="w-5 h-5" /> },
+    { id: 'rate-limits', title: 'Rate Limits', icon: <Clock className="w-5 h-5" /> },
+    { id: 'webhooks', title: 'Webhooks', icon: <Link className="w-5 h-5" /> },
+    { id: 'sdks', title: 'SDKs & Libraries', icon: <Package className="w-5 h-5" /> }
   ];
 
   const popularDocs = [
@@ -212,7 +213,7 @@ export default function DeveloperDocsPage() {
                       update.type === 'update' ? 'bg-blue-100 text-blue-600' :
                       'bg-purple-100 text-purple-600'
                     }`}>
-                      {update.type === 'feature' ? '✨' : update.type === 'update' ? '🔄' : '📦'}
+                      {update.type === 'feature' ? '' : update.type === 'update' ? '' : ''}
                     </div>
                     <div className="flex-1">
                       <h4 className="font-medium text-[#161513]" style={{ fontFamily: 'var(--oraclesans)' }}>

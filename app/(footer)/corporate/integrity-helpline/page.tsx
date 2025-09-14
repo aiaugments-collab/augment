@@ -80,28 +80,28 @@ export default function IntegrityHelplinePage() {
       description: 'Conflicts of interest, bribery, corruption, or violations of our code of conduct.',
       href: '/corporate/ethics-code/',
       buttonText: 'View ethics code',
-      icon: '⚖️'
+      icon: '️'
     },
     {
       title: 'Legal & Compliance Issues',
       description: 'Regulatory violations, legal misconduct, or non-compliance with laws and regulations.',
       href: '/corporate/compliance/',
       buttonText: 'Learn about compliance',
-      icon: '📋'
+      icon: ''
     },
     {
       title: 'Workplace Misconduct',
       description: 'Harassment, discrimination, workplace safety issues, or hostile work environment.',
       href: '/corporate/workplace-policies/',
       buttonText: 'View policies',
-      icon: '🏢'
+      icon: ''
     },
     {
       title: 'Financial Irregularities',
       description: 'Accounting fraud, financial misstatement, or misuse of company resources.',
       href: '/corporate/financial-policies/',
       buttonText: 'Financial policies',
-      icon: '💰'
+      icon: ''
     }
   ];
 
@@ -145,7 +145,7 @@ export default function IntegrityHelplinePage() {
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
               <div className="text-center">
                 <div className="w-16 h-16 bg-[#C74634] rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl text-white">🔒</span>
+                  <span className="text-2xl text-white"></span>
                 </div>
                 <h3 className="text-lg font-semibold text-[#161513] mb-3" style={{ fontFamily: 'var(--oraclesans)' }}>
                   Confidentiality
@@ -156,7 +156,7 @@ export default function IntegrityHelplinePage() {
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-[#C74634] rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl text-white">🛡️</span>
+                  <span className="text-2xl text-white">️</span>
                 </div>
                 <h3 className="text-lg font-semibold text-[#161513] mb-3" style={{ fontFamily: 'var(--oraclesans)' }}>
                   No Retaliation
@@ -167,7 +167,7 @@ export default function IntegrityHelplinePage() {
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-[#C74634] rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl text-white">🔍</span>
+                  <span className="text-2xl text-white"></span>
                 </div>
                 <h3 className="text-lg font-semibold text-[#161513] mb-3" style={{ fontFamily: 'var(--oraclesans)' }}>
                   Thorough Investigation
@@ -178,7 +178,7 @@ export default function IntegrityHelplinePage() {
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-[#C74634] rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl text-white">📞</span>
+                  <span className="text-2xl text-white"></span>
                 </div>
                 <h3 className="text-lg font-semibold text-[#161513] mb-3" style={{ fontFamily: 'var(--oraclesans)' }}>
                   24/7 Availability
@@ -213,7 +213,7 @@ export default function IntegrityHelplinePage() {
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               <div className="text-center">
-                <div className="text-3xl mb-4">📞</div>
+                <div className="text-3xl mb-4"></div>
                 <h3 className="text-lg font-semibold text-white mb-2" style={{ fontFamily: 'var(--oraclesans)' }}>
                   Phone Helpline
                 </h3>
@@ -225,7 +225,7 @@ export default function IntegrityHelplinePage() {
                 </p>
               </div>
               <div className="text-center">
-                <div className="text-3xl mb-4">🌐</div>
+                <div className="text-3xl mb-4"></div>
                 <h3 className="text-lg font-semibold text-white mb-2" style={{ fontFamily: 'var(--oraclesans)' }}>
                   Online Portal
                 </h3>
@@ -237,7 +237,7 @@ export default function IntegrityHelplinePage() {
                 </p>
               </div>
               <div className="text-center">
-                <div className="text-3xl mb-4">✉️</div>
+                <div className="text-3xl mb-4">️</div>
                 <h3 className="text-lg font-semibold text-white mb-2" style={{ fontFamily: 'var(--oraclesans)' }}>
                   Email
                 </h3>

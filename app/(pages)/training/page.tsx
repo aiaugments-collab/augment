@@ -151,28 +151,28 @@ export default function TrainingPage() {
       description: 'Earn certifications that are recognized by leading organizations and validate your AI expertise.',
       href: '/training/certifications/',
       buttonText: 'View certifications',
-      icon: '🏆'
+      icon: ''
     },
     {
       title: 'Hands-On Learning Experience',
       description: 'Learn through practical projects, real-world case studies, and interactive coding exercises.',
       href: '/training/hands-on/',
       buttonText: 'Try hands-on labs',
-      icon: '💻'
+      icon: ''
     },
     {
       title: 'Expert Instructor Network',
       description: 'Learn from industry experts, AI researchers, and practitioners with real-world experience.',
       href: '/training/instructors/',
       buttonText: 'Meet instructors',
-      icon: '👨‍🏫'
+      icon: '‍'
     },
     {
       title: 'Flexible Learning Options',
       description: 'Choose from self-paced online courses, live virtual sessions, or in-person workshops.',
       href: '/training/formats/',
       buttonText: 'Explore formats',
-      icon: '📚'
+      icon: ''
     }
   ];
 
@@ -300,7 +300,7 @@ export default function TrainingPage() {
             
             {isSubmitted ? (
               <div className="bg-green-50 border border-green-200 rounded-lg p-8 text-center">
-                <div className="text-green-600 text-4xl mb-4">✓</div>
+                <div className="text-green-600 text-4xl mb-4"></div>
                 <h3 className="text-xl font-semibold text-green-800 mb-2" style={{ fontFamily: 'var(--oracleserif)' }}>
                   Enrollment Request Submitted!
                 </h3>

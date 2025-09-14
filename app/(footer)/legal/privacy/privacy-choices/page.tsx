@@ -79,28 +79,28 @@ export default function PrivacyChoicesPage() {
       description: 'Request a copy of the personal information we have collected about you in the past 12 months.',
       href: '/legal/privacy/data-requests/#access',
       buttonText: 'Request access',
-      icon: '📄'
+      icon: ''
     },
     {
       title: 'Delete Your Data',
       description: 'Request that we delete your personal information, subject to certain legal exceptions.',
       href: '/legal/privacy/data-requests/#delete',
       buttonText: 'Request deletion',
-      icon: '🗑️'
+      icon: '️'
     },
     {
       title: 'Correct Your Data',
       description: 'Request that we correct inaccurate personal information we maintain about you.',
       href: '/legal/privacy/data-requests/#correct',
       buttonText: 'Request correction',
-      icon: '✏️'
+      icon: '️'
     },
     {
       title: 'Data Portability',
       description: 'Request a copy of your personal information in a structured, commonly used format.',
       href: '/legal/privacy/data-requests/#portability',
       buttonText: 'Request export',
-      icon: '📦'
+      icon: ''
     }
   ];
 
@@ -145,7 +145,7 @@ export default function PrivacyChoicesPage() {
               <div className="bg-gray-50 p-6 rounded-lg">
                 <div className="flex items-center mb-4">
                   <div className="w-12 h-12 bg-[#C74634] rounded-full flex items-center justify-center mr-4">
-                    <span className="text-xl text-white">🚫</span>
+                    <span className="text-xl text-white"></span>
                   </div>
                   <h3 className="text-lg font-semibold text-[#161513]" style={{ fontFamily: 'var(--oraclesans)' }}>
                     Do Not Sell My Personal Information
@@ -161,7 +161,7 @@ export default function PrivacyChoicesPage() {
               <div className="bg-gray-50 p-6 rounded-lg">
                 <div className="flex items-center mb-4">
                   <div className="w-12 h-12 bg-[#C74634] rounded-full flex items-center justify-center mr-4">
-                    <span className="text-xl text-white">📧</span>
+                    <span className="text-xl text-white"></span>
                   </div>
                   <h3 className="text-lg font-semibold text-[#161513]" style={{ fontFamily: 'var(--oraclesans)' }}>
                     Unsubscribe from Marketing

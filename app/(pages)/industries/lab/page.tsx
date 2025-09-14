@@ -128,28 +128,28 @@ export default function IndustryLabPage() {
       description: 'Get first access to breakthrough AI technologies and research findings before they become commercially available.',
       href: '/industries/lab/early-access/',
       buttonText: 'Learn more',
-      icon: '🚀'
+      icon: ''
     },
     {
       title: 'Collaborative Research Opportunities',
       description: 'Work directly with Augment researchers on projects that align with your industry needs and strategic objectives.',
       href: '/industries/lab/collaboration/',
       buttonText: 'Start collaboration',
-      icon: '🤝'
+      icon: ''
     },
     {
       title: 'Custom AI Development',
       description: 'Access specialized AI development resources for unique industry challenges and experimental applications.',
       href: '/industries/lab/custom-development/',
       buttonText: 'Explore development',
-      icon: '⚙️'
+      icon: '️'
     },
     {
       title: 'Industry Networking',
       description: 'Connect with other industry leaders, researchers, and innovators working on similar AI challenges and opportunities.',
       href: '/industries/lab/networking/',
       buttonText: 'Join network',
-      icon: '🌐'
+      icon: ''
     }
   ];
 

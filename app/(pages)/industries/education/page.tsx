@@ -129,14 +129,14 @@ export default function EducationPage() {
       description: 'Enhance learning effectiveness with personalized instruction, adaptive assessments, and intelligent tutoring systems.',
       href: '/resources/education-outcomes-study/',
       buttonText: 'View study',
-      icon: '🎓'
+      icon: ''
     },
     {
       title: 'Increase Retention Rates by 25%',
       description: 'Identify at-risk students early and implement targeted interventions to improve retention and graduation rates.',
       href: '/solutions/student-success-ai/',
       buttonText: 'Learn more',
-      icon: '📈'
+      icon: ''
     },
     {
       title: 'Reduce Administrative Time by 50%',
@@ -150,7 +150,7 @@ export default function EducationPage() {
       description: 'Optimize resource allocation, energy usage, and facility management through intelligent campus operations.',
       href: '/resources/education-roi-calculator/',
       buttonText: 'Calculate savings',
-      icon: '💰'
+      icon: ''
     }
   ];
 

@@ -152,28 +152,28 @@ export default function SupportPage() {
       description: 'Email support with 24-hour response time for all customers. Access to knowledge base and community forums.',
       href: '/support/standard/',
       buttonText: 'Learn more',
-      icon: '📧'
+      icon: ''
     },
     {
       title: 'Premium Support',
       description: 'Priority support with 4-hour response time, live chat, and phone support during business hours.',
       href: '/support/premium/',
       buttonText: 'Upgrade now',
-      icon: '⚡'
+      icon: ''
     },
     {
       title: 'Enterprise Support',
       description: 'Dedicated support team, 1-hour response time, 24/7 phone support, and dedicated account manager.',
       href: '/support/enterprise/',
       buttonText: 'Contact sales',
-      icon: '🏢'
+      icon: ''
     },
     {
       title: 'Developer Support',
       description: 'Technical support for developers with code reviews, architecture guidance, and implementation assistance.',
       href: '/support/developer/',
       buttonText: 'Get dev support',
-      icon: '👨‍💻'
+      icon: '‍'
     }
   ];
 
@@ -301,7 +301,7 @@ export default function SupportPage() {
             
             {isSubmitted ? (
               <div className="bg-green-50 border border-green-200 rounded-lg p-8 text-center">
-                <div className="text-green-600 text-4xl mb-4">✓</div>
+                <div className="text-green-600 text-4xl mb-4"></div>
                 <h3 className="text-xl font-semibold text-green-800 mb-2" style={{ fontFamily: 'var(--oracleserif)' }}>
                   Support Request Submitted!
                 </h3>

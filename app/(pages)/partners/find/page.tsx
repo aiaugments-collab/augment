@@ -132,28 +132,28 @@ export default function FindPartnerPage() {
       description: 'Let our team help you find the perfect partner based on your specific requirements and project needs.',
       href: '#',
       buttonText: 'Request matching',
-      icon: '🎯'
+      icon: ''
     },
     {
       title: 'Partner Evaluation Support',
       description: 'Get guidance on evaluating potential partners and making the right selection for your project.',
       href: '#',
       buttonText: 'Evaluation support',
-      icon: '📋'
+      icon: ''
     },
     {
       title: 'RFP Template Library',
       description: 'Access our library of RFP templates specifically designed for AI implementation projects.',
       href: '#',
       buttonText: 'RFP templates',
-      icon: '📄'
+      icon: ''
     },
     {
       title: 'Partner Performance Reviews',
       description: 'Read verified reviews and performance ratings from other customers who have worked with partners.',
       href: '#',
       buttonText: 'Read reviews',
-      icon: '⭐'
+      icon: ''
     }
   ];
 
@@ -400,25 +400,27 @@ export default function FindPartnerPage() {
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               <div className="bg-gray-50 p-6 rounded-lg text-center">
-                <div className="text-[#C74634] text-3xl mb-3">🏥</div>
+                <div className="text-[#C74634] text-3xl mb-3"></div>
                 <h3 className="font-semibold text-[#161513] mb-2" style={{ fontFamily: 'var(--oracleserif)' }}>Healthcare Partners</h3>
                 <p className="text-sm text-gray-700 mb-3" style={{ fontFamily: 'var(--oraclesans)' }}>120+ certified healthcare AI specialists</p>
                 <a href="#" className="text-[#C74634] hover:text-[#A63429] text-sm font-medium">View healthcare partners →</a>
               </div>
               <div className="bg-gray-50 p-6 rounded-lg text-center">
-                <div className="text-[#C74634] text-3xl mb-3">🏦</div>
+                <div className="text-[#C74634] text-3xl mb-3"></div>
                 <h3 className="font-semibold text-[#161513] mb-2" style={{ fontFamily: 'var(--oracleserif)' }}>Financial Partners</h3>
                 <p className="text-sm text-gray-700 mb-3" style={{ fontFamily: 'var(--oraclesans)' }}>95+ fintech and banking specialists</p>
                 <a href="#" className="text-[#C74634] hover:text-[#A63429] text-sm font-medium">View financial partners →</a>
               </div>
               <div className="bg-gray-50 p-6 rounded-lg text-center">
-                <div className="text-[#C74634] text-3xl mb-3">🏭</div>
+                <div className="text-[#C74634] text-3xl mb-3"></div>
                 <h3 className="font-semibold text-[#161513] mb-2" style={{ fontFamily: 'var(--oracleserif)' }}>Manufacturing Partners</h3>
                 <p className="text-sm text-gray-700 mb-3" style={{ fontFamily: 'var(--oraclesans)' }}>85+ industrial AI implementation experts</p>
                 <a href="#" className="text-[#C74634] hover:text-[#A63429] text-sm font-medium">View manufacturing partners →</a>
               </div>
               <div className="bg-gray-50 p-6 rounded-lg text-center">
-                <div className="text-[#C74634] text-3xl mb-3">🛒</div>
+                <div className="w-12 h-12 bg-[#C74634] rounded-lg flex items-center justify-center mx-auto mb-3">
+                  <div className="w-6 h-6 bg-white rounded"></div>
+                </div>
                 <h3 className="font-semibold text-[#161513] mb-2" style={{ fontFamily: 'var(--oracleserif)' }}>Retail Partners</h3>
                 <p className="text-sm text-gray-700 mb-3" style={{ fontFamily: 'var(--oraclesans)' }}>70+ e-commerce and retail AI experts</p>
                 <a href="#" className="text-[#C74634] hover:text-[#A63429] text-sm font-medium">View retail partners →</a>

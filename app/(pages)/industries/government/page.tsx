@@ -129,28 +129,28 @@ export default function GovernmentPage() {
       description: 'Enhance citizen satisfaction with faster response times, automated services, and streamlined government processes.',
       href: '/resources/government-service-study/',
       buttonText: 'View study',
-      icon: '🏛️'
+      icon: '️'
     },
     {
       title: 'Reduce Processing Time by 70%',
       description: 'Accelerate document processing, permit approvals, and administrative tasks through intelligent automation.',
       href: '/solutions/government-document-ai/',
       buttonText: 'Learn more',
-      icon: '⚡'
+      icon: ''
     },
     {
       title: 'Increase Compliance by 95%',
       description: 'Ensure regulatory adherence with automated monitoring, reporting, and compliance management systems.',
       href: '/solutions/government-compliance/',
       buttonText: 'Explore compliance',
-      icon: '✅'
+      icon: ''
     },
     {
       title: 'Lower Operational Costs by 40%',
       description: 'Reduce operational expenses through process automation, resource optimization, and intelligent decision-making.',
       href: '/resources/government-roi-calculator/',
       buttonText: 'Calculate savings',
-      icon: '💰'
+      icon: ''
     }
   ];
 

@@ -128,28 +128,28 @@ export default function TechnologyPartnersPage() {
       description: 'Comprehensive technical resources, documentation, SDKs, and dedicated engineering support.',
       href: '#',
       buttonText: 'Technical resources',
-      icon: '🔧'
+      icon: ''
     },
     {
       title: 'Joint Go-to-Market',
       description: 'Collaborative marketing and sales programs to promote integrated solutions to mutual customers.',
       href: '#',
       buttonText: 'GTM programs',
-      icon: '🚀'
+      icon: ''
     },
     {
       title: 'Certification Programs',
       description: 'Technical certification programs to validate integration expertise and quality standards.',
       href: '#',
       buttonText: 'Get certified',
-      icon: '🎓'
+      icon: ''
     },
     {
       title: 'Revenue Opportunities',
       description: 'Multiple revenue models including referral fees, revenue sharing, and joint solution sales.',
       href: '#',
       buttonText: 'Revenue models',
-      icon: '💰'
+      icon: ''
     }
   ];
 
@@ -342,7 +342,7 @@ export default function TechnologyPartnersPage() {
             </div>
             <div className="grid md:grid-cols-2 gap-8">
               <div className="bg-gray-50 p-8 rounded-lg text-center">
-                <div className="text-[#C74634] text-4xl mb-4">🔧</div>
+                <div className="text-[#C74634] text-4xl mb-4"></div>
                 <h3 className="text-xl font-semibold text-[#161513] mb-4" style={{ fontFamily: 'var(--oracleserif)' }}>
                   Technical Integration
                 </h3>
@@ -358,7 +358,7 @@ export default function TechnologyPartnersPage() {
                 </a>
               </div>
               <div className="bg-gray-50 p-8 rounded-lg text-center">
-                <div className="text-[#C74634] text-4xl mb-4">🤝</div>
+                <div className="text-[#C74634] text-4xl mb-4"></div>
                 <h3 className="text-xl font-semibold text-[#161513] mb-4" style={{ fontFamily: 'var(--oracleserif)' }}>
                   Partnership Application
                 </h3>

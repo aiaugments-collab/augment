@@ -166,28 +166,28 @@ export default function CertificationPage() {
               
               <div className="space-y-6">
                 <div className="bg-blue-50 p-6 rounded-lg">
-                  <h3 className="font-semibold text-blue-900 mb-2">🎓 Comprehensive Curriculum</h3>
+                  <h3 className="font-semibold text-blue-900 mb-2"> Comprehensive Curriculum</h3>
                   <p className="text-blue-800 text-sm">
                     Master AI fundamentals, machine learning, and practical implementation across 12 comprehensive modules.
                   </p>
                 </div>
                 
                 <div className="bg-green-50 p-6 rounded-lg">
-                  <h3 className="font-semibold text-green-900 mb-2">🏆 Industry Recognition</h3>
+                  <h3 className="font-semibold text-green-900 mb-2"> Industry Recognition</h3>
                   <p className="text-green-800 text-sm">
                     Earn a certificate recognized by leading technology companies and boost your career prospects.
                   </p>
                 </div>
                 
                 <div className="bg-purple-50 p-6 rounded-lg">
-                  <h3 className="font-semibold text-purple-900 mb-2">🔬 Hands-on Labs</h3>
+                  <h3 className="font-semibold text-purple-900 mb-2"> Hands-on Labs</h3>
                   <p className="text-purple-800 text-sm">
                     Practice with real AI tools and build projects using Augment's platform in guided lab environments.
                   </p>
                 </div>
                 
                 <div className="bg-orange-50 p-6 rounded-lg">
-                  <h3 className="font-semibold text-orange-900 mb-2">👥 Expert Support</h3>
+                  <h3 className="font-semibold text-orange-900 mb-2"> Expert Support</h3>
                   <p className="text-orange-800 text-sm">
                     Get guidance from AI practitioners and join a community of learners and professionals.
                   </p>

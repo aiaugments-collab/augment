@@ -128,28 +128,28 @@ export default function ConsultingPartnersPage() {
       description: 'Access to qualified leads, joint sales opportunities, and co-marketing programs to grow your consulting practice.',
       href: '#',
       buttonText: 'Business development',
-      icon: '📈'
+      icon: ''
     },
     {
       title: 'Technical Enablement',
       description: 'Comprehensive training on Augment AI platform, certification programs, and ongoing technical support.',
       href: '#',
       buttonText: 'Get enabled',
-      icon: '🎓'
+      icon: ''
     },
     {
       title: 'Thought Leadership',
       description: 'Opportunities to co-author content, speak at events, and establish your firm as an AI thought leader.',
       href: '#',
       buttonText: 'Thought leadership',
-      icon: '💡'
+      icon: ''
     },
     {
       title: 'Competitive Differentiation',
       description: 'Differentiate your consulting services with cutting-edge AI capabilities and proven methodologies.',
       href: '#',
       buttonText: 'Differentiate',
-      icon: '⭐'
+      icon: ''
     }
   ];
 
@@ -342,7 +342,7 @@ export default function ConsultingPartnersPage() {
             </div>
             <div className="grid md:grid-cols-2 gap-8">
               <div className="bg-gray-50 p-8 rounded-lg text-center">
-                <div className="text-[#C74634] text-4xl mb-4">📊</div>
+                <div className="text-[#C74634] text-4xl mb-4"></div>
                 <h3 className="text-xl font-semibold text-[#161513] mb-4" style={{ fontFamily: 'var(--oracleserif)' }}>
                   Consulting Methodologies
                 </h3>
@@ -358,7 +358,7 @@ export default function ConsultingPartnersPage() {
                 </a>
               </div>
               <div className="bg-gray-50 p-8 rounded-lg text-center">
-                <div className="text-[#C74634] text-4xl mb-4">🤝</div>
+                <div className="text-[#C74634] text-4xl mb-4"></div>
                 <h3 className="text-xl font-semibold text-[#161513] mb-4" style={{ fontFamily: 'var(--oracleserif)' }}>
                   Partnership Application
                 </h3>

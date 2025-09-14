@@ -3,12 +3,12 @@
 ## Overview
 This project now includes a complete Firebase authentication system with the following features:
 
-## 🔥 Firebase Configuration
+##  Firebase Configuration
 - **Firebase SDK**: v12.2.1 installed and configured
 - **Services**: Authentication, Firestore, and Analytics
 - **Configuration**: Hardcoded Firebase config as requested (no environment variables)
 
-## 🔐 Authentication Features
+##  Authentication Features
 
 ### User Registration & Login
 - **Email/Password Authentication**: Complete signup and signin flows
@@ -28,7 +28,7 @@ This project now includes a complete Firebase authentication system with the fol
 - User data synchronization with Firestore
 - Loading states and error handling
 
-## 🛣️ Routes
+## ️ Routes
 
 ### Public Routes
 - `/auth/login` - User login page
@@ -38,14 +38,14 @@ This project now includes a complete Firebase authentication system with the fol
 - `/dashboard` - User dashboard (requires authentication)
 - `/profile` - User profile settings (requires authentication)
 
-## 🎨 UI/UX Features
+##  UI/UX Features
 - **Responsive Design**: Works on desktop and mobile
 - **Loading States**: Smooth loading indicators
 - **Error Handling**: User-friendly error messages
 - **Professional Styling**: Clean, Oracle-inspired design
 - **Dropdown Menus**: Elegant user profile dropdown
 
-## 🔧 Technical Implementation
+##  Technical Implementation
 
 ### Firebase Services Used
 ```typescript
@@ -71,7 +71,7 @@ import { getAnalytics } from 'firebase/analytics';
 - Real-time authentication state monitoring
 - Persistent login sessions
 
-## 🚀 Getting Started
+##  Getting Started
 
 1. **Install Dependencies**:
    ```bash
@@ -88,19 +88,19 @@ import { getAnalytics } from 'firebase/analytics';
    - Visit `/auth/login` to sign in
    - Access `/dashboard` to see protected content
 
-## 🔒 Security Features
+##  Security Features
 - Client-side route protection
 - Middleware integration for protected routes
 - Secure Firebase configuration
 - User session management
 - Automatic token refresh
 
-## 📱 Mobile Support
+##  Mobile Support
 - Responsive authentication forms
 - Mobile-optimized user profile dropdown
 - Touch-friendly interface elements
 
-## 🎯 Next Steps
+##  Next Steps
 - Add password reset functionality
 - Implement email verification
 - Add two-factor authentication

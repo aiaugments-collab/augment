@@ -5,6 +5,7 @@ import {
   InfoColumns, 
   CTASection
 } from '../../../components/sections';
+import { Rocket } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Augment Research | AI & Automation Research Solutions',
@@ -117,7 +118,7 @@ export default function ResearchPage() {
       description: 'Anomaly detection, forecasting, natural language processing, computer vision, and machine learning services.',
       buttonText: 'View AI services',
       href: '/research/services/ai/',
-      icon: '🤖'
+      icon: ''
     },
     {
       id: 'compute-services',
@@ -125,7 +126,7 @@ export default function ResearchPage() {
       description: 'GPU-accelerated compute, HPC clusters, virtual machines, and containerized research environments.',
       buttonText: 'Explore compute',
       href: '/research/services/compute/',
-      icon: '💻'
+      icon: ''
     },
     {
       id: 'data-services',
@@ -133,7 +134,7 @@ export default function ResearchPage() {
       description: 'Secure data storage, data lakes, real-world data access, and research data management solutions.',
       buttonText: 'Learn about data',
       href: '/research/services/data/',
-      icon: '📊'
+      icon: ''
     },
     {
       id: 'collaboration-tools',
@@ -141,7 +142,7 @@ export default function ResearchPage() {
       description: 'Research collaboration tools, project management, and knowledge sharing platforms for teams.',
       buttonText: 'Try collaboration',
       href: '/research/services/collaboration/',
-      icon: '👥'
+      icon: ''
     }
   ];
 
@@ -180,14 +181,14 @@ export default function ResearchPage() {
       description: 'Get started with Augment\'s research platform and access cutting-edge AI tools.',
       href: '/research/get-started/',
       buttonText: 'Get started',
-      icon: '🚀'
+      icon: <Rocket className="w-6 h-6" />
     },
     {
       title: 'Request Research Consultation',
       description: 'Speak with our research experts about your specific needs and requirements.',
       href: '/research/consultation/',
       buttonText: 'Schedule consultation',
-      icon: '💬'
+      icon: ''
     }
   ];
 
@@ -306,7 +307,7 @@ export default function ResearchPage() {
             <div className="grid md:grid-cols-3 gap-8">
               <div className="text-center">
                 <div className="w-16 h-16 bg-[#C74634] rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl text-white">📚</span>
+                  <span className="text-2xl text-white"></span>
                 </div>
                 <h3 className="text-lg font-semibold text-[#161513] mb-3" style={{ fontFamily: 'var(--oraclesans)' }}>
                   Documentation & Tutorials
@@ -324,7 +325,7 @@ export default function ResearchPage() {
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-[#C74634] rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl text-white">🧪</span>
+                  <span className="text-2xl text-white"></span>
                 </div>
                 <h3 className="text-lg font-semibold text-[#161513] mb-3" style={{ fontFamily: 'var(--oraclesans)' }}>
                   Research Labs & Training
@@ -342,7 +343,7 @@ export default function ResearchPage() {
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-[#C74634] rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl text-white">🤝</span>
+                  <span className="text-2xl text-white"></span>
                 </div>
                 <h3 className="text-lg font-semibold text-[#161513] mb-3" style={{ fontFamily: 'var(--oraclesans)' }}>
                   Research Community

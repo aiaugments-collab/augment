@@ -18,7 +18,7 @@ export default function DiversityInclusionPage() {
     {
       title: 'Inclusive Hiring Practices',
       description: 'Structured processes to eliminate bias and ensure fair evaluation of all candidates',
-      icon: '🎯',
+      icon: '',
       programs: [
         'Blind resume screening',
         'Diverse interview panels',
@@ -29,7 +29,7 @@ export default function DiversityInclusionPage() {
     {
       title: 'Employee Resource Groups',
       description: 'Employee-led communities fostering belonging and professional development',
-      icon: '🤝',
+      icon: '',
       programs: [
         'Women in AI Network',
         'Black & Latinx Professionals',
@@ -40,7 +40,7 @@ export default function DiversityInclusionPage() {
     {
       title: 'Inclusive AI Development',
       description: 'Building AI systems that work fairly for all demographics and communities',
-      icon: '⚖️',
+      icon: '️',
       programs: [
         'Bias testing frameworks',
         'Diverse training datasets',
@@ -51,7 +51,7 @@ export default function DiversityInclusionPage() {
     {
       title: 'Education & Outreach',
       description: 'Programs to increase diversity in AI and technology fields',
-      icon: '📚',
+      icon: '',
       programs: [
         'Coding bootcamp scholarships',
         'University partnerships',
@@ -394,7 +394,7 @@ export default function DiversityInclusionPage() {
             {awards.map((award, index) => (
               <div key={index} className="text-center">
                 <div className="w-16 h-16 bg-[#C74634] text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">
-                  🏆
+                  
                 </div>
                 <h3 className="text-lg font-semibold text-[#161513] mb-2" style={{ fontFamily: 'var(--oracleserif)' }}>
                   {award.title}
@@ -429,7 +429,7 @@ export default function DiversityInclusionPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
               <div className="w-16 h-16 bg-[#C74634] text-white rounded-lg flex items-center justify-center mx-auto mb-4 text-2xl">
-                👩‍💻
+                ‍
               </div>
               <h3 className="text-lg font-semibold text-white mb-2" style={{ fontFamily: 'var(--oracleserif)' }}>
                 Women in AI Network
@@ -440,7 +440,7 @@ export default function DiversityInclusionPage() {
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-[#C74634] text-white rounded-lg flex items-center justify-center mx-auto mb-4 text-2xl">
-                ✊
+                
               </div>
               <h3 className="text-lg font-semibold text-white mb-2" style={{ fontFamily: 'var(--oracleserif)' }}>
                 Black & Latinx Professionals
@@ -451,7 +451,7 @@ export default function DiversityInclusionPage() {
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-[#C74634] text-white rounded-lg flex items-center justify-center mx-auto mb-4 text-2xl">
-                🏳️‍🌈
+                ️‍
               </div>
               <h3 className="text-lg font-semibold text-white mb-2" style={{ fontFamily: 'var(--oracleserif)' }}>
                 LGBTQ+ Alliance
@@ -462,7 +462,7 @@ export default function DiversityInclusionPage() {
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-[#C74634] text-white rounded-lg flex items-center justify-center mx-auto mb-4 text-2xl">
-                🎖️
+                ️
               </div>
               <h3 className="text-lg font-semibold text-white mb-2" style={{ fontFamily: 'var(--oracleserif)' }}>
                 Veterans Network

@@ -160,28 +160,28 @@ export default function StartupProgramPage() {
       description: 'From startup program to $1B valuation - how one healthtech startup scaled with Augment AI support.',
       href: '/startup/success-stories/healthtech-unicorn/',
       buttonText: 'Read success story',
-      icon: '🦄'
+      icon: ''
     },
     {
       title: 'FinTech IPO Journey',
       description: 'A fintech startup that went from program participant to successful IPO in just 4 years.',
       href: '/startup/success-stories/fintech-ipo/',
       buttonText: 'IPO journey',
-      icon: '📈'
+      icon: ''
     },
     {
       title: 'AI Research Breakthrough',
       description: 'How an AI research startup achieved breakthrough results and secured major enterprise partnerships.',
       href: '/startup/success-stories/ai-research/',
       buttonText: 'Research breakthrough',
-      icon: '🔬'
+      icon: ''
     },
     {
       title: 'Global Expansion Success',
       description: 'International startup that successfully expanded to 15 countries with program support.',
       href: '/startup/success-stories/global-expansion/',
       buttonText: 'Expansion story',
-      icon: '🌍'
+      icon: ''
     }
   ];
 
@@ -375,7 +375,7 @@ export default function StartupProgramPage() {
             
             {isSubmitted ? (
               <div className="bg-green-50 border border-green-200 rounded-lg p-8 text-center">
-                <div className="text-green-600 text-4xl mb-4">✓</div>
+                <div className="text-green-600 text-4xl mb-4"></div>
                 <h3 className="text-xl font-semibold text-green-800 mb-2" style={{ fontFamily: 'var(--oracleserif)' }}>
                   Application Submitted Successfully!
                 </h3>

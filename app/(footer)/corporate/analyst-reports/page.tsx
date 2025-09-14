@@ -144,28 +144,28 @@ export default function AnalystReportsPage() {
       description: 'Access complete analyst reports with detailed analysis and recommendations.',
       href: '/corporate/analyst-reports/downloads/',
       buttonText: 'Browse downloads',
-      icon: '📄'
+      icon: ''
     },
     {
       title: 'Request Custom Analysis',
       description: 'Get customized analyst insights tailored to your specific business needs.',
       href: '/corporate/analyst-reports/custom-analysis/',
       buttonText: 'Request analysis',
-      icon: '📊'
+      icon: ''
     },
     {
       title: 'Analyst Briefings',
       description: 'Schedule briefings with industry analysts to discuss market trends and insights.',
       href: '/corporate/analyst-reports/briefings/',
       buttonText: 'Schedule briefing',
-      icon: '🎯'
+      icon: ''
     },
     {
       title: 'Market Research',
       description: 'Access comprehensive market research and competitive analysis reports.',
       href: '/corporate/analyst-reports/market-research/',
       buttonText: 'View research',
-      icon: '📈'
+      icon: ''
     }
   ];
 

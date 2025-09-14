@@ -110,14 +110,14 @@ export default function AutomationSummitPage() {
       description: 'March 15-17, 2025 | San Francisco Convention Center | Virtual attendance available',
       href: '/automation-summit/venue/',
       buttonText: 'View venue details',
-      icon: '📍'
+      icon: ''
     },
     {
       title: 'Registration',
       description: 'Early bird pricing available until February 1st. Group discounts for teams of 5 or more.',
       href: 'https://events.augment.com/automation-summit-2025',
       buttonText: 'Register now',
-      icon: '🎟️',
+      icon: '️',
       target: '_blank' as const
     }
   ];

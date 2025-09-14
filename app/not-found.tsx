@@ -170,7 +170,7 @@ export default function NotFoundPage() {
           <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl p-8 lg:p-12">
             <div className="text-center">
               <div className="w-16 h-16 bg-[#C74634] text-white rounded-full flex items-center justify-center mx-auto mb-6 text-2xl">
-                💬
+                
               </div>
               <h2 className="text-2xl lg:text-3xl font-normal text-[#161513] mb-4" style={{ fontFamily: 'var(--oracleserif)' }}>
                 Still can't find what you're looking for?

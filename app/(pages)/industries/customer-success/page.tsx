@@ -129,28 +129,28 @@ export default function CustomerSuccessPage() {
       description: 'Discover how banks, insurance companies, and fintech firms transform operations with AI automation.',
       href: '/customers/financial-services/',
       buttonText: 'View financial cases',
-      icon: '🏦'
+      icon: ''
     },
     {
       title: 'Healthcare Transformation Stories',
       description: 'See how hospitals, clinics, and healthcare systems improve patient outcomes with intelligent automation.',
       href: '/customers/healthcare/',
       buttonText: 'Explore healthcare cases',
-      icon: '🏥'
+      icon: ''
     },
     {
       title: 'Manufacturing Excellence Cases',
       description: 'Learn how manufacturers achieve operational excellence with predictive maintenance and quality control AI.',
       href: '/customers/manufacturing/',
       buttonText: 'Read manufacturing stories',
-      icon: '🏭'
+      icon: ''
     },
     {
       title: 'Retail Innovation Stories',
       description: 'Explore how retailers drive growth with personalization, inventory optimization, and customer intelligence.',
       href: '/customers/retail/',
       buttonText: 'View retail transformations',
-      icon: '🛍️'
+      icon: '️'
     }
   ];
 
@@ -317,7 +317,7 @@ export default function CustomerSuccessPage() {
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
               <div className="text-center">
                 <div className="w-16 h-16 bg-[#C74634] rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl text-white">🎯</span>
+                  <span className="text-2xl text-white"></span>
                 </div>
                 <h3 className="text-lg font-semibold text-[#161513] mb-2" style={{ fontFamily: 'var(--oraclesans)' }}>
                   Strategic Assessment
@@ -328,7 +328,7 @@ export default function CustomerSuccessPage() {
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-[#C74634] rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl text-white">⚙️</span>
+                  <span className="text-2xl text-white">️</span>
                 </div>
                 <h3 className="text-lg font-semibold text-[#161513] mb-2" style={{ fontFamily: 'var(--oraclesans)' }}>
                   Rapid Implementation
@@ -339,7 +339,7 @@ export default function CustomerSuccessPage() {
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-[#C74634] rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl text-white">📊</span>
+                  <span className="text-2xl text-white"></span>
                 </div>
                 <h3 className="text-lg font-semibold text-[#161513] mb-2" style={{ fontFamily: 'var(--oraclesans)' }}>
                   Continuous Optimization
@@ -350,7 +350,7 @@ export default function CustomerSuccessPage() {
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-[#C74634] rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl text-white">🚀</span>
+                  <span className="text-2xl text-white"></span>
                 </div>
                 <h3 className="text-lg font-semibold text-[#161513] mb-2" style={{ fontFamily: 'var(--oraclesans)' }}>
                   Scale & Expand

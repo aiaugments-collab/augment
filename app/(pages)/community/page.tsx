@@ -148,28 +148,28 @@ export default function CommunityPage() {
       description: 'Access premium content, webinars, and educational materials available only to community members.',
       href: '/community/resources/',
       buttonText: 'Access resources',
-      icon: '📚'
+      icon: ''
     },
     {
       title: 'Job Opportunities',
       description: 'Discover AI job opportunities, internships, and career advancement opportunities from our network.',
       href: '/community/jobs/',
       buttonText: 'Find jobs',
-      icon: '💼'
+      icon: ''
     },
     {
       title: 'Research Collaboration',
       description: 'Participate in collaborative research projects and contribute to advancing AI knowledge.',
       href: '/community/research/',
       buttonText: 'Join research',
-      icon: '🔬'
+      icon: ''
     },
     {
       title: 'Industry Recognition',
       description: 'Gain recognition for your contributions and expertise within the global AI community.',
       href: '/community/recognition/',
       buttonText: 'Learn more',
-      icon: '🏆'
+      icon: ''
     }
   ];
 
@@ -297,7 +297,7 @@ export default function CommunityPage() {
             
             {isJoined ? (
               <div className="bg-green-50 border border-green-200 rounded-lg p-8 text-center">
-                <div className="text-green-600 text-4xl mb-4">✓</div>
+                <div className="text-green-600 text-4xl mb-4"></div>
                 <h3 className="text-xl font-semibold text-green-800 mb-2" style={{ fontFamily: 'var(--oracleserif)' }}>
                   Welcome to the Community!
                 </h3>

@@ -10,10 +10,10 @@ export default function AccountPage() {
   const [activeTab, setActiveTab] = useState('profile');
 
   const tabs = [
-    { id: 'profile', label: 'Profile Settings', icon: '👤' },
-    { id: 'security', label: 'Security', icon: '🔒' },
-    { id: 'team', label: 'Team Management', icon: '👥' },
-    { id: 'organization', label: 'Organization', icon: '🏢' }
+    { id: 'profile', label: 'Profile Settings', icon: '' },
+    { id: 'security', label: 'Security', icon: '' },
+    { id: 'team', label: 'Team Management', icon: '' },
+    { id: 'organization', label: 'Organization', icon: '' }
   ];
 
   const teamMembers = [

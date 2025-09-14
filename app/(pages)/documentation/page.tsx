@@ -128,28 +128,28 @@ export default function DocumentationPage() {
       description: 'Get help from our technical support team with implementation questions and troubleshooting.',
       href: '/support/',
       buttonText: 'Contact support',
-      icon: '🛠️'
+      icon: '️'
     },
     {
       title: 'Community Forums',
       description: 'Connect with other developers and share knowledge in our active community forums.',
       href: '/forums/',
       buttonText: 'Join forums',
-      icon: '💬'
+      icon: ''
     },
     {
       title: 'Training Programs',
       description: 'Advance your skills with comprehensive training programs and certification courses.',
       href: '/training/',
       buttonText: 'Explore training',
-      icon: '🎓'
+      icon: ''
     },
     {
       title: 'Professional Services',
       description: 'Work with our experts for custom implementations and strategic consulting.',
       href: '/industries/professional/',
       buttonText: 'Learn more',
-      icon: '👥'
+      icon: ''
     }
   ];
 

@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import { DashboardLayout } from '@/components/dashboard/DashboardLayout';
 import { ProtectedRoute } from '@/components/auth/ProtectedRoute';
+import { BookOpen, Rocket, Shield, Settings, AlertTriangle } from 'lucide-react';
 
 export default function DeveloperPage() {
   const documentationLinks = [
@@ -10,28 +11,28 @@ export default function DeveloperPage() {
       title: 'API Documentation',
       description: 'Complete API reference and guides',
       href: '/developers/docs',
-      icon: '📖',
+      icon: '',
       color: '#C74634'
     },
     {
       title: 'Product Documentation',
       description: 'User guides and product documentation',
       href: '/product-docs',
-      icon: '📚',
+      icon: '',
       color: '#4A90E2'
     },
     {
       title: 'Knowledge Base',
       description: 'Troubleshooting and FAQ',
       href: '/knowledge',
-      icon: '💡',
+      icon: '',
       color: '#50C878'
     },
     {
       title: 'Developer Community',
       description: 'Connect with other developers',
       href: '/developers/community',
-      icon: '👥',
+      icon: '',
       color: '#FF6B35'
     }
   ];
@@ -41,25 +42,25 @@ export default function DeveloperPage() {
       title: 'Getting Started',
       description: 'Learn how to integrate with our APIs',
       href: '/product-docs/getting-started',
-      icon: '🚀'
+      icon: <Rocket className="w-6 h-6" />
     },
     {
       title: 'API Authentication',
       description: 'Authentication methods and best practices',
       href: '/knowledge/api-authentication',
-      icon: '🔐'
+      icon: ''
     },
     {
       title: 'Integration Guides',
       description: 'Step-by-step integration tutorials',
       href: '/knowledge/integrations',
-      icon: '🔧'
+      icon: ''
     },
     {
       title: 'Troubleshooting',
       description: 'Common issues and solutions',
       href: '/knowledge/troubleshooting',
-      icon: '🛠️'
+      icon: <Settings className="w-6 h-6" />
     }
   ];
 

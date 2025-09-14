@@ -59,7 +59,7 @@ export default function ResumeAIPage() {
                   <div className="text-sm text-gray-600">Average Generation</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-blue-600">4.9★</div>
+                  <div className="text-2xl font-bold text-blue-600">4.9</div>
                   <div className="text-sm text-gray-600">User Rating</div>
                 </div>
               </div>
@@ -350,7 +350,7 @@ export default function ResumeAIPage() {
                 <div className="text-gray-600">Happy Users</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-bold text-blue-600 mb-2">4.9★</div>
+                <div className="text-4xl font-bold text-blue-600 mb-2">4.9</div>
                 <div className="text-gray-600">Average Rating</div>
               </div>
             </div>
@@ -452,7 +452,7 @@ export default function ResumeAIPage() {
             Start Free Trial
           </Link>
           <p className="text-sm text-blue-100 mt-4">
-            ✓ No credit card required • ✓ 7-day free trial • ✓ Cancel anytime
+             No credit card required •  7-day free trial •  Cancel anytime
           </p>
         </div>
       </section>

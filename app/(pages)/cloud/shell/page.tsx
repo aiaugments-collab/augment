@@ -47,25 +47,25 @@ export default function CloudShellPage() {
     {
       title: 'Pre-configured Environment',
       description: 'Ready-to-use development environment with all AI tools pre-installed',
-      icon: '⚙️',
+      icon: '️',
       details: ['Augment CLI', 'Python 3.11+', 'Node.js 18+', 'Git', 'Docker', 'Kubernetes CLI']
     },
     {
       title: 'Persistent Storage',
       description: 'Your files and configurations persist between sessions',
-      icon: '💾',
+      icon: '',
       details: ['5GB free storage', 'Home directory persistence', 'Git repositories', 'Configuration files']
     },
     {
       title: 'Integrated Editor',
       description: 'Built-in code editor with syntax highlighting and AI assistance',
-      icon: '📝',
+      icon: '',
       details: ['VS Code-like interface', 'Syntax highlighting', 'Auto-completion', 'AI code suggestions']
     },
     {
       title: 'Collaboration Tools',
       description: 'Share your shell sessions and collaborate in real-time',
-      icon: '🤝',
+      icon: '',
       details: ['Session sharing', 'Real-time collaboration', 'Screen sharing', 'Voice chat integration']
     }
   ];
@@ -76,28 +76,28 @@ export default function CloudShellPage() {
       description: 'Build a conversational AI chatbot with Augment AI',
       language: 'Python',
       time: '5 min',
-      icon: '🤖'
+      icon: ''
     },
     {
       name: 'Text Analysis API',
       description: 'Create a REST API for text sentiment analysis',
       language: 'Node.js',
       time: '10 min',
-      icon: '📊'
+      icon: ''
     },
     {
       name: 'Document Q&A',
       description: 'Build a document question-answering system',
       language: 'Python',
       time: '15 min',
-      icon: '📄'
+      icon: ''
     },
     {
       name: 'Code Generator',
       description: 'AI-powered code generation tool',
       language: 'JavaScript',
       time: '8 min',
-      icon: '💻'
+      icon: ''
     }
   ];
 
@@ -165,7 +165,7 @@ export default function CloudShellPage() {
                   onClick={() => setIsShellActive(false)}
                   className="text-gray-400 hover:text-white"
                 >
-                  ✕
+                  
                 </button>
               </div>
               <div className="p-4 h-96 overflow-y-auto">

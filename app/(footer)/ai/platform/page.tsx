@@ -165,28 +165,28 @@ export default function AIPlatformPage() {
       description: 'Begin with our free trial and experience the power of intelligent automation.',
       href: '/ai/platform/free-trial/',
       buttonText: 'Start free trial',
-      icon: '🚀'
+      icon: ''
     },
     {
       title: 'Schedule a Demo',
       description: 'See how Augment\'s AI platform can transform your specific business processes.',
       href: '/ai/platform/demo/',
       buttonText: 'Book demo',
-      icon: '📅'
+      icon: ''
     },
     {
       title: 'Talk to an Expert',
       description: 'Consult with our AI specialists to design the perfect solution for your needs.',
       href: '/ai/platform/consultation/',
       buttonText: 'Get consultation',
-      icon: '💬'
+      icon: ''
     },
     {
       title: 'View Pricing',
       description: 'Explore flexible pricing options designed to scale with your business growth.',
       href: '/ai/platform/pricing/',
       buttonText: 'See pricing',
-      icon: '💰'
+      icon: ''
     }
   ];
 

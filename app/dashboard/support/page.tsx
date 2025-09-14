@@ -8,10 +8,10 @@ export default function SupportPage() {
   const [activeTab, setActiveTab] = useState('help');
 
   const tabs = [
-    { id: 'help', label: 'Help Center', icon: '❓' },
-    { id: 'tickets', label: 'Support Tickets', icon: '🎫' },
-    { id: 'chat', label: 'Live Chat', icon: '💬' },
-    { id: 'status', label: 'System Status', icon: '🟢' }
+    { id: 'help', label: 'Help Center', icon: '' },
+    { id: 'tickets', label: 'Support Tickets', icon: '' },
+    { id: 'chat', label: 'Live Chat', icon: '' },
+    { id: 'status', label: 'System Status', icon: '' }
   ];
 
   const helpCategories = [
@@ -130,7 +130,7 @@ export default function SupportPage() {
               className="p-4 bg-white rounded-sm shadow-sm border border-gray-200 hover:shadow-md transition-shadow text-left block"
               style={{ fontFamily: "var(--oraclesans, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif)" }}
             >
-              <div className="text-2xl mb-2">📚</div>
+              <div className="text-2xl mb-2"></div>
               <h3 className="font-semibold text-sm" style={{ color: "#161513" }}>Knowledge Base</h3>
               <p className="text-xs mt-1" style={{ color: "#665f5b" }}>Find answers to common questions</p>
             </a>
@@ -139,7 +139,7 @@ export default function SupportPage() {
               className="p-4 bg-white rounded-sm shadow-sm border border-gray-200 hover:shadow-md transition-shadow text-left block"
               style={{ fontFamily: "var(--oraclesans, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif)" }}
             >
-              <div className="text-2xl mb-2">🎫</div>
+              <div className="text-2xl mb-2"></div>
               <h3 className="font-semibold text-sm" style={{ color: "#161513" }}>Support Portal</h3>
               <p className="text-xs mt-1" style={{ color: "#665f5b" }}>Access support tickets and resources</p>
             </a>
@@ -148,7 +148,7 @@ export default function SupportPage() {
               className="p-4 bg-white rounded-sm shadow-sm border border-gray-200 hover:shadow-md transition-shadow text-left block"
               style={{ fontFamily: "var(--oraclesans, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif)" }}
             >
-              <div className="text-2xl mb-2">💬</div>
+              <div className="text-2xl mb-2"></div>
               <h3 className="font-semibold text-sm" style={{ color: "#161513" }}>Community Forums</h3>
               <p className="text-xs mt-1" style={{ color: "#665f5b" }}>Connect with other users</p>
             </a>
@@ -157,7 +157,7 @@ export default function SupportPage() {
               className="p-4 bg-white rounded-sm shadow-sm border border-gray-200 hover:shadow-md transition-shadow text-left block"
               style={{ fontFamily: "var(--oraclesans, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif)" }}
             >
-              <div className="text-2xl mb-2">📖</div>
+              <div className="text-2xl mb-2"></div>
               <h3 className="font-semibold text-sm" style={{ color: "#161513" }}>API Documentation</h3>
               <p className="text-xs mt-1" style={{ color: "#665f5b" }}>Technical documentation and guides</p>
             </a>
@@ -281,7 +281,7 @@ export default function SupportPage() {
               {/* Live Chat Tab */}
               {activeTab === 'chat' && (
                 <div className="text-center py-12">
-                  <div className="text-6xl mb-4">💬</div>
+                  <div className="text-6xl mb-4"></div>
                   <h3 className="text-lg font-semibold mb-2" style={{ color: "#161513" }}>
                     Live Chat Support
                   </h3>

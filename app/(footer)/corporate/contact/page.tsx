@@ -79,28 +79,28 @@ export default function ContactPage() {
       description: 'See Augment\'s AI automation platform in action with a personalized demo.',
       href: '/corporate/contact/demo/',
       buttonText: 'Schedule demo',
-      icon: '📅'
+      icon: ''
     },
     {
       title: 'Request a Quote',
       description: 'Get pricing information and a customized quote for your organization.',
       href: '/corporate/contact/quote/',
       buttonText: 'Request quote',
-      icon: '💰'
+      icon: ''
     },
     {
       title: 'Technical Consultation',
       description: 'Speak with our technical experts about your specific automation needs.',
       href: '/corporate/contact/consultation/',
       buttonText: 'Book consultation',
-      icon: '🔧'
+      icon: ''
     },
     {
       title: 'General Inquiry',
       description: 'Have a general question? Contact us and we\'ll connect you with the right team.',
       href: '/corporate/contact/general/',
       buttonText: 'Contact us',
-      icon: '💬'
+      icon: ''
     }
   ];
 

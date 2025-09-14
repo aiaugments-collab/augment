@@ -118,21 +118,21 @@ export default function IndustriesPage() {
       description: 'High Technology companies and Professional Services firms leverage our AI solutions for innovation acceleration and operational excellence.',
       href: '/industries/high-tech/',
       buttonText: 'Explore enterprise solutions',
-      icon: '💻'
+      icon: ''
     },
     {
       title: 'Regulated Industries',
       description: 'Financial Services, Healthcare, and Government organizations trust our secure, compliant AI solutions for critical operations.',
       href: '/industries/financial-services/',
       buttonText: 'Discover regulated solutions',
-      icon: '🏛️'
+      icon: '️'
     },
     {
       title: 'Operations & Services',
       description: 'Manufacturing, Retail, and Education institutions optimize their operations with our intelligent automation platforms.',
       href: '/industries/manufacturing/',
       buttonText: 'Optimize operations',
-      icon: '⚙️'
+      icon: '️'
     }
   ];
 
@@ -171,21 +171,21 @@ export default function IndustriesPage() {
       description: 'See how Augment AI solutions can transform your industry with a personalized demonstration.',
       href: '/demo/',
       buttonText: 'Book demo',
-      icon: '🎯'
+      icon: ''
     },
     {
       title: 'Industry Assessment',
       description: 'Get a custom analysis of AI opportunities and ROI potential specific to your industry and use cases.',
       href: '/assessment/',
       buttonText: 'Start assessment',
-      icon: '📊'
+      icon: ''
     },
     {
       title: 'Free Trial',
       description: 'Experience our AI agents and cloud applications with a risk-free trial designed for your industry.',
       href: '/trial/',
       buttonText: 'Start trial',
-      icon: '🚀'
+      icon: ''
     }
   ];
 
@@ -203,25 +203,25 @@ export default function IndustriesPage() {
             title: 'Finance & Accounting',
             description: 'Automate financial processes, compliance reporting, and strategic planning with AI-powered finance solutions.',
             link: '/solutions/finance/',
-            icon: '💰'
+            icon: ''
           },
           {
             title: 'Human Resources',
             description: 'Transform talent acquisition, employee experience, and workforce analytics with intelligent HR platforms.',
             link: '/solutions/hr/',
-            icon: '👥'
+            icon: ''
           },
           {
             title: 'Operations & Supply Chain',
             description: 'Optimize logistics, inventory management, and operational efficiency with predictive AI solutions.',
             link: '/solutions/operations/',
-            icon: '📦'
+            icon: ''
           },
           {
             title: 'Customer Experience',
             description: 'Deliver personalized customer interactions and support with AI-driven CX platforms.',
             link: '/solutions/customer-experience/',
-            icon: '🤝'
+            icon: ''
           }
         ]
       }
@@ -238,25 +238,25 @@ export default function IndustriesPage() {
             title: 'Machine Learning Platform',
             description: 'Build, deploy, and manage ML models at scale with our comprehensive machine learning infrastructure.',
             link: '/technology/machine-learning/',
-            icon: '🧠'
+            icon: ''
           },
           {
             title: 'Natural Language Processing',
             description: 'Extract insights from text, automate document processing, and enable conversational AI interfaces.',
             link: '/technology/nlp/',
-            icon: '💬'
+            icon: ''
           },
           {
             title: 'Computer Vision',
             description: 'Analyze images and video content for quality control, security, and automated inspection systems.',
             link: '/technology/computer-vision/',
-            icon: '👁️'
+            icon: ''
           },
           {
             title: 'Predictive Analytics',
             description: 'Forecast trends, identify risks, and optimize operations with advanced predictive modeling capabilities.',
             link: '/technology/predictive-analytics/',
-            icon: '📈'
+              icon: ''
           }
         ]
       }

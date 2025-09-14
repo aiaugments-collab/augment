@@ -156,28 +156,28 @@ export default function PartnerNetworkPage() {
       description: 'Comprehensive certification program to validate partner expertise and ensure customer success.',
       href: '/partners/network/certification/',
       buttonText: 'Get certified',
-      icon: '🎓'
+      icon: ''
     },
     {
       title: 'Joint Go-to-Market Program',
       description: 'Collaborative sales and marketing programs to accelerate mutual growth and market expansion.',
       href: '/partners/network/go-to-market/',
       buttonText: 'Joint GTM',
-      icon: '🚀'
+      icon: ''
     },
     {
       title: 'Innovation Lab Partnership',
       description: 'Collaborate on cutting-edge AI research and development in our innovation labs.',
       href: '/partners/network/innovation-lab/',
       buttonText: 'Innovate together',
-      icon: '🔬'
+      icon: ''
     },
     {
       title: 'Partner Advisory Council',
       description: 'Join our partner advisory council to influence product roadmap and partnership strategy.',
       href: '/partners/network/advisory/',
       buttonText: 'Advisory council',
-      icon: '🎯'
+      icon: ''
     }
   ];
 
@@ -354,17 +354,17 @@ export default function PartnerNetworkPage() {
             <div className="bg-gray-50 rounded-lg p-8">
               <div className="grid md:grid-cols-3 gap-6 mb-8">
                 <div className="text-center">
-                  <div className="text-[#C74634] text-3xl mb-2">🔍</div>
+                  <div className="text-[#C74634] text-3xl mb-2"></div>
                   <h3 className="font-semibold text-[#161513] mb-2" style={{ fontFamily: 'var(--oracleserif)' }}>Search by Expertise</h3>
                   <p className="text-sm text-gray-700" style={{ fontFamily: 'var(--oraclesans)' }}>Find partners with specific industry or technical expertise</p>
                 </div>
                 <div className="text-center">
-                  <div className="text-[#C74634] text-3xl mb-2">🌍</div>
+                  <div className="text-[#C74634] text-3xl mb-2"></div>
                   <h3 className="font-semibold text-[#161513] mb-2" style={{ fontFamily: 'var(--oracleserif)' }}>Global Coverage</h3>
                   <p className="text-sm text-gray-700" style={{ fontFamily: 'var(--oraclesans)' }}>Locate partners in your region or globally</p>
                 </div>
                 <div className="text-center">
-                  <div className="text-[#C74634] text-3xl mb-2">⭐</div>
+                  <div className="text-[#C74634] text-3xl mb-2"></div>
                   <h3 className="font-semibold text-[#161513] mb-2" style={{ fontFamily: 'var(--oracleserif)' }}>Certified Quality</h3>
                   <p className="text-sm text-gray-700" style={{ fontFamily: 'var(--oraclesans)' }}>All partners are certified and validated</p>
                 </div>
@@ -395,7 +395,7 @@ export default function PartnerNetworkPage() {
             
             {isSubmitted ? (
               <div className="bg-green-50 border border-green-200 rounded-lg p-8 text-center">
-                <div className="text-green-600 text-4xl mb-4">✓</div>
+                <div className="text-green-600 text-4xl mb-4"></div>
                 <h3 className="text-xl font-semibold text-green-800 mb-2" style={{ fontFamily: 'var(--oracleserif)' }}>
                   Partnership Application Submitted!
                 </h3>

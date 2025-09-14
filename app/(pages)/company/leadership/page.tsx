@@ -294,7 +294,7 @@ export default function LeadershipPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
               <div className="w-16 h-16 bg-[#C74634] text-white rounded-lg flex items-center justify-center mx-auto mb-4 text-2xl">
-                🎯
+                
               </div>
               <h3 className="text-lg font-semibold text-white mb-2" style={{ fontFamily: 'var(--oracleserif)' }}>
                 Vision-Driven
@@ -305,7 +305,7 @@ export default function LeadershipPage() {
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-[#C74634] text-white rounded-lg flex items-center justify-center mx-auto mb-4 text-2xl">
-                🤝
+                
               </div>
               <h3 className="text-lg font-semibold text-white mb-2" style={{ fontFamily: 'var(--oracleserif)' }}>
                 Collaborative
@@ -316,7 +316,7 @@ export default function LeadershipPage() {
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-[#C74634] text-white rounded-lg flex items-center justify-center mx-auto mb-4 text-2xl">
-                🚀
+                
               </div>
               <h3 className="text-lg font-semibold text-white mb-2" style={{ fontFamily: 'var(--oracleserif)' }}>
                 Innovation-First
@@ -327,7 +327,7 @@ export default function LeadershipPage() {
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-[#C74634] text-white rounded-lg flex items-center justify-center mx-auto mb-4 text-2xl">
-                🌍
+                
               </div>
               <h3 className="text-lg font-semibold text-white mb-2" style={{ fontFamily: 'var(--oracleserif)' }}>
                 Global Impact

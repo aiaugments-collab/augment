@@ -7,6 +7,7 @@ import {
   ContentTabs,
   Testimonials
 } from '../../../components/sections';
+import { FileText, Users } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Augment Careers | Job Search | Augment',
@@ -180,7 +181,7 @@ export default function CareersPage() {
       description: 'Explore open roles and find the future of your career.',
       href: 'https://careers.augment.com/jobs',
       buttonText: 'Search jobs',
-      icon: '📝',
+      icon: <FileText className="w-6 h-6" />,
       target: '_blank' as const
     },
     {
@@ -188,7 +189,7 @@ export default function CareersPage() {
       description: 'Get career insights and job opportunities.',
       href: 'https://careers.augment.com/talent-network',
       buttonText: 'Join our network',
-      icon: '👥',
+      icon: <Users className="w-6 h-6" />,
       target: '_blank' as const
     }
   ];

@@ -150,28 +150,28 @@ export default function UniversityPage() {
       description: 'Learn from leading AI researchers and industry experts with cutting-edge curriculum and hands-on experience.',
       href: '/university/education/',
       buttonText: 'Learn more',
-      icon: '🎓'
+      icon: ''
     },
     {
       title: 'Industry Partnerships',
       description: 'Access exclusive internships and job opportunities through our partnerships with leading technology companies.',
       href: '/university/partnerships/',
       buttonText: 'View partners',
-      icon: '🤝'
+      icon: ''
     },
     {
       title: 'Research Opportunities',
       description: 'Participate in groundbreaking AI research projects and contribute to the future of artificial intelligence.',
       href: '/university/research/',
       buttonText: 'Explore research',
-      icon: '🔬'
+      icon: ''
     },
     {
       title: 'Global Recognition',
       description: 'Earn degrees and certificates recognized worldwide by leading academic institutions and employers.',
       href: '/university/accreditation/',
       buttonText: 'View accreditation',
-      icon: '🌍'
+      icon: ''
     }
   ];
 
@@ -362,7 +362,7 @@ export default function UniversityPage() {
             
             {isSubmitted ? (
               <div className="bg-green-50 border border-green-200 rounded-lg p-8 text-center">
-                <div className="text-green-600 text-4xl mb-4">✓</div>
+                <div className="text-green-600 text-4xl mb-4"></div>
                 <h3 className="text-xl font-semibold text-green-800 mb-2" style={{ fontFamily: 'var(--oracleserif)' }}>
                   Application Submitted Successfully!
                 </h3>

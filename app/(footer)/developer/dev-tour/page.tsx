@@ -134,14 +134,14 @@ export default function DevTourPage() {
       description: 'Build intelligent applications with our comprehensive AI APIs for natural language processing, computer vision, and predictive analytics.',
       href: '/developer/ai-apis/',
       buttonText: 'Explore AI APIs',
-      icon: '🤖'
+      icon: ''
     },
     {
       title: 'Automation Platform SDKs',
       description: 'Create powerful automation workflows using our SDKs for Python, JavaScript, Java, and other popular programming languages.',
       href: '/developer/automation-sdks/',
       buttonText: 'Download SDKs',
-      icon: '⚡'
+      icon: ''
     }
   ];
 

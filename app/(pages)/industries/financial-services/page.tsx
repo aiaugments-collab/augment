@@ -133,28 +133,28 @@ export default function FinancialServicesPage() {
       description: 'Automate manual processes and accelerate decision-making with intelligent document processing and workflow automation.',
       href: '/resources/financial-roi-calculator/',
       buttonText: 'Calculate ROI',
-      icon: '⚡'
+      icon: ''
     },
     {
       title: 'Ensure 99.9% Compliance Accuracy',
       description: 'Meet regulatory requirements with automated compliance monitoring, reporting, and real-time risk assessment.',
       href: '/solutions/compliance-automation/',
       buttonText: 'Learn more',
-      icon: '✅'
+      icon: ''
     },
     {
       title: 'Improve Customer Satisfaction by 40%',
       description: 'Deliver exceptional customer experiences with AI-powered support, personalized services, and faster response times.',
       href: '/solutions/financial-cx/',
       buttonText: 'Explore CX',
-      icon: '😊'
+      icon: ''
     },
     {
       title: 'Reduce Operational Costs by 60%',
       description: 'Lower operational expenses through intelligent automation, predictive maintenance, and optimized resource allocation.',
       href: '/resources/cost-savings-calculator/',
       buttonText: 'See savings',
-      icon: '💰'
+      icon: ''
     }
   ];
 

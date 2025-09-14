@@ -128,28 +128,28 @@ export default function DocumentationPage() {
       description: 'Get help from our technical support team with implementation questions, troubleshooting, and best practices.',
       href: '/industries/documentation/support/technical/',
       buttonText: 'Contact support',
-      icon: '🛠️'
+      icon: '️'
     },
     {
       title: 'Community Forums',
       description: 'Connect with other developers and AI practitioners in our community forums for peer support and knowledge sharing.',
       href: '/industries/documentation/support/forums/',
       buttonText: 'Join forums',
-      icon: '💬'
+      icon: ''
     },
     {
       title: 'Professional Services',
       description: 'Work with our experts for custom implementations, training, and strategic AI consulting services.',
       href: '/industries/documentation/support/professional/',
       buttonText: 'Learn more',
-      icon: '👥'
+      icon: ''
     },
     {
       title: 'Training & Certification',
       description: 'Advance your skills with comprehensive training programs and industry-recognized AI certifications.',
       href: '/industries/documentation/support/training/',
       buttonText: 'Explore training',
-      icon: '🎓'
+      icon: ''
     }
   ];
 

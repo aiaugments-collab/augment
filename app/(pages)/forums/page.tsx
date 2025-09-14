@@ -146,28 +146,28 @@ export default function ForumsPage() {
       description: 'Connect with AI experts, researchers, and practitioners from leading organizations worldwide.',
       href: '/forums/experts/',
       buttonText: 'Meet experts',
-      icon: '👥'
+      icon: ''
     },
     {
       title: 'Real-time Help',
       description: 'Get quick answers to technical questions and implementation challenges from experienced users.',
       href: '/forums/technical-help/',
       buttonText: 'Get help',
-      icon: '⚡'
+      icon: ''
     },
     {
       title: 'Knowledge Sharing',
       description: 'Share your expertise, learn from others, and contribute to the collective AI knowledge base.',
       href: '/forums/knowledge-base/',
       buttonText: 'Share knowledge',
-      icon: '📚'
+      icon: ''
     },
     {
       title: 'Networking Opportunities',
       description: 'Build professional relationships, find collaborators, and discover career opportunities.',
       href: '/forums/networking/',
       buttonText: 'Start networking',
-      icon: '🤝'
+      icon: ''
     }
   ];
 
@@ -295,7 +295,7 @@ export default function ForumsPage() {
             
             {isSubmitted ? (
               <div className="bg-green-50 border border-green-200 rounded-lg p-8 text-center">
-                <div className="text-green-600 text-4xl mb-4">✓</div>
+                <div className="text-green-600 text-4xl mb-4"></div>
                 <h3 className="text-xl font-semibold text-green-800 mb-2" style={{ fontFamily: 'var(--oracleserif)' }}>
                   Discussion Topic Created!
                 </h3>

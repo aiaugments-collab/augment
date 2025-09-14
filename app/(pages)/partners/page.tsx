@@ -128,28 +128,28 @@ export default function PartnersPage() {
       description: 'Comprehensive onboarding process to get new partners up and running quickly with full support.',
       href: '#',
       buttonText: 'Start onboarding',
-      icon: '🚀'
+      icon: ''
     },
     {
       title: 'Joint Go-to-Market Initiative',
       description: 'Collaborative sales and marketing programs to accelerate growth and market penetration.',
       href: '#',
       buttonText: 'Joint GTM',
-      icon: '🎯'
+      icon: ''
     },
     {
       title: 'Innovation Lab Partnership',
       description: 'Collaborate on cutting-edge research and development in our state-of-the-art innovation labs.',
       href: '#',
       buttonText: 'Innovation labs',
-      icon: '🔬'
+        icon: ''
     },
     {
       title: 'Partner Advisory Council',
       description: 'Influence product roadmap and partnership strategy through our exclusive partner advisory council.',
       href: '#',
       buttonText: 'Advisory council',
-      icon: '💡'
+      icon: ''
     }
   ];
 
@@ -342,7 +342,7 @@ export default function PartnersPage() {
             </div>
             <div className="grid md:grid-cols-2 gap-8">
               <div className="bg-gray-50 p-8 rounded-lg text-center">
-                <div className="text-[#C74634] text-4xl mb-4">🤝</div>
+            
                 <h3 className="text-xl font-semibold text-[#161513] mb-4" style={{ fontFamily: 'var(--oracleserif)' }}>
                   Become a Partner
                 </h3>
@@ -358,7 +358,7 @@ export default function PartnersPage() {
                 </a>
               </div>
               <div className="bg-gray-50 p-8 rounded-lg text-center">
-                <div className="text-[#C74634] text-4xl mb-4">🔍</div>
+               
                 <h3 className="text-xl font-semibold text-[#161513] mb-4" style={{ fontFamily: 'var(--oracleserif)' }}>
                   Find a Partner
                 </h3>

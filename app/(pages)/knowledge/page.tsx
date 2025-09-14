@@ -128,28 +128,28 @@ export default function KnowledgeBasePage() {
       description: 'Watch step-by-step video tutorials covering product features and common workflows.',
       href: '/knowledge/videos/',
       buttonText: 'Watch videos',
-      icon: '🎥'
+      icon: ''
     },
     {
       title: 'Live Chat Support',
       description: 'Get instant help from our support team through live chat for quick questions.',
       href: '/support/live-chat/',
       buttonText: 'Start chat',
-      icon: '💬'
+      icon: ''
     },
     {
       title: 'Community Forums',
       description: 'Connect with other users and get help from the community in our discussion forums.',
       href: '/forums/',
       buttonText: 'Join forums',
-      icon: '👥'
+      icon: ''
     },
     {
       title: 'Contact Support',
       description: 'Submit a support ticket for personalized assistance with complex issues.',
       href: '/support/',
       buttonText: 'Contact support',
-      icon: '🛠️'
+      icon: '️'
     }
   ];
 

@@ -7,12 +7,12 @@ export default function APIsSDKsPage() {
   const [activeEndpoint, setActiveEndpoint] = useState('chat');
 
   const languages = [
-    { id: 'javascript', name: 'JavaScript', icon: '🟨' },
-    { id: 'python', name: 'Python', icon: '🐍' },
-    { id: 'go', name: 'Go', icon: '🔵' },
-    { id: 'java', name: 'Java', icon: '☕' },
-    { id: 'php', name: 'PHP', icon: '🐘' },
-    { id: 'ruby', name: 'Ruby', icon: '💎' }
+    { id: 'javascript', name: 'JavaScript', icon: '' },
+    { id: 'python', name: 'Python', icon: '' },
+    { id: 'go', name: 'Go', icon: '' },
+    { id: 'java', name: 'Java', icon: '' },
+    { id: 'php', name: 'PHP', icon: '' },
+    { id: 'ruby', name: 'Ruby', icon: '' }
   ];
 
   const endpoints = [
@@ -54,27 +54,27 @@ export default function APIsSDKsPage() {
     {
       title: 'Type Safety',
       description: 'Full TypeScript support with comprehensive type definitions',
-      icon: '🛡️'
+      icon: '️'
     },
     {
       title: 'Async/Await',
       description: 'Modern async patterns with Promise-based APIs',
-      icon: '⚡'
+      icon: ''
     },
     {
       title: 'Error Handling',
       description: 'Comprehensive error handling with detailed error types',
-      icon: '🚨'
+      icon: ''
     },
     {
       title: 'Streaming',
       description: 'Real-time streaming responses for chat and completions',
-      icon: '🌊'
+      icon: ''
     },
     {
       title: 'Retries',
       description: 'Automatic retry logic with exponential backoff',
-      icon: '🔄'
+      icon: ''
     },
     {
       title: 'Rate Limiting',

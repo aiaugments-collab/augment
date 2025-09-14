@@ -108,14 +108,14 @@ export default function AccessibilityPage() {
       description: 'Get help with accessibility features, report issues, or request accommodations for using our products.',
       href: 'mailto:accessibility@augment.com',
       buttonText: 'Contact support',
-      icon: '🎧'
+      icon: ''
     },
     {
       title: 'Accessibility Documentation',
       description: 'Comprehensive guides and documentation for using Augment products with assistive technologies.',
       href: '/corporate/accessibility/documentation/',
       buttonText: 'View docs',
-      icon: '📚'
+      icon: ''
     }
   ];
 
@@ -150,7 +150,7 @@ export default function AccessibilityPage() {
             <div className="grid md:grid-cols-3 gap-8">
               <div className="text-center">
                 <div className="w-16 h-16 bg-[#C74634] rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl text-white">♿</span>
+                  <span className="text-2xl text-white"></span>
                 </div>
                 <h3 className="text-lg font-semibold text-[#161513] mb-3" style={{ fontFamily: 'var(--oraclesans)' }}>
                   Universal Design
@@ -161,7 +161,7 @@ export default function AccessibilityPage() {
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-[#C74634] rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl text-white">🔄</span>
+                  <span className="text-2xl text-white"></span>
                 </div>
                 <h3 className="text-lg font-semibold text-[#161513] mb-3" style={{ fontFamily: 'var(--oraclesans)' }}>
                   Continuous Improvement
@@ -172,7 +172,7 @@ export default function AccessibilityPage() {
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-[#C74634] rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl text-white">🤝</span>
+                  <span className="text-2xl text-white"></span>
                 </div>
                 <h3 className="text-lg font-semibold text-[#161513] mb-3" style={{ fontFamily: 'var(--oraclesans)' }}>
                   Community Partnership
@@ -216,7 +216,7 @@ export default function AccessibilityPage() {
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
               <div className="text-center">
-                <div className="text-4xl mb-4">🗣️</div>
+                <div className="text-4xl mb-4">️</div>
                 <h3 className="text-lg font-semibold text-[#161513] mb-2" style={{ fontFamily: 'var(--oraclesans)' }}>
                   Screen Readers
                 </h3>
@@ -225,7 +225,7 @@ export default function AccessibilityPage() {
                 </p>
               </div>
               <div className="text-center">
-                <div className="text-4xl mb-4">🔍</div>
+                <div className="text-4xl mb-4"></div>
                 <h3 className="text-lg font-semibold text-[#161513] mb-2" style={{ fontFamily: 'var(--oraclesans)' }}>
                   Magnification
                 </h3>
@@ -243,7 +243,7 @@ export default function AccessibilityPage() {
                 </p>
               </div>
               <div className="text-center">
-                <div className="text-4xl mb-4">🎨</div>
+                <div className="text-4xl mb-4"></div>
                 <h3 className="text-lg font-semibold text-[#161513] mb-2" style={{ fontFamily: 'var(--oraclesans)' }}>
                   Display Customization
                 </h3>

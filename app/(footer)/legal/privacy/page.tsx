@@ -79,28 +79,28 @@ export default function PrivacyPage() {
       description: 'You have the right to know what personal information we collect, use, disclose, and sell about you.',
       href: '/legal/privacy/privacy-policy/#right-to-know',
       buttonText: 'Learn more',
-      icon: '📋'
+      icon: ''
     },
     {
       title: 'Right to Delete',
       description: 'You have the right to request that we delete your personal information, subject to certain exceptions.',
       href: '/legal/privacy/data-requests/#delete',
       buttonText: 'Request deletion',
-      icon: '🗑️'
+      icon: '️'
     },
     {
       title: 'Right to Opt-Out',
       description: 'You have the right to opt-out of the sale or sharing of your personal information for advertising.',
       href: '/legal/privacy/privacy-choices/#opt-out',
       buttonText: 'Opt out',
-      icon: '🚫'
+      icon: ''
     },
     {
       title: 'Right to Non-Discrimination',
       description: 'We will not discriminate against you for exercising any of your privacy rights under applicable laws.',
       href: '/legal/privacy/privacy-policy/#non-discrimination',
       buttonText: 'View policy',
-      icon: '⚖️'
+      icon: '️'
     }
   ];
 
@@ -135,7 +135,7 @@ export default function PrivacyPage() {
             <div className="grid md:grid-cols-3 gap-8">
               <div className="text-center">
                 <div className="w-16 h-16 bg-[#C74634] rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl text-white">🛡️</span>
+                  <span className="text-2xl text-white">️</span>
                 </div>
                 <h3 className="text-lg font-semibold text-[#161513] mb-3" style={{ fontFamily: 'var(--oraclesans)' }}>
                   Data Protection
@@ -146,7 +146,7 @@ export default function PrivacyPage() {
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-[#C74634] rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl text-white">👤</span>
+                  <span className="text-2xl text-white"></span>
                 </div>
                 <h3 className="text-lg font-semibold text-[#161513] mb-3" style={{ fontFamily: 'var(--oraclesans)' }}>
                   User Control
@@ -157,7 +157,7 @@ export default function PrivacyPage() {
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-[#C74634] rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl text-white">🔍</span>
+                  <span className="text-2xl text-white"></span>
                 </div>
                 <h3 className="text-lg font-semibold text-[#161513] mb-3" style={{ fontFamily: 'var(--oraclesans)' }}>
                   Transparency
@@ -192,7 +192,7 @@ export default function PrivacyPage() {
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
               <div className="text-center">
-                <div className="text-3xl mb-4">🎯</div>
+                <div className="text-3xl mb-4"></div>
                 <h3 className="text-lg font-semibold text-white mb-2" style={{ fontFamily: 'var(--oraclesans)' }}>
                   Purpose Limitation
                 </h3>
@@ -201,7 +201,7 @@ export default function PrivacyPage() {
                 </p>
               </div>
               <div className="text-center">
-                <div className="text-3xl mb-4">📊</div>
+                <div className="text-3xl mb-4"></div>
                 <h3 className="text-lg font-semibold text-white mb-2" style={{ fontFamily: 'var(--oraclesans)' }}>
                   Data Minimization
                 </h3>
@@ -219,7 +219,7 @@ export default function PrivacyPage() {
                 </p>
               </div>
               <div className="text-center">
-                <div className="text-3xl mb-4">✅</div>
+                <div className="text-3xl mb-4"></div>
                 <h3 className="text-lg font-semibold text-white mb-2" style={{ fontFamily: 'var(--oraclesans)' }}>
                   Accuracy
                 </h3>

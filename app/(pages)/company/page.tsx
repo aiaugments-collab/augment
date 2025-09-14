@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { Rocket, Shield, Heart, Users, Globe, Lightbulb } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Company Overview | About Augment AI',
@@ -18,32 +19,32 @@ export default function CompanyOverviewPage() {
     {
       title: 'Innovation First',
       description: 'We push the boundaries of what\'s possible with AI, constantly exploring new frontiers and breakthrough technologies.',
-      icon: '🚀'
+      icon: <Rocket className="w-8 h-8" />
     },
     {
       title: 'Ethical AI',
       description: 'We believe AI should be safe, transparent, and beneficial for all humanity. Ethics guide every decision we make.',
-      icon: '🛡️'
+      icon: <Shield className="w-8 h-8" />
     },
     {
       title: 'Customer Success',
       description: 'Our customers\' success is our success. We\'re committed to providing exceptional experiences and outcomes.',
-      icon: '🎯'
+      icon: ''
     },
     {
       title: 'Inclusive Excellence',
       description: 'We foster a diverse, inclusive environment where everyone can contribute their best work and unique perspectives.',
-      icon: '🤝'
+      icon: ''
     },
     {
       title: 'Continuous Learning',
       description: 'We embrace curiosity and continuous improvement, always seeking to learn, grow, and adapt.',
-      icon: '📚'
+      icon: ''
     },
     {
       title: 'Global Impact',
       description: 'We strive to make a positive impact on the world through responsible AI development and deployment.',
-      icon: '🌍'
+      icon: ''
     }
   ];
 

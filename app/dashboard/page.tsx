@@ -215,7 +215,7 @@ export default function DashboardPage() {
                         ? 'bg-yellow-100 text-yellow-800'
                         : 'bg-gray-100 text-gray-800'
                     }`}>
-                      {product.status === 'live' ? '✓ Live' : product.status === 'beta' ? '⚡ Beta' : '🚧 Coming Soon'}
+                      {product.status === 'live' ? ' Live' : product.status === 'beta' ? ' Beta' : ' Coming Soon'}
                     </span>
                     <a
                       href={product.productUrl}
@@ -244,7 +244,7 @@ export default function DashboardPage() {
                 className="flex items-center justify-center p-4 border-2 border-dashed border-gray-300 rounded-lg hover:border-blue-500 hover:bg-blue-50 transition-colors"
               >
                 <div className="text-center">
-                  <div className="text-2xl mb-2">🚀</div>
+                  <div className="text-2xl mb-2"></div>
                   <div className="text-sm font-medium text-gray-900">Browse Apps</div>
                 </div>
               </a>
@@ -253,7 +253,7 @@ export default function DashboardPage() {
                 className="flex items-center justify-center p-4 border-2 border-dashed border-gray-300 rounded-lg hover:border-blue-500 hover:bg-blue-50 transition-colors"
               >
                 <div className="text-center">
-                  <div className="text-2xl mb-2">⚙️</div>
+                  <div className="text-2xl mb-2">️</div>
                   <div className="text-sm font-medium text-gray-900">Settings</div>
                 </div>
               </a>
@@ -262,7 +262,7 @@ export default function DashboardPage() {
                 className="flex items-center justify-center p-4 border-2 border-dashed border-gray-300 rounded-lg hover:border-blue-500 hover:bg-blue-50 transition-colors"
               >
                 <div className="text-center">
-                  <div className="text-2xl mb-2">💬</div>
+                  <div className="text-2xl mb-2"></div>
                   <div className="text-sm font-medium text-gray-900">Support</div>
                 </div>
               </a>

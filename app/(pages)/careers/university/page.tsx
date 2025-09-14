@@ -116,32 +116,32 @@ export default function UniversityRecruitingPage() {
     {
       title: 'Competitive Compensation',
       description: 'Industry-leading salaries and benefits for interns and new graduates',
-      icon: '💰'
+      icon: ''
     },
     {
       title: 'Mentorship Program',
       description: 'Paired with senior engineers and researchers for guidance and growth',
-      icon: '👥'
+      icon: ''
     },
     {
       title: 'Real Impact',
       description: 'Work on products and research that affect millions of users worldwide',
-      icon: '🚀'
+      icon: ''
     },
     {
       title: 'Learning & Development',
       description: 'Access to courses, conferences, and continuous learning opportunities',
-      icon: '📚'
+      icon: ''
     },
     {
       title: 'Networking',
       description: 'Connect with top talent and build relationships across the industry',
-      icon: '🤝'
+      icon: ''
     },
     {
       title: 'Career Growth',
       description: 'Clear paths for advancement and full-time conversion opportunities',
-      icon: '📈'
+      icon: ''
     }
   ];
 
@@ -204,9 +204,9 @@ export default function UniversityRecruitingPage() {
                 </div>
                 
                 <div className="flex items-center space-x-4 text-sm text-gray-600 mb-4" style={{ fontFamily: 'var(--oraclesans)' }}>
-                  <span>📅 {program.duration}</span>
-                  <span>🗓️ {program.season}</span>
-                  <span>📍 {program.locations.join(', ')}</span>
+                  <span> {program.duration}</span>
+                  <span>️ {program.season}</span>
+                  <span> {program.locations.join(', ')}</span>
                 </div>
 
                 <p className="text-gray-700 mb-4" style={{ fontFamily: 'var(--oraclesans)' }}>

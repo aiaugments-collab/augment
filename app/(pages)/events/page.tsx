@@ -147,28 +147,28 @@ export default function EventsPage() {
       description: 'Gain insights from leading AI researchers, practitioners, and industry experts.',
       href: '/events/speakers/',
       buttonText: 'Meet speakers',
-      icon: '🎓'
+      icon: ''
     },
     {
       title: 'Network with Peers',
       description: 'Connect with AI professionals, potential collaborators, and industry leaders.',
       href: '/events/networking/',
       buttonText: 'Start networking',
-      icon: '🤝'
+      icon: ''
     },
     {
       title: 'Hands-on Learning',
       description: 'Participate in workshops, demos, and hands-on sessions to build practical skills.',
       href: '/events/workshops/',
       buttonText: 'Join workshops',
-      icon: '💻'
+      icon: ''
     },
     {
       title: 'Career Opportunities',
       description: 'Discover job opportunities, meet recruiters, and advance your AI career.',
       href: '/events/careers/',
       buttonText: 'Find opportunities',
-      icon: '💼'
+      icon: ''
     }
   ];
 
@@ -318,7 +318,7 @@ export default function EventsPage() {
             
             {isRegistered ? (
               <div className="bg-green-50 border border-green-200 rounded-lg p-8 text-center">
-                <div className="text-green-600 text-4xl mb-4">✓</div>
+                <div className="text-green-600 text-4xl mb-4"></div>
                 <h3 className="text-xl font-semibold text-green-800 mb-2" style={{ fontFamily: 'var(--oracleserif)' }}>
                   Registration Successful!
                 </h3>
