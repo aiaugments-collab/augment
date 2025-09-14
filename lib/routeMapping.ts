@@ -13,6 +13,9 @@ export const routeMappings: RouteMapping[] = [
   { pattern: '/products', target: '/product', priority: 10, description: 'Product page variations' },
   { pattern: '/solutions', target: '/product', priority: 10, description: 'Solutions redirect to products' },
   { pattern: '/platform', target: '/product', priority: 10, description: 'Platform overview' },
+  { pattern: '/market', target: '/marketplace', priority: 10, description: 'Marketplace short form' },
+  { pattern: '/apps', target: '/marketplace', priority: 10, description: 'Applications marketplace' },
+  { pattern: '/store', target: '/marketplace', priority: 9, description: 'App store alternative' },
   
   // Developer routes
   { pattern: '/developer', target: '/developers', priority: 10, description: 'Developer portal' },
