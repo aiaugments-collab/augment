@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { SmartImage } from "@/components/ui/SmartImage";
+import { MockupInterface } from "@/components/ui/MockupInterface";
 
 interface ExplorerTab {
   id: string;
@@ -18,8 +19,13 @@ interface ExplorerTab {
       title: string;
       items: string[];
     };
-    image: string;
-    imageAlt: string;
+    image?: string;
+    imageAlt?: string;
+    mockup?: {
+      type: 'dashboard' | 'form' | 'list' | 'chat' | 'analytics' | 'calendar' | 'table';
+      title: string;
+      description: string;
+    };
   };
 }
 
@@ -166,17 +172,30 @@ export function ProductExplorer({ title, tabs, className = "" }: ProductExplorer
                   </div>
                 </div>
 
-                {/* Right: Product Image */}
+                {/* Right: Product Image or Mockup */}
                 <div className="lg:col-span-1 flex items-center justify-center">
                   <div className="w-full">
-                    <SmartImage
-                      src={currentTab.content.image}
-                      alt={currentTab.content.imageAlt}
-                      width={400}
-                      height={300}
-                      className="w-full h-auto rounded-lg shadow-lg"
-                      mockupType="interface"
-                    />
+                    {currentTab.content.mockup ? (
+                      <MockupInterface
+                        type={currentTab.content.mockup.type}
+                        title={currentTab.content.mockup.title}
+                        description={currentTab.content.mockup.description}
+                        className="w-full h-auto rounded-lg shadow-lg"
+                      />
+                    ) : currentTab.content.image ? (
+                      <SmartImage
+                        src={currentTab.content.image}
+                        alt={currentTab.content.imageAlt || "Product interface"}
+                        width={400}
+                        height={300}
+                        className="w-full h-auto rounded-lg shadow-lg"
+                        mockupType="interface"
+                      />
+                    ) : (
+                      <div className="w-full h-80 bg-gray-100 rounded-lg shadow-lg flex items-center justify-center">
+                        <span className="text-gray-400">Product Preview</span>
+                      </div>
+                    )}
                   </div>
                 </div>
 

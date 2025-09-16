@@ -85,8 +85,11 @@ export default function RiskManagementPage() {
             "Stakeholder risk reporting"
           ]
         },
-        image: "/products/risk-management/01.png",
-        imageAlt: "Risk assessment dashboard with scoring and heat maps"
+        mockup: {
+          type: "analytics" as const,
+          title: "Risk Assessment Dashboard",
+          description: "Risk scoring, heat maps, and real-time monitoring interface"
+        }
       }
     },
     {
@@ -112,8 +115,11 @@ export default function RiskManagementPage() {
             "Third-party risk assessment"
           ]
         },
-        image: "/products/risk-management/02.png",
-        imageAlt: "Compliance monitoring dashboard with regulatory tracking"
+        mockup: {
+          type: "dashboard" as const,
+          title: "Compliance Monitoring Center",
+          description: "Real-time compliance status and regulatory tracking dashboard"
+        }
       }
     },
     {
@@ -139,8 +145,11 @@ export default function RiskManagementPage() {
             "Regulatory audit support"
           ]
         },
-        image: "/products/risk-management/03.png",
-        imageAlt: "Audit trail interface with activity logging and reporting"
+        mockup: {
+          type: "table" as const,
+          title: "Audit Trail Management",
+          description: "Comprehensive activity logging and audit trail tracking"
+        }
       }
     },
     {
@@ -166,8 +175,11 @@ export default function RiskManagementPage() {
             "Governance training programs"
           ]
         },
-        image: "/products/risk-management/04.png",
-        imageAlt: "Governance framework dashboard with policy and control management"
+        mockup: {
+          type: "form" as const,
+          title: "Governance Framework",
+          description: "Policy management and governance control framework interface"
+        }
       }
     }
   ];
@@ -329,9 +341,12 @@ export default function RiskManagementPage() {
           title="Risk Management and Compliance"
           description="Enterprise risk assessment, compliance monitoring, audit trails, and regulatory reporting to ensure business continuity and regulatory adherence. Comprehensive risk management solution designed for complex regulatory environments."
           ctaButtons={ctaButtons}
-          mediaType="image"
-          mediaUrl="/products/risk-management/01.png"
-          mediaAlt="Risk Management dashboard with assessment and compliance monitoring"
+          mediaType="mockup"
+          mockup={{
+            type: "dashboard",
+            title: "Risk Management Center",
+            description: "Comprehensive risk assessment and compliance monitoring dashboard"
+          }}
         />
 
         <ProductPromo cards={promoCards} />

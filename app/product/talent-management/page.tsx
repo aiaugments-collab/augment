@@ -26,36 +26,36 @@ export default function TalentManagementPage() {
     {
       id: "talent-acquisition",
       image: "/products/talent/01.png",
-      title: "Webinar: Modern Talent Acquisition",
-      description: "Learn how to attract and hire top talent with AI-powered recruitment tools and streamlined hiring processes.",
-      ctaText: "Register today",
+      title: "Advanced Talent Acquisition Strategy",
+      description: "Master modern recruitment techniques with AI-powered sourcing, candidate experience optimization, and strategic talent pipeline development.",
+      ctaText: "Learn talent acquisition",
       ctaLink: "/book-demo",
       target: "_self" as const
     },
     {
       id: "performance-management",
       image: "/products/talent/02.png",
-      title: "Performance Management Best Practices",
-      description: "Discover how to implement effective performance management systems that drive employee engagement and business results.",
-      ctaText: "Read guide",
+      title: "Modern Performance Management",
+      description: "Transform performance reviews with continuous feedback, goal alignment, and data-driven performance insights for employee development.",
+      ctaText: "Explore performance tools",
       ctaLink: "/book-demo",
       target: "_self" as const
     },
     {
       id: "learning-development",
       image: "/products/talent/03.png",
-      title: "Learning & Development Strategy Guide",
-      description: "Master employee development with comprehensive learning programs and career progression frameworks.",
-      ctaText: "Download guide (PDF)",
+      title: "Learning & Development Platform",
+      description: "Create personalized learning paths, skill development programs, and career advancement opportunities that drive employee growth.",
+      ctaText: "View L&D features",
       ctaLink: "/book-demo",
       target: "_self" as const
     },
     {
-      id: "talent-success",
+      id: "succession-planning",
       image: "/products/talent/04.png",
-      title: "Success Story: 40% Faster Hiring",
-      description: "See how a technology company reduced time-to-hire by 40% while improving candidate quality using our talent management solution.",
-      ctaText: "Read success story",
+      title: "Strategic Succession Planning",
+      description: "Build robust talent pipelines with succession planning, leadership development, and strategic workforce planning for business continuity.",
+      ctaText: "See succession tools",
       ctaLink: "/book-demo",
       target: "_self" as const
     }
@@ -66,108 +66,120 @@ export default function TalentManagementPage() {
       id: "talent-acquisition",
       title: "Talent Acquisition",
       content: {
-        title: "AI-powered recruitment and hiring",
-        description: "Streamline your hiring process with AI-powered candidate matching, automated screening, and collaborative hiring tools that help you find and hire the best talent faster.",
+        title: "Comprehensive recruitment and talent sourcing",
+        description: "Attract and hire top talent with AI-powered sourcing, automated candidate screening, and optimized recruitment workflows that reduce time-to-hire and improve candidate quality.",
         buttons: [
-          { text: "Try talent acquisition", href: "/book-demo", variant: "primary" as const },
-          { text: "See hiring examples", href: "/book-demo", variant: "secondary" as const }
+          { text: "Try Talent Acquisition", href: "/book-demo", variant: "primary" as const },
+          { text: "Sourcing strategies", href: "/book-demo", variant: "secondary" as const }
         ],
         features: {
-          title: "Acquisition Capabilities",
+          title: "Talent Acquisition Features",
           items: [
-            "AI-powered candidate matching",
+            "AI-powered candidate sourcing",
             "Automated resume screening",
-            "Multi-channel job posting",
-            "Collaborative hiring workflows",
-            "Interview scheduling automation",
-            "Candidate experience optimization",
-            "Hiring analytics and reporting",
-            "Offer management system"
+            "Candidate experience portal",
+            "Interview management system",
+            "Talent pipeline development",
+            "Employer branding tools",
+            "Recruitment analytics",
+            "Collaborative hiring workflows"
           ]
         },
-        image: "/products/talent/01.png",
-        imageAlt: "Talent acquisition interface with AI matching and candidate screening"
+        mockup: {
+          type: "table" as const,
+          title: "Candidate Pipeline",
+          description: "Comprehensive candidate tracking and recruitment workflow management"
+        }
       }
     },
     {
       id: "performance-management",
       title: "Performance Management",
       content: {
-        title: "Comprehensive performance management system",
-        description: "Drive employee performance with goal setting, continuous feedback, performance reviews, and development planning tools that align individual goals with business objectives.",
+        title: "Modern performance evaluation and development",
+        description: "Drive employee performance with continuous feedback, goal alignment, and data-driven insights that support career development and organizational success.",
         buttons: [
-          { text: "Explore performance management", href: "/book-demo", variant: "primary" as const },
-          { text: "View performance tools", href: "/book-demo", variant: "secondary" as const }
+          { text: "Explore Performance Tools", href: "/book-demo", variant: "primary" as const },
+          { text: "Review templates", href: "/book-demo", variant: "secondary" as const }
         ],
         features: {
-          title: "Performance Features",
+          title: "Performance Management Features",
           items: [
-            "Goal setting and tracking",
             "Continuous feedback system",
-            "360-degree reviews",
-            "Performance calibration",
-            "Development planning",
-            "Competency management",
+            "Goal setting and tracking",
+            "360-degree feedback",
+            "Performance review automation",
+            "Competency assessments",
+            "Career development planning",
             "Performance analytics",
-            "Recognition and rewards"
+            "Manager coaching tools"
           ]
         },
-        image: "/products/talent/02.png",
-        imageAlt: "Performance management dashboard with goals and feedback tracking"
+        mockup: {
+          type: "form" as const,
+          title: "Performance Review",
+          description: "Modern performance evaluation and goal tracking interface"
+        }
       }
     },
     {
       id: "learning-development",
       title: "Learning & Development",
       content: {
-        title: "Comprehensive learning and development platform",
-        description: "Develop your workforce with personalized learning paths, skill assessments, training programs, and career development tools that drive employee growth and retention.",
+        title: "Personalized learning and skill development",
+        description: "Accelerate employee growth with personalized learning paths, skill assessments, and comprehensive training programs that align with career goals and business objectives.",
         buttons: [
-          { text: "Try learning platform", href: "/book-demo", variant: "primary" as const },
-          { text: "Development guide", href: "/book-demo", variant: "secondary" as const }
+          { text: "Try Learning Platform", href: "/book-demo", variant: "primary" as const },
+          { text: "Course catalog", href: "/book-demo", variant: "secondary" as const }
         ],
         features: {
-          title: "Learning Features",
+          title: "Learning & Development Features",
           items: [
             "Personalized learning paths",
             "Skill gap analysis",
-            "Training program management",
-            "Career development planning",
-            "Mentoring programs",
-            "Certification tracking",
-            "Learning analytics",
-            "Mobile learning access"
+            "Training content library",
+            "Mobile learning platform",
+            "Learning progress tracking",
+            "Certification management",
+            "Social learning features",
+            "Learning analytics"
           ]
         },
-        image: "/products/talent/03.png",
-        imageAlt: "Learning and development interface with personalized training paths"
+        mockup: {
+          type: "list" as const,
+          title: "Learning Dashboard",
+          description: "Personalized learning paths and skill development tracking"
+        }
       }
     },
     {
       id: "succession-planning",
       title: "Succession Planning",
       content: {
-        title: "Strategic succession planning and career development",
-        description: "Prepare for the future with comprehensive succession planning tools that identify high-potential employees, create development plans, and ensure business continuity.",
+        title: "Strategic workforce planning and development",
+        description: "Build resilient organizations with comprehensive succession planning, leadership development, and strategic talent mapping that ensures business continuity and growth.",
         buttons: [
-          { text: "Explore succession planning", href: "/book-demo", variant: "primary" as const },
-          { text: "Planning guide", href: "/book-demo", variant: "secondary" as const }
+          { text: "View Succession Tools", href: "/book-demo", variant: "primary" as const },
+          { text: "Planning framework", href: "/book-demo", variant: "secondary" as const }
         ],
         features: {
           title: "Succession Planning Features",
           items: [
+            "Leadership pipeline development",
             "High-potential identification",
-            "Succession mapping",
-            "Leadership development programs",
-            "Career pathway planning",
-            "Talent pipeline management",
-            "Risk assessment tools",
-            "Readiness evaluation",
-            "Development tracking"
+            "Succession mapping tools",
+            "Leadership assessments",
+            "Career progression planning",
+            "Talent mobility tracking",
+            "Risk assessment analysis",
+            "Executive dashboards"
           ]
         },
-        image: "/products/talent/04.png",
-        imageAlt: "Succession planning dashboard with talent pipeline and development tracking"
+        mockup: {
+          type: "analytics" as const,
+          title: "Succession Analytics",
+          description: "Strategic talent planning and leadership pipeline insights"
+        }
       }
     }
   ];
@@ -175,8 +187,8 @@ export default function TalentManagementPage() {
   const whyChooseItems = [
     {
       number: "01",
-      title: "AI-powered talent acquisition and recruitment",
-      description: "Find and hire the best talent faster with AI-powered candidate matching, automated screening, and streamlined hiring processes that improve candidate quality and reduce time-to-hire.",
+      title: "Comprehensive talent acquisition and sourcing",
+      description: "Attract and hire top talent with AI-powered recruitment tools, automated candidate screening, and optimized hiring workflows that reduce time-to-hire while improving candidate quality.",
       link: {
         text: "Learn about talent acquisition",
         href: "/book-demo"
@@ -184,25 +196,25 @@ export default function TalentManagementPage() {
     },
     {
       number: "02", 
-      title: "Comprehensive performance management system",
-      description: "Drive employee performance with integrated goal setting, continuous feedback, and development planning tools that align individual performance with business objectives."
+      title: "Modern performance management and development",
+      description: "Drive employee performance with continuous feedback systems, goal alignment tools, and data-driven insights that support career development and organizational success."
     },
     {
       number: "03",
-      title: "Personalized learning and development platform", 
-      description: "Develop your workforce with personalized learning paths, skill assessments, and career development tools that drive employee growth, engagement, and retention."
+      title: "Personalized learning and skill development", 
+      description: "Accelerate employee growth with personalized learning paths, skill assessments, and comprehensive training programs that align with career goals and business objectives."
     },
     {
       number: "04",
       title: "Strategic succession planning and leadership development",
-      description: "Prepare for the future with comprehensive succession planning tools that identify high-potential employees and create development plans for business continuity."
+      description: "Build resilient organizations with comprehensive succession planning, leadership development programs, and strategic talent mapping that ensures business continuity."
     }
   ];
 
   const customerReference = {
-    title: "Customer Success Story",
-    company: "Technology company reduces time-to-hire by 40%",
-    description: "A leading technology company transformed their talent management process using our solution, significantly reducing hiring time while improving candidate quality and employee retention.",
+    title: "Talent Management Success",
+    company: "Global company improves retention by 45%",
+    description: "A multinational corporation transformed their talent management approach using our comprehensive platform, significantly improving employee retention and accelerating leadership development.",
     image: "/products/talent/01.png",
     linkText: "Read the talent management success story",
     linkHref: "/book-demo"
@@ -210,40 +222,40 @@ export default function TalentManagementPage() {
 
   const customerLogos = [
     {
-      name: "Google",
-      image: "https://logo.clearbit.com/google.com",
+      name: "LinkedIn",
+      image: "https://logo.clearbit.com/linkedin.com",
       href: "/book-demo",
-      alt: "Google logo"
+      alt: "LinkedIn logo"
     },
     {
-      name: "Microsoft",
-      image: "https://logo.clearbit.com/microsoft.com",
+      name: "Workday",
+      image: "https://logo.clearbit.com/workday.com",
       href: "/book-demo",
-      alt: "Microsoft logo"
+      alt: "Workday logo"
     },
     {
-      name: "Apple",
-      image: "https://logo.clearbit.com/apple.com",
+      name: "Cornerstone",
+      image: "https://logo.clearbit.com/cornerstoneondemand.com",
       href: "/book-demo", 
-      alt: "Apple logo"
+      alt: "Cornerstone logo"
     },
     {
-      name: "Amazon",
-      image: "https://logo.clearbit.com/amazon.com",
+      name: "SuccessFactors",
+      image: "https://logo.clearbit.com/successfactors.com",
       href: "/book-demo",
-      alt: "Amazon logo"
+      alt: "SuccessFactors logo"
     },
     {
-      name: "Meta", 
-      image: "https://logo.clearbit.com/meta.com",
+      name: "Greenhouse", 
+      image: "https://logo.clearbit.com/greenhouse.io",
       href: "/book-demo",
-      alt: "Meta logo"
+      alt: "Greenhouse logo"
     },
     {
-      name: "Netflix",
-      image: "https://logo.clearbit.com/netflix.com",
+      name: "Lever",
+      image: "https://logo.clearbit.com/lever.co",
       href: "/book-demo",
-      alt: "Netflix logo"
+      alt: "Lever logo"
     }
   ];
 
@@ -252,29 +264,29 @@ export default function TalentManagementPage() {
       id: "whats-new",
       title: "What's new in Talent Management",
       content: {
-        title: "Latest talent management and HR technology features",
-        description: "Stay updated with the newest capabilities in talent acquisition, performance management, and employee development designed for modern workplaces.",
+        title: "Latest talent management innovations",
+        description: "Stay updated with the newest capabilities in talent acquisition, performance management, and succession planning designed for modern workforce development.",
         image: "/products/talent/02.png",
         links: [
-          { text: "Latest AI recruitment features", href: "/book-demo" },
-          { text: "New performance management tools", href: "/book-demo" },
-          { text: "Enhanced learning platforms", href: "/book-demo" },
-          { text: "Mobile app improvements", href: "/book-demo" }
+          { text: "New recruitment features", href: "/book-demo" },
+          { text: "Performance management updates", href: "/book-demo" },
+          { text: "Learning platform enhancements", href: "/book-demo" },
+          { text: "Succession planning tools", href: "/book-demo" }
         ]
       }
     },
     {
       id: "compare",
-      title: "Compare Talent Management solutions",
+      title: "Compare talent solutions",
       content: {
-        title: "See why our talent management solution leads the market",
-        description: "Compare our comprehensive talent management capabilities with other solutions and see why organizations choose us for recruitment, performance management, and employee development.",
+        title: "Why choose our talent management platform",
+        description: "Compare our comprehensive talent management capabilities with other solutions and see why HR leaders choose us for talent acquisition and development.",
         image: "/products/talent/03.png",
         links: [
-          { text: "Talent management comparison", href: "/book-demo" },
-          { text: "Feature comparison guide", href: "/book-demo" },
-          { text: "ROI calculator", href: "/book-demo" },
-          { text: "Implementation roadmap", href: "/book-demo" }
+          { text: "Talent platform comparison", href: "/book-demo" },
+          { text: "Feature comparison matrix", href: "/book-demo" },
+          { text: "Implementation roadmap", href: "/book-demo" },
+          { text: "ROI analysis", href: "/book-demo" }
         ]
       }
     },
@@ -282,14 +294,14 @@ export default function TalentManagementPage() {
       id: "learning",
       title: "Master talent management",
       content: {
-        title: "Learn advanced talent management techniques",
-        description: "Master talent optimization with comprehensive guides, best practices, and HR strategies used by leading technology companies and innovative organizations.",
+        title: "Learn strategic talent management",
+        description: "Master talent management excellence with comprehensive guides, best practices, and training materials for HR professionals and talent leaders.",
         image: "/products/talent/04.png",
         links: [
-          { text: "Talent management masterclass", href: "/book-demo" },
-          { text: "Recruitment optimization guide", href: "/book-demo" },
+          { text: "Talent strategy guide", href: "/book-demo" },
+          { text: "Recruitment best practices", href: "/book-demo" },
           { text: "Performance management training", href: "/book-demo" },
-          { text: "Leadership development strategies", href: "/book-demo" }
+          { text: "Succession planning framework", href: "/book-demo" }
         ]
       }
     }
@@ -316,7 +328,7 @@ export default function TalentManagementPage() {
   return (
     <div className="min-h-screen">
       <main>
-        <h1 className="sr-only">Talent Management | Recruitment, Performance & Development Platform</h1>
+        <h1 className="sr-only">Talent Management | Complete Talent Acquisition & Development Platform</h1>
         
         {/* Breadcrumbs */}
         <div className="bg-white border-b border-gray-100">
@@ -327,23 +339,26 @@ export default function TalentManagementPage() {
 
         <ProductHero
           title="Talent Management"
-          description="Comprehensive talent acquisition, performance management, learning and development, and succession planning for optimal workforce management. Attract, develop, and retain top talent with integrated talent management capabilities."
+          description="Comprehensive talent acquisition, performance management, learning and development, succession planning, and career development for optimal workforce management. Build high-performing teams with strategic talent planning and development."
           ctaButtons={ctaButtons}
-          mediaType="image"
-          mediaUrl="/products/talent/01.png"
-          mediaAlt="Talent Management dashboard with recruitment and performance tools"
+          mediaType="mockup"
+          mockup={{
+            type: "analytics",
+            title: "Talent Analytics Dashboard",
+            description: "Strategic talent insights and workforce development metrics"
+          }}
         />
 
         <ProductPromo cards={promoCards} />
         <ProductExplorer title="Talent Management" tabs={explorerTabs} />
         <ProductWhyChoose 
-          title="Why choose our Talent Management solution?" 
+          title="Why choose our Talent Management platform?" 
           items={whyChooseItems}
           customerReference={customerReference}
         />
         <ProductCustomerLogos
           title="Talent management success stories"
-          description="Learn why leading technology companies and innovative organizations use our talent management solution to attract, develop, and retain top talent."
+          description="Learn why HR leaders and talent professionals choose our platform for strategic talent acquisition and workforce development."
           viewMoreText="View more success stories"
           viewMoreHref="/book-demo"
           logos={customerLogos}
@@ -353,10 +368,10 @@ export default function TalentManagementPage() {
           tabs={resourceTabs}
         />
         <ProductCTABanner
-          title="The Talent Management Guide"
-          description="We've compiled recruitment strategies, performance management frameworks, and talent development best practices used by leading technology companies and innovative organizations."
+          title="The Strategic Talent Management Guide"
+          description="We've compiled talent acquisition strategies, performance management frameworks, and succession planning methodologies for modern workforce development."
           image="/products/talent/03.png"
-          buttonText="Get the talent management guide"
+          buttonText="Get the talent guide"
           buttonHref="/book-demo"
         />
         <ProductGetStarted

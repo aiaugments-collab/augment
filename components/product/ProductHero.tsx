@@ -1,6 +1,7 @@
 "use client";
 
 import { SmartImage } from "@/components/ui/SmartImage";
+import { MockupInterface } from "@/components/ui/MockupInterface";
 
 interface CTAButton {
   text: string;
@@ -12,10 +13,15 @@ interface ProductHeroProps {
   title: string;
   description: string;
   ctaButtons: CTAButton[];
-  mediaType: 'video' | 'image';
-  mediaUrl: string;
+  mediaType: 'video' | 'image' | 'mockup';
+  mediaUrl?: string;
   videoThumbnail?: string;
   mediaAlt?: string;
+  mockup?: {
+    type: 'dashboard' | 'form' | 'list' | 'chat' | 'analytics' | 'calendar' | 'table';
+    title: string;
+    description: string;
+  };
 }
 
 export function ProductHero({
@@ -25,7 +31,8 @@ export function ProductHero({
   mediaType,
   mediaUrl,
   videoThumbnail,
-  mediaAlt = "Product demonstration"
+  mediaAlt = "Product demonstration",
+  mockup
 }: ProductHeroProps) {
   return (
     <section className="relative bg-white border-b border-gray-100">
@@ -80,11 +87,20 @@ export function ProductHero({
           {/* Right Column - Media */}
           <div className="lg:col-span-6 flex items-center justify-center">
             <div className="relative w-full max-w-md">
-              {mediaType === 'video' ? (
+              {mediaType === 'mockup' && mockup ? (
+                <div className="rounded-lg overflow-hidden shadow-lg">
+                  <MockupInterface
+                    type={mockup.type}
+                    title={mockup.title}
+                    description={mockup.description}
+                    className="w-full h-auto"
+                  />
+                </div>
+              ) : mediaType === 'video' ? (
                 <div className="relative group cursor-pointer">
                   <div className="relative rounded-lg overflow-hidden shadow-lg">
                     <SmartImage
-                      src={videoThumbnail || mediaUrl}
+                      src={videoThumbnail || mediaUrl || ""}
                       alt={mediaAlt}
                       width={400}
                       height={225}
@@ -114,7 +130,7 @@ export function ProductHero({
               ) : (
                 <div className="rounded-lg overflow-hidden shadow-lg">
                   <SmartImage
-                    src={mediaUrl}
+                    src={mediaUrl || ""}
                     alt={mediaAlt}
                     width={400}
                     height={300}

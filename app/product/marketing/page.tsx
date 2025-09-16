@@ -8,55 +8,54 @@ import { ProductCTABanner } from "@/components/product/ProductCTABanner";
 import { ProductGetStarted } from "@/components/product/ProductGetStarted";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 
-
 export default function MarketingPage() {
   const ctaButtons = [
     {
-      text: "Book a Demo",
+      text: "Start Free Trial",
       href: "/book-demo",
       variant: "primary" as const
     },
     {
-      text: "Contact Sales",
-      href: "/corporate/contact/sales",
+      text: "Schedule Demo",
+      href: "/book-demo",
       variant: "secondary" as const
     }
   ];
 
   const promoCards = [
     {
-      id: "webinar-marketing",
+      id: "marketing-automation",
+      image: "/products/marketing/01.png",
+      title: "Advanced Marketing Automation",
+      description: "Automate your marketing campaigns with intelligent workflows, lead nurturing, and personalized customer journeys for maximum engagement.",
+      ctaText: "Learn automation features",
+      ctaLink: "/book-demo",
+      target: "_self" as const
+    },
+    {
+      id: "email-campaigns",
       image: "/products/marketing/02.png",
-      title: "Webinar: Building High-Converting Marketing Campaigns",
-      description: "Discover how our marketing automation platform can transform your campaigns and drive customer engagement across all channels.",
-      ctaText: "Register today",
+      title: "Email Campaign Management",
+      description: "Create, send, and track email campaigns with advanced segmentation, A/B testing, and comprehensive performance analytics.",
+      ctaText: "Explore email tools",
       ctaLink: "/book-demo",
       target: "_self" as const
     },
     {
-      id: "forrester-marketing",
+      id: "social-media",
       image: "/products/marketing/03.png",
-      title: "Augment named a Leader in The Forrester Wave™: Marketing Automation, Q1 2025",
-      description: "Find out why Augment was recognized for excellence in marketing automation and customer journey orchestration.",
-      ctaText: "Access the Forrester report",
+      title: "Social Media Management",
+      description: "Manage social media campaigns across platforms with content scheduling, engagement tracking, and social analytics.",
+      ctaText: "View social features",
       ctaLink: "/book-demo",
       target: "_self" as const
     },
     {
-      id: "marketing-growth-guide",
+      id: "lead-management",
       image: "/products/marketing/04.png",
-      title: "Accelerate revenue growth with marketing automation",
-      description: "Discover how to scale marketing operations by implementing intelligent automation for lead generation and nurturing.",
-      ctaText: "Read the solution brochure (PDF)",
-      ctaLink: "/book-demo",
-      target: "_self" as const
-    },
-    {
-      id: "cmo-guide",
-      image: "/products/marketing/05.png",
-      title: "CMO's guide to predictable lead generation",
-      description: "Learn the top 5 ways to build predictable marketing funnels and optimize conversion rates with data-driven insights.",
-      ctaText: "Access the guide",
+      title: "Lead Generation & Nurturing",
+      description: "Capture, qualify, and nurture leads with automated scoring, progressive profiling, and intelligent lead routing.",
+      ctaText: "See lead tools",
       ctaLink: "/book-demo",
       target: "_self" as const
     }
@@ -64,111 +63,123 @@ export default function MarketingPage() {
 
   const explorerTabs = [
     {
-      id: "email-campaigns",
-      title: "Email Campaigns",
+      id: "marketing-automation",
+      title: "Marketing Automation",
       content: {
-        title: "Intelligent email marketing automation",
-        description: "Create and automate personalized email campaigns that engage customers at every stage of their journey. Our platform delivers the right message to the right person at the perfect time.",
+        title: "Intelligent marketing workflow automation",
+        description: "Automate your marketing processes with intelligent workflows, trigger-based campaigns, and personalized customer journeys that drive engagement and conversion.",
         buttons: [
-          { text: "Book a Demo", href: "/book-demo", variant: "primary" as const },
-          { text: "See email features", href: "/book-demo", variant: "secondary" as const }
+          { text: "Try Marketing Automation", href: "/book-demo", variant: "primary" as const },
+          { text: "Workflow templates", href: "/book-demo", variant: "secondary" as const }
         ],
         features: {
-          title: "Key Features",
+          title: "Marketing Automation Features",
+          items: [
+            "Intelligent workflow builder",
+            "Trigger-based campaigns",
+            "Lead scoring automation",
+            "Behavioral targeting",
+            "Customer journey mapping",
+            "Dynamic content personalization",
+            "Multi-channel orchestration",
+            "Campaign performance tracking"
+          ]
+        },
+        mockup: {
+          type: "dashboard" as const,
+          title: "Marketing Automation Hub",
+          description: "Intelligent marketing workflow and campaign management dashboard"
+        }
+      }
+    },
+    {
+      id: "email-marketing",
+      title: "Email Marketing",
+      content: {
+        title: "Advanced email campaign management",
+        description: "Create and deliver personalized email campaigns with advanced segmentation, A/B testing, and comprehensive analytics that drive higher engagement and ROI.",
+        buttons: [
+          { text: "Explore Email Tools", href: "/book-demo", variant: "primary" as const },
+          { text: "Email templates", href: "/book-demo", variant: "secondary" as const }
+        ],
+        features: {
+          title: "Email Marketing Features",
           items: [
             "Drag-and-drop email builder",
-            "Personalization and dynamic content",
-            "A/B testing and optimization",
+            "Advanced audience segmentation",
+            "A/B testing capabilities",
+            "Personalization engine",
             "Automated drip campaigns",
-            "Behavioral trigger emails",
-            "Advanced segmentation",
             "Deliverability optimization",
-            "Real-time analytics and reporting"
+            "Email performance analytics",
+            "Mobile-responsive templates"
           ]
         },
-        image: "/products/marketing/02.png",
-        imageAlt: "Email campaign builder"
+        mockup: {
+          type: "form" as const,
+          title: "Email Campaign Builder",
+          description: "Intuitive email design and campaign management interface"
+        }
       }
     },
     {
-      id: "lead-nurturing",
-      title: "Lead Nurturing",
+      id: "lead-management",
+      title: "Lead Management",
       content: {
-        title: "Automated lead nurturing workflows",
-        description: "Transform prospects into customers with intelligent lead nurturing that delivers personalized content based on behavior, interests, and engagement patterns.",
+        title: "Comprehensive lead generation and nurturing",
+        description: "Capture, qualify, and nurture leads with intelligent scoring, progressive profiling, and automated lead routing that accelerates sales pipeline conversion.",
         buttons: [
-          { text: "Book a Demo", href: "/book-demo", variant: "primary" as const },
-          { text: "See nurturing workflows", href: "/book-demo", variant: "secondary" as const }
+          { text: "Try Lead Management", href: "/book-demo", variant: "primary" as const },
+          { text: "Lead scoring guide", href: "/book-demo", variant: "secondary" as const }
         ],
         features: {
-          title: "Key Features",
+          title: "Lead Management Features",
           items: [
-            "Visual workflow builder",
-            "Behavioral scoring and triggers",
-            "Multi-channel nurturing paths",
-            "Content recommendation engine",
-            "Lead qualification automation",
-            "Sales handoff optimization",
-            "Engagement tracking",
-            "Conversion attribution"
+            "Lead capture forms",
+            "Progressive profiling",
+            "Intelligent lead scoring",
+            "Automated lead routing",
+            "Lead nurturing campaigns",
+            "Conversion tracking",
+            "Lead quality analytics",
+            "Sales handoff automation"
           ]
         },
-        image: "/products/marketing/03.png",
-        imageAlt: "Lead nurturing workflows"
+        mockup: {
+          type: "table" as const,
+          title: "Lead Management System",
+          description: "Comprehensive lead tracking and nurturing pipeline"
+        }
       }
     },
     {
-      id: "social-media",
-      title: "Social Media",
+      id: "marketing-analytics",
+      title: "Marketing Analytics",
       content: {
-        title: "Social media management and automation",
-        description: "Manage your social media presence across all platforms with automated posting, engagement tracking, and social listening capabilities that amplify your brand reach.",
+        title: "Advanced marketing performance insights",
+        description: "Measure and optimize marketing performance with comprehensive analytics, attribution modeling, and ROI tracking that drive data-driven marketing decisions.",
         buttons: [
-          { text: "Book a Demo", href: "/book-demo", variant: "primary" as const },
-          { text: "See social features", href: "/book-demo", variant: "secondary" as const }
+          { text: "View Marketing Analytics", href: "/book-demo", variant: "primary" as const },
+          { text: "Custom reports", href: "/book-demo", variant: "secondary" as const }
         ],
         features: {
-          title: "Key Features",
+          title: "Marketing Analytics Features",
           items: [
-            "Multi-platform publishing",
-            "Content calendar management",
-            "Automated posting schedules",
-            "Social listening and monitoring",
-            "Engagement analytics",
-            "Hashtag optimization",
-            "Influencer collaboration tools",
-            "Social ROI tracking"
-          ]
-        },
-        image: "/products/marketing/04.png",
-        imageAlt: "Social media management"
-      }
-    },
-    {
-      id: "analytics-attribution",
-      title: "Analytics & Attribution",
-      content: {
-        title: "Marketing performance analytics",
-        description: "Measure and optimize your marketing performance with comprehensive analytics that track every touchpoint and attribute revenue to the right campaigns and channels.",
-        buttons: [
-          { text: "Book a Demo", href: "/book-demo", variant: "primary" as const },
-          { text: "See analytics demo", href: "/book-demo", variant: "secondary" as const }
-        ],
-        features: {
-          title: "Key Features",
-          items: [
-            "Multi-touch attribution modeling",
             "Campaign performance tracking",
-            "ROI and ROAS reporting",
-            "Customer journey mapping",
+            "Multi-touch attribution",
+            "Customer journey analytics",
+            "ROI measurement",
             "Conversion funnel analysis",
-            "Real-time dashboard insights",
-            "Custom report builder",
-            "Predictive analytics"
+            "Channel performance insights",
+            "Real-time marketing dashboards",
+            "Predictive marketing analytics"
           ]
         },
-        image: "/products/marketing/05.png",
-        imageAlt: "Marketing analytics dashboard"
+        mockup: {
+          type: "analytics" as const,
+          title: "Marketing Analytics Center",
+          description: "Comprehensive marketing performance metrics and insights"
+        }
       }
     }
   ];
@@ -176,57 +187,149 @@ export default function MarketingPage() {
   const whyChooseItems = [
     {
       number: "01",
-      title: "All-in-One Platform",
-      description: "Manage email, social media, content, and analytics in one unified platform that eliminates the need for multiple marketing tools.",
+      title: "Intelligent marketing automation and workflows",
+      description: "Automate your marketing processes with intelligent workflows, trigger-based campaigns, and personalized customer journeys that drive engagement and maximize conversion rates.",
       link: {
-        text: "Explore platform features",
+        text: "Learn about marketing automation",
         href: "/book-demo"
       }
     },
     {
-      number: "02",
-      title: "AI-Powered Insights",
-      description: "Leverage artificial intelligence to optimize campaigns, predict customer behavior, and automate decision-making processes.",
-      link: {
-        text: "See AI capabilities",
-        href: "/book-demo"
-      }
+      number: "02", 
+      title: "Advanced email marketing and campaign management",
+      description: "Create and deliver personalized email campaigns with advanced segmentation, A/B testing, and comprehensive analytics that drive higher engagement and ROI."
     },
     {
       number: "03",
-      title: "Advanced Segmentation",
-      description: "Create highly targeted campaigns with sophisticated audience segmentation based on behavior, demographics, and engagement.",
-      link: {
-        text: "View segmentation tools",
-        href: "/book-demo"
+      title: "Comprehensive lead generation and nurturing", 
+      description: "Capture, qualify, and nurture leads with intelligent scoring, progressive profiling, and automated lead routing that accelerates sales pipeline conversion."
+    },
+    {
+      number: "04",
+      title: "Advanced marketing analytics and performance insights",
+      description: "Measure and optimize marketing performance with comprehensive analytics, attribution modeling, and ROI tracking that drive data-driven marketing decisions."
+    }
+  ];
+
+  const customerReference = {
+    title: "Marketing Automation Success",
+    company: "SaaS company increases lead conversion by 300%",
+    description: "A growing SaaS company transformed their marketing operations using our comprehensive automation platform, tripling lead conversion rates while reducing manual effort.",
+    image: "/products/marketing/01.png",
+    linkText: "Read the marketing transformation story",
+    linkHref: "/book-demo"
+  };
+
+  const customerLogos = [
+    {
+      name: "HubSpot",
+      image: "https://logo.clearbit.com/hubspot.com",
+      href: "/book-demo",
+      alt: "HubSpot logo"
+    },
+    {
+      name: "Salesforce",
+      image: "https://logo.clearbit.com/salesforce.com",
+      href: "/book-demo",
+      alt: "Salesforce logo"
+    },
+    {
+      name: "Marketo",
+      image: "https://logo.clearbit.com/marketo.com",
+      href: "/book-demo", 
+      alt: "Marketo logo"
+    },
+    {
+      name: "Mailchimp",
+      image: "https://logo.clearbit.com/mailchimp.com",
+      href: "/book-demo",
+      alt: "Mailchimp logo"
+    },
+    {
+      name: "Pardot", 
+      image: "https://logo.clearbit.com/pardot.com",
+      href: "/book-demo",
+      alt: "Pardot logo"
+    },
+    {
+      name: "ActiveCampaign",
+      image: "https://logo.clearbit.com/activecampaign.com",
+      href: "/book-demo",
+      alt: "ActiveCampaign logo"
+    }
+  ];
+
+  const resourceTabs = [
+    {
+      id: "whats-new",
+      title: "What's new in Marketing",
+      content: {
+        title: "Latest marketing automation features",
+        description: "Stay updated with the newest capabilities in marketing automation, email campaigns, and analytics designed for modern marketing operations.",
+        image: "/products/marketing/02.png",
+        links: [
+          { text: "New automation features", href: "/book-demo" },
+          { text: "Email campaign updates", href: "/book-demo" },
+          { text: "Analytics enhancements", href: "/book-demo" },
+          { text: "Integration improvements", href: "/book-demo" }
+        ]
+      }
+    },
+    {
+      id: "compare",
+      title: "Compare marketing solutions",
+      content: {
+        title: "Why choose our marketing automation platform",
+        description: "Compare our comprehensive marketing capabilities with other solutions and see why marketing teams choose us for automation and campaign management.",
+        image: "/products/marketing/03.png",
+        links: [
+          { text: "Marketing platform comparison", href: "/book-demo" },
+          { text: "Feature comparison matrix", href: "/book-demo" },
+          { text: "Implementation roadmap", href: "/book-demo" },
+          { text: "ROI calculator", href: "/book-demo" }
+        ]
+      }
+    },
+    {
+      id: "learning",
+      title: "Master marketing automation",
+      content: {
+        title: "Learn advanced marketing strategies",
+        description: "Master marketing excellence with comprehensive guides, best practices, and training materials for marketing professionals and growth teams.",
+        image: "/products/marketing/04.png",
+        links: [
+          { text: "Marketing automation guide", href: "/book-demo" },
+          { text: "Email marketing best practices", href: "/book-demo" },
+          { text: "Lead generation strategies", href: "/book-demo" },
+          { text: "Analytics and optimization", href: "/book-demo" }
+        ]
       }
     }
   ];
 
-  const resources = [
+  const getStartedActions = [
     {
-      title: "Marketing Automation Playbook",
-      description: "Complete guide to implementing marketing automation for growth",
-      type: "Guide",
-      href: "/book-demo"
+      title: "Start free trial",
+      href: "/book-demo",
+      icon: "demo"
     },
     {
-      title: "Email Marketing Best Practices",
-      description: "Proven strategies to improve email engagement and conversions",
-      type: "Whitepaper",
-      href: "/book-demo"
+      title: "Schedule demo",
+      href: "/book-demo",
+      icon: "tour"
     },
     {
-      title: "Marketing ROI Success Stories",
-      description: "See how companies achieved 300%+ ROI with our platform",
-      type: "Case Study",
-      href: "/book-demo"
+      title: "Contact sales",
+      href: "/book-demo",
+      icon: "contact"
     }
   ];
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen">
       <main>
+        <h1 className="sr-only">Marketing | Complete Marketing Automation & Campaign Management</h1>
+        
         {/* Breadcrumbs */}
         <div className="bg-white border-b border-gray-100">
           <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -235,44 +338,45 @@ export default function MarketingPage() {
         </div>
 
         <ProductHero
-          title="Marketing Software App"
-          description="All-in-one marketing automation platform with email campaigns, social media management, lead nurturing, analytics, and customer journey mapping. Complete marketing automation and campaign management for modern marketers."
+          title="Marketing"
+          description="All-in-one marketing automation platform with email campaigns, social media management, lead nurturing, analytics, and customer journey mapping for exceptional customer experiences. Drive growth with intelligent marketing workflows and data-driven insights."
           ctaButtons={ctaButtons}
-          mediaType="image"
-          mediaUrl="/products/marketing/01.png"
-          mediaAlt="Marketing Software Dashboard"
+          mediaType="mockup"
+          mockup={{
+            type: "dashboard",
+            title: "Marketing Automation Dashboard",
+            description: "Comprehensive marketing campaign and performance management"
+          }}
         />
 
         <ProductPromo cards={promoCards} />
-
-        <ProductExplorer
-          title="Explore marketing capabilities"
-          tabs={explorerTabs}
-        />
-
-        <ProductWhyChoose
-          title="Why choose our marketing platform?"
+        <ProductExplorer title="Marketing Automation" tabs={explorerTabs} />
+        <ProductWhyChoose 
+          title="Why choose our Marketing platform?" 
           items={whyChooseItems}
+          customerReference={customerReference}
         />
-
-
-
-
-
+        <ProductCustomerLogos
+          title="Marketing automation success stories"
+          description="Learn why marketing teams and growth professionals choose our platform for campaign automation and performance optimization."
+          viewMoreText="View more success stories"
+          viewMoreHref="/book-demo"
+          logos={customerLogos}
+        />
+        <ProductResources 
+          title="Resources"
+          tabs={resourceTabs}
+        />
         <ProductCTABanner
-          title="Ready to transform your marketing?"
-          description="Join thousands of marketers using our platform to drive engagement, generate leads, and accelerate growth."
+          title="The Marketing Automation Excellence Guide"
+          description="We've compiled marketing automation strategies, campaign optimization techniques, and growth methodologies for modern marketing teams."
           image="/products/marketing/03.png"
-          buttonText="Book a Demo"
+          buttonText="Get the marketing guide"
           buttonHref="/book-demo"
         />
-
-        <ProductGetStarted 
+        <ProductGetStarted
           title="Get Started"
-          actions={[
-            { title: "Book a Demo", href: "/book-demo", icon: "demo" },
-            { title: "Contact Sales", href: "/corporate/contact", icon: "contact" }
-          ]}
+          actions={getStartedActions}
         />
       </main>
     </div>

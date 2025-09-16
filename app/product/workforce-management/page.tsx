@@ -26,36 +26,36 @@ export default function WorkforceManagementPage() {
     {
       id: "workforce-planning",
       image: "/products/workforce/01.png",
-      title: "Webinar: Strategic Workforce Planning",
-      description: "Learn how to implement strategic workforce planning that optimizes labor costs while ensuring adequate staffing levels.",
-      ctaText: "Register today",
+      title: "Strategic Workforce Planning",
+      description: "Master workforce optimization with advanced planning tools, capacity forecasting, and strategic resource allocation for maximum productivity.",
+      ctaText: "Learn workforce planning",
       ctaLink: "/book-demo",
       target: "_self" as const
     },
     {
       id: "scheduling-optimization",
       image: "/products/workforce/02.png",
-      title: "Scheduling Optimization Best Practices",
-      description: "Discover how to optimize employee scheduling with automated tools that balance business needs and employee preferences.",
-      ctaText: "Read guide",
+      title: "Intelligent Scheduling Solutions",
+      description: "Optimize employee schedules with AI-powered scheduling, shift management, and automated workforce allocation for operational excellence.",
+      ctaText: "Explore scheduling tools",
+      ctaLink: "/book-demo",
+      target: "_self" as const
+    },
+    {
+      id: "time-attendance",
+      image: "/products/workforce/03.png",
+      title: "Advanced Time & Attendance",
+      description: "Track employee time accurately with biometric integration, mobile check-ins, and automated attendance management systems.",
+      ctaText: "View time tracking",
       ctaLink: "/book-demo",
       target: "_self" as const
     },
     {
       id: "labor-analytics",
-      image: "/products/workforce/03.png",
-      title: "Advanced Labor Analytics Guide",
-      description: "Master labor analytics with comprehensive reporting and forecasting tools for workforce optimization and cost management.",
-      ctaText: "Download guide (PDF)",
-      ctaLink: "/book-demo",
-      target: "_self" as const
-    },
-    {
-      id: "workforce-success",
       image: "/products/workforce/04.png",
-      title: "Success Story: 30% Labor Cost Reduction",
-      description: "See how a retail chain reduced labor costs by 30% while improving employee satisfaction using our workforce management solution.",
-      ctaText: "Read success story",
+      title: "Labor Cost Analytics & Insights",
+      description: "Control labor costs with comprehensive analytics, budget tracking, and predictive workforce insights for strategic decision-making.",
+      ctaText: "See analytics features",
       ctaLink: "/book-demo",
       target: "_self" as const
     }
@@ -67,107 +67,119 @@ export default function WorkforceManagementPage() {
       title: "Workforce Planning",
       content: {
         title: "Strategic workforce planning and forecasting",
-        description: "Plan your workforce strategically with demand forecasting, capacity planning, and skill gap analysis. Optimize staffing levels while controlling labor costs.",
+        description: "Optimize your workforce strategy with advanced planning tools, capacity forecasting, and predictive analytics that align staffing levels with business demands and operational requirements.",
         buttons: [
-          { text: "Try workforce planning", href: "/book-demo", variant: "primary" as const },
-          { text: "See planning examples", href: "/book-demo", variant: "secondary" as const }
+          { text: "Try Workforce Planning", href: "/book-demo", variant: "primary" as const },
+          { text: "Planning templates", href: "/book-demo", variant: "secondary" as const }
         ],
         features: {
-          title: "Planning Capabilities",
+          title: "Workforce Planning Features",
           items: [
-            "Demand forecasting algorithms",
+            "Strategic workforce forecasting",
             "Capacity planning tools",
+            "Demand-based staffing",
             "Skill gap analysis",
-            "Workforce budgeting",
-            "Scenario planning",
-            "Succession planning",
-            "Headcount optimization",
-            "Labor cost modeling"
+            "Workforce budget planning",
+            "Scenario modeling",
+            "Resource optimization",
+            "Compliance planning"
           ]
         },
-        image: "/products/workforce/01.png",
-        imageAlt: "Workforce planning interface with forecasting and capacity analysis"
+        mockup: {
+          type: "analytics" as const,
+          title: "Workforce Planning Dashboard",
+          description: "Strategic workforce forecasting and capacity planning analytics"
+        }
       }
     },
     {
-      id: "scheduling",
-      title: "Employee Scheduling",
+      id: "scheduling-management",
+      title: "Scheduling Management",
       content: {
-        title: "Intelligent employee scheduling and optimization",
-        description: "Create optimal schedules with automated tools that consider employee availability, skills, labor laws, and business requirements for maximum efficiency.",
+        title: "Intelligent scheduling and shift management",
+        description: "Create optimal employee schedules with AI-powered scheduling, automated shift assignments, and real-time schedule optimization that balances employee preferences with business needs.",
         buttons: [
-          { text: "Explore scheduling", href: "/book-demo", variant: "primary" as const },
-          { text: "View schedule examples", href: "/book-demo", variant: "secondary" as const }
+          { text: "Explore Scheduling", href: "/book-demo", variant: "primary" as const },
+          { text: "Schedule templates", href: "/book-demo", variant: "secondary" as const }
         ],
         features: {
-          title: "Scheduling Features",
+          title: "Scheduling Management Features",
           items: [
-            "Automated schedule generation",
-            "Shift optimization algorithms",
-            "Employee availability tracking",
-            "Skills-based scheduling",
-            "Labor law compliance",
+            "AI-powered schedule optimization",
+            "Automated shift assignments",
+            "Employee self-scheduling",
             "Schedule conflict resolution",
             "Mobile schedule access",
-            "Shift swap management"
+            "Shift swapping management",
+            "Coverage optimization",
+            "Schedule compliance tracking"
           ]
         },
-        image: "/products/workforce/02.png",
-        imageAlt: "Employee scheduling dashboard with automated optimization"
+        mockup: {
+          type: "calendar" as const,
+          title: "Schedule Management",
+          description: "Intelligent employee scheduling and shift management interface"
+        }
       }
     },
     {
       id: "time-attendance",
       title: "Time & Attendance",
       content: {
-        title: "Comprehensive time and attendance tracking",
-        description: "Track employee time and attendance with multiple clock-in methods, automated calculations, and compliance monitoring for accurate payroll processing.",
+        title: "Comprehensive time tracking and attendance management",
+        description: "Accurately track employee time with biometric integration, mobile check-ins, and automated attendance processing that ensures compliance and reduces administrative burden.",
         buttons: [
-          { text: "Try time tracking", href: "/book-demo", variant: "primary" as const },
-          { text: "Attendance guide", href: "/book-demo", variant: "secondary" as const }
+          { text: "Try Time Tracking", href: "/book-demo", variant: "primary" as const },
+          { text: "Attendance policies", href: "/book-demo", variant: "secondary" as const }
         ],
         features: {
-          title: "Time Tracking Features",
+          title: "Time & Attendance Features",
           items: [
-            "Multiple clock-in methods",
             "Biometric time clocks",
-            "Mobile time tracking",
-            "Automated break tracking",
-            "Overtime calculations",
-            "Absence management",
-            "Compliance monitoring",
-            "Real-time reporting"
+            "Mobile check-in/out",
+            "Automated time calculation",
+            "Overtime management",
+            "Absence tracking",
+            "Geofencing capabilities",
+            "Break time monitoring",
+            "Compliance reporting"
           ]
         },
-        image: "/products/workforce/03.png",
-        imageAlt: "Time and attendance tracking interface with multiple clock-in options"
+        mockup: {
+          type: "form" as const,
+          title: "Time Tracking System",
+          description: "Employee time entry and attendance management interface"
+        }
       }
     },
     {
       id: "labor-analytics",
       title: "Labor Analytics",
       content: {
-        title: "Advanced labor analytics and reporting",
-        description: "Gain insights into workforce performance with comprehensive analytics, predictive modeling, and customizable reports for data-driven workforce decisions.",
+        title: "Advanced labor cost management and analytics",
+        description: "Control labor costs and optimize workforce efficiency with comprehensive analytics, budget tracking, and predictive insights that drive strategic workforce decisions.",
         buttons: [
-          { text: "Explore analytics", href: "/book-demo", variant: "primary" as const },
-          { text: "Analytics guide", href: "/book-demo", variant: "secondary" as const }
+          { text: "View Labor Analytics", href: "/book-demo", variant: "primary" as const },
+          { text: "Cost reports", href: "/book-demo", variant: "secondary" as const }
         ],
         features: {
-          title: "Analytics Features",
+          title: "Labor Analytics Features",
           items: [
             "Labor cost analysis",
             "Productivity metrics",
-            "Predictive analytics",
-            "Custom reporting tools",
-            "Real-time dashboards",
-            "Trend analysis",
-            "Benchmarking reports",
-            "ROI calculations"
+            "Budget vs actual tracking",
+            "Overtime cost monitoring",
+            "Workforce efficiency metrics",
+            "Predictive labor analytics",
+            "Department cost allocation",
+            "Executive labor reports"
           ]
         },
-        image: "/products/workforce/04.png",
-        imageAlt: "Labor analytics dashboard with performance metrics and reporting"
+        mockup: {
+          type: "dashboard" as const,
+          title: "Labor Analytics Center",
+          description: "Comprehensive labor cost and workforce efficiency insights"
+        }
       }
     }
   ];
@@ -176,7 +188,7 @@ export default function WorkforceManagementPage() {
     {
       number: "01",
       title: "Strategic workforce planning and optimization",
-      description: "Plan your workforce strategically with advanced forecasting, capacity planning, and optimization tools that balance business needs with labor costs and employee satisfaction.",
+      description: "Optimize your workforce strategy with advanced planning tools, capacity forecasting, and predictive analytics that align staffing levels with business demands and operational requirements.",
       link: {
         text: "Learn about workforce planning",
         href: "/book-demo"
@@ -184,27 +196,27 @@ export default function WorkforceManagementPage() {
     },
     {
       number: "02", 
-      title: "Intelligent scheduling and time management",
-      description: "Create optimal schedules with automated tools that consider employee skills, availability, and preferences while ensuring compliance with labor laws and regulations."
+      title: "Intelligent scheduling and shift management",
+      description: "Create optimal employee schedules with AI-powered scheduling tools that balance employee preferences with business needs while ensuring adequate coverage and compliance."
     },
     {
       number: "03",
-      title: "Comprehensive time and attendance tracking", 
-      description: "Track employee time accurately with multiple clock-in methods, automated calculations, and real-time monitoring that ensures accurate payroll and compliance."
+      title: "Advanced time tracking and attendance management", 
+      description: "Accurately track employee time with biometric integration, mobile capabilities, and automated processing that reduces administrative burden and ensures compliance."
     },
     {
       number: "04",
-      title: "Advanced labor analytics and insights",
-      description: "Make data-driven workforce decisions with comprehensive analytics, predictive modeling, and customizable reports that provide insights into workforce performance and costs."
+      title: "Comprehensive labor analytics and cost control",
+      description: "Control labor costs and optimize workforce efficiency with advanced analytics, budget tracking, and predictive insights that drive strategic workforce decisions."
     }
   ];
 
   const customerReference = {
-    title: "Customer Success Story",
-    company: "Retail chain reduces labor costs by 30% while improving satisfaction",
-    description: "A major retail chain transformed their workforce management using our solution, significantly reducing labor costs while improving employee satisfaction and retention.",
+    title: "Workforce Management Success",
+    company: "Retail chain reduces labor costs by 25%",
+    description: "A major retail chain optimized their workforce management using our advanced scheduling and analytics platform, achieving significant labor cost reductions while improving employee satisfaction.",
     image: "/products/workforce/01.png",
-    linkText: "Read the workforce management success story",
+    linkText: "Read the workforce optimization story",
     linkHref: "/book-demo"
   };
 
@@ -222,28 +234,28 @@ export default function WorkforceManagementPage() {
       alt: "Target logo"
     },
     {
-      name: "Home Depot",
-      image: "https://logo.clearbit.com/homedepot.com",
+      name: "Kronos",
+      image: "https://logo.clearbit.com/kronos.com",
       href: "/book-demo", 
-      alt: "Home Depot logo"
+      alt: "Kronos logo"
     },
     {
-      name: "Starbucks",
-      image: "https://logo.clearbit.com/starbucks.com",
+      name: "Workday",
+      image: "https://logo.clearbit.com/workday.com",
       href: "/book-demo",
-      alt: "Starbucks logo"
+      alt: "Workday logo"
     },
     {
-      name: "McDonald's", 
-      image: "https://logo.clearbit.com/mcdonalds.com",
+      name: "ADP", 
+      image: "https://logo.clearbit.com/adp.com",
       href: "/book-demo",
-      alt: "McDonald's logo"
+      alt: "ADP logo"
     },
     {
-      name: "Costco",
-      image: "https://logo.clearbit.com/costco.com",
+      name: "When I Work",
+      image: "https://logo.clearbit.com/wheniwork.com",
       href: "/book-demo",
-      alt: "Costco logo"
+      alt: "When I Work logo"
     }
   ];
 
@@ -252,29 +264,29 @@ export default function WorkforceManagementPage() {
       id: "whats-new",
       title: "What's new in Workforce Management",
       content: {
-        title: "Latest workforce management and scheduling features",
-        description: "Stay updated with the newest capabilities in workforce planning, employee scheduling, and labor analytics designed for modern workplaces.",
+        title: "Latest workforce optimization features",
+        description: "Stay updated with the newest capabilities in workforce planning, scheduling automation, and labor analytics designed for modern workforce optimization.",
         image: "/products/workforce/02.png",
         links: [
-          { text: "Latest planning features", href: "/book-demo" },
-          { text: "New scheduling capabilities", href: "/book-demo" },
-          { text: "Enhanced analytics tools", href: "/book-demo" },
-          { text: "Mobile app improvements", href: "/book-demo" }
+          { text: "New planning features", href: "/book-demo" },
+          { text: "Scheduling AI improvements", href: "/book-demo" },
+          { text: "Analytics enhancements", href: "/book-demo" },
+          { text: "Mobile app updates", href: "/book-demo" }
         ]
       }
     },
     {
       id: "compare",
-      title: "Compare Workforce Management solutions",
+      title: "Compare workforce solutions",
       content: {
-        title: "See why our workforce management solution leads the market",
-        description: "Compare our comprehensive workforce management capabilities with other solutions and see why organizations choose us for employee scheduling and labor optimization.",
+        title: "Why choose our workforce management platform",
+        description: "Compare our comprehensive workforce management capabilities with other solutions and see why operations leaders choose us for workforce optimization.",
         image: "/products/workforce/03.png",
         links: [
-          { text: "Workforce management comparison", href: "/book-demo" },
-          { text: "Feature comparison guide", href: "/book-demo" },
-          { text: "ROI calculator", href: "/book-demo" },
-          { text: "Implementation roadmap", href: "/book-demo" }
+          { text: "Workforce platform comparison", href: "/book-demo" },
+          { text: "Feature comparison matrix", href: "/book-demo" },
+          { text: "Implementation guide", href: "/book-demo" },
+          { text: "ROI calculator", href: "/book-demo" }
         ]
       }
     },
@@ -282,14 +294,14 @@ export default function WorkforceManagementPage() {
       id: "learning",
       title: "Master workforce management",
       content: {
-        title: "Learn advanced workforce management techniques",
-        description: "Master workforce optimization with comprehensive guides, best practices, and scheduling strategies used by leading retailers and service organizations.",
+        title: "Learn strategic workforce optimization",
+        description: "Master workforce management excellence with comprehensive guides, best practices, and training materials for operations leaders and workforce managers.",
         image: "/products/workforce/04.png",
         links: [
-          { text: "Workforce management masterclass", href: "/book-demo" },
-          { text: "Scheduling optimization guide", href: "/book-demo" },
-          { text: "Labor analytics training", href: "/book-demo" },
-          { text: "Compliance best practices", href: "/book-demo" }
+          { text: "Workforce strategy guide", href: "/book-demo" },
+          { text: "Scheduling best practices", href: "/book-demo" },
+          { text: "Labor cost optimization", href: "/book-demo" },
+          { text: "Compliance management training", href: "/book-demo" }
         ]
       }
     }
@@ -316,7 +328,7 @@ export default function WorkforceManagementPage() {
   return (
     <div className="min-h-screen">
       <main>
-        <h1 className="sr-only">Workforce Management | Employee Scheduling & Labor Optimization</h1>
+        <h1 className="sr-only">Workforce Management | Advanced Workforce Planning & Scheduling Solution</h1>
         
         {/* Breadcrumbs */}
         <div className="bg-white border-b border-gray-100">
@@ -327,11 +339,14 @@ export default function WorkforceManagementPage() {
 
         <ProductHero
           title="Workforce Management"
-          description="Advanced workforce planning, employee scheduling, time and attendance tracking, and labor analytics for optimal workforce utilization. Reduce labor costs while improving employee satisfaction with comprehensive workforce management capabilities."
+          description="Advanced workforce planning, scheduling, time and attendance tracking, labor cost management, and compliance monitoring for optimal workforce utilization. Optimize staffing levels, control labor costs, and improve operational efficiency."
           ctaButtons={ctaButtons}
-          mediaType="image"
-          mediaUrl="/products/workforce/01.png"
-          mediaAlt="Workforce Management dashboard with planning and scheduling tools"
+          mediaType="mockup"
+          mockup={{
+            type: "calendar",
+            title: "Workforce Scheduling Dashboard",
+            description: "Intelligent workforce planning and schedule optimization"
+          }}
         />
 
         <ProductPromo cards={promoCards} />
@@ -343,7 +358,7 @@ export default function WorkforceManagementPage() {
         />
         <ProductCustomerLogos
           title="Workforce management success stories"
-          description="Learn why leading retailers and service organizations use our workforce management solution to optimize labor costs and improve employee satisfaction."
+          description="Learn why operations leaders and workforce managers choose our platform for strategic workforce optimization and labor cost management."
           viewMoreText="View more success stories"
           viewMoreHref="/book-demo"
           logos={customerLogos}
@@ -353,10 +368,10 @@ export default function WorkforceManagementPage() {
           tabs={resourceTabs}
         />
         <ProductCTABanner
-          title="The Workforce Management Guide"
-          description="We've compiled workforce optimization strategies, scheduling best practices, and labor management techniques used by leading retailers and service organizations."
+          title="The Workforce Optimization Guide"
+          description="We've compiled workforce planning strategies, scheduling best practices, and labor optimization methodologies for modern workforce management."
           image="/products/workforce/03.png"
-          buttonText="Get the workforce management guide"
+          buttonText="Get the workforce guide"
           buttonHref="/book-demo"
         />
         <ProductGetStarted
