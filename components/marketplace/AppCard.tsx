@@ -69,11 +69,6 @@ export default function AppCard({ app, viewMode = 'grid' }: AppCardProps) {
                   target.src = '/file.svg'
                 }}
               />
-              {isUnderConstruction && (
-                <div className="absolute -top-1 -right-1 bg-orange-100 text-orange-600 rounded-full p-1">
-                  <Construction className="w-3 h-3" />
-                </div>
-              )}
             </div>
 
             {/* App Info */}
@@ -83,11 +78,6 @@ export default function AppCard({ app, viewMode = 'grid' }: AppCardProps) {
                   <Link href={appUrl}>
                     <h3 className="text-xl font-semibold text-gray-900 mb-2 hover:text-blue-600 cursor-pointer">
                       {app.name}
-                      {isUnderConstruction && (
-                        <span className="ml-2 text-xs bg-orange-100 text-orange-600 px-2 py-1 rounded-full">
-                          Coming Soon
-                        </span>
-                      )}
                     </h3>
                   </Link>
                   <p className="text-sm text-gray-600 mb-3 line-clamp-2">
@@ -110,51 +100,77 @@ export default function AppCard({ app, viewMode = 'grid' }: AppCardProps) {
   }
 
   return (
-    <div className="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-lg transition-all duration-200 hover:border-blue-300 group">
-      <div className="p-6">
-        <div className="flex items-start space-x-4">
-          {/* App Icon */}
+    <div className="bg-white border border-gray-200 shadow-sm hover:shadow-md transition-all duration-200 hover:border-blue-300 group overflow-hidden">
+      {/* App Icon Section */}
+      <div className="p-6 pb-4">
+        <div className="flex items-center space-x-4">
           <div className="flex-shrink-0 relative">
             <img
               src={imageSrc}
               alt={app.name}
-              className="w-16 h-16 rounded-lg object-cover border border-gray-200 group-hover:border-blue-300 transition-colors"
+              className="w-12 h-12 rounded object-cover border border-gray-200"
               onError={(e) => {
                 const target = e.target as HTMLImageElement
                 target.src = '/file.svg'
               }}
             />
-            {isUnderConstruction && (
-              <div className="absolute -top-1 -right-1 bg-orange-100 text-orange-600 rounded-full p-1">
-                <Construction className="w-3 h-3" />
-              </div>
-            )}
           </div>
-
-          {/* App Info */}
+          
           <div className="flex-1 min-w-0">
             <Link href={appUrl}>
-              <h3 className="text-lg font-semibold text-gray-900 mb-1 line-clamp-2 group-hover:text-blue-600 transition-colors cursor-pointer">
+              <h3 className="text-sm font-medium text-gray-900 group-hover:text-blue-600 transition-colors cursor-pointer line-clamp-2">
                 {app.name}
-                {isUnderConstruction && (
-                  <span className="ml-2 text-xs bg-orange-100 text-orange-600 px-2 py-1 rounded-full">
-                    Coming Soon
-                  </span>
-                )}
               </h3>
             </Link>
-            <p className="text-sm text-gray-600 mb-3 line-clamp-2">
-              {app.subtitle}
+            <p className="text-xs text-gray-500 mt-1">
+              by {app.publisher || 'Augment Technologies'}
             </p>
-            <StarRating rating={app.rating} reviewCount={app.reviewCount} />
-            
-            <div className="flex items-center justify-between mt-4">
-              <PricingBadge pricing={app.pricing} />
-              <Link href={appUrl} className="opacity-0 group-hover:opacity-100 transition-opacity p-2 text-gray-400 hover:text-blue-600">
-                <ExternalLink className="w-4 h-4" />
-              </Link>
-            </div>
           </div>
+        </div>
+      </div>
+
+      {/* App Content */}
+      <div className="px-6 pb-4">
+        <p className="text-sm text-gray-600 line-clamp-3 mb-3">
+          {app.description}
+        </p>
+        
+        {/* Rating and Pricing */}
+        <div className="flex items-center justify-between">
+          <StarRating rating={app.rating} reviewCount={app.reviewCount} />
+          <PricingBadge pricing={app.pricing} />
+        </div>
+      </div>
+
+      {/* Tags */}
+      {app.tags && app.tags.length > 0 && (
+        <div className="px-6 pb-4">
+          <div className="flex flex-wrap gap-1">
+            {app.tags.slice(0, 3).map((tag, index) => (
+              <span
+                key={index}
+                className="inline-block px-2 py-1 text-xs text-gray-600 bg-gray-100 rounded"
+              >
+                {tag}
+              </span>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* Action Area */}
+      <div className="px-6 py-3 bg-gray-50 border-t border-gray-100">
+        <div className="flex items-center justify-between">
+          <span className="text-xs text-gray-500">
+            Updated {new Date(app.lastUpdated).toLocaleDateString()}
+          </span>
+          <Link 
+            href={appUrl}
+            className="inline-flex items-center text-sm text-blue-600 hover:text-blue-800 font-medium"
+          >
+            View Details
+            <ExternalLink className="w-3 h-3 ml-1" />
+          </Link>
         </div>
       </div>
     </div>

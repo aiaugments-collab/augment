@@ -69,25 +69,13 @@ export default function DeveloperPage() {
       <DashboardLayout>
         <div className="space-y-4">
           {/* Header */}
-          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
-            <div>
-              <h1 
-                className="text-2xl font-bold mb-2"
-                style={{ 
-                  color: "#161513",
-                  fontFamily: "var(--oracleserif, serif)"
-                }}
-              >
-                Developer Tools
+          <div className="bg-white border border-gray-200 shadow-sm">
+            <div className="px-6 py-8">
+              <h1 className="text-2xl font-normal text-gray-900 mb-2">
+                Developer Resources
               </h1>
-              <p 
-                className="text-sm"
-                style={{ 
-                  color: "#665f5b",
-                  fontFamily: "var(--oraclesans, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif)"
-                }}
-              >
-                Manage API keys, integrations, webhooks, and access documentation
+              <p className="text-gray-600">
+                Access documentation, manage API keys, and explore developer tools
               </p>
             </div>
           </div>
@@ -98,11 +86,7 @@ export default function DeveloperPage() {
               <a
                 key={index}
                 href={link.href}
-                className="bg-white rounded-sm shadow-sm p-4 hover:shadow-md transition-shadow block"
-                style={{ 
-                  border: "1px solid #e5e5e5",
-                  fontFamily: "var(--oraclesans, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif)"
-                }}
+                className="bg-white border border-gray-200 shadow-sm p-4 hover:shadow-md transition-shadow block"
               >
                 <div className="flex items-center">
                   <div className="flex-shrink-0">
@@ -114,8 +98,8 @@ export default function DeveloperPage() {
                     </div>
                   </div>
                   <div className="ml-4">
-                    <p className="text-sm font-medium" style={{ color: "#161513" }}>{link.title}</p>
-                    <p className="text-xs mt-1" style={{ color: "#665f5b" }}>{link.description}</p>
+                    <p className="text-sm font-medium text-gray-900">{link.title}</p>
+                    <p className="text-xs mt-1 text-gray-600">{link.description}</p>
                   </div>
                 </div>
               </a>

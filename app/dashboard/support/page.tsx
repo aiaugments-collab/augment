@@ -100,44 +100,30 @@ export default function SupportPage() {
       <DashboardLayout>
         <div className="space-y-4">
           {/* Header */}
-          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
-            <div>
-              <h1 
-                className="text-2xl font-bold mb-2"
-                style={{ 
-                  color: "#161513",
-                  fontFamily: "var(--oracleserif, serif)"
-                }}
-              >
+          <div className="bg-white border border-gray-200 shadow-sm">
+            <div className="px-6 py-8">
+              <h1 className="text-2xl font-normal text-gray-900 mb-2">
                 Support Center
               </h1>
-              <p 
-                className="text-sm"
-                style={{ 
-                  color: "#665f5b",
-                  fontFamily: "var(--oraclesans, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif)"
-                }}
-              >
+              <p className="text-gray-600">
                 Get help, track tickets, and check system status
               </p>
+              </div>
             </div>
-          </div>
 
           {/* Quick Actions */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             <a 
               href="/knowledge"
-              className="p-4 bg-white rounded-sm shadow-sm border border-gray-200 hover:shadow-md transition-shadow text-left block"
-              style={{ fontFamily: "var(--oraclesans, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif)" }}
+              className="p-4 bg-white border border-gray-200 shadow-sm hover:shadow-md transition-shadow text-left block"
             >
               <div className="text-2xl mb-2"></div>
-              <h3 className="font-semibold text-sm" style={{ color: "#161513" }}>Knowledge Base</h3>
-              <p className="text-xs mt-1" style={{ color: "#665f5b" }}>Find answers to common questions</p>
+              <h3 className="font-semibold text-sm text-gray-900">Knowledge Base</h3>
+              <p className="text-xs mt-1 text-gray-600">Find answers to common questions</p>
             </a>
             <a 
               href="/portal"
-              className="p-4 bg-white rounded-sm shadow-sm border border-gray-200 hover:shadow-md transition-shadow text-left block"
-              style={{ fontFamily: "var(--oraclesans, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif)" }}
+              className="p-4 bg-white border border-gray-200 shadow-sm hover:shadow-md transition-shadow text-left block"
             >
               <div className="text-2xl mb-2"></div>
               <h3 className="font-semibold text-sm" style={{ color: "#161513" }}>Support Portal</h3>
@@ -145,8 +131,7 @@ export default function SupportPage() {
             </a>
             <a 
               href="/forums"
-              className="p-4 bg-white rounded-sm shadow-sm border border-gray-200 hover:shadow-md transition-shadow text-left block"
-              style={{ fontFamily: "var(--oraclesans, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif)" }}
+              className="p-4 bg-white border border-gray-200 shadow-sm hover:shadow-md transition-shadow text-left block"
             >
               <div className="text-2xl mb-2"></div>
               <h3 className="font-semibold text-sm" style={{ color: "#161513" }}>Community Forums</h3>
@@ -154,8 +139,7 @@ export default function SupportPage() {
             </a>
             <a 
               href="/developers/docs"
-              className="p-4 bg-white rounded-sm shadow-sm border border-gray-200 hover:shadow-md transition-shadow text-left block"
-              style={{ fontFamily: "var(--oraclesans, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif)" }}
+              className="p-4 bg-white border border-gray-200 shadow-sm hover:shadow-md transition-shadow text-left block"
             >
               <div className="text-2xl mb-2"></div>
               <h3 className="font-semibold text-sm" style={{ color: "#161513" }}>API Documentation</h3>
@@ -208,7 +192,7 @@ export default function SupportPage() {
                           <a 
                             key={linkIndex} 
                             href={link.href}
-                            className="flex items-center justify-between p-3 border border-gray-200 rounded-sm hover:bg-gray-50 transition-colors block"
+                            className="flex items-center justify-between p-3 border border-gray-200 rounded-sm hover:bg-gray-50 transition-colors"
                           >
                             <h4 className="text-sm font-medium" style={{ color: "#161513" }}>
                               {link.title}

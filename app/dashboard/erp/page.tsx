@@ -91,52 +91,37 @@ export default function ERPDashboard() {
       <DashboardLayout>
         <div className="space-y-4">
           {/* Header */}
-          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
-            <div>
-              <h1 
-                className="text-2xl font-bold mb-2"
-                style={{ 
-                  color: "#161513",
-                  fontFamily: "var(--oracleserif, serif)"
-                }}
-              >
-                AugmentERP
-              </h1>
-              <p 
-                className="text-sm"
-                style={{ 
-                  color: "#665f5b",
-                  fontFamily: "var(--oraclesans, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif)"
-                }}
-              >
-                Access your business applications and manage operations
-              </p>
-            </div>
-            <div className="mt-4 sm:mt-0">
-              <a
-                href="https://erp.augment.cfd/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-sm text-white transition-colors"
-                style={{ backgroundColor: "#C74634" }}
-                onMouseEnter={(e) => e.currentTarget.style.backgroundColor = "#b03e2d"}
-                onMouseLeave={(e) => e.currentTarget.style.backgroundColor = "#C74634"}
-              >
-                <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                </svg>
-                Open ERP System
-              </a>
+          <div className="bg-white border border-gray-200 shadow-sm">
+            <div className="px-6 py-8">
+              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
+                <div>
+                  <h1 className="text-2xl font-normal text-gray-900 mb-2">
+                    AugmentERP
+                  </h1>
+                  <p className="text-gray-600">
+                    Access your business applications and manage operations
+                  </p>
+                </div>
+                <div className="mt-4 sm:mt-0">
+                  <a
+                    href="https://erp.augment.cfd/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium transition-colors"
+                  >
+                    <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                    Open ERP System
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
 
           {/* ERP Modules */}
           <div 
-            className="bg-white rounded-sm shadow-sm"
-            style={{ 
-              border: "1px solid #e5e5e5",
-              fontFamily: "var(--oraclesans, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif)"
-            }}
+            className="bg-white border border-gray-200 shadow-sm"
           >
             <div className="px-4 py-3 border-b border-gray-200">
               <h3 
@@ -188,11 +173,7 @@ export default function ERPDashboard() {
 
           {/* Quick Stats */}
           <div 
-            className="bg-white rounded-sm shadow-sm"
-            style={{ 
-              border: "1px solid #e5e5e5",
-              fontFamily: "var(--oraclesans, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif)"
-            }}
+            className="bg-white border border-gray-200 shadow-sm"
           >
             <div className="px-4 py-3 border-b border-gray-200">
               <h3 

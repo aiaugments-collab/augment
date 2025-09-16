@@ -33,37 +33,19 @@ export default function AccountPage() {
       <DashboardLayout>
         <div className="space-y-4">
           {/* Header */}
-          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
-            <div>
-              <h1 
-                className="text-2xl font-bold mb-2"
-                style={{ 
-                  color: "#161513",
-                  fontFamily: "var(--oracleserif, serif)"
-                }}
-              >
+          <div className="bg-white border border-gray-200 shadow-sm">
+            <div className="px-6 py-8">
+              <h1 className="text-2xl font-normal text-gray-900 mb-2">
                 Account Settings
               </h1>
-              <p 
-                className="text-sm"
-                style={{ 
-                  color: "#665f5b",
-                  fontFamily: "var(--oraclesans, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif)"
-                }}
-              >
+              <p className="text-gray-600">
                 Manage your account preferences and security settings
               </p>
             </div>
           </div>
 
           {/* Tabs */}
-          <div 
-            className="bg-white rounded-sm shadow-sm"
-            style={{ 
-              border: "1px solid #e5e5e5",
-              fontFamily: "var(--oraclesans, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif)"
-            }}
-          >
+          <div className="bg-white border border-gray-200 shadow-sm">
             <div className="border-b border-gray-200">
               <nav className="flex space-x-8 px-4">
                 {tabs.map((tab) => (
@@ -72,13 +54,9 @@ export default function AccountPage() {
                     onClick={() => setActiveTab(tab.id)}
                     className={`py-3 px-1 border-b-2 font-medium text-sm transition-colors ${
                       activeTab === tab.id
-                        ? 'border-current text-white'
-                        : 'border-transparent hover:border-gray-300'
+                        ? 'border-blue-600 text-blue-600'
+                        : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
                     }`}
-                    style={activeTab === tab.id ? { 
-                      color: "#C74634",
-                      borderColor: "#C74634"
-                    } : { color: "#665f5b" }}
                   >
                     <span className="mr-2">{tab.icon}</span>
                     {tab.label}
@@ -87,7 +65,7 @@ export default function AccountPage() {
               </nav>
             </div>
 
-            <div className="p-4">
+            <div className="p-6">
               {/* Profile Settings Tab */}
               {activeTab === 'profile' && (
                 <div className="space-y-6">

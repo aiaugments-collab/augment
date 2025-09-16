@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import { DashboardLayout } from '@/components/dashboard/DashboardLayout';
 import { ProtectedRoute } from '@/components/auth/ProtectedRoute';
+import { marketplaceApps } from '@/lib/marketplaceData';
 
 export default function AnalyticsPage() {
   const [timeRange, setTimeRange] = useState('7d');
@@ -21,20 +22,20 @@ export default function AnalyticsPage() {
     { name: 'Avg Response Time', value: '245ms', change: '-15.2%', trend: 'down' }
   ];
 
-  const topApps = [
-    { name: 'HR', calls: 8547, percentage: 34.4, color: '#C74634' },
-    { name: 'Flow', calls: 6234, percentage: 25.1, color: '#4A90E2' },
-    { name: 'SearchAI', calls: 4123, percentage: 16.6, color: '#50C878' },
-    { name: 'FinAI', calls: 3456, percentage: 13.9, color: '#FF6B35' },
-    { name: 'Others', calls: 2487, percentage: 10.0, color: '#665f5b' }
-  ];
+  // Get top apps from marketplace data
+  const topApps = marketplaceApps.slice(0, 5).map((app, index) => ({
+    ...app,
+    calls: Math.floor(Math.random() * 8000) + 2000,
+    percentage: [34.4, 25.1, 16.6, 13.9, 10.0][index],
+    color: ['#3B82F6', '#10B981', '#F59E0B', '#EF4444', '#8B5CF6'][index]
+  }));
 
   const recentActivity = [
-    { time: '2 minutes ago', action: 'API call to HR service', status: 'success' },
+    { time: '2 minutes ago', action: `API call to ${marketplaceApps[0]?.name} service`, status: 'success' },
     { time: '5 minutes ago', action: 'User authentication', status: 'success' },
-    { time: '8 minutes ago', action: 'Data export request', status: 'success' },
+    { time: '8 minutes ago', action: `Data export from ${marketplaceApps[1]?.name}`, status: 'success' },
     { time: '12 minutes ago', action: 'Webhook delivery', status: 'failed' },
-    { time: '15 minutes ago', action: 'API call to Flow service', status: 'success' }
+    { time: '15 minutes ago', action: `API call to ${marketplaceApps[2]?.name} service`, status: 'success' }
   ];
 
   const errorTypes = [
@@ -49,40 +50,31 @@ export default function AnalyticsPage() {
       <DashboardLayout>
         <div className="space-y-4">
           {/* Header */}
-          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
-            <div>
-              <h1 
-                className="text-2xl font-bold mb-2"
-                style={{ 
-                  color: "#161513",
-                  fontFamily: "var(--oracleserif, serif)"
-                }}
-              >
-                Analytics Dashboard
-              </h1>
-              <p 
-                className="text-sm"
-                style={{ 
-                  color: "#665f5b",
-                  fontFamily: "var(--oraclesans, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif)"
-                }}
-              >
-                Monitor your application performance and usage metrics
-              </p>
-            </div>
-            <div className="mt-4 sm:mt-0">
-              <select
-                value={timeRange}
-                onChange={(e) => setTimeRange(e.target.value)}
-                className="px-3 py-2 border border-gray-300 rounded-sm focus:outline-none focus:ring-1 focus:border-blue-500"
-                style={{ fontSize: "14px" }}
-              >
-                {timeRanges.map((range) => (
-                  <option key={range.value} value={range.value}>
-                    {range.label}
-                  </option>
-                ))}
-              </select>
+          <div className="bg-white border border-gray-200 shadow-sm">
+            <div className="px-6 py-8">
+              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
+                <div>
+                  <h1 className="text-2xl font-normal text-gray-900 mb-2">
+                    Analytics Dashboard
+                  </h1>
+                  <p className="text-gray-600">
+                    Monitor your application performance and usage metrics
+                  </p>
+                </div>
+                <div className="mt-4 sm:mt-0">
+                  <select
+                    value={timeRange}
+                    onChange={(e) => setTimeRange(e.target.value)}
+                    className="px-3 py-2 border border-gray-300 focus:outline-none focus:ring-1 focus:border-blue-500"
+                  >
+                    {timeRanges.map((range) => (
+                      <option key={range.value} value={range.value}>
+                        {range.label}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -91,18 +83,14 @@ export default function AnalyticsPage() {
             {metrics.map((metric, index) => (
               <div 
                 key={index}
-                className="bg-white rounded-sm shadow-sm p-4"
-                style={{ 
-                  border: "1px solid #e5e5e5",
-                  fontFamily: "var(--oraclesans, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif)"
-                }}
+                className="bg-white border border-gray-200 shadow-sm p-6"
               >
                 <div className="flex items-center justify-between">
                   <div>
-                    <p className="text-sm font-medium" style={{ color: "#665f5b" }}>
+                    <p className="text-sm font-medium text-gray-600">
                       {metric.name}
                     </p>
-                    <p className="text-2xl font-semibold mt-1" style={{ color: "#161513" }}>
+                    <p className="text-2xl font-semibold mt-1 text-gray-900">
                       {metric.value}
                     </p>
                   </div>
@@ -141,19 +129,24 @@ export default function AnalyticsPage() {
               <div className="p-4">
                 <div className="space-y-4">
                   {topApps.map((app, index) => (
-                    <div key={index} className="flex items-center justify-between">
+                    <div key={app.id} className="flex items-center justify-between">
                       <div className="flex items-center space-x-3">
-                        <div 
-                          className="w-8 h-8 rounded-sm flex items-center justify-center text-white text-sm font-semibold"
-                          style={{ backgroundColor: app.color }}
-                        >
-                          {app.name[0]}
+                        <div className="flex-shrink-0">
+                          <img
+                            src={app.logo ? `/${app.logo}` : '/file.svg'}
+                            alt={app.name}
+                            className="w-8 h-8 rounded object-cover border border-gray-200"
+                            onError={(e) => {
+                              const target = e.target as HTMLImageElement
+                              target.src = '/file.svg'
+                            }}
+                          />
                         </div>
                         <div>
-                          <p className="text-sm font-medium" style={{ color: "#161513" }}>
+                          <p className="text-sm font-medium text-gray-900">
                             {app.name}
                           </p>
-                          <p className="text-xs" style={{ color: "#665f5b" }}>
+                          <p className="text-xs text-gray-600">
                             {app.calls.toLocaleString()} calls
                           </p>
                         </div>
@@ -168,7 +161,7 @@ export default function AnalyticsPage() {
                             }}
                           />
                         </div>
-                        <span className="text-sm font-medium" style={{ color: "#161513" }}>
+                        <span className="text-sm font-medium text-gray-900">
                           {app.percentage}%
                         </span>
                       </div>
