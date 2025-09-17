@@ -13,6 +13,8 @@ export interface MarketplaceApp {
   lastUpdated: string
   beenWorkedOn: boolean
   logo: string
+  productUrl?: string
+  docsUrl?: string
   image?: string
   publisher?: string
 }
@@ -108,3 +110,23 @@ export const categories: Category[] = ociCategories
 export const recentApps = marketplaceApps.sort((a, b) => 
   new Date(b.lastUpdated).getTime() - new Date(a.lastUpdated).getTime()
 )
+
+// Utility function to get app data by ID
+export const getAppById = (id: string): MarketplaceApp | undefined => {
+  const app = marketplaceAppsData.find(app => app.id === id)
+  if (!app) return undefined
+  
+  return {
+    ...app,
+    pricing: app.pricing as 'Free' | 'Paid'
+  }
+}
+
+// Utility function to get app URLs by ID
+export const getAppUrls = (id: string) => {
+  const app = getAppById(id)
+  return {
+    productUrl: app?.productUrl || '/book-demo',
+    docsUrl: app?.docsUrl || '/book-demo'
+  }
+}

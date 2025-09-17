@@ -7,17 +7,20 @@ import { ProductResources } from "@/components/product/ProductResources";
 import { ProductCTABanner } from "@/components/product/ProductCTABanner";
 import { ProductGetStarted } from "@/components/product/ProductGetStarted";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
+import { getAppUrls } from "@/lib/marketplaceData";
 
 export default function AetherCLIPage() {
+  const { productUrl, docsUrl } = getAppUrls("aether-cli");
+  
   const ctaButtons = [
     {
       text: "Install CLI",
-      href: "https://github.com/superagent-ai/vibekit",
+      href: productUrl,
       variant: "primary" as const
     },
     {
       text: "View Documentation",
-      href: "/documentation",
+      href: docsUrl,
       variant: "secondary" as const
     }
   ];
@@ -29,7 +32,7 @@ export default function AetherCLIPage() {
       title: "Intelligent Command-Line Automation",
       description: "Streamline development workflows with AI-powered command-line automation that understands context and executes complex tasks intelligently.",
       ctaText: "Learn CLI automation",
-      ctaLink: "https://github.com/superagent-ai/vibekit",
+      ctaLink: productUrl,
       target: "_blank" as const
     },
     {
@@ -38,7 +41,7 @@ export default function AetherCLIPage() {
       title: "AI-Native Developer Workflows",
       description: "Built for AI-native developers with intelligent workflows that reduce complexity and accelerate development cycles through smart automation.",
       ctaText: "Explore workflows",
-      ctaLink: "/documentation",
+      ctaLink: docsUrl,
       target: "_self" as const
     },
     {
@@ -47,7 +50,7 @@ export default function AetherCLIPage() {
       title: "Rapid Prototyping & Development",
       description: "Accelerate prototyping and development with intelligent scaffolding, automated setup, and AI-powered code generation capabilities.",
       ctaText: "View prototyping tools",
-      ctaLink: "/documentation",
+      ctaLink: docsUrl,
       target: "_self" as const
     },
     {
@@ -56,7 +59,7 @@ export default function AetherCLIPage() {
       title: "Enhanced Developer Productivity",
       description: "Boost productivity with intelligent command suggestions, automated task execution, and context-aware development assistance.",
       ctaText: "See productivity features",
-      ctaLink: "/documentation",
+      ctaLink: docsUrl,
       target: "_self" as const
     }
   ];
@@ -69,8 +72,8 @@ export default function AetherCLIPage() {
         title: "AI-powered command-line interface",
         description: "Experience next-generation command-line automation with AI intelligence that understands context, suggests optimal commands, and executes complex workflows with minimal input.",
         buttons: [
-          { text: "Install Aether CLI", href: "https://github.com/superagent-ai/vibekit", variant: "primary" as const },
-          { text: "Quick start guide", href: "/documentation", variant: "secondary" as const }
+          { text: "Install Aether CLI", href: productUrl, variant: "primary" as const },
+          { text: "Quick start guide", href: docsUrl, variant: "secondary" as const }
         ],
         features: {
           title: "Intelligent CLI Features",
@@ -99,8 +102,8 @@ export default function AetherCLIPage() {
         title: "Streamlined development workflow automation",
         description: "Automate complex development workflows with intelligent pipelines that understand your project context and execute tasks efficiently, reducing manual overhead and errors.",
         buttons: [
-          { text: "Explore Automation", href: "https://github.com/superagent-ai/vibekit", variant: "primary" as const },
-          { text: "Workflow examples", href: "/documentation", variant: "secondary" as const }
+          { text: "Explore Automation", href: productUrl, variant: "primary" as const },
+          { text: "Workflow examples", href: docsUrl, variant: "secondary" as const }
         ],
         features: {
           title: "Workflow Automation Features",
@@ -129,8 +132,8 @@ export default function AetherCLIPage() {
         title: "AI-accelerated rapid prototyping tools",
         description: "Accelerate prototyping and development with intelligent scaffolding, automated project setup, and AI-powered code generation that gets you from idea to implementation faster.",
         buttons: [
-          { text: "Try Prototyping", href: "https://github.com/superagent-ai/vibekit", variant: "primary" as const },
-          { text: "Template library", href: "/documentation", variant: "secondary" as const }
+          { text: "Try Prototyping", href: productUrl, variant: "primary" as const },
+          { text: "Template library", href: docsUrl, variant: "secondary" as const }
         ],
         features: {
           title: "Rapid Prototyping Features",
@@ -159,8 +162,8 @@ export default function AetherCLIPage() {
         title: "Comprehensive developer productivity tools",
         description: "Enhance developer productivity with intelligent tools that provide smart suggestions, automated optimizations, and seamless integration with your existing development environment.",
         buttons: [
-          { text: "View Developer Tools", href: "https://github.com/superagent-ai/vibekit", variant: "primary" as const },
-          { text: "Integration guide", href: "/documentation", variant: "secondary" as const }
+          { text: "View Developer Tools", href: productUrl, variant: "primary" as const },
+          { text: "Integration guide", href: docsUrl, variant: "secondary" as const }
         ],
         features: {
           title: "Developer Tools Features",
@@ -191,7 +194,7 @@ export default function AetherCLIPage() {
       description: "Experience next-generation CLI with AI intelligence that understands context, suggests optimal commands, and executes complex workflows with minimal developer input.",
       link: {
         text: "Learn about AI CLI features",
-        href: "https://github.com/superagent-ai/vibekit"
+        href: productUrl
       }
     },
     {
@@ -217,44 +220,44 @@ export default function AetherCLIPage() {
     description: "A leading software development team transformed their workflow using Aether CLI, achieving significant productivity gains while reducing development complexity and errors.",
     image: "/products/aether/01.png",
     linkText: "Read the productivity success story",
-    linkHref: "/documentation"
+    linkHref: docsUrl
   };
 
   const customerLogos = [
     {
       name: "GitHub",
       image: "https://logo.clearbit.com/github.com",
-      href: "/documentation",
+      href: docsUrl,
       alt: "GitHub logo"
     },
     {
       name: "Vercel",
       image: "https://logo.clearbit.com/vercel.com",
-      href: "/documentation",
+      href: docsUrl,
       alt: "Vercel logo"
     },
     {
       name: "Netlify",
       image: "https://logo.clearbit.com/netlify.com",
-      href: "/documentation", 
+      href: docsUrl, 
       alt: "Netlify logo"
     },
     {
       name: "Docker",
       image: "https://logo.clearbit.com/docker.com",
-      href: "/documentation",
+      href: docsUrl,
       alt: "Docker logo"
     },
     {
       name: "AWS", 
       image: "https://logo.clearbit.com/aws.amazon.com",
-      href: "/documentation",
+      href: docsUrl,
       alt: "AWS logo"
     },
     {
       name: "Google Cloud",
       image: "https://logo.clearbit.com/cloud.google.com",
-      href: "/documentation",
+      href: docsUrl,
       alt: "Google Cloud logo"
     }
   ];
@@ -268,10 +271,10 @@ export default function AetherCLIPage() {
         description: "Stay updated with the newest capabilities in AI-powered command-line automation, workflow orchestration, and developer productivity tools.",
         image: "/products/aether/02.png",
         links: [
-          { text: "New CLI automation features", href: "/documentation" },
-          { text: "Workflow improvements", href: "/documentation" },
-          { text: "AI enhancements", href: "/documentation" },
-          { text: "Performance updates", href: "/documentation" }
+          { text: "New CLI automation features", href: docsUrl },
+          { text: "Workflow improvements", href: docsUrl },
+          { text: "AI enhancements", href: docsUrl },
+          { text: "Performance updates", href: docsUrl }
         ]
       }
     },
@@ -283,10 +286,10 @@ export default function AetherCLIPage() {
         description: "Compare our AI-native CLI capabilities with other command-line tools and see why developers choose us for intelligent automation and productivity.",
         image: "/products/aether/03.png",
         links: [
-          { text: "CLI tool comparison", href: "/documentation" },
-          { text: "Feature comparison matrix", href: "/documentation" },
-          { text: "Installation guide", href: "/documentation" },
-          { text: "Migration assistance", href: "/documentation" }
+          { text: "CLI tool comparison", href: docsUrl },
+          { text: "Feature comparison matrix", href: docsUrl },
+          { text: "Installation guide", href: docsUrl },
+          { text: "Migration assistance", href: docsUrl }
         ]
       }
     },
@@ -298,10 +301,10 @@ export default function AetherCLIPage() {
         description: "Master AI-native command-line automation with comprehensive guides, best practices, and training materials for developers and DevOps teams.",
         image: "/products/aether/04.png",
         links: [
-          { text: "CLI automation guide", href: "/documentation" },
-          { text: "Workflow best practices", href: "/documentation" },
-          { text: "Advanced usage patterns", href: "/documentation" },
-          { text: "Troubleshooting guide", href: "/documentation" }
+          { text: "CLI automation guide", href: docsUrl },
+          { text: "Workflow best practices", href: docsUrl },
+          { text: "Advanced usage patterns", href: docsUrl },
+          { text: "Troubleshooting guide", href: docsUrl }
         ]
       }
     }
@@ -310,17 +313,17 @@ export default function AetherCLIPage() {
   const getStartedActions = [
     {
       title: "Install CLI",
-      href: "https://github.com/superagent-ai/vibekit",
+      href: productUrl,
       icon: "demo"
     },
     {
       title: "View documentation",
-      href: "/documentation",
+      href: docsUrl,
       icon: "tour"
     },
     {
       title: "Contact support",
-      href: "/book-demo",
+      href: productUrl,
       icon: "contact"
     }
   ];
@@ -360,7 +363,7 @@ export default function AetherCLIPage() {
           title="Developer productivity success stories"
           description="Learn why developers and DevOps teams choose Aether CLI for intelligent command-line automation and workflow optimization."
           viewMoreText="View more success stories"
-          viewMoreHref="/documentation"
+          viewMoreHref={docsUrl}
           logos={customerLogos}
         />
         <ProductResources 
@@ -372,7 +375,7 @@ export default function AetherCLIPage() {
           description="We've compiled CLI automation strategies, workflow optimization techniques, and AI-native development methodologies for modern developer productivity."
           image="/products/aether/03.png"
           buttonText="Get the developer guide"
-          buttonHref="/documentation"
+          buttonHref={docsUrl}
         />
         <ProductGetStarted
           title="Get Started"

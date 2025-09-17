@@ -7,17 +7,20 @@ import { ProductResources } from "@/components/product/ProductResources";
 import { ProductCTABanner } from "@/components/product/ProductCTABanner";
 import { ProductGetStarted } from "@/components/product/ProductGetStarted";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
+import { getAppUrls } from "@/lib/marketplaceData";
 
 export default function HumanResourcesPage() {
+  const { productUrl, docsUrl } = getAppUrls("human-resources");
+  
   const ctaButtons = [
     {
       text: "Try HR Platform",
-      href: "https://hr.augment.cfd/",
+      href: productUrl,
       variant: "primary" as const
     },
     {
       text: "Schedule Demo",
-      href: "/book-demo",
+      href: docsUrl,
       variant: "secondary" as const
     }
   ];
@@ -38,7 +41,7 @@ export default function HumanResourcesPage() {
       title: "Modern Employee Experience",
       description: "Create exceptional employee experiences with self-service portals, mobile apps, and intelligent HR assistance.",
       ctaText: "Explore employee portal",
-      ctaLink: "/book-demo",
+      ctaLink: productUrl,
       target: "_self" as const
     },
     {
@@ -47,7 +50,7 @@ export default function HumanResourcesPage() {
       title: "Advanced HR Analytics & Insights",
       description: "Make data-driven HR decisions with comprehensive analytics, workforce insights, and predictive HR intelligence.",
       ctaText: "View HR analytics",
-      ctaLink: "/book-demo",
+      ctaLink: productUrl,
       target: "_self" as const
     },
     {
@@ -56,7 +59,7 @@ export default function HumanResourcesPage() {
       title: "Success Story: 80% Administrative Reduction",
       description: "See how a technology company reduced HR administrative workload by 80% using our AI-powered HRMS platform.",
       ctaText: "Read success story",
-      ctaLink: "/book-demo",
+      ctaLink: productUrl,
       target: "_self" as const
     }
   ];
@@ -70,7 +73,7 @@ export default function HumanResourcesPage() {
         description: "Manage the complete employee journey from onboarding to offboarding with AI-powered automation, smart workflows, and intuitive self-service capabilities.",
         buttons: [
           { text: "Try Employee Management", href: "https://hr.augment.cfd/", variant: "primary" as const },
-          { text: "Onboarding workflows", href: "/book-demo", variant: "secondary" as const }
+          { text: "Onboarding workflows", href: docsUrl, variant: "secondary" as const }
         ],
         features: {
           title: "Employee Management Features",
@@ -100,7 +103,7 @@ export default function HumanResourcesPage() {
         description: "Transform your hiring process with AI resume screening, automated candidate matching, and intelligent recruitment workflows that identify the best talent faster.",
         buttons: [
           { text: "Explore AI Recruitment", href: "https://hr.augment.cfd/", variant: "primary" as const },
-          { text: "AI screening demo", href: "/book-demo", variant: "secondary" as const }
+          { text: "AI screening demo", href: docsUrl, variant: "secondary" as const }
         ],
         features: {
           title: "AI Recruitment Features",
@@ -130,7 +133,7 @@ export default function HumanResourcesPage() {
         description: "Automate routine HR tasks with AI-powered workflows, smart approvals, and intelligent document processing that reduces administrative burden by up to 80%.",
         buttons: [
           { text: "Try HR Automation", href: "https://hr.augment.cfd/", variant: "primary" as const },
-          { text: "Workflow examples", href: "/book-demo", variant: "secondary" as const }
+          { text: "Workflow examples", href: docsUrl, variant: "secondary" as const }
         ],
         features: {
           title: "HR Automation Features",
@@ -160,7 +163,7 @@ export default function HumanResourcesPage() {
         description: "Make data-driven HR decisions with comprehensive workforce analytics, predictive insights, and real-time HR metrics that drive strategic human capital management.",
         buttons: [
           { text: "View HR Analytics", href: "https://hr.augment.cfd/", variant: "primary" as const },
-          { text: "Custom reports", href: "/book-demo", variant: "secondary" as const }
+          { text: "Custom reports", href: docsUrl, variant: "secondary" as const }
         ],
         features: {
           title: "HR Analytics Features",
@@ -217,44 +220,44 @@ export default function HumanResourcesPage() {
     description: "A leading technology company transformed their HR operations using our AI-powered HRMS platform, dramatically reducing administrative tasks while improving employee satisfaction.",
     image: "/products/hr/01.png",
     linkText: "Read the HR transformation story",
-    linkHref: "/book-demo"
+    linkHref: docsUrl
   };
 
   const customerLogos = [
     {
       name: "Microsoft",
       image: "https://logo.clearbit.com/microsoft.com",
-      href: "/book-demo",
+      href: docsUrl,
       alt: "Microsoft logo"
     },
     {
       name: "Google",
       image: "https://logo.clearbit.com/google.com",
-      href: "/book-demo",
+      href: docsUrl,
       alt: "Google logo"
     },
     {
       name: "Workday",
       image: "https://logo.clearbit.com/workday.com",
-      href: "/book-demo", 
+      href: docsUrl, 
       alt: "Workday logo"
     },
     {
       name: "ADP",
       image: "https://logo.clearbit.com/adp.com",
-      href: "/book-demo",
+      href: docsUrl,
       alt: "ADP logo"
     },
     {
       name: "BambooHR", 
       image: "https://logo.clearbit.com/bamboohr.com",
-      href: "/book-demo",
+      href: docsUrl,
       alt: "BambooHR logo"
     },
     {
       name: "Greenhouse",
       image: "https://logo.clearbit.com/greenhouse.io",
-      href: "/book-demo",
+      href: docsUrl,
       alt: "Greenhouse logo"
     }
   ];
@@ -268,10 +271,10 @@ export default function HumanResourcesPage() {
         description: "Stay updated with the newest capabilities in AI automation, employee experience, and workforce analytics designed for modern HR operations.",
         image: "/products/hr/02.png",
         links: [
-          { text: "New AI automation features", href: "/book-demo" },
-          { text: "Employee experience updates", href: "/book-demo" },
-          { text: "Analytics enhancements", href: "/book-demo" },
-          { text: "Mobile app improvements", href: "/book-demo" }
+          { text: "New AI automation features", href: docsUrl },
+          { text: "Employee experience updates", href: docsUrl },
+          { text: "Analytics enhancements", href: docsUrl },
+          { text: "Mobile app improvements", href: docsUrl }
         ]
       }
     },
@@ -283,10 +286,10 @@ export default function HumanResourcesPage() {
         description: "Compare our comprehensive HR management capabilities with other solutions and see why HR teams choose us for intelligent automation and employee experience.",
         image: "/products/hr/03.png",
         links: [
-          { text: "HRMS platform comparison", href: "/book-demo" },
-          { text: "AI features comparison", href: "/book-demo" },
-          { text: "Implementation guide", href: "/book-demo" },
-          { text: "ROI calculator", href: "/book-demo" }
+          { text: "HRMS platform comparison", href: docsUrl },
+          { text: "AI features comparison", href: docsUrl },
+          { text: "Implementation guide", href: docsUrl },
+          { text: "ROI calculator", href: docsUrl }
         ]
       }
     },
@@ -298,10 +301,10 @@ export default function HumanResourcesPage() {
         description: "Master modern HR practices with comprehensive guides, best practices, and training materials for HR professionals and people operations teams.",
         image: "/products/hr/04.png",
         links: [
-          { text: "AI HR implementation guide", href: "/book-demo" },
-          { text: "Employee experience best practices", href: "/book-demo" },
-          { text: "HR automation strategies", href: "/book-demo" },
-          { text: "Workforce analytics training", href: "/book-demo" }
+          { text: "AI HR implementation guide", href: docsUrl },
+          { text: "Employee experience best practices", href: docsUrl },
+          { text: "HR automation strategies", href: docsUrl },
+          { text: "Workforce analytics training", href: docsUrl }
         ]
       }
     }
@@ -315,12 +318,12 @@ export default function HumanResourcesPage() {
     },
     {
       title: "Schedule demo",
-      href: "/book-demo",
+      href: docsUrl,
       icon: "tour"
     },
     {
       title: "Contact sales",
-      href: "/book-demo",
+      href: docsUrl,
       icon: "contact"
     }
   ];
@@ -360,7 +363,7 @@ export default function HumanResourcesPage() {
           title="HR transformation success stories"
           description="Learn why HR teams and people operations leaders choose our AI-powered platform for intelligent automation and exceptional employee experiences."
           viewMoreText="View more success stories"
-          viewMoreHref="/book-demo"
+          viewMoreHref={docsUrl}
           logos={customerLogos}
         />
         <ProductResources 
@@ -372,7 +375,7 @@ export default function HumanResourcesPage() {
           description="We've compiled HR automation strategies, employee experience best practices, and AI implementation methodologies for modern people operations."
           image="/products/hr/03.png"
           buttonText="Get the HR guide"
-          buttonHref="/book-demo"
+          buttonHref={docsUrl}
         />
         <ProductGetStarted
           title="Get Started"

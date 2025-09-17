@@ -13,7 +13,9 @@
     "reviewCount": 95,
     "lastUpdated": "2025-09-14",
     "beenWorkedOn": true,
-    "logo": "neuroflow-orchestrator.svg"
+    "logo": "neuroflow-orchestrator.svg",
+    "productUrl": "https://github.com/superagent-ai",
+    "docsUrl": "https://github.com/superagent-ai"
   },
   {
     "id": "aether-cli",
@@ -29,7 +31,9 @@
     "reviewCount": 77,
     "lastUpdated": "2025-09-14",
     "beenWorkedOn": true,
-    "logo": "aether-cli.svg"
+    "logo": "aether-cli.svg",
+    "productUrl": "https://github.com/superagent-ai/vibekit",
+    "docsUrl": "https://github.com/superagent-ai/vibekit"
   },
   {
     "id": "synapse-sdk",
@@ -45,7 +49,9 @@
     "reviewCount": 65,
     "lastUpdated": "2025-09-14",
     "beenWorkedOn": true,
-    "logo": "synapse-sdk.svg"
+    "logo": "synapse-sdk.svg",
+    "productUrl": "https://github.com/superagent-ai/vibekit/tree/main/packages/sdk",
+    "docsUrl": "https://github.com/superagent-ai/vibekit/tree/main/packages/sdk"
   },
   {
     "id": "erp-overview",
@@ -61,7 +67,9 @@
     "reviewCount": 0,
     "lastUpdated": "2025-09-14",
     "beenWorkedOn": true,
-    "logo": "erp-overview.svg"
+    "logo": "erp-overview.svg",
+    "productUrl": "https://erp.augment.cfd/",
+    "docsUrl": "https://erp.augment.cfd/"
   },
   {
     "id": "financial-management",
@@ -77,7 +85,9 @@
     "reviewCount": 0,
     "lastUpdated": "2025-09-14",
     "beenWorkedOn": true,
-    "logo": "financial-management.svg"
+    "logo": "financial-management.svg",
+    "productUrl": "https://erp.augment.cfd/app/accounting",
+    "docsUrl": "https://erp.augment.cfd/app/accounting"
   },
   {
     "id": "procurement",
@@ -93,7 +103,9 @@
     "reviewCount": 0,
     "lastUpdated": "2025-09-14",
     "beenWorkedOn": true,
-    "logo": "procurement.svg"
+    "logo": "procurement.svg",
+    "productUrl": "https://erp.augment.cfd/app/buying",
+    "docsUrl": "https://erp.augment.cfd/app/buying"
   },
   {
     "id": "project-management",
@@ -109,7 +121,9 @@
     "reviewCount": 0,
     "lastUpdated": "2025-09-14",
     "beenWorkedOn": true,
-    "logo": "project-management.svg"
+    "logo": "project-management.svg",
+    "productUrl": "https://erp.augment.cfd/app/projects",
+    "docsUrl": "https://erp.augment.cfd/app/projects"
   },
   {
     "id": "risk-management",
@@ -125,7 +139,9 @@
     "reviewCount": 0,
     "lastUpdated": "2025-09-14",
     "beenWorkedOn": true,
-    "logo": "risk-management.svg"
+    "logo": "risk-management.svg",
+    "productUrl": "/book-demo",
+    "docsUrl": "/book-demo"
   },
   {
     "id": "enterprise-performance",
@@ -141,7 +157,9 @@
     "reviewCount": 0,
     "lastUpdated": "2025-09-14",
     "beenWorkedOn": true,
-    "logo": "enterprise-performance.svg"
+    "logo": "enterprise-performance.svg",
+    "productUrl": "/book-demo",
+    "docsUrl": "/book-demo"
   },
   {
     "id": "supply-chain-planning",
@@ -157,7 +175,9 @@
     "reviewCount": 0,
     "lastUpdated": "2025-09-14",
     "beenWorkedOn": true,
-    "logo": "supply-chain-planning.svg"
+    "logo": "supply-chain-planning.svg",
+    "productUrl": "/book-demo",
+    "docsUrl": "/book-demo"
   },
   {
     "id": "inventory-management",
@@ -173,7 +193,9 @@
     "reviewCount": 0,
     "lastUpdated": "2025-09-14",
     "beenWorkedOn": true,
-    "logo": "inventory-management.svg"
+    "logo": "inventory-management.svg",
+    "productUrl": "https://erp.augment.cfd/app/stock",
+    "docsUrl": "https://erp.augment.cfd/app/stock"
   },
   {
     "id": "manufacturing",
@@ -189,7 +211,9 @@
     "reviewCount": 0,
     "lastUpdated": "2025-09-14",
     "beenWorkedOn": true,
-    "logo": "manufacturing.svg"
+    "logo": "manufacturing.svg",
+    "productUrl": "https://erp.augment.cfd/app/manufacturing",
+    "docsUrl": "https://erp.augment.cfd/app/manufacturing"
   },
   {
     "id": "maintenance",
@@ -205,7 +229,9 @@
     "reviewCount": 0,
     "lastUpdated": "2025-09-14",
     "beenWorkedOn": true,
-    "logo": "maintenance.svg"
+    "logo": "maintenance.svg",
+    "productUrl": "https://erp.augment.cfd/app/assets",
+    "docsUrl": "https://erp.augment.cfd/app/assets"
   },
   {
     "id": "product-lifecycle",
@@ -221,7 +247,9 @@
     "reviewCount": 0,
     "lastUpdated": "2025-09-14",
     "beenWorkedOn": true,
-    "logo": "product-lifecycle.svg"
+    "logo": "product-lifecycle.svg",
+    "productUrl": "/book-demo",
+    "docsUrl": "/book-demo"
   },
   {
     "id": "human-resources",
@@ -237,7 +265,9 @@
     "reviewCount": 0,
     "lastUpdated": "2025-09-14",
     "beenWorkedOn": true,
-    "logo": "human-resources.svg"
+    "logo": "human-resources.svg",
+    "productUrl": "https://hr.augment.cfd/",
+    "docsUrl": "https://hr.augment.cfd/"
   },
   {
     "id": "talent-management",
@@ -253,7 +283,9 @@
     "reviewCount": 0,
     "lastUpdated": "2025-09-14",
     "beenWorkedOn": true,
-    "logo": "talent-management.svg"
+    "logo": "talent-management.svg",
+    "productUrl": "/book-demo",
+    "docsUrl": "/book-demo"
   },
   {
     "id": "workforce-management",
@@ -269,7 +301,9 @@
     "reviewCount": 0,
     "lastUpdated": "2025-09-14",
     "beenWorkedOn": true,
-    "logo": "workforce-management.svg"
+    "logo": "workforce-management.svg",
+    "productUrl": "/book-demo",
+    "docsUrl": "/book-demo"
   },
   {
     "id": "payroll",
@@ -285,7 +319,9 @@
     "reviewCount": 0,
     "lastUpdated": "2025-09-14",
     "beenWorkedOn": true,
-    "logo": "payroll.svg"
+    "logo": "payroll.svg",
+    "productUrl": "https://erp.augment.cfd/app/payroll",
+    "docsUrl": "https://erp.augment.cfd/app/payroll"
   },
   {
     "id": "marketing",
@@ -301,7 +337,9 @@
     "reviewCount": 0,
     "lastUpdated": "2025-09-14",
     "beenWorkedOn": true,
-    "logo": "marketing.svg"
+    "logo": "marketing.svg",
+    "productUrl": "/book-demo",
+    "docsUrl": "/book-demo"
   },
   {
     "id": "sales",
@@ -317,7 +355,9 @@
     "reviewCount": 0,
     "lastUpdated": "2025-09-14",
     "beenWorkedOn": true,
-    "logo": "sales.svg"
+    "logo": "sales.svg",
+    "productUrl": "https://erp.augment.cfd/app/selling",
+    "docsUrl": "https://erp.augment.cfd/app/selling"
   },
   {
     "id": "service",
@@ -333,7 +373,9 @@
     "reviewCount": 0,
     "lastUpdated": "2025-09-14",
     "beenWorkedOn": true,
-    "logo": "service.svg"
+    "logo": "service.svg",
+    "productUrl": "/book-demo",
+    "docsUrl": "/book-demo"
   },
   {
     "id": "augment-suite",
@@ -349,7 +391,9 @@
     "reviewCount": 0,
     "lastUpdated": "2025-09-14",
     "beenWorkedOn": true,
-    "logo": "augment-suite.svg"
+    "logo": "augment-suite.svg",
+    "productUrl": "/documentation/augmentdb",
+    "docsUrl": "/documentation/augmentdb"
   },
   {
     "id": "marketplace",
@@ -365,7 +409,9 @@
     "reviewCount": 0,
     "lastUpdated": "2025-09-14",
     "beenWorkedOn": true,
-    "logo": "marketplace.svg"
+    "logo": "marketplace.svg",
+    "productUrl": "/marketplace",
+    "docsUrl": "/marketplace"
   },
   {
     "id": "social-media",
@@ -381,7 +427,9 @@
     "reviewCount": 0,
     "lastUpdated": "2025-09-14",
     "beenWorkedOn": true,
-    "logo": "social-media.svg"
+    "logo": "social-media.svg",
+    "productUrl": "/book-demo",
+    "docsUrl": "/book-demo"
   },
   {
     "id": "scheduling",
@@ -397,7 +445,9 @@
     "reviewCount": 0,
     "lastUpdated": "2025-09-14",
     "beenWorkedOn": true,
-    "logo": "scheduling.svg"
+    "logo": "scheduling.svg",
+    "productUrl": "/book-demo",
+    "docsUrl": "/book-demo"
   },
   {
     "id": "hr",
@@ -413,7 +463,9 @@
     "reviewCount": 0,
     "lastUpdated": "2025-09-14",
     "beenWorkedOn": true,
-    "logo": "hr.svg"
+    "logo": "hr.svg",
+    "productUrl": "https://hr.augment.cfd/",
+    "docsUrl": "https://hr.augment.cfd/"
   },
   {
     "id": "flow",
@@ -429,7 +481,9 @@
     "reviewCount": 0,
     "lastUpdated": "2025-09-14",
     "beenWorkedOn": true,
-    "logo": "flow.svg"
+    "logo": "flow.svg",
+    "productUrl": "https://flow.augment.cfd/",
+    "docsUrl": "https://flow.augment.cfd/"
   },
   {
     "id": "searchai",
@@ -445,7 +499,9 @@
     "reviewCount": 0,
     "lastUpdated": "2025-09-14",
     "beenWorkedOn": true,
-    "logo": "searchai.svg"
+    "logo": "searchai.svg",
+    "productUrl": "https://searchai.augment.cfd/",
+    "docsUrl": "https://searchai.augment.cfd/"
   },
   {
     "id": "finance-ai",
@@ -461,7 +517,9 @@
     "reviewCount": 0,
     "lastUpdated": "2025-09-14",
     "beenWorkedOn": true,
-    "logo": "finance-ai.svg"
+    "logo": "finance-ai.svg",
+    "productUrl": "https://financeai.augment.cfd/",
+    "docsUrl": "https://financeai.augment.cfd/"
   },
   {
     "id": "resume-ai",
@@ -477,7 +535,9 @@
     "reviewCount": 0,
     "lastUpdated": "2025-09-14",
     "beenWorkedOn": true,
-    "logo": "resume-ai.svg"
+    "logo": "resume-ai.svg",
+    "productUrl": "https://resumeai.augment.cfd/",
+    "docsUrl": "https://resumeai.augment.cfd/"
   },
   {
     "id": "health-ai",
@@ -493,7 +553,9 @@
     "reviewCount": 0,
     "lastUpdated": "2025-09-14",
     "beenWorkedOn": true,
-    "logo": "health-ai.svg"
+    "logo": "health-ai.svg",
+    "productUrl": "https://healthai.augment.cfd/",
+    "docsUrl": "https://healthai.augment.cfd/"
   },
   {
     "id": "secure-net-manager",
@@ -512,7 +574,9 @@
     "reviewCount": 120,
     "lastUpdated": "2025-09-14",
     "beenWorkedOn": false,
-    "logo": "secure-net-manager.svg"
+    "logo": "secure-net-manager.svg",
+    "productUrl": "/book-demo",
+    "docsUrl": "/book-demo"
   },
   {
     "id": "log-insight",
@@ -531,7 +595,9 @@
     "reviewCount": 220,
     "lastUpdated": "2025-09-14",
     "beenWorkedOn": false,
-    "logo": "log-insight.svg"
+    "logo": "log-insight.svg",
+    "productUrl": "/book-demo",
+    "docsUrl": "/book-demo"
   },
   {
     "id": "nextgen-firewall",
@@ -549,7 +615,9 @@
     "reviewCount": 340,
     "lastUpdated": "2025-09-14",
     "beenWorkedOn": false,
-    "logo": "nextgen-firewall.svg"
+    "logo": "nextgen-firewall.svg",
+    "productUrl": "/book-demo",
+    "docsUrl": "/book-demo"
   },
   {
     "id": "api-shield",
@@ -567,7 +635,9 @@
     "reviewCount": 190,
     "lastUpdated": "2025-09-14",
     "beenWorkedOn": false,
-    "logo": "api-shield.svg"
+    "logo": "api-shield.svg",
+    "productUrl": "/book-demo",
+    "docsUrl": "/book-demo"
   },
   {
     "id": "app-delivery",
@@ -586,7 +656,9 @@
     "reviewCount": 150,
     "lastUpdated": "2025-09-14",
     "beenWorkedOn": false,
-    "logo": "app-delivery.svg"
+    "logo": "app-delivery.svg",
+    "productUrl": "/book-demo",
+    "docsUrl": "/book-demo"
   },
   {
     "id": "fincloud-erp",
@@ -604,7 +676,9 @@
     "reviewCount": 310,
     "lastUpdated": "2025-09-14",
     "beenWorkedOn": false,
-    "logo": "fincloud-erp.svg"
+    "logo": "fincloud-erp.svg",
+    "productUrl": "/book-demo",
+    "docsUrl": "/book-demo"
   },
   {
     "id": "identity-fabric",
@@ -622,7 +696,9 @@
     "reviewCount": 180,
     "lastUpdated": "2025-09-14",
     "beenWorkedOn": false,
-    "logo": "identity-fabric.svg"
+    "logo": "identity-fabric.svg",
+    "productUrl": "/book-demo",
+    "docsUrl": "/book-demo"
   },
   {
     "id": "observability-suite",
@@ -641,7 +717,9 @@
     "reviewCount": 500,
     "lastUpdated": "2025-09-14",
     "beenWorkedOn": false,
-    "logo": "observability-suite.svg"
+    "logo": "observability-suite.svg",
+    "productUrl": "/book-demo",
+    "docsUrl": "/book-demo"
   },
   {
     "id": "vpn-access",
@@ -660,7 +738,9 @@
     "reviewCount": 260,
     "lastUpdated": "2025-09-14",
     "beenWorkedOn": false,
-    "logo": "vpn-access.svg"
+    "logo": "vpn-access.svg",
+    "productUrl": "/book-demo",
+    "docsUrl": "/book-demo"
   },
   {
     "id": "finops-cortex",
@@ -678,7 +758,9 @@
     "reviewCount": 210,
     "lastUpdated": "2025-09-14",
     "beenWorkedOn": false,
-    "logo": "finops-cortex.svg"
+    "logo": "finops-cortex.svg",
+    "productUrl": "/book-demo",
+    "docsUrl": "/book-demo"
   },
   {
     "id": "backup-and-dr",
@@ -697,7 +779,9 @@
     "reviewCount": 170,
     "lastUpdated": "2025-09-14",
     "beenWorkedOn": false,
-    "logo": "data-protect.svg"
+    "logo": "data-protect.svg",
+    "productUrl": "/book-demo",
+    "docsUrl": "/book-demo"
   },
   {
     "id": "net-router",
@@ -715,7 +799,9 @@
     "reviewCount": 95,
     "lastUpdated": "2025-09-14",
     "beenWorkedOn": false,
-    "logo": "net-router.svg"
+    "logo": "net-router.svg",
+    "productUrl": "/book-demo",
+    "docsUrl": "/book-demo"
   },
   {
     "id": "edge-orchestrator",
@@ -734,7 +820,9 @@
     "reviewCount": 78,
     "lastUpdated": "2025-09-14",
     "beenWorkedOn": false,
-    "logo": "edge-orchestrator.svg"
+    "logo": "edge-orchestrator.svg",
+    "productUrl": "/book-demo",
+    "docsUrl": "/book-demo"
   },
   {
     "id": "integration-flow",
@@ -753,7 +841,9 @@
     "reviewCount": 132,
     "lastUpdated": "2025-09-14",
     "beenWorkedOn": false,
-    "logo": "flow-integrator.svg"
+    "logo": "flow-integrator.svg",
+    "productUrl": "/book-demo",
+    "docsUrl": "/book-demo"
   },
   {
     "id": "data-analytics",
@@ -771,7 +861,9 @@
     "reviewCount": 200,
     "lastUpdated": "2025-09-14",
     "beenWorkedOn": false,
-    "logo": "insightx.svg"
+    "logo": "insightx.svg",
+    "productUrl": "/book-demo",
+    "docsUrl": "/book-demo"
   },
   {
     "id": "cache-layer",
@@ -790,7 +882,9 @@
     "reviewCount": 88,
     "lastUpdated": "2025-09-14",
     "beenWorkedOn": false,
-    "logo": "cache-layer.svg"
+    "logo": "cache-layer.svg",
+    "productUrl": "/book-demo",
+    "docsUrl": "/book-demo"
   },
   {
     "id": "proxy-cache",
@@ -808,7 +902,9 @@
     "reviewCount": 60,
     "lastUpdated": "2025-09-14",
     "beenWorkedOn": false,
-    "logo": "proxy-cache.svg"
+    "logo": "proxy-cache.svg",
+    "productUrl": "/book-demo",
+    "docsUrl": "/book-demo"
   },
   {
     "id": "remote-workspaces",
@@ -826,7 +922,9 @@
     "reviewCount": 55,
     "lastUpdated": "2025-09-14",
     "beenWorkedOn": false,
-    "logo": "remote-workspaces.svg"
+    "logo": "remote-workspaces.svg",
+    "productUrl": "/book-demo",
+    "docsUrl": "/book-demo"
   },
   {
     "id": "container-workspaces",
@@ -845,7 +943,9 @@
     "reviewCount": 48,
     "lastUpdated": "2025-09-14",
     "beenWorkedOn": false,
-    "logo": "container-workspaces.svg"
+    "logo": "container-workspaces.svg",
+    "productUrl": "/book-demo",
+    "docsUrl": "/book-demo"
   },
   {
     "id": "vni-dns",
@@ -864,7 +964,9 @@
     "reviewCount": 40,
     "lastUpdated": "2025-09-14",
     "beenWorkedOn": false,
-    "logo": "dns-ipam.svg"
+    "logo": "dns-ipam.svg",
+    "productUrl": "/book-demo",
+    "docsUrl": "/book-demo"
   },
   {
     "id": "govt-ngfw",
@@ -882,7 +984,9 @@
     "reviewCount": 32,
     "lastUpdated": "2025-09-14",
     "beenWorkedOn": false,
-    "logo": "govt-ngfw.svg"
+    "logo": "govt-ngfw.svg",
+    "productUrl": "/book-demo",
+    "docsUrl": "/book-demo"
   },
   {
     "id": "cloud-governance",
@@ -900,7 +1004,9 @@
     "reviewCount": 90,
     "lastUpdated": "2025-09-14",
     "beenWorkedOn": false,
-    "logo": "cloud-govern.svg"
+    "logo": "cloud-govern.svg",
+    "productUrl": "/book-demo",
+    "docsUrl": "/book-demo"
   },
   {
     "id": "container-backup",
@@ -918,7 +1024,9 @@
     "reviewCount": 120,
     "lastUpdated": "2025-09-14",
     "beenWorkedOn": false,
-    "logo": "velero-backup.svg"
+    "logo": "velero-backup.svg",
+    "productUrl": "/book-demo",
+    "docsUrl": "/book-demo"
   },
   {
     "id": "orchestration",
@@ -937,7 +1045,9 @@
     "reviewCount": 230,
     "lastUpdated": "2025-09-14",
     "beenWorkedOn": false,
-    "logo": "orchestrate.svg"
+    "logo": "orchestrate.svg",
+    "productUrl": "/book-demo",
+    "docsUrl": "/book-demo"
   },
   {
     "id": "data-guard",
@@ -956,7 +1066,9 @@
     "reviewCount": 140,
     "lastUpdated": "2025-09-14",
     "beenWorkedOn": false,
-    "logo": "data-guard.svg"
+    "logo": "data-guard.svg",
+    "productUrl": "/book-demo",
+    "docsUrl": "/book-demo"
   },
   {
     "id": "monitoring-quickstart",
@@ -974,7 +1086,9 @@
     "reviewCount": 65,
     "lastUpdated": "2025-09-14",
     "beenWorkedOn": false,
-    "logo": "monitor-quickstart.svg"
+    "logo": "monitor-quickstart.svg",
+    "productUrl": "/book-demo",
+    "docsUrl": "/book-demo"
   },
   {
     "id": "backup-bridge",
@@ -993,7 +1107,9 @@
     "reviewCount": 85,
     "lastUpdated": "2025-09-14",
     "beenWorkedOn": false,
-    "logo": "backup-bridge.svg"
+    "logo": "backup-bridge.svg",
+    "productUrl": "/book-demo",
+    "docsUrl": "/book-demo"
   },
   {
     "id": "integration-automation",
@@ -1011,7 +1127,9 @@
     "reviewCount": 110,
     "lastUpdated": "2025-09-14",
     "beenWorkedOn": false,
-    "logo": "data-bridge.svg"
+    "logo": "data-bridge.svg",
+    "productUrl": "/book-demo",
+    "docsUrl": "/book-demo"
   },
   {
     "id": "app-security-scan",
@@ -1029,7 +1147,9 @@
     "reviewCount": 72,
     "lastUpdated": "2025-09-14",
     "beenWorkedOn": false,
-    "logo": "vuln-scan.svg"
+    "logo": "vuln-scan.svg",
+    "productUrl": "/book-demo",
+    "docsUrl": "/book-demo"
   },
   {
     "id": "cloud-router",
@@ -1047,7 +1167,9 @@
     "reviewCount": 50,
     "lastUpdated": "2025-09-14",
     "beenWorkedOn": false,
-    "logo": "cloud-router.svg"
+    "logo": "cloud-router.svg",
+    "productUrl": "/book-demo",
+    "docsUrl": "/book-demo"
   },
   {
     "id": "netcopilot",
@@ -1065,7 +1187,9 @@
     "reviewCount": 68,
     "lastUpdated": "2025-09-14",
     "beenWorkedOn": false,
-    "logo": "netcopilot.svg"
+    "logo": "netcopilot.svg",
+    "productUrl": "/book-demo",
+    "docsUrl": "/book-demo"
   },
   {
     "id": "apm-alternative",
@@ -1084,7 +1208,9 @@
     "reviewCount": 145,
     "lastUpdated": "2025-09-14",
     "beenWorkedOn": false,
-    "logo": "appmetrics.svg"
+    "logo": "appmetrics.svg",
+    "productUrl": "/book-demo",
+    "docsUrl": "/book-demo"
   },
   {
     "id": "policy-compliance",
@@ -1102,7 +1228,9 @@
     "reviewCount": 88,
     "lastUpdated": "2025-09-14",
     "beenWorkedOn": false,
-    "logo": "policy-guard.svg"
+    "logo": "policy-guard.svg",
+    "productUrl": "/book-demo",
+    "docsUrl": "/book-demo"
   },
   {
     "id": "erp-agro",
@@ -1120,7 +1248,9 @@
     "reviewCount": 35,
     "lastUpdated": "2025-09-14",
     "beenWorkedOn": false,
-    "logo": "agro-erp.svg"
+    "logo": "agro-erp.svg",
+    "productUrl": "/book-demo",
+    "docsUrl": "/book-demo"
   },
   {
     "id": "devops-conductor",
@@ -1138,7 +1268,9 @@
     "reviewCount": 190,
     "lastUpdated": "2025-09-14",
     "beenWorkedOn": false,
-    "logo": "devops-conductor.svg"
+    "logo": "devops-conductor.svg",
+    "productUrl": "/book-demo",
+    "docsUrl": "/book-demo"
   },
   {
     "id": "cost-transparency",
@@ -1156,7 +1288,9 @@
     "reviewCount": 74,
     "lastUpdated": "2025-09-14",
     "beenWorkedOn": false,
-    "logo": "cost-sight.svg"
+    "logo": "cost-sight.svg",
+    "productUrl": "/book-demo",
+    "docsUrl": "/book-demo"
   },
   {
     "id": "cloud-bridge",
@@ -1175,7 +1309,9 @@
     "reviewCount": 98,
     "lastUpdated": "2025-09-14",
     "beenWorkedOn": false,
-    "logo": "cloud-bridge.svg"
+    "logo": "cloud-bridge.svg",
+    "productUrl": "/book-demo",
+    "docsUrl": "/book-demo"
   },
   {
     "id": "security-collector",
@@ -1193,7 +1329,9 @@
     "reviewCount": 110,
     "lastUpdated": "2025-09-14",
     "beenWorkedOn": false,
-    "logo": "guard-collector.svg"
+    "logo": "guard-collector.svg",
+    "productUrl": "/book-demo",
+    "docsUrl": "/book-demo"
   },
   {
     "id": "edge-router",
@@ -1211,7 +1349,9 @@
     "reviewCount": 45,
     "lastUpdated": "2025-09-14",
     "beenWorkedOn": false,
-    "logo": "edge-router.svg"
+    "logo": "edge-router.svg",
+    "productUrl": "/book-demo",
+    "docsUrl": "/book-demo"
   },
   {
     "id": "backup-utility",
@@ -1229,7 +1369,9 @@
     "reviewCount": 38,
     "lastUpdated": "2025-09-14",
     "beenWorkedOn": false,
-    "logo": "backup-utility.svg"
+    "logo": "backup-utility.svg",
+    "productUrl": "/book-demo",
+    "docsUrl": "/book-demo"
   },
   {
     "id": "db-connect",
@@ -1247,7 +1389,9 @@
     "reviewCount": 56,
     "lastUpdated": "2025-09-14",
     "beenWorkedOn": false,
-    "logo": "data-connector.svg"
+    "logo": "data-connector.svg",
+    "productUrl": "/book-demo",
+    "docsUrl": "/book-demo"
   },
   {
     "id": "app-monitoring",
@@ -1265,7 +1409,9 @@
     "reviewCount": 81,
     "lastUpdated": "2025-09-14",
     "beenWorkedOn": false,
-    "logo": "app-monitoring.svg"
+    "logo": "app-monitoring.svg",
+    "productUrl": "/book-demo",
+    "docsUrl": "/book-demo"
   },
   {
     "id": "secure-transaction",
@@ -1284,7 +1430,9 @@
     "reviewCount": 27,
     "lastUpdated": "2025-09-14",
     "beenWorkedOn": false,
-    "logo": "payroute.svg"
+    "logo": "payroute.svg",
+    "productUrl": "/book-demo",
+    "docsUrl": "/book-demo"
   },
   {
     "id": "os-images",
@@ -1302,7 +1450,9 @@
     "reviewCount": 30,
     "lastUpdated": "2025-09-14",
     "beenWorkedOn": false,
-    "logo": "os-images.svg"
+    "logo": "os-images.svg",
+    "productUrl": "/book-demo",
+    "docsUrl": "/book-demo"
   },
   {
     "id": "monitoring-suite",
@@ -1320,7 +1470,9 @@
     "reviewCount": 210,
     "lastUpdated": "2025-09-14",
     "beenWorkedOn": false,
-    "logo": "monitor360.svg"
+    "logo": "monitor360.svg",
+    "productUrl": "/book-demo",
+    "docsUrl": "/book-demo"
   },
   {
     "id": "backup-service",
@@ -1338,7 +1490,9 @@
     "reviewCount": 140,
     "lastUpdated": "2025-09-14",
     "beenWorkedOn": false,
-    "logo": "vault-backup.svg"
+    "logo": "vault-backup.svg",
+    "productUrl": "/book-demo",
+    "docsUrl": "/book-demo"
   },
   {
     "id": "secops-manager",
@@ -1356,7 +1510,9 @@
     "reviewCount": 92,
     "lastUpdated": "2025-09-14",
     "beenWorkedOn": false,
-    "logo": "secops.svg"
+    "logo": "secops.svg",
+    "productUrl": "/book-demo",
+    "docsUrl": "/book-demo"
   },
   {
     "id": "policy-engine",
@@ -1374,7 +1530,9 @@
     "reviewCount": 110,
     "lastUpdated": "2025-09-14",
     "beenWorkedOn": false,
-    "logo": "policy-engine.svg"
+    "logo": "policy-engine.svg",
+    "productUrl": "/book-demo",
+    "docsUrl": "/book-demo"
   },
   {
     "id": "orchestrator-ai",
@@ -1393,7 +1551,9 @@
     "reviewCount": 160,
     "lastUpdated": "2025-09-14",
     "beenWorkedOn": false,
-    "logo": "ai-orchestrator.svg"
+    "logo": "ai-orchestrator.svg",
+    "productUrl": "/book-demo",
+    "docsUrl": "/book-demo"
   },
   {
     "id": "k8s-backup",
@@ -1411,7 +1571,9 @@
     "reviewCount": 76,
     "lastUpdated": "2025-09-14",
     "beenWorkedOn": false,
-    "logo": "kube-safe.svg"
+    "logo": "kube-safe.svg",
+    "productUrl": "/book-demo",
+    "docsUrl": "/book-demo"
   },
   {
     "id": "edge-security",
@@ -1429,7 +1591,9 @@
     "reviewCount": 53,
     "lastUpdated": "2025-09-14",
     "beenWorkedOn": false,
-    "logo": "edge-shield.svg"
+    "logo": "edge-shield.svg",
+    "productUrl": "/book-demo",
+    "docsUrl": "/book-demo"
   },
   {
     "id": "workflow-templates",
@@ -1447,6 +1611,8 @@
     "reviewCount": 44,
     "lastUpdated": "2025-09-14",
     "beenWorkedOn": false,
-    "logo": "template-hub.svg"
+    "logo": "template-hub.svg",
+    "productUrl": "/book-demo",
+    "docsUrl": "/book-demo"
   }
 ]

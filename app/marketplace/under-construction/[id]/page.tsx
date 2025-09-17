@@ -1,5 +1,3 @@
-'use client'
-
 import React from 'react'
 import { Construction, ArrowLeft, ExternalLink, Github, Calendar, Users, Star } from 'lucide-react'
 import Link from 'next/link'

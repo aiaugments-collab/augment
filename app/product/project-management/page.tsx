@@ -7,17 +7,20 @@ import { ProductResources } from "@/components/product/ProductResources";
 import { ProductCTABanner } from "@/components/product/ProductCTABanner";
 import { ProductGetStarted } from "@/components/product/ProductGetStarted";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
+import { getAppUrls } from "@/lib/marketplaceData";
 
 export default function ProjectManagementPage() {
+  const { productUrl, docsUrl } = getAppUrls("project-management");
+  
   const ctaButtons = [
     {
       text: "Try Projects Module",
-      href: "https://erp.augment.cfd/app/projects",
+      href: productUrl,
       variant: "primary" as const
     },
     {
       text: "Schedule Demo",
-      href: "/book-demo",
+      href: docsUrl,
       variant: "secondary" as const
     }
   ];

@@ -7,17 +7,20 @@ import { ProductResources } from "@/components/product/ProductResources";
 import { ProductCTABanner } from "@/components/product/ProductCTABanner";
 import { ProductGetStarted } from "@/components/product/ProductGetStarted";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
+import { getAppUrls } from "@/lib/marketplaceData";
 
 export default function NeuroFlowOrchestratorPage() {
+  const { productUrl, docsUrl } = getAppUrls("neuroflow-orchestrator");
+  
   const ctaButtons = [
     {
       text: "Start Free",
-      href: "https://github.com/superagent-ai",
+      href: productUrl,
       variant: "primary" as const
     },
     {
       text: "View Documentation",
-      href: "/documentation",
+      href: docsUrl,
       variant: "secondary" as const
     }
   ];
@@ -29,7 +32,7 @@ export default function NeuroFlowOrchestratorPage() {
       title: "AI-Native Workflow Automation",
       description: "Orchestrate complex enterprise workflows with AI intelligence that adapts, learns, and optimizes automatically for maximum efficiency.",
       ctaText: "Learn AI orchestration",
-      ctaLink: "https://github.com/superagent-ai",
+      ctaLink: productUrl,
       target: "_blank" as const
     },
     {
@@ -38,7 +41,7 @@ export default function NeuroFlowOrchestratorPage() {
       title: "Enterprise-Scale Operations",
       description: "Handle massive workloads with intelligent scaling, fault tolerance, and enterprise-grade security for mission-critical operations.",
       ctaText: "Explore enterprise features",
-      ctaLink: "/documentation",
+      ctaLink: docsUrl,
       target: "_self" as const
     },
     {
@@ -47,7 +50,7 @@ export default function NeuroFlowOrchestratorPage() {
       title: "Seamless API Integration",
       description: "Connect traditional APIs with next-gen AI capabilities through intelligent middleware that bridges legacy systems with modern AI.",
       ctaText: "View integrations",
-      ctaLink: "/documentation",
+      ctaLink: docsUrl,
       target: "_self" as const
     },
     {
@@ -56,7 +59,7 @@ export default function NeuroFlowOrchestratorPage() {
       title: "Intelligent Process Automation",
       description: "Transform manual processes with AI-powered automation that understands context, makes decisions, and continuously improves.",
       ctaText: "See automation examples",
-      ctaLink: "/documentation",
+      ctaLink: docsUrl,
       target: "_self" as const
     }
   ];
@@ -69,8 +72,8 @@ export default function NeuroFlowOrchestratorPage() {
         title: "AI-native enterprise workflow orchestration",
         description: "Orchestrate complex enterprise workflows with AI intelligence that combines traditional APIs with next-generation AI capabilities, ensuring tasks are executed with adaptability and scale.",
         buttons: [
-          { text: "Try Orchestrator", href: "https://github.com/superagent-ai", variant: "primary" as const },
-          { text: "Workflow examples", href: "/documentation", variant: "secondary" as const }
+          { text: "Try Orchestrator", href: productUrl, variant: "primary" as const },
+          { text: "Workflow examples", href: docsUrl, variant: "secondary" as const }
         ],
         features: {
           title: "Workflow Orchestration Features",
@@ -99,8 +102,8 @@ export default function NeuroFlowOrchestratorPage() {
         title: "Intelligent automation with AI decision-making",
         description: "Transform manual processes with AI-powered automation that understands context, makes intelligent decisions, and continuously learns to optimize performance and outcomes.",
         buttons: [
-          { text: "Explore AI Features", href: "https://github.com/superagent-ai", variant: "primary" as const },
-          { text: "AI capabilities", href: "/documentation", variant: "secondary" as const }
+          { text: "Explore AI Features", href: productUrl, variant: "primary" as const },
+          { text: "AI capabilities", href: docsUrl, variant: "secondary" as const }
         ],
         features: {
           title: "AI Automation Features",
@@ -129,8 +132,8 @@ export default function NeuroFlowOrchestratorPage() {
         title: "Seamless enterprise system integration",
         description: "Connect traditional APIs with next-gen AI through intelligent middleware that bridges legacy systems with modern AI capabilities, ensuring seamless data flow and operations.",
         buttons: [
-          { text: "Try Integration", href: "https://github.com/superagent-ai", variant: "primary" as const },
-          { text: "Integration guide", href: "/documentation", variant: "secondary" as const }
+          { text: "Try Integration", href: productUrl, variant: "primary" as const },
+          { text: "Integration guide", href: docsUrl, variant: "secondary" as const }
         ],
         features: {
           title: "Enterprise Integration Features",
@@ -159,8 +162,8 @@ export default function NeuroFlowOrchestratorPage() {
         title: "Advanced workflow monitoring and analytics",
         description: "Monitor and analyze workflow performance with real-time insights, predictive analytics, and comprehensive reporting that drives continuous optimization and improvement.",
         buttons: [
-          { text: "View Analytics", href: "https://github.com/superagent-ai", variant: "primary" as const },
-          { text: "Monitoring setup", href: "/documentation", variant: "secondary" as const }
+          { text: "View Analytics", href: productUrl, variant: "primary" as const },
+          { text: "Monitoring setup", href: docsUrl, variant: "secondary" as const }
         ],
         features: {
           title: "Monitoring & Analytics Features",
@@ -191,7 +194,7 @@ export default function NeuroFlowOrchestratorPage() {
       description: "Orchestrate complex enterprise workflows with AI intelligence that combines traditional APIs with next-generation capabilities, ensuring tasks are executed with adaptability and scale.",
       link: {
         text: "Learn about AI orchestration",
-        href: "https://github.com/superagent-ai"
+        href: productUrl
       }
     },
     {
@@ -217,44 +220,44 @@ export default function NeuroFlowOrchestratorPage() {
     description: "A Fortune 500 company transformed their enterprise operations using NeuroFlow Orchestrator, dramatically reducing workflow complexity while improving efficiency and scalability.",
     image: "/products/neuroflow/01.png",
     linkText: "Read the orchestration success story",
-    linkHref: "/documentation"
+    linkHref: docsUrl
   };
 
   const customerLogos = [
     {
       name: "Zapier",
       image: "https://logo.clearbit.com/zapier.com",
-      href: "/documentation",
+      href: docsUrl,
       alt: "Zapier logo"
     },
     {
       name: "Microsoft",
       image: "https://logo.clearbit.com/microsoft.com",
-      href: "/documentation",
+      href: docsUrl,
       alt: "Microsoft logo"
     },
     {
       name: "Salesforce",
       image: "https://logo.clearbit.com/salesforce.com",
-      href: "/documentation", 
+      href: docsUrl, 
       alt: "Salesforce logo"
     },
     {
       name: "ServiceNow",
       image: "https://logo.clearbit.com/servicenow.com",
-      href: "/documentation",
+      href: docsUrl,
       alt: "ServiceNow logo"
     },
     {
       name: "Workato", 
       image: "https://logo.clearbit.com/workato.com",
-      href: "/documentation",
+      href: docsUrl,
       alt: "Workato logo"
     },
     {
       name: "MuleSoft",
       image: "https://logo.clearbit.com/mulesoft.com",
-      href: "/documentation",
+      href: docsUrl,
       alt: "MuleSoft logo"
     }
   ];
@@ -268,10 +271,10 @@ export default function NeuroFlowOrchestratorPage() {
         description: "Stay updated with the newest capabilities in AI-native workflow orchestration, intelligent automation, and enterprise integration designed for modern operations.",
         image: "/products/neuroflow/02.png",
         links: [
-          { text: "New AI orchestration features", href: "/documentation" },
-          { text: "Workflow automation updates", href: "/documentation" },
-          { text: "Integration enhancements", href: "/documentation" },
-          { text: "Performance improvements", href: "/documentation" }
+          { text: "New AI orchestration features", href: docsUrl },
+          { text: "Workflow automation updates", href: docsUrl },
+          { text: "Integration enhancements", href: docsUrl },
+          { text: "Performance improvements", href: docsUrl }
         ]
       }
     },
@@ -283,10 +286,10 @@ export default function NeuroFlowOrchestratorPage() {
         description: "Compare our AI-native orchestration capabilities with other solutions and see why enterprises choose us for intelligent workflow automation.",
         image: "/products/neuroflow/03.png",
         links: [
-          { text: "Orchestration platform comparison", href: "/documentation" },
-          { text: "Feature comparison matrix", href: "/documentation" },
-          { text: "Implementation guide", href: "/documentation" },
-          { text: "ROI analysis", href: "/documentation" }
+          { text: "Orchestration platform comparison", href: docsUrl },
+          { text: "Feature comparison matrix", href: docsUrl },
+          { text: "Implementation guide", href: docsUrl },
+          { text: "ROI analysis", href: docsUrl }
         ]
       }
     },
@@ -298,10 +301,10 @@ export default function NeuroFlowOrchestratorPage() {
         description: "Master AI-native orchestration with comprehensive guides, best practices, and training materials for developers and enterprise architects.",
         image: "/products/neuroflow/04.png",
         links: [
-          { text: "AI orchestration guide", href: "/documentation" },
-          { text: "Workflow design patterns", href: "/documentation" },
-          { text: "Integration best practices", href: "/documentation" },
-          { text: "Performance optimization", href: "/documentation" }
+          { text: "AI orchestration guide", href: docsUrl },
+          { text: "Workflow design patterns", href: docsUrl },
+          { text: "Integration best practices", href: docsUrl },
+          { text: "Performance optimization", href: docsUrl }
         ]
       }
     }
@@ -310,17 +313,17 @@ export default function NeuroFlowOrchestratorPage() {
   const getStartedActions = [
     {
       title: "Start free",
-      href: "https://github.com/superagent-ai",
+      href: productUrl,
       icon: "demo"
     },
     {
       title: "View documentation",
-      href: "/documentation",
+      href: docsUrl,
       icon: "tour"
     },
     {
       title: "Contact support",
-      href: "/book-demo",
+      href: productUrl,
       icon: "contact"
     }
   ];
@@ -360,7 +363,7 @@ export default function NeuroFlowOrchestratorPage() {
           title="AI orchestration success stories"
           description="Learn why enterprise architects and developers choose NeuroFlow for intelligent workflow orchestration and automation."
           viewMoreText="View more success stories"
-          viewMoreHref="/documentation"
+          viewMoreHref={docsUrl}
           logos={customerLogos}
         />
         <ProductResources 
@@ -372,7 +375,7 @@ export default function NeuroFlowOrchestratorPage() {
           description="We've compiled workflow automation strategies, AI orchestration patterns, and enterprise integration methodologies for modern intelligent operations."
           image="/products/neuroflow/03.png"
           buttonText="Get the orchestration guide"
-          buttonHref="/documentation"
+          buttonHref={docsUrl}
         />
         <ProductGetStarted
           title="Get Started"

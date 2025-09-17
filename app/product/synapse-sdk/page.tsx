@@ -7,17 +7,20 @@ import { ProductResources } from "@/components/product/ProductResources";
 import { ProductCTABanner } from "@/components/product/ProductCTABanner";
 import { ProductGetStarted } from "@/components/product/ProductGetStarted";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
+import { getAppUrls } from "@/lib/marketplaceData";
 
 export default function SynapseSDKPage() {
+  const { productUrl, docsUrl } = getAppUrls("synapse-sdk");
+  
   const ctaButtons = [
     {
       text: "Get SDK",
-      href: "https://github.com/superagent-ai/vibekit/tree/main/packages/sdk",
+      href: productUrl,
       variant: "primary" as const
     },
     {
       text: "View Documentation",
-      href: "/documentation",
+      href: docsUrl,
       variant: "secondary" as const
     }
   ];
@@ -29,7 +32,7 @@ export default function SynapseSDKPage() {
       title: "Seamless AI Integration",
       description: "Embed adaptive AI automation directly into your applications with flexible APIs and modular components that unlock intelligent capabilities.",
       ctaText: "Learn AI integration",
-      ctaLink: "https://github.com/superagent-ai/vibekit/tree/main/packages/sdk",
+      ctaLink: productUrl,
       target: "_blank" as const
     },
     {
@@ -38,7 +41,7 @@ export default function SynapseSDKPage() {
       title: "Modular AI Components",
       description: "Build intelligent features with pre-built modular components that provide AI-driven automation, decision-making, and adaptive behavior.",
       ctaText: "Explore components",
-      ctaLink: "/documentation",
+      ctaLink: docsUrl,
       target: "_self" as const
     },
     {
@@ -47,7 +50,7 @@ export default function SynapseSDKPage() {
       title: "Flexible Developer APIs",
       description: "Integrate AI capabilities with flexible, well-documented APIs that provide powerful automation features while maintaining simplicity and ease of use.",
       ctaText: "View API docs",
-      ctaLink: "/documentation",
+      ctaLink: docsUrl,
       target: "_self" as const
     },
     {
@@ -56,7 +59,7 @@ export default function SynapseSDKPage() {
       title: "Accelerated Product Innovation",
       description: "Accelerate product innovation with AI-driven automation that enables rapid feature development and intelligent user experiences.",
       ctaText: "See innovation examples",
-      ctaLink: "/documentation",
+      ctaLink: docsUrl,
       target: "_self" as const
     }
   ];
@@ -69,8 +72,8 @@ export default function SynapseSDKPage() {
         title: "Seamless AI automation integration",
         description: "Embed adaptive AI automation directly into your applications with flexible APIs and modular components that unlock AI-driven automation and intelligent decision-making capabilities.",
         buttons: [
-          { text: "Get Synapse SDK", href: "https://github.com/superagent-ai/vibekit/tree/main/packages/sdk", variant: "primary" as const },
-          { text: "Integration examples", href: "/documentation", variant: "secondary" as const }
+          { text: "Get Synapse SDK", href: productUrl, variant: "primary" as const },
+          { text: "Integration examples", href: docsUrl, variant: "secondary" as const }
         ],
         features: {
           title: "AI Integration Features",
@@ -99,8 +102,8 @@ export default function SynapseSDKPage() {
         title: "Pre-built AI automation components",
         description: "Build intelligent features with pre-built modular components that provide AI-driven automation, adaptive behavior, and intelligent processing capabilities for rapid development.",
         buttons: [
-          { text: "Explore Components", href: "https://github.com/superagent-ai/vibekit/tree/main/packages/sdk", variant: "primary" as const },
-          { text: "Component library", href: "/documentation", variant: "secondary" as const }
+          { text: "Explore Components", href: productUrl, variant: "primary" as const },
+          { text: "Component library", href: docsUrl, variant: "secondary" as const }
         ],
         features: {
           title: "Modular Components Features",
@@ -129,8 +132,8 @@ export default function SynapseSDKPage() {
         title: "Flexible and powerful developer APIs",
         description: "Integrate AI capabilities with flexible, well-documented APIs that provide powerful automation features while maintaining simplicity, ease of use, and developer productivity.",
         buttons: [
-          { text: "Try APIs", href: "https://github.com/superagent-ai/vibekit/tree/main/packages/sdk", variant: "primary" as const },
-          { text: "API documentation", href: "/documentation", variant: "secondary" as const }
+          { text: "Try APIs", href: productUrl, variant: "primary" as const },
+          { text: "API documentation", href: docsUrl, variant: "secondary" as const }
         ],
         features: {
           title: "Developer APIs Features",
@@ -159,8 +162,8 @@ export default function SynapseSDKPage() {
         title: "Accelerated AI-driven product innovation",
         description: "Accelerate product innovation with AI-driven automation that enables rapid feature development, intelligent user experiences, and competitive advantage through smart technology.",
         buttons: [
-          { text: "View Innovation Tools", href: "https://github.com/superagent-ai/vibekit/tree/main/packages/sdk", variant: "primary" as const },
-          { text: "Success stories", href: "/documentation", variant: "secondary" as const }
+          { text: "View Innovation Tools", href: productUrl, variant: "primary" as const },
+          { text: "Success stories", href: docsUrl, variant: "secondary" as const }
         ],
         features: {
           title: "Product Acceleration Features",
@@ -191,7 +194,7 @@ export default function SynapseSDKPage() {
       description: "Embed adaptive AI automation directly into your applications with flexible APIs and modular components that unlock AI-driven automation and intelligent capabilities.",
       link: {
         text: "Learn about AI integration",
-        href: "https://github.com/superagent-ai/vibekit/tree/main/packages/sdk"
+        href: productUrl
       }
     },
     {
@@ -217,44 +220,44 @@ export default function SynapseSDKPage() {
     description: "A fast-growing startup transformed their product development using Synapse SDK, dramatically accelerating AI feature development while maintaining code quality and scalability.",
     image: "/products/synapse/01.png",
     linkText: "Read the integration success story",
-    linkHref: "/documentation"
+    linkHref: docsUrl
   };
 
   const customerLogos = [
     {
       name: "OpenAI",
       image: "https://logo.clearbit.com/openai.com",
-      href: "/documentation",
+      href: docsUrl,
       alt: "OpenAI logo"
     },
     {
       name: "Anthropic",
       image: "https://logo.clearbit.com/anthropic.com",
-      href: "/documentation",
+      href: docsUrl,
       alt: "Anthropic logo"
     },
     {
       name: "Hugging Face",
       image: "https://logo.clearbit.com/huggingface.co",
-      href: "/documentation", 
+      href: docsUrl, 
       alt: "Hugging Face logo"
     },
     {
       name: "Replicate",
       image: "https://logo.clearbit.com/replicate.com",
-      href: "/documentation",
+      href: docsUrl,
       alt: "Replicate logo"
     },
     {
       name: "Cohere", 
       image: "https://logo.clearbit.com/cohere.ai",
-      href: "/documentation",
+      href: docsUrl,
       alt: "Cohere logo"
     },
     {
       name: "Stability AI",
       image: "https://logo.clearbit.com/stability.ai",
-      href: "/documentation",
+      href: docsUrl,
       alt: "Stability AI logo"
     }
   ];
@@ -268,10 +271,10 @@ export default function SynapseSDKPage() {
         description: "Stay updated with the newest capabilities in AI automation integration, modular components, and developer APIs designed for modern AI-driven applications.",
         image: "/products/synapse/02.png",
         links: [
-          { text: "New AI integration features", href: "/documentation" },
-          { text: "Component library updates", href: "/documentation" },
-          { text: "API enhancements", href: "/documentation" },
-          { text: "Performance improvements", href: "/documentation" }
+          { text: "New AI integration features", href: docsUrl },
+          { text: "Component library updates", href: docsUrl },
+          { text: "API enhancements", href: docsUrl },
+          { text: "Performance improvements", href: docsUrl }
         ]
       }
     },
@@ -283,10 +286,10 @@ export default function SynapseSDKPage() {
         description: "Compare our AI integration capabilities with other SDKs and see why developers choose us for embedding intelligent automation into their applications.",
         image: "/products/synapse/03.png",
         links: [
-          { text: "AI SDK comparison", href: "/documentation" },
-          { text: "Feature comparison matrix", href: "/documentation" },
-          { text: "Integration guide", href: "/documentation" },
-          { text: "Migration assistance", href: "/documentation" }
+          { text: "AI SDK comparison", href: docsUrl },
+          { text: "Feature comparison matrix", href: docsUrl },
+          { text: "Integration guide", href: docsUrl },
+          { text: "Migration assistance", href: docsUrl }
         ]
       }
     },
@@ -298,10 +301,10 @@ export default function SynapseSDKPage() {
         description: "Master AI integration with comprehensive guides, best practices, and training materials for developers building intelligent, AI-powered applications.",
         image: "/products/synapse/04.png",
         links: [
-          { text: "AI integration guide", href: "/documentation" },
-          { text: "Component development", href: "/documentation" },
-          { text: "API best practices", href: "/documentation" },
-          { text: "Performance optimization", href: "/documentation" }
+          { text: "AI integration guide", href: docsUrl },
+          { text: "Component development", href: docsUrl },
+          { text: "API best practices", href: docsUrl },
+          { text: "Performance optimization", href: docsUrl }
         ]
       }
     }
@@ -310,17 +313,17 @@ export default function SynapseSDKPage() {
   const getStartedActions = [
     {
       title: "Get SDK",
-      href: "https://github.com/superagent-ai/vibekit/tree/main/packages/sdk",
+      href: productUrl,
       icon: "demo"
     },
     {
       title: "View documentation",
-      href: "/documentation",
+      href: docsUrl,
       icon: "tour"
     },
     {
       title: "Contact support",
-      href: "/book-demo",
+      href: productUrl,
       icon: "contact"
     }
   ];
@@ -360,7 +363,7 @@ export default function SynapseSDKPage() {
           title="AI integration success stories"
           description="Learn why developers and product teams choose Synapse SDK for embedding intelligent automation and accelerating AI-driven innovation."
           viewMoreText="View more success stories"
-          viewMoreHref="/documentation"
+          viewMoreHref={docsUrl}
           logos={customerLogos}
         />
         <ProductResources 
@@ -372,7 +375,7 @@ export default function SynapseSDKPage() {
           description="We've compiled AI integration strategies, component development patterns, and intelligent application methodologies for modern AI-driven product development."
           image="/products/synapse/03.png"
           buttonText="Get the integration guide"
-          buttonHref="/documentation"
+          buttonHref={docsUrl}
         />
         <ProductGetStarted
           title="Get Started"
