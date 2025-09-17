@@ -1,6 +1,75 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
-  <defs><linearGradient id="g" x1="10" y1="54" x2="54" y2="10"><stop stop-color="#22C55E"/><stop offset="1" stop-color="#16A34A"/></linearGradient></defs>
-  <rect x="12" y="16" width="40" height="32" rx="8" stroke="#0F172A" stroke-width="2.5" fill="url(#g)" fill-opacity="0.08"/>
-  <path d="M18 40l6-8 6 4 8-10 8 6" stroke="#0F172A" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle -->
+  <circle cx="32" cy="32" r="30" fill="url(#sales-gradient)" stroke="#dc2626" stroke-width="2"/>
+  
+  <!-- Sales Pipeline -->
+  <rect x="16" y="20" width="32" height="24" rx="4" fill="#ffffff" fill-opacity="0.95" stroke="#ef4444" stroke-width="1.5"/>
+  
+  <!-- Pipeline Header -->
+  <rect x="16" y="20" width="32" height="6" rx="4" fill="url(#header-gradient)"/>
+  
+  <!-- Sales Funnel Stages -->
+  <rect x="20" y="30" width="6" height="10" rx="1" fill="url(#leads-gradient)" stroke="#ef4444" stroke-width="1"/>
+  <rect x="28" y="30" width="6" height="10" rx="1" fill="url(#prospects-gradient)" stroke="#f97316" stroke-width="1"/>
+  <rect x="36" y="30" width="6" height="10" rx="1" fill="url(#qualified-gradient)" stroke="#f59e0b" stroke-width="1"/>
+  <rect x="44" y="30" width="4" height="10" rx="1" fill="url(#closed-gradient)" stroke="#22c55e" stroke-width="1"/>
+  
+  <!-- Stage Values -->
+  <text x="23" y="37" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="4" font-weight="bold">$5K</text>
+  <text x="31" y="37" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="4" font-weight="bold">$3K</text>
+  <text x="39" y="37" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="4" font-weight="bold">$2K</text>
+  <text x="46" y="37" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="4" font-weight="bold">$1K</text>
+  
+  <!-- CRM Integration -->
+  <circle cx="8" cy="32" r="4" fill="url(#crm-gradient)" stroke="#db2777" stroke-width="1.5"/>
+  <text x="8" y="33" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="4" font-weight="bold">CRM</text>
+  
+  <!-- Revenue Tracking -->
+  <circle cx="56" cy="32" r="4" fill="url(#revenue-gradient)" stroke="#059669" stroke-width="1.5"/>
+  <text x="56" y="33" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="5" font-weight="bold">$</text>
+  
+  <!-- Sales Analytics -->
+  <rect x="20" y="48" width="24" height="6" rx="2" fill="url(#analytics-gradient)" stroke="#f59e0b" stroke-width="1"/>
+  <path d="M22 51 L24 49 L26 50 L28 48 L30 49 L32 47 L34 48 L36 46 L38 47 L40 45 L42 46" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+  
+  <!-- Gradient Definitions -->
+  <defs>
+    <linearGradient id="sales-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f87171;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#ef4444;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#dc2626;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="header-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#dc2626;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ef4444;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="leads-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fca5a5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ef4444;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="prospects-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fdba74;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f97316;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="qualified-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="closed-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4ade80;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#22c55e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="crm-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f472b6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#db2777;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="revenue-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#34d399;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="analytics-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fed7aa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+  </defs>
 </svg>
-

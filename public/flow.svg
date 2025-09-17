@@ -1,15 +1,98 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle -->
+  <circle cx="32" cy="32" r="30" fill="url(#flow-gradient)" stroke="#581c87" stroke-width="2"/>
+  
+  <!-- Central AI Agent -->
+  <circle cx="32" cy="32" r="8" fill="#ffffff" fill-opacity="0.95" stroke="#8b5cf6" stroke-width="2"/>
+  <circle cx="32" cy="32" r="5" fill="url(#agent-gradient)" stroke="#7c3aed" stroke-width="1"/>
+  <text x="32" y="34" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="4" font-weight="bold">AI</text>
+  
+  <!-- App Integration Nodes -->
+  <circle cx="12" cy="12" r="4" fill="url(#app1-gradient)" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="12" y="13" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="3" font-weight="bold">APP</text>
+  
+  <circle cx="32" cy="8" r="4" fill="url(#app2-gradient)" stroke="#10b981" stroke-width="1.5"/>
+  <text x="32" y="9" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="3" font-weight="bold">API</text>
+  
+  <circle cx="52" cy="12" r="4" fill="url(#app3-gradient)" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="52" y="13" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="3" font-weight="bold">SVC</text>
+  
+  <circle cx="56" cy="32" r="4" fill="url(#app4-gradient)" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="56" y="33" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="3" font-weight="bold">WEB</text>
+  
+  <circle cx="52" cy="52" r="4" fill="url(#app5-gradient)" stroke="#ec4899" stroke-width="1.5"/>
+  <text x="52" y="53" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="3" font-weight="bold">DB</text>
+  
+  <circle cx="32" cy="56" r="4" fill="url(#app6-gradient)" stroke="#22c55e" stroke-width="1.5"/>
+  <text x="32" y="57" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="3" font-weight="bold">CRM</text>
+  
+  <circle cx="12" cy="52" r="4" fill="url(#app7-gradient)" stroke="#7c3aed" stroke-width="1.5"/>
+  <text x="12" y="53" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="3" font-weight="bold">ERP</text>
+  
+  <circle cx="8" cy="32" r="4" fill="url(#app8-gradient)" stroke="#059669" stroke-width="1.5"/>
+  <text x="8" y="33" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="3" font-weight="bold">AI</text>
+  
+  <!-- Text-to-Action Flow -->
+  <rect x="20" y="16" width="24" height="6" rx="2" fill="url(#text-gradient)" stroke="#8b5cf6" stroke-width="1"/>
+  <text x="32" y="20" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="4" font-weight="bold">TEXT → ACTION</text>
+  
+  <!-- 200+ Apps Counter -->
+  <rect x="20" y="42" width="24" height="6" rx="2" fill="url(#apps-gradient)" stroke="#22c55e" stroke-width="1"/>
+  <text x="32" y="46" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="4" font-weight="bold">200+ APPS</text>
+  
+  <!-- Connection Lines -->
+  <path d="M16 12 L24 32 M32 12 L32 24 M48 12 L40 32 M52 32 L40 32 M48 52 L40 32 M32 52 L32 40 M16 52 L24 32 M12 32 L24 32" stroke="#8b5cf6" stroke-width="2" opacity="0.6"/>
+  
+  <!-- Gradient Definitions -->
   <defs>
-    <linearGradient id="g" x1="8" y1="8" x2="56" y2="56" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#06B6D4"/>
-      <stop offset="1" stop-color="#0891B2"/>
+    <linearGradient id="flow-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#a78bfa;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="agent-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ddd6fe;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="app1-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#60a5fa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="app2-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#34d399;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="app3-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="app4-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f87171;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ef4444;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="app5-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f472b6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ec4899;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="app6-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4ade80;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#22c55e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="app7-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c4b5fd;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="app8-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#34d399;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="text-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ddd6fe;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="apps-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4ade80;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#22c55e;stop-opacity:1" />
     </linearGradient>
   </defs>
-  <g stroke="#0F172A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none">
-    <path d="M14 22h16a6 6 0 0 1 6 6 6 6 0 0 0 6 6h8"/>
-    <path d="M50 42H34a6 6 0 0 1-6-6 6 6 0 0 0-6-6H14" opacity="0.7"/>
-  </g>
-  <circle cx="14" cy="22" r="4" fill="url(#g)" fill-opacity="0.2" stroke="#0F172A" stroke-width="2"/>
-  <circle cx="50" cy="42" r="4" fill="url(#g)" fill-opacity="0.2" stroke="#0F172A" stroke-width="2"/>
 </svg>
-

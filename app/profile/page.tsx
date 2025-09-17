@@ -1,11 +1,11 @@
 'use client';
 
 import React from 'react';
-import { useAuth } from '@/contexts/AuthContext';
+import { useUser } from '@stackframe/stack';
 import { ProtectedRoute } from '@/components/auth/ProtectedRoute';
 
 export default function ProfilePage() {
-  const { currentUser } = useAuth();
+  const user = useUser();
 
   return (
     <ProtectedRoute>
@@ -27,23 +27,23 @@ export default function ProfilePage() {
               {/* Profile Picture */}
               <div className="flex items-center space-x-6">
                 <div className="flex-shrink-0">
-                  {currentUser?.photoURL ? (
+                  {user?.profileImageUrl ? (
                     <img
-                      src={currentUser.photoURL}
+                      src={user.profileImageUrl}
                       alt="Profile"
                       className="w-20 h-20 rounded-full"
                     />
                   ) : (
                     <div className="w-20 h-20 bg-blue-500 rounded-full flex items-center justify-center text-white text-2xl font-medium">
-                      {(currentUser?.displayName || currentUser?.email || 'U')[0].toUpperCase()}
+                      {(user?.displayName || user?.primaryEmail || 'U')[0].toUpperCase()}
                     </div>
                   )}
                 </div>
                 <div>
                   <h3 className="text-lg font-medium text-gray-900">
-                    {currentUser?.displayName || 'No name set'}
+                    {user?.displayName || 'No name set'}
                   </h3>
-                  <p className="text-gray-600">{currentUser?.email}</p>
+                  <p className="text-gray-600">{user?.primaryEmail}</p>
                   <button className="mt-2 text-sm text-blue-600 hover:text-blue-500">
                     Change photo
                   </button>
@@ -58,7 +58,7 @@ export default function ProfilePage() {
                   </label>
                   <input
                     type="text"
-                    value={currentUser?.displayName || ''}
+                    value={user?.displayName || ''}
                     className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
                     placeholder="Enter your display name"
                     readOnly
@@ -71,7 +71,7 @@ export default function ProfilePage() {
                   </label>
                   <input
                     type="email"
-                    value={currentUser?.email || ''}
+                    value={user?.primaryEmail || ''}
                     className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm bg-gray-50"
                     readOnly
                   />
@@ -83,7 +83,7 @@ export default function ProfilePage() {
                   </label>
                   <input
                     type="text"
-                    value={currentUser?.metadata?.creationTime ? new Date(currentUser.metadata.creationTime).toLocaleDateString() : 'Recently'}
+                    value="Recently"
                     className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm bg-gray-50"
                     readOnly
                   />

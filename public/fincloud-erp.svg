@@ -1,18 +1,75 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle -->
+  <circle cx="32" cy="32" r="30" fill="url(#erp-gradient)" stroke="#4338ca" stroke-width="2"/>
+  
+  <!-- Cloud ERP Core -->
+  <path d="M20 36 C20 30 24 26 30 26 C32 22 36 20 40 22 C44 20 48 24 48 28 C50 28 52 30 52 32 C52 34 50 36 48 36 L20 36 Z" fill="#ffffff" fill-opacity="0.95" stroke="#6366f1" stroke-width="1.5"/>
+  
+  <!-- ERP Center -->
+  <circle cx="32" cy="32" r="6" fill="url(#core-gradient)" stroke="#4f46e5" stroke-width="1"/>
+  <text x="32" y="34" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="4" font-weight="bold">ERP</text>
+  
+  <!-- Finance Module -->
+  <circle cx="16" cy="16" r="4" fill="url(#finance-gradient)" stroke="#10b981" stroke-width="1.5"/>
+  <text x="16" y="17" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="4" font-weight="bold">$</text>
+  
+  <!-- Procurement -->
+  <circle cx="48" cy="16" r="4" fill="url(#procurement-gradient)" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="48" y="17" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="3" font-weight="bold">BUY</text>
+  
+  <!-- Inventory -->
+  <circle cx="16" cy="48" r="4" fill="url(#inventory-gradient)" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="16" y="49" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="3" font-weight="bold">INV</text>
+  
+  <!-- Payroll -->
+  <circle cx="48" cy="48" r="4" fill="url(#payroll-gradient)" stroke="#7c3aed" stroke-width="1.5"/>
+  <text x="48" y="49" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="3" font-weight="bold">PAY</text>
+  
+  <!-- Modular -->
+  <rect x="20" y="8" width="24" height="6" rx="2" fill="url(#modular-gradient)" stroke="#6366f1" stroke-width="1"/>
+  <text x="32" y="12" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="4" font-weight="bold">MODULAR</text>
+  
+  <!-- Cloud Native -->
+  <rect x="20" y="50" width="24" height="6" rx="2" fill="url(#cloud-gradient)" stroke="#22c55e" stroke-width="1"/>
+  <text x="32" y="54" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="4" font-weight="bold">CLOUD</text>
+  
+  <!-- Connection Lines -->
+  <path d="M20 16 L26 32 M38 32 L44 16 M20 48 L26 32 M38 32 L44 48" stroke="#6366f1" stroke-width="1.5" opacity="0.6"/>
+  
+  <!-- Gradient Definitions -->
   <defs>
-    <linearGradient id="g" x1="12" y1="52" x2="52" y2="12" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#2563EB"/>
-      <stop offset="1" stop-color="#1D4ED8"/>
+    <linearGradient id="erp-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#818cf8;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#6366f1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4f46e5;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="core-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#a5b4fc;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6366f1;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="finance-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#34d399;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="procurement-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="inventory-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f87171;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ef4444;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="payroll-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#a78bfa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="modular-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#a5b4fc;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6366f1;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="cloud-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4ade80;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#22c55e;stop-opacity:1" />
     </linearGradient>
   </defs>
-  <rect x="12" y="16" width="40" height="32" rx="8" stroke="#0F172A" stroke-width="2.5" fill="url(#g)" fill-opacity="0.08"/>
-  <g stroke="#0F172A" stroke-width="2.2" stroke-linecap="round">
-    <path d="M18 40h28"/>
-    <path d="M22 40V28"/>
-    <path d="M30 40V24"/>
-    <path d="M38 40V30"/>
-    <path d="M46 40V26"/>
-  </g>
-  <circle cx="20" cy="22" r="3" fill="#2563EB"/>
 </svg>
-

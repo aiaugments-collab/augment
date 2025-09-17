@@ -1,17 +1,95 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle -->
+  <circle cx="32" cy="32" r="30" fill="url(#secure-gradient)" stroke="#1e3a8a" stroke-width="2"/>
+  
+  <!-- Security Shield -->
+  <path d="M32 12 L44 18 L44 32 C44 40 38 46 32 50 C26 46 20 40 20 32 L20 18 L32 12 Z" fill="#ffffff" fill-opacity="0.95" stroke="#3b82f6" stroke-width="2"/>
+  
+  <!-- Network Grid -->
+  <circle cx="32" cy="32" r="6" fill="url(#network-gradient)" stroke="#2563eb" stroke-width="1"/>
+  <circle cx="24" cy="24" r="2" fill="url(#node1-gradient)" stroke="#3b82f6" stroke-width="1"/>
+  <circle cx="40" cy="24" r="2" fill="url(#node2-gradient)" stroke="#1d4ed8" stroke-width="1"/>
+  <circle cx="24" cy="40" r="2" fill="url(#node3-gradient)" stroke="#1e40af" stroke-width="1"/>
+  <circle cx="40" cy="40" r="2" fill="url(#node4-gradient)" stroke="#1e3a8a" stroke-width="1"/>
+  
+  <!-- Security Policy -->
+  <rect x="8" y="16" width="8" height="8" rx="2" fill="url(#policy-gradient)" stroke="#059669" stroke-width="1"/>
+  <text x="12" y="21" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="4" font-weight="bold">POL</text>
+  
+  <!-- Automation Engine -->
+  <rect x="48" y="16" width="8" height="8" rx="2" fill="url(#auto-gradient)" stroke="#7c3aed" stroke-width="1"/>
+  <text x="52" y="21" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="4" font-weight="bold">AUTO</text>
+  
+  <!-- Compliance Monitor -->
+  <rect x="8" y="40" width="8" height="8" rx="2" fill="url(#compliance-gradient)" stroke="#f59e0b" stroke-width="1"/>
+  <text x="12" y="45" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="4" font-weight="bold">COMP</text>
+  
+  <!-- Cloud Security -->
+  <rect x="48" y="40" width="8" height="8" rx="2" fill="url(#cloud-gradient)" stroke="#ef4444" stroke-width="1"/>
+  <text x="52" y="45" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="4" font-weight="bold">CLOUD</text>
+  
+  <!-- Connection Lines -->
+  <path d="M26 24 L30 32 M34 32 L38 24 M26 40 L30 32 M34 32 L38 40" stroke="#3b82f6" stroke-width="1.5" opacity="0.7"/>
+  <path d="M16 20 L20 32 M44 32 L48 20 M16 44 L20 32 M44 32 L48 44" stroke="#2563eb" stroke-width="1.2" opacity="0.6"/>
+  
+  <!-- Central Lock -->
+  <rect x="30" y="30" width="4" height="3" rx="0.5" fill="url(#lock-gradient)"/>
+  <path d="M31 30 L31 28.5 C31 28 31.5 27.5 32 27.5 C32.5 27.5 33 28 33 28.5 L33 30" stroke="#1e40af" stroke-width="1" fill="none"/>
+  
+  <!-- Security Status -->
+  <circle cx="32" cy="8" r="3" fill="url(#status-gradient)" stroke="#22c55e" stroke-width="1"/>
+  <text x="32" y="9" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="4" font-weight="bold">✓</text>
+  
+  <!-- Gradient Definitions -->
   <defs>
-    <linearGradient id="g1" x1="8" y1="8" x2="56" y2="56" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#0EA5E9"/>
-      <stop offset="1" stop-color="#2563EB"/>
+    <linearGradient id="secure-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#60a5fa;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2563eb;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="network-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#93c5fd;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="node1-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#93c5fd;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="node2-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#60a5fa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1d4ed8;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="node3-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e40af;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="node4-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563eb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e3a8a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="policy-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#34d399;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="auto-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#a78bfa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="compliance-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="cloud-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f87171;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ef4444;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="lock-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="status-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4ade80;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#22c55e;stop-opacity:1" />
     </linearGradient>
   </defs>
-  <path d="M32 6l18 6v14c0 14.5-10.2 22.8-18 26-7.8-3.2-18-11.5-18-26V12l18-6z" stroke="#0F172A" stroke-width="2.5" stroke-linejoin="round" fill="url(#g1)" fill-opacity="0.08"/>
-  <g stroke="#0F172A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-    <circle cx="22" cy="28" r="3.5" fill="#0EA5E9" fill-opacity="0.25"/>
-    <circle cx="42" cy="28" r="3.5" fill="#0EA5E9" fill-opacity="0.25"/>
-    <circle cx="32" cy="40" r="3.5" fill="#0EA5E9" fill-opacity="0.25"/>
-    <path d="M25.5 29.5l5 7M38.5 29.5l-5 7M25.5 26.5h13"/>
-  </g>
-  <circle cx="32" cy="12" r="2" fill="#0EA5E9"/>
 </svg>
-

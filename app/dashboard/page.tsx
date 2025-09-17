@@ -1,13 +1,13 @@
 'use client';
 
-import { useAuth } from '@/contexts/AuthContext';
+import { useUser } from '@stackframe/stack';
 import { useRouter } from 'next/navigation';
 import { useEffect } from 'react';
 import { DashboardLayout } from '@/components/dashboard/DashboardLayout';
 import { marketplaceApps } from '@/lib/marketplaceData';
 
 export default function DashboardPage() {
-  const { currentUser, loading, isAuthenticated } = useAuth();
+  const user = useUser();
   const router = useRouter();
   
   // Get user's apps (simulate user having some apps from marketplace)
@@ -15,12 +15,12 @@ export default function DashboardPage() {
   const activeAppsCount = userApps.length;
 
   useEffect(() => {
-    if (!loading && !isAuthenticated) {
-      router.push('/auth/login');
+    if (user === null) {
+      router.push('/handler/signin');
     }
-  }, [loading, isAuthenticated, router]);
+  }, [user, router]);
 
-  if (loading) {
+  if (user === undefined) {
     return (
       <div 
         className="min-h-screen bg-white flex items-center justify-center"
@@ -37,7 +37,7 @@ export default function DashboardPage() {
     );
   }
 
-  if (!isAuthenticated) {
+  if (user === null) {
     return null; // Will redirect in useEffect
   }
 
@@ -52,7 +52,7 @@ export default function DashboardPage() {
           <div className="flex items-center justify-between">
             <div>
               <h1 className="text-4xl font-light mb-3 text-white">
-                Welcome back, <span className="font-semibold">{currentUser?.displayName || currentUser?.email?.split('@')[0]}</span>
+                Welcome back, <span className="font-semibold">{user?.displayName || user?.primaryEmail?.split('@')[0]}</span>
               </h1>
               <p className="text-slate-300 text-lg font-light">
                 Manage your applications and track your usage across the Augment platform

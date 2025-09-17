@@ -3,7 +3,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { useAuth } from '@/contexts/AuthContext';
+import { useUser } from '@stackframe/stack';
 
 interface SidebarItem {
   id: string;
@@ -106,7 +106,7 @@ interface SidebarProps {
 
 export const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
   const pathname = usePathname();
-  const { currentUser } = useAuth();
+  const currentUser = useUser();
 
   const isActive = (href: string) => {
     if (href === '/dashboard') {
@@ -156,9 +156,9 @@ export const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
         {/* User Info */}
         <div className="p-6" style={{ borderBottom: "1px solid #665f5b" }}>
           <div className="flex items-center space-x-3">
-            {currentUser?.photoURL ? (
+            {currentUser?.profileImageUrl ? (
               <img
-                src={currentUser.photoURL}
+                src={currentUser.profileImageUrl}
                 alt="Profile"
                 className="w-10 h-10 rounded-full"
               />
@@ -167,7 +167,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
                 className="w-10 h-10 rounded-full flex items-center justify-center text-white text-sm font-medium"
                 style={{ backgroundColor: "#C74634" }}
               >
-                {(currentUser?.displayName || currentUser?.email || 'U')[0].toUpperCase()}
+                {(currentUser?.displayName || currentUser?.primaryEmail || 'U')[0].toUpperCase()}
               </div>
             )}
             <div className="flex-1 min-w-0">
@@ -175,7 +175,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
                 {currentUser?.displayName || 'User'}
               </p>
               <p className="text-xs text-gray-300 truncate">
-                {currentUser?.email}
+                {currentUser?.primaryEmail}
               </p>
             </div>
           </div>

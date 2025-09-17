@@ -1,15 +1,92 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle -->
+  <circle cx="32" cy="32" r="30" fill="url(#orchestrate-gradient)" stroke="#4c1d95" stroke-width="2"/>
+  
+  <!-- Central Orchestrator -->
+  <circle cx="32" cy="32" r="8" fill="#ffffff" fill-opacity="0.95" stroke="#7c3aed" stroke-width="2"/>
+  <circle cx="32" cy="32" r="5" fill="url(#conductor-gradient)" stroke="#6d28d9" stroke-width="1"/>
+  <text x="32" y="34" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="3" font-weight="bold">ORCH</text>
+  
+  <!-- Service Nodes -->
+  <circle cx="12" cy="12" r="4" fill="url(#service1-gradient)" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="12" y="13" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="3" font-weight="bold">S1</text>
+  
+  <circle cx="52" cy="12" r="4" fill="url(#service2-gradient)" stroke="#10b981" stroke-width="1.5"/>
+  <text x="52" y="13" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="3" font-weight="bold">S2</text>
+  
+  <circle cx="12" cy="52" r="4" fill="url(#service3-gradient)" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="12" y="53" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="3" font-weight="bold">S3</text>
+  
+  <circle cx="52" cy="52" r="4" fill="url(#service4-gradient)" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="52" y="53" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="3" font-weight="bold">S4</text>
+  
+  <!-- Workflow Management -->
+  <rect x="20" y="8" width="24" height="6" rx="2" fill="url(#workflow-gradient)" stroke="#7c3aed" stroke-width="1"/>
+  <text x="32" y="12" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="4" font-weight="bold">WORKFLOW</text>
+  
+  <!-- Automation -->
+  <rect x="20" y="50" width="24" height="6" rx="2" fill="url(#automation-gradient)" stroke="#059669" stroke-width="1"/>
+  <text x="32" y="54" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="4" font-weight="bold">AUTOMATE</text>
+  
+  <!-- Orchestration Lines -->
+  <path d="M16 12 L24 32 M40 32 L48 12 M16 52 L24 32 M40 32 L48 52" stroke="#7c3aed" stroke-width="2" opacity="0.6"/>
+  
+  <!-- State Management -->
+  <circle cx="8" cy="32" r="3" fill="url(#state-gradient)" stroke="#22c55e" stroke-width="1"/>
+  <text x="8" y="33" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="3" font-weight="bold">STATE</text>
+  
+  <!-- Event Handling -->
+  <circle cx="56" cy="32" r="3" fill="url(#event-gradient)" stroke="#f59e0b" stroke-width="1"/>
+  <text x="56" y="33" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="3" font-weight="bold">EVENT</text>
+  
+  <!-- Coordination Pulses -->
+  <circle cx="24" cy="20" r="1" fill="#a78bfa" opacity="0.8"/>
+  <circle cx="40" cy="20" r="1" fill="#34d399" opacity="0.8"/>
+  <circle cx="24" cy="44" r="1" fill="#fbbf24" opacity="0.8"/>
+  <circle cx="40" cy="44" r="1" fill="#f87171" opacity="0.8"/>
+  
+  <!-- Gradient Definitions -->
   <defs>
-    <linearGradient id="g" x1="8" y1="56" x2="56" y2="8" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#4F46E5"/>
-      <stop offset="1" stop-color="#7C3AED"/>
+    <linearGradient id="orchestrate-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#a78bfa;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="conductor-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ddd6fe;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="service1-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#60a5fa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="service2-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#34d399;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="service3-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="service4-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f87171;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ef4444;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="workflow-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c4b5fd;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="automation-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#34d399;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="state-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4ade80;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#22c55e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="event-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
     </linearGradient>
   </defs>
-  <g stroke="#0F172A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none">
-    <circle cx="20" cy="24" r="6" fill="url(#g)" fill-opacity="0.08"/>
-    <circle cx="44" cy="24" r="6" fill="url(#g)" fill-opacity="0.08"/>
-    <circle cx="32" cy="44" r="6" fill="url(#g)" fill-opacity="0.08"/>
-    <path d="M26 24h12M22 29l7 9M42 29l-7 9"/>
-  </g>
 </svg>
-

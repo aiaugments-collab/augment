@@ -1,15 +1,109 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle -->
+  <circle cx="32" cy="32" r="30" fill="url(#log-gradient)" stroke="#1e40af" stroke-width="2"/>
+  
+  <!-- Central Analytics Engine -->
+  <circle cx="32" cy="32" r="8" fill="#ffffff" fill-opacity="0.95" stroke="#3b82f6" stroke-width="2"/>
+  <circle cx="32" cy="32" r="5" fill="url(#engine-gradient)" stroke="#2563eb" stroke-width="1"/>
+  <text x="32" y="34" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="4" font-weight="bold">LOG</text>
+  
+  <!-- Log Sources -->
+  <rect x="8" y="16" width="8" height="6" rx="1" fill="url(#source1-gradient)" stroke="#10b981" stroke-width="1"/>
+  <path d="M9 18 L15 18 M9 20 L13 20" stroke="#ffffff" stroke-width="0.8"/>
+  
+  <rect x="48" y="16" width="8" height="6" rx="1" fill="url(#source2-gradient)" stroke="#f59e0b" stroke-width="1"/>
+  <path d="M49 18 L55 18 M49 20 L53 20" stroke="#ffffff" stroke-width="0.8"/>
+  
+  <rect x="8" y="42" width="8" height="6" rx="1" fill="url(#source3-gradient)" stroke="#7c3aed" stroke-width="1"/>
+  <path d="M9 44 L15 44 M9 46 L13 46" stroke="#ffffff" stroke-width="0.8"/>
+  
+  <rect x="48" y="42" width="8" height="6" rx="1" fill="url(#source4-gradient)" stroke="#ef4444" stroke-width="1"/>
+  <path d="M49 44 L55 44 M49 46 L53 46" stroke="#ffffff" stroke-width="0.8"/>
+  
+  <!-- Analytics Dashboard -->
+  <rect x="20" y="8" width="24" height="6" rx="2" fill="url(#analytics-gradient)" stroke="#22c55e" stroke-width="1"/>
+  <path d="M22 11 L26 9 L30 10 L34 8 L38 9 L42 7" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+  
+  <!-- Alerting System -->
+  <rect x="20" y="50" width="24" height="6" rx="2" fill="url(#alert-gradient)" stroke="#ef4444" stroke-width="1"/>
+  <text x="32" y="54" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="4" font-weight="bold">ALERTS</text>
+  
+  <!-- Search Interface -->
+  <circle cx="12" cy="32" r="4" fill="url(#search-gradient)" stroke="#3b82f6" stroke-width="1.5"/>
+  <circle cx="12" cy="32" r="2" fill="#ffffff" opacity="0.9"/>
+  <path d="M14 34 L16 36" stroke="#3b82f6" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Real-time Processing -->
+  <circle cx="52" cy="32" r="4" fill="url(#realtime-gradient)" stroke="#22c55e" stroke-width="1.5"/>
+  <text x="52" y="33" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="3" font-weight="bold">RT</text>
+  
+  <!-- Data Flow -->
+  <path d="M16 19 L24 32 M40 32 L48 19 M16 45 L24 32 M40 32 L48 45" stroke="#3b82f6" stroke-width="1.5" opacity="0.6"/>
+  <path d="M16 32 L24 32 M40 32 L48 32" stroke="#2563eb" stroke-width="2" opacity="0.7"/>
+  
+  <!-- Index Indicators -->
+  <circle cx="32" cy="18" r="2" fill="url(#index-gradient)" stroke="#f59e0b" stroke-width="1"/>
+  <text x="32" y="19" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="3" font-weight="bold">i</text>
+  
+  <circle cx="32" cy="46" r="2" fill="url(#scale-gradient)" stroke="#7c3aed" stroke-width="1"/>
+  <text x="32" y="47" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="3" font-weight="bold">∞</text>
+  
+  <!-- Data Particles -->
+  <circle cx="20" cy="20" r="1" fill="#34d399" opacity="0.8"/>
+  <circle cx="44" cy="22" r="1" fill="#fbbf24" opacity="0.8"/>
+  <circle cx="18" cy="44" r="1" fill="#a78bfa" opacity="0.8"/>
+  <circle cx="46" cy="42" r="1" fill="#f87171" opacity="0.8"/>
+  
+  <!-- Gradient Definitions -->
   <defs>
-    <linearGradient id="g2" x1="10" y1="54" x2="54" y2="10" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#22C55E"/>
-      <stop offset="1" stop-color="#16A34A"/>
+    <linearGradient id="log-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#60a5fa;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2563eb;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="engine-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#93c5fd;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="source1-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#34d399;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="source2-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="source3-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#a78bfa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="source4-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f87171;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ef4444;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="analytics-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4ade80;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#22c55e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="alert-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f87171;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ef4444;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="search-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#93c5fd;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="realtime-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4ade80;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#22c55e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="index-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="scale-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#a78bfa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1" />
     </linearGradient>
   </defs>
-  <rect x="10" y="12" width="44" height="40" rx="8" stroke="#0F172A" stroke-width="2.5" fill="url(#g2)" fill-opacity="0.08"/>
-  <g stroke="#0F172A" stroke-width="2.2" stroke-linecap="round">
-    <path d="M16 40l7-9 6 6 9-12 10 14" fill="none"/>
-    <path d="M16 24h32" opacity="0.6"/>
-  </g>
-  <circle cx="46" cy="18" r="2" fill="#22C55E"/>
 </svg>
-

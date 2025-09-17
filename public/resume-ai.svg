@@ -1,6 +1,124 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
-  <defs><linearGradient id="g" x1="8" y1="56" x2="56" y2="8"><stop stop-color="#22C55E"/><stop offset="1" stop-color="#0EA5E9"/></linearGradient></defs>
-  <rect x="16" y="12" width="32" height="40" rx="6" stroke="#0F172A" stroke-width="2.5" fill="url(#g)" fill-opacity="0.08"/>
-  <path d="M22 24h20M22 30h16M22 36h12" stroke="#0F172A" stroke-width="2.2" stroke-linecap="round"/>
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle -->
+  <circle cx="32" cy="32" r="30" fill="url(#resume-ai-gradient)" stroke="#7c2d12" stroke-width="2"/>
+  
+  <!-- Resume Document -->
+  <rect x="20" y="12" width="24" height="40" rx="3" fill="#ffffff" fill-opacity="0.95" stroke="#ea580c" stroke-width="1.5"/>
+  
+  <!-- Document Header -->
+  <rect x="20" y="12" width="24" height="6" rx="3" fill="url(#doc-header-gradient)"/>
+  
+  <!-- Profile Section -->
+  <circle cx="26" cy="22" r="3" fill="url(#profile-gradient)" stroke="#ea580c" stroke-width="1"/>
+  <circle cx="26" cy="22" r="1.5" fill="#ffffff"/>
+  
+  <!-- Text Lines -->
+  <path d="M32 20 L40 20 M32 22 L38 22 M32 24 L40 24" stroke="#ea580c" stroke-width="0.8"/>
+  
+  <!-- Experience Section -->
+  <rect x="22" y="28" width="20" height="2" rx="0.5" fill="url(#exp-gradient)"/>
+  <rect x="22" y="31" width="16" height="1.5" rx="0.3" fill="#fed7aa" opacity="0.8"/>
+  <rect x="22" y="33" width="18" height="1.5" rx="0.3" fill="#fed7aa" opacity="0.8"/>
+  
+  <!-- Skills Section -->
+  <rect x="22" y="36" width="20" height="2" rx="0.5" fill="url(#skills-gradient)"/>
+  <rect x="22" y="39" width="14" height="1.5" rx="0.3" fill="#fdba74" opacity="0.8"/>
+  <rect x="22" y="41" width="16" height="1.5" rx="0.3" fill="#fdba74" opacity="0.8"/>
+  
+  <!-- Education Section -->
+  <rect x="22" y="44" width="20" height="2" rx="0.5" fill="url(#edu-gradient)"/>
+  <rect x="22" y="47" width="12" height="1.5" rx="0.3" fill="#fb923c" opacity="0.8"/>
+  
+  <!-- AI Optimization Engine -->
+  <circle cx="8" cy="16" r="4" fill="url(#ai-gradient)" stroke="#7c3aed" stroke-width="1.5"/>
+  <text x="8" y="17" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="4" font-weight="bold">AI</text>
+  
+  <!-- ATS Scanner -->
+  <circle cx="56" cy="16" r="4" fill="url(#ats-gradient)" stroke="#22c55e" stroke-width="1.5"/>
+  <text x="56" y="17" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="3" font-weight="bold">ATS</text>
+  
+  <!-- Job Description Input -->
+  <rect x="8" y="32" width="8" height="8" rx="2" fill="url(#job-gradient)" stroke="#3b82f6" stroke-width="1"/>
+  <path d="M10 34 L14 34 M10 36 L14 36 M10 38 L12 38" stroke="#ffffff" stroke-width="0.8"/>
+  
+  <!-- Tailored Output -->
+  <rect x="48" y="32" width="8" height="8" rx="2" fill="url(#output-gradient)" stroke="#10b981" stroke-width="1"/>
+  <path d="M50 34 L54 34 M50 36 L54 36 M50 38 L54 38" stroke="#ffffff" stroke-width="0.8"/>
+  <circle cx="55" cy="36" r="0.5" fill="#ffffff"/>
+  
+  <!-- Career Assistant -->
+  <circle cx="8" cy="48" r="4" fill="url(#career-gradient)" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="8" y="49" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="3" font-weight="bold">CAR</text>
+  
+  <!-- Speed Indicator -->
+  <circle cx="56" cy="48" r="4" fill="url(#speed-gradient)" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="56" y="49" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="3" font-weight="bold">SEC</text>
+  
+  <!-- Transformation Arrow -->
+  <path d="M12 16 L16 20 M32 8 L32 12 M48 20 L52 16" stroke="#ea580c" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Processing Lines -->
+  <path d="M16 36 L20 32 M44 32 L48 36" stroke="#ea580c" stroke-width="1.5" opacity="0.6"/>
+  
+  <!-- Optimization Particles -->
+  <circle cx="14" cy="24" r="1" fill="#a78bfa" opacity="0.8"/>
+  <circle cx="50" cy="26" r="1" fill="#4ade80" opacity="0.8"/>
+  <circle cx="18" cy="44" r="1" fill="#fbbf24" opacity="0.8"/>
+  <circle cx="46" cy="46" r="1" fill="#f87171" opacity="0.8"/>
+  
+  <!-- Gradient Definitions -->
+  <defs>
+    <linearGradient id="resume-ai-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fdba74;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#ea580c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c2410c;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="doc-header-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#c2410c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ea580c;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="profile-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fed7aa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ea580c;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="exp-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fed7aa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f97316;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="skills-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fdba74;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f97316;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="edu-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fed7aa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fb923c;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="ai-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#a78bfa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="ats-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4ade80;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#22c55e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="job-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#60a5fa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="output-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#34d399;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="career-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="speed-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f87171;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ef4444;stop-opacity:1" />
+    </linearGradient>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#ea580c"/>
+    </marker>
+  </defs>
 </svg>
-

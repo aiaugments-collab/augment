@@ -1,7 +1,169 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
-  <defs><linearGradient id="g" x1="8" y1="56" x2="56" y2="8"><stop stop-color="#7C3AED"/><stop offset="1" stop-color="#4338CA"/></linearGradient></defs>
-  <circle cx="32" cy="32" r="18" stroke="#0F172A" stroke-width="2.5" fill="url(#g)" fill-opacity="0.08"/>
-  <path d="M32 20v8l6 6" stroke="#0F172A" stroke-width="2.5" stroke-linecap="round"/>
-  <path d="M20 32h24" stroke="#0F172A" stroke-width="2.2" stroke-linecap="round" opacity="0.7"/>
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle -->
+  <circle cx="32" cy="32" r="30" fill="url(#plm-gradient)" stroke="#1e40af" stroke-width="2"/>
+  
+  <!-- Central Product -->
+  <circle cx="32" cy="32" r="8" fill="#ffffff" fill-opacity="0.95" stroke="#3b82f6" stroke-width="2"/>
+  <circle cx="32" cy="32" r="5" fill="url(#product-gradient)" stroke="#2563eb" stroke-width="1"/>
+  <circle cx="32" cy="32" r="2" fill="#ffffff"/>
+  
+  <!-- Lifecycle Phases -->
+  <circle cx="16" cy="16" r="6" fill="url(#concept-gradient)" stroke="#10b981" stroke-width="1.5"/>
+  <circle cx="48" cy="16" r="6" fill="url(#design-gradient)" stroke="#f59e0b" stroke-width="1.5"/>
+  <circle cx="48" cy="48" r="6" fill="url(#production-gradient)" stroke="#ef4444" stroke-width="1.5"/>
+  <circle cx="16" cy="48" r="6" fill="url(#retirement-gradient)" stroke="#6b7280" stroke-width="1.5"/>
+  
+  <!-- Phase Labels -->
+  <text x="16" y="18" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="5" font-weight="bold">C</text>
+  <text x="48" y="18" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="5" font-weight="bold">D</text>
+  <text x="48" y="50" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="5" font-weight="bold">P</text>
+  <text x="16" y="50" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="5" font-weight="bold">R</text>
+  
+  <!-- Connection Lines -->
+  <path d="M22 16 L26 32 M38 32 L42 16 M42 48 L38 32 M26 32 L22 48" stroke="#3b82f6" stroke-width="2" opacity="0.7"/>
+  
+  <!-- Design Collaboration -->
+  <rect x="36" y="8" width="16" height="6" rx="2" fill="url(#collab-gradient)" stroke="#f59e0b" stroke-width="1"/>
+  <circle cx="38" cy="10" r="0.8" fill="#ffffff"/>
+  <circle cx="40" cy="10" r="0.8" fill="#ffffff"/>
+  <circle cx="42" cy="10" r="0.8" fill="#ffffff"/>
+  <path d="M44 9 L50 9 M44 11 L48 11" stroke="#ffffff" stroke-width="0.8"/>
+  
+  <!-- CAD/3D Model -->
+  <rect x="52" y="20" width="8" height="8" rx="2" fill="url(#cad-gradient)" stroke="#f59e0b" stroke-width="1"/>
+  <path d="M54 22 L58 26 L54 26 Z" fill="#ffffff" opacity="0.9"/>
+  <path d="M56 24 L58 22 L58 26" stroke="#ffffff" stroke-width="1" fill="none"/>
+  
+  <!-- Change Management -->
+  <circle cx="8" cy="32" r="4" fill="url(#change-gradient)" stroke="#7c3aed" stroke-width="1.5"/>
+  <path d="M6 30 L10 34 M10 30 L6 34" stroke="#ffffff" stroke-width="1.5"/>
+  <circle cx="8" cy="32" r="1" fill="#ffffff"/>
+  
+  <!-- Version Control -->
+  <rect x="52" y="32" width="8" height="8" rx="2" fill="url(#version-gradient)" stroke="#8b5cf6" stroke-width="1"/>
+  <path d="M54 34 L58 34 M54 36 L58 36 M54 38 L56 38" stroke="#ffffff" stroke-width="0.8"/>
+  <text x="57" y="37" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="4" font-weight="bold">v2</text>
+  
+  <!-- Product Data Management -->
+  <rect x="8" y="20" width="6" height="8" rx="1" fill="url(#pdm-gradient)" stroke="#10b981" stroke-width="1"/>
+  <rect x="9" y="22" width="4" height="2" rx="0.3" fill="#ffffff" opacity="0.9"/>
+  <rect x="9" y="24" width="4" height="2" rx="0.3" fill="#ffffff" opacity="0.9"/>
+  <rect x="9" y="26" width="4" height="2" rx="0.3" fill="#ffffff" opacity="0.9"/>
+  
+  <!-- Manufacturing Instructions -->
+  <rect x="40" y="52" width="16" height="6" rx="2" fill="url(#mfg-gradient)" stroke="#ef4444" stroke-width="1"/>
+  <path d="M42 54 L54 54 M42 56 L50 56" stroke="#ffffff" stroke-width="0.8"/>
+  <circle cx="43" cy="55" r="0.5" fill="#ffffff"/>
+  <path d="M44 54 L45 55 L44 56" stroke="#ffffff" stroke-width="0.8" stroke-linecap="round" fill="none"/>
+  
+  <!-- Quality Assurance -->
+  <circle cx="56" cy="48" r="4" fill="url(#qa-gradient)" stroke="#22c55e" stroke-width="1.5"/>
+  <path d="M54 48 L55.5 49.5 L58 47" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+  
+  <!-- Retirement Planning -->
+  <rect x="8" y="44" width="6" height="8" rx="1" fill="url(#retire-gradient)" stroke="#6b7280" stroke-width="1"/>
+  <circle cx="11" cy="46" r="0.8" fill="#ffffff"/>
+  <circle cx="11" cy="48" r="0.8" fill="#ffffff"/>
+  <circle cx="11" cy="50" r="0.8" fill="#ffffff"/>
+  <path d="M9 47 L13 47 M9 49 L13 49 M9 51 L13 51" stroke="#6b7280" stroke-width="0.5" opacity="0.7"/>
+  
+  <!-- Innovation Pipeline -->
+  <rect x="20" y="8" width="8" height="4" rx="1" fill="url(#innovation-gradient)" stroke="#10b981" stroke-width="1"/>
+  <path d="M21 9 L27 9 M21 11 L25 11" stroke="#ffffff" stroke-width="0.6"/>
+  <circle cx="26" cy="10" r="0.8" fill="#ffffff"/>
+  <text x="26" y="10.5" text-anchor="middle" fill="#10b981" font-family="Arial, sans-serif" font-size="3" font-weight="bold">+</text>
+  
+  <!-- Compliance Documentation -->
+  <circle cx="8" cy="16" r="3" fill="url(#compliance-gradient)" stroke="#7c3aed" stroke-width="1"/>
+  <path d="M6.5 15 L7.5 16 L9.5 14" stroke="#ffffff" stroke-width="1" stroke-linecap="round" fill="none"/>
+  <path d="M6 17 L10 17" stroke="#ffffff" stroke-width="0.8"/>
+  
+  <!-- Market Release -->
+  <circle cx="56" cy="16" r="3" fill="url(#release-gradient)" stroke="#f59e0b" stroke-width="1"/>
+  <path d="M54 14 L58 16 L54 18 Z" fill="#ffffff"/>
+  
+  <!-- Performance Analytics -->
+  <rect x="20" y="52" width="8" height="6" rx="1" fill="url(#analytics-gradient)" stroke="#3b82f6" stroke-width="1"/>
+  <path d="M21 55 L23 53 L25 54 L27 52" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+  <circle cx="21" cy="55" r="0.5" fill="#ffffff"/>
+  <circle cx="23" cy="53" r="0.5" fill="#ffffff"/>
+  <circle cx="25" cy="54" r="0.5" fill="#ffffff"/>
+  <circle cx="27" cy="52" r="0.5" fill="#ffffff"/>
+  
+  <!-- Gradient Definitions -->
+  <defs>
+    <linearGradient id="plm-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#60a5fa;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2563eb;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="product-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#93c5fd;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="concept-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#34d399;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="design-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="production-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f87171;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ef4444;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="retirement-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#9ca3af;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6b7280;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="collab-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fed7aa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="cad-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="change-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#a78bfa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="version-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c4b5fd;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="pdm-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6ee7b7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="mfg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fca5a5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ef4444;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="qa-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4ade80;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#22c55e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="retire-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#d1d5db;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6b7280;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="innovation-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6ee7b7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="compliance-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c4b5fd;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="release-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fed7aa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="analytics-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#93c5fd;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
 </svg>
-

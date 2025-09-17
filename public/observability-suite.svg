@@ -1,14 +1,90 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle -->
+  <circle cx="32" cy="32" r="30" fill="url(#observe-gradient)" stroke="#1e40af" stroke-width="2"/>
+  
+  <!-- Central Observatory -->
+  <circle cx="32" cy="32" r="8" fill="#ffffff" fill-opacity="0.95" stroke="#3b82f6" stroke-width="2"/>
+  <circle cx="32" cy="32" r="5" fill="url(#obs-gradient)" stroke="#2563eb" stroke-width="1"/>
+  <text x="32" y="34" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="3" font-weight="bold">OBS</text>
+  
+  <!-- Metrics -->
+  <circle cx="12" cy="16" r="4" fill="url(#metrics-gradient)" stroke="#10b981" stroke-width="1.5"/>
+  <path d="M10 14 L12 16 L14 14" stroke="#ffffff" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+  
+  <!-- Traces -->
+  <circle cx="52" cy="16" r="4" fill="url(#traces-gradient)" stroke="#f59e0b" stroke-width="1.5"/>
+  <path d="M50 14 L52 16 L54 14 L52 18" stroke="#ffffff" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+  
+  <!-- Logs -->
+  <circle cx="12" cy="48" r="4" fill="url(#logs-gradient)" stroke="#7c3aed" stroke-width="1.5"/>
+  <rect x="10" y="46" width="4" height="4" rx="0.5" fill="#ffffff" opacity="0.9"/>
+  <path d="M11 47 L13 47 M11 49 L13 49" stroke="#7c3aed" stroke-width="0.8"/>
+  
+  <!-- Alerting -->
+  <circle cx="52" cy="48" r="4" fill="url(#alert-gradient)" stroke="#ef4444" stroke-width="1.5"/>
+  <path d="M50 46 L52 48 L54 46" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+  <circle cx="52" cy="49" r="0.5" fill="#ffffff"/>
+  
+  <!-- Full Stack -->
+  <rect x="20" y="8" width="24" height="6" rx="2" fill="url(#fullstack-gradient)" stroke="#3b82f6" stroke-width="1"/>
+  <text x="32" y="12" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="4" font-weight="bold">FULL-STACK</text>
+  
+  <!-- Cloud Environment -->
+  <rect x="20" y="50" width="24" height="6" rx="2" fill="url(#cloud-gradient)" stroke="#22c55e" stroke-width="1"/>
+  <text x="32" y="54" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="4" font-weight="bold">CLOUD</text>
+  
+  <!-- Connection Lines -->
+  <path d="M16 16 L24 32 M40 32 L48 16 M16 48 L24 32 M40 32 L48 48" stroke="#3b82f6" stroke-width="1.5" opacity="0.6"/>
+  
+  <!-- Monitoring Indicators -->
+  <circle cx="8" cy="32" r="3" fill="url(#monitor-gradient)" stroke="#22c55e" stroke-width="1"/>
+  <text x="8" y="33" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="3" font-weight="bold">●</text>
+  
+  <circle cx="56" cy="32" r="3" fill="url(#status-gradient)" stroke="#f59e0b" stroke-width="1"/>
+  <text x="56" y="33" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="3" font-weight="bold">!</text>
+  
+  <!-- Gradient Definitions -->
   <defs>
-    <linearGradient id="g" x1="12" y1="52" x2="52" y2="12" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#22C55E"/>
-      <stop offset="1" stop-color="#16A34A"/>
+    <linearGradient id="observe-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#60a5fa;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2563eb;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="obs-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#93c5fd;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="metrics-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#34d399;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="traces-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="logs-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#a78bfa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="alert-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f87171;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ef4444;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="fullstack-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#93c5fd;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="cloud-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4ade80;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#22c55e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="monitor-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4ade80;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#22c55e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="status-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
     </linearGradient>
   </defs>
-  <rect x="10" y="14" width="44" height="36" rx="8" stroke="#0F172A" stroke-width="2.5" fill="url(#g)" fill-opacity="0.08"/>
-  <g stroke="#0F172A" stroke-width="2.2" stroke-linecap="round">
-    <path d="M16 40l8-10 6 6 10-14 8 12" fill="none"/>
-    <circle cx="46" cy="20" r="2" fill="#22C55E"/>
-  </g>
 </svg>
-

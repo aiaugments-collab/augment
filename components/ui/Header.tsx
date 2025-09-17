@@ -13,7 +13,7 @@ import {
   oracleCompanyDropdownData,
 } from "./oracleDropdownData";
 import { getProductsByCategory } from "@/lib/productRegistry";
-import { UserProfile } from "@/components/auth/UserProfile";
+import { StackUserProfileWrapper } from "@/components/auth/StackUserProfileWrapper";
 
 type NavItem = {
   label: string;
@@ -197,7 +197,7 @@ export default function Header() {
             </button>
 
             {/* User Account Icon - Desktop with text, Mobile icon only */}
-            <UserProfile />
+            <StackUserProfileWrapper />
 
             {/* Contact Sales - Desktop with text, Mobile icon only */}
             <Link
@@ -388,7 +388,7 @@ export default function Header() {
 
                 {/* Drawer Footer with CTAs */}
                 <div className="px-6 py-6 border-t border-gray-700/30 space-y-3">
-                  <UserProfile isMobile={true} onClose={() => setMenuOpen(false)} />
+                  <StackUserProfileWrapper isMobile={true} onClose={() => setMenuOpen(false)} />
                   <Link 
                     href="/corporate/contact/sales" 
                     className="flex items-center justify-center w-full rounded border border-white px-4 py-3 text-sm font-semibold text-white hover:bg-gray-700/20 transition-colors"

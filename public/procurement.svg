@@ -1,6 +1,120 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
-  <defs><linearGradient id="g" x1="8" y1="56" x2="56" y2="8"><stop stop-color="#0EA5E9"/><stop offset="1" stop-color="#0284C7"/></linearGradient></defs>
-  <rect x="12" y="18" width="40" height="28" rx="6" stroke="#0F172A" stroke-width="2.5" fill="url(#g)" fill-opacity="0.08"/>
-  <path d="M18 24h20M18 30h28M18 36h16" stroke="#0F172A" stroke-width="2.2" stroke-linecap="round"/>
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle -->
+  <circle cx="32" cy="32" r="30" fill="url(#procurement-gradient)" stroke="#0c4a6e" stroke-width="2"/>
+  
+  <!-- Main Shopping Cart -->
+  <rect x="16" y="20" width="28" height="20" rx="4" fill="#ffffff" fill-opacity="0.95" stroke="#0ea5e9" stroke-width="1.5"/>
+  
+  <!-- Cart Handle -->
+  <path d="M14 22 L16 20 L16 40 L14 42" stroke="#0284c7" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  
+  <!-- Cart Items -->
+  <rect x="20" y="24" width="6" height="4" rx="1" fill="url(#item1-gradient)" stroke="#0ea5e9" stroke-width="1"/>
+  <rect x="28" y="24" width="6" height="4" rx="1" fill="url(#item2-gradient)" stroke="#06b6d4" stroke-width="1"/>
+  <rect x="36" y="24" width="6" height="4" rx="1" fill="url(#item3-gradient)" stroke="#0891b2" stroke-width="1"/>
+  
+  <rect x="20" y="30" width="8" height="4" rx="1" fill="url(#item4-gradient)" stroke="#0ea5e9" stroke-width="1"/>
+  <rect x="30" y="30" width="8" height="4" rx="1" fill="url(#item5-gradient)" stroke="#06b6d4" stroke-width="1"/>
+  
+  <!-- Price Tags -->
+  <circle cx="22" cy="26" r="1" fill="#ffffff"/>
+  <circle cx="31" cy="26" r="1" fill="#ffffff"/>
+  <circle cx="39" cy="26" r="1" fill="#ffffff"/>
+  <circle cx="24" cy="32" r="1" fill="#ffffff"/>
+  <circle cx="34" cy="32" r="1" fill="#ffffff"/>
+  
+  <!-- Cart Wheels -->
+  <circle cx="20" cy="44" r="3" fill="url(#wheel-gradient)" stroke="#0c4a6e" stroke-width="1.5"/>
+  <circle cx="38" cy="44" r="3" fill="url(#wheel-gradient)" stroke="#0c4a6e" stroke-width="1.5"/>
+  <circle cx="20" cy="44" r="1.5" fill="#ffffff"/>
+  <circle cx="38" cy="44" r="1.5" fill="#ffffff"/>
+  
+  <!-- Supplier Network Nodes -->
+  <circle cx="48" cy="16" r="4" fill="url(#supplier1-gradient)" stroke="#0ea5e9" stroke-width="1.5"/>
+  <circle cx="54" cy="28" r="3" fill="url(#supplier2-gradient)" stroke="#06b6d4" stroke-width="1"/>
+  <circle cx="50" cy="40" r="3" fill="url(#supplier3-gradient)" stroke="#0891b2" stroke-width="1"/>
+  
+  <!-- Supplier Icons -->
+  <rect x="46" y="14" width="4" height="4" rx="1" fill="#ffffff" opacity="0.9"/>
+  <circle cx="54" cy="28" r="1" fill="#ffffff"/>
+  <path d="M49 39 L51 41 L51 39 L49 41" stroke="#ffffff" stroke-width="1" stroke-linecap="round"/>
+  
+  <!-- Connection Lines to Suppliers -->
+  <path d="M44 24 L48 20 M44 28 L51 28 M44 36 L47 40" stroke="#0ea5e9" stroke-width="2" opacity="0.7" stroke-dasharray="2,2"/>
+  
+  <!-- RFQ Documents -->
+  <rect x="8" y="12" width="6" height="8" rx="1" fill="url(#rfq-gradient)" stroke="#0284c7" stroke-width="1"/>
+  <path d="M9 14 L13 14 M9 16 L12 16 M9 18 L13 18" stroke="#ffffff" stroke-width="0.8"/>
+  
+  <!-- Purchase Order -->
+  <rect x="10" y="48" width="8" height="6" rx="1" fill="url(#po-gradient)" stroke="#0ea5e9" stroke-width="1"/>
+  <path d="M11 50 L17 50 M11 52 L15 52" stroke="#ffffff" stroke-width="0.8"/>
+  <circle cx="17" cy="51" r="1" fill="#ffffff"/>
+  
+  <!-- Data Flow Arrows -->
+  <path d="M14 16 L16 18 M50 44 L48 46" stroke="#0ea5e9" stroke-width="1.5" stroke-linecap="round" marker-end="url(#arrowhead)"/>
+  
+  <!-- Approval Checkmark -->
+  <circle cx="46" cy="48" r="3" fill="url(#approval-gradient)" stroke="#22c55e" stroke-width="1.5"/>
+  <path d="M44 48 L45.5 49.5 L48 47" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+  
+  <!-- Gradient Definitions -->
+  <defs>
+    <linearGradient id="procurement-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0ea5e9;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0284c7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0c4a6e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="item1-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#38bdf8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0ea5e9;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="item2-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#22d3ee;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="item3-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#67e8f9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0891b2;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="item4-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#38bdf8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0ea5e9;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="item5-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#22d3ee;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="wheel-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0284c7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0c4a6e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="supplier1-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#38bdf8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0ea5e9;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="supplier2-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#22d3ee;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="supplier3-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#67e8f9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0891b2;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="rfq-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0ea5e9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0284c7;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="po-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#38bdf8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0ea5e9;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="approval-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4ade80;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#22c55e;stop-opacity:1" />
+    </linearGradient>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#0ea5e9" opacity="0.7"/>
+    </marker>
+  </defs>
 </svg>
-

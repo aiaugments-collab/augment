@@ -3,10 +3,10 @@
 import React, { useState } from 'react';
 import { DashboardLayout } from '@/components/dashboard/DashboardLayout';
 import { ProtectedRoute } from '@/components/auth/ProtectedRoute';
-import { useAuth } from '@/contexts/AuthContext';
+import { useUser } from '@stackframe/stack';
 
 export default function AccountPage() {
-  const { currentUser } = useAuth();
+  const user = useUser();
   const [activeTab, setActiveTab] = useState('profile');
 
   const tabs = [
@@ -74,14 +74,14 @@ export default function AccountPage() {
                       className="w-16 h-16 rounded-full flex items-center justify-center text-white text-xl font-semibold"
                       style={{ backgroundColor: "#C74634" }}
                     >
-                      {(currentUser?.displayName || currentUser?.email || 'U')[0].toUpperCase()}
+                      {(user?.displayName || user?.primaryEmail || 'U')[0].toUpperCase()}
                     </div>
                     <div>
                       <h3 className="text-lg font-semibold" style={{ color: "#161513" }}>
-                        {currentUser?.displayName || 'User'}
+                        {user?.displayName || 'User'}
                       </h3>
                       <p className="text-sm" style={{ color: "#665f5b" }}>
-                        {currentUser?.email}
+                        {user?.primaryEmail}
                       </p>
                     </div>
                   </div>
@@ -93,7 +93,7 @@ export default function AccountPage() {
                       </label>
                       <input
                         type="text"
-                        defaultValue={currentUser?.displayName || ''}
+                        defaultValue={user?.displayName || ''}
                         className="w-full px-3 py-2 border border-gray-300 rounded-sm focus:outline-none focus:ring-1 focus:border-blue-500"
                         style={{ fontSize: "14px" }}
                       />
@@ -104,7 +104,7 @@ export default function AccountPage() {
                       </label>
                       <input
                         type="email"
-                        defaultValue={currentUser?.email || ''}
+                        defaultValue={user?.primaryEmail || ''}
                         className="w-full px-3 py-2 border border-gray-300 rounded-sm focus:outline-none focus:ring-1 focus:border-blue-500"
                         style={{ fontSize: "14px" }}
                       />

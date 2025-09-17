@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
+import { StackProvider, StackTheme } from "@stackframe/stack";
+import { stackServerApp } from "../stack";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { AuthProvider } from "@/contexts/AuthContext";
 import { ConditionalLayout } from "@/components/layout/ConditionalLayout";
 
 const geistSans = Geist({
@@ -29,11 +30,13 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <AuthProvider>
-          <ConditionalLayout>
-            {children}
-          </ConditionalLayout>
-        </AuthProvider>
+        <StackProvider app={stackServerApp}>
+          <StackTheme>
+            <ConditionalLayout>
+              {children}
+            </ConditionalLayout>
+          </StackTheme>
+        </StackProvider>
       </body>
     </html>
   );

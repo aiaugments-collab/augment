@@ -1,10 +1,203 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
-  <defs><linearGradient id="g" x1="8" y1="56" x2="56" y2="8"><stop stop-color="#0EA5E9"/><stop offset="1" stop-color="#7C3AED"/></linearGradient></defs>
-  <rect x="12" y="18" width="40" height="28" rx="6" stroke="#0F172A" stroke-width="2.5" fill="url(#g)" fill-opacity="0.08"/>
-  <g stroke="#0F172A" stroke-width="2.2" stroke-linecap="round">
-    <path d="M18 26h10M30 26h16"/>
-    <path d="M18 32h24"/>
-    <path d="M18 38h28"/>
-  </g>
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle -->
+  <circle cx="32" cy="32" r="30" fill="url(#marketplace-gradient)" stroke="#7c2d12" stroke-width="2"/>
+  
+  <!-- Marketplace Store -->
+  <rect x="16" y="16" width="32" height="32" rx="4" fill="#ffffff" fill-opacity="0.95" stroke="#ea580c" stroke-width="1.5"/>
+  
+  <!-- Store Header -->
+  <rect x="16" y="16" width="32" height="6" rx="4" fill="url(#header-gradient)"/>
+  <rect x="16" y="18" width="32" height="4" fill="#c2410c"/>
+  
+  <!-- App Categories -->
+  <rect x="20" y="26" width="6" height="6" rx="1" fill="url(#category1-gradient)" stroke="#3b82f6" stroke-width="1"/>
+  <rect x="29" y="26" width="6" height="6" rx="1" fill="url(#category2-gradient)" stroke="#10b981" stroke-width="1"/>
+  <rect x="38" y="26" width="6" height="6" rx="1" fill="url(#category3-gradient)" stroke="#7c3aed" stroke-width="1"/>
+  
+  <!-- Category Icons -->
+  <circle cx="23" cy="29" r="1" fill="#ffffff"/>
+  <circle cx="32" cy="29" r="1" fill="#ffffff"/>
+  <circle cx="41" cy="29" r="1" fill="#ffffff"/>
+  
+  <!-- App Listings -->
+  <rect x="20" y="36" width="6" height="4" rx="0.5" fill="url(#app1-gradient)" stroke="#ea580c" stroke-width="1"/>
+  <rect x="29" y="36" width="6" height="4" rx="0.5" fill="url(#app2-gradient)" stroke="#f97316" stroke-width="1"/>
+  <rect x="38" y="36" width="6" height="4" rx="0.5" fill="url(#app3-gradient)" stroke="#fb923c" stroke-width="1"/>
+  
+  <!-- App Icons -->
+  <circle cx="21" cy="37.5" r="0.5" fill="#ffffff"/>
+  <circle cx="30" cy="37.5" r="0.5" fill="#ffffff"/>
+  <circle cx="39" cy="37.5" r="0.5" fill="#ffffff"/>
+  
+  <!-- App Titles -->
+  <path d="M22 38.5 L25 38.5" stroke="#ffffff" stroke-width="0.6"/>
+  <path d="M31 38.5 L34 38.5" stroke="#ffffff" stroke-width="0.6"/>
+  <path d="M40 38.5 L43 38.5" stroke="#ffffff" stroke-width="0.6"/>
+  
+  <!-- Third-party Integration -->
+  <circle cx="8" cy="20" r="4" fill="url(#integration-gradient)" stroke="#22c55e" stroke-width="1.5"/>
+  <path d="M6 18 L10 22 M10 18 L6 22" stroke="#ffffff" stroke-width="1.5"/>
+  <circle cx="8" cy="20" r="1" fill="#ffffff"/>
+  
+  <!-- Extension Hub -->
+  <circle cx="56" cy="20" r="4" fill="url(#extension-gradient)" stroke="#f59e0b" stroke-width="1.5"/>
+  <rect x="54" y="18" width="4" height="4" rx="0.5" fill="#ffffff" opacity="0.9"/>
+  <path d="M55 19 L57 19 M55 21 L57 21" stroke="#f59e0b" stroke-width="0.8"/>
+  <circle cx="56.5" cy="20" r="0.3" fill="#f59e0b"/>
+  
+  <!-- App Store -->
+  <rect x="8" y="32" width="6" height="8" rx="1" fill="url(#store-gradient)" stroke="#3b82f6" stroke-width="1"/>
+  <rect x="9" y="34" width="4" height="2" rx="0.3" fill="#ffffff" opacity="0.9"/>
+  <rect x="9" y="36" width="4" height="2" rx="0.3" fill="#ffffff" opacity="0.9"/>
+  <rect x="9" y="38" width="4" height="2" rx="0.3" fill="#ffffff" opacity="0.9"/>
+  
+  <!-- API Marketplace -->
+  <rect x="50" y="32" width="6" height="8" rx="1" fill="url(#api-gradient)" stroke="#7c3aed" stroke-width="1"/>
+  <text x="53" y="36" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="4" font-weight="bold">API</text>
+  <circle cx="51" cy="38" r="0.5" fill="#ffffff"/>
+  <circle cx="53" cy="38" r="0.5" fill="#ffffff"/>
+  <circle cx="55" cy="38" r="0.5" fill="#ffffff"/>
+  
+  <!-- Download Statistics -->
+  <rect x="20" y="44" width="24" height="4" rx="1" fill="url(#stats-gradient)" stroke="#10b981" stroke-width="1"/>
+  <path d="M22 46 L24 45 L26 46 L28 45 L30 46 L32 45 L34 46 L36 45 L38 46 L40 45 L42 46" stroke="#ffffff" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+  
+  <!-- Reviews & Ratings -->
+  <circle cx="8" cy="48" r="4" fill="url(#review-gradient)" stroke="#f59e0b" stroke-width="1.5"/>
+  <path d="M6 46 L7 48 L10 48 L8 50 L9 52 L6 50 L5 52 L6 50 L4 48 L7 48 Z" fill="#ffffff"/>
+  
+  <!-- Security Verification -->
+  <circle cx="56" cy="48" r="4" fill="url(#security-gradient)" stroke="#22c55e" stroke-width="1.5"/>
+  <path d="M54 46 L55.5 47.5 L58 46" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+  <circle cx="56" cy="49" r="0.5" fill="#ffffff"/>
+  
+  <!-- Developer Portal -->
+  <rect x="8" y="8" width="8" height="6" rx="1" fill="url(#dev-gradient)" stroke="#ea580c" stroke-width="1"/>
+  <circle cx="10" cy="10" r="0.8" fill="#ffffff"/>
+  <circle cx="12" cy="10" r="0.8" fill="#ffffff"/>
+  <circle cx="14" cy="10" r="0.8" fill="#ffffff"/>
+  <path d="M9 12 L15 12" stroke="#ffffff" stroke-width="1"/>
+  
+  <!-- Publishing Tools -->
+  <rect x="48" y="8" width="8" height="6" rx="1" fill="url(#publish-gradient)" stroke="#7c3aed" stroke-width="1"/>
+  <path d="M50 10 L54 10 M50 12 L53 12" stroke="#ffffff" stroke-width="0.8"/>
+  <circle cx="54" cy="11" r="0.8" fill="#ffffff"/>
+  <path d="M53 10 L54 11 L53 12" stroke="#7c3aed" stroke-width="0.8" stroke-linecap="round" fill="none"/>
+  
+  <!-- Discovery Engine -->
+  <circle cx="32" cy="8" r="4" fill="url(#discovery-gradient)" stroke="#10b981" stroke-width="1.5"/>
+  <circle cx="32" cy="8" r="2" fill="#ffffff" opacity="0.8"/>
+  <circle cx="32" cy="8" r="1" fill="#10b981"/>
+  <path d="M34 10 L36 12" stroke="#10b981" stroke-width="1.5" stroke-linecap="round"/>
+  
+  <!-- Monetization -->
+  <circle cx="8" cy="56" r="4" fill="url(#money-gradient)" stroke="#059669" stroke-width="1.5"/>
+  <text x="8" y="57" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="5" font-weight="bold">$</text>
+  <circle cx="6" cy="54" r="0.5" fill="#ffffff"/>
+  <circle cx="10" cy="54" r="0.5" fill="#ffffff"/>
+  
+  <!-- App Analytics -->
+  <circle cx="56" cy="56" r="4" fill="url(#analytics-gradient)" stroke="#3b82f6" stroke-width="1.5"/>
+  <path d="M54 58 L56 56 L58 57" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+  <circle cx="54" cy="58" r="0.5" fill="#ffffff"/>
+  <circle cx="56" cy="56" r="0.5" fill="#ffffff"/>
+  <circle cx="58" cy="57" r="0.5" fill="#ffffff"/>
+  
+  <!-- Pre-built Integrations -->
+  <circle cx="32" cy="56" r="4" fill="url(#prebuilt-gradient)" stroke="#ea580c" stroke-width="1.5"/>
+  <rect x="30" y="54" width="4" height="4" rx="0.5" fill="#ffffff" opacity="0.9"/>
+  <path d="M31 55 L33 55 M31 57 L33 57" stroke="#ea580c" stroke-width="0.8"/>
+  <circle cx="32.5" cy="56" r="0.3" fill="#ea580c"/>
+  
+  <!-- Data Flow -->
+  <path d="M16 32 L50 32 M32 22 L32 44" stroke="#ea580c" stroke-width="1" opacity="0.5" stroke-dasharray="2,2"/>
+  
+  <!-- Gradient Definitions -->
+  <defs>
+    <linearGradient id="marketplace-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fdba74;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#ea580c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c2410c;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="header-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#c2410c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ea580c;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="category1-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#93c5fd;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="category2-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6ee7b7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="category3-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c4b5fd;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="app1-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fed7aa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ea580c;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="app2-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fdba74;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f97316;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="app3-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fed7aa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fb923c;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="integration-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4ade80;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#22c55e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="extension-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="store-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#93c5fd;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="api-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c4b5fd;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="stats-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6ee7b7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="review-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="security-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4ade80;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#22c55e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="dev-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fed7aa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ea580c;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="publish-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c4b5fd;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="discovery-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#34d399;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="money-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#34d399;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="analytics-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#93c5fd;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="prebuilt-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fed7aa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ea580c;stop-opacity:1" />
+    </linearGradient>
+  </defs>
 </svg>
-

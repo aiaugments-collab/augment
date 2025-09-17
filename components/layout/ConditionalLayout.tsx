@@ -14,6 +14,7 @@ export function ConditionalLayout({ children }: ConditionalLayoutProps) {
   // Routes that should not show header and footer (full-screen app routes)
   const isFullScreenRoute = pathname?.startsWith('/dashboard') || 
                            pathname?.startsWith('/auth/') ||
+                           pathname?.startsWith('/handler/') ||  // Stack Auth routes
                            pathname?.startsWith('/profile') ||
                            pathname?.startsWith('/admin');
 

@@ -1,15 +1,86 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle -->
+  <circle cx="32" cy="32" r="30" fill="url(#flow-gradient)" stroke="#1e40af" stroke-width="2"/>
+  
+  <!-- Integration Hub -->
+  <circle cx="32" cy="32" r="8" fill="#ffffff" fill-opacity="0.95" stroke="#3b82f6" stroke-width="2"/>
+  <circle cx="32" cy="32" r="5" fill="url(#hub-gradient)" stroke="#2563eb" stroke-width="1"/>
+  <text x="32" y="34" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="3" font-weight="bold">FLOW</text>
+  
+  <!-- Data Sources -->
+  <rect x="8" y="12" width="8" height="6" rx="1" fill="url(#source1-gradient)" stroke="#10b981" stroke-width="1"/>
+  <text x="12" y="16" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="3" font-weight="bold">DB</text>
+  
+  <rect x="48" y="12" width="8" height="6" rx="1" fill="url(#source2-gradient)" stroke="#f59e0b" stroke-width="1"/>
+  <text x="52" y="16" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="3" font-weight="bold">API</text>
+  
+  <rect x="8" y="46" width="8" height="6" rx="1" fill="url(#source3-gradient)" stroke="#7c3aed" stroke-width="1"/>
+  <text x="12" y="50" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="3" font-weight="bold">SVC</text>
+  
+  <rect x="48" y="46" width="8" height="6" rx="1" fill="url(#source4-gradient)" stroke="#ef4444" stroke-width="1"/>
+  <text x="52" y="50" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="3" font-weight="bold">APP</text>
+  
+  <!-- Integration Pipeline -->
+  <rect x="20" y="8" width="24" height="6" rx="2" fill="url(#pipeline-gradient)" stroke="#3b82f6" stroke-width="1"/>
+  <text x="32" y="12" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="4" font-weight="bold">INTEGRATE</text>
+  
+  <!-- Workflow -->
+  <rect x="20" y="50" width="24" height="6" rx="2" fill="url(#workflow-gradient)" stroke="#059669" stroke-width="1"/>
+  <text x="32" y="54" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="4" font-weight="bold">WORKFLOW</text>
+  
+  <!-- Data Flow -->
+  <path d="M16 15 L24 32 M40 32 L48 15 M16 49 L24 32 M40 32 L48 49" stroke="#3b82f6" stroke-width="2" opacity="0.6"/>
+  
+  <!-- Transform Engine -->
+  <circle cx="8" cy="32" r="3" fill="url(#transform-gradient)" stroke="#22c55e" stroke-width="1"/>
+  <text x="8" y="33" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="3" font-weight="bold">T</text>
+  
+  <!-- Monitor -->
+  <circle cx="56" cy="32" r="3" fill="url(#monitor-gradient)" stroke="#f59e0b" stroke-width="1"/>
+  <text x="56" y="33" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="3" font-weight="bold">M</text>
+  
+  <!-- Gradient Definitions -->
   <defs>
-    <linearGradient id="g" x1="8" y1="8" x2="56" y2="56" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#06B6D4"/>
-      <stop offset="1" stop-color="#0891B2"/>
+    <linearGradient id="flow-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#60a5fa;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2563eb;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="hub-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#93c5fd;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="source1-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#34d399;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="source2-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="source3-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#a78bfa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="source4-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f87171;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ef4444;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="pipeline-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#93c5fd;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="workflow-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#34d399;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="transform-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4ade80;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#22c55e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="monitor-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
     </linearGradient>
   </defs>
-  <g stroke="#0F172A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none">
-    <path d="M14 20h18a6 6 0 0 1 6 6 6 6 0 0 0 6 6h6"/>
-    <path d="M50 44H32a6 6 0 0 1-6-6 6 6 0 0 0-6-6h-6"/>
-  </g>
-  <circle cx="14" cy="20" r="4" fill="url(#g)" fill-opacity="0.2" stroke="#0F172A" stroke-width="2"/>
-  <circle cx="50" cy="44" r="4" fill="url(#g)" fill-opacity="0.2" stroke="#0F172A" stroke-width="2"/>
 </svg>
-

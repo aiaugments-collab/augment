@@ -1,14 +1,95 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle -->
+  <circle cx="32" cy="32" r="30" fill="url(#vpn-gradient)" stroke="#15803d" stroke-width="2"/>
+  
+  <!-- VPN Tunnel -->
+  <ellipse cx="32" cy="32" rx="20" ry="8" fill="url(#tunnel-gradient)" stroke="#22c55e" stroke-width="1.5"/>
+  
+  <!-- Client Device -->
+  <rect x="8" y="28" width="8" height="8" rx="2" fill="url(#client-gradient)" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="12" y="33" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="3" font-weight="bold">PC</text>
+  
+  <!-- Server -->
+  <rect x="48" y="28" width="8" height="8" rx="2" fill="url(#server-gradient)" stroke="#7c3aed" stroke-width="1.5"/>
+  <text x="52" y="33" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="3" font-weight="bold">SRV</text>
+  
+  <!-- VPN Gateway -->
+  <circle cx="32" cy="32" r="6" fill="url(#gateway-gradient)" stroke="#16a34a" stroke-width="1.5"/>
+  <text x="32" y="34" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="4" font-weight="bold">VPN</text>
+  
+  <!-- Encryption -->
+  <rect x="20" y="8" width="24" height="6" rx="2" fill="url(#encrypt-gradient)" stroke="#059669" stroke-width="1"/>
+  <text x="32" y="12" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="4" font-weight="bold">ENCRYPTED</text>
+  
+  <!-- Secure Access -->
+  <rect x="20" y="50" width="24" height="6" rx="2" fill="url(#secure-gradient)" stroke="#22c55e" stroke-width="1"/>
+  <text x="32" y="54" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="4" font-weight="bold">SECURE</text>
+  
+  <!-- Connection Flow -->
+  <path d="M16 32 L26 32 M38 32 L48 32" stroke="#22c55e" stroke-width="3" opacity="0.8"/>
+  <path d="M18 30 L22 30 M42 30 L46 30" stroke="#16a34a" stroke-width="2" opacity="0.6"/>
+  <path d="M18 34 L22 34 M42 34 L46 34" stroke="#16a34a" stroke-width="2" opacity="0.6"/>
+  
+  <!-- Lock Icons -->
+  <circle cx="12" cy="20" r="2" fill="url(#lock1-gradient)" stroke="#fbbf24" stroke-width="1"/>
+  <rect x="11" y="20" width="2" height="1.5" rx="0.2" fill="#ffffff"/>
+  
+  <circle cx="52" cy="44" r="2" fill="url(#lock2-gradient)" stroke="#ef4444" stroke-width="1"/>
+  <rect x="51" y="44" width="2" height="1.5" rx="0.2" fill="#ffffff"/>
+  
+  <!-- Data Protection -->
+  <circle cx="32" cy="16" r="3" fill="url(#protect-gradient)" stroke="#10b981" stroke-width="1"/>
+  <text x="32" y="17" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="3" font-weight="bold">🔒</text>
+  
+  <circle cx="32" cy="48" r="3" fill="url(#privacy-gradient)" stroke="#059669" stroke-width="1"/>
+  <text x="32" y="49" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="3" font-weight="bold">👁</text>
+  
+  <!-- Gradient Definitions -->
   <defs>
-    <linearGradient id="g" x1="8" y1="8" x2="56" y2="56" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#0EA5E9"/>
-      <stop offset="1" stop-color="#0369A1"/>
+    <linearGradient id="vpn-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4ade80;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#22c55e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16a34a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="tunnel-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6ee7b7;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#22c55e;stop-opacity:0.8" />
+    </linearGradient>
+    <linearGradient id="client-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#60a5fa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="server-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#a78bfa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="gateway-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4ade80;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16a34a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="encrypt-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#34d399;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="secure-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4ade80;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#22c55e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="lock1-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="lock2-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f87171;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ef4444;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="protect-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#34d399;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="privacy-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4ade80;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
     </linearGradient>
   </defs>
-  <path d="M32 10c10 0 18 8 18 18v6c0 10-8 18-18 18s-18-8-18-18v-6c0-10 8-18 18-18z" stroke="#0F172A" stroke-width="2.5" fill="url(#g)" fill-opacity="0.08"/>
-  <g stroke="#0F172A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-    <circle cx="32" cy="28" r="6" fill="#0EA5E9" fill-opacity="0.2"/>
-    <path d="M32 22v6l4 4"/>
-  </g>
 </svg>
-

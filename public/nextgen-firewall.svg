@@ -1,16 +1,90 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle -->
+  <circle cx="32" cy="32" r="30" fill="url(#firewall-gradient)" stroke="#dc2626" stroke-width="2"/>
+  
+  <!-- Firewall Shield -->
+  <path d="M32 12 L44 18 L44 32 C44 40 38 46 32 50 C26 46 20 40 20 32 L20 18 L32 12 Z" fill="#ffffff" fill-opacity="0.95" stroke="#ef4444" stroke-width="2"/>
+  
+  <!-- AI Detection Core -->
+  <circle cx="32" cy="32" r="6" fill="url(#ai-core-gradient)" stroke="#dc2626" stroke-width="1"/>
+  <text x="32" y="34" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="4" font-weight="bold">AI</text>
+  
+  <!-- Threat Detection -->
+  <circle cx="24" cy="24" r="3" fill="url(#threat-gradient)" stroke="#f59e0b" stroke-width="1"/>
+  <text x="24" y="25" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="3" font-weight="bold">!</text>
+  
+  <circle cx="40" cy="24" r="3" fill="url(#blocked-gradient)" stroke="#22c55e" stroke-width="1"/>
+  <text x="40" y="25" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="3" font-weight="bold">✓</text>
+  
+  <!-- IDS/IPS -->
+  <rect x="8" y="16" width="8" height="6" rx="1" fill="url(#ids-gradient)" stroke="#3b82f6" stroke-width="1"/>
+  <text x="12" y="20" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="3" font-weight="bold">IDS</text>
+  
+  <rect x="48" y="16" width="8" height="6" rx="1" fill="url(#ips-gradient)" stroke="#7c3aed" stroke-width="1"/>
+  <text x="52" y="20" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="3" font-weight="bold">IPS</text>
+  
+  <!-- Deep Packet Inspection -->
+  <rect x="8" y="42" width="8" height="6" rx="1" fill="url(#dpi-gradient)" stroke="#10b981" stroke-width="1"/>
+  <text x="12" y="46" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="3" font-weight="bold">DPI</text>
+  
+  <!-- Auto Policy -->
+  <rect x="48" y="42" width="8" height="6" rx="1" fill="url(#policy-gradient)" stroke="#f59e0b" stroke-width="1"/>
+  <text x="52" y="46" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="3" font-weight="bold">AUTO</text>
+  
+  <!-- NextGen Banner -->
+  <rect x="20" y="8" width="24" height="6" rx="2" fill="url(#nextgen-gradient)" stroke="#ef4444" stroke-width="1"/>
+  <text x="32" y="12" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="4" font-weight="bold">NEXTGEN</text>
+  
+  <!-- Traffic Control -->
+  <rect x="20" y="50" width="24" height="6" rx="2" fill="url(#traffic-gradient)" stroke="#059669" stroke-width="1"/>
+  <text x="32" y="54" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="4" font-weight="bold">CONTROL</text>
+  
+  <!-- Connection Lines -->
+  <path d="M16 19 L20 32 M44 32 L48 19 M16 45 L20 32 M44 32 L48 45" stroke="#ef4444" stroke-width="1.5" opacity="0.6"/>
+  <path d="M27 24 L29 32 M35 32 L37 24" stroke="#dc2626" stroke-width="1.2" opacity="0.7"/>
+  
+  <!-- Gradient Definitions -->
   <defs>
-    <linearGradient id="g3" x1="12" y1="52" x2="52" y2="12" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#EF4444"/>
-      <stop offset="1" stop-color="#DC2626"/>
+    <linearGradient id="firewall-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f87171;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#ef4444;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#dc2626;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="ai-core-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fca5a5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ef4444;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="threat-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="blocked-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4ade80;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#22c55e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="ids-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#60a5fa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="ips-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#a78bfa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="dpi-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#34d399;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="policy-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="nextgen-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f87171;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ef4444;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="traffic-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#34d399;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
     </linearGradient>
   </defs>
-  <rect x="12" y="22" width="40" height="24" rx="4" stroke="#0F172A" stroke-width="2.5" fill="url(#g3)" fill-opacity="0.08"/>
-  <g stroke="#0F172A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M14 28h12M28 28h10M40 28h10"/>
-    <path d="M14 34h8M24 34h12M38 34h12"/>
-    <path d="M14 40h16M32 40h18"/>
-  </g>
-  <path d="M32 14c3 2 6 4.5 6 8 0 3.5-2.5 6-6 6s-6-2.5-6-6c0-3.5 3-6 6-8z" fill="#EF4444" fill-opacity="0.25" stroke="#0F172A" stroke-width="2"/>
 </svg>
-
