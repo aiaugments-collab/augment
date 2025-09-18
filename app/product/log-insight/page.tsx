@@ -14,12 +14,12 @@ export default function LogInsightPage() {
   
   const ctaButtons = [
     {
-      text: "Start Free Trial",
+      text: "Start AI Analysis",
       href: productUrl,
       variant: "primary" as const
     },
     {
-      text: "View Documentation",
+      text: "AI Analytics Guide",
       href: docsUrl,
       variant: "secondary" as const
     }
@@ -331,7 +331,7 @@ export default function LogInsightPage() {
   return (
     <div className="min-h-screen">
       <main>
-        <h1 className="sr-only">LogInsight | Centralized Logging & Analytics Platform</h1>
+        <h1 className="sr-only">AI LogAnalyzer | Intelligent Log Analysis with Anomaly Detection</h1>
         
         {/* Breadcrumbs */}
         <div className="bg-white border-b border-gray-100">
@@ -341,14 +341,14 @@ export default function LogInsightPage() {
         </div>
 
         <ProductHero
-          title="LogInsight"
-          description="Centralized logging and analytics platform that collects, indexes, and analyzes logs at enterprise scale. Gain deep insights with advanced analytics, real-time alerting, and comprehensive reporting for modern infrastructure monitoring."
+          title="AI LogAnalyzer"
+          description="AI-powered log analysis tool that automatically detects anomalies, identifies patterns, and provides intelligent insights from log data. Uses machine learning to understand normal behavior and flag unusual activities for proactive monitoring."
           ctaButtons={ctaButtons}
           mediaType="mockup"
           mockup={{
             type: "dashboard",
-            title: "Log Analytics Dashboard",
-            description: "Centralized log collection, analysis, and monitoring interface"
+            title: "AI Log Analysis Platform",
+            description: "Intelligent log analysis with AI-powered anomaly detection and pattern recognition"
           }}
         />
 

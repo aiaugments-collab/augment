@@ -341,8 +341,8 @@ export default function DevOpsConductorPage() {
         </div>
 
         <ProductHero
-          title="DevConductor"
-          description="Automate CI/CD pipelines and infrastructure provisioning with templates and reusable workflows for enterprise DevOps orchestration. Advanced DevOps automation platform with comprehensive deployment management and infrastructure-as-code capabilities."
+          title="AI DevAssistant"
+          description="AI-powered development assistant that optimizes CI/CD pipelines, predicts build failures, suggests performance improvements, and automates common development tasks using intelligent pattern recognition."
           ctaButtons={ctaButtons}
           mediaType="mockup"
           mockup={{

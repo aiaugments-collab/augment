@@ -14,12 +14,12 @@ export default function PolicyCompliancePage() {
   
   const ctaButtons = [
     {
-      text: "Start Compliance Check",
+      text: "Start AI Policy Analysis",
       href: productUrl,
       variant: "primary" as const
     },
     {
-      text: "Security Policies",
+      text: "AI Policy Guide",
       href: docsUrl,
       variant: "secondary" as const
     }
@@ -341,8 +341,8 @@ export default function PolicyCompliancePage() {
         </div>
 
         <ProductHero
-          title="PolicyGuard"
-          description="Detect misconfigurations, enforce policies, and generate compliance reports across cloud accounts with intelligent security posture management. Cloud security platform with automated policy enforcement and comprehensive compliance monitoring."
+          title="AI PolicyAdvisor"
+          description="AI-driven policy management tool that analyzes your infrastructure configuration and automatically suggests security policies, compliance rules, and governance best practices with intelligent auto-remediation capabilities."
           ctaButtons={ctaButtons}
           mediaType="mockup"
           mockup={{

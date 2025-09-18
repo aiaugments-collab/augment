@@ -14,12 +14,12 @@ export default function SecurityCollectorPage() {
   
   const ctaButtons = [
     {
-      text: "Collect Security Logs",
+      text: "Start AI Threat Hunting",
       href: productUrl,
       variant: "primary" as const
     },
     {
-      text: "SIEM Integration",
+      text: "AI Threat Intelligence",
       href: docsUrl,
       variant: "secondary" as const
     }
@@ -341,8 +341,8 @@ export default function SecurityCollectorPage() {
         </div>
 
         <ProductHero
-          title="GuardCollector"
-          description="Collect logs from security devices, normalize events, and forward to SIEM or analytics layers with intelligent processing. Centralized security log aggregation platform with advanced event normalization and threat intelligence integration."
+          title="AI ThreatHunter"
+          description="AI-powered threat hunting tool that proactively searches for security threats, analyzes attack patterns, and provides intelligent response recommendations. Uses behavioral analysis and threat intelligence to identify advanced persistent threats."
           ctaButtons={ctaButtons}
           mediaType="mockup"
           mockup={{

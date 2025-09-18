@@ -341,8 +341,8 @@ export default function CloudGovernancePage() {
         </div>
 
         <ProductHero
-          title="CloudGovern"
-          description="Automate governance, tag enforcement, and policy-as-code across clouds with intelligent compliance management. Multi-cloud governance platform with automated policy enforcement, compliance tracking, and unified control across AWS, Azure, GCP, and hybrid environments."
+          title="AI CloudOptimizer"
+          description="AI-powered cloud resource optimizer that continuously analyzes usage patterns, predicts future needs, and automatically optimizes resource allocation for maximum efficiency and cost savings across multi-cloud environments."
           ctaButtons={ctaButtons}
           mediaType="mockup"
           mockup={{

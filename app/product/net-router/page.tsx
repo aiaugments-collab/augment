@@ -341,8 +341,8 @@ export default function NetRouterPage() {
         </div>
 
         <ProductHero
-          title="NetRouter"
-          description="Universal virtual router and SDN controller for cloud-native routing and software-defined networking. Advanced multi-cloud connectivity with intelligent automation, hybrid network integration, and comprehensive network orchestration capabilities."
+          title="AI NetworkOptimizer"
+          description="AI-powered network optimization tool that uses machine learning to analyze traffic patterns, predict network congestion, and automatically optimize routing configurations for maximum performance and reliability."
           ctaButtons={ctaButtons}
           mediaType="mockup"
           mockup={{

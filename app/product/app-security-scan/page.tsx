@@ -14,12 +14,12 @@ export default function AppSecurityScanPage() {
   
   const ctaButtons = [
     {
-      text: "Start Scanning",
+      text: "Start AI Scanning",
       href: productUrl,
       variant: "primary" as const
     },
     {
-      text: "Scan Reports",
+      text: "AI Security Docs",
       href: docsUrl,
       variant: "secondary" as const
     }
@@ -29,8 +29,8 @@ export default function AppSecurityScanPage() {
     {
       id: "vulnerability-scanning",
       image: "/vuln-scan.svg",
-      title: "Comprehensive Vulnerability Scanning",
-      description: "Advanced vulnerability scanning for networks, applications, and containers with automated discovery, prioritized remediation, and continuous monitoring.",
+      title: "AI-Powered Vulnerability Detection",
+      description: "AI-enhanced vulnerability scanning with threat prediction, intelligent risk assessment, and machine learning-driven attack vector analysis for proactive security protection.",
       ctaText: "Scan for vulnerabilities",
       ctaLink: productUrl,
       target: "_blank" as const
@@ -69,23 +69,23 @@ export default function AppSecurityScanPage() {
       id: "vulnerability-assessment",
       title: "Vulnerability Assessment",
       content: {
-        title: "Comprehensive vulnerability scanning and assessment",
-        description: "Advanced vulnerability scanning with automated discovery, risk assessment, and prioritized remediation for networks, applications, and infrastructure components.",
+        title: "AI-powered vulnerability scanning with threat prediction",
+        description: "Intelligent vulnerability assessment using machine learning to predict attack vectors, analyze threat patterns, and provide AI-driven risk prioritization for proactive security management.",
         buttons: [
           { text: "Start Vulnerability Scan", href: productUrl, variant: "primary" as const },
           { text: "Scanning policies", href: docsUrl, variant: "secondary" as const }
         ],
         features: {
-          title: "Vulnerability Assessment Features",
+          title: "AI Vulnerability Assessment Features",
           items: [
-            "Automated scanning",
-            "Risk prioritization",
-            "CVE database integration",
-            "False positive reduction",
-            "Compliance scanning",
-            "Trend analysis",
-            "Custom policies",
-            "Scheduled scans"
+            "AI-powered scanning",
+            "Threat prediction",
+            "Smart risk prioritization",
+            "ML-driven false positive reduction",
+            "Intelligent compliance analysis",
+            "Predictive threat modeling",
+            "AI-generated security policies",
+            "Adaptive scanning schedules"
           ]
         },
         mockup: {
@@ -331,7 +331,7 @@ export default function AppSecurityScanPage() {
   return (
     <div className="min-h-screen">
       <main>
-        <h1 className="sr-only">VulnScan | Vulnerability Scanning & Reporting Platform</h1>
+        <h1 className="sr-only">AI VulnScan | AI-Powered Vulnerability Scanning with Threat Prediction</h1>
         
         {/* Breadcrumbs */}
         <div className="bg-white border-b border-gray-100">
@@ -341,14 +341,14 @@ export default function AppSecurityScanPage() {
         </div>
 
         <ProductHero
-          title="VulnScan"
-          description="Automated vulnerability scanning for networks, containers, and applications with prioritized remediation guidance. Comprehensive security assessment platform with intelligent risk prioritization, compliance reporting, and continuous monitoring."
+          title="AI VulnScan"
+          description="AI-enhanced vulnerability scanner that not only detects security vulnerabilities but also predicts potential attack vectors and provides prioritized remediation strategies based on threat intelligence and risk analysis. Advanced machine learning for intelligent security assessment."
           ctaButtons={ctaButtons}
           mediaType="mockup"
           mockup={{
             type: "dashboard",
-            title: "Vulnerability Management Console",
-            description: "Comprehensive security scanning and vulnerability assessment"
+            title: "AI-Powered Security Console",
+            description: "Intelligent vulnerability scanning with threat prediction and AI-driven risk analysis"
           }}
         />
 
