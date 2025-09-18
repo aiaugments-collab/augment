@@ -45,8 +45,14 @@ export default function MarketplacePage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Banner Section */}
-      <div className="bg-gradient-to-r from-blue-600 to-blue-800 text-white relative overflow-hidden">
-        <div className="absolute inset-0 bg-blue-700 opacity-50"></div>
+      <div className="bg-[#312a2a] text-white relative overflow-hidden" 
+        style={{
+          backgroundImage: "url('/a/ocom/img/bgimg02-bgne-overlay-01.png')",
+          backgroundSize: 'cover',
+          backgroundPosition: 'center'
+        }}
+      >
+        <div className="absolute inset-0 bg-black opacity-30"></div>
         <div className="relative container mx-auto px-6 py-16">
           <div className="max-w-4xl">
             <h1 className="text-2xl md:text-3xl font-bold mb-6">
