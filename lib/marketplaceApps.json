@@ -983,7 +983,7 @@
     "rating": 4.4,
     "reviewCount": 32,
     "lastUpdated": "2025-09-14",
-    "beenWorkedOn": false,
+    "beenWorkedOn": true,
     "logo": "govt-ngfw.svg",
     "productUrl": "/book-demo",
     "docsUrl": "/book-demo"
@@ -1003,7 +1003,7 @@
     "rating": 4.3,
     "reviewCount": 90,
     "lastUpdated": "2025-09-14",
-    "beenWorkedOn": false,
+    "beenWorkedOn": true,
     "logo": "cloud-govern.svg",
     "productUrl": "/book-demo",
     "docsUrl": "/book-demo"
@@ -1023,7 +1023,7 @@
     "rating": 4.5,
     "reviewCount": 120,
     "lastUpdated": "2025-09-14",
-    "beenWorkedOn": false,
+    "beenWorkedOn": true,
     "logo": "velero-backup.svg",
     "productUrl": "/book-demo",
     "docsUrl": "/book-demo"
@@ -1044,7 +1044,7 @@
     "rating": 4.6,
     "reviewCount": 230,
     "lastUpdated": "2025-09-14",
-    "beenWorkedOn": false,
+    "beenWorkedOn": true,
     "logo": "orchestrate.svg",
     "productUrl": "/book-demo",
     "docsUrl": "/book-demo"
@@ -1065,7 +1065,7 @@
     "rating": 4.5,
     "reviewCount": 140,
     "lastUpdated": "2025-09-14",
-    "beenWorkedOn": false,
+    "beenWorkedOn": true,
     "logo": "data-guard.svg",
     "productUrl": "/book-demo",
     "docsUrl": "/book-demo"
@@ -1085,7 +1085,7 @@
     "rating": 4.4,
     "reviewCount": 65,
     "lastUpdated": "2025-09-14",
-    "beenWorkedOn": false,
+    "beenWorkedOn": true,
     "logo": "monitor-quickstart.svg",
     "productUrl": "/book-demo",
     "docsUrl": "/book-demo"
@@ -1106,7 +1106,7 @@
     "rating": 4.2,
     "reviewCount": 85,
     "lastUpdated": "2025-09-14",
-    "beenWorkedOn": false,
+    "beenWorkedOn": true,
     "logo": "backup-bridge.svg",
     "productUrl": "/book-demo",
     "docsUrl": "/book-demo"
@@ -1126,7 +1126,7 @@
     "rating": 4.3,
     "reviewCount": 110,
     "lastUpdated": "2025-09-14",
-    "beenWorkedOn": false,
+    "beenWorkedOn": true,
     "logo": "data-bridge.svg",
     "productUrl": "/book-demo",
     "docsUrl": "/book-demo"
@@ -1146,7 +1146,7 @@
     "rating": 4.1,
     "reviewCount": 72,
     "lastUpdated": "2025-09-14",
-    "beenWorkedOn": false,
+    "beenWorkedOn": true,
     "logo": "vuln-scan.svg",
     "productUrl": "/book-demo",
     "docsUrl": "/book-demo"
@@ -1166,7 +1166,7 @@
     "rating": 4.2,
     "reviewCount": 50,
     "lastUpdated": "2025-09-14",
-    "beenWorkedOn": false,
+    "beenWorkedOn": true,
     "logo": "cloud-router.svg",
     "productUrl": "/book-demo",
     "docsUrl": "/book-demo"
@@ -1186,7 +1186,7 @@
     "rating": 4.4,
     "reviewCount": 68,
     "lastUpdated": "2025-09-14",
-    "beenWorkedOn": false,
+    "beenWorkedOn": true,
     "logo": "netcopilot.svg",
     "productUrl": "/book-demo",
     "docsUrl": "/book-demo"
@@ -1207,7 +1207,7 @@
     "rating": 4.5,
     "reviewCount": 145,
     "lastUpdated": "2025-09-14",
-    "beenWorkedOn": false,
+    "beenWorkedOn": true,
     "logo": "appmetrics.svg",
     "productUrl": "/book-demo",
     "docsUrl": "/book-demo"
@@ -1227,7 +1227,7 @@
     "rating": 4.3,
     "reviewCount": 88,
     "lastUpdated": "2025-09-14",
-    "beenWorkedOn": false,
+    "beenWorkedOn": true,
     "logo": "policy-guard.svg",
     "productUrl": "/book-demo",
     "docsUrl": "/book-demo"
@@ -1247,7 +1247,7 @@
     "rating": 4.1,
     "reviewCount": 35,
     "lastUpdated": "2025-09-14",
-    "beenWorkedOn": false,
+    "beenWorkedOn": true,
     "logo": "agro-erp.svg",
     "productUrl": "/book-demo",
     "docsUrl": "/book-demo"
@@ -1267,7 +1267,7 @@
     "rating": 4.6,
     "reviewCount": 190,
     "lastUpdated": "2025-09-14",
-    "beenWorkedOn": false,
+    "beenWorkedOn": true,
     "logo": "devops-conductor.svg",
     "productUrl": "/book-demo",
     "docsUrl": "/book-demo"
@@ -1287,7 +1287,7 @@
     "rating": 4.2,
     "reviewCount": 74,
     "lastUpdated": "2025-09-14",
-    "beenWorkedOn": false,
+    "beenWorkedOn": true,
     "logo": "cost-sight.svg",
     "productUrl": "/book-demo",
     "docsUrl": "/book-demo"
@@ -1308,7 +1308,7 @@
     "rating": 4.3,
     "reviewCount": 98,
     "lastUpdated": "2025-09-14",
-    "beenWorkedOn": false,
+    "beenWorkedOn": true,
     "logo": "cloud-bridge.svg",
     "productUrl": "/book-demo",
     "docsUrl": "/book-demo"
@@ -1328,7 +1328,7 @@
     "rating": 4.4,
     "reviewCount": 110,
     "lastUpdated": "2025-09-14",
-    "beenWorkedOn": false,
+    "beenWorkedOn": true,
     "logo": "guard-collector.svg",
     "productUrl": "/book-demo",
     "docsUrl": "/book-demo"
@@ -1348,7 +1348,7 @@
     "rating": 4.1,
     "reviewCount": 45,
     "lastUpdated": "2025-09-14",
-    "beenWorkedOn": false,
+    "beenWorkedOn": true,
     "logo": "edge-router.svg",
     "productUrl": "/book-demo",
     "docsUrl": "/book-demo"
@@ -1368,7 +1368,7 @@
     "rating": 4.0,
     "reviewCount": 38,
     "lastUpdated": "2025-09-14",
-    "beenWorkedOn": false,
+    "beenWorkedOn": true,
     "logo": "backup-utility.svg",
     "productUrl": "/book-demo",
     "docsUrl": "/book-demo"
@@ -1388,7 +1388,7 @@
     "rating": 4.2,
     "reviewCount": 56,
     "lastUpdated": "2025-09-14",
-    "beenWorkedOn": false,
+    "beenWorkedOn": true,
     "logo": "data-connector.svg",
     "productUrl": "/book-demo",
     "docsUrl": "/book-demo"
@@ -1408,7 +1408,7 @@
     "rating": 4.4,
     "reviewCount": 81,
     "lastUpdated": "2025-09-14",
-    "beenWorkedOn": false,
+    "beenWorkedOn": true,
     "logo": "app-monitoring.svg",
     "productUrl": "/book-demo",
     "docsUrl": "/book-demo"
@@ -1429,7 +1429,7 @@
     "rating": 4.0,
     "reviewCount": 27,
     "lastUpdated": "2025-09-14",
-    "beenWorkedOn": false,
+    "beenWorkedOn": true,
     "logo": "payroute.svg",
     "productUrl": "/book-demo",
     "docsUrl": "/book-demo"
@@ -1449,7 +1449,7 @@
     "rating": 4.1,
     "reviewCount": 30,
     "lastUpdated": "2025-09-14",
-    "beenWorkedOn": false,
+    "beenWorkedOn": true,
     "logo": "os-images.svg",
     "productUrl": "/book-demo",
     "docsUrl": "/book-demo"
@@ -1469,7 +1469,7 @@
     "rating": 4.6,
     "reviewCount": 210,
     "lastUpdated": "2025-09-14",
-    "beenWorkedOn": false,
+    "beenWorkedOn": true,
     "logo": "monitor360.svg",
     "productUrl": "/book-demo",
     "docsUrl": "/book-demo"
@@ -1489,7 +1489,7 @@
     "rating": 4.5,
     "reviewCount": 140,
     "lastUpdated": "2025-09-14",
-    "beenWorkedOn": false,
+    "beenWorkedOn": true,
     "logo": "vault-backup.svg",
     "productUrl": "/book-demo",
     "docsUrl": "/book-demo"
@@ -1509,7 +1509,7 @@
     "rating": 4.3,
     "reviewCount": 92,
     "lastUpdated": "2025-09-14",
-    "beenWorkedOn": false,
+    "beenWorkedOn": true,
     "logo": "secops.svg",
     "productUrl": "/book-demo",
     "docsUrl": "/book-demo"
@@ -1529,7 +1529,7 @@
     "rating": 4.4,
     "reviewCount": 110,
     "lastUpdated": "2025-09-14",
-    "beenWorkedOn": false,
+    "beenWorkedOn": true,
     "logo": "policy-engine.svg",
     "productUrl": "/book-demo",
     "docsUrl": "/book-demo"
@@ -1550,7 +1550,7 @@
     "rating": 4.7,
     "reviewCount": 160,
     "lastUpdated": "2025-09-14",
-    "beenWorkedOn": false,
+    "beenWorkedOn": true,
     "logo": "ai-orchestrator.svg",
     "productUrl": "/book-demo",
     "docsUrl": "/book-demo"
@@ -1570,7 +1570,7 @@
     "rating": 4.2,
     "reviewCount": 76,
     "lastUpdated": "2025-09-14",
-    "beenWorkedOn": false,
+    "beenWorkedOn": true,
     "logo": "kube-safe.svg",
     "productUrl": "/book-demo",
     "docsUrl": "/book-demo"
@@ -1590,7 +1590,7 @@
     "rating": 4.3,
     "reviewCount": 53,
     "lastUpdated": "2025-09-14",
-    "beenWorkedOn": false,
+    "beenWorkedOn": true,
     "logo": "edge-shield.svg",
     "productUrl": "/book-demo",
     "docsUrl": "/book-demo"
@@ -1610,7 +1610,7 @@
     "rating": 4.1,
     "reviewCount": 44,
     "lastUpdated": "2025-09-14",
-    "beenWorkedOn": false,
+    "beenWorkedOn": true,
     "logo": "template-hub.svg",
     "productUrl": "/book-demo",
     "docsUrl": "/book-demo"
