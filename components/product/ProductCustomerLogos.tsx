@@ -1,4 +1,6 @@
-import React from 'react';
+"use client";
+
+import React, { useState } from 'react';
 
 interface CustomerLogo {
   name: string;
@@ -24,6 +26,11 @@ export function ProductCustomerLogos({
   logos, 
   className = "" 
 }: ProductCustomerLogosProps) {
+  const [imageErrors, setImageErrors] = useState<Set<number>>(new Set());
+
+  const handleImageError = (index: number) => {
+    setImageErrors(prev => new Set(prev).add(index));
+  };
   return (
     <section className={`py-16 bg-white ${className}`}>
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -67,16 +74,30 @@ export function ProductCustomerLogos({
                 className="block relative group transition-opacity duration-300 hover:opacity-80"
               >
                 <div className="flex items-center justify-center h-16 lg:h-18">
-                  <img
-                    src={logo.image}
-                    alt={logo.alt}
-                    className="max-h-full max-w-full object-contain transition-all duration-300 hover:opacity-80"
-                    style={{
-                      height: '4.5rem',
-                      width: 'auto',
-                      maxWidth: '100%'
-                    }}
-                  />
+                  {imageErrors.has(index) ? (
+                    <div 
+                      className="flex items-center justify-center bg-gray-100 rounded text-gray-500 text-sm font-medium"
+                      style={{
+                        height: '4.5rem',
+                        width: '6rem',
+                        maxWidth: '100%'
+                      }}
+                    >
+                      {logo.name}
+                    </div>
+                  ) : (
+                    <img
+                      src={logo.image}
+                      alt={logo.alt}
+                      className="max-h-full max-w-full object-contain transition-all duration-300 hover:opacity-80"
+                      style={{
+                        height: '4.5rem',
+                        width: 'auto',
+                        maxWidth: '100%'
+                      }}
+                      onError={() => handleImageError(index)}
+                    />
+                  )}
                 </div>
               </a>
             </div>
