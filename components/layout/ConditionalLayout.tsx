@@ -16,7 +16,8 @@ export function ConditionalLayout({ children }: ConditionalLayoutProps) {
                            pathname?.startsWith('/auth/') ||
                            pathname?.startsWith('/handler/') ||  // Stack Auth routes
                            pathname?.startsWith('/profile') ||
-                           pathname?.startsWith('/admin');
+                           pathname?.startsWith('/admin') ||
+                           pathname?.startsWith('/docs');
 
   if (isFullScreenRoute) {
     return <>{children}</>;
