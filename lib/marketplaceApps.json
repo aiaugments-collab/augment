@@ -302,8 +302,8 @@
     "lastUpdated": "2025-09-14",
     "beenWorkedOn": true,
     "logo": "aether-cli.svg",
-    "productUrl": "https://github.com/superagent-ai/vibekit",
-    "docsUrl": "https://github.com/superagent-ai/vibekit"
+    "productUrl": "/docs/aether-cli",
+    "docsUrl": "/docs/aether-cli"
   },
   {
     "id": "synapse-sdk",
@@ -320,8 +320,8 @@
     "lastUpdated": "2025-09-14",
     "beenWorkedOn": true,
     "logo": "synapse-sdk.svg",
-    "productUrl": "https://github.com/superagent-ai/vibekit/tree/main/packages/sdk",
-    "docsUrl": "https://github.com/superagent-ai/vibekit/tree/main/packages/sdk"
+    "productUrl": "/docs/synapse-sdk",
+    "docsUrl": "/docs/synapse-sdk"
   },
   {
     "id": "erp-overview",
