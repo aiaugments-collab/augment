@@ -81,10 +81,7 @@ export default function AppsManagementPage() {
               <Download className="w-3 h-3 mr-1 inline" />
               Export Apps
             </button>
-            <button className="px-3 py-1.5 text-xs font-medium text-white bg-blue-600 hover:bg-blue-700 rounded transition-colors">
-              <Plus className="w-3 h-3 mr-1 inline" />
-              Add Application
-            </button>
+           
           </div>
         </div>
       </div>

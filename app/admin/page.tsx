@@ -19,6 +19,7 @@ import {
   Download
 } from 'lucide-react'
 import { marketplaceApps } from '../../lib/marketplaceData'
+import AdminCard from '@/components/admin/AdminCard'
 
 // Calculate real metrics from marketplace data
 const totalApps = marketplaceApps.length
@@ -33,7 +34,7 @@ const mockMetrics = [
     title: 'Total Applications',
     value: totalApps.toString(),
     change: '+8.3%',
-    trend: 'up',
+    trend: 'up' as const,
     icon: Package,
     color: 'blue'
   },
@@ -41,7 +42,7 @@ const mockMetrics = [
     title: 'Monthly Revenue',
     value: '$2.4M',
     change: '+23.1%',
-    trend: 'up',
+    trend: 'up' as const,
     icon: DollarSign,
     color: 'green'
   },
@@ -49,7 +50,7 @@ const mockMetrics = [
     title: 'Active Users',
     value: '89,247',
     change: '+15.2%',
-    trend: 'up',
+    trend: 'up' as const,
     icon: Users,
     color: 'purple'
   },
@@ -57,7 +58,7 @@ const mockMetrics = [
     title: 'App Deployments',
     value: '156,832',
     change: '+31.7%',
-    trend: 'up',
+    trend: 'up' as const,
     icon: Zap,
     color: 'orange'
   }
@@ -148,21 +149,28 @@ const appCategories = [
 
 export default function AdminDashboard() {
   return (
-    <div className="space-y-6">
+    <div 
+      className="space-y-6"
+      style={{ 
+        fontFamily: "var(--oraclesans, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif)"
+      }}
+    >
       {/* Header */}
-      <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
-        <div className="flex items-center justify-between">
+      <div className="bg-white rounded-lg border border-gray-200 p-6 shadow-sm">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
           <div>
-            <h1 className="text-2xl font-semibold text-gray-900">Platform Overview</h1>
-            <p className="text-gray-600 mt-1 text-sm">AI-powered application marketplace with {totalApps} enterprise applications serving 89K+ users globally</p>
+            <h1 className="text-2xl font-bold text-[#1e3a5f] mb-2">Platform Overview</h1>
+            <p className="text-gray-600 text-sm leading-relaxed">
+              AI-powered application marketplace with <span className="font-semibold text-[#1e3a5f]">{totalApps}</span> enterprise applications serving <span className="font-semibold text-[#1e3a5f]">89K+</span> users globally
+            </p>
           </div>
-          <div className="flex items-center space-x-3">
+          <div className="flex items-center space-x-4">
             <div className="text-right">
-              <div className="text-xs text-gray-500">Monthly Recurring Revenue</div>
-              <div className="text-lg font-semibold text-green-600">$2.4M</div>
+              <div className="text-xs text-gray-500 uppercase tracking-wide font-medium">Monthly Recurring Revenue</div>
+              <div className="text-2xl font-bold text-green-600">$2.4M</div>
             </div>
-            <button className="px-3 py-1.5 text-xs font-medium text-gray-700 bg-gray-100 hover:bg-gray-200 rounded transition-colors">
-              <Download className="w-3 h-3 mr-1 inline" />
+            <button className="px-4 py-2 text-sm font-medium text-white bg-[#1e3a5f] hover:bg-[#1e3a5f]/90 rounded-lg transition-colors flex items-center">
+              <Download className="w-4 h-4 mr-2" />
               Export Report
             </button>
           </div>
@@ -170,67 +178,47 @@ export default function AdminDashboard() {
       </div>
 
       {/* Key Metrics */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-        {mockMetrics.map((metric) => {
-          const Icon = metric.icon
-          const isPositive = metric.trend === 'up'
-          
-          return (
-            <div key={metric.title} className="bg-white rounded-lg shadow-sm border border-gray-200 p-4">
-              <div className="flex items-center justify-between mb-3">
-                <div className="p-2 rounded bg-gray-50">
-                  <Icon className="w-5 h-5 text-gray-600" />
-                </div>
-                <div className={`flex items-center text-xs font-medium ${
-                  isPositive ? 'text-green-600' : 'text-red-600'
-                }`}>
-                  {isPositive ? (
-                    <ArrowUpRight className="w-3 h-3 mr-1" />
-                  ) : (
-                    <ArrowDownRight className="w-3 h-3 mr-1" />
-                  )}
-                  {metric.change}
-                </div>
-              </div>
-              <div>
-                <h3 className="text-xl font-semibold text-gray-900">{metric.value}</h3>
-                <p className="text-xs text-gray-500 mt-1">{metric.title}</p>
-              </div>
-            </div>
-          )
-        })}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        {mockMetrics.map((metric) => (
+          <AdminCard
+            key={metric.title}
+            title={metric.title}
+            value={metric.value}
+            change={metric.change}
+            trend={metric.trend}
+            icon={metric.icon}
+          />
+        ))}
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         {/* Top Performing Apps */}
-        <div className="lg:col-span-2 bg-white rounded-lg shadow-sm border border-gray-200">
-          <div className="p-4 border-b border-gray-200">
+        <div className="lg:col-span-2 bg-white rounded-lg border border-gray-200 shadow-sm">
+          <div className="p-6 border-b border-gray-200">
             <div className="flex items-center justify-between">
-              <h2 className="text-base font-semibold text-gray-900">Top Performing Applications</h2>
-              <button className="text-blue-600 hover:text-blue-700 text-xs font-medium">
+              <h2 className="text-lg font-bold text-[#1e3a5f]">Top Performing Applications</h2>
+              <button className="text-[#0066cc] hover:text-[#0066cc]/80 text-sm font-medium transition-colors">
                 View All Apps →
               </button>
             </div>
           </div>
-          <div className="p-4">
-            <div className="space-y-3">
+          <div className="p-6">
+            <div className="space-y-4">
               {topApps.map((app, index) => (
-                <div key={app.name} className="flex items-center justify-between">
-                  <div className="flex items-center space-x-3">
-                    <div className="w-6 h-6 bg-gray-100 rounded text-xs flex items-center justify-center text-gray-600">
+                <div key={app.name} className="flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition-colors">
+                  <div className="flex items-center space-x-4">
+                    <div className="w-8 h-8 bg-[#1e3a5f]/10 rounded-lg text-sm flex items-center justify-center text-[#1e3a5f] font-semibold">
                       #{index + 1}
                     </div>
                     <div>
-                      <div className="text-xs font-medium text-gray-900">{app.name}</div>
+                      <div className="text-sm font-semibold text-gray-900">{app.name}</div>
                       <div className="text-xs text-gray-500">{app.users} active users</div>
                     </div>
                   </div>
-                  <div className="flex items-center space-x-3">
-                    <div className="text-right">
-                      <div className="text-xs font-medium text-gray-900">{app.revenue}</div>
-                      <div className={`text-xs font-medium text-green-600`}>
-                        {app.growth}
-                      </div>
+                  <div className="text-right">
+                    <div className="text-sm font-bold text-gray-900">{app.revenue}</div>
+                    <div className="text-xs font-semibold text-green-600">
+                      {app.growth}
                     </div>
                   </div>
                 </div>
@@ -240,21 +228,21 @@ export default function AdminDashboard() {
         </div>
 
         {/* App Categories */}
-        <div className="bg-white rounded-lg shadow-sm border border-gray-200">
-          <div className="p-4 border-b border-gray-200">
-            <h2 className="text-base font-semibold text-gray-900">Categories</h2>
+        <div className="bg-white rounded-lg border border-gray-200 shadow-sm">
+          <div className="p-6 border-b border-gray-200">
+            <h2 className="text-lg font-bold text-[#1e3a5f]">Categories</h2>
           </div>
-          <div className="p-4">
-            <div className="space-y-3">
+          <div className="p-6">
+            <div className="space-y-4">
               {appCategories.map((category) => (
-                <div key={category.name} className="flex items-center justify-between">
+                <div key={category.name} className="flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition-colors">
                   <div>
-                    <div className="text-xs font-medium text-gray-900">{category.name}</div>
-                    <div className="text-xs text-gray-500">{category.count} apps</div>
+                    <div className="text-sm font-semibold text-gray-900">{category.name}</div>
+                    <div className="text-xs text-gray-500">{category.count} applications</div>
                   </div>
                   <div className="text-right">
-                    <div className="text-xs font-medium text-gray-900">{category.revenue}</div>
-                    <div className="text-xs text-green-600">{category.growth}</div>
+                    <div className="text-sm font-bold text-gray-900">{category.revenue}</div>
+                    <div className="text-xs font-semibold text-green-600">{category.growth}</div>
                   </div>
                 </div>
               ))}
@@ -264,32 +252,32 @@ export default function AdminDashboard() {
       </div>
 
       {/* Recent Activity */}
-      <div className="bg-white rounded-lg shadow-sm border border-gray-200">
-        <div className="p-4 border-b border-gray-200">
+      <div className="bg-white rounded-lg border border-gray-200 shadow-sm">
+        <div className="p-6 border-b border-gray-200">
           <div className="flex items-center justify-between">
-            <h2 className="text-base font-semibold text-gray-900">Recent Platform Activity</h2>
-            <button className="text-blue-600 hover:text-blue-700 text-xs font-medium">
+            <h2 className="text-lg font-bold text-[#1e3a5f]">Recent Platform Activity</h2>
+            <button className="text-[#0066cc] hover:text-[#0066cc]/80 text-sm font-medium transition-colors">
               View All Activity →
             </button>
           </div>
         </div>
-        <div className="p-4">
+        <div className="p-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
             {recentActivity.map((activity) => (
-              <div key={activity.id} className="flex items-start space-x-3 p-3 border border-gray-200 rounded">
-                <div className={`mt-1 w-2 h-2 rounded-full ${
+              <div key={activity.id} className="flex items-start space-x-4 p-4 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors">
+                <div className={`mt-1 w-3 h-3 rounded-full ${
                   activity.status === 'success' ? 'bg-green-500' :
                   activity.status === 'warning' ? 'bg-yellow-500' :
-                  activity.status === 'error' ? 'bg-red-500' : 'bg-blue-500'
+                  activity.status === 'error' ? 'bg-red-500' : 'bg-[#0066cc]'
                 }`} />
                 <div className="flex-1 min-w-0">
-                  <div className="flex items-center justify-between">
-                    <p className="text-xs text-gray-900">{activity.message}</p>
+                  <div className="flex items-start justify-between gap-2">
+                    <p className="text-sm text-gray-900 leading-relaxed">{activity.message}</p>
                     {activity.amount && (
-                      <span className="text-xs font-medium text-green-600">{activity.amount}</span>
+                      <span className="text-sm font-bold text-green-600 whitespace-nowrap">{activity.amount}</span>
                     )}
                   </div>
-                  <div className="flex items-center mt-1 text-xs text-gray-500">
+                  <div className="flex items-center mt-2 text-xs text-gray-500">
                     <Clock className="w-3 h-3 mr-1" />
                     {activity.timestamp}
                   </div>
@@ -301,32 +289,32 @@ export default function AdminDashboard() {
       </div>
 
       {/* Platform Statistics */}
-      <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-4">
-        <h2 className="text-base font-semibold text-gray-900 mb-4">Platform Statistics</h2>
+      <div className="bg-white rounded-lg border border-gray-200 shadow-sm p-6">
+        <h2 className="text-lg font-bold text-[#1e3a5f] mb-6">Platform Statistics</h2>
         <div className="grid grid-cols-2 md:grid-cols-6 gap-4">
-          <div className="text-center p-3 border border-gray-200 rounded">
-            <div className="text-lg font-semibold text-gray-900">{paidApps}</div>
-            <div className="text-xs text-gray-600">Paid Apps</div>
+          <div className="text-center p-4 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors">
+            <div className="text-2xl font-bold text-[#1e3a5f]">{paidApps}</div>
+            <div className="text-xs text-gray-600 font-medium">Paid Apps</div>
           </div>
-          <div className="text-center p-3 border border-gray-200 rounded">
-            <div className="text-lg font-semibold text-gray-900">{freeApps}</div>
-            <div className="text-xs text-gray-600">Free Apps</div>
+          <div className="text-center p-4 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors">
+            <div className="text-2xl font-bold text-[#1e3a5f]">{freeApps}</div>
+            <div className="text-xs text-gray-600 font-medium">Free Apps</div>
           </div>
-          <div className="text-center p-3 border border-gray-200 rounded">
-            <div className="text-lg font-semibold text-gray-900">{aiApps}</div>
-            <div className="text-xs text-gray-600">AI Apps</div>
+          <div className="text-center p-4 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors">
+            <div className="text-2xl font-bold text-[#1e3a5f]">{aiApps}</div>
+            <div className="text-xs text-gray-600 font-medium">AI Apps</div>
           </div>
-          <div className="text-center p-3 border border-gray-200 rounded">
-            <div className="text-lg font-semibold text-gray-900">{erpApps}</div>
-            <div className="text-xs text-gray-600">ERP Apps</div>
+          <div className="text-center p-4 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors">
+            <div className="text-2xl font-bold text-[#1e3a5f]">{erpApps}</div>
+            <div className="text-xs text-gray-600 font-medium">ERP Apps</div>
           </div>
-          <div className="text-center p-3 border border-gray-200 rounded">
-            <div className="text-lg font-semibold text-gray-900">97.2%</div>
-            <div className="text-xs text-gray-600">User Satisfaction</div>
+          <div className="text-center p-4 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors">
+            <div className="text-2xl font-bold text-green-600">97.2%</div>
+            <div className="text-xs text-gray-600 font-medium">User Satisfaction</div>
           </div>
-          <div className="text-center p-3 border border-gray-200 rounded">
-            <div className="text-lg font-semibold text-gray-900">99.9%</div>
-            <div className="text-xs text-gray-600">Platform Uptime</div>
+          <div className="text-center p-4 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors">
+            <div className="text-2xl font-bold text-green-600">99.9%</div>
+            <div className="text-xs text-gray-600 font-medium">Platform Uptime</div>
           </div>
         </div>
       </div>
