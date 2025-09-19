@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import { useState } from 'react'
 
 interface NavigationItem {
   title: string
@@ -16,12 +17,60 @@ interface DocsSidebarProps {
 
 export function DocsSidebar({ appName, appLogo, navigationItems = [] }: DocsSidebarProps) {
   const pathname = usePathname()
+  const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <aside className="w-72 bg-white border-r border-gray-200 min-h-screen sticky top-16 overflow-y-auto max-h-[calc(100vh-4rem)]">
+    <>
+      {/* Mobile menu button */}
+      <div className="md:hidden bg-white border-b border-gray-200 px-4 py-3">
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className="flex items-center space-x-2 text-gray-600 hover:text-gray-900"
+        >
+          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+          <span className="text-sm font-medium">Menu</span>
+        </button>
+      </div>
+
+      {/* Mobile overlay */}
+      {isOpen && (
+        <div
+          className="fixed inset-0 bg-black/50 z-40 md:hidden"
+          onClick={() => setIsOpen(false)}
+        />
+      )}
+
+      {/* Sidebar */}
+      <aside className={`
+        fixed md:static inset-y-0 left-0 z-50 w-72 bg-white border-r border-gray-200 
+        transform transition-transform duration-300 ease-in-out
+        md:transform-none md:transition-none
+        ${isOpen ? 'translate-x-0' : '-translate-x-full md:translate-x-0'}
+        md:sticky md:top-16 overflow-y-auto max-h-screen md:max-h-[calc(100vh-4rem)]
+        flex-shrink-0
+      `}>
       <div className="p-6">
+        {/* Mobile close button */}
+        <div className="md:hidden flex items-center justify-between mb-6">
+          <div className="flex items-center space-x-3">
+            {appLogo && <img src={appLogo} alt={appName} className="w-8 h-8" />}
+            <span className="text-lg font-semibold text-gray-900">{appName}</span>
+          </div>
+          <button
+            onClick={() => setIsOpen(false)}
+            className="p-2 text-gray-400 hover:text-gray-600"
+          >
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+
+        {/* Desktop header */}
         {appName && (
-          <div className="mb-6 flex items-center space-x-3">
+          <div className="hidden md:flex mb-6 items-center space-x-3">
             {appLogo && <img src={appLogo} alt={appName} className="w-10 h-10" />}
             <div>
               <h2 className="text-lg font-semibold text-gray-900">{appName}</h2>
@@ -35,6 +84,7 @@ export function DocsSidebar({ appName, appLogo, navigationItems = [] }: DocsSide
             <Link
               key={item.href}
               href={item.href}
+              onClick={() => setIsOpen(false)}
               className={`block py-2 px-3 text-sm rounded-md transition-colors ${
                 pathname === item.href || (item.href.includes('#') && pathname === item.href.split('#')[0])
                   ? 'bg-blue-50 text-blue-700 font-medium border-l-2 border-blue-500 -ml-3 pl-5' 
@@ -72,5 +122,6 @@ export function DocsSidebar({ appName, appLogo, navigationItems = [] }: DocsSide
         )}
       </div>
     </aside>
+    </>
   )
 }

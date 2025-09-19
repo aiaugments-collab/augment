@@ -29,17 +29,17 @@ export default function AIPolicyAdvisorDocsPage() {
         navigationItems={navigationItems}
       />
       
-      <main className="flex-1 max-w-4xl mx-auto px-6 py-8">
+      <main className="flex-1 min-w-0 max-w-none md:max-w-4xl md:mx-auto px-4 sm:px-6 py-4 sm:py-8 overflow-hidden">
         <div className="docs-content">
           <div className="mb-6">
             <Breadcrumb className="mb-4" />
           </div>
 
-          <div id="overview" className="flex items-center space-x-4 mb-8">
+          <div id="overview" className="flex flex-col sm:flex-row sm:items-center space-y-4 sm:space-y-0 sm:space-x-4 mb-6 sm:mb-8">
             <img src="/policy-guard.svg" alt="AI PolicyAdvisor" className="w-12 h-12" />
             <div>
-              <h1 className="text-3xl font-bold text-gray-900 mb-2">AI PolicyAdvisor</h1>
-              <p className="text-lg text-gray-600">Smart policy recommendations and auto-remediation</p>
+              <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">AI PolicyAdvisor</h1>
+              <p className="text-base sm:text-lg text-gray-600">Smart policy recommendations and auto-remediation</p>
             </div>
           </div>
 
@@ -78,22 +78,22 @@ export default function AIPolicyAdvisorDocsPage() {
                   <span className="text-gray-300 text-sm ml-4">AI PolicyAdvisor Dashboard</span>
                 </div>
                 <div className="p-6">
-                  <div className="grid grid-cols-4 gap-4 mb-6">
-                    <div className="bg-blue-50 p-4 rounded-lg border border-blue-200">
-                      <div className="text-2xl font-bold text-blue-600">847</div>
-                      <div className="text-sm text-blue-700">Active Policies</div>
+                  <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 mb-6">
+                    <div className="bg-blue-50 p-3 sm:p-4 rounded-lg border border-blue-200">
+                      <div className="text-xl sm:text-2xl font-bold text-blue-600">847</div>
+                      <div className="text-xs sm:text-sm text-blue-700">Active Policies</div>
                     </div>
-                    <div className="bg-green-50 p-4 rounded-lg border border-green-200">
-                      <div className="text-2xl font-bold text-green-600">156</div>
-                      <div className="text-sm text-green-700">Auto-Remediated</div>
+                    <div className="bg-green-50 p-3 sm:p-4 rounded-lg border border-green-200">
+                      <div className="text-xl sm:text-2xl font-bold text-green-600">156</div>
+                      <div className="text-xs sm:text-sm text-green-700">Auto-Remediated</div>
                     </div>
-                    <div className="bg-orange-50 p-4 rounded-lg border border-orange-200">
-                      <div className="text-2xl font-bold text-orange-600">23</div>
-                      <div className="text-sm text-orange-700">Policy Violations</div>
+                    <div className="bg-orange-50 p-3 sm:p-4 rounded-lg border border-orange-200">
+                      <div className="text-xl sm:text-2xl font-bold text-orange-600">23</div>
+                      <div className="text-xs sm:text-sm text-orange-700">Policy Violations</div>
                     </div>
-                    <div className="bg-purple-50 p-4 rounded-lg border border-purple-200">
-                      <div className="text-2xl font-bold text-purple-600">94%</div>
-                      <div className="text-sm text-purple-700">Compliance Score</div>
+                    <div className="bg-purple-50 p-3 sm:p-4 rounded-lg border border-purple-200">
+                      <div className="text-xl sm:text-2xl font-bold text-purple-600">94%</div>
+                      <div className="text-xs sm:text-sm text-purple-700">Compliance Score</div>
                     </div>
                   </div>
                   <div className="text-sm text-gray-600 text-center">
@@ -318,7 +318,7 @@ compliance:
               Configure AI PolicyAdvisor behavior using environment variables for different deployment scenarios.
             </p>
 
-            <div className="overflow-x-auto mb-6">
+            <div className="overflow-x-auto mb-6 -mx-4 sm:mx-0">
               <table className="min-w-full divide-y divide-gray-200">
                 <thead className="bg-gray-50">
                   <tr>
@@ -438,27 +438,27 @@ Options:
 
             <h3 className="text-xl font-semibold text-gray-900 mb-3">Remediation Types</h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
-              <div className="bg-green-50 p-4 rounded-lg border border-green-200">
+              <div className="bg-green-50 p-3 sm:p-4 rounded-lg border border-green-200">
                 <h5 className="font-semibold text-green-900 mb-2">Low Risk</h5>
-                <p className="text-sm text-green-800">Automatic remediation without approval required</p>
+                <p className="text-xs sm:text-sm text-green-800">Automatic remediation without approval required</p>
                 <ul className="text-xs text-green-700 mt-2">
                   <li>• Tag missing resources</li>
                   <li>• Enable logging</li>
                   <li>• Update security groups</li>
                 </ul>
               </div>
-              <div className="bg-yellow-50 p-4 rounded-lg border border-yellow-200">
+              <div className="bg-yellow-50 p-3 sm:p-4 rounded-lg border border-yellow-200">
                 <h5 className="font-semibold text-yellow-900 mb-2">Medium Risk</h5>
-                <p className="text-sm text-yellow-800">Requires approval before remediation</p>
+                <p className="text-xs sm:text-sm text-yellow-800">Requires approval before remediation</p>
                 <ul className="text-xs text-yellow-700 mt-2">
                   <li>• Modify IAM permissions</li>
                   <li>• Change network settings</li>
                   <li>• Update resource configs</li>
                 </ul>
               </div>
-              <div className="bg-red-50 p-4 rounded-lg border border-red-200">
+              <div className="bg-red-50 p-3 sm:p-4 rounded-lg border border-red-200">
                 <h5 className="font-semibold text-red-900 mb-2">High Risk</h5>
-                <p className="text-sm text-red-800">Manual review and approval required</p>
+                <p className="text-xs sm:text-sm text-red-800">Manual review and approval required</p>
                 <ul className="text-xs text-red-700 mt-2">
                   <li>• Delete resources</li>
                   <li>• Major config changes</li>

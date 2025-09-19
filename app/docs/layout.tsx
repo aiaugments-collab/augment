@@ -14,7 +14,7 @@ export default function DocsLayout({
   return (
     <div className="min-h-screen bg-white">
       <DocsHeader />
-      <div className="flex">
+      <div className="flex flex-col md:flex-row">
         {children}
       </div>
     </div>

@@ -29,17 +29,17 @@ export default function SynapseSDKDocsPage() {
         navigationItems={navigationItems}
       />
       
-      <main className="flex-1 max-w-4xl mx-auto px-6 py-8">
+      <main className="flex-1 min-w-0 max-w-none md:max-w-4xl md:mx-auto px-4 sm:px-6 py-4 sm:py-8 overflow-hidden">
         <div className="docs-content">
           <div className="mb-6">
             <Breadcrumb className="mb-4" />
           </div>
 
-          <div id="overview" className="flex items-center space-x-4 mb-8">
+          <div id="overview" className="flex flex-col sm:flex-row sm:items-center space-y-4 sm:space-y-0 sm:space-x-4 mb-6 sm:mb-8">
             <img src="/synapse-sdk.svg" alt="Synapse SDK" className="w-12 h-12" />
             <div>
-              <h1 className="text-3xl font-bold text-gray-900 mb-2">Synapse SDK</h1>
-              <p className="text-lg text-gray-600">Embedding adaptive AI automation</p>
+              <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">Synapse SDK</h1>
+              <p className="text-base sm:text-lg text-gray-600">Embedding adaptive AI automation</p>
             </div>
           </div>
 
@@ -80,16 +80,16 @@ export default function SynapseSDKDocsPage() {
                 <div className="p-6">
                   <div className="grid grid-cols-3 gap-4 mb-6">
                     <div className="bg-indigo-50 p-4 rounded-lg border border-indigo-200">
-                      <div className="text-2xl font-bold text-indigo-600">47</div>
-                      <div className="text-sm text-indigo-700">AI Models Active</div>
+                      <div className="text-xl sm:text-2xl font-bold text-indigo-600">47</div>
+                      <div className="text-xs sm:text-sm text-indigo-700">AI Models Active</div>
                     </div>
                     <div className="bg-purple-50 p-4 rounded-lg border border-purple-200">
-                      <div className="text-2xl font-bold text-purple-600">1.2M</div>
-                      <div className="text-sm text-purple-700">Automation Events</div>
+                      <div className="text-xl sm:text-2xl font-bold text-purple-600">1.2M</div>
+                      <div className="text-xs sm:text-sm text-purple-700">Automation Events</div>
                     </div>
                     <div className="bg-pink-50 p-4 rounded-lg border border-pink-200">
-                      <div className="text-2xl font-bold text-pink-600">98.7%</div>
-                      <div className="text-sm text-pink-700">Adaptation Success</div>
+                      <div className="text-xl sm:text-2xl font-bold text-pink-600">98.7%</div>
+                      <div className="text-xs sm:text-sm text-pink-700">Adaptation Success</div>
                     </div>
                   </div>
                   <div className="bg-gray-50 p-4 rounded-lg">
@@ -422,7 +422,7 @@ monitoring:
               Configure Synapse SDK behavior using environment variables for different deployment scenarios.
             </p>
 
-            <div className="overflow-x-auto mb-6">
+            <div className="overflow-x-auto mb-6 -mx-4 sm:mx-0">
               <table className="min-w-full divide-y divide-gray-200">
                 <thead className="bg-gray-50">
                   <tr>

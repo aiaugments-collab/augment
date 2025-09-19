@@ -26,12 +26,12 @@ export function CodeBlock({ children, language = 'text', title }: CodeBlockProps
         </div>
       )}
       <div className="relative">
-        <pre className={`bg-gray-900 text-gray-100 p-4 overflow-x-auto text-sm leading-relaxed ${title ? 'rounded-t-none rounded-b-lg' : 'rounded-lg'} border border-gray-700`}>
+        <pre className={`bg-gray-900 text-gray-100 p-3 sm:p-4 overflow-x-auto text-xs sm:text-sm leading-relaxed ${title ? 'rounded-t-none rounded-b-lg' : 'rounded-lg'} border border-gray-700`}>
           <code className={`language-${language}`}>{children.trim()}</code>
         </pre>
         <button
           onClick={copyToClipboard}
-          className="absolute top-3 right-3 p-2 bg-gray-800 hover:bg-gray-700 rounded-md opacity-0 group-hover:opacity-100 transition-all duration-200 border border-gray-600"
+          className="absolute top-2 sm:top-3 right-2 sm:right-3 p-1.5 sm:p-2 bg-gray-800 hover:bg-gray-700 rounded-md opacity-0 group-hover:opacity-100 transition-all duration-200 border border-gray-600"
           title={copied ? "Copied!" : "Copy to clipboard"}
         >
           {copied ? (

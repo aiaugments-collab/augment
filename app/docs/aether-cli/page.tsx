@@ -29,17 +29,17 @@ export default function AetherCLIDocsPage() {
         navigationItems={navigationItems}
       />
       
-      <main className="flex-1 max-w-4xl mx-auto px-6 py-8">
+      <main className="flex-1 min-w-0 max-w-none md:max-w-4xl md:mx-auto px-4 sm:px-6 py-4 sm:py-8 overflow-hidden">
         <div className="docs-content">
           <div className="mb-6">
             <Breadcrumb className="mb-4" />
           </div>
 
-          <div id="overview" className="flex items-center space-x-4 mb-8">
+          <div id="overview" className="flex flex-col sm:flex-row sm:items-center space-y-4 sm:space-y-0 sm:space-x-4 mb-6 sm:mb-8">
             <img src="/aether-cli.svg" alt="Aether CLI" className="w-12 h-12" />
             <div>
-              <h1 className="text-3xl font-bold text-gray-900 mb-2">Aether CLI</h1>
-              <p className="text-lg text-gray-600">Intelligent command-line automation</p>
+              <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">Aether CLI</h1>
+              <p className="text-base sm:text-lg text-gray-600">Intelligent command-line automation</p>
             </div>
           </div>
 

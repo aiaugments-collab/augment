@@ -5,6 +5,27 @@
 /* Documentation specific styles */
 .docs-content {
   @apply prose prose-gray max-w-none;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Responsive fixes */
+@media (max-width: 768px) {
+  .docs-content {
+    font-size: 14px;
+  }
+  
+  .docs-content h1 {
+    font-size: 1.75rem;
+  }
+  
+  .docs-content h2 {
+    font-size: 1.5rem;
+  }
+  
+  .docs-content h3 {
+    font-size: 1.25rem;
+  }
 }
 
 .docs-content h1 {

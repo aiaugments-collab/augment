@@ -29,17 +29,17 @@ export default function AILogAnalyzerDocsPage() {
         navigationItems={navigationItems}
       />
       
-      <main className="flex-1 max-w-4xl mx-auto px-6 py-8">
+      <main className="flex-1 min-w-0 max-w-none md:max-w-4xl md:mx-auto px-4 sm:px-6 py-4 sm:py-8 overflow-hidden">
         <div className="docs-content">
           <div className="mb-6">
             <Breadcrumb className="mb-4" />
           </div>
 
-          <div id="overview" className="flex items-center space-x-4 mb-8">
+          <div id="overview" className="flex flex-col sm:flex-row sm:items-center space-y-4 sm:space-y-0 sm:space-x-4 mb-6 sm:mb-8">
             <img src="/log-insight.svg" alt="AI LogAnalyzer" className="w-12 h-12" />
             <div>
-              <h1 className="text-3xl font-bold text-gray-900 mb-2">AI LogAnalyzer</h1>
-              <p className="text-lg text-gray-600">Intelligent log analysis with anomaly detection</p>
+              <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">AI LogAnalyzer</h1>
+              <p className="text-base sm:text-lg text-gray-600">Intelligent log analysis with anomaly detection</p>
             </div>
           </div>
 
@@ -78,22 +78,22 @@ export default function AILogAnalyzerDocsPage() {
                   <span className="text-gray-300 text-sm ml-4">AI LogAnalyzer Dashboard</span>
                 </div>
                 <div className="p-6">
-                  <div className="grid grid-cols-4 gap-4 mb-6">
-                    <div className="bg-blue-50 p-4 rounded-lg border border-blue-200">
-                      <div className="text-2xl font-bold text-blue-600">2.4M</div>
-                      <div className="text-sm text-blue-700">Logs Processed/Hour</div>
+                  <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 mb-6">
+                    <div className="bg-blue-50 p-3 sm:p-4 rounded-lg border border-blue-200">
+                      <div className="text-xl sm:text-2xl font-bold text-blue-600">2.4M</div>
+                      <div className="text-xs sm:text-sm text-blue-700">Logs Processed/Hour</div>
                     </div>
-                    <div className="bg-red-50 p-4 rounded-lg border border-red-200">
-                      <div className="text-2xl font-bold text-red-600">23</div>
-                      <div className="text-sm text-red-700">Anomalies Detected</div>
+                    <div className="bg-red-50 p-3 sm:p-4 rounded-lg border border-red-200">
+                      <div className="text-xl sm:text-2xl font-bold text-red-600">23</div>
+                      <div className="text-xs sm:text-sm text-red-700">Anomalies Detected</div>
                     </div>
-                    <div className="bg-green-50 p-4 rounded-lg border border-green-200">
-                      <div className="text-2xl font-bold text-green-600">99.2%</div>
-                      <div className="text-sm text-green-700">Accuracy Rate</div>
+                    <div className="bg-green-50 p-3 sm:p-4 rounded-lg border border-green-200">
+                      <div className="text-xl sm:text-2xl font-bold text-green-600">99.2%</div>
+                      <div className="text-xs sm:text-sm text-green-700">Accuracy Rate</div>
                     </div>
-                    <div className="bg-purple-50 p-4 rounded-lg border border-purple-200">
-                      <div className="text-2xl font-bold text-purple-600">156</div>
-                      <div className="text-sm text-purple-700">Log Sources</div>
+                    <div className="bg-purple-50 p-3 sm:p-4 rounded-lg border border-purple-200">
+                      <div className="text-xl sm:text-2xl font-bold text-purple-600">156</div>
+                      <div className="text-xs sm:text-sm text-purple-700">Log Sources</div>
                     </div>
                   </div>
                   <div className="text-sm text-gray-600 text-center">
@@ -356,7 +356,7 @@ log-analyzer anomaly enable --real-time --alert-on-detection`}
               Configure AI LogAnalyzer behavior using environment variables for different deployment scenarios.
             </p>
 
-            <div className="overflow-x-auto mb-6">
+            <div className="overflow-x-auto mb-6 -mx-4 sm:mx-0">
               <table className="min-w-full divide-y divide-gray-200">
                 <thead className="bg-gray-50">
                   <tr>

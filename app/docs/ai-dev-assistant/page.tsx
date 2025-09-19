@@ -29,17 +29,17 @@ export default function AIDevAssistantDocsPage() {
         navigationItems={navigationItems}
       />
       
-      <main className="flex-1 max-w-4xl mx-auto px-6 py-8">
+      <main className="flex-1 min-w-0 max-w-none md:max-w-4xl md:mx-auto px-4 sm:px-6 py-4 sm:py-8 overflow-hidden">
         <div className="docs-content">
           <div className="mb-6">
             <Breadcrumb className="mb-4" />
           </div>
 
-          <div id="overview" className="flex items-center space-x-4 mb-8">
+          <div id="overview" className="flex flex-col sm:flex-row sm:items-center space-y-4 sm:space-y-0 sm:space-x-4 mb-6 sm:mb-8">
             <img src="/devops-conductor.svg" alt="AI DevAssistant" className="w-12 h-12" />
             <div>
-              <h1 className="text-3xl font-bold text-gray-900 mb-2">AI DevAssistant</h1>
-              <p className="text-lg text-gray-600">Smart CI/CD optimization and failure prediction</p>
+              <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">AI DevAssistant</h1>
+              <p className="text-base sm:text-lg text-gray-600">Smart CI/CD optimization and failure prediction</p>
             </div>
           </div>
 
@@ -78,22 +78,22 @@ export default function AIDevAssistantDocsPage() {
                   <span className="text-gray-300 text-sm ml-4">AI DevAssistant Dashboard</span>
                 </div>
                 <div className="p-6">
-                  <div className="grid grid-cols-4 gap-4 mb-6">
-                    <div className="bg-green-50 p-4 rounded-lg border border-green-200">
-                      <div className="text-2xl font-bold text-green-600">47%</div>
-                      <div className="text-sm text-green-700">Build Time Reduction</div>
+                  <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 mb-6">
+                    <div className="bg-green-50 p-3 sm:p-4 rounded-lg border border-green-200">
+                      <div className="text-xl sm:text-2xl font-bold text-green-600">47%</div>
+                      <div className="text-xs sm:text-sm text-green-700">Build Time Reduction</div>
                     </div>
-                    <div className="bg-blue-50 p-4 rounded-lg border border-blue-200">
-                      <div className="text-2xl font-bold text-blue-600">92%</div>
-                      <div className="text-sm text-blue-700">Prediction Accuracy</div>
+                    <div className="bg-blue-50 p-3 sm:p-4 rounded-lg border border-blue-200">
+                      <div className="text-xl sm:text-2xl font-bold text-blue-600">92%</div>
+                      <div className="text-xs sm:text-sm text-blue-700">Prediction Accuracy</div>
                     </div>
-                    <div className="bg-purple-50 p-4 rounded-lg border border-purple-200">
-                      <div className="text-2xl font-bold text-purple-600">234</div>
-                      <div className="text-sm text-purple-700">Pipelines Optimized</div>
+                    <div className="bg-purple-50 p-3 sm:p-4 rounded-lg border border-purple-200">
+                      <div className="text-xl sm:text-2xl font-bold text-purple-600">234</div>
+                      <div className="text-xs sm:text-sm text-purple-700">Pipelines Optimized</div>
                     </div>
-                    <div className="bg-orange-50 p-4 rounded-lg border border-orange-200">
-                      <div className="text-2xl font-bold text-orange-600">89%</div>
-                      <div className="text-sm text-orange-700">Success Rate</div>
+                    <div className="bg-orange-50 p-3 sm:p-4 rounded-lg border border-orange-200">
+                      <div className="text-xl sm:text-2xl font-bold text-orange-600">89%</div>
+                      <div className="text-xs sm:text-sm text-orange-700">Success Rate</div>
                     </div>
                   </div>
                   <div className="text-sm text-gray-600 text-center">
@@ -337,7 +337,7 @@ analytics:
               Configure AI DevAssistant behavior using environment variables for different deployment scenarios.
             </p>
 
-            <div className="overflow-x-auto mb-6">
+            <div className="overflow-x-auto mb-6 -mx-4 sm:mx-0">
               <table className="min-w-full divide-y divide-gray-200">
                 <thead className="bg-gray-50">
                   <tr>
@@ -457,27 +457,27 @@ Options:
 
             <h3 className="text-xl font-semibold text-gray-900 mb-3">Prediction Models</h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
-              <div className="bg-red-50 p-4 rounded-lg border border-red-200">
+              <div className="bg-red-50 p-3 sm:p-4 rounded-lg border border-red-200">
                 <h5 className="font-semibold text-red-900 mb-2">Failure Prediction</h5>
-                <p className="text-sm text-red-800">Predict builds likely to fail based on code changes</p>
+                <p className="text-xs sm:text-sm text-red-800">Predict builds likely to fail based on code changes</p>
                 <ul className="text-xs text-red-700 mt-2">
                   <li>• Code change analysis</li>
                   <li>• Test coverage impact</li>
                   <li>• Historical failure patterns</li>
                 </ul>
               </div>
-              <div className="bg-orange-50 p-4 rounded-lg border border-orange-200">
+              <div className="bg-orange-50 p-3 sm:p-4 rounded-lg border border-orange-200">
                 <h5 className="font-semibold text-orange-900 mb-2">Performance Prediction</h5>
-                <p className="text-sm text-orange-800">Predict build time and resource usage</p>
+                <p className="text-xs sm:text-sm text-orange-800">Predict build time and resource usage</p>
                 <ul className="text-xs text-orange-700 mt-2">
                   <li>• Build duration estimation</li>
                   <li>• Resource consumption forecast</li>
                   <li>• Queue time prediction</li>
                 </ul>
               </div>
-              <div className="bg-blue-50 p-4 rounded-lg border border-blue-200">
+              <div className="bg-blue-50 p-3 sm:p-4 rounded-lg border border-blue-200">
                 <h5 className="font-semibold text-blue-900 mb-2">Quality Prediction</h5>
-                <p className="text-sm text-blue-800">Predict code quality and test issues</p>
+                <p className="text-xs sm:text-sm text-blue-800">Predict code quality and test issues</p>
                 <ul className="text-xs text-blue-700 mt-2">
                   <li>• Test flakiness detection</li>
                   <li>• Code quality degradation</li>

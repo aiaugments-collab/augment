@@ -29,17 +29,17 @@ export default function AICostOptimizerDocsPage() {
         navigationItems={navigationItems}
       />
       
-      <main className="flex-1 max-w-4xl mx-auto px-6 py-8">
+      <main className="flex-1 min-w-0 max-w-none md:max-w-4xl md:mx-auto px-4 sm:px-6 py-4 sm:py-8 overflow-hidden">
         <div className="docs-content">
           <div className="mb-6">
             <Breadcrumb className="mb-4" />
           </div>
 
-          <div id="overview" className="flex items-center space-x-4 mb-8">
+          <div id="overview" className="flex flex-col sm:flex-row sm:items-center space-y-4 sm:space-y-0 sm:space-x-4 mb-6 sm:mb-8">
             <img src="/ai-cost-optimizer.svg" alt="AI CostOptimizer" className="w-12 h-12" />
             <div>
-              <h1 className="text-3xl font-bold text-gray-900 mb-2">AI CostOptimizer</h1>
-              <p className="text-lg text-gray-600">Intelligent cloud cost analysis and optimization</p>
+              <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">AI CostOptimizer</h1>
+              <p className="text-base sm:text-lg text-gray-600">Intelligent cloud cost analysis and optimization</p>
             </div>
           </div>
 
@@ -78,22 +78,22 @@ export default function AICostOptimizerDocsPage() {
                   <span className="text-gray-300 text-sm ml-4">AI CostOptimizer Dashboard</span>
                 </div>
                 <div className="p-6">
-                  <div className="grid grid-cols-4 gap-4 mb-6">
-                    <div className="bg-green-50 p-4 rounded-lg border border-green-200">
-                      <div className="text-2xl font-bold text-green-600">$47.2K</div>
-                      <div className="text-sm text-green-700">Monthly Savings</div>
+                  <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 mb-6">
+                    <div className="bg-green-50 p-3 sm:p-4 rounded-lg border border-green-200">
+                      <div className="text-xl sm:text-2xl font-bold text-green-600">$47.2K</div>
+                      <div className="text-xs sm:text-sm text-green-700">Monthly Savings</div>
                     </div>
-                    <div className="bg-blue-50 p-4 rounded-lg border border-blue-200">
-                      <div className="text-2xl font-bold text-blue-600">34%</div>
-                      <div className="text-sm text-blue-700">Cost Reduction</div>
+                    <div className="bg-blue-50 p-3 sm:p-4 rounded-lg border border-blue-200">
+                      <div className="text-xl sm:text-2xl font-bold text-blue-600">34%</div>
+                      <div className="text-xs sm:text-sm text-blue-700">Cost Reduction</div>
                     </div>
-                    <div className="bg-purple-50 p-4 rounded-lg border border-purple-200">
-                      <div className="text-2xl font-bold text-purple-600">1,247</div>
-                      <div className="text-sm text-purple-700">Resources Analyzed</div>
+                    <div className="bg-purple-50 p-3 sm:p-4 rounded-lg border border-purple-200">
+                      <div className="text-xl sm:text-2xl font-bold text-purple-600">1,247</div>
+                      <div className="text-xs sm:text-sm text-purple-700">Resources Analyzed</div>
                     </div>
-                    <div className="bg-orange-50 p-4 rounded-lg border border-orange-200">
-                      <div className="text-2xl font-bold text-orange-600">$156K</div>
-                      <div className="text-sm text-orange-700">Predicted Next Month</div>
+                    <div className="bg-orange-50 p-3 sm:p-4 rounded-lg border border-orange-200">
+                      <div className="text-xl sm:text-2xl font-bold text-orange-600">$156K</div>
+                      <div className="text-xs sm:text-sm text-orange-700">Predicted Next Month</div>
                     </div>
                   </div>
                   <div className="text-sm text-gray-600 text-center">
@@ -302,7 +302,7 @@ cost_policies:
               Configure AI CostOptimizer behavior using environment variables for different deployment scenarios.
             </p>
 
-            <div className="overflow-x-auto mb-6">
+            <div className="overflow-x-auto mb-6 -mx-4 sm:mx-0">
               <table className="min-w-full divide-y divide-gray-200">
                 <thead className="bg-gray-50">
                   <tr>
@@ -465,17 +465,17 @@ cost-optimizer schedule --forecast monthly --day 1 --time "08:00"`}
 
             <h3 className="text-xl font-semibold text-gray-900 mb-3">Report Types</h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
-              <div className="bg-blue-50 p-4 rounded-lg border border-blue-200">
+              <div className="bg-blue-50 p-3 sm:p-4 rounded-lg border border-blue-200">
                 <h5 className="font-semibold text-blue-900 mb-2">Executive Dashboard</h5>
-                <p className="text-sm text-blue-800">High-level cost trends and optimization ROI</p>
+                <p className="text-xs sm:text-sm text-blue-800">High-level cost trends and optimization ROI</p>
               </div>
-              <div className="bg-green-50 p-4 rounded-lg border border-green-200">
+              <div className="bg-green-50 p-3 sm:p-4 rounded-lg border border-green-200">
                 <h5 className="font-semibold text-green-900 mb-2">Detailed Analysis</h5>
-                <p className="text-sm text-green-800">Resource-level cost breakdown and recommendations</p>
+                <p className="text-xs sm:text-sm text-green-800">Resource-level cost breakdown and recommendations</p>
               </div>
-              <div className="bg-purple-50 p-4 rounded-lg border border-purple-200">
+              <div className="bg-purple-50 p-3 sm:p-4 rounded-lg border border-purple-200">
                 <h5 className="font-semibold text-purple-900 mb-2">Budget Forecast</h5>
-                <p className="text-sm text-purple-800">Predictive cost modeling and budget planning</p>
+                <p className="text-xs sm:text-sm text-purple-800">Predictive cost modeling and budget planning</p>
               </div>
             </div>
 
