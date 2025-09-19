@@ -26,18 +26,28 @@ export const DashboardLayout: React.FC<DashboardLayoutProps> = ({ children }) =>
             fontFamily: "var(--oraclesans, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif)"
           }}
         >
-          <div className="flex items-center justify-between px-6 py-4">
-            <button
-              onClick={() => setSidebarOpen(true)}
-              className="lg:hidden p-2 rounded-sm text-gray-600 hover:text-gray-900 hover:bg-gray-100 transition-colors"
-            >
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
-            </button>
+          <div className="flex items-center justify-between px-4 sm:px-6 py-3 sm:py-4">
+            <div className="flex items-center space-x-3">
+              {/* Mobile menu button */}
+              <button
+                onClick={() => setSidebarOpen(true)}
+                className="lg:hidden p-2 rounded-sm text-gray-600 hover:text-gray-900 hover:bg-gray-100 transition-colors"
+              >
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+              </button>
 
-            <div className="flex items-center space-x-4">
-              {/* Search */}
+              {/* Mobile search button */}
+              <button className="sm:hidden p-2 text-gray-600 hover:text-gray-900 hover:bg-gray-100 rounded-sm transition-colors">
+                <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+              </button>
+            </div>
+
+            <div className="flex items-center space-x-2 sm:space-x-4">
+              {/* Desktop Search */}
               <div className="hidden sm:block">
                 <div className="relative">
                   <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
@@ -48,10 +58,9 @@ export const DashboardLayout: React.FC<DashboardLayoutProps> = ({ children }) =>
                   <input
                     type="text"
                     placeholder="Search apps, docs, settings..."
-                    className="block w-64 lg:w-80 pl-10 pr-3 py-2 border border-gray-300 rounded-sm leading-5 bg-white placeholder-gray-500 focus:outline-none focus:placeholder-gray-400 focus:ring-1 focus:border-blue-500 transition-colors"
+                    className="block w-48 md:w-64 lg:w-80 pl-10 pr-3 py-2 border border-gray-300 rounded-sm leading-5 bg-white placeholder-gray-500 focus:outline-none focus:placeholder-gray-400 focus:ring-1 focus:border-blue-500 transition-colors text-sm"
                     style={{ 
-                      borderColor: "#d1d5db",
-                      fontSize: "14px"
+                      borderColor: "#d1d5db"
                     }}
                   />
                 </div>
@@ -65,13 +74,19 @@ export const DashboardLayout: React.FC<DashboardLayoutProps> = ({ children }) =>
                 <span className="sr-only">Notifications</span>
               </button>
 
-             
+              {/* Profile/User menu - placeholder for future implementation */}
+              <button className="p-2 text-gray-600 hover:text-gray-900 hover:bg-gray-100 rounded-sm transition-colors">
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                </svg>
+                <span className="sr-only">User menu</span>
+              </button>
             </div>
           </div>
         </div>
 
         {/* Page content */}
-        <main className="flex-1 px-6 py-4 overflow-auto">
+        <main className="flex-1 px-4 sm:px-6 py-4 sm:py-6 overflow-auto">
           {children}
         </main>
       </div>

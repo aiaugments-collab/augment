@@ -50,6 +50,7 @@ export const oracleProductsDropdownData: DropdownSection[] = [
       { label: "– Marketing", href: "/product/marketing", isSubItem: true, columnGroup: "col4" },
       { label: "– Sales", href: "/product/sales", isSubItem: true, columnGroup: "col4" },
       { label: "– Service", href: "/product/customer-support", isSubItem: true, columnGroup: "col4" },
+      { label: "– CRM", href: "/product/crm" , isSubItem: true, columnGroup: "col4" },
       
       { label: "Augment Marketplace", href: "/marketplace", isBold: true, columnGroup: "col4" }
     ]

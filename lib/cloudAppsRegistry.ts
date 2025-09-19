@@ -350,6 +350,24 @@ export const CLOUD_APP_PRODUCTS: Product[] = [
     showInHeader: true,
     headerOrder: 3
   },
+  {
+    id: 'crm',
+    name: 'CRM',
+    shortName: 'CRM',
+    description: 'Complete customer relationship management platform with sales, marketing, service, and customer support for exceptional customer experiences.',
+    shortDescription: 'Complete customer relationship management platform',
+    category: 'cloud-applications',
+    href: '/product/crm',
+    icon: 'users',
+    featured: true,
+    status: 'coming-soon',
+    tags: ['CRM', 'Sales', 'Marketing', 'Service', 'Customer Support'],
+    image: '/products/crm/01.png',
+    productUrl: '/book-demo',
+    headerCategory: 'cx',
+    showInHeader: true,
+    headerOrder: 4
+  },
 
   // ===== FUSION DATA INTELLIGENCE PLATFORM =====
   {

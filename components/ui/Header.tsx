@@ -51,7 +51,8 @@ const MOBILE_NAV_STRUCTURE = {
     "Customer Experience (CX)": [
       { label: "Marketing", href: "/product/marketing" },
       { label: "Sales", href: "/product/sales" },
-      { label: "Service", href: "/product/customer-support" }
+      { label: "Service", href: "/product/customer-support" },
+      { label: "CRM", href: "/product/crm" }
     ],
     "Data Intelligence": [
       { label: "Augment Suite", href: "/product/augmentdb" }
@@ -243,12 +244,12 @@ export default function Header() {
             
             {/* Side Drawer */}
             <div 
-              className={`fixed top-0 right-0 h-full w-80 bg-[#312a2a] z-50 transform transition-transform duration-300 ease-in-out lg:hidden ${
+              className={`fixed top-0 right-0 h-full w-full max-w-sm bg-[#312a2a] z-50 transform transition-transform duration-300 ease-in-out lg:hidden ${
                 menuOpen ? 'translate-x-0' : 'translate-x-full'
               }`}
             >
               {/* Drawer Header */}
-              <div className="flex items-center justify-between p-6 border-b border-gray-700/30">
+              <div className="flex items-center justify-between p-4 sm:p-6 border-b border-gray-700/30">
                 <Link href="/" onClick={() => setMenuOpen(false)} aria-label="Augment Home">
                   <img 
                     src="/augment-logo.svg" 
@@ -261,7 +262,7 @@ export default function Header() {
                   className="p-2 rounded hover:bg-gray-700/50 transition-colors"
                   aria-label="Close menu"
                 >
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" className="text-gray-300">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" className="text-gray-300">
                     <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>
                 </button>
@@ -269,7 +270,7 @@ export default function Header() {
 
               {/* Drawer Content */}
               <div className="flex flex-col h-full">
-                <nav className="flex-1 px-6 py-6">
+                <nav className="flex-1 px-4 sm:px-6 py-4 sm:py-6 overflow-y-auto">
                   <ul className="space-y-1">
                     {NAV_ITEMS.map((item) => {
                       const sectionData = MOBILE_NAV_STRUCTURE[item.label as keyof typeof MOBILE_NAV_STRUCTURE];
@@ -280,7 +281,7 @@ export default function Header() {
                           <li key={item.label}>
                             <button
                               onClick={() => toggleSection('Products')}
-                              className="flex items-center justify-between w-full px-4 py-3 text-base text-white hover:bg-gray-700/50 transition-colors rounded-md font-medium"
+                              className="flex items-center justify-between w-full px-3 py-3 text-sm sm:text-base text-white hover:bg-gray-700/50 transition-colors rounded-md font-medium"
                             >
                               Products
                               <svg 
@@ -294,17 +295,17 @@ export default function Header() {
                             </button>
                             
                             {expandedSections.has('Products') && (
-                              <div className="ml-4 mt-2 space-y-1">
+                              <div className="ml-2 sm:ml-4 mt-2 space-y-1">
                                 {/* Render all product categories */}
                                 {Object.entries(MOBILE_NAV_STRUCTURE.Products).map(([categoryName, categoryItems]) => (
                                   <div key={categoryName}>
                                     <button
                                       onClick={() => toggleSection(categoryName)}
-                                      className="flex items-center justify-between w-full px-4 py-2 text-sm text-gray-300 hover:bg-gray-700/30 transition-colors rounded-md"
+                                      className="flex items-center justify-between w-full px-3 py-2 text-xs sm:text-sm text-gray-300 hover:bg-gray-700/30 transition-colors rounded-md"
                                     >
-                                      {categoryName}
+                                      <span className="truncate pr-2">{categoryName}</span>
                                       <svg 
-                                        className={`w-4 h-4 transition-transform ${expandedSections.has(categoryName) ? 'rotate-180' : ''}`}
+                                        className={`w-4 h-4 flex-shrink-0 transition-transform ${expandedSections.has(categoryName) ? 'rotate-180' : ''}`}
                                         fill="none" 
                                         stroke="currentColor" 
                                         viewBox="0 0 24 24"
@@ -314,12 +315,12 @@ export default function Header() {
                                     </button>
                                     
                                     {expandedSections.has(categoryName) && (
-                                      <div className="ml-4 mt-1 space-y-1">
+                                      <div className="ml-2 sm:ml-4 mt-1 space-y-1">
                                         {categoryItems.map((app) => (
                                           <Link
                                             key={app.label}
                                             href={app.href}
-                                            className="block px-4 py-2 text-sm text-gray-400 hover:bg-gray-700/20 hover:text-white transition-colors rounded-md"
+                                            className="block px-3 py-2 text-xs sm:text-sm text-gray-400 hover:bg-gray-700/20 hover:text-white transition-colors rounded-md truncate"
                                             onClick={() => setMenuOpen(false)}
                                           >
                                             {app.label}
@@ -339,11 +340,11 @@ export default function Header() {
                           <li key={item.label}>
                             <button
                               onClick={() => toggleSection(item.label)}
-                              className="flex items-center justify-between w-full px-4 py-3 text-base text-white hover:bg-gray-700/50 transition-colors rounded-md font-medium"
+                              className="flex items-center justify-between w-full px-3 py-3 text-sm sm:text-base text-white hover:bg-gray-700/50 transition-colors rounded-md font-medium"
                             >
-                              {item.label}
+                              <span className="truncate pr-2">{item.label}</span>
                               <svg 
-                                className={`w-5 h-5 transition-transform ${expandedSections.has(item.label) ? 'rotate-180' : ''}`}
+                                className={`w-5 h-5 flex-shrink-0 transition-transform ${expandedSections.has(item.label) ? 'rotate-180' : ''}`}
                                 fill="none" 
                                 stroke="currentColor" 
                                 viewBox="0 0 24 24"
@@ -353,12 +354,12 @@ export default function Header() {
                             </button>
                             
                             {expandedSections.has(item.label) && (
-                              <div className="ml-4 mt-2 space-y-1">
+                              <div className="ml-2 sm:ml-4 mt-2 space-y-1">
                                 {sectionData.map((subItem) => (
                                   <Link
                                     key={subItem.label}
                                     href={subItem.href}
-                                    className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700/30 hover:text-white transition-colors rounded-md"
+                                    className="block px-3 py-2 text-xs sm:text-sm text-gray-300 hover:bg-gray-700/30 hover:text-white transition-colors rounded-md truncate"
                                     onClick={() => setMenuOpen(false)}
                                   >
                                     {subItem.label}
@@ -374,7 +375,7 @@ export default function Header() {
                           <li key={item.label}>
                             <Link
                               href={item.href}
-                              className="block px-4 py-3 text-base text-gray-300 hover:bg-gray-700/50 hover:text-white transition-colors rounded-md"
+                              className="block px-3 py-3 text-sm sm:text-base text-gray-300 hover:bg-gray-700/50 hover:text-white transition-colors rounded-md truncate"
                               onClick={() => setMenuOpen(false)}
                             >
                               {item.label}

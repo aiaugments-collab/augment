@@ -44,21 +44,21 @@ export function ProductHero({
         }}
       />
 
-      <div className="relative max-w-7xl mx-auto px-6 lg:px-8">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Hero Content - Two Column Layout */}
-        <div className="grid lg:grid-cols-12 gap-6 lg:gap-8 py-8 lg:py-12">
+        <div className="grid lg:grid-cols-12 gap-6 lg:gap-8 py-6 sm:py-8 lg:py-12">
           {/* Left Column - Content */}
           <div className="lg:col-span-6 flex flex-col justify-center">
             {/* Title with Oracle accent - Using Oracle's exact sizing (3.6rem = ~36px, scaled down to ~22px) */}
-            <h1 className="text-2xl lg:text-3xl font-normal text-[#161513] mb-4 leading-tight" style={{ fontFamily: 'var(--oracleserif)' }}>
+            <h1 className="text-xl sm:text-2xl lg:text-3xl font-normal text-[#161513] mb-3 sm:mb-4 leading-tight" style={{ fontFamily: 'var(--oracleserif)' }}>
               <span className="text-[#C74634]">Augment</span> {title}
             </h1>
 
             {/* Oracle-style accent line - smaller */}
-            <div className="w-12 h-0.5 bg-[#C74634] mb-4" />
+            <div className="w-12 h-0.5 bg-[#C74634] mb-3 sm:mb-4" />
 
             {/* Description - Oracle uses 1.8rem, scaled down to ~16px */}
-            <div className="text-base lg:text-lg text-gray-700 mb-6 leading-relaxed max-w-2xl" style={{ fontFamily: 'var(--oraclesans)' }}>
+            <div className="text-sm sm:text-base lg:text-lg text-gray-700 mb-4 sm:mb-6 leading-relaxed max-w-2xl" style={{ fontFamily: 'var(--oraclesans)' }}>
               {description}
             </div>
 
@@ -69,7 +69,7 @@ export function ProductHero({
                   key={index}
                   href={button.href}
                   className={`
-                    inline-flex items-center justify-center px-5 py-2.5 font-semibold text-sm
+                    inline-flex items-center justify-center px-4 sm:px-5 py-2.5 font-semibold text-sm
                     transition-all duration-300 hover:scale-105
                     ${button.variant === 'primary' 
                       ? 'bg-[#C74634] text-white hover:bg-[#A63429] shadow-md hover:shadow-lg' 
@@ -85,8 +85,8 @@ export function ProductHero({
           </div>
 
           {/* Right Column - Media */}
-          <div className="lg:col-span-6 flex items-center justify-center">
-            <div className="relative w-full max-w-md">
+          <div className="lg:col-span-6 flex items-center justify-center mt-6 lg:mt-0">
+            <div className="relative w-full max-w-xs sm:max-w-sm lg:max-w-md">
               {mediaType === 'mockup' && mockup ? (
                 <div className="rounded-lg overflow-hidden shadow-lg">
                   <MockupInterface
@@ -134,7 +134,7 @@ export function ProductHero({
                     alt={mediaAlt}
                     width={400}
                     height={300}
-                    className="w-full h-auto"
+                    className="w-full h-auto max-h-64 sm:max-h-80 lg:max-h-none object-cover"
                     mockupType="dashboard"
                   />
                 </div>

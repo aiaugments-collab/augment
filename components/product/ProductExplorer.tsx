@@ -41,7 +41,7 @@ export function ProductExplorer({ title, tabs, className = "" }: ProductExplorer
   const currentTab = tabs.find(tab => tab.id === activeTab);
 
   return (
-    <section className={`relative py-16 ${className}`} style={{ backgroundColor: '#f5f5f5' }}>
+    <section className={`relative py-8 sm:py-12 lg:py-16 ${className}`} style={{ backgroundColor: '#f5f5f5' }}>
       {/* Background pattern - Oracle style */}
       <div 
         className="absolute inset-0 opacity-[0.08]"
@@ -50,20 +50,20 @@ export function ProductExplorer({ title, tabs, className = "" }: ProductExplorer
         }}
       />
 
-      <div className="relative max-w-7xl mx-auto px-6 lg:px-8">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Title */}
-        <div className="mb-12">
+        <div className="mb-6 sm:mb-8 lg:mb-12">
           <h2 
-            className="text-2xl lg:text-3xl font-normal text-[#161513] mb-4"
+            className="text-xl sm:text-2xl lg:text-3xl font-normal text-[#161513] mb-3 sm:mb-4"
             style={{ fontFamily: 'var(--oracleserif)' }}
           >
-            <span className="text-[#4A90E2] mr-4">
+            <span className="text-[#4A90E2] mr-2 sm:mr-4">
               Explore
             </span>
             {title}
           </h2>
           {/* Oracle-style accent line */}
-          <div className="w-16 h-0.5 bg-[#C74634] mt-4" />
+          <div className="w-12 sm:w-16 h-0.5 bg-[#C74634] mt-3 sm:mt-4" />
         </div>
 
         {/* Main Layout: Sidebar + Content */}
@@ -72,11 +72,11 @@ export function ProductExplorer({ title, tabs, className = "" }: ProductExplorer
           {/* Left Sidebar Navigation - Oracle RC30w2 */}
           <div className="w-full lg:w-80 relative z-10 lg:pt-10">
             {/* Mobile dropdown */}
-            <div className="lg:hidden mb-6">
+            <div className="lg:hidden mb-4 sm:mb-6">
               <select 
                 value={activeTab}
                 onChange={(e) => setActiveTab(e.target.value)}
-                className="w-full p-3 border border-gray-300 rounded-md bg-white text-[#161513]"
+                className="w-full p-2 sm:p-3 border border-gray-300 rounded-md bg-white text-[#161513] text-sm sm:text-base"
                 style={{ fontFamily: 'var(--oraclesans)' }}
               >
                 {tabs.map(tab => (
@@ -109,13 +109,13 @@ export function ProductExplorer({ title, tabs, className = "" }: ProductExplorer
           {/* Main Content Area - Oracle RC30w3 */}
           <div className="flex-1 lg:ml-[-2rem] relative z-5 bg-white rounded-lg shadow-sm">
             {currentTab && (
-              <div className="grid lg:grid-cols-2 gap-8 p-8 lg:p-12 min-h-[400px]">
+              <div className="grid lg:grid-cols-2 gap-4 sm:gap-6 lg:gap-8 p-3 sm:p-6 lg:p-12 min-h-[300px] sm:min-h-[400px]">
                 
                 {/* Left: Content */}
-                <div className="lg:col-span-1 flex flex-col">
+                <div className="lg:col-span-1 flex flex-col min-w-0">
                   {/* Title */}
                   <h3 
-                    className="text-xl lg:text-2xl font-semibold text-[#161513] mb-4 leading-tight"
+                    className="text-base sm:text-lg lg:text-xl font-semibold text-[#161513] mb-2 sm:mb-3 leading-tight break-words"
                     style={{ fontFamily: 'var(--oraclesans)' }}
                   >
                     {currentTab.content.title}
@@ -123,49 +123,52 @@ export function ProductExplorer({ title, tabs, className = "" }: ProductExplorer
 
                   {/* Description */}
                   <p 
-                    className="text-gray-700 text-base leading-relaxed mb-6 flex-grow"
+                    className="text-gray-700 text-xs sm:text-sm lg:text-base leading-relaxed mb-3 sm:mb-4 flex-grow break-words"
                     style={{ fontFamily: 'var(--oraclesans)' }}
                   >
                     {currentTab.content.description}
                   </p>
 
                   {/* CTA Buttons */}
-                  <div className="flex flex-col sm:flex-row gap-3 mb-8">
+                  <div className="flex flex-col gap-2 mb-4 sm:mb-6 -mx-1">
                     {currentTab.content.buttons.map((button, index) => (
                       <a
                         key={index}
                         href={button.href}
                         className={`
-                          inline-flex items-center justify-center px-5 py-2.5 font-semibold text-sm
-                          transition-all duration-300 hover:scale-105
+                          inline-flex items-center justify-center px-1 py-1.5 font-medium text-xs
+                          transition-all duration-300 mx-1 overflow-hidden
                           ${button.variant === 'primary' 
                             ? 'bg-[#161513] text-white hover:bg-[#2a2a2a]' 
-                            : 'border-2 border-[#161513] text-[#161513] hover:bg-[#161513] hover:text-white'
+                            : 'border border-[#161513] text-[#161513] hover:bg-[#161513] hover:text-white'
                           }
                         `}
-                        style={{ fontFamily: 'var(--oraclesans)' }}
+                        style={{ 
+                          fontFamily: 'var(--oraclesans)',
+                          maxWidth: 'calc(100% - 8px)'
+                        }}
                       >
-                        {button.text}
+                        <span className="truncate px-1">{button.text}</span>
                       </a>
                     ))}
                   </div>
 
                   {/* Features List */}
-                  <div>
+                  <div className="min-w-0">
                     <h4 
-                      className="text-lg font-semibold text-[#161513] mb-3"
+                      className="text-sm sm:text-base font-semibold text-[#161513] mb-2 break-words"
                       style={{ fontFamily: 'var(--oraclesans)' }}
                     >
                       {currentTab.content.features.title}
                     </h4>
                     <ul 
-                      className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm text-gray-700"
+                      className="grid grid-cols-1 gap-1 text-xs text-gray-700"
                       style={{ fontFamily: 'var(--oraclesans)' }}
                     >
                       {currentTab.content.features.items.map((feature, index) => (
-                        <li key={index} className="flex items-start">
-                          <span className="text-[#C74634] mr-2">–</span>
-                          {feature}
+                        <li key={index} className="flex items-start min-w-0">
+                          <span className="text-[#C74634] mr-1 flex-shrink-0 text-xs">–</span>
+                          <span className="leading-relaxed break-words min-w-0 flex-1">{feature}</span>
                         </li>
                       ))}
                     </ul>
@@ -173,8 +176,8 @@ export function ProductExplorer({ title, tabs, className = "" }: ProductExplorer
                 </div>
 
                 {/* Right: Product Image or Mockup */}
-                <div className="lg:col-span-1 flex items-center justify-center">
-                  <div className="w-full">
+                <div className="lg:col-span-1 flex items-center justify-center mt-4 lg:mt-0">
+                  <div className="w-full max-w-sm sm:max-w-md lg:max-w-none">
                     {currentTab.content.mockup ? (
                       <MockupInterface
                         type={currentTab.content.mockup.type}
@@ -188,12 +191,12 @@ export function ProductExplorer({ title, tabs, className = "" }: ProductExplorer
                         alt={currentTab.content.imageAlt || "Product interface"}
                         width={400}
                         height={300}
-                        className="w-full h-auto rounded-lg shadow-lg"
+                        className="w-full h-auto rounded-lg shadow-lg max-h-64 sm:max-h-80 lg:max-h-none object-cover"
                         mockupType="interface"
                       />
                     ) : (
-                      <div className="w-full h-80 bg-gray-100 rounded-lg shadow-lg flex items-center justify-center">
-                        <span className="text-gray-400">Product Preview</span>
+                      <div className="w-full h-48 sm:h-64 lg:h-80 bg-gray-100 rounded-lg shadow-lg flex items-center justify-center">
+                        <span className="text-gray-400 text-sm sm:text-base">Product Preview</span>
                       </div>
                     )}
                   </div>

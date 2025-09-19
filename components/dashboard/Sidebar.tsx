@@ -130,7 +130,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
         className={`
           fixed top-0 left-0 h-screen w-64 z-50 transform transition-transform duration-300 ease-in-out flex flex-col
           lg:translate-x-0 lg:fixed lg:z-auto
-          ${isOpen ? 'translate-x-0' : '-translate-x-full'}
+          ${isOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'}
         `}
         style={{ 
           backgroundColor: "#312a2a",
@@ -139,13 +139,13 @@ export const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
         }}
       >
         {/* Header */}
-        <div className="flex items-center justify-between p-6" style={{ borderBottom: "1px solid #665f5b" }}>
-          <Link href="/dashboard" className="flex items-center">
-            <img src="/augment-logo.svg" alt="Augment" className="" />
+        <div className="flex items-center justify-between p-4 sm:p-6" style={{ borderBottom: "1px solid #665f5b" }}>
+          <Link href="/dashboard" className="flex items-center" onClick={onClose}>
+            <img src="/augment-logo.svg" alt="Augment" className="h-6 sm:h-8" />
           </Link>
           <button
             onClick={onClose}
-            className="lg:hidden p-2 rounded-sm text-gray-300 hover:text-white hover:bg-gray-700/50"
+            className="lg:hidden p-2 rounded-sm text-gray-300 hover:text-white hover:bg-gray-700/50 transition-colors"
           >
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -154,17 +154,17 @@ export const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
         </div>
 
         {/* User Info */}
-        <div className="p-6" style={{ borderBottom: "1px solid #665f5b" }}>
+        <div className="p-4 sm:p-6" style={{ borderBottom: "1px solid #665f5b" }}>
           <div className="flex items-center space-x-3">
             {currentUser?.profileImageUrl ? (
               <img
                 src={currentUser.profileImageUrl}
                 alt="Profile"
-                className="w-10 h-10 rounded-full"
+                className="w-8 h-8 sm:w-10 sm:h-10 rounded-full"
               />
             ) : (
               <div 
-                className="w-10 h-10 rounded-full flex items-center justify-center text-white text-sm font-medium"
+                className="w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center text-white text-xs sm:text-sm font-medium"
                 style={{ backgroundColor: "#C74634" }}
               >
                 {(currentUser?.displayName || currentUser?.primaryEmail || 'U')[0].toUpperCase()}
@@ -182,14 +182,14 @@ export const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
         </div>
 
         {/* Navigation */}
-        <nav className="flex-1 overflow-y-auto p-6">
+        <nav className="flex-1 overflow-y-auto p-4 sm:p-6">
           <ul className="space-y-1">
             {sidebarItems.map((item) => (
               <li key={item.id}>
                 <Link
                   href={item.href}
                   className={`
-                    flex items-center justify-between px-3 py-2 text-sm font-medium rounded-sm transition-colors
+                    flex items-center justify-between px-3 py-3 sm:py-2 text-sm font-medium rounded-sm transition-colors
                     ${isActive(item.href)
                       ? 'text-white'
                       : 'text-gray-300 hover:bg-gray-700/50 hover:text-white'
@@ -199,11 +199,13 @@ export const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
                   onClick={onClose}
                 >
                   <div className="flex items-center space-x-3">
-                    {item.icon}
-                    <span>{item.label}</span>
+                    <div className="flex-shrink-0">
+                      {item.icon}
+                    </div>
+                    <span className="truncate">{item.label}</span>
                   </div>
                   {item.badge && (
-                    <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-gray-100 text-gray-800">
+                    <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-gray-100 text-gray-800 flex-shrink-0">
                       {item.badge}
                     </span>
                   )}
@@ -217,12 +219,15 @@ export const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
         <div className="p-4" style={{ borderTop: "1px solid #665f5b" }}>
           <Link
             href="/corporate/contact/"
-            className="flex items-center space-x-3 px-3 py-2 text-sm text-gray-400 hover:bg-gray-700/30 hover:text-gray-200 rounded-sm transition-colors"
+            className="flex items-center space-x-3 px-3 py-3 sm:py-2 text-sm text-gray-400 hover:bg-gray-700/30 hover:text-gray-200 rounded-sm transition-colors"
+            onClick={onClose}
           >
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-            </svg>
-            <span>Help & Support</span>
+            <div className="flex-shrink-0">
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <span className="truncate">Help & Support</span>
           </Link>
         </div>
       </div>
