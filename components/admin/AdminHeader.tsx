@@ -15,14 +15,14 @@ export default function AdminHeader({
 }: AdminHeaderProps) {
   return (
     <header 
-      className="sticky top-0 z-40 bg-white border-b border-gray-200"
+      className="sticky top-0 z-40 bg-[#1e3a5f] border-b border-gray-200"
       style={{ 
         fontFamily: "var(--oraclesans, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif)"
       }}
     >
       <div className="flex items-center justify-between h-16 px-4 sm:px-6">
         {/* Left Section */}
-        <div className="flex items-center space-x-4">
+        <div className="flex items-center space-x-4 ">
           {/* Mobile menu button - only show on tablet */}
           {showMobileMenuButton && (
             <button
@@ -35,14 +35,14 @@ export default function AdminHeader({
           
           {/* Logo */}
           <Link href="/admin" className="flex items-center">
-            <div className="flex items-center space-x-3">
+            <div className="flex items-center text-white space-x-3">
               <img 
                 src="/augment-logo.svg" 
                 alt="Augment Admin" 
                 className="h-8 w-auto"
               />
               <div className="hidden sm:block">
-                <span className="text-lg font-semibold text-[#1e3a5f]">Admin</span>
+                <span className="text-lg font-semibold text-white">Super Admin</span>
               </div>
             </div>
           </Link>
@@ -70,12 +70,12 @@ export default function AdminHeader({
         {/* Right Section */}
         <div className="flex items-center space-x-2 sm:space-x-4">
           {/* Mobile search button */}
-          <button className="md:hidden p-2 rounded-lg text-gray-600 hover:text-[#1e3a5f] hover:bg-gray-100 transition-colors">
+          <button className="md:hidden p-2 rounded-lg text-white hover:text-[#1e3a5f] hover:bg-gray-100 transition-colors">
             <Search className="w-5 h-5" />
           </button>
 
           {/* Notifications */}
-          <button className="p-2 rounded-lg text-gray-600 hover:text-[#1e3a5f] hover:bg-gray-100 transition-colors relative">
+          <button className="p-2 rounded-lg text-white hover:text-[#1e3a5f] hover:bg-gray-100 transition-colors relative">
             <Bell className="w-5 h-5" />
             <span className="absolute -top-1 -right-1 h-4 w-4 bg-[#c74634] text-white text-xs rounded-full flex items-center justify-center">
               3
@@ -84,11 +84,11 @@ export default function AdminHeader({
 
           {/* User Profile */}
           <div className="relative">
-            <button className="flex items-center space-x-2 p-2 rounded-lg text-gray-600 hover:text-[#1e3a5f] hover:bg-gray-100 transition-colors">
-              <div className="w-8 h-8 bg-[#1e3a5f] rounded-full flex items-center justify-center">
-                <User className="w-4 h-4 text-white" />
+            <button className="flex items-center space-x-2 p-2 rounded-l text-white hover:text-[#1e3a5f] hover:bg-gray-100 transition-colors">
+              <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center">
+                <User className="w-4 h-4 text-[#1e3a5f]" />
               </div>
-              <span className="hidden sm:block text-sm font-medium text-gray-700">
+              <span className="hidden sm:block text-sm font-medium text-[#1e3a5f]">
                 Admin
               </span>
             </button>
