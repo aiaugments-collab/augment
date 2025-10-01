@@ -350,6 +350,36 @@ export const AI_AGENT_PRODUCTS: Product[] = [
     productUrl: '/docs/aether-cli'
   },
   {
+    id: 'augmentos',
+    name: 'AugmentOS',
+    shortName: 'AugmentOS',
+    description: 'Enterprise-grade AI-powered browser that transforms your workflow with intelligent automation. Just describe your task in plain language — it handles all the clicking, typing, and navigating for you. A privacy-first alternative to Chrome, built for the AI era.',
+    shortDescription: 'Enterprise AI Browser with intelligent automation',
+    category: 'ai-agent',
+    href: '/product/augmentos',
+    icon: 'bot',
+    featured: true,
+    status: 'live',
+    tags: ['AI Browser', 'Automation', 'Privacy', 'Enterprise', 'Workflow', 'Natural Language'],
+    image: '/products/augmentos/01.png',
+    productUrl: 'https://augmentos.augment.cfd/'
+  },
+  {
+    id: 'agentforge',
+    name: 'AgentForge',
+    shortName: 'AgentForge',
+    description: 'No-code AI automation platform with smart agents. Build AI agents that can think and act across 431 tools, customizable, and secure platform for enterprise automation workflows.',
+    shortDescription: 'AI Agents & Automation Platform with 431+ integrations',
+    category: 'ai-agent',
+    href: '/product/agentforge',
+    icon: 'workflow',
+    featured: true,
+    status: 'live',
+    tags: ['AI Agents', 'No-Code', 'Automation', 'Open Source', 'Enterprise', 'Workflow', 'Integrations'],
+    image: '/products/agentforge/01.png',
+    productUrl: 'https://agentforge.augment.cfd/'
+  },
+  {
     id: 'synapse-sdk',
     name: 'Synapse SDK',
     shortName: 'Synapse',

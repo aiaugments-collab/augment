@@ -39,30 +39,30 @@ export default function AIWorkflowBuilderDocsPage() {
             <img src="/ai-workflow-builder.svg" alt="AI WorkflowBuilder" className="w-12 h-12" />
             <div>
               <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">AI WorkflowBuilder</h1>
-              <p className="text-base sm:text-lg text-gray-600">Natural language to intelligent automation workflows</p>
+              <p className="text-base sm:text-lg text-gray-600">AI-powered platform for building and deploying intelligent automation workflows from natural language</p>
             </div>
           </div>
 
           {/* Key Capabilities Cards */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
             <FeatureCard
-              title="Natural Language Processing"
-              description="Convert plain English descriptions into executable automation workflows"
+              title="Natural Language Workflow Creation"
+              description="Convert plain English descriptions into executable automation workflows with advanced NLP and AI agent orchestration"
               icon=""
             />
             <FeatureCard
-              title="Smart API Connections"
-              description="Intelligently connect APIs, services, and tools to create complex automation pipelines"
+              title="Visual Workflow Editor"
+              description="ReactFlow-based interactive workflow design with real-time collaboration and drag-and-drop components"
               icon=""
             />
             <FeatureCard
-              title="Visual Workflow Designer"
-              description="Intuitive drag-and-drop interface with AI-powered workflow suggestions"
+              title="AI Agent Orchestration"
+              description="Advanced multi-agent coordination with intelligent task distribution and performance monitoring"
               icon=""
             />
             <FeatureCard
-              title="Enterprise Integration"
-              description="Seamless integration with popular business tools and enterprise systems"
+              title="Real-Time Execution Engine"
+              description="Socket.io-based real-time execution monitoring with Trigger.dev background processing and scalability"
               icon=""
             />
           </div>
@@ -80,24 +80,24 @@ export default function AIWorkflowBuilderDocsPage() {
                 <div className="p-6">
                   <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 mb-6">
                     <div className="bg-purple-50 p-3 sm:p-4 rounded-lg border border-purple-200">
-                      <div className="text-xl sm:text-2xl font-bold text-purple-600">127</div>
+                      <div className="text-xl sm:text-2xl font-bold text-purple-600">1,247</div>
                       <div className="text-xs sm:text-sm text-purple-700">Active Workflows</div>
                     </div>
                     <div className="bg-green-50 p-3 sm:p-4 rounded-lg border border-green-200">
-                      <div className="text-xl sm:text-2xl font-bold text-green-600">98.7%</div>
+                      <div className="text-xl sm:text-2xl font-bold text-green-600">95%</div>
                       <div className="text-xs sm:text-sm text-green-700">Success Rate</div>
                     </div>
                     <div className="bg-blue-50 p-3 sm:p-4 rounded-lg border border-blue-200">
-                      <div className="text-xl sm:text-2xl font-bold text-blue-600">45.2K</div>
-                      <div className="text-xs sm:text-sm text-blue-700">Executions Today</div>
+                      <div className="text-xl sm:text-2xl font-bold text-blue-600">10K+</div>
+                      <div className="text-xs sm:text-sm text-blue-700">Concurrent Users</div>
                     </div>
                     <div className="bg-orange-50 p-3 sm:p-4 rounded-lg border border-orange-200">
-                      <div className="text-xl sm:text-2xl font-bold text-orange-600">3.2s</div>
-                      <div className="text-xs sm:text-sm text-orange-700">Avg Execution Time</div>
+                      <div className="text-xl sm:text-2xl font-bold text-orange-600">&lt;30s</div>
+                      <div className="text-xs sm:text-sm text-orange-700">Workflow Creation</div>
                     </div>
                   </div>
                   <div className="text-sm text-gray-600 text-center">
-                    AI-powered workflow automation with natural language processing
+                    Next.js + Bun + PostgreSQL + ReactFlow + Socket.io platform for intelligent automation
                   </div>
                 </div>
               </div>
@@ -113,28 +113,38 @@ export default function AIWorkflowBuilderDocsPage() {
 
             <h3 className="text-xl font-semibold text-gray-900 mb-3">System Requirements</h3>
             <ul className="list-disc list-inside text-gray-700 mb-6 space-y-2">
-              <li>Node.js 18 or higher</li>
-              <li>Python 3.9+ (for AI processing)</li>
-              <li>Docker 20.0+ (for workflow execution)</li>
-              <li>Minimum 8GB RAM (16GB recommended for complex workflows)</li>
-              <li>Network access for API integrations</li>
+              <li>Bun runtime for high-performance JavaScript execution</li>
+              <li>PostgreSQL 12+ with pgvector extension for AI embeddings</li>
+              <li>Docker 20.0+ for containerized deployment</li>
+              <li>Minimum 8GB RAM (16GB recommended for AI agent orchestration)</li>
+              <li>Network access for real-time collaboration and API integrations</li>
             </ul>
 
             <h3 className="text-xl font-semibold text-gray-900 mb-3">Install via Package Manager</h3>
             <CodeBlock language="bash" title="Installation">
-{`# Install via npm
-npm install -g @augment/workflow-builder
+{`# Clone the repository
+git clone https://github.com/aiaugments-collab/ai-workflow-builder
+cd ai-workflow-builder
 
-# Install via pip for Python components
-pip install augment-workflow-builder
+# Install dependencies with Bun
+bun install
 
-# Install from source
-git clone https://github.com/augment-ai/workflow-builder
-cd workflow-builder
-npm install && npm run build
+# Set up PostgreSQL with pgvector
+docker run --name workflow-db \\
+  -e POSTGRES_PASSWORD=your_password \\
+  -e POSTGRES_DB=workflow_builder \\
+  -p 5432:5432 -d \\
+  pgvector/pgvector:pg17
 
-# Verify installation
-workflow-builder --version`}
+# Configure environment
+cp apps/sim/.env.example apps/sim/.env
+
+# Run database migrations
+cd packages/db
+bunx drizzle-kit migrate --config=./drizzle.config.ts
+
+# Start development servers
+bun run dev:full`}
             </CodeBlock>
 
             <h3 className="text-xl font-semibold text-gray-900 mb-3">Authentication Setup</h3>
