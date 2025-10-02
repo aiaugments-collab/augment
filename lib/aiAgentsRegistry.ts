@@ -36,7 +36,7 @@ export const AI_AGENT_PRODUCTS: Product[] = [
   },
   {
     id: 'flow',
-    name: 'Text-Controlled Automation Apps',
+    name: 'Augment Flow',
     shortName: 'Flow',
     description: 'AI Agent that works even when you\'re away. Your words become actions across every platform you use. 200+ apps working towards a future where technology acts, not just responds.',
     shortDescription: 'AI-powered workflow automation across 200+ apps',

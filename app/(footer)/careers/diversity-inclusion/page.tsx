@@ -18,7 +18,7 @@ export default function DiversityInclusionPage() {
   const heroButtons = [
     {
       text: 'Join Our Team',
-      href: 'https://careers.augment.com/jobs',
+      href: '/careers',
       variant: 'primary' as const,
       target: '_blank' as const
     },
@@ -107,7 +107,7 @@ export default function DiversityInclusionPage() {
     {
       title: 'Join Our Inclusive Team',
       description: 'Explore career opportunities and be part of building the future of AI.',
-      href: 'https://careers.augment.com/jobs',
+      href: '/careers',
       buttonText: 'View open positions',
       icon: '',
       target: '_blank' as const

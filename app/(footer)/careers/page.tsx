@@ -76,7 +76,7 @@ export default function CareersPage() {
   const heroButtons = [
     {
       text: 'Search Jobs',
-      href: 'https://careers.augment.com/jobs',
+      href: '/careers',
       variant: 'primary' as const,
       target: '_blank' as const
     }
@@ -179,7 +179,7 @@ export default function CareersPage() {
     {
       title: 'Apply today',
       description: 'Explore open roles and find the future of your career.',
-      href: 'https://careers.augment.com/jobs',
+      href: '/careers',
       buttonText: 'Search jobs',
       icon: <FileText className="w-6 h-6" />,
       target: '_blank' as const

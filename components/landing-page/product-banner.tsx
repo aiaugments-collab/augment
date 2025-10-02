@@ -2,7 +2,7 @@
 
 export function ProductBanner() {
   return (
-    <section 
+    <section
       className="rc20v1 rc20v3 rc20v4 rh02 rh02v1"
       data-trackas="rc20"
       data-a11y="true"
@@ -10,33 +10,33 @@ export function ProductBanner() {
         position: "relative",
         width: "100%",
         height: "auto",
-        minHeight: "400px"
+        minHeight: "400px",
       }}
     >
-              <div 
-          id="rc20panels" 
-          className="rh02w1 rc20panels flex flex-col md:flex-row"
-          style={{
-            position: "relative",
-            overflow: "hidden",
-            width: "100%",
-            height: "auto",
-            minHeight: "100%"
-          }}
-        >
+      <div
+        id="rc20panels"
+        className="rh02w1 rc20panels flex flex-col md:flex-row"
+        style={{
+          position: "relative",
+          overflow: "hidden",
+          width: "100%",
+          height: "auto",
+          minHeight: "100%",
+        }}
+      >
         {/* Cloud Applications Panel - Left */}
-        <div 
-          id="rc20p1" 
+        <div
+          id="rc20p1"
           className="rh02panel rh02p1 w-full md:w-1/2"
           data-trackas="rc20:panel1"
           style={{
             height: "auto",
             minHeight: "300px",
             position: "relative",
-            overflow: "hidden"
+            overflow: "hidden",
           }}
         >
-          <div 
+          <div
             className="rh02w2 darktheme rh02defpanel"
             style={{
               position: "absolute",
@@ -45,23 +45,31 @@ export function ProductBanner() {
               right: 0,
               bottom: 0,
               backgroundColor: "#577346",
-              backgroundImage: "url('https://www.oracle.com/asset/web/i/rh02-panel2.jpg')",
+              backgroundImage:
+                "url('https://www.oracle.com/asset/web/i/rh02-panel2.jpg')",
               backgroundSize: "cover",
               backgroundPosition: "center",
               display: "flex",
               alignItems: "center",
               justifyContent: "flex-end",
-              padding: "0 24px"
+              padding: "0 24px",
             }}
           >
-            <div className="rh02w5" style={{ textAlign: "right", maxWidth: "400px", marginLeft: "auto" }}>
-              <div 
+            <div
+              className="rh02w5"
+              style={{
+                textAlign: "right",
+                maxWidth: "400px",
+                marginLeft: "auto",
+              }}
+            >
+              <div
                 className="rh02-pcontent focus-visible"
                 data-lbl="panel1-home-apps-content-area"
               >
-                <h1 
-                  role="heading" 
-                  aria-level={2} 
+                <h1
+                  role="heading"
+                  aria-level={2}
                   className="rh02-ttl oracleprefix"
                   style={{
                     fontSize: "32px",
@@ -70,13 +78,13 @@ export function ProductBanner() {
                     color: "#fff",
                     marginBottom: "16px",
                     fontFamily: "Times, serif",
-                    textAlign: "right"
+                    textAlign: "right",
                   }}
                 >
                   Cloud <b style={{ fontWeight: "700" }}>Applications</b>
                 </h1>
-                
-                <div 
+
+                <div
                   className="rh02-sub"
                   style={{
                     fontSize: "14px",
@@ -84,17 +92,18 @@ export function ProductBanner() {
                     color: "#fff",
                     marginBottom: "24px",
                     opacity: 0.95,
-                    textAlign: "right"
+                    textAlign: "right",
                   }}
                 >
-                  A complete suite of cloud applications delivering consistent processes and data across your business Cloud
+                  A complete suite of cloud applications delivering consistent
+                  processes and data across your business Cloud
                 </div>
-                
+
                 <div className="rh02-cta" style={{ textAlign: "right" }}>
                   <div className="obttns">
                     <div>
-                      <a 
-                        data-lbl="panel1-home-apps-learn-more" 
+                      <a
+                        data-lbl="panel1-home-apps-learn-more"
                         href="/product/"
                         style={{
                           backgroundColor: "transparent",
@@ -107,14 +116,16 @@ export function ProductBanner() {
                           fontWeight: "600",
                           display: "inline-block",
                           transition: "all 0.3s ease",
-                          textTransform: "none"
+                          textTransform: "none",
                         }}
                         onMouseEnter={(e) => {
-                          (e.target as HTMLElement).style.backgroundColor = "#fff";
+                          (e.target as HTMLElement).style.backgroundColor =
+                            "#fff";
                           (e.target as HTMLElement).style.color = "#577346";
                         }}
                         onMouseLeave={(e) => {
-                          (e.target as HTMLElement).style.backgroundColor = "transparent";
+                          (e.target as HTMLElement).style.backgroundColor =
+                            "transparent";
                           (e.target as HTMLElement).style.color = "#fff";
                         }}
                       >
@@ -129,18 +140,18 @@ export function ProductBanner() {
         </div>
 
         {/* AI Agents Panel - Right */}
-        <div 
-          id="rc20p2" 
+        <div
+          id="rc20p2"
           className="rh02panel rh02p2 w-full md:w-1/2"
           data-trackas="rc20:panel2"
           style={{
             height: "auto",
             minHeight: "300px",
             position: "relative",
-            overflow: "hidden"
+            overflow: "hidden",
           }}
         >
-          <div 
+          <div
             className="rh02w2 darktheme rh02defpanel"
             style={{
               position: "absolute",
@@ -149,23 +160,31 @@ export function ProductBanner() {
               right: 0,
               bottom: 0,
               backgroundColor: "#4a5c6a",
-              backgroundImage: "url('https://www.oracle.com/asset/web/i/rh02-panel1.jpg')",
+              backgroundImage:
+                "url('https://www.oracle.com/asset/web/i/rh02-panel1.jpg')",
               backgroundSize: "cover",
               backgroundPosition: "center",
               display: "flex",
               alignItems: "center",
               justifyContent: "flex-start",
-              padding: "0 24px"
+              padding: "0 24px",
             }}
           >
-            <div className="rh02w5" style={{ textAlign: "left", maxWidth: "400px", marginRight: "auto" }}>
-              <div 
+            <div
+              className="rh02w5"
+              style={{
+                textAlign: "left",
+                maxWidth: "400px",
+                marginRight: "auto",
+              }}
+            >
+              <div
                 className="rh02-pcontent focus-visible"
                 data-lbl="panel2-home-ai-content-area"
               >
-                <h1 
-                  role="heading" 
-                  aria-level={2} 
+                <h1
+                  role="heading"
+                  aria-level={2}
                   className="rh02-ttl oracleprefix"
                   style={{
                     fontSize: "32px",
@@ -174,13 +193,13 @@ export function ProductBanner() {
                     color: "#fff",
                     marginBottom: "16px",
                     fontFamily: "Times, serif",
-                    textAlign: "left"
+                    textAlign: "left",
                   }}
                 >
                   Augment <b style={{ fontWeight: "700" }}>AI Agents</b>
                 </h1>
-                
-                <div 
+
+                <div
                   className="rh02-sub"
                   style={{
                     fontSize: "14px",
@@ -188,17 +207,18 @@ export function ProductBanner() {
                     color: "#fff",
                     marginBottom: "24px",
                     opacity: 0.95,
-                    textAlign: "left"
+                    textAlign: "left",
                   }}
                 >
-                  Intelligent automation agents that understand context, learn from interactions, and execute complex tasks across your business processes
+                  Cloud Agents An automation, secure platforms for migrating
+                  enterprise workloads and building new cloud native apps
                 </div>
-                
+
                 <div className="rh02-cta" style={{ textAlign: "left" }}>
                   <div className="obttns">
                     <div>
-                      <a 
-                        data-lbl="panel2-home-ai-learn-more" 
+                      <a
+                        data-lbl="panel2-home-ai-learn-more"
                         href="/product/"
                         style={{
                           backgroundColor: "transparent",
@@ -211,14 +231,16 @@ export function ProductBanner() {
                           fontWeight: "600",
                           display: "inline-block",
                           transition: "all 0.3s ease",
-                          textTransform: "none"
+                          textTransform: "none",
                         }}
                         onMouseEnter={(e) => {
-                          (e.target as HTMLElement).style.backgroundColor = "#fff";
+                          (e.target as HTMLElement).style.backgroundColor =
+                            "#fff";
                           (e.target as HTMLElement).style.color = "#4a5c6a";
                         }}
                         onMouseLeave={(e) => {
-                          (e.target as HTMLElement).style.backgroundColor = "transparent";
+                          (e.target as HTMLElement).style.backgroundColor =
+                            "transparent";
                           (e.target as HTMLElement).style.color = "#fff";
                         }}
                       >
