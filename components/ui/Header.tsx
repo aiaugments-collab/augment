@@ -162,37 +162,29 @@ export default function Header() {
               aria-label="Select country and language"
             >
               <svg className="w-6 h-4" viewBox="0 0 24 16" fill="none" aria-hidden="true">
-                {/* US Flag */}
-                <rect width="24" height="16" fill="#B22234"/>
-                <rect width="24" height="1.23" y="1.23" fill="white"/>
-                <rect width="24" height="1.23" y="3.69" fill="white"/>
-                <rect width="24" height="1.23" y="6.15" fill="white"/>
-                <rect width="24" height="1.23" y="8.62" fill="white"/>
-                <rect width="24" height="1.23" y="11.08" fill="white"/>
-                <rect width="24" height="1.23" y="13.54" fill="white"/>
-                <rect width="9.6" height="8.62" fill="#3C3B6E"/>
-                <g fill="white">
-                  <circle cx="2" cy="1.5" r="0.3"/>
-                  <circle cx="4" cy="1.5" r="0.3"/>
-                  <circle cx="6" cy="1.5" r="0.3"/>
-                  <circle cx="8" cy="1.5" r="0.3"/>
-                  <circle cx="3" cy="2.7" r="0.3"/>
-                  <circle cx="5" cy="2.7" r="0.3"/>
-                  <circle cx="7" cy="2.7" r="0.3"/>
-                  <circle cx="2" cy="3.9" r="0.3"/>
-                  <circle cx="4" cy="3.9" r="0.3"/>
-                  <circle cx="6" cy="3.9" r="0.3"/>
-                  <circle cx="8" cy="3.9" r="0.3"/>
-                  <circle cx="3" cy="5.1" r="0.3"/>
-                  <circle cx="5" cy="5.1" r="0.3"/>
-                  <circle cx="7" cy="5.1" r="0.3"/>
-                  <circle cx="2" cy="6.3" r="0.3"/>
-                  <circle cx="4" cy="6.3" r="0.3"/>
-                  <circle cx="6" cy="6.3" r="0.3"/>
-                  <circle cx="8" cy="6.3" r="0.3"/>
-                  <circle cx="3" cy="7.5" r="0.3"/>
-                  <circle cx="5" cy="7.5" r="0.3"/>
-                  <circle cx="7" cy="7.5" r="0.3"/>
+                {/* India Flag */}
+                {/* Saffron stripe */}
+                <rect width="24" height="5.33" fill="#FF9933"/>
+                {/* White stripe */}
+                <rect width="24" height="5.33" y="5.33" fill="white"/>
+                {/* Green stripe */}
+                <rect width="24" height="5.34" y="10.66" fill="#138808"/>
+                {/* Ashoka Chakra (wheel) */}
+                <circle cx="12" cy="8" r="2.5" fill="none" stroke="#000080" strokeWidth="0.3"/>
+                <g stroke="#000080" strokeWidth="0.15" fill="none">
+                  {/* 24 spokes of the Ashoka Chakra */}
+                  <line x1="12" y1="5.5" x2="12" y2="10.5"/>
+                  <line x1="14.5" y1="8" x2="9.5" y2="8"/>
+                  <line x1="13.77" y1="6.23" x2="10.23" y2="9.77"/>
+                  <line x1="13.77" y1="9.77" x2="10.23" y2="6.23"/>
+                  <line x1="13.25" y1="5.75" x2="10.75" y2="10.25"/>
+                  <line x1="13.25" y1="10.25" x2="10.75" y2="5.75"/>
+                  <line x1="14.25" y1="6.75" x2="9.75" y2="9.25"/>
+                  <line x1="14.25" y1="9.25" x2="9.75" y2="6.75"/>
+                  <line x1="12.65" y1="5.6" x2="11.35" y2="10.4"/>
+                  <line x1="11.35" y1="5.6" x2="12.65" y2="10.4"/>
+                  <line x1="14.4" y1="7.35" x2="9.6" y2="8.65"/>
+                  <line x1="14.4" y1="8.65" x2="9.6" y2="7.35"/>
                 </g>
               </svg>
             </button>
