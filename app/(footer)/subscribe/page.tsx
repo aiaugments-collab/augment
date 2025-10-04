@@ -345,7 +345,7 @@ export default function SubscribePage() {
                 Privacy Policy
               </a>
               <a
-                href="/subscribe/manage/"
+                href="#"
                 className="inline-flex items-center px-6 py-3 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-gray-900 transition-colors duration-200"
                 style={{ fontFamily: 'var(--oraclesans)' }}
               >

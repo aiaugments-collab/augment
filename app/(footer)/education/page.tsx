@@ -388,7 +388,7 @@ export default function EducationPage() {
                   </div>
                 </div>
                 <a
-                  href="/education/events/"
+                  href="/events"
                   className="inline-block mt-6 text-white hover:text-red-200 font-medium transition-colors duration-200"
                   style={{ fontFamily: 'var(--oraclesans)' }}
                 >

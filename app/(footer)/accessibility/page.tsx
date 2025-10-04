@@ -342,7 +342,7 @@ export default function AccessibilityPage() {
             </div>
             <div className="mt-8">
               <a
-                href="/corporate/accessibility/report/"
+                href="/corporate/contact/sales"
                 className="inline-flex items-center px-8 py-4 bg-white text-[#C74634] font-semibold rounded-lg hover:bg-gray-100 transition-colors duration-200 text-lg"
                 style={{ fontFamily: 'var(--oraclesans)' }}
               >

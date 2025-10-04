@@ -572,7 +572,7 @@ ai-code-reviewer test-connection`}
               <li>Check our <a href="/docs" className="text-blue-600 hover:text-blue-500">documentation</a> for detailed guides</li>
               <li>Visit our <a href="/community" className="text-blue-600 hover:text-blue-500">community forum</a> for community support</li>
               <li>Contact our <a href="/contact" className="text-blue-600 hover:text-blue-500">support team</a> for direct assistance</li>
-              <li>Report bugs on our <a href="/issues" className="text-blue-600 hover:text-blue-500">issue tracker</a></li>
+              <li>Report bugs to our <a href="/contact" className="text-blue-600 hover:text-blue-500">support team</a></li>
             </ul>
 
             <div className="bg-green-50 border border-green-200 rounded-lg p-4 mb-8">

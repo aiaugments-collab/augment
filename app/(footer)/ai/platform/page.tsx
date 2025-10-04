@@ -363,7 +363,7 @@ export default function AIPlatformPage() {
                   </div>
                 </div>
                 <a
-                  href="/ai/platform/technical-specs/"
+                  href="/product-docs"
                   className="inline-block mt-6 text-[#C74634] hover:text-[#A63429] font-medium transition-colors duration-200"
                   style={{ fontFamily: 'var(--oraclesans)' }}
                 >
@@ -394,14 +394,14 @@ export default function AIPlatformPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="/ai/platform/free-trial/"
+                href="/trial"
                 className="inline-flex items-center px-8 py-4 bg-white text-[#C74634] font-semibold rounded-lg hover:bg-gray-100 transition-colors duration-200 text-lg"
                 style={{ fontFamily: 'var(--oraclesans)' }}
               >
                 Start Free Trial
               </a>
               <a
-                href="/ai/platform/demo/"
+                href="/book-demo"
                 className="inline-flex items-center px-8 py-4 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-[#C74634] transition-colors duration-200 text-lg"
                 style={{ fontFamily: 'var(--oraclesans)' }}
               >

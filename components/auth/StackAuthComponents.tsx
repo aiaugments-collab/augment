@@ -12,7 +12,7 @@ export function UserProfile() {
     return (
       <div className="flex space-x-4">
         <Link 
-          href="/handler/signin" 
+          href="/auth/login" 
           className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
         >
           Sign In
@@ -60,7 +60,7 @@ export function ProtectedContent({ children }: { children: React.ReactNode }) {
             Please sign in to access this content.
           </p>
           <Link 
-            href="/handler/signin" 
+            href="/auth/login" 
             className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
           >
             Sign In
@@ -89,7 +89,7 @@ export function UserInfo() {
         <p><strong>Email Verified:</strong> {user.primaryEmailVerified ? 'Yes' : 'No'}</p>
         <div className="mt-4">
           <Link 
-            href="/handler/account-settings" 
+            href="/dashboard/account" 
             className="text-blue-600 hover:text-blue-800 underline"
           >
             Account Settings

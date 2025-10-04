@@ -380,14 +380,14 @@ export default function SocialImpactPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="/social-impact/partnerships/"
+                href="/partners"
                 className="inline-flex items-center px-8 py-4 bg-white text-[#C74634] font-semibold rounded-lg hover:bg-gray-100 transition-colors duration-200 text-lg"
                 style={{ fontFamily: 'var(--oraclesans)' }}
               >
                 Partner With Us
               </a>
               <a
-                href="/social-impact/contact/"
+                href="/corporate/contact/sales"
                 className="inline-flex items-center px-8 py-4 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-[#C74634] transition-colors duration-200 text-lg"
                 style={{ fontFamily: 'var(--oraclesans)' }}
               >

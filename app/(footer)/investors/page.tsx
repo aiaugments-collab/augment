@@ -315,7 +315,7 @@ export default function InvestorsPage() {
                   </div>
                 </div>
                 <a
-                  href="/investors/events/"
+                  href="/events"
                   className="inline-block mt-6 text-[#C74634] hover:text-[#A63429] font-medium transition-colors duration-200"
                   style={{ fontFamily: 'var(--oraclesans)' }}
                 >

@@ -33,9 +33,9 @@ export default function StackTestPage() {
               
               <h3 className="text-lg font-semibold mb-2">Available Features:</h3>
               <ul className="list-disc list-inside space-y-2 text-gray-600">
-                <li><strong>Email/Password Authentication:</strong> Visit <Link href="/handler/signup" className="text-blue-600 hover:underline">/handler/signup</Link></li>
+                <li><strong>Email/Password Authentication:</strong> Visit <Link href="/auth/register" className="text-blue-600 hover:underline">/auth/register</Link></li>
                 <li><strong>Google OAuth:</strong> Sign in with Google account</li>
-                <li><strong>Account Settings:</strong> Visit <Link href="/handler/account-settings" className="text-blue-600 hover:underline">/handler/account-settings</Link></li>
+                <li><strong>Account Settings:</strong> Visit <Link href="/dashboard/account" className="text-blue-600 hover:underline">/dashboard/account</Link></li>
                 <li><strong>Password Reset:</strong> Available in the sign-in flow</li>
                 <li><strong>Email Verification:</strong> Automatic email verification</li>
               </ul>
@@ -43,21 +43,21 @@ export default function StackTestPage() {
               <h3 className="text-lg font-semibold mb-2 mt-6">Quick Links:</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
                 <Link 
-                  href="/handler/signup" 
+                  href="/auth/register" 
                   className="block p-4 bg-blue-50 border border-blue-200 rounded-lg hover:bg-blue-100 transition-colors"
                 >
                   <div className="font-medium text-blue-900">Sign Up Page</div>
                   <div className="text-sm text-blue-700">Create a new account</div>
                 </Link>
                 <Link 
-                  href="/handler/signin" 
+                  href="/auth/login" 
                   className="block p-4 bg-green-50 border border-green-200 rounded-lg hover:bg-green-100 transition-colors"
                 >
                   <div className="font-medium text-green-900">Sign In Page</div>
                   <div className="text-sm text-green-700">Sign in to existing account</div>
                 </Link>
                 <Link 
-                  href="/handler/account-settings" 
+                  href="/dashboard/account" 
                   className="block p-4 bg-purple-50 border border-purple-200 rounded-lg hover:bg-purple-100 transition-colors"
                 >
                   <div className="font-medium text-purple-900">Account Settings</div>

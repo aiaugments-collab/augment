@@ -338,7 +338,7 @@ export default function SecurityPracticesPage() {
                   </div>
                 </div>
                 <a
-                  href="/corporate/security-practices/architecture/"
+                  href="/security/practices"
                   className="inline-block mt-6 text-[#C74634] hover:text-[#A63429] font-medium transition-colors duration-200"
                   style={{ fontFamily: 'var(--oraclesans)' }}
                 >
@@ -369,7 +369,7 @@ export default function SecurityPracticesPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="/corporate/security-practices/contact/"
+                href="/corporate/contact/sales"
                 className="inline-flex items-center px-8 py-4 bg-white text-[#C74634] font-semibold rounded-lg hover:bg-gray-100 transition-colors duration-200 text-lg"
                 style={{ fontFamily: 'var(--oraclesans)' }}
               >

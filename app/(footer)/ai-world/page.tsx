@@ -396,14 +396,14 @@ export default function AIWorldPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="/ai-world/register/"
+                href="/events/ai-world-2025"
                 className="inline-flex items-center px-8 py-4 bg-white text-[#C74634] font-semibold rounded-lg hover:bg-gray-100 transition-colors duration-200 text-lg"
                 style={{ fontFamily: 'var(--oraclesans)' }}
               >
                 Register Now - Early Bird Pricing
               </a>
               <a
-                href="/ai-world/agenda/"
+                href="/events/ai-world-2025"
                 className="inline-flex items-center px-8 py-4 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-[#C74634] transition-colors duration-200 text-lg"
                 style={{ fontFamily: 'var(--oraclesans)' }}
               >

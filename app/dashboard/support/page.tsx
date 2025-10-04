@@ -122,12 +122,12 @@ export default function SupportPage() {
               <p className="text-xs mt-1 text-gray-600">Find answers to common questions</p>
             </a>
             <a 
-              href="/portal"
+              href="/corporate/contact/sales"
               className="p-4 bg-white border border-gray-200 shadow-sm hover:shadow-md transition-shadow text-left block"
             >
               <div className="text-2xl mb-2"></div>
-              <h3 className="font-semibold text-sm" style={{ color: "#161513" }}>Support Portal</h3>
-              <p className="text-xs mt-1" style={{ color: "#665f5b" }}>Access support tickets and resources</p>
+              <h3 className="font-semibold text-sm" style={{ color: "#161513" }}>Contact Sales</h3>
+              <p className="text-xs mt-1" style={{ color: "#665f5b" }}>Get in touch with our sales team</p>
             </a>
             <a 
               href="/forums"

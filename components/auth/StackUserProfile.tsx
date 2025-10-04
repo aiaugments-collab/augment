@@ -30,7 +30,7 @@ export const StackUserProfile: React.FC<StackUserProfileProps> = ({ isMobile = f
     if (isMobile) {
       return (
         <Link
-          href="/handler/signin"
+          href="/auth/login"
           className="flex items-center justify-center w-full rounded bg-black px-4 py-3 text-sm font-medium text-white hover:bg-gray-900 transition-colors"
           onClick={onClose}
         >
@@ -44,7 +44,7 @@ export const StackUserProfile: React.FC<StackUserProfileProps> = ({ isMobile = f
         {/* Desktop Auth Button */}
         <div className="hidden md:flex items-center">
           <Link
-            href="/handler/signin"
+            href="/auth/login"
             className="inline-flex items-center rounded-sm bg-black px-4 py-2 text-sm font-medium text-white hover:bg-gray-900 transition-colors"
           >
             Sign In
@@ -54,7 +54,7 @@ export const StackUserProfile: React.FC<StackUserProfileProps> = ({ isMobile = f
         {/* Mobile Auth Icon */}
         <div className="flex md:hidden items-center">
           <Link
-            href="/handler/signin"
+            href="/auth/login"
             className="inline-flex h-10 w-10 items-center justify-center rounded hover:bg-gray-700/50 transition-colors"
             aria-label="Sign In"
           >
@@ -97,7 +97,7 @@ export const StackUserProfile: React.FC<StackUserProfileProps> = ({ isMobile = f
               Dashboard
             </Link>
             <Link
-              href="/handler/account-settings"
+              href="/dashboard/account"
               className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
             >
               Account Settings
@@ -143,7 +143,7 @@ export const StackUserProfile: React.FC<StackUserProfileProps> = ({ isMobile = f
               Dashboard
             </Link>
             <Link
-              href="/handler/account-settings"
+              href="/dashboard/account"
               className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
               onClick={onClose}
             >

@@ -259,7 +259,7 @@ export default function AutomationSummitPage() {
                 Contact Events Team
               </a>
               <a
-                href="/automation-summit/sponsors/"
+                href="/corporate/contact/sales"
                 className="inline-flex items-center px-6 py-3 border-2 border-white text-white font-semibold rounded hover:bg-white hover:text-[#C74634] transition-colors duration-200"
                 style={{ fontFamily: 'var(--oraclesans)' }}
               >

@@ -275,7 +275,7 @@ export default function DeveloperPage() {
               Gain AI knowledge, discover Augment's AI strategy, and start building AI solutions.
             </p>
             <a
-              href="/developer/ai-hub/"
+              href="/developers"
               className="inline-flex items-center px-6 py-3 bg-[#C74634] text-white font-semibold rounded hover:bg-[#A63429] transition-colors duration-200"
               style={{ fontFamily: 'var(--oraclesans)' }}
             >
@@ -351,7 +351,7 @@ export default function DeveloperPage() {
                     Interactive webinars showcasing real-world AI automation solutions.
                   </p>
                   <a
-                    href="/developer/coaching/"
+                    href="/developers/community"
                     className="text-[#C74634] hover:text-[#A63429] font-medium transition-colors duration-200"
                     style={{ fontFamily: 'var(--oraclesans)' }}
                   >
@@ -366,7 +366,7 @@ export default function DeveloperPage() {
                     Join conferences, workshops, and meetups in your region.
                   </p>
                   <a
-                    href="/developer/events/"
+                    href="/events/developer-workshops"
                     className="text-[#C74634] hover:text-[#A63429] font-medium transition-colors duration-200"
                     style={{ fontFamily: 'var(--oraclesans)' }}
                   >

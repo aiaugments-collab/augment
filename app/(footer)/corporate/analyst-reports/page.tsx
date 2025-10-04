@@ -327,7 +327,7 @@ export default function AnalystReportsPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="/corporate/analyst-reports/contact/"
+                href="/corporate/contact/sales"
                 className="inline-flex items-center px-6 py-3 bg-white text-[#C74634] font-semibold rounded hover:bg-gray-100 transition-colors duration-200"
                 style={{ fontFamily: 'var(--oraclesans)' }}
               >

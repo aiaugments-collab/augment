@@ -294,14 +294,14 @@ export default function SupportPortalPage() {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <a
-                    href="/portal/dashboard/"
+                    href="/dashboard"
                     className="inline-flex items-center px-6 py-3 bg-[#C74634] text-white font-semibold rounded-lg hover:bg-[#A63429] transition-colors duration-200"
                     style={{ fontFamily: 'var(--oraclesans)' }}
                   >
                     Go to Dashboard
                   </a>
                   <a
-                    href="/portal/tickets/"
+                    href="/dashboard/support"
                     className="inline-flex items-center px-6 py-3 border-2 border-[#C74634] text-[#C74634] font-semibold rounded-lg hover:bg-[#C74634] hover:text-white transition-colors duration-200"
                     style={{ fontFamily: 'var(--oraclesans)' }}
                   >
@@ -352,7 +352,7 @@ export default function SupportPortalPage() {
                           Remember me
                         </span>
                       </label>
-                      <a href="/portal/forgot-password/" className="text-sm text-[#C74634] hover:text-[#A63429]" style={{ fontFamily: 'var(--oraclesans)' }}>
+                      <a href="#" className="text-sm text-[#C74634] hover:text-[#A63429]" style={{ fontFamily: 'var(--oraclesans)' }}>
                         Forgot password?
                       </a>
                     </div>
@@ -393,7 +393,7 @@ export default function SupportPortalPage() {
                     </li>
                   </ul>
                   <a
-                    href="/portal/signup/"
+                    href="/auth/register"
                     className="w-full inline-flex items-center justify-center px-6 py-3 border-2 border-[#C74634] text-[#C74634] font-semibold rounded-lg hover:bg-[#C74634] hover:text-white transition-colors duration-200"
                     style={{ fontFamily: 'var(--oraclesans)' }}
                   >

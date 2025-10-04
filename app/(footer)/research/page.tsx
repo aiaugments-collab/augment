@@ -316,7 +316,7 @@ export default function ResearchPage() {
                   Comprehensive guides and tutorials for research tools and platforms.
                 </p>
                 <a
-                  href="/research/documentation/"
+                  href="/product-docs"
                   className="text-[#C74634] hover:text-[#A63429] font-medium transition-colors duration-200"
                   style={{ fontFamily: 'var(--oraclesans)' }}
                 >
@@ -334,7 +334,7 @@ export default function ResearchPage() {
                   Hands-on labs and training programs for research methodologies.
                 </p>
                 <a
-                  href="/research/labs/"
+                  href="/university/research"
                   className="text-[#C74634] hover:text-[#A63429] font-medium transition-colors duration-200"
                   style={{ fontFamily: 'var(--oraclesans)' }}
                 >
@@ -352,7 +352,7 @@ export default function ResearchPage() {
                   Connect with researchers and share knowledge in our community.
                 </p>
                 <a
-                  href="/research/community/"
+                  href="/community/research"
                   className="text-[#C74634] hover:text-[#A63429] font-medium transition-colors duration-200"
                   style={{ fontFamily: 'var(--oraclesans)' }}
                 >
@@ -382,7 +382,7 @@ export default function ResearchPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="/research/contact/"
+                href="/corporate/contact/sales"
                 className="inline-flex items-center px-6 py-3 bg-white text-[#C74634] font-semibold rounded hover:bg-gray-100 transition-colors duration-200"
                 style={{ fontFamily: 'var(--oraclesans)' }}
               >
